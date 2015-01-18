@@ -109,7 +109,7 @@ $ chitchat_event_07_happened = False
 
 ### SPECIAL DATES WITH SNAPE ###
 
-$ date_with_snape_02_happened = False #Second date with Snape. They decide to de-throne Hermione.
+#$ date_with_snape_02_happened = False #Second date with Snape. They decide to de-throne Hermione.
                                       #Turns true after event_09
 
 ###Miscellaneous flags###
@@ -118,24 +118,24 @@ $ jerk_off_session = False #Turns True when you choose to jerk off while Hermion
 
 $ tutoring_offer_made = False #If you offered her to tutor her (In event_12). Affects conversation in the next event.
 
-$ chitchated_with_snape = False #Prevents you from chitchating more then once a day. Turns back to False every night.
+#$ chitchated_with_snape = False #Prevents you from chitchating more then once a day. Turns back to False every night.
 
 
-$ snape_against_hermione = False #Turns True after event_01. Activates event_11 when hanging out with Snape next time.
-$ snape_against_hermione_02 = False #Turns True after event_09. Activates second event when hanging out with Snape.
+#$ snape_against_hermione = False #Turns True after event_01. Activates event_11 when hanging out with Snape next time.
+#$ snape_against_hermione_02 = False #Turns True after event_09. Activates second event when hanging out with Snape.
 
-$ hermione_is_waiting_01 = False #Turns True at the end of first special event with Snape. Triggers next visit from Hermione (event_09)
-$ hermione_is_waiting_02 = False #Turns True at the end of second special event with Snape. Triggers next visit from Hermione 
+#$ hermione_is_waiting_01 = False #Turns True at the end of first special event with Snape. Triggers next visit from Hermione (event_09)
+#$ hermione_is_waiting_02 = False #Turns True at the end of second special event with Snape. Triggers next visit from Hermione 
 
 $ phoenix_is_feed = False #When True the graphic of bird food being displayed on top of the phoenix food can.
 $ fire_in_fireplace = False #When True there is a fire going in the fireplace.
 
-$ summoning_hermione_unlocked = False #Unlocks after event_14. Adds "Summon Hermione" button to the door.
-$ tutoring_hermione_unlocked = False #Unlocks after event_14.
-$ buying_favors_from_hermione_unlocked = False 
+#$ summoning_hermione_unlocked = False #Unlocks after event_14. Adds "Summon Hermione" button to the door.
+#$ tutoring_hermione_unlocked = False #Unlocks after event_14.
+#$ buying_favors_from_hermione_unlocked = False 
 
 
-$ hanging_with_snape = False #Turns true when "hanging with Snape during the night time" becomes available. (Snape becomes available for summons).
+#$ hanging_with_snape = False #Turns true when "hanging with Snape during the night time" becomes available. (Snape becomes available for summons).
 $ have_catalogue = False #Turns True when you obtain "The muggle oddities" catalog. (The button shows).
 
 
@@ -601,19 +601,22 @@ $ day +=1
 
 ### DAY EVENTS ###<============================================================================================================================================================
 
+$ sco.DAY.RunStep()
+
+
 if request_30_a: #Hermione does not show up. This sends to label where she shows up next morning.
     call new_request_30_complete_a
 
 #NOT IN USE if day == 4: #Genie says: "I wonder what has become of that two-faced dude?"
 #About two-faced dude    call event_04
 
-if day == 8:
-    call event_08 #Hermione shows up for the first time.
-if day >= 9 and hermione_is_waiting_01 and not event09:
-    call event_09 #Second visit from Hermione. Says she sent a letter to the Minestry. 
+#if day == 8:
+#    call event_08 #Hermione shows up for the first time.
+#if day >= 9 and hermione_is_waiting_01 and not event09:
+#    call event_09 #Second visit from Hermione. Says she sent a letter to the Minestry. 
                   #Takes place after first special event with Snape, where he just complains about Hermione.
-if event13_happened and not event14_happened:
-    call event_14
+#if event13_happened and not event14_happened:
+#    call event_14
 
 if whoring >= 15 and not event_chairman_happened: #Turns True after an event where Hermione comes and says that she wants to be in the Autumn Ball committee.
     call want_to_rule
@@ -635,17 +638,17 @@ if whoring >= 18 and have_no_dress_hap and not sorry_for_hesterics and days_with
 #    call event_08_02 #Hermione shows up for the second time. (Shorter skirts notion).
 #if day == 11:
 #    call event_08_03 #Hermione shows up for the third time. (Rules for teachers noton).
-if day >= 12 and not event09 and hermione_is_waiting_01:
-    call event_09 #Visit from Hermione after first Special event with Snape (Where Genie proposes plan against her).
+#if day >= 12 and not event09 and hermione_is_waiting_01:
+#    call event_09 #Visit from Hermione after first Special event with Snape (Where Genie proposes plan against her).
 ### NOT IN USE
 #if day >= 13 and not event10 and hermione_is_waiting_02:
 #    call event_10 #Hermione shows up for the third time. Says that she started "MRM" and sent letter to the ministry.
-if event13_happened and not event14_happened:
-    call event_14
+#if event13_happened and not event14_happened:
+#    call event_14
 
 ### EVENTS ### (COMMENTED OUT FOR THE TESTING PORPOISES) ===============================================================================================================================
-if day == 1 and not bird_examined and not desk_examined and not cupboard_examined and not door_examined and not fireplace_examined:
-    call event_01
+#if day == 1 and not bird_examined and not desk_examined and not cupboard_examined and not door_examined and not fireplace_examined:
+#    call event_01
 
 
     
@@ -813,6 +816,9 @@ call points_changes_gryffindor #Makes changes in the Gryffindor (And the rest of
 
 ### NIGHT REQUESTS ###
 
+$ sco.NIGHT.RunStep()
+
+
 if request_02_b:
     call new_request_02_b_complete
 if request_02_c:
@@ -854,22 +860,22 @@ if request_33: #(Go to classes with cum covered face).
     
 
 ### NIGHT EVENTS ###
-if day == 1:
-    call event_02
-if day == 2:
-    call event_03
-if day == 4:
-    call event_05
-if day == 5:
-    call event_07
-if days_without_an_event >= 2 and hermione_is_waiting_02 and not event11_happened:
-    call event_11
-if days_without_an_event >= 2 and event11_happened and not event12_happened:
-    call event_12
-if days_without_an_event >= 2 and event12_happened and not event13_happened:
-    call event_13
-if days_without_an_event >= 7 and chitchat_event_01_happened and not event15_happened:
-    call event_15
+#if day == 1:
+#    call event_02
+#if day == 2:
+#    call event_03
+#if day == 4:
+#    call event_05
+#if day == 5:
+#    call event_07
+#if days_without_an_event >= 2 and hermione_is_waiting_02 and not event11_happened:
+#    call event_11
+#if days_without_an_event >= 2 and event11_happened and not event12_happened:
+#    call event_12
+#if days_without_an_event >= 2 and event12_happened and not event13_happened:
+#    call event_13
+#if days_without_an_event >= 7 and chitchat_event_01_happened and not event15_happened:
+#    call event_15
 
 if gave_the_dress and days_without_an_event >= 2: #$ gave_the_dress = True #Turns True when Hermione has the dress.
     jump good_bye_snape

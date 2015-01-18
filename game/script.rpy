@@ -2,6 +2,37 @@
 
 
 init:
+# Scenario initialization
+    python:
+        global sco
+
+    $sco=ScenarioCollection(lambda s: elog(s))
+    $sco.Init()
+
+# Описание сценария от начала до открытия покупки сексуальных услуг
+    python:
+        sco.DAY     .AddCall("event_01",                   ready= lambda e: day == 1 and not bird_examined and not desk_examined and not cupboard_examined and not door_examined and not fireplace_examined )
+        sco.NIGHT   .AddJump("event_02",                   ready= lambda e: day == 1 )
+        sco.NIGHT   .AddJump("event_03",                   ready= lambda e: day == 2 )
+        sco.NIGHT   .AddJump("event_05",                   ready= lambda e: day == 4 )
+        sco.NIGHT   .AddJump("event_07:Snape_summon",      ready= lambda e: day == 5 )
+        sco.DAY     .AddCall("event_08",                   ready= lambda e: day >= 8 )
+        sco.SNAPE   .AddJump("special_date_with_snape")
+        sco.DAY     .AddCall("event_08_02",                ready= lambda e: e.prev.prev.IsAgo(2) ) 
+        sco.DAY     .AddCall("event_08_03",                ready = lambda e: e.prev.IsAgo(2) )
+        sco.DAY     .AddCall("event_09",                   ready = lambda e: e.prev.IsAgo(2) )
+        sco.SNAPE   .AddJump("special_date_with_snape_02")
+        sco.NIGHT   .AddCall("event_11",                   ready = lambda e: e.prev.IsAgo(2))
+        sco.NIGHT   .AddCall("event_12",                   ready = lambda e: e.prev.IsAgo(2))
+        sco.NIGHT   .AddCall("event_13",                   ready = lambda e: e.prev.IsAgo(2))
+        sco.DAY     .AddCall("event_14:Hermione_summon")
+        sco.CHITCHAT.AddJump("chitchat_event_01",          ready = lambda e: e.prev.IsAgo(2))
+        sco.NIGHT   .AddCall("event_15:Hermione_buy",      ready = lambda e: e.prev.IsAgo(7))
+
+
+
+ 
+
     
     $ commentaries = False # In the GALLERY turns commentaries ON and OFF. 
     
@@ -54,11 +85,6 @@ init:
     
 #define m = Character(None, window_left_padding=200, image="mage", color="#402313", ctc="ctc3", ctc_position="fixed")
 
-    # Ending class initialization
-    call Ending_constants
-    python:
-        global end
-    $ end = Ending ()
 
 label splashscreen:
     $ renpy.pause(0)
@@ -4701,6 +4727,21 @@ label start:
     $ herView.data().addTits( CharacterExItem( herView.mBodyFolder, "tits.png", G_Z_TITS ) )
     $ herView.data().addDress( CharacterExItemDress( herView.mClothesFolder, "dress_normal.png", G_Z_DRESS ) )
     $ herView.data().addFace( CharacterExItem( herView.mFaceFolder, "body_01.png", G_Z_FACE ) )
+
+    # Ending class initialization
+    call Ending_constants
+    python:
+        global end
+    $ end = Ending ()
+
+    # Elog class initialization
+    call EventLog_constants
+    python:
+        global elog
+    $ elog = EventLogCollection ()
+
+
+#    python: # AddStep???????
 
 
     $ gold = 0

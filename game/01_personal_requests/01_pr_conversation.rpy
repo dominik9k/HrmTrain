@@ -37,8 +37,8 @@ label new_request_01: #LV.1 (Whoring = 0 - 2)
         $  new_request_01_01 = True #Hearts on menu buttons.
         $herView.hideQQ()
         $herView.showQQ( "body_11.png", pos )
-        her "Эм... Ну чтож..."
-        ">Гермиона чувствует смущение..."
+        her "Эм... Ну что ж..."
+        ">Гермиона смущается и слегка краснеет..."
         $herView.hideQQ()
         $herView.showQQ( "body_12.png", pos )
         her "..................."

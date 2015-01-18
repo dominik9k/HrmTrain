@@ -1,6 +1,7 @@
 label snape_chitchat:
-    if not chitchat_event_01_happened and tutoring_hermione_unlocked and days_without_an_event >=2:
-        jump chitchat_event_01
+    $sco.CHITCHAT.RunStep()
+#    if not chitchat_event_01_happened and tutoring_hermione_unlocked and days_without_an_event >=2:
+#        jump chitchat_event_01
     
     
 

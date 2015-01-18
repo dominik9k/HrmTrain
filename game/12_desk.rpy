@@ -518,7 +518,7 @@ label desk:
         #     jump jerk_off
         "- Передернуть -" if not day < 5:
             jump jerk_off 
-        "- Состояние Гермионы -" if summoning_hermione_unlocked and buying_favors_from_hermione_unlocked: 
+        "- Состояние Гермионы -" if flag("Hermione_buy"): #summoning_hermione_unlocked and buying_favors_from_hermione_unlocked: 
             "> Распутство: {color=#B40000}{size=+4}{b}[whoring]{/b}{/size}{/color}-я степень."
             "> Злость: {color=#B40000}{size=+4}{b}[mad]{/b}{/size}{/color}-я степень"
             if mad >=1 and mad < 3:

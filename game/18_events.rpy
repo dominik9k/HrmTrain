@@ -734,7 +734,7 @@ label event_05: #Snape comes in, has a talk with Genie, then the duel starts.
         "\"Я не могу. Это сложно объяснить...\"" if not d_flag_01:
             $ d_flag_01 = True
             $ d_points +=1
-            sna_head_main "У меня нет ни малейшего интереса к твоим объяснениям. Я бы все равно не поверил ни единому слову!"
+            sna_head_main "Можешь ничего не объяснять. Я все равно не поверю ни единому слову!"
         "\"Хватит угрожать мне, человек!\"" if not d_flag_02:
             $ d_flag_02 = True
             $ d_points +=1
@@ -1274,7 +1274,7 @@ label event_07: #THE TALK WITH SNAPE THE DAY AFTER THE DUEL.
     ">Теперь вы можете вызывать Снейпа в свой кабинет."
     hide screen blktone
     with d3
-    $ hanging_with_snape = True
+#    $ hanging_with_snape = True
     
     jump day_start
 
@@ -1379,7 +1379,7 @@ label event_08: # HERMONE SHOWS UP FOR THE FIRST TIME. IN USE.
     her "Вы, наверное, знаете, почему я здесь."
     $herView.hideQQ()
     $herView.showQQ( "body_04.png", pos )
-    her "Тот вопрос, который я безуспешно пыталась донести до вашего внимания в последнее время."
+    her "Тот вопрос, на который я безуспешно пыталась обратить Ваше внимание в последнее время..."
     her "Я не могу понять, почему вы ничего не предпринимаете, чтобы остановить это!"
     her "Это не может больше продолжаться!"
     $herView.hideQQ()
@@ -1517,17 +1517,18 @@ label event_08: # HERMONE SHOWS UP FOR THE FIRST TIME. IN USE.
         m "......................."
     $herView.hideQQ()
     $herView.showQQ( "body_04.png", pos )
-    her "Я понимаю, что у вас нет времени на все это. Вы деректор нашей школы и очень важный и занятой человек."
-    her "Временами, оставаться лучшей ученицей довольно трудно для меня..."
+    her "Я понимаю, что у вас нет времени на все это. Вы директор нашей школы, очень важный и занятой человек."
+    her "Временами, мне непросто быть лучшей ученицей, стоять на пьедестале..."
     if d_flag_01:
-        translators "{size=-4}(Здесь была игра слов \"hard on(тяжело)\" и \"hard-on(стояк)\") которую мы не смогли перевести. \nПростите нас :({/size}"
+#        translators "{size=-4}(Здесь была игра слов \"hard on(тяжело)\" и \"hard-on(стояк)\") которую мы не смогли перевести. \nПростите нас :({/size}"
         g4 "{size=-4}(Она сказала \"стояк\"!?) *задыхаясь*{/size}"
-    her "Но вы могли бы предоставить эту задачу мне..."
-    her "Просто всадить свою веру в меня." 
+    her "Но вы могли бы поручить эту задачу мне, и я справлюсь..."
+    her "Просто... просто внедрите вашу уверенность и твердость в меня!" 
+
     if d_flag_01: 
         $herView.hideQQ()
         $herView.showQQ( "body_01.png", pos )
-        her "Да, вы должны! Просто всадите ее в меня!"
+        her "Да, сэр! Просто внедрите в меня!"
         stop music fadeout 1.0
         show screen white 
         pause.1
@@ -1575,8 +1576,9 @@ label event_08: # HERMONE SHOWS UP FOR THE FIRST TIME. IN USE.
         her "Хм..."
     $herView.hideQQ()
     $herView.showQQ( "body_04.png", pos )
-    her "Мои занятия вот-вот начнутся. Мне лучше пойти."
-    her "Спасибо за уделенное время..."
+    her "Мои занятия вот-вот начнутся. Мне надо идти."
+    her "Спасибо, что уделили мне время..."
+
     hide screen bld1
     $herView.hideQ()
     with Dissolve(.3)
@@ -1594,18 +1596,18 @@ label event_08: # HERMONE SHOWS UP FOR THE FIRST TIME. IN USE.
         m "{size=-4}(Мои трусы просто уничтожены...){/size}"
     else:
         m "................."
-        m "(Она симпатичная, но довольно трудолюбивая...)"
+        m "(Она симпатичная, но слишком увлечена работой...)"
     hide screen genie_jerking_sperm_02
     with d3
-    $ snape_against_hermione = True #Turns True after event_08. Activates special date with Snape # 01.
-    $ event08_happened = True
+#    $ snape_against_hermione = True #Turns True after event_08. Activates special date with Snape # 01.
+#    $ event08_happened = True
     play music "music/Brittle Rille.mp3" fadein 1 fadeout 1
     return
 
 ### FOLLOWING EVENT IS NOT IN USE ANYMORE ###
 ###############################################################################################################################################################    
 label event_08_02:
-    "EVENT_08_02"
+#    "EVENT_08_02"
     $ renpy.play('sounds/knocking.mp3') #Sound someone knocking on the door.
     "*Тук-тук-тук!*"
     menu:
@@ -1613,7 +1615,7 @@ label event_08_02:
             her "Это я, Гермиона Грейнджер." 
             m "(Снова эта молоденькая ведьма...)" 
             her "Профессор, я вхожу..."
-            m "{size=-4}(Crap!){/size}"
+            m "{size=-4}(Дерьмо!){/size}"
         "\"Да, входи...\"":
             pass
         "\"...................................\"":
@@ -1647,7 +1649,7 @@ label event_08_02:
         "\"Доброе утро, мисс Грейнджер.\"":
             pass
         "\"Доброе утро, дитя.\"":
-            her "{size=-5}(\"Дитя\"? Почему он настолько снисходительный все время?){/size}"
+            her "{size=-5}(\"Дитя\"? Почему он настолько снисходителен все время?){/size}"
             m "Что-то не так?"
             her "Нет, ничего сэр..."
         "\"Доброе утро, шлюха.\"":
@@ -1658,43 +1660,43 @@ label event_08_02:
             
     her "Профессор Дамблдор, Я здесь, чтобы поговорить с вами, как  президент \"ОПЗМП\"..."
     m "............."
-    her "Мы провели чрезвычайное собрание вчера..."
-    her "Главным вопросом была \"Хогвартская\"униформа для девочек..."
-    her "Мы пришли к выводу, что в настоящее время дресс-код является весьма нецелесообразным для образовательного учреждения..." 
+    her "Мы провели чрезвычайное заседание вчера..."
+    her "Главным вопросом была \"Хогвартская\" униформа для девочек..."
+    her "Мы пришли к выводу, что существующий дресс-код является весьма нецелесообразным для нашего образовательного учреждения..." 
     show screen ctc
     pause
     her "..."
     m "Серьезно?"
     hide screen ctc
-    her "Да, профессор, Уверяю вас, я очень серьезна."
-    her "Мы ищем способ заставить наших бедных девочек носить  платье ..."
-    her "Сейчас они носят легкомысленные наряды и отвлекает мужчин от учебы, ставя их в невыгодное положение..."
-    her "Все это отвлекающие факторы..."
+    her "Да, профессор. Уверяю вас, я очень серьезна."
+    her "То, как вы заставляете одеваться наших бедных девочек абсолютно неприемлемо  ..."
+    her "Сейчас они носят легкомысленные наряды и отвлекают мужчин от учебы, ставя их в невыгодное положение..."
+    her "Все эти отвлекающие факторы..."
     her "Бедные души..."
     m "Кто-нибудь из ребят жалуется на это?"
-    her "Мы не будем ждать, пока проблема существует, сэр! Мы будем бороться с ней!"
+    her "Мы не будем ждать, пока проблема проявится, сэр! Мы уничтожим ее в зародыше!"
     her "Ни один человек не должен находиться в невыгодном положении, в зависимости от пола."
     her "Это называется \"Сексизм\" в мире Маглов, сэр."
     m "Ваши объяснения  слишком запутанные, на мой взгляд, мисс Грейнджер."
-    m "Скажите мне, что вы предлагаете , заставить каждую женщину носить паранджу в школе?"
-    her "Удвоение длины юбки для девочек в школе было бы достаточно..."
+    m "Вы что, предлагаете заставить всех женщин носить в школе паранджу?"
+    her "Будет достаточно удвоить длину юбки девочек, сэр..."
     menu:
 
         "{size=-4}\"Это смешно. Отказано!\"{/size}":
             $ d_flag_05 = True #Notion refused. Will take affect in the next event.
             her "Что... Н-но? Мы приняли решение..."
-            m "Мисс Грейнджер, Мне жаль , но я все еще директор этой школы..."
-            m "И все решения  зависят от моего слова!"
-            her "Значит вы игнорируете выбор народа, сэр?"
-            m "Единственный голос, который я слышу ваш, мисс Грейнджер."
-            her "Разве вы не знаете, что происходит с тиранами, которые недооценивают силы народа?"
+            m "Мисс Грейнджер, мне жаль вас прерывать, но пока еще я директор этой академии..."
+            m "И принимать решения - моя прерогатива!"
+            her "Значит, вы игнорируете голос народа, сэр?"
+            m "Единственный голос, который я слышу - ваш, мисс Грейнджер."
+            her "Разве вы не знаете, что происходит с тиранами, которые игнорируют народную волю?"
             her "Их свергают!"
             m "Осторожно. Ваши слова пахнут изменой, юная леди."
-            m "Разве вы не знаете, что происходит с предателями?"
+            m "Разве вы не знаете, что происходит с изменниками?"
             m "Их вешают!"
             her "!!!"
-            her "Тцк!"
-            her "Я добьюсь,чтобы вы восприняли наше решение всерьез, профессор!"
+            her "Пф!"
+            her "Я добьюсь, чтобы вы восприняли наше решение всерьез, профессор!"
         
         "{size=-4}\"Нет сексизму. Просьба удовлетворена!\"{/size}":
             her "Великолепно. Я все сделаю."
@@ -1730,7 +1732,7 @@ label event_08_02:
     return
 #NOT IN USE###############################################################################################################################################################    
 label event_08_03:
-    "EVENT_08_03"
+#    "EVENT_08_03"
     $ renpy.play('sounds/knocking.mp3') #Sound someone knocking on the door.
     "*Тук-тук-тук!*"
     m "Кто..."
@@ -1758,7 +1760,7 @@ label event_08_03:
         "\"Доброе утро, мисс Грейнджер.\"":
             pass
         "\"Доброе утро, дитя.\"":
-            her "{size=-5}(\"Дитя\"? Он должны быть настолько снисходительной все время? Противный старый хер!){/size}"
+            her "{size=-5}(\"Дитя\"? Ему обязательно быть настолько снисходительным все время? Противный старый хрен!){/size}"
             m "Что-то не так?"
             her "Ничего сэр..."
         "\"Доброе утро, мисс президент.\"":
@@ -1783,39 +1785,39 @@ label event_08_03:
                 her "Профессор Дамблдор, это серьезный вопрос!"
 
     else:
-        her "Профессор Дамблдор,вы отвергли предложение которое я дала вам когда мы встречались в прошлый раз..."
+        her "Профессор Дамблдор, вы отвергли предложение, которое я озвучила вам на нашей прошлой встрече..."
         her "И теперь мы пожинаем плоды..."
-    her "Ребятам все  еще трудно сосредоточиться на учебе..."
-    m "О, у меня есть решение,!"
+    her "Парням трудно сосредоточиться на учебе..."
+    m "О, у меня есть решение!"
     m "Давай наденем на головы девушкам бумажные пакеты!"
     her "Это тоже сексизм..."
     her "Другой пример сексизма..."
     her "Это называется \"Женоненавистничество\"."
     m "\"Женоненавистничество\" - это общая неприязнь к женщинам, мисс Грейнджер."
-    m "Здоровый мужчина биологически не способен противиться самкам его же вида..."
-    m "В противном случае человечество бы вымерло давным-давно..."
-    her "Профессор, у нас нет времени для семантики."
+    m "Здоровый мужчина биологически не может испытывать антипатию ко всем женщинам..."
+    m "Иначе человечество давным-давно бы вымерло..."
+    her "Профессор, сейчас не время играть словами."
     her "Вся школа находится в опасности!"
     m "Неужели..?"
-    her "Вчера была встреча \"ОЗМП\", и--"
-    m "Нет, опять..."
-    m "Существуют ли какие-либо мужские члены в вашем маленьком \"Обществе по защите мужских прав\"?"
-    her "Это не относиться к делу"
-    m "А я считаю, что относиться..."
+    her "Вчера было еще одно заседание \"ОЗМП\", и--"
+    m "Ох, опять..."
+    m "А есть хоть один парень в вашем маленьком \"Обществе по защите мужских прав\"?"
+    her "Это не относится к делу."
+    m "А я считаю, что относится..."
     her "Это не имеет значения..."
-    m "Как это не имеет значения? {size=+7}Это{/size} единственное, что имеет значение!"
-    her "Позвольте мне закончить мое предложение, пожалуйста."
+    m "Как это не имеет значения? Это единственное, что {size=+7}имеет{/size} значение!"
+    her "Позвольте мне закончить мою мысль, пожалуйста."
     her "Я официально к вам обращаюсь, как президент \"ОЗМП\"..."
     her "И как представитель этой школы ..."
-    her "Мы требуем чтобы эти новые нормы, подлежали соблюдению..."
+    her "Мы требуем соблюдения этих новых норм..."
     her "Во-первых..."
-    her "Чтобы ни один школьный учитель не позволял повышать голос в сторону студента или обзывать студента..."
+    her "Ни один преподаватель не должен повышать голос или обзывать студента..."
     m "Что?"
     her "Во-вторых..."
-    her "Все школьные призраки должны быть заключены только в заброшенной башни в Северном крыле школы."
+    her "Все школьные призраки должны быть заключены в заброшенной башне в Северном крыле школы."
     m "У Вас есть привидения? Это очень круто!"
     her "В-третьих..."
-    her "Каждый учитель, и особенно профессор Северус Снейп должны проходить проверку квалификации каждые три месяца..."
+    her "Каждый учитель, и особенно профессор Северус Снейп, должны проходить проверку квалификации каждые три месяца..."
     m "Это все?"
     her "Это все, сэр."
     menu:
@@ -1827,7 +1829,7 @@ label event_08_03:
             her "Что? Я..."
             her "Но это ... вы не можете..."
             m "Свободны!"
-            her "Тцк..."       
+            her "Пф!..."       
     hide screen bld1
     $herView.hideQ()
     with Dissolve(.3)
@@ -1842,9 +1844,9 @@ label event_08_03:
     pause.5
     m "...................."
     
-    $ snape_against_hermione = True #Turns True after event_08_03. Activates event_09 when hanging out with Snape next time.
+#    $ snape_against_hermione = True #Turns True after event_08_03. Activates event_09 when hanging out with Snape next time.
 
-    
+#    $ cEvent_08_03.IncPassed()
     return
 
             
@@ -1868,13 +1870,13 @@ label event_09: #Second visit from Hermione. Says she sent a letter to the Mines
                 "\"Конечно нет! Я занят! Возвращайся позже!\"":
                     her "Но..."
                     her "Хорошо... Тогда я зайду к вам завтра..."
-                    return
+                    return sco.RET_NoFinished
                 "\"Конечно. Входи.\"":
                     pass
         "\"Я занят. Приходи позже.\"":
             her "Но..."
             her "Ладно, хорошо..."
-            return
+            return sco.RET_NoFinished
         "\"Да, входи.\"":
             pass
         "\"...................................\"":
@@ -2017,8 +2019,8 @@ label event_09: #Second visit from Hermione. Says she sent a letter to the Mines
     m "...................."
     
 
-    $ hermione_is_waiting_01 = False #Makes sure this event is not repeated.
-    $ snape_against_hermione_02 = True #Turns True after event_09. Activates second event when hanging out with Snape.
+#    $ hermione_is_waiting_01 = False #Makes sure this event is not repeated.
+#    $ snape_against_hermione_02 = True #Turns True after event_09. Activates second event when hanging out with Snape.
     
     play music "music/Brittle Rille.mp3" fadein 1 fadeout 1
     return
@@ -2165,8 +2167,8 @@ label event_09_2: #Takes place after second special event with Snape, where he j
     pause.5
     m "...................."
     
-    $ hermione_is_waiting_01 = False #Makes sure this event is not repeated.
-    $ snape_against_hermione_02 = True #Turns True after event_09. Activates second event when hanging out with Snape.
+#    $ hermione_is_waiting_01 = False #Makes sure this event is not repeated.
+#    $ snape_against_hermione_02 = True #Turns True after event_09. Activates second event when hanging out with Snape.
     return
 
    
@@ -2182,7 +2184,7 @@ label event_10: #Takes place after second special even with Snape where Ginie is
     menu:
         "\"Кто это?\"":
             her "Это я, Гермиона Грейнджер." 
-            m "(Снвоа эта молоденькая ведьма...)" 
+            m "(Снова эта молоденькая ведьма...)" 
             her "Могу я войти, сэр?"
             menu:
                 m "..."
@@ -2289,8 +2291,8 @@ label event_10: #Takes place after second special even with Snape where Ginie is
    
     $ hermione_takes_classes = True
    
-    $ hermione_is_waiting_02 = False #Makes sure this event is not repeated.
-    $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
+#    $ hermione_is_waiting_02 = False #Makes sure this event is not repeated.
+#    $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     return
 
 ###############################################################################################################################################################
@@ -2587,7 +2589,7 @@ label event_12: # Hermione complains that she did failed a test. (EVENING EVENT!
     $ event12_happened = True #Allows next event to start.
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     
-    call day_start
+    return
 
 
 ###############################################################################################################################################################
@@ -2705,7 +2707,7 @@ label event_13: # Hermione complains that she almost failed a test. (EVENING EVE
     $ event13_happened = True #Allows next event to start.
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     
-    call day_start
+    return
 
 
 
@@ -2871,9 +2873,9 @@ label event_14: # Hermione comes after her breakdown (when she failed the test).
     ">Теперь вы можете вызывать Гермиону Грейнджер в кабинет."
     hide screen blktone
     with d3
-    $ summoning_hermione_unlocked = True #Unlocks after event_14. Adds "Summon Hermione" button to the door.
+#    $ summoning_hermione_unlocked = True #Unlocks after event_14. Adds "Summon Hermione" button to the door.
     $ hermione_takes_classes = True
-    $ tutoring_hermione_unlocked = True
+#    $ tutoring_hermione_unlocked = True
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     
     
@@ -2906,13 +2908,13 @@ label event_15: # Hermione comes and asks to buy a favour from her.
                 "\"Категорически нет! Я занят! Возвращайся позднее!\"":
                     her "Но..."
                     her "Ладно... Тогда я вернусь позднее..."
-                    return
+                    return sco.RET_NoFinished
                 "\"Конечно, входи.\"":
                     pass
         "\"Я занят. Приходи позже.\"":
             her "Но..."
             her "Ну, ладно..."
-            return
+            return sco.RET_NoFinished
         "\"Да, входи.\"":
             pass
         "\"...................................\"":
@@ -2960,7 +2962,7 @@ label event_15: # Hermione comes and asks to buy a favour from her.
     $herView.hideQQ()
     $herView.showQQ( "body_29.png", pos )
     her "И... все очень трудятся..."
-    her "И они надеятся на мою помощь, но я не знаю что делать..."
+    her "И они надеются на мою помощь, но я не знаю что делать..."
     m "............................"
     her "Профессор Дамблдор...."
     $herView.hideQQ()
@@ -3375,7 +3377,7 @@ label event_15: # Hermione comes and asks to buy a favour from her.
     $ buying_favors_from_hermione_unlocked = True 
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     $ event15_happened = True #Turns TRUE after event_15
-    jump day_start
+    return
 
 
 
