@@ -728,6 +728,7 @@ class Label(Node):
         statement_name("label")
 
         renpy.game.context().mark_seen()
+        renpy.game.context().lab=self.name
 
         values = apply_arguments(self.parameters, renpy.store._args, renpy.store._kwargs)
 
