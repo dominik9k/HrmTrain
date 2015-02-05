@@ -1,20 +1,16 @@
 
-init -993 python:
+init -991 python:
   
 # Обертка для работы с флажками
 # Проверку завершения любого ивента можно привести так: flag("EventName"), здесь EventName может быть именем или альтернативным именем ивента
     class Flags(store.object):
-        def __init__( self, ELog):
-            self.ELog=ELog
 
-
+# Такое имя/альтернейм может быть либо в статическом, либо в динамическом ивентлоге, либо нигде. Истина, если хоть в одном логе обнаружено, как завершенное
         def __call__( self, sNameOrAlter):
-            return self.ELog(None).IsFinished(sNameOrAlter)
+            return this.IsDone(sNameOrAlter)
 
 
 
-    global flag
-    flag=Flags(lambda s: elog(s))
 
 
 
