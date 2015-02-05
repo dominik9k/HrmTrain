@@ -231,6 +231,14 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                 $her_head_state = 42
                 her_head_main "И если я это сделаю..."
                 
+        menu:
+            "\"Кого волнует твоя репутация?\"":
+                m "Кого волнует твоя репутация? Продолжай раздеваться!"
+                $ end.SetEndingValue(const_ENDING_STRONG_GIRL,1)
+            "Тут никого нет":
+                m "Ну, тут никого нет и твоей репутации ничего не угрожает."        
+
+
         show screen blkfade 
         with d3
         hide screen blktone8    
