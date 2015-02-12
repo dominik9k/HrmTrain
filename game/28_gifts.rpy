@@ -125,7 +125,7 @@ label mini_on:
         $herView.hideshowQQ( "body_118.png", pos )
         her "Слушаюсь, сэр..."
         $herView.hideQQ()
-        $herView.addFaceName( "body_78.png", pos )
+        $herView.addFaceName( "body_78.png" )
                                                                                                                                                                                                                           #HERMIONE
     
     
