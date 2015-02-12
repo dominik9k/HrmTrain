@@ -136,7 +136,7 @@ init:
  
 
 # Включить обработку перехода по меткам (label). 
-    $renpy.game.onLabelExecute=lambda s: OnLabelExecute(s)
+    $onLabelExecute=lambda s: OnLabelExecute(s)
 
 #    $renpy.game.onJumpExecute=lambda name, target,expression: OnJumpExecute(name, target,expression)
     

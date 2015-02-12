@@ -86,10 +86,6 @@ persistent = None
 # The current preferences.
 preferences = None
 
-# The current preferences.
-onLabelExecute = None
-onJumpExecute = None
-
 class RestartContext(Exception):
     """
     Restarts the current context. If `label` is given, calls that label
