@@ -728,8 +728,6 @@ class Label(Node):
         statement_name("label")
 
         renpy.game.context().mark_seen()
-        if renpy.game.onLabelExecute!=None:
-            renpy.game.onLabelExecute(self.name)
 
         values = apply_arguments(self.parameters, renpy.store._args, renpy.store._kwargs)
 
@@ -1468,10 +1466,6 @@ class Jump(Node):
     def execute(self):
 
         statement_name("jump")
-
-
-        if renpy.game.onJumpExecute!=None:
-            renpy.game.onJumpExecute(self.name,self.target,self.expression)
 
         target = self.target
         if self.expression:
