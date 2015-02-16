@@ -1183,12 +1183,19 @@ label could_not_flirt: #Sent here when choose "Задание провалено
     
     $ request_02_b_points += 1
     $ request_02_b = False 
-    
-    call music_block
-    
+
     if daytime:
         $ hermione_takes_classes = True
     else:
         $ hermione_sleeping = True
     return
 
+label finish_daytime_event:
+    call music_block
+    
+    if daytime:
+        $ hermione_takes_classes = True
+        jump day_main_menu
+    else:
+        $ hermione_sleeping = True
+        jump night_main_menu
