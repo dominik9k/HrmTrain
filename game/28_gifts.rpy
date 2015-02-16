@@ -1018,7 +1018,7 @@ label giving_plug:
 
 
     if whoring >= 6 and whoring <= 11: # Lv 3-4.
-        $ mad -= 15
+        $ mad += 15
         $herView.showQ( "body_186.png", pos, d5 )
         her "Сэр, это какие-то игрушки для взрослых?"
         $herView.hideshowQQ( "body_187.png", pos )
