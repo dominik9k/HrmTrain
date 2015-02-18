@@ -426,7 +426,7 @@ label giving_lube: # JAR OF Анальный лубрикант.
         her "Тем не менее, я думаю, вы не должны дарить такие подарки вашим ученикам, сэр."
         $herView.hideQQ()
         call no_change #Message: Hermione's mood did not change.
-        $herView.addFaceName( "body_79.png ");
+        $herView.hideshowQQ( "body_79.png ", pos);
         
     if whoring >= 18: # Lv 7+  
         $ anal_lube -= 1
