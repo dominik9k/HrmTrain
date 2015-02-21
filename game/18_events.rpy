@@ -1683,21 +1683,8 @@ label event_08_02:
         
         "{size=-4}\"Нет сексизму. Просьба удовлетворена!\"{/size}":
             her "Великолепно. Я все сделаю."
-            her "Спасибо профессор."
-            hide screen bld1
-            $herView.hideQ()
-            with Dissolve(.3)
-            $ walk_xpos=400 #Animation of walking chibi. (From)
-            $ walk_xpos2=610 #Coordinates of it's movement. (To)
-            $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
-            show screen hermione_walk_01_f 
-            pause 2
-            hide screen hermione_walk_01_f 
-            $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-            with Dissolve(.3)
-            pause.5
-            m "...................."
-           
+            her "Спасибо, профессор."
+          
 
     hide screen bld1
     $herView.hideQ()
@@ -1711,6 +1698,7 @@ label event_08_02:
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     with Dissolve(.3)
     pause.5
+    m "..................................."
     m "Я начинаю наслаждаться нашими встречами все меньше и меньше..."
     return
 #NOT IN USE###############################################################################################################################################################    
