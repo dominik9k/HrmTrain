@@ -5173,7 +5173,7 @@ label start:
     if persistent.game_complete: # Offer for game+
         menu:
             "Новая игра +" ">Хотите перенести все золото и имущество из предыдущей игры?"
-            "\"Да, пожауйста.\"":
+            "\"Да, пожалуйста.\"":
                 $ gold = gold + persistent.gold
                 ">[persistent.gold] золота было добавлено."
                 
@@ -5276,6 +5276,9 @@ label start:
         "Начать интро.":
             jump intro
         "Пропустить интро.":
+            jump hp
+        "Перейти сразу на утро после дуэли.":
+            $this.event_05.SetValue("finish2",4)
             jump hp
     
    
