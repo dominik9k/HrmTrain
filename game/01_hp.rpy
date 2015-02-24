@@ -258,6 +258,7 @@ if this.event_05._finish2==4:
     $ bird_examined = True
     $ door_examined = True
     $ fireplace_examined = True
+    $ rum_times = 4
 
 ###SCREENS### NO NEED FOR THIS ONE ANYMORE. (SHOWS WHORING THOUGH).
 screen statistics: #более подробно см. здесь http://www.renpy.org/doc/html/screens.html
