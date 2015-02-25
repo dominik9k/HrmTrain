@@ -100,6 +100,7 @@
                     SetStoreValue(self.Name, s,  self.defVals[s])
 # Создать для каждого параметра в хранилище поле типа self._var
             self.InitTempVars()
+            return
 
 
         # Произошло ли событие iStartFinishMode iDaysAgo дней назад или раньше?
@@ -119,6 +120,7 @@
                 self.SetValue("start1", day)
             self.SetValue("start2", day)
             self.SetValue("startCount", self.GetValue("startCount")+incValue)
+            return
 
 # Логгировать завершение ивента
         def IncFinished( self, incValue=1 ):
@@ -129,11 +131,13 @@
                 self.SetValue("finish1", day)
             self.SetValue("finish2", day)
             self.IncValue("finishCount", incValue)
+            return
 
 # Логгировать запуск ивента
-        def IncPassed( self, incValue=1 ):
-            self.IncStarted(incValue)
-            self.IncFinished(incValue)
+        def IncPassed( self ):
+            self.IncStarted()
+            self.IncFinished()
+            return
 
 
 # Завершено iDays назад или ранее?
@@ -165,6 +169,7 @@
             self.SetValue("finish1", self.GetValue("bakfinish1"))
             self.SetValue("finish2", self.GetValue("bakfinish2"))
             self.IncValue("finishCount", -1)
+            return
 
 # Исполнить ивент
         def Run(self):
