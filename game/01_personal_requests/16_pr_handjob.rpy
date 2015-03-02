@@ -74,7 +74,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
                 $herView.hideQQ()
                 $herView.showQQ( "body_87.png", pos )
                 her "45 очков...?"
-                her "Это поможет вернуть \"Гриффиндор\" в лидеры..."
+                her "Это может серьёзно помочь \"Гриффиндору\"!"
                 m "Это значит \"Да\"?"
                 $herView.hideQQ()
                 $herView.showQQ( "body_79.png", pos )
@@ -87,7 +87,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
                 $herView.hideQQ()
                 $herView.showQQ( "body_72.png", pos )
                 her "100 очков?!"
-                her "Это поможет вернуть \"Гриффиндор\" в лидеры!"
+                her "Это может серьёзно помочь \"Гриффиндору\"!"
                 m "Это значит \"Да\"?"
                 $herView.hideQQ()
                 $herView.showQQ( "body_75.png", pos )
