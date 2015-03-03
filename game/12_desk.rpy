@@ -223,17 +223,54 @@ label reading_book_xx:
     ">Осталось еще несколько глав."       
     
 #===### SPEED READING FOR DUMMIES BONUS CHECK ###
-    if s_reading_lvl == 1: #First book (book_08) on speed reading completed.
-        $ speed_dummies = renpy.random.randint(1, 6) 
+     if s_reading_lvl == 1 and turbo==2: #First book (book_08) on speed reading completed.
+        $ speed_dummies = renpy.random.randint(1, 3) 
         #$ speed_dummies = 1 #Here for testing porpoise only.
         if speed_dummies == 1: #Success.
             ">Используя изученные вами начальные методы скорочтения, вы рациональнее используете время и продолжаете читать."
             call chap_finished_xx
             call chapter_check_book_xx #Checks if the chapter just finished was the last one.
             ">Осталось еще несколько глав."
+    elif s_reading_lvl == 1: #Second book(book_08) on speed reading completed.
+        $ speed_dummies = renpy.random.randint(1, 6) 
 
-    if s_reading_lvl == 2: #Second book(book_09) on speed reading completed.
-        $ speed_dummies = renpy.random.randint(1, 3) 
+        #$ speed_dummies = 1 #Here for testing porpoise only.
+        if speed_dummies == 1: #Success.chapter_check_book_xx
+            ">Используя изученные вами продвинутые методы скорочтения, вы рациональнее используете время и продолжаете читать."
+            call chap_finished_xx
+            call chapter_check_book_xx #Checks if the chapter just finished was the last one.
+            ">Осталось еще несколько глав."
+
+    if s_reading_lvl == 2 and turbo==2: #First book (book_09) on speed reading completed.
+        $ speed_dummies = renpy.random.randint(1, 2) 
+        #$ speed_dummies = 1 #Here for testing porpoise only.
+        if speed_dummies == 1: #Success.
+            ">Используя изученные вами начальные методы скорочтения, вы рациональнее используете время и продолжаете читать."
+
+
+
+            call chap_finished_xx
+            call chapter_check_book_xx #Checks if the chapter just finished was the last one.
+            ">Осталось еще несколько глав."
+    elif s_reading_lvl == 2: #Second book(book_09) on speed reading completed.
+        $ speed_dummies = renpy.random.randint(1, 4) 
+        #$ speed_dummies = 1 #Here for testing porpoise only.
+        if speed_dummies == 1: #Success.chapter_check_book_xx
+            ">Используя изученные вами продвинутые методы скорочтения, вы рациональнее используете время и продолжаете читать."
+            call chap_finished_xx
+            call chapter_check_book_xx #Checks if the chapter just finished was the last one.
+            ">Осталось еще несколько глав."
+
+    if s_reading_lvl == 3 and turbo==2: #First book (book_10) on speed reading completed.
+        $ speed_dummies = renpy.random.randint(1, 1) 
+        #$ speed_dummies = 1 #Here for testing porpoise only.
+        if speed_dummies == 1: #Success.
+            ">Используя изученные вами начальные методы скорочтения, вы рациональнее используете время и продолжаете читать."
+            call chap_finished_xx
+            call chapter_check_book_xx #Checks if the chapter just finished was the last one.
+            ">Осталось еще несколько глав."
+    elif s_reading_lvl == 3: #Second book(book_10) on speed reading completed.
+        $ speed_dummies = renpy.random.randint(1, 2) 
         #$ speed_dummies = 1 #Here for testing porpoise only.
         if speed_dummies == 1: #Success.chapter_check_book_xx
             ">Используя изученные вами продвинутые методы скорочтения, вы рациональнее используете время и продолжаете читать."
@@ -453,7 +490,7 @@ label chapter_check_book_xx: #Checks if the chapter just finished was the last o
             $ concentration += 1
         if event.Name in ["book_05", "book_05_b", "book_06"]:     
             $ imagination +=1
-        if event.Name in ["book_08", "book_09"]:
+        if event.Name in ["book_08", "book_09", "book_10"]:
             $ s_reading_lvl +=1
         if event.Name in ["book_12", "book_13", "book_14", "book_15"]:
             $ speedwriting += 1
