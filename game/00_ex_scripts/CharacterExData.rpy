@@ -2,16 +2,18 @@
     from copy import deepcopy 
     class CharacterExData(store.object):
         # constructor - memorizing Character object
-        def __init__( self ):
+        def __init__( self, aItemCreator ):
             # currenlty dressed things
             self.mStuff = {}
             # dictionary with transforms
             self.mTransforms = {}
-            # here we'll save all items on Hermione and transforms
+            # here we'll save all items and global transforms on character
             self.mSavedItems = {}
             self.mSavedTransforms = {}
             # list of all attached views
             self.mViews = []
+            # object to create items from description in xml files
+            self.mCreator = aItemCreator
            
         ##########################################################
         # methods to save/delete attached views
@@ -35,24 +37,25 @@
         ##########################################################
 
         def addTransform( self, aTransform, aKey = 'default' ):
-            self.delTransform( aKey )            
+            self.delTransform( aKey )
             self.mTransforms[ aKey ] = aTransform
-            
             #apply transform for all items (even hiden)
             for val in self.mStuff.values():
-                self._applyTr( aTransform, val, aKey )
+                val.addTransform( aKey, aTransform )
             
         def delTransform( self, aKey = 'default' ):
             # discard transform for all items
             if aKey in self.mTransforms.keys():
                 for val in self.mStuff.values():
-                    self._discardTr( self.mTransforms[ aKey ], val, aKey )
+                    val.delTransform( aKey )
                 del self.mTransforms[ aKey ]
         
         # remove all transforms
         def clearTransforms( self ):
-            if aKey in self.mTransforms.keys():
-                self.delTransform( aKey )
+            keyset = self.mTransforms.keys()
+            for key in keyest:
+                self.delTransform( key )
+            self.mTransforms.clear()
 
 
         ##########################################################
@@ -67,24 +70,54 @@
                 return None
                 
         # add additional stuff on hermione ( permanent )
-        def addItem( self, aKey, aCharacterExItem ):
+        def addItemDirect( self, aKey, aCharacterExItem ):
             self._addItem( aKey, aCharacterExItem )
+
+        # add additional stuff on hermione ( permanent )
+        def addItem( self, aKey, aName ):
+            newItem = self.mCreator.create( aName )
+            if newItem != None:
+                self.addItemDirect( aKey, newItem )
+
+        def addItemSet( self, aSetName ):
+            self._applyToSet( aSetName, 0 )
         
         # del additional stuff on hermione ( permanent )
         def delItem( self, aKey ):
             self._delItem( aKey )
 
+        def delItemSet( self, aSetName ):
+            self._applyToSet( aSetName, 1 )
+
         # show item on hermione ( make it visible )
         def showItem( self, aKey, aSource = 'game' ):
             if aKey in self.mStuff.keys():
                 item = self.mStuff[ aKey ]
-                item.show( aSource, aKey, self )
+                item.show( aSource, aKey )
 
-        # hide item on hermione ( make it invisible )
+        # show item set on character
+        def showItemSet( self, aSetName, aSource = 'game' ):
+            self._applyToSet( aSetName, 2, aSource )
+
+        # hide item on character ( make it invisible )
         def hideItem( self, aKey, aSource = 'game' ):
             if aKey in self.mStuff.keys():
                 item = self.mStuff[ aKey ]
-                item.hide( aSource, aKey, self )
+                item.hide( aSource, aKey )
+
+        # hide item set on character
+        def hideItemSet( self, aSetName, aSource = 'game' ):
+            self._applyToSet( aSetName, 3, aSource )
+
+        # set style to item
+        def setStyleItem( self, aKey, aStyleName ):
+            curItem = self.getItem( aKey )
+            if curItem != None:
+                curItem.setStyle( aStyleName )
+
+        # set style to all items in set
+        def setStyleSet( self, aSetName, aStyleName ):
+            self._applyToSet( aSetName, 4, aStyleName )
 
         # return True, if the item with suck name exists in items on passed position
         def checkItem( self, aKey, aName ):
@@ -119,9 +152,8 @@
                 self.mStuff[ key ] = deepcopy( self.mSavedItems[ key ] )
             self.mTransforms.clear()
             for key in self.mSavedTransforms.keys():
-                self.mTransforms[ key ] = deepcopy( self.mSavedTransforms[ key ] )  
-                          
-            
+                self.mTransforms[ key ] = deepcopy( self.mSavedTransforms[ key ] )              
+
         # clears the state
         def clearState( self ):
             self.mSavedItems = {}
@@ -134,7 +166,7 @@
                 self.mStuff[ key ] = deepcopy( aCharacterEx.mStuff[ key ] )
             self.mTransforms.clear()
             for key in aCharacterEx.mTransforms.keys():
-                self.mTransforms[ key ] = deepcopy( aCharacterEx.mTransforms[ key ] )
+                self.mTransforms[ key ] = deepcopy( aCharacterEx.mTransforms[ key ] )                
             
         ##########################################################
         # methods to add/del important parts of clothes, but you still can use addItem/delItem methods
@@ -191,13 +223,13 @@
 
         def _addItem( self, aName, aData ):
             self._delItem( aName )
-            aData.onSelfAdded( self.mStuff, self )
+            aData.onSelfAdded( aName, self.mStuff, self )
             for item in self.mStuff.values():
-                item.onItemAdded( aName, aData, self )
+                item.onItemAdded( aName, aData )
             self.mStuff[ aName ] = aData
             # apply current transforms
             for key,val in self.mTransforms.iteritems():
-                self._applyTr( val, aData, key )
+                aData.addTransform( key, val )
 
         def _delItem( self, aName ):
             if aName in self.mStuff.keys():
@@ -205,21 +237,52 @@
                 del self.mStuff[ aName ]
                 data.onSelfRemoved( self.mStuff, self )
                 for item in self.mStuff.values():
-                    item.onItemRemoved( aName, data, self )        
+                    item.onItemRemoved( data )
                 
-        def _onItemHiden( self, aKey ):
+        def _onItemHiden( self, aItem ):
             for item in self.mStuff.values():
-                item.onItemHidden( aKey )  
+                item.onItemHidden( aItem )  
             
-        def _onItemShown( self, aKey ):
+        def _onItemShown( self, aItem ):
             for item in self.mStuff.values():
-                item.onItemShown( aKey )  
+                item.onItemShown( aItem )  
 
-        def _applyTr( self, aTransform, aItem, aKey ):
-            aItem.addTransform( aKey )
-            aItem.updateImage( aTransform.apply( aItem.getImage() ) )
-            
-        def _discardTr( self, aTransform, aItem, aKey ):
-            if aItem.getTransform( aKey ):
-                aItem.delTransform( aKey )
-                aItem.updateImage( aTransform.discard( aItem.getImage() ) ) 
+        # aWhatToDo == 0 - add, 1 - remove, 2 - show, 3 - hide, 4 - style
+        def _applyToSet( self, aSetName, aWhatToDo, aStringParam = None ):
+            setDesc = aItemCreator.mSetBase.getInfo( aSetName )
+            if setDesc == None:
+                return
+            if aWhatToDo == 0:
+                setItems = aItemCreator.create( aSetName )
+                for item in setItems:
+                    if item != None:
+                        self.addItemDirect( item.mKey, item )
+            elif aWhatToDo == 1:
+                for key,name in zip( setDesc.mKeys, setDesc.mNames ):
+                    if key != None:
+                        curItem = self.getItem( key )
+                        if curItem != None:
+                            if curItem.mName == name:
+                                self.delItem( key )
+            elif aWhatToDo == 2:
+                for key,name in zip( setDesc.mKeys, setDesc.mNames ):
+                    if key != None:
+                        curItem = self.getItem( key )
+                        if curItem != None:
+                            if curItem.mName == name:
+                                self.showItem( key, aStringParam )
+            elif aWhatToDo == 3:
+                for key,name in zip( setDesc.mKeys, setDesc.mNames ):
+                    if key != None:
+                        curItem = self.getItem( key )
+                        if curItem != None:
+                            if curItem.mName == name:
+                                self.hideItem( key, aStringParam )
+            elif aWhatToDo == 4:
+                for key,name in zip( setDesc.mKeys, setDesc.mNames ):
+                    if key != None:
+                        curItem = self.getItem( key )
+                        if curItem != None:
+                            if curItem.mName == name:
+                                curItem.setStyle( aStringParam )
+

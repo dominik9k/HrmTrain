@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+
+<part>
+	<!-- ключ, по которому будет добавленна вещь в список вещей персонажа -->
+	<key>body</key>
+
+	<!-- ключ, по которому будет использоваться этот объект в других xml файлах -->
+	<name>item_EXAMPLE</name>
+
+	<!-- стили. Будет описано позже. Пока что отображаются только вещи со стилем "default" -->
+	<style name = "default">
+
+		<!-- имя изображения -->
+		<frame>body.png</frame>
+
+		<!-- папка с файлом изображения или имя-константа из файла folders.xml -->
+		<folder>body</folder>
+
+		<!-- видно или нет эту вещь на экране -->
+		<visible>1</visible>
+
+		<!-- высота вещи. или число, или строка-имя с соотв. константой из файла zorders.xml -->
+		<zorder>body</zorder>
+
+		<!-- имя родителя, к которому привязывается данная вещь.
+		Если родительская вещь будет скрыта - текущая вещь так же будет скрыта -->
+		<parent></parent>
+
+		<!-- смещение рисунка, точка ( например: 0,0 ). может быть пустым -->
+		<shift></shift>
+
+		<!-- преобразования к вещи ( отзеркаливание, например ). Можно оставить пустым. -->
+		<transforms>
+		<!--
+			<transform id="transf_1" >
+				<name>flip</name>
+				<params>
+					<vertical>1</vertical>
+				</params>
+			</transform>
+		-->
+		</transforms>
+
+		<!-- тут перечень имен вещей, которые должны всегда скрываться, если добавлена эта вещь -->
+		<hidelist>
+		<!--
+			<item></item>
+			<item></item>
+		-->
+		</hidelist>
+
+		<!-- дает возможность творить фигню в игре из хмл файла. Может быть пустым -->
+		<!-- 	action type: addItem, removeItem, showItem, hideItem, setStyle ( это меняет стиль на заданный в результате )
+				possible conditions combinations:
+					event: selfAdded, selfRemoved 
+					condition type: hasItem
+					mechanic: compare params with every item existed before the self addition
+
+					event: itemAdded, itemRemoved
+					condition type: hasItem
+					mechanic: compare params with just added/removed item
+
+					event: itemShown, itemHiden
+					condition type hasItem
+					mechanic: compare params with just shown/hidden item
+				
+		-->
+		<actions>
+			<action type="addItem", event="selfAdded">
+				<body>
+					<condition type="hasItem">
+						<params>
+							<name c='e'>item_head</name>
+							<visible>1</visible>
+						</params>
+					</condition>
+				</body>
+				 
+				<!-- Возможные варианты для разных типов событий: -->
+
+				<!--	для type="addItem": 
+					<key>place_to_add</key>( если ключ начинается с *, будет добавлен сэт )
+					<name>name_of_item</name>
+				-->
+
+				<!--	для type="removeItem" / "showItem" / "hideItem": 
+					<key>place_to_hide</key> (если ключ начинается с *, будет удален/показан/скрыт сэт с таким именем )
+					<name></name> - может быть опущен
+				-->
+
+				<!--	для type="setStyle": 
+					<key>place_to_change_style</key> (если ключ начинается с *, стиль будет изменен у всех вещей в сэте )
+					<name>name_of_style</name> 
+				-->
+				<key>place_to_add</key>
+				<name>name_of_item</name> (если имя начинается со *, будет добавлен сэт)
+			</action>
+			
+			<action type="setStyle", event="selfAdded">
+				<body>
+					<condition type="hasItem">
+						<params>
+							<name>item_body</name>
+						</params>
+					</condition>
+				</body>
+				<key>hair</key>
+				<name>sexy_ponytail</name>
+			</action>
+		</actions>
+
+	</style>
+</part>

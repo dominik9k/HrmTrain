@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<part>
+	<key>body</key>
+	<name>item_body</name>
+
+	<style name="default">
+		<frame>body.png</frame>
+		<folder>body</folder>
+		<visible>1</visible>
+		<zorder>body</zorder>
+		<parent></parent>
+		<shift></shift>
+		<transforms></transforms>
+		<hidelist></hidelist>
+		<actions></actions>
+	</style>
+</part>

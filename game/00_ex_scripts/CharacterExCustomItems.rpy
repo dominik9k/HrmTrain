@@ -38,15 +38,15 @@
             else:
                 self.applyChanges( False )
             
-        def innerOnItemAdded( self, aItemKey, aItem, aCharacterEx ):
+        def innerOnItemAdded( self, aItemKey, aItem, ):
             # do not forget to call parent method!
-            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem, aCharacterEx )
+            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem )
             if 'panties' == aItemKey:
                 self.applyChanges( aItem.mIsVisible )
             
-        def innerOnItemRemoved( self, aItemKey, aItem, aCharacterEx ):
+        def innerOnItemRemoved( self, aItemKey, aItem ):
             # do not forget to call parent method!
-            CharacterExItem.innerOnItemRemoved( self, aItemKey, aItem, aCharacterEx )
+            CharacterExItem.innerOnItemRemoved( self, aItemKey, aItem )
             if 'panties' == aItemKey:
                 self.applyChanges( False )
 
@@ -66,9 +66,9 @@
                 dressItem = aItems[ 'dress' ]
                 if dressItem.mName == 'dress_normal.png':
                     self.mOldDressTex = dressItem.getImage()
-                    dressItem.updateImage( aCharacterEx.getView().mClothesFolder + "dress_lifted_skirt.png" )
+                    dressItem.updateImage( self.mOwner.getView().mClothesFolder + "dress_lifted_skirt.png" )
             # add shadow on panties
-            aCharacterEx.addItem( 'panties_shadow', CharacterExItemPantiesShadow( aCharacterEx.getView().mPoseFolder, 'shadow_with_panties.png', G_Z_POSE - 1, 'pose' ) )
+            aCharacterEx.addItem( 'panties_shadow', CharacterExItemPantiesShadow( self.mOwner.getView().mPoseFolder, 'shadow_with_panties.png', G_Z_POSE - 1, 'pose' ) )
             
         def innerOnSelfRemoved( self, aItems, aCharacterEx ):
             # do not forget to call parent method!
@@ -104,18 +104,18 @@
                 else:
                     self._hideInner( 'self' )
             
-        def innerOnItemAdded( self, aItemKey, aItem, aCharacterEx ):
+        def innerOnItemAdded( self, aItemKey, aItem ):
             # do not forget to call parent method!
-            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem, aCharacterEx )
+            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem )
             if aItemKey == 'face':
                 if aItem.mName == 'body_97.png' or aItem.mName == 'body_98.png' or aItem.mName == 'body_99.png':
                     self._showInner( 'self' )
                 else:
                     self._hideInner( 'self' )
             
-        def innerOnItemRemoved( self, aItemKey, aItem, aCharacterEx ):
+        def innerOnItemRemoved( self, aItemKey, aItem ):
             # do not forget to call parent method!
-            CharacterExItem.innerOnItemRemoved( self, aItemKey, aItem, aCharacterEx )
+            CharacterExItem.innerOnItemRemoved( self, aItemKey, aItem )
             if aItemKey == 'face':
                 self._hideInner( 'self' )
 
@@ -130,7 +130,7 @@
             CharacterExItem.innerOnSelfAdded( self, aItems, aCharacterEx )
             for key,item in aItems.iteritems():
                 if item != self and item.mZOrder < G_Z_FACE:
-                    aCharacterEx.hideItem( key, self.__class__.__name__ )
+                    self.mOwner.hideItem( key, self.__class__.__name__ )
                        
         def innerOnSelfRemoved( self, aItems, aCharacterEx ):
             # do not forget to call parent method!
@@ -139,11 +139,11 @@
                 if item != self and item.mZOrder < G_Z_FACE:
                     aCharacterEx.showItem( key, self.__class__.__name__ )                 
             
-        def innerOnItemAdded( self, aItemKey, aItem, aCharacterEx ):
+        def innerOnItemAdded( self, aItemKey, aItem ):
             # do not forget to call parent method!
-            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem, aCharacterEx )
+            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem )
             if aItem.mZOrder < G_Z_FACE:
-                aCharacterEx.hideItem( aItemKey, self.__class__.__name__ ) 
+                self.mOwner.hideItem( aItemKey, self.__class__.__name__ ) 
 
     ########################################################################################
     # we need additional class for splatters (body 169, 170, 171)
@@ -161,9 +161,9 @@
                 else:
                     self._hideInner( 'self' )
             
-        def innerOnItemAdded( self, aItemKey, aItem, aCharacterEx ):
+        def innerOnItemAdded( self, aItemKey, aItem ):
             # do not forget to call parent method!
-            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem, aCharacterEx )
+            CharacterExItem.innerOnItemAdded( self, aItemKey, aItem )
             if aItemKey == 'face':
                 if aItem.mName == 'body_169.png' or aItem.mName == 'body_170.png' or aItem.mName == 'body_171.png':
                     self._showInner( 'self' )
