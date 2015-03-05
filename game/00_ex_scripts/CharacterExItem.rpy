@@ -165,16 +165,16 @@ init -998 python:
         def addTransform( self, aName, aTransform ):
             if aName in self.mTransforms.keys():
                 tr = self.mTransforms[ aName ]
-                tr.discard( self.image )
                 del self.mTransforms[ aName ]
+                self.image = tr.discard( self.image )
+            self.image = aTransform.apply( self.image )
             self.mTransforms[ aName ] = aTransform
-            aTransform.apply( self.image )
                 
         def delTransform( self, aName ):
             if aName in self.mTransforms.keys():
                 tr = self.mTransforms[ aName ]
-                tr.discard( self.image )
                 del self.mTransforms[ aName ]
+                self.image = tr.discard( self.image )
 
         def clearTransforms( self ):
             keys = self.mTransforms.keys()
@@ -239,34 +239,49 @@ init -998 python:
 
         def _applyStyle( self, aStyleName ):
             desc = self.mStyles[ aStyleName ]
-            self.mFileName = desc.mFrame
-            self.mFileFolder = desc.mFileFolder
 
-            self.image = self.mFileFolder + self.mFileName
-            self.zorder = desc.mZOrder
-            self.position = desc.mShift
-            self.parent = desc.mParent
-            self.mIsVisible = desc.mIsVisible
+            if desc.mFrame != None:
+                self.mFileName = desc.mFrame
+            if desc.mFileFolder != None:
+                self.mFileFolder = desc.mFileFolder
 
-            del self.mHideList[:]
-            for elem in desc.mHideList:
-                self.mHideList.append( elem )
+            if desc.mFrame != None or desc.mFileFolder != None:
+                self.image = self.mFileFolder + self.mFileName
+            if desc.mZOrder != None:
+                self.zorder = desc.mZOrder
+            if desc.mShift != None:
+                self.position = desc.mShift
+            if desc.mParent != None:
+                self.parent = desc.mParent
+            if desc.mIsVisible != None:
+                self.mIsVisible = desc.mIsVisible
+
+            if desc.mHideList != None:
+                del self.mHideList[:]
+                for elem in desc.mHideList:
+                    self.mHideList.append( elem )
             
             # map with transforms
-            self.mTransforms.clear()
+            if desc.mTransforms != None:
+                self.mTransforms.clear()
+                for key,val in desc.mTransforms.iteritems():
+                    self.addTransform( key, CharacterExTransform.create( val ) )
 
-            # clear actions
-            for elem in self.mActions:
-                del elem[:]
-            # create new
-            for actDesc in desc.mActions:
-                actNew = CharacterExItemAction.create( actDesc )
-                self.mActions[ actNew.mIndex ] = actNew
+
+            if desc.mActions != None:
+                # clear actions
+                for elem in self.mActions:
+                    del elem[:]
+                # create new
+                for actDesc in desc.mActions:
+                    actNew = CharacterExItemAction.create( actDesc )
+                    self.mActions[ actNew.mIndex ] = actNew
 
             # hide need-to-hide items
             if self.mOwner != None:
                 for key in self.mHideList:
                     self.mOwner.hideItem( key, self.mName )
+
 
             # here we somehow should check newly added actions
             # ???

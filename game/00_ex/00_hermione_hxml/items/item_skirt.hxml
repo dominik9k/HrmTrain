@@ -15,4 +15,8 @@
 		<hidelist></hidelist>
 		<actions></actions>
 	</style>
+	<style name="short">
+		<frame>skirt_short.png</frame>
+		<folder>clothes</folder>
+	</style>
 </part>

@@ -1,32 +1,28 @@
-﻿
+﻿# тут инитим всякую фигню для персонажей и xml загрузки
+init python:
+    # declare variables
+    global Hermione_FB
+    global Hermione_OB
+    global Hermione_IB
+    global Hermione_SB
+
+    # initing variables
+    Hermione_FB = CharacterExFolderBase()
+    Hermione_OB = CharacterExOrderBase()
+    Hermione_IB = CharacterExItemBase()
+    Hermione_SB = CharacterExSetBase()
+
+    global Hermione_ItemCreator
+    Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB )
+
+    # fill variables
+    Hermione_FB.read( '00_ex/00_hermione_hxml/folders.hxml' )
+    Hermione_OB.read( '00_ex/00_hermione_hxml/zorders.hxml' )
+    Hermione_IB.read( '00_ex/00_hermione_hxml/items/', Hermione_FB, Hermione_OB )
+    Hermione_SB.read( '00_ex/00_hermione_hxml/sets/', Hermione_IB )
 
 
 init:
-    # тут инитим всякую фигню для персонажей и xml загрузки
-    python:
-        # declare variables
-        global Hermione_FB
-        global Hermione_OB
-        global Hermione_IB
-        global Hermione_SB
-
-        # initing variables
-        Hermione_FB = CharacterExFolderBase()
-        Hermione_OB = CharacterExOrderBase()
-        Hermione_IB = CharacterExItemBase()
-        Hermione_SB = CharacterExSetBase()
-
-        global Hermione_ItemCreator
-        Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB, Hermione_FB, Hermione_OB )
-
-        # fill variables
-        Hermione_FB.read( '00_ex/00_hermione_hxml/folders.hxml' )
-        Hermione_OB.read( '00_ex/00_hermione_hxml/zorders.hxml' )
-        Hermione_IB.read( '00_ex/00_hermione_hxml/items/', Hermione_FB, Hermione_OB )
-        Hermione_SB.read( '00_ex/00_hermione_hxml/sets/', Hermione_IB )
-
-
-
     # Scenario initialization
     python:
         global arr
@@ -4846,7 +4842,7 @@ label start:
         # dialogue-face view
         global herViewHead     
         
-    $ herData = CharacterExData( Hermione_ItemCreator )
+    $ herData = CharacterExData( WTXmlLinker.gerHermioneLinkerKey() )
     $ herData.clearState()
     
     $ herView = CharacterExView( 5, her, 'hermione' )

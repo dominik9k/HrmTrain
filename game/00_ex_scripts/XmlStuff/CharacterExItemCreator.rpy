@@ -1,8 +1,6 @@
 ﻿init -998 python:
     class CharacterExItemCreator:
-        def __init__( self, aItemBase, aSetBase, aFolderBase, aOrderBase ):
-            self.mFolderBase = aFolderBase
-            self.mZOrderBase = aOrderBase
+        def __init__( self, aItemBase, aSetBase ):
             self.mItemBase = aItemBase
             self.mSetBase = aSetBase
 

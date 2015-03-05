@@ -2,7 +2,8 @@
     from copy import deepcopy 
     class CharacterExData(store.object):
         # constructor - memorizing Character object
-        def __init__( self, aItemCreator ):
+        def __init__( self, aLinkerKey ):
+            self.mLinkerKey = aLinkerKey    #special key to ask XmlLinker for apropriate objects
             # currenlty dressed things
             self.mStuff = {}
             # dictionary with transforms
@@ -13,7 +14,7 @@
             # list of all attached views
             self.mViews = []
             # object to create items from description in xml files
-            self.mCreator = aItemCreator
+            #self.mCreator = aItemCreator
            
         ##########################################################
         # methods to save/delete attached views
@@ -38,25 +39,24 @@
 
         def addTransform( self, aTransform, aKey = 'default' ):
             self.delTransform( aKey )
-            self.mTransforms[ aKey ] = aTransform
             #apply transform for all items (even hiden)
             for val in self.mStuff.values():
                 val.addTransform( aKey, aTransform )
+            self.mTransforms[ aKey ] = aTransform
             
         def delTransform( self, aKey = 'default' ):
             # discard transform for all items
             if aKey in self.mTransforms.keys():
+                del self.mTransforms[ aKey ]
                 for val in self.mStuff.values():
                     val.delTransform( aKey )
-                del self.mTransforms[ aKey ]
         
         # remove all transforms
         def clearTransforms( self ):
-            keyset = self.mTransforms.keys()
-            for key in keyest:
+            keys = self.mTransforms.keys()
+            for key in keys:
                 self.delTransform( key )
             self.mTransforms.clear()
-
 
         ##########################################################
         # methods to manipulate items of character
@@ -75,7 +75,7 @@
 
         # add additional stuff on hermione ( permanent )
         def addItem( self, aKey, aName ):
-            newItem = self.mCreator.create( aName )
+            newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName )
             if newItem[0] != None:
                 self.addItemDirect( aKey, newItem[0] )
 
@@ -252,11 +252,11 @@
         def _applyToSet( self, aSetName, aWhatToDo, aStringParam = None ):
             if aSetName[0] != '*':
                 aSetName = '*' + aSetName
-            setDesc = self.mCreator.mSetBase.getInfo( aSetName )
+            setDesc = WTXmlLinker.c( self.mLinkerKey ).mSetBase.getInfo( aSetName )
             if setDesc == None:
                 return
             if aWhatToDo == 0:
-                setItems = self.mCreator.create( aSetName )
+                setItems = WTXmlLinker.c( self.mLinkerKey ).create( aSetName )
                 for item in setItems:
                     if item != None:
                         self.addItemDirect( item.mKey, item )

@@ -18,11 +18,18 @@
         # aNamedParameters = { 'vertical' : True, 'horizontal': False }
         # all paramters can be ommited
         #
-        def __init__( self, aTransformName, aNamedParameters ):
+        def __init__( self, aTransformName, aNamedParameters, aId = "" ):
+            self.mId = aId   # unique key for transform
             self.mName = aTransformName
-            self.mParams = aNamedParameters
+            self.mParams = aNamedParameters # map with (string-value)
             self._initVariables()
-            
+           
+        # static constructor to create from description
+        @staticmethod
+        def create( aDescription ):
+            item = CharacterExTransform( aDescription.mName, aDescription.mParams, aDescription.mId )
+            return item
+
         def apply( self, aImage ):
             # for now, as there are only flip - use if block
             result = aImage
@@ -48,8 +55,8 @@
                 self.mVer = False
                 param = 'horizontal'
                 if param in self.mParams.keys():
-                    self.mHor = self.mParams[ param ]
+                    self.mHor = bool( self.mParams[ param ] )
                 param = 'vertical'
                 if param in self.mParams.keys():
-                    self.mVer = self.mParams[ param ]
+                    self.mVer = bool( self.mParams[ param ] )
             

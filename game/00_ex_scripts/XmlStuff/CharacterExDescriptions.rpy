@@ -10,12 +10,13 @@
             self._read( aElementRoot )
 
         #
-        def _read( self, aElementRoot, aFolderBase, aOrderBase ):
+        def _read( self, aElementRoot ):
             for child in aElementRoot:
                 if child.tag == 'name':
                     self.mName = child.text
-                else:
-                    self.mParams[ child.tag ] = child.text
+                elif child.tag == 'params':
+                    for param in child:
+                        self.mParams[ param.tag ] = param.text
 
 
     class CharacterExDescriptionActionCondition(store.object):
@@ -66,10 +67,10 @@
                 if child.tag == 'body':
                     for condition in child:
                         self.mConditions.append( CharacterExDescriptionActionCondition( aElementRoot, aFolderBase, aOrderBase ) )
-                if child.tag == 'key':
+                elif child.tag == 'key':
                     for key in child.text.split(','):
                         self.mKeys.append( key )
-                if child.tag == 'name':
+                elif child.tag == 'name':
                     for name in child.text.split(','):
                         self.mNames.append( name )
             
@@ -77,8 +78,7 @@
 
     class CharacterExDescriptionStyle(store.object):
         #
-        def __init__( self, aElementRoot, aItemName, aFolderBase, aOrderBase ):
-            self.mName = aItemName
+        def _fillValuesForDefault( self ):
             self.mFrame = ""
             self.mFileFolder = ""
             self.mZOrder = 0
@@ -89,6 +89,21 @@
             self.mHideList = [] # array of strings
             self.mActions = []  # array of actions descriptions
 
+        def __init__( self, aStyleName, aElementRoot, aItemName, aFolderBase, aOrderBase ):
+            self.mName = aItemName
+            self.mFrame = None
+            self.mFileFolder = None
+            self.mZOrder = None
+            self.mParent = None
+            self.mIsVisible = True
+            self.mShift = None
+            self.mTransforms = None # map of transform descriptions
+            self.mHideList = None # array of strings
+            self.mActions = None  # array of actions descriptions
+
+            if aStyleName == 'default':
+                self._fillValuesForDefault()
+
             self._read( aElementRoot, aFolderBase, aOrderBase )
 
         # read self from xml
@@ -96,15 +111,15 @@
             for child in aElementRoot:
                 if child.tag == 'frame':
                     self.mFrame = child.text
-                if child.tag == 'folder':
+                elif child.tag == 'folder':
                     self.mFileFolder = aFolderBase.get( child.text )
-                if child.tag == 'zorder':
+                elif child.tag == 'zorder':
                     self.mZOrder = aOrderBase.get( child.text )
-                if child.tag == 'visible':
+                elif child.tag == 'visible':
                     self.mIsVisible = bool( child.text )
-                if child.tag == 'parent':
+                elif child.tag == 'parent':
                     self.mParent = child.text
-                if child.tag == 'shift':
+                elif child.tag == 'shift':
                     if child.text != '':
                         posText = child.text
                         if posText != None:
@@ -113,16 +128,22 @@
                                 positions.append( int( pos ) )
                             self.mShift = Transform( pos = ( positions[0], positions[1] ) )
                 
-                if child.tag == 'transforms':
+                elif child.tag == 'transforms':
+                    if self.mTransforms == None:
+                            self.mTransforms = {}
                     for trSingle in child:
                         trId = trSingle.get('id')
-                        self.mTransforms[ trId ] = CharacterExDescriptionTransform( actSingle, trId )
+                        self.mTransforms[ trId ] = CharacterExDescriptionTransform( trSingle, trId )
 
-                if child.tag == 'hidelist':
+                elif child.tag == 'hidelist':
+                    if self.mHideList == None:
+                            self.mHideList = []
                     for hideItem in child:
                         self.mHideList.append( hideItem.text )
 
-                if child.tag == 'actions':
+                elif child.tag == 'actions':
+                    if self.mActions == None:
+                            self.mActions = []
                     for actSingle in child:
                         self.mActions.append( CharacterExDescriptionAction( actSingle, aFolderBase, aOrderBase ) )
 
@@ -143,11 +164,11 @@
             for child in aXmlRoot:
                 if child.tag == 'key':
                     self.mKey = child.text
-                if child.tag == 'name':
+                elif child.tag == 'name':
                     self.mName = child.text
 
             # and only then - styles
             for child in aXmlRoot:
                 if child.tag == 'style':
                     styleKey = child.get('name')
-                    self.mStyles[ styleKey ] = CharacterExDescriptionStyle( child, self.mName, aFolderBase, aOrderBase )
+                    self.mStyles[ styleKey ] = CharacterExDescriptionStyle( styleKey, child, self.mName, aFolderBase, aOrderBase )

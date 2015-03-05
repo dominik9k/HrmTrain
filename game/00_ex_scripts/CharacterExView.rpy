@@ -95,7 +95,7 @@ init -998 python:
                 # now just change image on existing face-item
                 face = self.mData.getItem( 'face' )
                 if face != None:
-                    face.changeImage( self.mData.mCreator.mFolderBase.get( 'face' ), aFace )
+                    face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace )
                 #self.mData.addFace( CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
 
             #renpy.show_screen( "CharacterExViewScreen", self.mStuff, aPos )
@@ -130,7 +130,7 @@ init -998 python:
         def addFaceName( self, aFace ):
             face = self.mData.getItem( 'face' )
             if face != None:
-                face.changeImage( self.mData.mCreator.mFolderBase.get( 'face' ), aFace )
+                face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace )
             #self.mData.addItem( 'face', CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
 
         ##########################################################
