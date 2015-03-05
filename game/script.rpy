@@ -2,6 +2,30 @@
 
 
 init:
+    # тут инитим всякую фигню для персонажей и xml загрузки
+    python:
+        # declare variables
+        global Hermione_FB
+        global Hermione_OB
+        global Hermione_IB
+        global Hermione_SB
+
+        # initing variables
+        Hermione_FB = CharacterExFolderBase()
+        Hermione_OB = CharacterExOrderBase()
+        Hermione_IB = CharacterExItemBase()
+        Hermione_SB = CharacterExSetBase()
+
+        global Hermione_ItemCreator
+        Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB, Hermione_FB, Hermione_OB )
+
+        # fill variables
+        Hermione_FB.read( '00_ex/00_hermione_hxml/folders.hxml' )
+        Hermione_OB.read( '00_ex/00_hermione_hxml/zorders.hxml' )
+        Hermione_IB.read( '00_ex/00_hermione_hxml/items/', Hermione_FB, Hermione_OB )
+        Hermione_SB.read( '00_ex/00_hermione_hxml/sets/', Hermione_IB )
+
+
 
     # Scenario initialization
     python:
@@ -4822,7 +4846,7 @@ label start:
         # dialogue-face view
         global herViewHead     
         
-    $ herData = CharacterExData()
+    $ herData = CharacterExData( Hermione_ItemCreator )
     $ herData.clearState()
     
     $ herView = CharacterExView( 5, her, 'hermione' )
@@ -4833,14 +4857,16 @@ label start:
     $ herViewHead.attach( herData )
 
     # lets use saved stuff system, so now fill hermione items
-    $ herView.data().addLegs( CharacterExItem( herView.mBodyFolder, "legs_universal.png", G_Z_LEGS ) )
-    $ herView.data().addPanties( CharacterExItem( herView.mClothesFolder, "panties_normal.png", G_Z_PANTIES ) )
-    $ herView.data().addSkirt( CharacterExItem( herView.mClothesFolder, "skirt_normal.png", G_Z_SKIRT ) )
-    $ herView.data().addHands( CharacterExItem( herView.mBodyFolder, "hands_universal.png", G_Z_HANDS ) )
-    $ herView.data().addBody( CharacterExItem( herView.mBodyFolder, "body.png", G_Z_BODY ) )
-    $ herView.data().addTits( CharacterExItem( herView.mBodyFolder, "tits.png", G_Z_TITS ) )
-    $ herView.data().addDress( CharacterExItemDress( herView.mClothesFolder, "dress_normal.png", G_Z_DRESS ) )
-    $ herView.data().addFace( CharacterExItem( herView.mFaceFolder, "body_01.png", G_Z_FACE ) )
+    #$ herView.data().addLegs( CharacterExItem( herView.mBodyFolder, "legs_universal.png", G_Z_LEGS ) )
+    #$ herView.data().addPanties( CharacterExItem( herView.mClothesFolder, "panties_normal.png", G_Z_PANTIES ) )
+    #$ herView.data().addSkirt( CharacterExItem( herView.mClothesFolder, "skirt_normal.png", G_Z_SKIRT ) )
+    #$ herView.data().addHands( CharacterExItem( herView.mBodyFolder, "hands_universal.png", G_Z_HANDS ) )
+    #$ herView.data().addBody( CharacterExItem( herView.mBodyFolder, "body.png", G_Z_BODY ) )
+    #$ herView.data().addTits( CharacterExItem( herView.mBodyFolder, "tits.png", G_Z_TITS ) )
+    #$ herView.data().addDress( CharacterExItemDress( herView.mClothesFolder, "dress_normal.png", G_Z_DRESS ) )
+    #$ herView.data().addFace( CharacterExItem( herView.mFaceFolder, "body_01.png", G_Z_FACE ) )
+    # test new stuff! load all this with one set!
+    $herView.data().addItemSet( 'initial_game_set' )
 
     # Ending class initialization
     call Ending_constants

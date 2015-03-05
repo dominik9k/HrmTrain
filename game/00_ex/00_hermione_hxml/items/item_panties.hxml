@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<part>
+	<key>panties</key>
+	<name>item_panties</name>
+
+	<style name="default">
+		<frame>panties_normal.png</frame>
+		<folder>clothes</folder>
+		<visible>1</visible>
+		<zorder>panties</zorder>
+		<parent></parent>
+		<shift></shift>
+		<transforms></transforms>
+		<hidelist></hidelist>
+		<actions></actions>
+	</style>
+</part>

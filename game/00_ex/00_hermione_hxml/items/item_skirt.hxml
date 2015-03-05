@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<part>
+	<key>skirt</key>
+	<name>item_skirt</name>
+
+	<style name="default">
+		<frame>skirt_normal.png</frame>
+		<folder>clothes</folder>
+		<visible>1</visible>
+		<zorder>skirt</zorder>
+		<parent></parent>
+		<shift></shift>
+		<transforms></transforms>
+		<hidelist></hidelist>
+		<actions></actions>
+	</style>
+</part>

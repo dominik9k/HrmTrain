@@ -21,7 +21,7 @@
     
     return
 
-init -999 python:
+init -998 python:
 
     class CharacterExItem(store.object):
         # some kind of enumerator
@@ -57,8 +57,8 @@ init -999 python:
             # stuff for actions
             # self.mActions is an array of arrays
             self.mActions = []
-            for num in range( _indItemCount ):
-                self._mActions.append( [] )
+            for num in range( CharacterExItem._indItemCount ):
+                self.mActions.append( [] )
 
             # map with transforms
             self.mTransforms = {}
@@ -71,34 +71,35 @@ init -999 python:
         def __init__( self, aFolder, aName, aOrder, aParent = None, aPos = None ):
             self._create_vars()
 
-            self.mName = aName
+            self.mFileName = aName
             self.mFileFolder = aFolder
-            self.mImage = aFolder + aName
-            self.mZOrder = aOrder
-            self.mItemPos = Transform( pos = ( 0, 0 ) ) 
+            self.image = aFolder + aName
+            self.zorder = aOrder
+            self.position = Transform( pos = ( 0, 0 ) ) 
             if aPos is not None:
-                self.mItemPos = aPos
+                self.position = aPos
             # parent of item, should be string key or None. When parent item is hiden, this item also hide, and the same with showing parent
-            self.mParent = aParent
+            self.parent = aParent
 
             # here is the list of keys to hide with this item
-            self.mHideList = []
             self._fillHideList()
 
         # new constructor
-        def __init__( self, aName, aStylesMap ):
+        def __init__( self, aDescription ):
             self._create_vars()
 
-            self.mName = aName
-            self.mStyles = aStylesMap   # map of styleDescriptions
+            self.mKey = aDescription.mKey
+            self.mName = aDescription.mName
+            self.mStyles = aDescription.mStyles   # map of styleDescriptions
 
             # set current style to 'default'
             self.setStyle( 'default' )
             self._fillHideList()
 
         # static constructor to create from description
+        @staticmethod
         def create( aDescription ):
-            item = CharacterExItem( aDescription.mName, aDescription.mStyles )
+            item = CharacterExItem( aDescription )
             return item
 
 
@@ -117,15 +118,25 @@ init -999 python:
             return self.mActiveStyle
 
         ##########################################################
+        # call this to change only image of the item ( including path and name )
+        ##########################################################  
+
+        # used for face changing
+        def changeImage( self, aImageFolder, aImageName ):
+            self.mFileName = aImageName
+            self.mFileFolder = aImageFolder
+            self.image = aImageFolder + aImageName
+
+        ##########################################################
         # modify image methods
         ##########################################################
         
         def updateImage( self, aImage ):
             # here we can change image ( for example, make im.Flip action to the image, and save it here )
-            self.mImage = aImage
+            self.image = aImage
         
         def getImage( self ):
-            return self.mImage
+            return self.image
             
         ##########################################################
         # show/hide methods
@@ -135,7 +146,7 @@ init -999 python:
             prevVis = self.mIsVisible
             self._hideInner( aSource )
             if prevVis != self.mIsVisible:
-                self.mOwner._onItemHiden( aKey, self )
+                self.mOwner._onItemHiden( self )
                 for inKey in self.mHideList:
                     self.mOwner.showItem( inKey, self.mName )
                 
@@ -143,7 +154,7 @@ init -999 python:
             prevVis = self.mIsVisible            
             self._showInner( aSource )
             if prevVis != self.mIsVisible:
-                self.mOwner._onItemShown( aKey, self )
+                self.mOwner._onItemShown( self )
                 for inKey in self.mHideList:
                     self.mOwner.hideItem( inKey, self.mName )    
 
@@ -183,8 +194,8 @@ init -999 python:
         def onSelfAdded( self, aKey, aItems, aCharacterEx ):
             self.mOwner = aCharacterEx
             self.mKey = aKey
-            if self.mParent in aItems:
-                if not aItems[ self.mParent ].mIsVisible:
+            if self.parent in aItems:
+                if not aItems[ self.parent ].mIsVisible:
                     self._hideInner( 'parent' )
             self.innerOnSelfAdded( aItems )
 
@@ -196,17 +207,17 @@ init -999 python:
             self.innerOnItemAdded( aItem )
             
         def onItemRemoved( self, aItem ):
-            if aItem.mKey == self.mParent:
+            if aItem.mKey == self.parent:
                 self._showInner( 'parent' )
             self.innerOnItemRemoved( aItem )
             
         def onItemHidden( self, aItem ):
-            if aItem.mKey == self.mParent:
+            if aItem.mKey == self.parent:
                 self._hideInner( 'parent' )
             self.innerOnItemHidden( aItem )
             
         def onItemShown( self, aItem ):
-            if aItem.mKey == self.mParent:
+            if aItem.mKey == self.parent:
                 self._showInner( 'parent' )
             self.innerOnItemShown( aItem )
 
@@ -245,12 +256,12 @@ init -999 python:
             self.mTransforms.clear()
 
             # clear actions
-            for elem in self._mActions:
+            for elem in self.mActions:
                 del elem[:]
             # create new
             for actDesc in desc.mActions:
                 actNew = CharacterExItemAction.create( actDesc )
-                self._mActions[ actNew.mIndex ] = actNew
+                self.mActions[ actNew.mIndex ] = actNew
 
             # hide need-to-hide items
             if self.mOwner != None:
@@ -281,20 +292,20 @@ init -999 python:
             # we can add additional items, needed for this item, to HermioneView
             for key in self.mHideList:
                 self.mOwner.hideItem( key, self.mName )
-            self._applyAction( _indSelfAdded, self.mOwner, aItems )
+            self._applyAction( CharacterExItem._indSelfAdded, self.mOwner, aItems )
             
         def innerOnSelfRemoved( self, aItems ):
             # this called just after deleting SELF from Hermione
             for key in self.mHideList:
                 self.mOwner.showItem( key, self.mName )
-            self._applyAction( _indSelfRemoved, self.mOwner, aItems )
+            self._applyAction( CharacterExItem._indSelfRemoved, self.mOwner, aItems )
         
         def innerOnItemAdded( self, aItem ):
             # this called when other new item added to Hermione, and THIS item is existed before it
             # we can add additional items, needed for this item, to HermioneView
-            if aItemKey in self.mHideList:
-                self.mOwner.hideItem( aItemKey, self.mName )
-            self._applyAction( _indItemAdded, self.mOwner, None, aItem )
+            if aItem.mKey in self.mHideList:
+                self.mOwner.hideItem( aItem.mKey, self.mName )
+            self._applyAction( CharacterExItem._indItemAdded, self.mOwner, None, aItem )
             
         def innerOnItemRemoved( self, aItem ):
             # this called when other new item added to Hermione, and THIS item is existed before it
@@ -302,13 +313,13 @@ init -999 python:
             # item is removed... fuck all!
             #if aItemKey in self.mHideList:
             #    aCharacterEx.showItem( aItemKey, self.mName )
-            self._applyAction( _indItemRemoved self.mOwner, None, aItem )
+            self._applyAction( CharacterExItem._indItemRemoved, self.mOwner, None, aItem )
 
         def innerOnItemHidden( self, aItem ):
             # this called when other item is hidden
-            self._applyAction( _indItemHidden, self.mOwner, None, aItem )
+            self._applyAction( CharacterExItem._indItemHidden, self.mOwner, None, aItem )
             
         def innerOnItemShown( self, aItem ):
             # this called when other item is shown
-            self._applyAction( _indItemShown, self.mOwner, None, aItem )
+            self._applyAction( CharacterExItem._indItemShown, self.mOwner, None, aItem )
            

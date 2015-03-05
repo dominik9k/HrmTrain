@@ -2,22 +2,22 @@
     import itertools
     ###########################################################
     class CharacterExItemActionComparer(store.object):
-        def _compE( valCond, valCheck ):
+        def _compE( self, valCond, valCheck ):
             return valCond == valCheck
 
-        def _compNE( valCond, valCheck ):
+        def _compNE( self, valCond, valCheck ):
             return valCond != valCheck
 
-        def _compG( valCond, valCheck ):
+        def _compG( self, valCond, valCheck ):
             return valCond < valCheck
 
-        def _compL( valCond, valCheck ):
+        def _compL( self, valCond, valCheck ):
             return valCond > valCheck
 
-        def _compGE( valCond, valCheck ):
+        def _compGE( self, valCond, valCheck ):
             return valCond <= valCheck
 
-        def _compLE( valCond, valCheck ):
+        def _compLE( self, valCond, valCheck ):
             return valCond >= valCheck
 
         def __init__( self ):
@@ -28,9 +28,11 @@
             self.mParamIsVisible = None # can be ( 1 or 0 (True or False), comp )
             self.mParamZOrder = None   # can be ( int, comp )
 
+        @staticmethod
         def create( aParams ):
             comp = CharacterExItemActionComparer()
-            mapMeth = { 'e': _compE, 'ne' : _compNE, 'l' : _compL, 'g': _compG, 'ge' : _compGE, 'le' : _compLE }
+            mapMeth = { 'e': comp._compE, 'ne' : comp._compNE, 'l' : comp._compL, 'g': comp._compG,
+                 'ge' : comp._compGE, 'le' : comp._compLE }
 
             for name,tup in aParams.iteritems():
                 ( val, meth ) = tup
@@ -79,6 +81,7 @@
             self.mType = None   # can be ( string, comp )
             self.mComparers = []    # array of comparers
 
+        @staticmethod
         def create( aConditionDescription ):
             desc = aConditionDescription
             cond = CharacterExItemActionCondition()
@@ -113,11 +116,14 @@
             self.mNames = []   # array of strings ( names of items/sets )
             self.mConditions = []   #array of conditions
 
+        @staticmethod
         def create( aActionDescription ):
             desc = aActionDescription
 
-            actMap = { 'selfAdded' : _indSelfAdded, 'selfRemoved' : _indSelfRemoved, 'itemAdded' : _indItemAdded, 
-                'itemRemoved' : _indItemRemoved, 'itemShown' : _indItemShown, 'itemHiden' : _indItemHidden }
+            actMap = { 'selfAdded' : CharacterExItemAction._indSelfAdded, 
+                'selfRemoved' : CharacterExItemAction._indSelfRemoved, 'itemAdded' : CharacterExItemAction._indItemAdded, 
+                'itemRemoved' : CharacterExItemAction._indItemRemoved, 'itemShown' : CharacterExItemAction._indItemShown,
+                'itemHiden' : CharacterExItemAction._indItemHidden }
             act = CharacterExItemAction()
 
             if desk.mEvent in actMap.keys():
@@ -164,19 +170,19 @@
                     else:
                         aCharacterEx.addItem( key, name )
             elif self.mType == 'removeItem':
-                for key self.mKeys:
+                for key in self.mKeys:
                     if key[0] == '*':
                         aCharacterEx.delItemSet( key )
                     else:
                         aCharacterEx.delItem( key )
             elif self.mType == 'showItem':
-                for key self.mKeys:
+                for key in self.mKeys:
                     if key[0] == '*':
                         aCharacterEx.showItemSet( key, aParentItem.mName )
                     else:
                         aCharacterEx.showItem( key, aParentItem.mName )
             elif self.mType == 'hideItem':
-                for key self.mKeys:
+                for key in self.mKeys:
                     if key[0] == '*':
                         aCharacterEx.hideItemSet( key, aParentItem.mName )
                     else:

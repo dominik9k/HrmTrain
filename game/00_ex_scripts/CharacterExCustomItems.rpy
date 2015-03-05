@@ -1,4 +1,4 @@
-﻿init -998 python:
+﻿init -997 python:
     ########################################################################################
     # we need additional class for dress ( to hide tits )
     class CharacterExItemDress( CharacterExItem ):

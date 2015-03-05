@@ -1,4 +1,4 @@
-﻿init -998 python:
+﻿init -999 python:
     import xml.etree.ElementTree as ET
 
     class CharacterExItemBase:
@@ -19,7 +19,7 @@
             opened = ET.parse( renpy.loader.transfn( aFilePath ) )
             root = opened.getroot()
             itemDesc = CharacterExDescriptionItem( root, aFolderBase, aZOrderBase )
-            self.mItems[ itemDesc.mKey ] = itemDesc
+            self.mItems[ itemDesc.mName ] = itemDesc
 
         # return ItemDesctiption or None
         # remember to NOT CHANGE the obtained descriptions

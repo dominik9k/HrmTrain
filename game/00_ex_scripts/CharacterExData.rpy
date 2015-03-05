@@ -76,8 +76,8 @@
         # add additional stuff on hermione ( permanent )
         def addItem( self, aKey, aName ):
             newItem = self.mCreator.create( aName )
-            if newItem != None:
-                self.addItemDirect( aKey, newItem )
+            if newItem[0] != None:
+                self.addItemDirect( aKey, newItem[0] )
 
         def addItemSet( self, aSetName ):
             self._applyToSet( aSetName, 0 )
@@ -224,9 +224,10 @@
         def _addItem( self, aName, aData ):
             self._delItem( aName )
             aData.onSelfAdded( aName, self.mStuff, self )
-            for item in self.mStuff.values():
-                item.onItemAdded( aName, aData )
             self.mStuff[ aName ] = aData
+            for item in self.mStuff.values():
+                if item != aData:
+                    item.onItemAdded( aData )
             # apply current transforms
             for key,val in self.mTransforms.iteritems():
                 aData.addTransform( key, val )
@@ -249,11 +250,13 @@
 
         # aWhatToDo == 0 - add, 1 - remove, 2 - show, 3 - hide, 4 - style
         def _applyToSet( self, aSetName, aWhatToDo, aStringParam = None ):
-            setDesc = aItemCreator.mSetBase.getInfo( aSetName )
+            if aSetName[0] != '*':
+                aSetName = '*' + aSetName
+            setDesc = self.mCreator.mSetBase.getInfo( aSetName )
             if setDesc == None:
                 return
             if aWhatToDo == 0:
-                setItems = aItemCreator.create( aSetName )
+                setItems = self.mCreator.create( aSetName )
                 for item in setItems:
                     if item != None:
                         self.addItemDirect( item.mKey, item )

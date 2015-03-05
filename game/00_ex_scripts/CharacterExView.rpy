@@ -1,13 +1,11 @@
 ﻿screen CharacterExViewScreen( aData, aPos ):   
     python:
         dataToSort = aData.values()
-        sorted_data = sorted( dataToSort, key = lambda item: item.mZOrder )
+        sorted_data = sorted( dataToSort, key = lambda item: item.zorder )
     for element in sorted_data:
         if element.mIsVisible == True:
-            if element.mIsAdditional == False:
-                add element.getImage() at aPos
-            else:
-                add element.getImage() at gSumPos( aPos, element.mItemPos )
+            add element.getImage() at gSumPos( aPos, element.position )
+                
     
     #this variable is defined below, it's changed from the CharacterEx class
     zorder _CharacterExViewScreenZOrder
@@ -23,14 +21,14 @@ init -998 python:
             self.mCh = aCharacter
             self.mUniqName = aUniqName
             
-            # memorize default pathes
-            self.mBodyFolder = "00_ex/00_hermione/body/"
-            self.mClothesFolder = "00_ex/00_hermione/clothes/"
-            self.mFaceFolder = "00_ex/00_hermione/face/"
-            self.mPoseFolder = "00_ex/00_hermione/pose/"
-            self.mMiscFolder = "00_ex/00_hermione/misc/"
+#            # memorize default pathes
+#            self.mBodyFolder = "00_ex/00_hermione/body/"
+#            self.mClothesFolder = "00_ex/00_hermione/clothes/"
+#            self.mFaceFolder = "00_ex/00_hermione/face/"
+#            self.mPoseFolder = "00_ex/00_hermione/pose/"
+#            self.mMiscFolder = "00_ex/00_hermione/misc/"
 
-            # z odrder of called screen
+            # z order of called screen
             self.mZOrderScreen = zOrder
             self.mTagScreen = self.__class__.__name__ + '_' + self.mUniqName;
             
@@ -94,7 +92,12 @@ init -998 python:
         # show hermione screen with saved parameters
         def showQ( self, aFace, aPos, aTransition = None ):
             if aFace is not None:
-                self.mData.addFace( CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
+                # now just change image on existing face-item
+                face = self.mData.getItem( 'face' )
+                if face != None:
+                    face.changeImage( self.mData.mCreator.mFolderBase.get( 'face' ), aFace )
+                #self.mData.addFace( CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
+
             #renpy.show_screen( "CharacterExViewScreen", self.mStuff, aPos )
             self._showView( self.mData.mStuff, aPos )
             if aTransition is not None:
@@ -125,7 +128,10 @@ init -998 python:
         
         # additional function for face to pass only file name
         def addFaceName( self, aFace ):
-            self.mData.addItem( 'face', CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
+            face = self.mData.getItem( 'face' )
+            if face != None:
+                face.changeImage( self.mData.mCreator.mFolderBase.get( 'face' ), aFace )
+            #self.mData.addItem( 'face', CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
 
         ##########################################################
         # DO NOT CALL CALL THESE METHODS FROM THE OUTER CODE! ONLY FROM THE CLASS, THEY'RE INNER!

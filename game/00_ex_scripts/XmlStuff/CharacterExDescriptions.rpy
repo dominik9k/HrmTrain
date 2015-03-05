@@ -10,15 +10,11 @@
             self._read( aElementRoot )
 
         #
-        def create( self ):
-            None
-
-        #
         def _read( self, aElementRoot, aFolderBase, aOrderBase ):
             for child in aElementRoot:
                 if child.tag == 'name':
                     self.mName = child.text
-                else
+                else:
                     self.mParams[ child.tag ] = child.text
 
 
@@ -36,10 +32,6 @@
             # g - greater
             # ne - not equal
             self._read( aElementRoot, aFolderBase, aOrderBase )
-
-        #
-        def create( self ):
-            None
 
         #
         def _read( self, aElementRoot, aFolderBase, aOrderBase ):
@@ -105,19 +97,21 @@
                 if child.tag == 'frame':
                     self.mFrame = child.text
                 if child.tag == 'folder':
-                    self.mFileFolder == aFolderBase.get( child.text )
+                    self.mFileFolder = aFolderBase.get( child.text )
                 if child.tag == 'zorder':
-                    self.mZOrder == aOrderBase.get( child.text )
+                    self.mZOrder = aOrderBase.get( child.text )
                 if child.tag == 'visible':
-                    self.mIsVisible == bool( child.text )
+                    self.mIsVisible = bool( child.text )
                 if child.tag == 'parent':
-                    self.mParent == child.text
+                    self.mParent = child.text
                 if child.tag == 'shift':
                     if child.text != '':
-                        positions = []
-                        for pos in child.text.split( ',' ):
-                            positions.append( int( pos ) )
-                        self.mShift = Transform( pos = ( positions[0], positions[1] ) )
+                        posText = child.text
+                        if posText != None:
+                            positions = []
+                            for pos in child.text.split( ',' ):
+                                positions.append( int( pos ) )
+                            self.mShift = Transform( pos = ( positions[0], positions[1] ) )
                 
                 if child.tag == 'transforms':
                     for trSingle in child:
@@ -140,25 +134,20 @@
             self.mKey = ""
             self.mName = ""
             self.mStyles = {}
-            self.mFOLDERS = aFolderBase
-            self.mORDERS = aOrderBase
-            self._read( aXmlRoot )
+            self._read( aXmlRoot, aFolderBase, aOrderBase )
 
-        #
-        def create( self ):
-            return ( self.mKey, CharacterExItem.create( self ) )
 
         # read self from xml
-        def _read( self, aXmlRoot ):
+        def _read( self, aXmlRoot, aFolderBase, aOrderBase ):
             # first of all we should read this two items
-            for child in root:
+            for child in aXmlRoot:
                 if child.tag == 'key':
                     self.mKey = child.text
                 if child.tag == 'name':
-                    self.mName == child.text
+                    self.mName = child.text
 
             # and only then - styles
-            for child in root:
+            for child in aXmlRoot:
                 if child.tag == 'style':
                     styleKey = child.get('name')
-                    self.mStyles[ styleKey ] = CharacterExDescriptionStyle( child, self.mName, self.mFOLDERS, self.mORDERS )
+                    self.mStyles[ styleKey ] = CharacterExDescriptionStyle( child, self.mName, aFolderBase, aOrderBase )

@@ -1,6 +1,8 @@
 ﻿init -998 python:
     class CharacterExItemCreator:
-        def __init__( self, aItemBase, aSetBase ):
+        def __init__( self, aItemBase, aSetBase, aFolderBase, aOrderBase ):
+            self.mFolderBase = aFolderBase
+            self.mZOrderBase = aOrderBase
             self.mItemBase = aItemBase
             self.mSetBase = aSetBase
 
@@ -17,7 +19,7 @@
         # return list of items from set
         def createSet( self, aSetName ):
             setItems = self.mSetBase.get( aSetName )
-            if setName != None:
+            if setItems != None:
                 resList = []
                 for item in setItems:
                     resList.append( self.createItem( item ) )

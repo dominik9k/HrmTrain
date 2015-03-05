@@ -1,4 +1,4 @@
-﻿init -998 python:
+﻿init -999 python:
     import xml.etree.ElementTree as ET
 
     class CharacterExSetInfo:
@@ -7,7 +7,7 @@
             self.mKeys = []
             self._createInfo( aItemBase )
 
-        def _createInfo( aItemBase ):
+        def _createInfo( self, aItemBase ):
             for item in self.mNames:
                 desc = aItemBase.get( item )
                 if desc != None:
@@ -42,11 +42,11 @@
                     self.mSetInfos[ setKey ] = CharacterExSetInfo( setItems, aItemBase )
                     self.mSets[ setKey ] = setItems
 
-        def extend( self, aItemBase ):
-
 
         # return None or list of set items
         def get( self, aSetName ):
+            if aSetName[0] == '*':
+                aSetName = aSetName[1:]
             if aSetName in self.mSets.keys():
                 return self.mSets[ aSetName ]
             else:
@@ -54,6 +54,8 @@
 
         # return None or setinfo
         def getInfo( self, aSetName ):
+            if aSetName[0] == '*':
+                aSetName = aSetName[1:]
             if aSetName in self.mSetInfos.keys():
                 return self.mSetInfos[ aSetName ]
             else:

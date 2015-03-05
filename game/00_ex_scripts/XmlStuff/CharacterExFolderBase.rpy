@@ -1,4 +1,4 @@
-﻿init -998 python:
+﻿init -999 python:
     import xml.etree.ElementTree as ET
 
     class CharacterExFolderBase:
@@ -7,7 +7,7 @@
            self.mSynonyms = {}
 
         # this should be called at the beginning of the game, path is the location of folders.xml file
-        def read( aFolderFilePath ):
+        def read( self, aFolderFilePath ):
             opened = ET.parse( renpy.loader.transfn( aFolderFilePath ) )
             root = opened.getroot()
             
@@ -19,7 +19,7 @@
                 self.mSynonyms[ key ] = path
 
         # aValue should be string
-        def get( aValue ):
+        def get( self, aValue ):
             if aValue in self.mSynonyms.keys():
                 return self.mSynonyms[ aValue ]
             else:

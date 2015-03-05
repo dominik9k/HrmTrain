@@ -1,4 +1,4 @@
-﻿init -998 python:
+﻿init -999 python:
     import xml.etree.ElementTree as ET
 
     class CharacterExOrderBase:
