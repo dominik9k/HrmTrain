@@ -8,6 +8,7 @@ label new_request_04:
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас.)\"":
+            $event.NotFinished()
             jump new_personal_request
     
     
@@ -16,7 +17,8 @@ label new_request_04:
         jump too_much
         
     elif whoring >= 3 and whoring <= 5: # LEVEL 02 # Hermione is hesitant. 
-        $ new_request_04_01 = True # Hearts.
+#        $ new_request_04_01 = True # Hearts.
+
         hide bld1
         with d3
         m "Подойди, девочка..."
@@ -142,9 +144,11 @@ label new_request_04:
                 her_head_main "Оу........."
 
     if whoring >= 6: # LEVEL 03 and higher # Hermione doesn't mind. <============================================================================EVENT LEVEL: 03
-        $ new_request_04_02 = True # Hearts.
-        if whoring > 8: # LEVEL 03.
-            $ new_request_04_03 = True # Hearts.
+#        $ new_request_04_02 = True # Hearts.
+
+#        if whoring > 8: # LEVEL 03.
+#            $ new_request_04_03 = True # Hearts.
+
         stop music fadeout 2.0
         m "Подойди ближе, девочка... Я хочу сделать тебе массаж груди..."
         $her_head_state = 14
@@ -214,6 +218,7 @@ label new_request_04:
         
 
 
+    $SetHearts(GetStage(whoring, 3, 3, 3))
 
     if whoring <= 5:
         $ whoring +=1
@@ -245,7 +250,7 @@ label new_request_04:
     $ gryffindor +=15
     m "\"Гриффиндор\" получает 15 очков!"
     
-    $ request_04_points += 1
+#    $ request_04_points += 1
    
    
     $ hermione_chibi_xpos = 400 #Near the desk.

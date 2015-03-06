@@ -268,13 +268,13 @@ label snape_chitchat:
             $ s_sprite = "03_hp/10_snape_main/snape_05.png"                                                                            #SNAPE
             show screen snape_main                                                                                                                  #SNAPE
             with d3                                                                                                                                                   #SNAPE
-            sna "Хех, \"Движение прав человека\"...?"
+            sna "Хех, \"Движение за права мужчин\"...?"
             hide screen snape_main                                                                                                                   #SNAPE
             with d3                                                                                                                                                  #SNAPE
             $ s_sprite = "03_hp/10_snape_main/snape_04.png"                                                                            #SNAPE
             show screen snape_main                                                                                                                  #SNAPE
             with d3                                                                                                                                                   #SNAPE
-            sna "Что дальше? Ассоциация по восстановлению независимости эльфов?"
+            sna "Что дальше? Ассоциация по освобождению эльфов?"
             hide screen snape_main                                                                                                                   #SNAPE
             with d3                                                                                                                                                  #SNAPE
             $ s_sprite = "03_hp/10_snape_main/snape_06.png"                                                                            #SNAPE
