@@ -254,10 +254,10 @@ label cupboard:
                     menu:
                         "Включить ТУРБО-режим" if turbo==1: 
                             $turbo=2
-                            "ТУРБО-режим включен. Теперь ваши действия будут приносить вам вдвое больше денег и очков факультету Слизерина."                    
+                            "ТУРБО-режим включен. Теперь ваши действия будут приносить вам вдвое больше денег и очков факультету Слизерина.\n Шанс на прочтение дополнительной главы вдвое больше."                    
                         "Выключить ТУРБО-режим" if turbo==2: 
                             $turbo=1
-                            "ТУРБО-режим выключен. Теперь ваши действия будут приносить вам обычное количество денег и очков факультету Слизерина."                    
+                            "ТУРБО-режим выключен. Теперь ваши действия будут приносить вам обычное количество денег и очков факультету Слизерина.\n Шанс на прочтение дополнительной главы стандартный."                    
                         "ЧИТ: +100 очков Слизерину":
                             hide screen points
                             $slytherin+=100
@@ -277,7 +277,7 @@ label cupboard:
                     jump cupboard
 
         "- Священные свитки. Часть I -" if not day == 1 and cataloug_found:
-            label sc_col_men:
+            label sc_col_men_1:
             menu:
                 "- С.01: [scroll_01_name] -" if sscroll_01 or persistent.ss_01:
                     $ the_gift = "03_hp/19_extras/01.png" # SACRED SCROLL 01.
@@ -288,7 +288,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.02: [scroll_02_name] -" if sscroll_02 or persistent.ss_02:
                     $ the_gift = "03_hp/19_extras/02.png" # SACRED SCROLL 02.
@@ -299,7 +299,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.03: [scroll_03_name] -" if sscroll_03 or persistent.ss_03:
                     $ the_gift = "03_hp/19_extras/03.png" # SACRED SCROLL 03.
@@ -310,7 +310,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.04: [scroll_04_name] -" if sscroll_04 or persistent.ss_04:
                     $ the_gift = "03_hp/19_extras/04.png" # SACRED SCROLL 04.
@@ -321,7 +321,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.05: [scroll_05_name] -" if sscroll_05 or persistent.ss_05:
                     $ the_gift = "03_hp/19_extras/05.png" # SACRED SCROLL 05.
@@ -332,7 +332,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.06: [scroll_06_name] -" if sscroll_06 or persistent.ss_06:
                     $ the_gift = "03_hp/19_extras/06.png" # SACRED SCROLL 06.
@@ -343,7 +343,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.07: [scroll_07_name] -" if sscroll_07 or persistent.ss_07:
                     $ the_gift = "03_hp/19_extras/07.png" # SACRED SCROLL 07.
@@ -354,7 +354,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.08: [scroll_08_name] -" if sscroll_08 or persistent.ss_08:
                     $ the_gift = "03_hp/19_extras/08.png" # SACRED SCROLL 08.
@@ -365,7 +365,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.09: [scroll_09_name] -" if sscroll_09 or persistent.ss_09:
                     $ the_gift = "03_hp/19_extras/09.png" # SACRED SCROLL 09.
@@ -376,7 +376,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                     
                 "- С.10: [scroll_10_name] -" if sscroll_10 or persistent.ss_10:
                     $ the_gift = "03_hp/19_extras/10.png" # SACRED SCROLL 10.
@@ -387,7 +387,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                 
                 "- С.11: [scroll_11_name] -" if sscroll_11 or persistent.ss_11:
                     $ the_gift = "03_hp/19_extras/11.png" # SACRED SCROLL 10.
@@ -398,9 +398,9 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                 
-                "- С.02: [scroll_12_name] -" if sscroll_12 or persistent.ss_12:
+                "- С.12: [scroll_12_name] -" if sscroll_12 or persistent.ss_12:
                     $ the_gift = "03_hp/19_extras/12.png" # SACRED SCROLL 10.
                     show screen gift
                     show screen ctc
@@ -409,9 +409,9 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                 
-                "- С.03: [scroll_13_name] -" if sscroll_13 or persistent.ss_10:
+                "- С.13: [scroll_13_name] -" if sscroll_13 or persistent.ss_10:
                     $ the_gift = "03_hp/19_extras/10.png" # SACRED SCROLL 10.
                     show screen gift
                     show screen ctc
@@ -420,9 +420,9 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                 
-                "- С.04: [scroll_14_name] -" if sscroll_14 or persistent.ss_14:
+                "- С.14: [scroll_14_name] -" if sscroll_14 or persistent.ss_14:
                     $ the_gift = "03_hp/19_extras/14.png" # SACRED SCROLL 10.
                     show screen gift
                     show screen ctc
@@ -431,9 +431,9 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
                 
-                "- С.05: [scroll_15_name] -" if sscroll_15 or persistent.ss_15:
+                "- С.15: [scroll_15_name] -" if sscroll_15 or persistent.ss_15:
                     $ the_gift = "03_hp/19_extras/15.png" # SACRED SCROLL 15.
                     show screen gift
                     show screen ctc
@@ -442,14 +442,14 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_1
 
                 "- Ничего -":
                     jump cupboard
             
             
         "- Священные свитки. Часть II -" if not day == 1 and cataloug_found:
-            label sc_col_men:
+            label sc_col_men_2:
             menu:
                 "- С.16: [scroll_16_name] -" if sscroll_16 or persistent.ss_16:
                     $ the_gift = "03_hp/19_extras/16.png" # SACRED SCROLL 01.
@@ -460,7 +460,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.17: [scroll_17_name] -" if sscroll_17 or persistent.ss_17:
                     $ the_gift = "03_hp/19_extras/17.png" # SACRED SCROLL 02.
@@ -471,7 +471,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.18: [scroll_18_name] -" if sscroll_18 or persistent.ss_18:
                     $ the_gift = "03_hp/19_extras/18.png" # SACRED SCROLL 03.
@@ -482,7 +482,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.19: [scroll_19_name] -" if sscroll_19 or persistent.ss_19:
                     $ the_gift = "03_hp/19_extras/19.png" # SACRED SCROLL 04.
@@ -493,7 +493,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.20: [scroll_20_name] -" if sscroll_20 or persistent.ss_20:
                     $ the_gift = "03_hp/19_extras/20.png" # SACRED SCROLL 05.
@@ -504,7 +504,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.21: [scroll_21_name] -" if sscroll_12 or persistent.ss_12:
                     $ the_gift = "03_hp/19_extras/21.png" # SACRED SCROLL 21.
@@ -515,7 +515,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.22: [scroll_22_name] -" if sscroll_22 or persistent.ss_22:
                     $ the_gift = "03_hp/19_extras/22.png" # SACRED SCROLL 22.
@@ -526,7 +526,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.23: [scroll_23_name] -" if sscroll_23 or persistent.ss_23:
                     $ the_gift = "03_hp/19_extras/23.png" # SACRED SCROLL 23.
@@ -537,7 +537,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.24: [scroll_24_name] -" if sscroll_24 or persistent.ss_24:
                     $ the_gift = "03_hp/19_extras/24.png" # SACRED SCROLL 24.
@@ -548,7 +548,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                     
                 "- С.25: [scroll_25_name] -" if sscroll_25 or persistent.ss_25:
                     $ the_gift = "03_hp/19_extras/25.png" # SACRED SCROLL 25.
@@ -559,7 +559,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                 
                 "- С.26: [scroll_26_name] -" if sscroll_26 or persistent.ss_26:
                     $ the_gift = "03_hp/19_extras/26.png" # SACRED SCROLL 26.
@@ -570,7 +570,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                 
                 "- С.27: [scroll_27_name] -" if sscroll_27 or persistent.ss_27:
                     $ the_gift = "03_hp/19_extras/27.png" # SACRED SCROLL 27.
@@ -581,7 +581,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                 
                 "- С.28: [scroll_28_name] -" if sscroll_28 or persistent.ss_28:
                     $ the_gift = "03_hp/19_extras/28.png" # SACRED SCROLL 28.
@@ -592,7 +592,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                 
                 "- С.29: [scroll_29_name] -" if sscroll_29 or persistent.ss_29:
                     $ the_gift = "03_hp/19_extras/29.png" # SACRED SCROLL 29.
@@ -603,9 +603,9 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
                 
-                "- С.05: [scroll_30_name] -" if sscroll_30 or persistent.ss_30:
+                "- С.30: [scroll_30_name] -" if sscroll_30 or persistent.ss_30:
                     $ the_gift = "03_hp/19_extras/30.png" # SACRED SCROLL 30.
                     show screen gift
                     show screen ctc
@@ -614,7 +614,7 @@ label cupboard:
                     hide screen gift
                     hide screen ctc
                     with d3
-                    jump sc_col_men
+                    jump sc_col_men_2
 
                 "- Ничего -":
                     jump cupboard

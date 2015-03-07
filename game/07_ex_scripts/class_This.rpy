@@ -30,7 +30,8 @@ init -992 python:
     # Каждый раз при переходе по метке происходит проверка - не имя ли ивента метка? Если да, переменной event присваивается значение, согласно текущей метке
                 if this(s)!=None:
     # Если перешли на метку, которая есть ивент, автоматически запускается увеличение счетчика стартов-финишей. 
-    # Случаи, когда ивент завершается на середине (и требуют уменьшания счетчика финишей) обрабатываются в коде самого ивента                
+    # Случаи, когда ивент завершается на середине (и требуют уменьшения счетчика финишей) обрабатываются в коде самого ивента                
+                    debug.SaveString("event.IncPassed()="+s+"   "+this().Name)
                     this().IncPassed()
 
         except Exception:
@@ -52,7 +53,8 @@ init -992 python:
 
     def Execute(e, s, condition=True):
         if not condition: return False
-        s=s.replace("_e.", "this.GetCall('"+e.Name+"').")
+        if e!=None:
+            s=s.replace("_e.", "this.GetCall('"+e.Name+"').")
         exec s
         return True
 
@@ -66,6 +68,35 @@ init -992 python:
         if o in onetimeSet:
             availSet-={o}                
         return o
+
+    def GetStage(value, minValue, maxLevel=3, step=3): # Получить фазу в которой находится прохождение ивента. 0 - невозможно пройти, дальше - уровни
+        value=value-minValue
+        if value<0: return 0
+        if int(value/step)+1>=maxLevel: return maxLevel
+        return int(value/step)+1
+
+    def OnValueChange(e, subKey, oldVal, newVal):
+        if ("NIGHT" in e._points): # Если вторая половина публичной услуги - произвести случайный выбор варианта
+            s="one_out_of_three=RandFromSet(_e._availChoices)" 
+            if e.Name=="new_request_30_complete":
+                s="one_out_of_three=RandFromSet(_e._availChoices,{1})"
+            Execute(e,s, subKey=="startCount")  
+        return
+
+    def SetHearts(heartCount): # Установить количество сердечек текущему ивенту
+        return event.SetValue("heartCount",heartCount)
+
+    def IsFirstRun(): # Это первый запуск текущего ивента?
+        return IsRunNumber(1) 
+
+    def IsNextRun(): # Не первый 
+        return IsRunNumberOrMore(2)
+
+    def IsRunNumber(num): # Это запуск номер num
+        return event._finishCount==num
+
+    def IsRunNumberOrMore(num): # Это запуск номер num или последующий?
+        return event._finishCount>=num
 
 
 #    def OnJumpExecute(loc, target, expression):

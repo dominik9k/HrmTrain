@@ -1,7 +1,8 @@
 ###################REQUEST_22 (Level 06) (55 pt.) (Blowjob). 
 label new_request_22: #LV.6 (Whoring = 15 - 17)
     $herView.hideQQ()
-    if request_22_points == 0:
+    if IsFirstRun():
+#    if request_22_points == 0:
         m "{size=-4}(Попросить девчонку сделать мне минет?){/size}"
     else:
         m "{size=-4}(Попросить девчонку сделать мне еще один минет?){/size}"
@@ -12,13 +13,15 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
             with d3
             pass
         "\"(Не сейчас.)\"":
+            $event.NotFinished()
             jump new_personal_request
             
  
     $ pos = POS_140
     $ herView.data().saveState()
 
-    if request_22_points == 0: # FIRST EVENT <============================================================== EVENT 01
+    if IsFirstRun(): # FIRST EVENT <============================================================== EVENT 01
+#    if request_22_points == 0: # FIRST EVENT <============================================================== EVENT 01
         m "Мисс Гренджер??"
         $herView.hideshowQQ( "body_01.png", pos )
         her "Да, профессор?"
@@ -108,7 +111,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
                 hide screen g_c_u # NOT SUCKING
                 with d3                      #  NOT SUCKING
                 $herViewHead.showQ( "body_122.png", posHead )
-                her2 "Но мы не получаем той популярости и максимальной поддержки, какой хотелось бы..."
+                her2 "Но мы не получаем той популярости и поддержки, какой хотелось бы..."
                 hide screen h_c_u   # SUCKING
                 show screen g_c_u # SUCKING
                 with d3                      #  SUCKING
@@ -131,7 +134,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
                 $herViewHead.hideQ()
                 m "Что ты имеешь в виду?"
                 $herViewHead.showQ( "body_16.png", posHead )
-                her2 "\"ОЗМП\" О половом равенстве."
+                her2 "\"ОЗМП\" о половом равенстве."
                 her2 "Мы не против обмена очков на услуги для учителей..."
                 her2 "Мы против полового неравенства, которое подразумевает под собой этого рода услуги за очки..."
                 $herViewHead.hideQ()
@@ -146,7 +149,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
                 $herViewHead.hideQ()
                 her "*Кулдык!* *Хлюп!* *Хлюп!*"
                 m "Да, намного лучше..."
-                m "Но вы по прежнему против подобных услуг, верно?"
+                m "Но вы по-прежнему против подобных услуг, верно?"
                 her "*Хлюп--"
                 show screen h_c_u   # NOT SUCKING
                 hide screen g_c_u # NOT SUCKING
@@ -544,7 +547,8 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
 
         
         
-    elif request_22_points == 1: #  <============================================================== EVENT 02
+    elif IsRunNumber(2): #  <============================================================== EVENT 02
+#    elif request_22_points == 1: #  <============================================================== EVENT 02
         m "Мисс Гренджер?"
         $herView.hideshowQQ( "body_01.png", pos )
         her "Сэр?"
@@ -561,22 +565,18 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
             m "???"
             "\"Прекрасно. Никаких очков! Уходи!\"":
                 play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
-                $herView.hideQQ()
-                $herView.showQQ( "body_24.png", pos )
+                $herView.hideshowQQ( "body_24.png", pos )
                 her "Сэр, успокойтесь, пожалуйста."
                 m "Покиньте кабинет, мисс Грейнджер!"
-                $herView.hideQQ()
-                $herView.showQQ( "body_24.png", pos )
+                $herView.hideshowQQ( "body_24.png", pos )
                 her "Cэр, все что я сказала - было не всерьез."
                 m "Что?"
             "\"Эм, извините?\"":
                 stop music fadeout 1.0
-                $herView.hideQQ()
-                $herView.showQQ( "body_06.png", pos )
+                $herView.hideshowQQ( "body_06.png", pos )
                 her "*хи-хи*"
                 m "Хмм?"
-                $herView.hideQQ()
-                $herView.showQQ( "body_24.png", pos )
+                $herView.hideshowQQ( "body_24.png", pos )
                 play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
                 her "Поняла... cэр."
                 m "Что?"
@@ -595,7 +595,9 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
 
         jump blowjob_jumping
   
-    elif request_22_points >= 2: # <============================================================== EVENT 03
+  
+    elif IsRunNumberOrMore(3): # <============================================================== EVENT 03
+#    elif request_22_points >= 2: # <============================================================== EVENT 03
         play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
         m "Соси мой член, девочка."
         $herView.hideshowQQ( "body_45.png", pos )
@@ -1146,14 +1148,15 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
 
     
     
-    if request_22_points == 0:
-        $ new_request_22_01 = True #  HEARTS
-    if request_22_points == 1:
-        $ new_request_22_02 = True #  HEARTS
-    if request_22_points >= 2:
-        $ new_request_22_03 = True #  HEARTS
+#    if request_22_points == 0:
+#        $ new_request_22_01 = True #  HEARTS
+#    if request_22_points == 1:
+#        $ new_request_22_02 = True #  HEARTS
+#    if request_22_points >= 2:
+#        $ new_request_22_03 = True #  HEARTS
 
-    $ request_22_points += 1
+#    $ request_22_points += 1
+    $SetHearts(SetStage(event._finishCount,1,1,1))
 
     hide screen bld1
     $herView.hideQ()

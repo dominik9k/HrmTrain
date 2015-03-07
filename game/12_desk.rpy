@@ -220,26 +220,15 @@ label reading_book_xx:
     
     call chapter_check_book_xx #Checks if the chapter just finished was the last one.
     
-    ">Осталось еще несколько глав."       
     
 #===### SPEED READING FOR DUMMIES BONUS CHECK ###
-    if s_reading_lvl == 1: #First book (book_08) on speed reading completed.
-        $ speed_dummies = renpy.random.randint(1, 6) 
-        #$ speed_dummies = 1 #Here for testing porpoise only.
-        if speed_dummies == 1: #Success.
+    if s_reading_lvl>0:
+        $ speed_dummies = Rand([60,30,20][s_reading_lvl-1]//turbo)  # Массив содержит размер интервала для расчета вероятности. Первая книга 10/60 шансов прочитать доп. главу, вторая 10/30, 3-я 10/20 . В режиме турбо интервал уменьшается вдвое
+        if speed_dummies <= 10: #Success.
             ">Используя изученные вами начальные методы скорочтения, вы рациональнее используете время и продолжаете читать."
             call chap_finished_xx
             call chapter_check_book_xx #Checks if the chapter just finished was the last one.
-            ">Осталось еще несколько глав."
-
-    if s_reading_lvl == 2: #Second book(book_09) on speed reading completed.
-        $ speed_dummies = renpy.random.randint(1, 3) 
-        #$ speed_dummies = 1 #Here for testing porpoise only.
-        if speed_dummies == 1: #Success.chapter_check_book_xx
-            ">Используя изученные вами продвинутые методы скорочтения, вы рациональнее используете время и продолжаете читать."
-            call chap_finished_xx
-            call chapter_check_book_xx #Checks if the chapter just finished was the last one.
-            ">Осталось еще несколько глав."
+#            ">Осталось еще несколько глав."
 
 #===#############################################       
 
@@ -251,7 +240,10 @@ label reading_book_xx:
             ">Дождь за окном успокаивает вас, и вы отлично себя чувствуете, читая..."
             call chap_finished_xx
             call chapter_check_book_xx #Checks if the chapter just finished was the last one.
-            ">Осталось еще несколько глав."
+#            ">Осталось еще несколько глав."
+
+    ">Осталось еще несколько глав."       
+
 
     if fire_in_fireplace:
         hide screen reading_near_fire

@@ -14,6 +14,11 @@ init:
         this=This()
         global event
 
+    python:
+        global debug
+    $debug=Debug()
+    $debug.SaveHeader()
+
 
 
 # Описание сценария от начала до открытия покупки сексуальных услуг
@@ -37,21 +42,28 @@ init:
         this.Where({"NIGHT"})   .AddStep("event_15:her_wants_buy",   ready = lambda e: e.prev.IsAgo(7))
 
 
+        li={"01":"\"Поговори со мной\"", "02": "\"Отличные трусики!\"", "04":"\"Полапать грудь!\"", "05":"Полапать попку!", "08":"\"Покажи их мне!\"", 
+            "11":"\"Станцуй для меня!\"", "12":"\"Дай мне потрогать их!\"", "16":"\"Потрогай меня!\"", "22":"\"Соси его!\"", "29":"\"Давай займемся сексом!\"", "31":"\"Время для анала!\""}
+        for s in li:
+            this.AddEvent("new_request_"+s+"::"+li[s], points={"private"}, defVals={"heartCount": 0}) 
+
+#Where({"hearts"},s)
 
 # Отчеты Гермионы о публичных ивентах (за исключением 30_a, он - днем). Публичные ивенты состоят из 2-х частей. Днем - задание (обычный вызов из пункта меню) и отчет вечером 
 # Можно избавиться и от десятка переменных первоначальной версии, а прогресс хранить в специальном поле объекта Event, но это приведет к довольно серьезной правке кода, что чревато ошибками. 
 # Так что только убираем флажки можно/нельзя выполнять, а прогресс пусть остается во внешних переменных, как был
         tu=["02_b", "02_c", "03", "10", "15", "20", "23", "24", "30"]
         for s in tu:
-            fn=lambda e, subKey, oldVal, newVal: Execute(e,"one_out_of_three=RandFromSet(_e._availChoices)", subKey=="startCount") 
-            if s=="30":
-                fn=lambda e, subKey, oldVal, newVal: Execute(e,"one_out_of_three=RandFromSet(_e._availChoices,{1})", subKey=="startCount")   #GetValue('availChoices')
-
             s="new_request_"+s
-            this.AddEvent(s) 
+            # 3-й ивент добавляем здесь, он должен по порядку идти перед завершающим
+            if s=="new_request_03": 
+                this.AddEvent(s+"::\"Вор трусиков\"", points={"private"}, defVals={"heartCount": 0}, 
+                OnChange=lambda e, subKey, oldVal, newVal: OnValueChange(e, subKey, oldVal, newVal))
+            else:
+                this.AddEvent(s, points={"public"}) 
             s+="_complete"
             this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount==e.prevInList._finishCount, defVals={"availChoices":{1,2,3}},
-                OnChange=fn  ) # После срабатывания предыдущего это условие done нарушается и ивент готов к запуску. Нет ограничений по кол-ву запусков
+                OnChange=lambda e, subKey, oldVal, newVal: OnValueChange(e, subKey, oldVal, newVal)  ) # После срабатывания предыдущего это условие done нарушается и ивент готов к запуску. Нет ограничений по кол-ву запусков
 
 
 # Следующее событие (первый раз трахнуться с одноклассниками) НЕ помещено в главный сценарий. 
@@ -94,9 +106,10 @@ init:
 
             ("book_08::\"Скорочтение для чайников\"",     50, "03_hp/18_store/08.png", "Эта книга содержит несколько базовых методов, которые помогут вам улучшить навык скорочтения.",
                 "большой шанс прочесть дополнительную главу, во время чтения."),
-            ("book_09::\"Скорочтение для экспертов\"",    90, "03_hp/18_store/08.png", "Эта книга содержит несколько экспертных методов, которые помогут вам улучшить навык скорочтения.",
+            ("book_09::\"Скорочтение для любителей\"",    90, "03_hp/18_store/08.png", "Эта книга содержит несколько продвинутых методов, которые помогут вам улучшить навык скорочтения.",
                 "большой шанс освоить дополнительную главу, во время чтения."),
-
+            ("book_10::\"Скорочтение для экспертов\"",    150, "03_hp/18_store/08.png", "Эта книга содержит несколько экспертных методов, которые помогут вам улучшить навык скорочтения.",
+                "большой шанс освоить дополнительную главу, во время чтения."),
             ("book_06::\"Игра Кресел\"",                 100, "03_hp/18_store/02.png", "Эпический рассказ о предательстве, убийствах и изнасилованиях, а затем еще несколько убийств, немного больше предательства и еще больше изнасилований.",
                 "В результате мое воображение улучшилось.\nНо больше я не стану читать эту хрень!"),
             ("book_07::\"Моя дорогая вайфу\"",           300, "03_hp/18_store/03.png", "Переживите славные дни в вашей школе. Ваша сводная сестра Ши, учительница Мисс Стивенс или таинственная девушка из библиотеки? Кто станет вашей окончательной \"вайфу\"?",
@@ -4955,53 +4968,53 @@ label start:
 
 ### HEARTS ###
 
-    $  new_request_01_01 = False # Talk to me.
-    $  new_request_01_02 = False
-    $  new_request_01_03 = False
+#    $  new_request_01_01 = False # Talk to me.
+#    $  new_request_01_02 = False
+#    $  new_request_01_03 = False
     
-    $ new_request_02_01 = False #SHOW ME YOUR PANTIES
-    $ new_request_02_02 = False #SHOW ME YOUR PANTIES
-    $ new_request_02_03 = False #SHOW ME YOUR PANTIES
+#    $ new_request_02_01 = False #SHOW ME YOUR PANTIES
+#    $ new_request_02_02 = False #SHOW ME YOUR PANTIES
+#    $ new_request_02_03 = False #SHOW ME YOUR PANTIES
     
-    $ new_request_03_01 = False # "Give me your panties" 
-    $ new_request_03_02 = False # "Give me your panties" 
-    $ new_request_03_03 = False # "Give me your panties" 
+#    $ new_request_03_01 = False # "Give me your panties" 
+#    $ new_request_03_02 = False # "Give me your panties" 
+#    $ new_request_03_03 = False # "Give me your panties" 
     
-    $ new_request_04_01 = False # (Touch tits's through fabric.)
-    $ new_request_04_02 = False # (Touch tits's through fabric.)
-    $ new_request_04_03 = False # (Touch tits's through fabric.)
+#    $ new_request_04_01 = False # (Touch tits's through fabric.)
+#    $ new_request_04_02 = False # (Touch tits's through fabric.)
+#    $ new_request_04_03 = False # (Touch tits's through fabric.)
     
-    $ new_request_05_01 = False # (BUTT MOLESTER).
-    $ new_request_05_02 = False # (BUTT MOLESTER).
-    $ new_request_05_03 = False # (BUTT MOLESTER).
+#    $ new_request_05_01 = False # (BUTT MOLESTER).
+#    $ new_request_05_02 = False # (BUTT MOLESTER).
+#    $ new_request_05_03 = False # (BUTT MOLESTER).
     
-    $ new_request_08_01 = False # (Show me tits).
-    $ new_request_08_02 = False # (Show me tits).
-    $ new_request_08_03 = False # (Show me tits).
+#    $ new_request_08_01 = False # (Show me tits).
+#    $ new_request_08_02 = False # (Show me tits).
+#    $ new_request_08_03 = False # (Show me tits).
 
-    $ new_request_11_01 = False # (Dance for me.)
-    $ new_request_11_02 = False # (Dance for me.)
-    $ new_request_11_03 = False # (Dance for me.)
+#    $ new_request_11_01 = False # (Dance for me.)
+#    $ new_request_11_02 = False # (Dance for me.)
+#    $ new_request_11_03 = False # (Dance for me.)
     
-    $ new_request_12_01 = False # (Play with her tits.)
-    $ new_request_12_02 = False # (Play with her tits.)
-    $ new_request_12_03 = False # (Play with her tits.)
+#    $ new_request_12_01 = False # (Play with her tits.)
+#    $ new_request_12_02 = False # (Play with her tits.)
+#    $ new_request_12_03 = False # (Play with her tits.)
     
-    $ new_request_16_01 = False #  (HANDJOB)
-    $ new_request_16_02 = False #  (HANDJOB)
-    $ new_request_16_03 = False #  (HANDJOB)
+#    $ new_request_16_01 = False #  (HANDJOB)
+#    $ new_request_16_02 = False #  (HANDJOB)
+#    $ new_request_16_03 = False #  (HANDJOB)
     
-    $ new_request_22_01 = False #  (BLOWJOB)
-    $ new_request_22_02 = False #  (BLOWJOB)
-    $ new_request_22_03 = False #  (BLOWJOB)
+#    $ new_request_22_01 = False #  (BLOWJOB)
+#    $ new_request_22_02 = False #  (BLOWJOB)
+#    $ new_request_22_03 = False #  (BLOWJOB)
     
-    $ new_request_29_01 = False #  (SEX)
-    $ new_request_29_02 = False #  (SEX)
-    $ new_request_29_03 = False #  (SEX)
+#    $ new_request_29_01 = False #  (SEX)
+#    $ new_request_29_02 = False #  (SEX)
+#    $ new_request_29_03 = False #  (SEX)
     
-    $ new_request_31_01 = False #  (ANAL)
-    $ new_request_31_02 = False #  (ANAL)
-    $ new_request_31_03 = False #  (ANAL)
+#    $ new_request_31_01 = False #  (ANAL)
+#    $ new_request_31_02 = False #  (ANAL)
+#    $ new_request_31_03 = False #  (ANAL)
     
 
 ### MISC FLAGS ###
