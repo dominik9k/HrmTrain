@@ -445,7 +445,7 @@ label chapter_check_book_xx: #Checks if the chapter just finished was the last o
             $ concentration += 1
         if event.Name in ["book_05", "book_05_b", "book_06"]:     
             $ imagination +=1
-        if event.Name in ["book_08", "book_09"]:
+        if event.Name in ["book_08", "book_09", "book_10"]:
             $ s_reading_lvl +=1
         if event.Name in ["book_12", "book_13", "book_14", "book_15"]:
             $ speedwriting += 1
