@@ -1066,18 +1066,18 @@ label addTitsPose:
     
 label addSperm:
     # add sperm item!
-    $herView.data().addItem( 'sperm', CharacterExItem( herView.mMiscFolder, 'sperm_00.png', G_Z_FACE + 1 ) )
+    $herView.data().addItemKey( 'sperm', CharacterExItem( herView.mMiscFolder, 'sperm_00.png', G_Z_FACE + 1 ) )
     return
 
 label delSperm:
     # add sperm item!
-    $herView.data().delItem( 'sperm' )
+    $herView.data().delItemKey( 'sperm' )
     return
     
 label addAfterSperm:
     # del pose and add aftersperm
     $herView.data().delPose()
-    $herView.data().addItem( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+    $herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
     return
     
 label loadState_and_could_not_flirt:

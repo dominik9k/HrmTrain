@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<item>
+	<key>legs</key>
+
+	<style name="default">
+		<frame>pose_with_book.png</frame>
+		<folder>pose</folder>
+		<visible>1</visible>
+		<zorder>pose</zorder>
+		<parent></parent>
+		<hidelist>hands</hidelist>
+	</style>
+</item>

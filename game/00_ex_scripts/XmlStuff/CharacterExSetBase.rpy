@@ -36,6 +36,8 @@
             for item in root:
                 if item.tag == 'set':
                     setKey = item.get( 'name' )
+                    if not setKey:
+                        setKey = _getFileNameFromPath( aFilePath )  #from WTXmlAssistansFunctions
                     setItems = []
                     for setIt in item:
                         setItems.append( setIt.text )

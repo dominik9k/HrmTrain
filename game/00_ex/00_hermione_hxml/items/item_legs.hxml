@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 
-<part>
+<item>
 	<key>legs</key>
-	<name>item_legs</name>
 
 	<style name="default">
 		<frame>legs_universal.png</frame>
@@ -15,4 +14,4 @@
 		<hidelist></hidelist>
 		<actions></actions>
 	</style>
-</part>
+</item>

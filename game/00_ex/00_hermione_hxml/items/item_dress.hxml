@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 
-<part>
+<item>
 	<key>dress</key>
-	<name>item_dress</name>
 
 	<style name="default">
 		<frame>dress_normal.png</frame>
@@ -16,5 +15,9 @@
 			<item>tits</item>
 		</hidelist>
 		<actions></actions>
+	</style>
+	<style name="with_lifted_skirt">
+		<frame>dress_lifted_skirt.png</frame>
+		<folder>clothes</folder>
 	</style>	
-</part>
+</item>

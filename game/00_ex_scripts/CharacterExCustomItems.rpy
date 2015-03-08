@@ -1,18 +1,21 @@
 ﻿init -997 python:
     ########################################################################################
     # we need additional class for dress ( to hide tits )
+    # XML DONE
     class CharacterExItemDress( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'tits' )
 
     ########################################################################################
     # we need additional class for robe ( to hide skirt )
+    # XML DONE
     class CharacterExItemRobe( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'skirt' )
 
     ########################################################################################
     # we need additional class for pose with a book ( to hide universal hands )
+    # XML DONE
     class CharacterExItemPoseBook( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'hands' )
@@ -52,6 +55,7 @@
 
     ########################################################################################
     # we need additional class for pose with skirt up ( need to hide basic hands, add shadow on panties/skin, also change skirt image )
+    # IN PROGRESS
     class CharacterExItemSkirtLifted( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'skirt' )
@@ -130,20 +134,20 @@
             CharacterExItem.innerOnSelfAdded( self, aItems, aCharacterEx )
             for key,item in aItems.iteritems():
                 if item != self and item.mZOrder < G_Z_FACE:
-                    self.mOwner.hideItem( key, self.__class__.__name__ )
+                    self.mOwner.hideItemKey( key, self.__class__.__name__ )
                        
         def innerOnSelfRemoved( self, aItems, aCharacterEx ):
             # do not forget to call parent method!
             CharacterExItem.innerOnSelfRemoved( self, aItems, aCharacterEx )
             for key,item in aItems.iteritems():
                 if item != self and item.mZOrder < G_Z_FACE:
-                    aCharacterEx.showItem( key, self.__class__.__name__ )                 
+                    aCharacterEx.showItemKey( key, self.__class__.__name__ )                 
             
         def innerOnItemAdded( self, aItemKey, aItem ):
             # do not forget to call parent method!
             CharacterExItem.innerOnItemAdded( self, aItemKey, aItem )
             if aItem.mZOrder < G_Z_FACE:
-                self.mOwner.hideItem( aItemKey, self.__class__.__name__ ) 
+                self.mOwner.hideItem.Key( aItemKey, self.__class__.__name__ ) 
 
     ########################################################################################
     # we need additional class for splatters (body 169, 170, 171)

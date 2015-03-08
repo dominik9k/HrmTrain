@@ -19,12 +19,35 @@
             opened = ET.parse( renpy.loader.transfn( aFilePath ) )
             root = opened.getroot()
             itemDesc = CharacterExDescriptionItem( root, aFolderBase, aZOrderBase )
+            if not itemDesc.mName:
+                itemDesc.mName = _getFileNameFromPath( aFilePath )  #from WTXmlAssistansFunctions
             self.mItems[ itemDesc.mName ] = itemDesc
 
-        # return ItemDesctiption or None
+        # return ItemDescription or None
         # remember to NOT CHANGE the obtained descriptions
         def get( self, aItemName ):
             if aItemName in self.mItems.keys():
                 return self.mItems[ aItemName ]
             else:
                 return None
+
+        # return ItemStyleDescription or None
+        # remember to NOT CHANGE the obtained descriptions
+        def getItemStyle( self, aItemName, aStyleName ):
+            if aItemName in self.mItems.keys():
+                item = self.mItems[ aItemName ]
+                if aStyleName in item.mStyles.keys():
+                    return item.mStyles[ aStyleName ]
+                else:
+                    return None
+            else:
+                return None
+
+        # return the key where the item should be added
+        def getItemKey( self, aItemName ):
+            if aItemName in self.mItems.keys():
+                item = self.mItems[ aItemName ]
+                return item.mKey
+            else:
+                return ""
+

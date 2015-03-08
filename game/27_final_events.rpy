@@ -247,10 +247,10 @@ label want_to_rule:
                     with d3
             
 
-                    $herView.data().hideItem('skirt')
-                    $herView.data().hideItem('panties')                    
+                    $herView.data().hideItemKey('skirt')
+                    $herView.data().hideItemKey('panties')                    
                     $herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
-                    $herView.data().addItem( 'panties_shifted', CharacterExItem( herView.mClothesFolder, 'panties_shifted.png', G_Z_PANTIES ) )
+                    $herView.data().addItemKey( 'panties_shifted', CharacterExItem( herView.mClothesFolder, 'panties_shifted.png', G_Z_PANTIES ) )
             
                     $herView.hideQQ()
                     $herView.showQQ( "body_60.png", pos )
@@ -347,9 +347,9 @@ label want_to_rule:
                     
                     
                     $herView.hideQ()
-                    $herView.data().hideItem('dress')
-                    $herView.data().hideItem('skirt')
-                    $herView.data().hideItem('panties')
+                    $herView.data().hideItemKey('dress')
+                    $herView.data().hideItemKey('skirt')
+                    $herView.data().hideItemKey('panties')
                     
                     $ hermione_chibi_xpos = 310 # Default 360
                     #$ hermione_chibi_ypos = 210
@@ -373,7 +373,7 @@ label want_to_rule:
                     her "*Всхлип!*"
                     m "Хах?"
                     
-                    $herView.data().addItem( 'tears', CharacterExItem( herView.mMiscFolder, "tears_01.png", G_Z_FACE + 1 ) )
+                    $herView.data().addItemKey( 'tears', CharacterExItem( herView.mMiscFolder, "tears_01.png", G_Z_FACE + 1 ) )
                     
                     $herView.hideQQ()
                     $herView.showQQ( "body_107.png", pos )
@@ -392,7 +392,7 @@ label want_to_rule:
                     her "Я ничего не могу с этим поделать! *Всхлип!*"
                     m "Ты уверена, что все в порядке?"
                     $herView.hideQQ()
-                    $herView.data().addItem( 'tears', CharacterExItem( herView.mMiscFolder, "tears_04.png", G_Z_FACE + 1 ) )
+                    $herView.data().addItemKey( 'tears', CharacterExItem( herView.mMiscFolder, "tears_04.png", G_Z_FACE + 1 ) )
                     $herView.showQQ( "body_101.png", pos )
                     her "Да, да, сэр, пожалуйста.... *Всхлип!*"
                     $herView.hideQQ()
@@ -452,7 +452,7 @@ label want_to_rule:
                     hide screen ctc
                     
                     $herView.data().loadState()
-                    $herView.data().addItem( 'tears', CharacterExItem( herView.mMiscFolder, "tears_03.png", G_Z_FACE + 1 ) )
+                    $herView.data().addItemKey( 'tears', CharacterExItem( herView.mMiscFolder, "tears_03.png", G_Z_FACE + 1 ) )
 
                     show screen blkfade 
                     with d5
@@ -954,12 +954,12 @@ label sorry_about_hesterics:
     her "Я потратила бессчетные часы, организовывая его..."
     $herView.hideQQ()
 
-    $herView.data().addItem( 'tears', CharacterExItem( herView.mMiscFolder, "tears_01.png", G_Z_FACE + 1 ) )
+    $herView.data().addItemKey( 'tears', CharacterExItem( herView.mMiscFolder, "tears_01.png", G_Z_FACE + 1 ) )
     $herView.showQQ( "body_11.png", pos )
     her "Я так старалась... и..."
     
     $herView.hideQQ()
-    $herView.data().delItem( 'tears' )
+    $herView.data().delItemKey( 'tears' )
     $herView.showQQ( "body_139.png", pos )
     her "И теперь я даже не смогу по... пo... *Всхлип!*"
     $herView.hideshowQQ( "body_143.png", pos )

@@ -1,15 +1,16 @@
 ﻿init -998 python:
     class CharacterExItemCreator:
-        def __init__( self, aItemBase, aSetBase ):
+        def __init__( self, aItemBase, aSetBase, aXmlLinkerKey ):
             self.mItemBase = aItemBase
             self.mSetBase = aSetBase
+            self.mXmlLinkerKey = aXmlLinkerKey    # key from linker
 
         # create single item by name
         # return one item
         def createItem( self, aItemName ):
             itemDesc = self.mItemBase.get( aItemName )
             if itemDesc != None:
-                return CharacterExItem.create( itemDesc )
+                return CharacterExItem.create( itemDesc, self.mXmlLinkerKey )
             else:
                 return None
 

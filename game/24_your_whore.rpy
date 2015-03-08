@@ -59,7 +59,7 @@ label your_whore:
     with d7
 
     $herView.data().saveState()
-    $herView.data().addItem( 'splatters', CharacterExItemSplatters( herView.mMiscFolder, "splatters.png", G_Z_POSE + 1 ) )
+    $herView.data().addItemKey( 'splatters', CharacterExItemSplatters( herView.mMiscFolder, "splatters.png", G_Z_POSE + 1 ) )
     
 #    if queen_whore_ending: #Students talking. Ending "Queen whore".
     if end.IsEnding(const_ENDING_STRONG_GIRL): #Students talking. Ending "Prostitute".
@@ -1064,7 +1064,7 @@ label your_whore:
         sna "Вот ваша корона..."
         sna "И ваш пьедестал..."
 
-        $herViewHead.data().addItem( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
+        $herViewHead.data().addItemKey( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
         $herViewHead.showQ( "body_160.png", posHead )
         her "Спасибо, профессор."
         $herViewHead.hideQ()
@@ -2887,7 +2887,7 @@ label your_whore:
         m "Отличная речь..."
         m "Очень возбуждающая...Кхм, я имел ввиду вдохновляющая."
 
-        $herViewHead.data().addItem( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
+        $herViewHead.data().addItemKey( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
         $herViewHead.showQ( "body_165.png", posHead )
         her "Спасибо, сэр."
         $herViewHead.hideQ()
@@ -4029,7 +4029,7 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         pause
         hide screen ctc
         play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
-        $ herViewHead.data().delItem( 'tiara' )
+        $ herViewHead.data().delItemKey( 'tiara' )
         $ herViewHead.data().delPose()
         $ posHead = gMakePos( 390, 235 )
         $herViewHead.showQ( "body_120.png", posHead )
@@ -4152,7 +4152,7 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         $herView.hideQQ()
 
         # Pussy!
-        $herView.data().hideItem( 'panties' )
+        $herView.data().hideItemKey( 'panties' )
         $herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
         $herView.showQQ( "body_61.png", pos )
         show screen ctc
@@ -4167,7 +4167,7 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         $herView.hideQ()
         with d5      
         $herView.data().delPose()
-        $herView.data().showItem( 'panties' )                                                                                                                                                                                                               #HERMIONE
+        $herView.data().showItemKey( 'panties' )                                                                                                                                                                                                               #HERMIONE
         $herView.showQ( "body_86.png", pos )
         with d5                                                                                                                                                                                                                       #HERMIONE
         with hpunch

@@ -2,21 +2,22 @@
 
 <!-- в этом файле будут хранится числовые значения Z order -->
 <zOrders>
-	<order name="underlegs">0</order>
-    <order name="legs">100</order>
-    <order name="panties">200</order>
-    <order name="skirt">300</order>
-    <order name="hands">400</order>
-    <order name="hair_back">500</order>
-    <order name="body">600</order>
-    <order name="tits">700</order>
-    <order name="head">800</order>
-    <order name="hair_shadow">900</order>
-    <order name="dress">1000</order>
-    <order name="hair_front">1100</order>
-    <order name="face">1200</order>
-    <order name="hair_top">1300</order>
-    
-    <order name="headwear">1400</order>
+    <order name="hair_back">100</order>
+    <order name="hands_back">200</order>
+    <order name="body">300</order>
+    <order name="legs">400</order>
+    <order name="tits">500</order>
+    <order name="hands">600</order>
+    <order name="head">700</order>
+    <order name="hair_shadow">800</order>
+    <order name="panties">900</order>
+    <order name="skirt">1000</order>  
+    <order name="dress">1100</order>
+    <order name="hands_top">1200</order>
+    <order name="hair">1300</order> <!-- its just synonym for hair_front -->
+    <order name="hair_front">1400</order>
+    <order name="face">1500</order>
+    <order name="hair_top">1600</order>
+    <order name="headwear">1700</order>
     <order name="pose">4000</order>
 </zOrders>

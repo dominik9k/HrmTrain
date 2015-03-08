@@ -485,7 +485,7 @@ label panties_soaked_in_cum:
             
             $herView.data().saveState()
             $herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
-            $herView.data().addItem( 'panties_cum', CharacterExItem( herView.mMiscFolder, 'panties_soaked.png', G_Z_PANTIES + 1, 'panties' ) )
+            $herView.data().addItemKey( 'panties_cum', CharacterExItem( herView.mMiscFolder, 'panties_soaked.png', G_Z_PANTIES + 1, 'panties' ) )
             
             $herView.showQQ( "185.png", pos )
             her "...если девушка будет в трусиках, пропитанной спермой?"

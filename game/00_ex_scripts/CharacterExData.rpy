@@ -1,11 +1,18 @@
 ﻿init -998 python:
+    __EData_Add = 0
+    __EData_Remove = 1
+    __EData_Show = 2
+    __EData_Hide = 3
+    __EData_Style = 4
+
+
     from copy import deepcopy 
     class CharacterExData(store.object):
         # constructor - memorizing Character object
         def __init__( self, aLinkerKey ):
             self.mLinkerKey = aLinkerKey    #special key to ask XmlLinker for apropriate objects
             # currenlty dressed things
-            self.mStuff = {}
+            self.mItems = {}
             # dictionary with transforms
             self.mTransforms = {}
             # here we'll save all items and global transforms on character
@@ -39,8 +46,8 @@
 
         def addTransform( self, aTransform, aKey = 'default' ):
             self.delTransform( aKey )
-            #apply transform for all items (even hiden)
-            for val in self.mStuff.values():
+            #apply transform for all items (even hidden)
+            for val in self.mItems.values():
                 val.addTransform( aKey, aTransform )
             self.mTransforms[ aKey ] = aTransform
             
@@ -48,7 +55,7 @@
             # discard transform for all items
             if aKey in self.mTransforms.keys():
                 del self.mTransforms[ aKey ]
-                for val in self.mStuff.values():
+                for val in self.mItems.values():
                     val.delTransform( aKey )
         
         # remove all transforms
@@ -64,72 +71,106 @@
         
         # return Item if Hermione get the item with given key, otherwise - None
         def getItem( self, aKey ):
-            if aKey in self.mStuff.keys():
-                return self.mStuff[ aKey ]
+            if aKey in self.mItems.keys():
+                return self.mItems[ aKey ]
             else:
                 return None
                 
+
         # add additional stuff on hermione ( permanent )
         def addItemDirect( self, aKey, aCharacterExItem ):
             self._addItem( aKey, aCharacterExItem )
 
-        # add additional stuff on hermione ( permanent )
-        def addItem( self, aKey, aName ):
+        # add item to character with specific key
+        def addItemKey( self, aKey, aName ):
             newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName )
             if newItem[0] != None:
                 self.addItemDirect( aKey, newItem[0] )
 
+        # add item to character, key info is get from item's data
+        def addItem( self, aName ):
+            newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName )
+            if newItem[0] != None:
+                self.addItemDirect( newItem[0].mKey, newItem[0] )
+
         def addItemSet( self, aSetName ):
-            self._applyToSet( aSetName, 0 )
+            self._applyToSet( aSetName, __EData_Add )
         
-        # del additional stuff on hermione ( permanent )
-        def delItem( self, aKey ):
+
+        # delete item by key
+        def delItemKey( self, aKey ):
             self._delItem( aKey )
 
-        def delItemSet( self, aSetName ):
-            self._applyToSet( aSetName, 1 )
+        # delete item by it's name
+        def delItem( self, aItemName ):
+            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            self._delItem( key, aItemName )
 
-        # show item on hermione ( make it visible )
-        def showItem( self, aKey, aSource = 'game' ):
-            if aKey in self.mStuff.keys():
-                item = self.mStuff[ aKey ]
-                item.show( aSource, aKey )
+        def delItemSet( self, aSetName ):
+            self._applyToSet( aSetName, __EData_Remove )
+
+
+        # show item by key
+        def showItemKey( self, aKey, aSource = 'game' ):
+            self._showItem( aKey, aSource )
+
+        # show item by it's name
+        def showItem( self, aItemName, aSource = 'game' ):
+            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            self._showItem( key, aSource, aItemName )
 
         # show item set on character
         def showItemSet( self, aSetName, aSource = 'game' ):
-            self._applyToSet( aSetName, 2, aSource )
+            self._applyToSet( aSetName, __EData_Show, aSource )
 
-        # hide item on character ( make it invisible )
-        def hideItem( self, aKey, aSource = 'game' ):
-            if aKey in self.mStuff.keys():
-                item = self.mStuff[ aKey ]
-                item.hide( aSource, aKey )
+
+        # hide item by key
+        def hideItemKey( self, aKey, aSource = 'game' ):
+            self._hideItem( aKey, aSource )
+
+        def hideItem( self, aItemName, aSource = 'game' ):
+            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            self._hideItem( key, aSource, aItemName )
 
         # hide item set on character
         def hideItemSet( self, aSetName, aSource = 'game' ):
-            self._applyToSet( aSetName, 3, aSource )
+            self._applyToSet( aSetName, __EData_Hide, aSource )
+
+
+        # try to apply the style to all items. Only items which has such style will be affected
+        def setStyle( self, aStyleName ):
+            for item in self.mItems.values():
+                item.setStyle( aStyleName )
+
+        # set style to item by key
+        def setStyleKey( self, aKey, aStyleName ):
+            self._setStyle( aKey, aStyleName )
 
         # set style to item
-        def setStyleItem( self, aKey, aStyleName ):
-            curItem = self.getItem( aKey )
-            if curItem != None:
-                curItem.setStyle( aStyleName )
+        def setStyleItem( self, aItemName, aStyleName ):
+            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            self._setStyle( key, aStyleName, aItemName )
 
         # set style to all items in set
         def setStyleSet( self, aSetName, aStyleName ):
-            self._applyToSet( aSetName, 4, aStyleName )
+            self._applyToSet( aSetName, __EData_Style, aStyleName )
+
 
         # return True, if the item with suck name exists in items on passed position
         def checkItem( self, aKey, aName ):
-            if aKey in self.mStuff.keys():
-                item = self.mStuff[ aKey ]
+            if aKey in self.mItems.keys():
+                item = self.mItems[ aKey ]
                 if item.mName == aName:
                     return True
             return False
 
-        # call this to remove all items from character mStuff
+        # call this to remove all items from character mItems
         def clear( self ):
-            self.mStuff = {}
+            self.mItems = {}
+
+        # special stuff for actions - return all current items in data
+        def getAllItems( self ):
+            return self.mItems
             
         ##########################################################
         # save/load/clear/copy current item sets
@@ -137,19 +178,19 @@
         
         # save current state to variable
         def saveState( self ):
-            self.mSavedItems = {}# deepcopy( self.mStuff )
-            for key in self.mStuff.keys():
-                self.mSavedItems[ key ] = deepcopy( self.mStuff[ key ] )
+            self.mSavedItems = {}# deepcopy( self.mItems )
+            for key in self.mItems.keys():
+                self.mSavedItems[ key ] = CharacterExItem.fromItem( self.mItems[ key ] )
             self.mSavedTransforms = {}
             for key in self.mTransforms.keys():
                 self.mSavedTransforms[ key ] = deepcopy( self.mTransforms[ key ] )
 
     
-        # load saved statet
+        # load saved state
         def loadState( self ):
-            self.mStuff.clear()
+            self.mItems.clear()
             for key in self.mSavedItems.keys():
-                self.mStuff[ key ] = deepcopy( self.mSavedItems[ key ] )
+                self.mItems[ key ] = CharacterExItem.fromItem( self.mSavedItems[ key ] )
             self.mTransforms.clear()
             for key in self.mSavedTransforms.keys():
                 self.mTransforms[ key ] = deepcopy( self.mSavedTransforms[ key ] )              
@@ -161,9 +202,9 @@
 
         # call this to copy all items from the other CharacteEx object
         def copyState( self, aCharacterEx ):
-            self.mStuff.clear()
-            for key in aCharacterEx.mStuff.keys():
-                self.mStuff[ key ] = deepcopy( aCharacterEx.mStuff[ key ] )
+            self.mItems.clear()
+            for key in aCharacterEx.mItems.keys():
+                self.mItems[ key ] = deepcopy( aCharacterEx.mItems[ key ] )
             self.mTransforms.clear()
             for key in aCharacterEx.mTransforms.keys():
                 self.mTransforms[ key ] = deepcopy( aCharacterEx.mTransforms[ key ] )                
@@ -223,31 +264,77 @@
 
         def _addItem( self, aName, aData ):
             self._delItem( aName )
-            aData.onSelfAdded( aName, self.mStuff, self )
-            self.mStuff[ aName ] = aData
-            for item in self.mStuff.values():
+            self.mItems[ aName ] = aData
+            aData.onSelfAdded( aName, self.mItems, self )
+
+            for item in self.mItems.values():
                 if item != aData:
                     item.onItemAdded( aData )
             # apply current transforms
             for key,val in self.mTransforms.iteritems():
                 aData.addTransform( key, val )
 
-        def _delItem( self, aName ):
-            if aName in self.mStuff.keys():
-                data = self.mStuff[ aName ]
-                del self.mStuff[ aName ]
-                data.onSelfRemoved( self.mStuff, self )
-                for item in self.mStuff.values():
-                    item.onItemRemoved( data )
+        def _delItem( self, aName, aItemName = None ):
+            if aName in self.mItems.keys():
+                data = self.mItems[ aName ]
+                # if we got item name - compare it with found item's name, and return if the names are different
+                if aItemName != None:
+                    if data.mName != aItemName:
+                        return
+
+                for item in self.mItems.values():
+                    if item != data:
+                        item.onItemRemoved( data )
+
+                del self.mItems[ aName ]
+                data.onSelfRemoved( self.mItems, self )
+
+        def _showItem( self, aKey, aSource, aItemName = None ):
+            if aKey in self.mItems.keys():
+                item = self.mItems[ aKey ]
+                # if we got item name - compare it with found item's name, and return if the names are different
+                if aItemName != None:
+                    if item.mName != aItemName:
+                        return
+                item.show( aSource )
+
+        def _hideItem( self, aKey, aSource, aItemName = None ):
+            if aKey in self.mItems.keys():
+                item = self.mItems[ aKey ]
+                # if we got item name - compare it with found item's name, and return if the names are different
+                if aItemName != None:
+                    if item.mName != aItemName:
+                        return
+                item.hide( aSource )
+
+        def _setStyle( self, aKey, aStyleName, aItemName = None ):
+            if aKey in self.mItems.keys():
+                item = self.mItems[ aKey ]
+                # if we got item name - compare it with found item's name, and return if the names are different
+                if aItemName != None:
+                    if item.mName != aItemName:
+                        return
+                item.setStyle( aStyleName )
                 
-        def _onItemHiden( self, aItem ):
-            for item in self.mStuff.values():
-                item.onItemHidden( aItem )  
+
+        ##########################################################
+        def _onItemHidden( self, aItem ):
+            for item in self.mItems.values():
+                item.onItemHidden( aItem )
             
         def _onItemShown( self, aItem ):
-            for item in self.mStuff.values():
-                item.onItemShown( aItem )  
+            for item in self.mItems.values():
+                item.onItemShown( aItem )
 
+        def _onItemStyleBeforeChange( self, aItem ):
+            for item in self.mItems.values():
+                item.onItemStyleBeforeChange( aItem )
+            
+        def _onItemStyleAfterChange( self, aItem ):
+            for item in self.mItems.values():
+                item.onItemStyleAfterChange( aItem )
+
+        ##########################################################  
         # aWhatToDo == 0 - add, 1 - remove, 2 - show, 3 - hide, 4 - style
         def _applyToSet( self, aSetName, aWhatToDo, aStringParam = None ):
             if aSetName[0] != '*':
@@ -255,37 +342,26 @@
             setDesc = WTXmlLinker.c( self.mLinkerKey ).mSetBase.getInfo( aSetName )
             if setDesc == None:
                 return
-            if aWhatToDo == 0:
+            if aWhatToDo == __EData_Add:
                 setItems = WTXmlLinker.c( self.mLinkerKey ).create( aSetName )
                 for item in setItems:
                     if item != None:
                         self.addItemDirect( item.mKey, item )
-            elif aWhatToDo == 1:
+            elif aWhatToDo == __EData_Remove:
                 for key,name in zip( setDesc.mKeys, setDesc.mNames ):
                     if key != None:
-                        curItem = self.getItem( key )
-                        if curItem != None:
-                            if curItem.mName == name:
-                                self.delItem( key )
-            elif aWhatToDo == 2:
+                        self.delItem( name )
+            elif aWhatToDo == __EData_Show:
                 for key,name in zip( setDesc.mKeys, setDesc.mNames ):
                     if key != None:
-                        curItem = self.getItem( key )
-                        if curItem != None:
-                            if curItem.mName == name:
-                                self.showItem( key, aStringParam )
-            elif aWhatToDo == 3:
+                        self.showItem( name, aStringParam )
+            elif aWhatToDo == __EData_Hide:
                 for key,name in zip( setDesc.mKeys, setDesc.mNames ):
                     if key != None:
-                        curItem = self.getItem( key )
-                        if curItem != None:
-                            if curItem.mName == name:
-                                self.hideItem( key, aStringParam )
-            elif aWhatToDo == 4:
+                        self.hideItem( name, aStringParam )
+            elif aWhatToDo == __EData_Style:
                 for key,name in zip( setDesc.mKeys, setDesc.mNames ):
                     if key != None:
-                        curItem = self.getItem( key )
-                        if curItem != None:
-                            if curItem.mName == name:
-                                curItem.setStyle( aStringParam )
+                        self.setStyleItem( name, aStringParam )
+                                
 

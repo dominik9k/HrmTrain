@@ -98,8 +98,8 @@ init -998 python:
                     face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace )
                 #self.mData.addFace( CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
 
-            #renpy.show_screen( "CharacterExViewScreen", self.mStuff, aPos )
-            self._showView( self.mData.mStuff, aPos )
+            #renpy.show_screen( "CharacterExViewScreen", self.mItems, aPos )
+            self._showView( self.mData.mItems, aPos )
             if aTransition is not None:
                 renpy.with_statement( aTransition, None, True )
         

@@ -12,8 +12,9 @@ init python:
     Hermione_IB = CharacterExItemBase()
     Hermione_SB = CharacterExSetBase()
 
+    # initing creator
     global Hermione_ItemCreator
-    Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB )
+    Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB, WTXmlLinker.gerHermioneLinkerKey() )
 
     # fill variables
     Hermione_FB.read( '00_ex/00_hermione_hxml/folders.hxml' )
@@ -4861,8 +4862,10 @@ label start:
     #$ herView.data().addTits( CharacterExItem( herView.mBodyFolder, "tits.png", G_Z_TITS ) )
     #$ herView.data().addDress( CharacterExItemDress( herView.mClothesFolder, "dress_normal.png", G_Z_DRESS ) )
     #$ herView.data().addFace( CharacterExItem( herView.mFaceFolder, "body_01.png", G_Z_FACE ) )
-    # test new stuff! load all this with one set!
-    $herView.data().addItemSet( 'initial_game_set' )
+
+    # test new stuff! load all this with two sets - body and clothes!
+    $herView.data().addItemSet( 'hermione_body' )
+    $herView.data().addItemSet( 'hermione_start_clothes' )
 
     # Ending class initialization
     call Ending_constants

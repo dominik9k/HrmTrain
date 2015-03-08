@@ -1,14 +1,40 @@
 <?xml version="1.0"?>
 
 
-<part>
+<item>
 	<!-- ключ, по которому будет добавленна вещь в список вещей персонажа -->
 	<key>body</key>
 
-	<!-- ключ, по которому будет использоваться этот объект в других xml файлах -->
-	<name>item_EXAMPLE</name>
+	<!-- механика вложеных вещей (ВВ для краткости). Вещь может быть или вложенной, или нет.
+	ВВ не создают никакие события ('selfAdded' и т.д.) и не участвуют в проверках условий других событий.
+	Другими словами, никакого внешнего влияния на ВВ нет.
+	ВВ ведет себя полностью как вещь-владелец. К примеру, если мы скроем владельца, все его ВВ тоже будут скрыты.
+	Или же если изменим стиль владельца на "стиль1", все ВВ тоже попробуют сменить стиль на "стиль1".
+	То же самое и с другими событиями/состояниями. -->
+	<!-- ВНИМАНИЕ! Так же, для ВВ для стилей параметры parent, hidelist, actions просто не считываются,
+	поэтому задавать их нет смысла.
+	-->
 
-	<!-- стили. Будет описано позже. Пока что отображаются только вещи со стилем "default" -->
+	<!-- Для того, что бы сделать вещь вложенной, нужно задать ей параметр <isSubitem>1</isSubitem>. 
+	Значение 0 говорит что вещь - не вложенная (по умолчанию). Если параметра <isSubitem></isSubitem> нет, то вещь - не вложенная -->
+	<isSubitem>1</isSubitem>
+
+	<!-- Что бы определить ВВ для текущей вещи - используем следующую конструкцию: -->
+	<subitems>
+		<!-- Для ленивых, если ВВ одна, можно опускать блоки <item></item>, и сразу писать имя вложенной вещи:
+		<subitems>item_name</subitems>
+		-->
+		<item>subitem_name</item>
+		<item>subitem_name</item>
+	</subitems>
+
+
+	<!-- ключ, по которому будет использоваться этот объект в других xml файлах -->
+	<!-- если его нету, будет использовано имя файла как имя -->
+	<!-- <name>item_EXAMPLE</name> --><!-- закоментировано что бы не поощрят людей использовать его -->
+
+	<!-- Стили. Изменяя стиль вещи, меняются все параметры, описанные в стиле.
+	Обязательно должен присутсвовать стиль "default". Считается стилем по умолчанию при добавлении вещи -->
 	<style name = "default">
 
 		<!-- имя изображения -->
@@ -22,10 +48,6 @@
 
 		<!-- высота вещи. или число, или строка-имя с соотв. константой из файла zorders.xml -->
 		<zorder>body</zorder>
-
-		<!-- имя родителя, к которому привязывается данная вещь.
-		Если родительская вещь будет скрыта - текущая вещь так же будет скрыта -->
-		<parent></parent>
 
 		<!-- смещение рисунка, точка ( например: 0,0 ). может быть пустым -->
 		<shift></shift>
@@ -42,73 +64,148 @@
 		-->
 		</transforms>
 
+		<!-- имя родителя, к которому привязывается данная вещь.
+		Если родительская вещь будет скрыта - текущая вещь так же будет скрыта -->
+		<parent></parent>
+
 		<!-- тут перечень имен вещей, которые должны всегда скрываться, если добавлена эта вещь -->
 		<hidelist>
-		<!--
-			<item></item>
+		<!-- для ленивых и меня, который всегда забывал тут вписывать все эти <item></item>, можно просто написать ключ
+			скрываемой вещи. Но только когда вещь - одна! -->
+		<!-- например: <hidelist>body</hidelist>
+
+		<!--	это для случая нескольких вещей, или одной, но правильно оформленной
+			<item>itemKey</item>
 			<item></item>
 		-->
 		</hidelist>
 
 		<!-- дает возможность творить фигню в игре из хмл файла. Может быть пустым -->
-		<!-- 	action type: addItem, removeItem, showItem, hideItem, setStyle ( это меняет стиль на заданный в результате )
-				possible conditions combinations:
+		<!-- 	типы результата экшенов:
+					addItem, removeItem, showItem, hideItem, setStyle ( это меняет стиль на заданный в результате )
+
+				типы условий: 	hasItem - проверка, что существует вещь с параметрами param
+								missItem - проверка, что не существует вещи с параметрами param
+
+				возможные комбинации условий:
 					event: selfAdded, selfRemoved 
-					condition type: hasItem
-					mechanic: compare params with every item existed before the self addition
+					тип условия: hasItem, missItem
+					механика: сравнивает параметры условия с каждой вещью, которая была в списке до добавления текущей
 
 					event: itemAdded, itemRemoved
-					condition type: hasItem
-					mechanic: compare params with just added/removed item
+					тип условия: hasItem, missItem
+					механика: сравнивает параметры условия с только что добавленной/удаленной вещью
 
-					event: itemShown, itemHiden
-					condition type hasItem
-					mechanic: compare params with just shown/hidden item
-				
+					event: itemShown, itemHidden
+					тип условия: hasItem, missItem
+					механика: сравнивает параметры условия с только что скрытой/отображенной вещью
+
+					event: beforeStyleChange, afterStyleChange
+					тип условия: hasItem, missItem
+					механика: сравнивает параметры условия вещью, которая сейчас сменит/только что сменила стиль
+		-->
+
+		<!-- логика срабатывания условий:
+				В событии может быть несколько блоков. Если ХОТЬ ОДИН блок верен - событие выполнит свой результат
+				В блоке может быть несколько условий. Блок считается верным, если ВСЕ условия выполнены.
 		-->
 		<actions>
-			<action type="addItem", event="selfAdded">
+			<action event="selfAdded">
 				<body>
-					<condition type="hasItem">
-						<params>
-							<name c='e'>item_head</name>
+					<block>
+						<condition type="hasItem">
+							<!-- Параметр actionItem, 1 или 0
+							будет сравнение, является ли вещь с заданными параметрами ( name == item_head, visible == 1 ) той,
+							которая вызвала текущее событие ( в данном случае - selfAdded ), если actionItem == 1, и наоборот,
+							не является ли она той, которая вызвала событие, если actionItem == 0
+							Внимание, на это поле не действует задание метода сравнения ( c="ge" и т.д. ).
+							Всегда проверяется на равенство
+							-->
+							<actionItem>1</actionItem>
+							<name c="e">item_head</name>
 							<visible>1</visible>
-						</params>
-					</condition>
+						</condition>
+					</block>
 				</body>
 				 
-				<!-- Возможные варианты для разных типов событий: -->
+				<!-- Возможные варианты результата для разных типов событий: -->
+				<!-- В каждом событии может присутсвовать несколько блоков результатов -->
 
 				<!--	для type="addItem": 
-					<key>place_to_add</key>( если ключ начинается с *, будет добавлен сэт )
+					<key>place_to_add</key>
 					<name>name_of_item</name>
+							ИЛИ
+					<item>name_of_item</item> будет добавлена вещь по имени, ключ взят из ее описания
+							ИЛИ
+					<set>name_of_set</set> будет добавлен сэт вещей
 				-->
 
 				<!--	для type="removeItem" / "showItem" / "hideItem": 
-					<key>place_to_hide</key> (если ключ начинается с *, будет удален/показан/скрыт сэт с таким именем )
+					<key>place_to_hide</key>
 					<name></name> - может быть опущен
+							ИЛИ
+					<item>name_of_item</item> будет удалена/показана/скрыта вещь по имени, ключ будет взят из ее описания
+							ИЛИ
+					<set>name_of_set</set> будет удален/показан/скрыт сэт вещей
 				-->
 
 				<!--	для type="setStyle": 
-					<key>place_to_change_style</key> (если ключ начинается с *, стиль будет изменен у всех вещей в сэте )
-					<name>name_of_style</name> 
+					<key>place_to_change_style</key> ключ вещи для смены стиля
+						ИЛИ
+					<item>name_of_item</item> у данной вещи будет изменен стиль
+						ИЛИ
+					<set>name_of_set</set> у данного сэта будет изменен стиль
+
+						И
+					<name>name_of_style</name> - имя применяемого стиля
 				-->
-				<key>place_to_add</key>
-				<name>name_of_item</name> (если имя начинается со *, будет добавлен сэт)
+				<result type="addItem">
+					<key>place_to_add</key>
+					<name>name_of_item</name>
+				</result>
 			</action>
 			
-			<action type="setStyle", event="selfAdded">
+			<!-- несколько примеров событий -->
+			<action event="selfAdded">
 				<body>
-					<condition type="hasItem">
-						<params>
+					<block>
+						<condition type="hasItem">
 							<name>item_body</name>
 						</params>
-					</condition>
+						<condition type="hasItem">
+							<name>item_dress</name>
+						</params>
+					</block>
 				</body>
-				<key>hair</key>
-				<name>sexy_ponytail</name>
+				<result type="setStyle">
+					<key>hair</key>
+					<name>sexy_ponytail</name>
+				</result>
+			</action>
+
+			<action event="beforeStyleChange">
+				<body>
+					<block>
+						<condition type="missItem">
+							<key>dress</key>
+							<name>item_dress</name>
+							<style>some_dress_style</style>
+						</condition>
+					</block>
+					<block>
+						<condition type="hasItem">
+							<key>dress</key>
+						</condition>
+					</block>
+				</body>
+				<result type="setStyle">
+					<key>dress</key>
+					<name>default</name>
+				</result>
+				<result type="addItem">
+					<item>item_name</key>
+				</result>
 			</action>
 		</actions>
-
 	</style>
-</part>
+</item>

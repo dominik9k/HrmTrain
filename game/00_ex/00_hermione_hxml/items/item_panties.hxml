@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 
-<part>
+<item>
 	<key>panties</key>
-	<name>item_panties</name>
 
 	<style name="default">
 		<frame>panties_normal.png</frame>
@@ -15,4 +14,8 @@
 		<hidelist></hidelist>
 		<actions></actions>
 	</style>
-</part>
+	<style name="shifted">
+		<frame>panties_shifted.png</frame>
+		<folder>clothes</folder>
+	</style>
+</item>

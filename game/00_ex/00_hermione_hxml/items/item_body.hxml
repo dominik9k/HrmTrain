@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 
-<part>
+<item>
 	<key>body</key>
-	<name>item_body</name>
 
 	<style name="default">
 		<frame>body.png</frame>
@@ -15,4 +14,4 @@
 		<hidelist></hidelist>
 		<actions></actions>
 	</style>
-</part>
+</item>

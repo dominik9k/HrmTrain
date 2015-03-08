@@ -25,9 +25,9 @@
             self._initVariables()
            
         # static constructor to create from description
-        @staticmethod
-        def create( aDescription ):
-            item = CharacterExTransform( aDescription.mName, aDescription.mParams, aDescription.mId )
+        @classmethod
+        def create( cls, aDescription ):
+            item = cls( aDescription.mName, aDescription.mParams, aDescription.mId )
             return item
 
         def apply( self, aImage ):

@@ -449,7 +449,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
                 show screen ctc
                 pause
                 hide screen ctc
-                $herViewHead.data().addItem( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
                 $herViewHead.showQ( "body_144.png", posHead )
                 her "ААА! Я ЧУВСТВУЮ КАК ВЫ МЕНЯ ЗАПОЛНЯЕТЕ !{image=textheart.png}{image=textheart.png}{image=textheart.png}"
                 $herViewHead.hideQ()
@@ -582,7 +582,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
                 show screen ctc
                 pause
                 hide screen ctc
-                $herViewHead.data().addItem( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
                 $herViewHead.showQ( "body_133.png", posHead )
                 her2 "Аа...{image=textheart.png}{image=textheart.png}{image=textheart.png}"
 
@@ -909,7 +909,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
                 show screen ctc
                 pause
                 hide screen ctc
-                $herViewHead.data().addItem( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
                 $herViewHead.showQ( "body_133.png", posHead )
                 her "Ааа! Вы кончаете! {image=textheart.png}{image=textheart.png}{image=textheart.png}"
                 $herViewHead.hideQ()
@@ -979,8 +979,8 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
     stop music fadeout 1.0
     
     if herViewHead.data().getItem( 'sperm' ) != None:
-        $herViewHead.data().addItem( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
-    $herViewHead.data().delItem( 'sperm' )
+        $herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
+    $herViewHead.data().delItemKey( 'sperm' )
     $ gryffindor += current_payout #35
     hide screen h_c_u
     hide screen g_c_u
