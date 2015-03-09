@@ -14,10 +14,10 @@ init:
         this=This()
         global event
 
-    python:
-        global debug
-    $debug=Debug()
-    $debug.SaveHeader()
+#    python:
+#        global debug
+#    $debug=Debug()
+#    $debug.SaveHeader()
 
 
 

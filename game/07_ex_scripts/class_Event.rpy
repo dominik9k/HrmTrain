@@ -30,7 +30,7 @@
             if constVals!=None:
                 for s in constVals:
                     SetArrayValue(self.Name, s, constVals[s]) 
-
+            return
 
 
 
@@ -83,7 +83,6 @@
 
             self.InitTempVar(subkey, value)
 
-#            debug.SaveString("Class="+self.Name+" subkey("+subkey+")="+str(value))
             fn=GetArrayValue(self.Name,"onChange")
             if fn!=None:
                 fn(self, subkey, oldVal, value)
@@ -140,11 +139,8 @@
 
 # Логгировать запуск ивента
         def IncPassed( self ):
-            debug.SaveString("before IncStarted")
             self.IncStarted()
-            debug.SaveString("after IncStarted")
             self.IncFinished()
-            debug.SaveString("after IncFinished")
             return
 
 
@@ -185,6 +181,7 @@
 # Исполнить ивент
         def Run(self):
             renpy.call(self.Name)
+            return
 
 
 
