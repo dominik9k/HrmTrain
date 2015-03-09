@@ -166,7 +166,7 @@
 
         # call this to remove all items from character mItems
         def clear( self ):
-            self.mItems = {}
+            self.mItems.clear()
 
         # special stuff for actions - return all current items in data
         def getAllItems( self ):
@@ -267,9 +267,10 @@
             self.mItems[ aName ] = aData
             aData.onSelfAdded( aName, self.mItems, self )
 
-            for item in self.mItems.values():
-                if item != aData:
-                    item.onItemAdded( aData )
+            if not aData.getIsSubitem():
+                for item in self.mItems.values():
+                    if item != aData:
+                        item.onItemAdded( aData )
             # apply current transforms
             for key,val in self.mTransforms.iteritems():
                 aData.addTransform( key, val )
@@ -282,9 +283,10 @@
                     if data.mName != aItemName:
                         return
 
-                for item in self.mItems.values():
-                    if item != data:
-                        item.onItemRemoved( data )
+                if not data.getIsSubitem():
+                    for item in self.mItems.values():
+                        if item != data:
+                            item.onItemRemoved( data )
 
                 del self.mItems[ aName ]
                 data.onSelfRemoved( self.mItems, self )
@@ -315,8 +317,7 @@
                     if item.mName != aItemName:
                         return
                 item.setStyle( aStyleName )
-                
-
+        
         ##########################################################
         def _onItemHidden( self, aItem ):
             for item in self.mItems.values():

@@ -175,7 +175,7 @@
             self.mHideList = [] # array of strings
             self.mActions = []  # array of actions descriptions
 
-        def __init__( self, aStyleName, aElementRoot, aItemName, aFolderBase, aOrderBase ):
+        def __init__( self, aElementRoot, aStyleName, aItemName, aIsSubitem, aFolderBase, aOrderBase ):
             self.mName = aItemName
             self.mFrame = None
             self.mFileFolder = None
@@ -190,10 +190,10 @@
             if aStyleName == 'default':
                 self._fillValuesForDefault()
 
-            self._read( aElementRoot, aFolderBase, aOrderBase )
+            self._read( aElementRoot, aIsSubitem, aFolderBase, aOrderBase )
 
         # read self from xml
-        def _read( self, aElementRoot, aFolderBase, aOrderBase ):
+        def _read( self, aElementRoot, aIsSubitem, aFolderBase, aOrderBase ):
             for child in aElementRoot:
                 if child.tag == 'frame':
                     self.mFrame = child.text
@@ -202,9 +202,10 @@
                 elif child.tag == 'zorder':
                     self._readOrder( child, aOrderBase )
                 elif child.tag == 'visible':
-                    self.mIsVisible = bool( child.text )
+                    self.mIsVisible = _parseBool( child.text )  #from WTXmlAssitantFunctions
                 elif child.tag == 'parent':
-                    self.mParent = child.text
+                    if not aIsSubitem:
+                        self.mParent = child.text
                 elif child.tag == 'shift':
                     self._readShift( child )
                 elif child.tag == 'transforms':
@@ -215,13 +216,15 @@
                         self.mTransforms[ trId ] = CharacterExDescriptionTransform( trSingle, trId )
 
                 elif child.tag == 'hidelist':
-                    self._readHideList( child )
+                    if not aIsSubitem:
+                        self._readHideList( child )
 
                 elif child.tag == 'actions':
-                    if self.mActions == None:
-                            self.mActions = []
-                    for actSingle in child:
-                        self.mActions.append( CharacterExDescriptionAction( actSingle, aFolderBase, aOrderBase ) )
+                    if not aIsSubitem:
+                        if self.mActions == None:
+                                self.mActions = []
+                        for actSingle in child:
+                            self.mActions.append( CharacterExDescriptionAction( actSingle, aFolderBase, aOrderBase ) )
 
         def _readHideList( self, child ):
             if self.mHideList == None:
@@ -261,7 +264,7 @@
                 elif child.tag == 'name':
                     self.mName = child.text
                 elif child.tag == 'isSubitem':
-                    self.mIsSubitem = bool(child.text)
+                    self.mIsSubitem = _parseBool( child.text )  #from WTXmlAssitantFunctions
                 elif child.tag == 'subitems':
                     _assistantReadList( child, self.mSubitems )
 
@@ -269,4 +272,5 @@
             for child in aXmlRoot:
                 if child.tag == 'style':
                     styleKey = child.get('name')
-                    self.mStyles[ styleKey ] = CharacterExDescriptionStyle( styleKey, child, self.mName, aFolderBase, aOrderBase )
+                    self.mStyles[ styleKey ] = CharacterExDescriptionStyle( child, styleKey, self.mName,
+                        self.mIsSubitem, aFolderBase, aOrderBase )

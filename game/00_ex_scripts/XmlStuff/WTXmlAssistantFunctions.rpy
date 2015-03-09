@@ -2,6 +2,10 @@
     import ntpath
     # xml assistant functions
     
+    def _parseBool( aString ):
+        # only this 3 values is equal to True, all other - False
+        return aString in [ '1', 'true', 'True' ]
+
     def _getFileNameFromPath( aPath ):
         filename = ntpath.basename( aPath ).encode( "utf-8" )
         splitted = filename.rsplit( '.', 1 )
@@ -17,5 +21,4 @@
                     if item.mName != "":
                         aCharacterEx.delItem( key )
                         aCharacterEx.addItem( key, item.mName )
-
         

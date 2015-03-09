@@ -44,6 +44,7 @@ init -998 python:
             # or if we hide the owner, subitem will also be hidden and so on
             self.mIsSubitem = False
             self.mSubitems = [] # list of keys of subitems
+
             self.mKey = ""
             self.mName = ""
             self.mIsVisible = True
@@ -113,6 +114,9 @@ init -998 python:
             item.mOwner = aItem.mOwner
             item.mXmlLinkerKey = aItem.mXmlLinkerKey
 
+            item.mIsSubitem = aItem.mIsSubitem
+            item.mSubitems = list( aItem.mSubitems )
+
             # public
             item.zorder = aItem.zorder
             item.position = Transform( pos = ( aItem.position.xpos, aItem.position.ypos ) )
@@ -148,6 +152,10 @@ init -998 python:
             item.mName = aDescription.mName
             item.mStyles = aDescription.mStyles.keys()   # list with only style names, will get the styles from ItemBase
 
+            item.mIsSubitem = aDescription.mIsSubitem
+            for subitem in aDescription.mSubitems:
+                item.mSubitems.append( subitem )
+
             # set current style to 'default'
             item.setStyle( 'default' )
             item._fillHideList()
@@ -170,9 +178,20 @@ init -998 python:
                     self._discardCurrentStyle()
                 self.mActiveStyle = aStyleName
                 self._applyStyle( aStyleName )
+                # subitems
+                if self.mOwner != None:
+                    for item in self.mSubitems:
+                        self.mOwner.setStyleItem( item, aStyleName )
 
         def getStyle( self ):
             return self.mActiveStyle
+
+        ##########################################################
+        # get is subitem
+        ########################################################## 
+
+        def getIsSubitem( self ):
+            return self.mIsSubitem
 
         ##########################################################
         # call this to change only image of the item ( including path and name )
@@ -203,17 +222,17 @@ init -998 python:
             prevVis = self.mIsVisible
             self._hideInner( aSource )
             if prevVis != self.mIsVisible:
-                self.mOwner._onItemHidden( self )
-                for inKey in self.mHideList:
-                    self.mOwner.showItemKey( inKey, self.mName )
+                if not self.mIsSubitem:
+                    self.mOwner._onItemHidden( self )
+                self._showFromHideList()
                 
         def show( self, aSource ):
-            prevVis = self.mIsVisible            
+            prevVis = self.mIsVisible
             self._showInner( aSource )
             if prevVis != self.mIsVisible:
-                self.mOwner._onItemShown( self )
-                for inKey in self.mHideList:
-                    self.mOwner.hideItemKey( inKey, self.mName )    
+                if not self.mIsSubitem:
+                    self.mOwner._onItemShown( self )
+                self._hideFromHideList()
 
         ##########################################################
         # methods for proper transform work
@@ -242,7 +261,7 @@ init -998 python:
         def onSelfAdded( self, aKey, aItems, aCharacterEx ):
             self.mOwner = aCharacterEx
             self.mKey = aKey
-            if self.parent in aItems:
+            if self.parent and self.parent in aItems:
                 if not aItems[ self.parent ].mIsVisible:
                     self._hideInner( 'parent' )
             self.innerOnSelfAdded( aItems )
@@ -281,11 +300,19 @@ init -998 python:
         def _hideInner( self, aSource ):
             self.mIsVisible = False
             self.mDirectors.add( aSource )
+            # subitems
+            if self.mOwner != None:
+                for item in self.mSubitems:
+                    self.mOwner.hideItem( item )
                 
         def _showInner( self, aSource ):
             self.mDirectors.discard( aSource )
             if not self.mDirectors:
                 self.mIsVisible = True
+                # subitems
+                if self.mOwner != None:
+                    for item in self.mSubitems:
+                        self.mOwner.showItem( item )
 
         ##########################################################
         def _getTransformDict( self, aIsInner ):
@@ -321,6 +348,10 @@ init -998 python:
 
         ##########################################################
         def _applyAction( self, aIndex, aCharacterEx, aEventSenderItem, aItemsAll = None ):
+            # ignore this in subitems
+            if self.mIsSubitem:
+                return
+
             if self.mOwner == None:
                 return
             else:
@@ -379,10 +410,10 @@ init -998 python:
                     self.mIsVisible = False
                 # hide items from HideList only if current item is visible
                 if self.mIsVisible:
-                    for key in self.mHideList:
-                        self.mOwner.hideItemKey( key, self.mName )
+                    self._hideFromHideList()
                 # say to owner that we've changed the style
-                self.mOwner._onItemStyleAfterChange( self )
+                if not self.mIsSubitem:
+                    self.mOwner._onItemStyleAfterChange( self )
                 # and we should apply all owner's transforms
                 for tr in self.mOwnerTransforms.values():
                     self.image = tr.apply( self.image )
@@ -390,13 +421,24 @@ init -998 python:
         def _discardCurrentStyle( self ):
             # say to owner that we are changing the style
             if self.mOwner != None:
-                self.mOwner._onItemStyleBeforeChange( self )
+                if not self.mIsSubitem:
+                    self.mOwner._onItemStyleBeforeChange( self )
             # clear transforms from this style
             self.clearTransforms()
             # show need-to-hide items
             if self.mOwner != None:
+                self._showFromHideList()
+
+        ##########################################################
+        def _showFromHideList( self ):
+            if not self.mIsSubitem:
                 for key in self.mHideList:
                     self.mOwner.showItemKey( key, self.mName )
+
+        def _hideFromHideList( self ):
+            if not self.mIsSubitem:
+                for key in self.mHideList:
+                    self.mOwner.hideItemKey( key, self.mName )
 
         ##########################################################
         # methods to override
@@ -410,21 +452,28 @@ init -998 python:
         def innerOnSelfAdded( self, aItems ):
             # this called when THIS item is added to Hermione
             # we can add additional items, needed for this item, to HermioneView
-            for key in self.mHideList:
-                self.mOwner.hideItemKey( key, self.mName )
+            self._hideFromHideList()
             self._applyAction( CharacterExItem._indSelfAdded, self.mOwner, self, aItems )
+            # subitems
+            if self.mOwner != None:
+                for item in self.mSubitems:
+                    self.mOwner.addItem( item )
             
         def innerOnSelfRemoved( self, aItems ):
             # this called just after deleting SELF from Hermione
-            for key in self.mHideList:
-                self.mOwner.showItemKey( key, self.mName )
+            self._showFromHideList()
             self._applyAction( CharacterExItem._indSelfRemoved, self.mOwner, self, aItems )
+            # subitems
+            if self.mOwner != None:
+                for item in self.mSubitems:
+                    self.mOwner.delItem( item )
         
         def innerOnItemAdded( self, aItem ):
             # this called when other new item added to Hermione, and THIS item is existed before it
             # we can add additional items, needed for this item, to HermioneView
-            if aItem.mKey in self.mHideList:
-                self.mOwner.hideItemKey( aItem.mKey, self.mName )
+            if not self.mIsSubitem:
+                if aItem.mKey in self.mHideList:
+                    self.mOwner.hideItemKey( aItem.mKey, self.mName )
             self._applyAction( CharacterExItem._indItemAdded, self.mOwner, aItem )
             
         def innerOnItemRemoved( self, aItem ):

@@ -95,7 +95,7 @@ init -999 python:
             if self.mParamActionItem != None:
                 ( val, comp ) = self.mParamActionItem
                 compareRes = ( aItem.mName == aEventSenderItem.mName )
-                if compareRes != bool(val):
+                if compareRes != _parseBool(val):   #from WTXmlAssitantFunctions
                     return False
 
             desired = [ self.mParamKey, self.mParamName, self.mParamFileName,
