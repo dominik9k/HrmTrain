@@ -262,6 +262,11 @@ label cupboard:
                             hide screen points
                             $slytherin+=100
                             show screen points
+                        "ЧИТ: Гермиона больше не злиться на вас":
+                            hide screen points
+                            $mad=0
+                            show screen points
+                            "Готово можете проверить"
                         "ЧИТ: +100 золотых":
                             hide screen points
                             $gold+=100
