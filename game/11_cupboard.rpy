@@ -395,7 +395,7 @@ label cupboard:
                     jump sc_col_men_1
                 
                 "- С.11: [scroll_11_name] -" if sscroll_11 or persistent.ss_11:
-                    $ the_gift = "03_hp/19_extras/11.png" # SACRED SCROLL 10.
+                    $ the_gift = "03_hp/19_extras/11.png" # SACRED SCROLL 11.
                     show screen gift
                     show screen ctc
                     with d3
@@ -406,7 +406,7 @@ label cupboard:
                     jump sc_col_men_1
                 
                 "- С.12: [scroll_12_name] -" if sscroll_12 or persistent.ss_12:
-                    $ the_gift = "03_hp/19_extras/12.png" # SACRED SCROLL 10.
+                    $ the_gift = "03_hp/19_extras/12.png" # SACRED SCROLL 12.
                     show screen gift
                     show screen ctc
                     with d3
@@ -416,8 +416,8 @@ label cupboard:
                     with d3
                     jump sc_col_men_1
                 
-                "- С.13: [scroll_13_name] -" if sscroll_13 or persistent.ss_10:
-                    $ the_gift = "03_hp/19_extras/10.png" # SACRED SCROLL 10.
+                "- С.13: [scroll_13_name] -" if sscroll_13 or persistent.ss_13:
+                    $ the_gift = "03_hp/19_extras/13.png" # SACRED SCROLL 13.
                     show screen gift
                     show screen ctc
                     with d3
