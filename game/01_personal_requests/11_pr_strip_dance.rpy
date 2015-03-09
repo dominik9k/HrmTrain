@@ -2400,7 +2400,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     $herViewHead.showQ( "body_108.png", posHead )
                                                     her "Сэр......"
                                                     $herViewHead.hideQ()
-                                                    m "И так, просто позвольте мне показать свою признательность."
+                                                    m "Итак, просто позвольте мне показать свою признательность."
                                                     m "Пятьдесяц очков, заслуженно, Мисс Грейнджер."
                                                     $herViewHead.showQ( "body_108.png", posHead )
                                                     her "Огромное спасибо, сэр."
