@@ -601,7 +601,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
         $ whoring +=1
 
 #    $ request_12_points += 1
-    $SetHearts(SetStage(whoring,9,3,3))
+    $SetHearts(GetStage(whoring,9,3,3))
 
 
 #    if whoring >= 9 and whoring <= 11:

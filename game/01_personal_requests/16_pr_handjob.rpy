@@ -1446,7 +1446,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
     if IsRunNumberOrMore(3): 
         $SetHearts(3)
     else:
-        $SetHearts(SetStage(whoring,12,3,2))
+        $SetHearts(GetStage(whoring,12,3,2))
 
 
 #    $ request_16_points += 1

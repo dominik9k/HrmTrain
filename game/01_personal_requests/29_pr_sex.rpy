@@ -963,7 +963,7 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
 
 
 #    $ request_29_points += 1
-    $SetHearts(SetStage(event._finishCount,1,1,1))
+    $SetHearts(GetStage(event._finishCount,1,1,1))
 
 
     hide screen bld1
