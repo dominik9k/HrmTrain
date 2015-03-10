@@ -129,7 +129,8 @@ label mini_on:
                                                                                                                                                                                                                           #HERMIONE
     
     
-    $ herView.data().addSkirt( CharacterExItem( herView.mClothesFolder, "skirt_short.png", G_Z_SKIRT ) )
+    $herView.data().setStyleKey( 'skirt', 'short' )
+    #$ herView.data().addSkirt( CharacterExItem( herView.mClothesFolder, "skirt_short.png", G_Z_SKIRT ) )
     
     show screen blkfade
     with d3
@@ -165,7 +166,8 @@ label mini_off:
         her "Опять эта скукотища?"
     
     
-    $ herView.data().addSkirt( CharacterExItem( herView.mClothesFolder, "skirt_normal.png", G_Z_SKIRT ) )
+    #$ herView.data().addSkirt( CharacterExItem( herView.mClothesFolder, "skirt_normal.png", G_Z_SKIRT ) )
+    $herView.data().setStyleKey( 'skirt', 'default' )
     
     show screen blkfade
     with d3

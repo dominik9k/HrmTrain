@@ -6,7 +6,7 @@
 	<!-- with panties style -->
 	<style name="default"> 
 		<frame>shadow_with_panties.png</frame>
-		<folder>pose</folder>
+		<folder>misc</folder>
 		<visible>1</visible>
 		<zorder>panties+1</zorder>
 		<actions>
@@ -77,7 +77,7 @@
 	<!-- no panties style -->
 	<style name="no_panties">
 		<frame>shadow_no_panties.png</frame>
-		<folder>pose</folder>
+		<folder>misc</folder>
 		<parent></parent>
 		<actions>
 			<action event="selfAdded">

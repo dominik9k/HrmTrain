@@ -916,7 +916,7 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
                 $herViewHead.hideQ()
         
         
-    if herViewHead.data().getItem( 'sperm' ) != None:
+    if herViewHead.data().getItemKey( 'sperm' ) != None:
         $herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
     $herViewHead.data().delItemKey( 'sperm' )
     hide screen h_c_u

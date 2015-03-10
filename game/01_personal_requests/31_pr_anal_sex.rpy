@@ -978,7 +978,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
     
     stop music fadeout 1.0
     
-    if herViewHead.data().getItem( 'sperm' ) != None:
+    if herViewHead.data().getItemKey( 'sperm' ) != None:
         $herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
     $herViewHead.data().delItemKey( 'sperm' )
     $ gryffindor += current_payout #35

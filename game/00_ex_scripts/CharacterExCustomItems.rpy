@@ -1,27 +1,28 @@
 ﻿init -997 python:
     ########################################################################################
     # we need additional class for dress ( to hide tits )
-    # XML DONE
+    # XML DONE item_dress
     class CharacterExItemDress( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'tits' )
 
     ########################################################################################
     # we need additional class for robe ( to hide skirt )
-    # XML DONE
+    # XML DONE item_robe_study
     class CharacterExItemRobe( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'skirt' )
 
     ########################################################################################
     # we need additional class for pose with a book ( to hide universal hands )
-    # XML DONE
+    # XML DONE item_pose_book
     class CharacterExItemPoseBook( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'hands' )
            
     ########################################################################################
     # we need additional class for panties' shadow
+    # XML DONE item_panties_skirt_shadow
     class CharacterExItemPantiesShadow( CharacterExItem ):
         def _fillHideList( self ):
             None
@@ -55,7 +56,7 @@
 
     ########################################################################################
     # we need additional class for pose with skirt up ( need to hide basic hands, add shadow on panties/skin, also change skirt image )
-    # IN PROGRESS
+    # XML DONE item_pose_lifted_skirt
     class CharacterExItemSkirtLifted( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'skirt' )
@@ -87,6 +88,7 @@
                                 
     ########################################################################################
     # we need additional class for pose with showing tits ( need to hide basic hands, add naked body and hide normal body )
+    # XML DONE item_pose_show_tits
     class CharacterExItemPoseShowTits( CharacterExItem ):
         def _fillHideList( self ):
             self.mHideList.append( 'dress' )

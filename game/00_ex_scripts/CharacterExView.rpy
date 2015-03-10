@@ -93,7 +93,7 @@ init -998 python:
         def showQ( self, aFace, aPos, aTransition = None ):
             if aFace is not None:
                 # now just change image on existing face-item
-                face = self.mData.getItem( 'face' )
+                face = self.mData.getItemKey( 'face' )
                 if face != None:
                     face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace )
                 #self.mData.addFace( CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
@@ -128,7 +128,7 @@ init -998 python:
         
         # additional function for face to pass only file name
         def addFaceName( self, aFace ):
-            face = self.mData.getItem( 'face' )
+            face = self.mData.getItemKey( 'face' )
             if face != None:
                 face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace )
             #self.mData.addItem( 'face', CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )

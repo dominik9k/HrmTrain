@@ -1061,7 +1061,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
 
 label addTitsPose:
     # add tits pose!
-    $herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+    #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+    $herView.data().addItem( 'item_pose_show_tits' )
     return
     
 label addSperm:

@@ -70,12 +70,21 @@
         ##########################################################            
         
         # return Item if Hermione get the item with given key, otherwise - None
-        def getItem( self, aKey ):
+        def getItemKey( self, aKey ):
             if aKey in self.mItems.keys():
                 return self.mItems[ aKey ]
             else:
                 return None
-                
+
+        # return Item if Hermione get the item with given key, otherwise - None
+        def getItem( self, aItemName ):
+            key = self._getItemKeyByName( aItemName )
+            if key in self.mItems.keys():
+                item = self.mItems[ key ]
+                if item.mName == aItemName:
+                    return item
+            return None
+
 
         # add additional stuff on hermione ( permanent )
         def addItemDirect( self, aKey, aCharacterExItem ):
@@ -95,7 +104,7 @@
 
         def addItemSet( self, aSetName ):
             self._applyToSet( aSetName, __EData_Add )
-        
+
 
         # delete item by key
         def delItemKey( self, aKey ):
@@ -103,7 +112,7 @@
 
         # delete item by it's name
         def delItem( self, aItemName ):
-            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            key = self._getItemKeyByName( aItemName )
             self._delItem( key, aItemName )
 
         def delItemSet( self, aSetName ):
@@ -116,7 +125,7 @@
 
         # show item by it's name
         def showItem( self, aItemName, aSource = 'game' ):
-            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            key = self._getItemKeyByName( aItemName )
             self._showItem( key, aSource, aItemName )
 
         # show item set on character
@@ -129,7 +138,7 @@
             self._hideItem( aKey, aSource )
 
         def hideItem( self, aItemName, aSource = 'game' ):
-            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            key = self._getItemKeyByName( aItemName )
             self._hideItem( key, aSource, aItemName )
 
         # hide item set on character
@@ -148,7 +157,7 @@
 
         # set style to item
         def setStyleItem( self, aItemName, aStyleName ):
-            key = WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )
+            key = self._getItemKeyByName( aItemName )
             self._setStyle( key, aStyleName, aItemName )
 
         # set style to all items in set
@@ -156,13 +165,27 @@
             self._applyToSet( aSetName, __EData_Style, aStyleName )
 
 
-        # return True, if the item with suck name exists in items on passed position
-        def checkItem( self, aKey, aName ):
+        # return True, if the item with such name exists in items on given position
+        def checkItemKeyName( self, aKey, aName ):
             if aKey in self.mItems.keys():
                 item = self.mItems[ aKey ]
                 if item.mName == aName:
                     return True
             return False
+
+        # return True, if the item with such style name exists in items on given position
+        def checkItemKeyStyle( self, aKey, aStyleName ):
+            if aKey in self.mItems.keys():
+                item = self.mItems[ aKey ]
+                if item.getStyle() == aStyleName:
+                    return True
+            return False
+
+        # return True, if the item with such style name  and such style exists in items
+        def checkItemNameStyle( self, aItemName, aStyleName ):
+            key = self._getItemKeyByName( aItemName )
+            return self.checkItemKeyStyle( key, aStyleName )
+
 
         # call this to remove all items from character mItems
         def clear( self ):
@@ -366,3 +389,6 @@
                         self.setStyleItem( name, aStringParam )
                                 
 
+        # return key of item by it's name
+        def _getItemKeyByName( self, aItemName ):
+            return WTXmlLinker.i( self.mLinkerKey ).getItemKey( aItemName )

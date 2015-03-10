@@ -645,7 +645,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         pause 1
 
         call req11_dress
-        $herViewHead.data().addPose( CharacterExItemPoseShowTits( herViewHead.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+        #$herViewHead.data().addPose( CharacterExItemPoseShowTits( herViewHead.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+        $herViewHead.data().addItem( 'item_pose_show_tits' )
         $herViewHead.showQ( "body_85.png", posHead )
         her2 "................................"
         $herViewHead.hideQ()

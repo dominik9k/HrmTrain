@@ -205,7 +205,8 @@ label want_to_rule:
 
                     $herView.hideQQ()
 
-                    $herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+                    #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+                    $herView.data().addItem( 'item_pose_show_tits' )
 
                     $herView.showQQ( "body_82.png", pos )
                     show screen ctc
@@ -249,7 +250,8 @@ label want_to_rule:
 
                     $herView.data().hideItemKey('skirt')
                     $herView.data().hideItemKey('panties')                    
-                    $herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
+                    #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
+                    $herView.data().addItem( 'item_pose_lifted_skirt' )
                     $herView.data().addItemKey( 'panties_shifted', CharacterExItem( herView.mClothesFolder, 'panties_shifted.png', G_Z_PANTIES ) )
             
                     $herView.hideQQ()

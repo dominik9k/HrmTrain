@@ -4,14 +4,14 @@
 	<key>pose</key>
 
 	<style name="default">
-		<frame>pose_with_book.png</frame>
+		<frame>pose_dress_up.png</frame>
 		<folder>pose</folder>
 		<visible>1</visible>
 		<zorder>pose</zorder>
 		<parent></parent>
 		<hidelist>
-			<item>hands</item>
 			<item>dress</item>
+			<item>hands</item>
 		</hidelist>
 	</style>
 </item>
