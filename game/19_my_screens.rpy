@@ -9,7 +9,7 @@ screen main_menu_01:
         yanchor "center"
         idle "03_hp/05_props/01_door.png"
         hover "03_hp/05_props/01_door_02.png"
-        action [Hide("main_menu_01"), Hide("animation_feather"), Jump("door")]
+        action [Hide("main_menu_01"), Hide("animation_feather"), Jump("door")] 
         
  
         
