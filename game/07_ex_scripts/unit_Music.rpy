@@ -6,7 +6,7 @@ init -999 python:
 #        music_name=name
         if name=="Supergirl":
             name="music/Reamonn-Supergirl.mp3"
-            music_volume=0.3
+            music_volume=0.4
 
         renpy.music.stop(fadeout=2.0)
         renpy.pause(1.0)
