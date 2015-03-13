@@ -2656,7 +2656,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         $ whoring +=1
 
 #    $ request_11_points += 1
-    $SetHearts(SetStage(event._finishCount,1,1,1))
+    $SetHearts(GetStage(event._finishCount,1,1,1))
     
 
 

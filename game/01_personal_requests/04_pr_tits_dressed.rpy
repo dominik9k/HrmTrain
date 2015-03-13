@@ -13,6 +13,7 @@ label new_request_04:
     
     
     
+    $ current_payout = 15 #Used when haggling about price of th favor.
     if whoring <=2: # LEVEL 01 # Hermione refuses.
         jump too_much
         
@@ -35,6 +36,7 @@ label new_request_04:
         show screen blkfade
         with Dissolve(1)
         pause.5
+
 
         her_head_main "сэр.....?"
         menu: 
@@ -164,9 +166,10 @@ label new_request_04:
         with Dissolve(1)
         pause.5
         play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
-        ">Гермиона начинает стягивать свою униформу..."
-        m "Нет, не стоит. Я хочу делать это пока ты полностью одета..."
-        her_head_main "Ох, хорошо..."
+        if this.new_request_12.IsFinished(): # Если уже играл с ее голыми сиськами
+            ">Гермиона начинает стягивать свою униформу..."
+            m "Нет, не стоит. Я хочу делать это пока ты полностью одета..."
+            her_head_main "Ох, хорошо..."
         ">Гермиона стоит перед вами в ожидании..."
         ">Вы хватаете ее большие сиськи..."
         ">И усиленно начинаете их массировать..."
@@ -214,10 +217,144 @@ label new_request_04:
                 $her_head_state = 17
                 her_head_main "*Задыхаясь* Что вы делаете, сэр...?"
                 $her_head_state = 18
-                her_head_main "Вам не стоит быть таким грубым со мной....{image=textheart.png}"
-        
+                her_head_main "Не нужно быть таким грубым со мной....{image=textheart.png}"
+                hide screen blktone8
+
+        if whoring>=12: # Если уже играл с ее голыми сиськами
+            her "Эмм... Профессор, может, вы будете делать это по-настоящему?"
+            m "По-настоящему?"
+            her "Да, я хочу, чтобы вы... То есть, чтобы я заработала больше очков. Может, я сниму форму?"
+            menu:
+                "Заголяйтесь, мисс!":
+                    m "Хорошо. Заголяйтесь, мисс!"
+                    show screen blkfade
+                    with Dissolve(1)
+                    pause.5
+
+                    $ posHead = gMakePos( 390, 340 )
+
+                    $herViewHead.showQ( "body_120.png", posHead )
+                    her "Пфф! Сэр, вам обязательно \nбыть таким вульгарным?"
+                    $herViewHead.hideQ()
+                    m "Вы будете меня поучать, мисс Грейнджер, или, все-таки, зарабатывать очки?"
+                    $herViewHead.showQ( "body_66.png", posHead )
+                    her "......................."
+                    $herViewHead.hideQ()
+                    m "Итак?"
 
 
+                    hide screen genie
+                    show screen ctc
+                    #show screen chair_02 #Genie's chair.
+                    hide screen genie
+                    show screen genie_and_tits_01
+                    with d1
+                    hide screen blkfade
+                    with d5
+                    "> Гермиона задирает блузку и рубашку."
+                    $current_payout+=20
+                    jump new_request_12_mainonly
+
+                "На сегодня все.":
+                    show screen blkfade
+                    with Dissolve(1)
+                    pause.5
+                    $ hermione_chibi_xpos = 400 #Near the desk.
+                    hide screen bld1
+#                    $herView.hideQ()
+                    hide screen blktone 
+                    hide screen hermione_02
+                    hide screen ctc
+                    hide screen bld1
+                    hide screen chair_02 #Genie's chair.
+                    hide screen groping_03
+                    show screen genie
+                    show screen hermione_01 #Hermione stands still.
+                    hide screen blkfade
+                    with Dissolve(1)
+
+
+                    $herView.showQQ( "body_55.png", pos )
+                    m "На сегодня все, девочка."
+                    m "Впрочем, если ты готова лечь и раздвинуть ножки..."
+                    if whoring<18: # Если не готова к сексу
+                        $herView.showQQ( "body_05.png", pos )
+                        her "Аргх! Сэр... как вы можете!... Я!..."
+                        m "Тише, дорогая, тише. Я просто пошутил."
+                    else:
+                        $herView.showQQ( "body_103.png", pos )
+                        her "Я... я согласна, профессор."
+                        g9 "Я и не сомневался, что ты будешь только ЗА."
+                        $herView.showQQ( "body_120.png", pos )
+                        her "Не просто так, профессор, это за очки для факультета, для гордого \"Гриффиндора\"!"
+                        m "Да-да, старая песня."
+                        $herView.showQQ( "body_51.png", pos )
+                        her "Аргх! Сэр... как вы можете!... Я!..."
+                        m "Ладно-ладно, мисс Грейнджер, я пошутил насчет раздвинутых ножек. Никто на вас не покушается."
+
+                    if not end.IsEnding(const_ENDING_STRONG_GIRL):
+                        $herView.showQQ( "body_120.png", pos )
+                        her "Гррх!... Заплатите мне и я пойду!"
+                        $mad=+30
+                        jump new_request_04_finish
+                    else:
+                        $MusicStart("Supergirl",0.3)                                   
+                        $herView.showQQ( "body_50.png", pos )
+                        her "Эти ваши шутки, профессор..."
+                        $herView.showQQ( "body_61.png", pos )
+                        her "................................"
+                        $herView.showQQ( "body_69.png", pos )
+                        her "................................"
+                        m "Что?"
+                        $herView.showQQ( "body_29.png", pos )
+                        her "Я тут подумала, что может быть..."
+                        m "Да?"
+                        $herView.showQQ( "body_56.png", pos )
+                        her "Может быть и могла бы..."
+                        m "Могла бы что?"
+                    if whoring<18: # Если не готова к сексу
+                        $herView.showQQ( "body_123.png", pos )
+                        her "Ну как вы и сказали, раздвинуть... Если это будет как следует оплачиваться, конечно!"
+                        g9 "Разумеется, будет. Конечно!" 
+                    else:
+                        $herView.showQQ( "body_123.png", pos )
+                        her "Ну как вы и сказали, раздвинуть... бесплатно."
+                        $herView.showQQ( "body_64.png", pos )
+                        her "Не подумайте ничего такого, просто, вы это {size=+4}ТАК{/size} здорово делаете..."
+                        g9 "Ну вот, наконец-то ты берешься за ум, девочка!"
+
+                    g9 "Ну тогда иди сюда, снимай трусы..."
+                    $herView.showQQ( "body_80.png", pos )
+                    her "Тише, профессор, тише, не надо так возбуждаться!.. Я тоже {size=+4}ПОШУТИЛА{/size}!"
+                    g4 "...................."
+                    g4 "Ах ты, мелкая мерзавка!"
+                    $herView.showQQ( "body_100.png", pos )
+                    her "Мы квиты, сэр! А теперь я хочу получить свои очки."
+                    menu:
+                        "Вон!":
+                            m "Вон отсюда! Очков не будет!"
+                            $herView.showQQ( "body_05.png", pos )
+                            her "Поскольку вы не держите свое слово, сэр, вероятно, я не смогу больше приходить к вам."
+                            $mad+=50
+                            jump new_request_04_nopoints
+                        "Что ж, получай!":
+                            m "Что ж, мисс Грейнджер, получайте свои очки."
+                            m "Но в следующий раз за такие шутки очки у вас будут вычитаться, а не добавляться."
+                            m "Я доступно излагаю?"
+                            $herView.showQQ( "body_58.png", pos )
+                            her "Вполне, сэр."
+                            her "Но если так, профессор, то я мне придется молчать, как рыба об лед. Я буду бояться лишнее слово сказать."
+                            m "Это только к лучшему, мисс Грейнджер."
+                            $herView.showQQ( "body_129.png", pos )
+                            her "Как же я буду отчитываться вам, профессор?.. Но, конечно, я сделаю как вы говорите."
+                            "> Гермиона обрачивается уходить."
+                            m "Ладно, мисс Грейнджер, на этот раз я вас прощаю. Но предупреждаю - попридержите свой язычок!"
+                            $herView.showQQ( "body_84.png", pos )
+                            her "Конечно, профессор!"
+
+
+
+    label new_request_04_finish:
     $SetHearts(GetStage(whoring, 3, 3, 3))
 
     if whoring <= 5:
@@ -233,22 +370,24 @@ label new_request_04:
     hide screen bld1
     hide screen chair_02 #Genie's chair.
     hide screen groping_03
-    hide screen blktone8
     show screen genie
     show screen hermione_01 #Hermione stands still.
 
 
     stop music fadeout 1.0
-    ">Вы отпускаете грудь Гермионы..."
-    m "На этом все."
-    $her_head_state = 4
-    her_head_main "................"
+    if whoring<12: # Если еще не играл с ее голыми сиськами
+        ">Вы отпускаете грудь Гермионы..."
+        m "На этом все."
+        $her_head_state = 4
+        her_head_main "................"
+    else:
+        $MusicStop()
     
     hide screen blkfade 
     with d3
     
-    $ gryffindor +=15
-    m "\"Гриффиндор\" получает 15 очков!"
+    $ gryffindor +=current_payout
+    m "\"Гриффиндор\" получает [current_payout] очков!"
     
 #    $ request_04_points += 1
    
@@ -260,14 +399,40 @@ label new_request_04:
     with Dissolve(1)
     
     $ pos = POS_370
-    $herView.showQQ( "body_29.png", pos )
-    her ".................."
-    her "Спасибо, сэр..."
-    if daytime:
-        her "Теперь, мне лучше идти. Занятия вот-вот начнутся."
+    if current_payout==35:
+        $herView.showQQ( "body_05.png", pos )
+        her "Постойте, сэр!"
+        her "Почему 35 очков? 15 и 35 в сумме дают 50!"
+        m "Нет, мисс Грейнджер. 35 это и в сумме 35!"
+        $herView.showQQ( "body_76.png", pos )
+        her "Сэр, при всем уважении! Пощупать через форму всегда стоило 15 очков, а просто так - 35!"
+        her "Не пытайтесь меня обсчитать!"
+        m "Мисс Грейнджер, я пошел вам навстречу и разрешил заголиться..."
+        m "...и дал 35 очков вместо обещанных 15-ти. И теперь выcлушиваю от вас претензии!"
+        m "Не зря говорят, добрые дела не остаются безнаказанными..."
+        her "Добрые дела, сэр?! Мы договаривались, что..."
+        m "Договаривались? Мы что, договаривались что вы продаете мне две услуги за раз?"
+        $herView.showQQ( "body_66.png", pos )
+        her "Нет, но..."
+        m "Если бы вы заранее обсудили это со мной..."
+        her "Я хотела, но..."
+        m "Что \"но\"? Вам так понравилось, что вы забыли обо всем на свете?" 
+        $herView.showQQ( "body_88.png", pos )
+        her "Нет! Совсем нет!"
+        m "Как бы там ни было, мисс Грейнджер, решение окончательное. 35 очков и ни очком больше!" 
+        $herView.showQQ( "body_86.png", pos )
+        her "Это нечестно, сэр!"
+        $mad+=15
     else:
-        her "Мне лучше пойти. Уже поздно..."
+        $herView.showQQ( "body_29.png", pos )
+        her ".................."
+        her "Спасибо, сэр..."
+        if daytime:
+            her "Теперь, мне лучше идти. Занятия вот-вот начнутся."
+        else:
+            her "Мне лучше пойти. Уже поздно..."
     
+    label new_request_04_nopoints:
     hide screen bld1
     $herView.hideQ()
     with Dissolve(.3)
