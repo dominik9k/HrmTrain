@@ -81,6 +81,9 @@ init -998 python:
             # items, stored here, change the visibility to FALSE
             self.mDirectors = set()
 
+            # this is used only be screen of character view, NEVER MODIFY THIS VARIABLE DIRECTLY!
+            self._x_x_x_screen_pos = None
+
         # old constructor
         @classmethod
         def createOld( cls, aFolder, aName, aOrder, aParent = None, aPos = None ):
@@ -198,10 +201,14 @@ init -998 python:
         ##########################################################  
 
         # used for face changing
-        def changeImage( self, aImageFolder, aImageName ):
+        # aIsActLikeAdding - when set to true, will act as if this item was just added
+        def changeImage( self, aImageFolder, aImageName, aIsActLikeAdding = False ):
             self.mFileName = aImageName
             self.mFileFolder = aImageFolder
             self.image = aImageFolder + aImageName
+            if aIsActLikeAdding:
+                if self.mOwner != None:
+                    self.mOwner.updateItemSpecial( self )
 
         ##########################################################
         # modify image methods
@@ -223,7 +230,8 @@ init -998 python:
             self._hideInner( aSource )
             if prevVis != self.mIsVisible:
                 if not self.mIsSubitem:
-                    self.mOwner._onItemHidden( self )
+                    if self.mOwner != None:
+                        self.mOwner._onItemHidden( self )
                 self._showFromHideList()
                 
         def show( self, aSource ):
@@ -231,8 +239,16 @@ init -998 python:
             self._showInner( aSource )
             if prevVis != self.mIsVisible:
                 if not self.mIsSubitem:
-                    self.mOwner._onItemShown( self )
+                    if self.mOwner != None:
+                        self.mOwner._onItemShown( self )
                 self._hideFromHideList()
+
+        # additional method where we don't know what visible we are setting
+        def setIsVisible( self, aIsVisible ):
+            if self.mIsVisible and not aIsVisible:
+                self.hide( None )
+            elif not self.mIsVisible and aIsVisible:
+                self.show( None )
 
         ##########################################################
         # methods for proper transform work
@@ -299,14 +315,16 @@ init -998 python:
         ##########################################################
         def _hideInner( self, aSource ):
             self.mIsVisible = False
-            self.mDirectors.add( aSource )
+            if aSource != None:
+                self.mDirectors.add( aSource )
             # subitems
             if self.mOwner != None:
                 for item in self.mSubitems:
                     self.mOwner.hideItem( item )
                 
         def _showInner( self, aSource ):
-            self.mDirectors.discard( aSource )
+            if aSource != None:
+                self.mDirectors.discard( aSource )
             if not self.mDirectors:
                 self.mIsVisible = True
                 # subitems
@@ -379,7 +397,7 @@ init -998 python:
             if desc.mParent != None:
                 self.parent = desc.mParent
             if desc.mIsVisible != None:
-                self.mIsVisible = desc.mIsVisible
+                self.setIsVisible( bool(desc.mIsVisible) )
 
             if desc.mHideList != None:
                 del self.mHideList[:]
@@ -391,7 +409,6 @@ init -998 python:
                 self.mTransforms.clear()
                 for key,val in desc.mTransforms.iteritems():
                     self.addTransform( key, CharacterExTransform.create( val ), True )
-
 
             if desc.mActions != None:
                 # clear actions
@@ -432,13 +449,15 @@ init -998 python:
         ##########################################################
         def _showFromHideList( self ):
             if not self.mIsSubitem:
-                for key in self.mHideList:
-                    self.mOwner.showItemKey( key, self.mName )
+                if self.mOwner != None:
+                    for key in self.mHideList:
+                        self.mOwner.showItemKey( key, self.mName )
 
         def _hideFromHideList( self ):
             if not self.mIsSubitem:
-                for key in self.mHideList:
-                    self.mOwner.hideItemKey( key, self.mName )
+                if self.mOwner != None:
+                    for key in self.mHideList:
+                        self.mOwner.hideItemKey( key, self.mName )
 
         ##########################################################
         # methods to override
@@ -455,18 +474,16 @@ init -998 python:
             self._hideFromHideList()
             self._applyAction( CharacterExItem._indSelfAdded, self.mOwner, self, aItems )
             # subitems
-            if self.mOwner != None:
-                for item in self.mSubitems:
-                    self.mOwner.addItem( item )
+            for item in self.mSubitems:
+                self.mOwner.addItem( item )
             
         def innerOnSelfRemoved( self, aItems ):
             # this called just after deleting SELF from Hermione
             self._showFromHideList()
             self._applyAction( CharacterExItem._indSelfRemoved, self.mOwner, self, aItems )
             # subitems
-            if self.mOwner != None:
-                for item in self.mSubitems:
-                    self.mOwner.delItem( item )
+            for item in self.mSubitems:
+                self.mOwner.delItem( item )
         
         def innerOnItemAdded( self, aItem ):
             # this called when other new item added to Hermione, and THIS item is existed before it

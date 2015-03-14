@@ -7,10 +7,10 @@ init python:
     global Hermione_SB
 
     # initing variables
-    Hermione_FB = CharacterExFolderBase()
-    Hermione_OB = CharacterExOrderBase()
-    Hermione_IB = CharacterExItemBase()
-    Hermione_SB = CharacterExSetBase()
+    Hermione_FB = CharacterExFolderStorage()
+    Hermione_OB = CharacterExOrderStorage()
+    Hermione_IB = CharacterExItemStorage()
+    Hermione_SB = CharacterExSetStorage()
 
     # initing creator
     global Hermione_ItemCreator

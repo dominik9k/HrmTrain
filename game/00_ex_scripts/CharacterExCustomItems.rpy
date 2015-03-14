@@ -69,7 +69,7 @@
             pantiesFound = False
             if 'dress' in aItems.keys():
                 dressItem = aItems[ 'dress' ]
-                if dressItem.mName == 'dress_normal.png':
+                if dressItem.mFileName == 'dress_normal.png':
                     self.mOldDressTex = dressItem.getImage()
                     dressItem.updateImage( self.mOwner.getView().mClothesFolder + "dress_lifted_skirt.png" )
             # add shadow on panties
@@ -82,7 +82,7 @@
             if self.mOldDressTex != None:
                 if 'dress' in aItems.keys():
                     dressItem = aItems[ 'dress' ]
-                    if dressItem.mName == 'dress_normal.png':
+                    if dressItem.mFileName == 'dress_normal.png':
                         dressItem.updateImage( self.mOldDressTex )
                         self.mOldDressTex = None
                                 
@@ -96,6 +96,7 @@
 
     ########################################################################################
     # we need additional class for sweat (body 97,98,99)
+    # XML DONE item_misc_sweat_97to99
     class CharacterExItemSweat( CharacterExItem ):
         def _fillHideList( self ):
             None
@@ -105,7 +106,7 @@
             CharacterExItem.innerOnSelfAdded( self, aItems, aCharacterEx )
             if 'face' in aItems:
                 faceObj = aItems[ 'face' ]
-                if faceObj.mName == 'body_97.png' or faceObj.mName == 'body_98.png' or faceObj.mName == 'body_99.png':
+                if faceObj.mFileName == 'body_97.png' or faceObj.mFileName == 'body_98.png' or faceObj.mFileName == 'body_99.png':
                     self._showInner( 'self' )
                 else:
                     self._hideInner( 'self' )
@@ -114,7 +115,7 @@
             # do not forget to call parent method!
             CharacterExItem.innerOnItemAdded( self, aItemKey, aItem )
             if aItemKey == 'face':
-                if aItem.mName == 'body_97.png' or aItem.mName == 'body_98.png' or aItem.mName == 'body_99.png':
+                if aItem.mFileName == 'body_97.png' or aItem.mFileName == 'body_98.png' or aItem.mFileName == 'body_99.png':
                     self._showInner( 'self' )
                 else:
                     self._hideInner( 'self' )
@@ -153,6 +154,7 @@
 
     ########################################################################################
     # we need additional class for splatters (body 169, 170, 171)
+    # XML WORKING
     class CharacterExItemSplatters( CharacterExItem ):
         def _fillHideList( self ):
             None
@@ -162,7 +164,7 @@
             CharacterExItem.innerOnSelfAdded( self, aItems, aCharacterEx )
             if 'face' in aItems:
                 faceObj = aItems[ 'face' ]
-                if faceObj.mName == 'body_169.png' or faceObj.mName == 'body_170.png' or faceObj.mName == 'body_171.png':
+                if faceObj.mFileName == 'body_169.png' or faceObj.mFileName == 'body_170.png' or faceObj.mFileName == 'body_171.png':
                     self._showInner( 'self' )
                 else:
                     self._hideInner( 'self' )
@@ -171,7 +173,7 @@
             # do not forget to call parent method!
             CharacterExItem.innerOnItemAdded( self, aItemKey, aItem )
             if aItemKey == 'face':
-                if aItem.mName == 'body_169.png' or aItem.mName == 'body_170.png' or aItem.mName == 'body_171.png':
+                if aItem.mFileName == 'body_169.png' or aItem.mFileName == 'body_170.png' or aItem.mFileName == 'body_171.png':
                     self._showInner( 'self' )
                 else:
                     self._hideInner( 'self' )

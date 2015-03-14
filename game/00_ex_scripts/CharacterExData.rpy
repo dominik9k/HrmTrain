@@ -147,7 +147,7 @@
 
 
         # try to apply the style to all items. Only items which has such style will be affected
-        def setStyle( self, aStyleName ):
+        def setStyleAll( self, aStyleName ):
             for item in self.mItems.values():
                 item.setStyle( aStyleName )
 
@@ -207,7 +207,6 @@
             self.mSavedTransforms = {}
             for key in self.mTransforms.keys():
                 self.mSavedTransforms[ key ] = deepcopy( self.mTransforms[ key ] )
-
     
         # load saved state
         def loadState( self ):
@@ -280,15 +279,20 @@
             self._addItem( 'face', aData )
         def delFace( self ):
             self._delItem( 'face' )
+
+        # function imitate adding of item, when it just changed self values
+        def updateItemSpecial( self, aItem ):
+            self._addItem( aItem.mKey, aItem, False )
         
         ##########################################################
         # DO NOT CALL CALL THESE METHODS FROM THE OUTER CODE! ONLY FROM THE CLASS, THEY'RE INNER!
         ##########################################################        
 
-        def _addItem( self, aName, aData ):
-            self._delItem( aName )
-            self.mItems[ aName ] = aData
-            aData.onSelfAdded( aName, self.mItems, self )
+        def _addItem( self, aKey, aData, aIsDeletePrevious = True ):
+            if aIsDeletePrevious:
+                self._delItem( aKey )
+            self.mItems[ aKey ] = aData
+            aData.onSelfAdded( aKey, self.mItems, self )
 
             if not aData.getIsSubitem():
                 for item in self.mItems.values():
@@ -298,9 +302,9 @@
             for key,val in self.mTransforms.iteritems():
                 aData.addTransform( key, val )
 
-        def _delItem( self, aName, aItemName = None ):
-            if aName in self.mItems.keys():
-                data = self.mItems[ aName ]
+        def _delItem( self, aKey, aItemName = None ):
+            if aKey in self.mItems.keys():
+                data = self.mItems[ aKey ]
                 # if we got item name - compare it with found item's name, and return if the names are different
                 if aItemName != None:
                     if data.mName != aItemName:
@@ -311,7 +315,7 @@
                         if item != data:
                             item.onItemRemoved( data )
 
-                del self.mItems[ aName ]
+                del self.mItems[ aKey ]
                 data.onSelfRemoved( self.mItems, self )
 
         def _showItem( self, aKey, aSource, aItemName = None ):

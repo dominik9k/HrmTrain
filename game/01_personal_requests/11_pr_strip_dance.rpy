@@ -19,7 +19,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
     $ current_payout = 35 #Because will have option to pay extra.
 
     $ herView.data().saveState()
-    $ herView.data().addItemKey( 'sweat', CharacterExItemSweat( herView.mMiscFolder, "sweat.png", G_Z_POSE - 1 ) )
+    #$ herView.data().addItemKey( 'sweat', CharacterExItemSweat( herView.mMiscFolder, "sweat.png", G_Z_POSE - 1 ) )
+    $ herView.data().addItem( 'item_misc_sweat_97to99' )
 
     if request_11_points == 0: #<==============================EVENT 01
         

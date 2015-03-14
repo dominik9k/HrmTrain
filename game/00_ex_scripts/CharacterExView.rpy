@@ -1,8 +1,10 @@
 ﻿screen CharacterExViewScreen( aData, aPos ):   
     python:
-        dataToSort = aData.values()
-        sorted_data = sorted( dataToSort, key = lambda item: item.zorder )
-    for element in sorted_data:
+        data = aData.values()
+        data.sort( key = lambda item: item.zorder )
+        #for element in data:
+#            element._x_x_x_screen_pos = gSumPos( aPos, element.position )
+    for element in data:
         if element.mIsVisible == True:
             add element.getImage() at gSumPos( aPos, element.position )
                 
@@ -95,7 +97,7 @@ init -998 python:
                 # now just change image on existing face-item
                 face = self.mData.getItemKey( 'face' )
                 if face != None:
-                    face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace )
+                    face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace, True )
                 #self.mData.addFace( CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
 
             #renpy.show_screen( "CharacterExViewScreen", self.mItems, aPos )
@@ -130,7 +132,7 @@ init -998 python:
         def addFaceName( self, aFace ):
             face = self.mData.getItemKey( 'face' )
             if face != None:
-                face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace )
+                face.changeImage( WTXmlLinker.f( self.mData.mLinkerKey ).get( 'face' ), aFace, True )
             #self.mData.addItem( 'face', CharacterExItem( self.mFaceFolder, aFace, G_Z_FACE ) )
 
         ##########################################################
@@ -138,6 +140,9 @@ init -998 python:
         ##########################################################
     
         def _showView( self, aData, aPos ):
+            # for test!
+            #renpy.show_screen( "_image_load_log" )
+            # 
             oldOrder = store._CharacterExViewScreenZOrder
             store._CharacterExViewScreenZOrder = self.mZOrderScreen
             renpy.show_screen( "CharacterExViewScreen", aData, aPos, _tag = self.mTagScreen )

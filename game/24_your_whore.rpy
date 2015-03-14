@@ -59,7 +59,8 @@ label your_whore:
     with d7
 
     $herView.data().saveState()
-    $herView.data().addItemKey( 'splatters', CharacterExItemSplatters( herView.mMiscFolder, "splatters.png", G_Z_POSE + 1 ) )
+    #$herView.data().addItemKey( 'splatters', CharacterExItemSplatters( herView.mMiscFolder, "splatters.png", G_Z_POSE + 1 ) )
+    $herView.data().addItem( 'item_misc_splatters_169to171' )
     
 #    if queen_whore_ending: #Students talking. Ending "Queen whore".
     if end.IsEnding(const_ENDING_STRONG_GIRL): #Students talking. Ending "Prostitute".
@@ -208,7 +209,8 @@ label your_whore:
     
     mal "Эй, Гермиона..."
     $ posHead = gMakePos( 390, 235 )
-    $herViewHead.data().addPose( CharacterExItemPoseParade( herViewHead.mPoseFolder, "pose_parade.png", G_Z_POSE ) )
+    #$herViewHead.data().addPose( CharacterExItemPoseParade( herViewHead.mPoseFolder, "pose_parade.png", G_Z_POSE ) )
+    $herViewHead.data().addItem( 'item_pose_parade' )
 
     $herViewHead.showQ( "body_159.png", posHead )
     her "О, привет!"

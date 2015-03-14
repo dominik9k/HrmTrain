@@ -1,7 +1,7 @@
 ﻿init -999 python:
     import xml.etree.ElementTree as ET
 
-    class CharacterExItemBase:
+    class CharacterExItemStorage:
         # constructor
         def __init__( self ):
            self.mItems = {} # map of ( name, item_description )

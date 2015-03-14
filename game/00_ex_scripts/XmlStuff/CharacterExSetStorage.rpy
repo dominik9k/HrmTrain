@@ -15,7 +15,7 @@
                 else:
                     self.mKeys.append( None )
 
-    class CharacterExSetBase:
+    class CharacterExSetStorage:
         # constructor
         def __init__( self ):
            self.mSets = {}  # map with ( string, array of strings )

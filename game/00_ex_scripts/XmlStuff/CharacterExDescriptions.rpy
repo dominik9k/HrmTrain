@@ -2,51 +2,6 @@
     import xml.etree.ElementTree as ET
     import re
 
-    def _assistantReadZOrder( aOrderString, aOrderBase ):
-        txt = aOrderString
-        tokens = []
-        operators = []
-        prevPos = 0
-        for ind in range( len( txt ) ):
-            if txt[ind] == '+' or txt[ind] == '-' or txt[ind] == '*' or txt[ind] == '/':
-                param = txt[prevPos:ind]
-                prevPos = ind + 1
-                tokens.append( param )
-                operators.append( txt[ind] )
-        if prevPos != 0 and prevPos < len( txt ):
-            param = txt[prevPos:len(txt)]
-            tokens.append( param )
-        if not tokens:
-            return aOrderBase.get( txt )
-        else:
-            # this will change type to int
-            for ind in range( len( tokens ) ):
-                tokens[ind] = aOrderBase.get( tokens[ind] )
-            res = tokens[0]
-            tokInd = 1
-            # very simple calculator, without prioritising multiplication over addition and so on
-            # just do operations one after another
-            for op in operators:
-                nextVal = tokens[tokInd]
-                if op == '+':
-                    res += nextVal
-                elif op == '-':
-                    res -= nextVal
-                elif op == '*':
-                    res *= nextVal
-                elif op == '/':
-                    res //= nextVal
-                tokInd += 1
-            return res
-
-    def _assistantReadList( aChild, aListToRead ):
-            itemList = list( aChild )
-            if not itemList:
-                aListToRead.append( aChild.text )
-            else:    
-                for hideItem in itemList:
-                    aListToRead.append( hideItem.text )
-
     ###########################################################
     class CharacterExDescriptionTransform(store.object):
         #
@@ -149,6 +104,7 @@
             self.mEvent = ""    # type of events ( selfAdded, selfRemoved, itemAdded, itemRemoved, itemShown, itemHidden )
             self.mBlocks = []   # array of block descriptions
             self.mResults = []  # array of result descriptions
+            self.mBadResults = []   # array of bad result descriptions
             self._read( aElementRoot, aFolderBase, aOrderBase )
 
         #
@@ -159,7 +115,9 @@
                     for block in child:
                         self.mBlocks.append( CharacterExDescriptionActionBlock( block, aFolderBase, aOrderBase ) )
                 if child.tag == 'result':
-                    self.mResults.append( CharacterExDescriptionActionResult( child ) )
+                    self.mResults.append( CharacterExDescriptionActionResultFactory.create( child, aFolderBase, aOrderBase ) )
+                if child.tag == 'badresult':
+                    self.mBadResults.append( CharacterExDescriptionActionResultFactory.create( child, aFolderBase, aOrderBase ) )
 
     ###########################################################
     class CharacterExDescriptionStyle(store.object):

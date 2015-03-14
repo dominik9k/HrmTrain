@@ -1,7 +1,7 @@
 ﻿init -999 python:
     import xml.etree.ElementTree as ET
 
-    class CharacterExOrderBase:
+    class CharacterExOrderStorage:
         # constructor
         def __init__( self ):
            self.mSynonyms = {}
