@@ -27,6 +27,7 @@ screen main_menu_01:
         imagebutton: # THE PACKAGE
                 xpos 260 
                 ypos 235
+                focus_mask True
                 xanchor "center"
                 yanchor "center"
                 idle "03_hp/05_props/owl_06.png" 
@@ -52,7 +53,7 @@ screen main_menu_01:
     imagebutton: # PHOENIX
         xpos 400 
         ypos 225
-        #focus_mask True
+        focus_mask True
         xanchor "center"
         yanchor "center"
         idle "pho_01" 
@@ -65,7 +66,7 @@ screen main_menu_01:
     imagebutton: # FIREPLACE
         xpos 553 
         ypos 277
-        #focus_mask True
+        focus_mask True
         xanchor "center"
         yanchor "center"
         idle "03_hp/05_props/03_fireplace_02.png" 
