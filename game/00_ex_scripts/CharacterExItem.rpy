@@ -1,4 +1,7 @@
 ﻿label main_ex_CharacterExItem_constants:
+    # DO NOT USE THIS ANYMORE!
+    # USE xml FILE TO CREATE ITEMS!
+
     # main zOrders
     define G_Z_UNDERLEGS = 0
     define G_Z_LEGS = 20
@@ -61,6 +64,8 @@ init -998 python:
             self.position = Transform( pos = ( 0, 0 ) )            
             # parent of item, should be string key or None. When parent item is hidden, this item also hide, and the same with showing parent
             self.parent = None
+            # to which styles of parent we are bound to. If empty and parent != None, all styles of parent will be appropriate
+            self.parentStyles = []
 
             # here is the list of keys to hide with this item
             self.mHideList = []
@@ -128,6 +133,7 @@ init -998 python:
             item.image = aItem.image
             # parent of item, should be string key or None. When parent item is hidden, this item also hide, and the same with showing parent
             item.parent = aItem.parent
+            item.parentStyles = list( aItem.parentStyles )
 
             # here is the list of keys to hide with this item
             item.mHideList = list( aItem.mHideList )
@@ -235,6 +241,10 @@ init -998 python:
                     if self.mOwner != None:
                         self.mOwner._onItemHidden( self )
                 self._showFromHideList()
+                # subitems
+                if self.mOwner != None:
+                    for item in self.mSubitems:
+                        self.mOwner.hideItem( item )
                 
         def show( self, aSource ):
             prevVis = self.mIsVisible
@@ -244,6 +254,10 @@ init -998 python:
                     if self.mOwner != None:
                         self.mOwner._onItemShown( self )
                 self._hideFromHideList()
+                # subitems
+                if self.mOwner != None:
+                    for item in self.mSubitems:
+                        self.mOwner.showItem( item )
 
         # additional method where we don't know what visible we are setting
         def setIsVisible( self, aIsVisible ):
@@ -280,8 +294,8 @@ init -998 python:
             self.mOwner = aCharacterEx
             self.mKey = aKey
             if self.parent and self.parent in aItems:
-                if not aItems[ self.parent ].mIsVisible:
-                    self._hideInner( 'parent' )
+                itemParent = aItems[ self.parent ]
+                self._parentItemRoutines( itemParent )
             self.innerOnSelfAdded( aItems )
 
         def onSelfRemoved( self, aItems, aCharacterEx ):
@@ -292,24 +306,22 @@ init -998 python:
             self.innerOnItemAdded( aItem )
             
         def onItemRemoved( self, aItem ):
-            if aItem.mKey == self.parent:
-                self._showInner( 'parent' )
+            self._parentItemRoutines( aItem, True )
             self.innerOnItemRemoved( aItem )
             
         def onItemHidden( self, aItem ):
-            if aItem.mKey == self.parent:
-                self._hideInner( 'parent' )
+            self._parentItemRoutines( aItem )
             self.innerOnItemHidden( aItem )
             
         def onItemShown( self, aItem ):
-            if aItem.mKey == self.parent:
-                self._showInner( 'parent' )
+            self._parentItemRoutines( aItem )
             self.innerOnItemShown( aItem )
 
         def onItemStyleBeforeChange( self, aItem ):
             self.innerOnItemStyleBeforeChange( aItem )
 
         def onItemStyleAfterChange( self, aItem ):
+            self._parentItemRoutines( aItem )
             self.innerOnItemStyleAfterChange( aItem )
 
         ##########################################################
@@ -319,20 +331,12 @@ init -998 python:
             self.mIsVisible = False
             if aSource != None:
                 self.mDirectors.add( aSource )
-            # subitems
-            if self.mOwner != None:
-                for item in self.mSubitems:
-                    self.mOwner.hideItem( item )
                 
         def _showInner( self, aSource ):
             if aSource != None:
                 self.mDirectors.discard( aSource )
             if not self.mDirectors:
-                self.mIsVisible = True
-                # subitems
-                if self.mOwner != None:
-                    for item in self.mSubitems:
-                        self.mOwner.showItem( item )
+                self.mIsVisible = True               
 
         ##########################################################
         def _getTransformDict( self, aIsInner ):
@@ -398,6 +402,10 @@ init -998 python:
                 self.position = Transform( pos = ( desc.mShift.xpos, desc.mShift.ypos ) )
             if desc.mParent != None:
                 self.parent = desc.mParent
+            if desc.mParentStyles != None:
+                del self.parentStyles[:]
+                for elem in desc.mParentStyles:
+                    self.parentStyles.append( elem )
             if desc.mIsVisible != None:
                 self.setIsVisible( bool(desc.mIsVisible) )
 
@@ -460,6 +468,19 @@ init -998 python:
                 if self.mOwner != None:
                     for key in self.mHideList:
                         self.mOwner.hideItemKey( key, self.mName )
+
+        ##########################################################
+        def _parentItemRoutines( self, aParent, aIsRemoved = False ):
+            if aParent.mKey == self.parent:
+                isParentVisible = aParent.mIsVisible
+                if self.parentStyles:
+                    # we got filled parent styles list
+                    if not aParent.getStyle() in self.parentStyles:
+                        isParentVisible = False
+                if isParentVisible or aIsRemoved:
+                    self._showInner( 'parent' )
+                else:
+                    self._hideInner( 'parent' )
 
         ##########################################################
         # methods to override

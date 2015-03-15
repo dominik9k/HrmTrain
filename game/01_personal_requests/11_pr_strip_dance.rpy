@@ -570,7 +570,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         sna2 "................................................................................................................................................................................"
         
         # add black-white hermione as a pose, higher then face
-        $herViewHead.data().addPose( CharacterExItem( herViewHead.mPoseFolder, 'hermione_bw_strip.png', G_Z_FACE + 1 ) )
+        #$herViewHead.data().addPose( CharacterExItem( herViewHead.mPoseFolder, 'hermione_bw_strip.png', G_Z_FACE + 1 ) )
+        $herViewHead.data().additem( 'item_pose_bw_strip' )
         $herViewHead.showQ( "body_96.png", posHead )
         with hpunch
         her "(Профессор Снейп???????!)"
@@ -1426,7 +1427,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         show screen g_c_c_u
                                         pause
                                         
-                                        $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_01.png', G_Z_FACE + 1 ) )
+                                        #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_01.png', G_Z_FACE + 1 ) )
+                                        $herViewHead.data().addItem( 'item_sperm', '01' )
                                         $herViewHead.showQ( "body_104.png", posHead )
                                         her "??!!!"
                                         $herViewHead.hideQ()
@@ -1455,7 +1457,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         show screen s_c_c_u
                                         pause
                                         $herViewHead.showQ( "body_104.png", posHead )
-                                        $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_02.png', G_Z_FACE + 1 ) )
+                                        #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_02.png', G_Z_FACE + 1 ) )
+                                        $herViewHead.data().addItem( 'item_sperm', '02' )
                                         her "!!!!!!!!!!!"
                                         $ s_sprite = "03_hp/10_snape_main/snape_21.png" #SNAPE
                                         show screen s_head2                                                          #SNAPE
@@ -1577,8 +1580,9 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         hide screen blkfade
                                         with d5
                                         $herView.data().delTransform()
-                                        $herView.data().delItemKey( 'sperm' )
-                                        $herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                        $herView.data().delItem( 'item_sperm' )
+                                        #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                        $herView.data().addItem( 'item_sperm_dried' )
                                         $herView.hideQQ()
                                         $ pos = POS_140
                                         call req11_dress
@@ -2240,7 +2244,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         show screen g_c_c_u
                                         pause
                                         
-                                        $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_01.png', G_Z_FACE + 1 ) )
+                                        #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_01.png', G_Z_FACE + 1 ) )
+                                        $herViewHead.data().addItem( 'item_sperm', '01' )
                                         $herViewHead.showQ( "body_104.png", posHead )
                                         her "??!!!"
                                         $herViewHead.hideQ()
@@ -2272,8 +2277,9 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                             show screen blkfade 
                                             with d3
                                             
-                                            $herViewHead.data().delItemKey( 'sperm' )
-                                            $herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                            $herViewHead.data().delItem( 'item_sperm' )
+                                            #$herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                            $herViewHead.data().addItem( 'item_sperm_dried' )
                                             stop music fadeout 5.0
                                             ">.................{w}.................{w}.................{w}................."
                                             call req11_dress
@@ -2340,7 +2346,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     with d7
                                                     pause.5
                                                     
-                                                    $herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    $herView.data().addItem( 'item_sperm_dried' )
                                                     jump done_with_dancing
                                                 "\"Десять дополнительных очков.\"":
                                                     $ current_payout = 45
@@ -2362,7 +2369,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     with d7
                                                     pause.5
                                                     
-                                                    $herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    $herView.data().addItem( 'item_sperm_dried' )
                                                     jump done_with_dancing
                                                 "\"Вы получите 25 дополнительных очков.\"":
                                                     $ current_payout = 60
@@ -2381,7 +2389,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     with d7
                                                     pause.5
                                                     
-                                                    $herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    $herView.data().addItem( 'item_sperm_dried' )
                                                     jump done_with_dancing
                                                 "\"Вы получаете 50 дополнительных очков.\"":
                                                     $ current_payout = 85
@@ -2411,7 +2420,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     with d7
                                                     pause.5
                                                     
-                                                    $herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                    $herView.data().addItem( 'item_sperm_dried' )
                                                     jump done_with_dancing
                                                 "\"Ты ни черта не получишь!\"":
                                                     stop music fadeout 1.0
@@ -2432,7 +2442,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                             with d7
                                                             pause.5
                                                             
-                                                            $herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                            #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                                                            $herView.data().addItem( 'item_sperm_dried' )
                                                             jump done_with_dancing
                                                         "\"Нет, их тоже не получишь!\"":
                                                             play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
@@ -2620,7 +2631,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
 
     label done_with_dancing:
     call req11_dress
-    $herView.data().delItemKey( 'sperm' )
+    $herView.data().delItem( 'item_sperm' )
     
     $ gryffindor += current_payout #35
     

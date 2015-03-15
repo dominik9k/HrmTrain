@@ -344,7 +344,8 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
                 hide screen ctc
 
 
-                $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                $herViewHead.data().addItem( 'item_sperm', '05' )
                 $herViewHead.showQ( "body_133.png", posHead )
                 her2 "Ааа...{image=textheart.png}{image=textheart.png}{image=textheart.png}"
                 $herViewHead.hideQ()
@@ -417,7 +418,8 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
                 show screen ctc
                 pause
                 hide screen ctc
-                $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                $herViewHead.data().addItem( 'item_sperm', '05' )
                 $herViewHead.showQ( "body_133.png", posHead )
                 her2 "Аааа...{image=textheart.png}{image=textheart.png}{image=textheart.png}"
                 $herViewHead.hideQ()
@@ -768,7 +770,8 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
                 show screen ctc
                 pause
                 hide screen ctc
-                $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                $herViewHead.data().addItem( 'item_sperm', '05' )
                 $herViewHead.showQ( "body_133.png", posHead )
                 her "!!!"
                 her "ААА, вы наполняете меня до краёв!{image=textheart.png}{image=textheart.png}{image=textheart.png}"
@@ -870,7 +873,8 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
                 show screen ctc
                 pause
                 hide screen ctc
-                $herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
+                $herView.data().addItem( 'item_sperm', '05' )
                 $herViewHead.showQ( "body_133.png", posHead )
                 her2 "ААА...{image=textheart.png}{image=textheart.png}{image=textheart.png}"
                 $herViewHead.hideQ()
@@ -916,9 +920,10 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
                 $herViewHead.hideQ()
         
         
-    if herViewHead.data().getItemKey( 'sperm' ) != None:
-        $herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
-    $herViewHead.data().delItemKey( 'sperm' )
+    if herViewHead.data().getItem( 'item_sperm' ) != None:
+        $herViewHead.data().addItem( 'item_sperm_dried' )
+        #$herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
+    $herViewHead.data().delItem( 'item_sperm' )
     hide screen h_c_u
     hide screen g_c_u
     hide screen g_c_c_u # Genie's sperm. Universal.

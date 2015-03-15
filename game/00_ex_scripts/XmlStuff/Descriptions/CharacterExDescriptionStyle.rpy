@@ -9,7 +9,8 @@
             self.mFrame = ""
             self.mFileFolder = ""
             self.mZOrder = 0
-            self.mParent = ""
+            self.mParent = None
+            self.mParentStyles = []
             self.mIsVisible = True
             self.mShift = Transform( pos = ( 0, 0 ) )
             self.mTransforms = {} # map of transform descriptions
@@ -22,6 +23,7 @@
             self.mFileFolder = None
             self.mZOrder = None
             self.mParent = None
+            self.mParentStyles = None
             self.mIsVisible = True
             self.mShift = None
             self.mTransforms = None # map of transform descriptions
@@ -47,6 +49,8 @@
                 elif child.tag == 'parent':
                     if not aIsSubitem:
                         self.mParent = child.text
+                elif child.tag == 'parentStyles':
+                    self._readParentStyles( child )
                 elif child.tag == 'shift':
                     self._readShift( child )
                 elif child.tag == 'transforms':
@@ -66,6 +70,11 @@
                                 self.mActions = []
                         for actSingle in child:
                             self.mActions.append( CharacterExDescriptionAction( actSingle, aFolderBase, aOrderBase ) )
+
+        def _readParentStyles( self, child ):
+            if self.mParentStyles == None:
+                self.mParentStyles = []
+            wtxml_readList( child, self.mParentStyles ) # from WTXmlAssistantFunctions
 
         def _readHideList( self, child ):
             if self.mHideList == None:

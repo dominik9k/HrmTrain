@@ -14,7 +14,7 @@ label tutoring:
     #add pose with the book!
     $herView.data().saveState()
     #$herView.data().addPose( CharacterExItemPoseBook( herView.mPoseFolder, "pose_with_book.png", G_Z_POSE ) )
-    $herView.data().addItemKey( 'item_pose_book' )
+    $herView.data().addItem( 'item_pose_book' )
 
     show screen blkfade
     with d3

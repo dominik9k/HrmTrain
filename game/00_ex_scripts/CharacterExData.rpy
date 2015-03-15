@@ -76,7 +76,7 @@
             else:
                 return None
 
-        # return Item if Hermione get the item with given key, otherwise - None
+        # return Item if Hermione get the item with given name, otherwise - None
         def getItem( self, aItemName ):
             key = self._getItemKeyByName( aItemName )
             if key in self.mItems.keys():
@@ -363,7 +363,11 @@
                 item.onItemStyleAfterChange( aItem )
 
         ##########################################################  
-        # aWhatToDo == 0 - add, 1 - remove, 2 - show, 3 - hide, 4 - style
+        # __EData_Add = 0
+        # __EData_Remove = 1
+        # __EData_Show = 2
+        # __EData_Hide = 3
+        # __EData_Style = 4
         def _applyToSet( self, aSetName, aWhatToDo, aStringParam = None ):
             if aSetName[0] != '*':
                 aSetName = '*' + aSetName

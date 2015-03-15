@@ -4033,7 +4033,7 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         pause
         hide screen ctc
         play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
-        $ herViewHead.data().delItemKey( 'tiara' )
+        $ herViewHead.data().delItem( 'item_tiara' )
         $ herViewHead.data().delPose()
         $ posHead = gMakePos( 390, 235 )
         $herViewHead.showQ( "body_120.png", posHead )
@@ -4093,7 +4093,8 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         with d3
 
         # add shock screen!
-        $herViewHead.data().addPose( CharacterExItem( herViewHead.mPoseFolder, 'hermione_bw_final_shock.png', G_Z_FACE + 1 ) )
+        #$herViewHead.data().addPose( CharacterExItem( herViewHead.mPoseFolder, 'hermione_bw_final_shock.png', G_Z_FACE + 1 ) )
+        $herViewHead.data().addItem( 'item_pose_final_shock' )
 
         # here was body_197, but it replaced with pose                                                                                                 # HERMIONE
         $herViewHead.showQ( None, posHead )

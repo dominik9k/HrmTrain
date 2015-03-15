@@ -188,7 +188,8 @@ label badge_put:
     $herView.showQQ( "body_01.png", pos )
     her "Конечно, сэр..."
     
-    $ herView.data().addItemKey( G_N_BADGE, CharacterExItem( herView.mClothesFolder, "badge.png", G_Z_DRESS + 1, 'dress' ) )
+    #$ herView.data().addItemKey( G_N_BADGE, CharacterExItem( herView.mClothesFolder, "badge.png", G_Z_DRESS + 1, 'dress' ) )
+    $herView.data().addItem( 'item_badge' )
     
     show screen blkfade
     with d3
@@ -208,7 +209,7 @@ label badge_take:
     $herView.showQQ( "body_01.png", pos )
     her "Как пожелаете, сэр..."
 
-    $ herView.data().delItemKey( G_N_BADGE )
+    $ herView.data().delItem( 'item_badge' )
     
     show screen blkfade
     with d3
@@ -312,7 +313,8 @@ label nets_put:
                                                                                                                                                                                                                           #HERMIONE
     
      
-    $ herView.data().addItemKey( G_N_NETS, CharacterExItem( herView.mClothesFolder, "nets.png", G_Z_LEGS + 1, 'legs' ) )
+    #$ herView.data().addItemKey( G_N_NETS, CharacterExItem( herView.mClothesFolder, "nets.png", G_Z_LEGS + 1, 'legs' ) )
+    $herView.data().addItem( 'item_nets' )
     
     #$ legs_02 = True
     
@@ -350,7 +352,7 @@ label nets_take:
         her "Правда? Ой..."
     
     
-    $ herView.data().delItemKey( G_N_NETS )
+    $ herView.data().delItem( 'item_nets' )
     #$ legs_02 = False
     
     show screen blkfade

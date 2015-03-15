@@ -12,7 +12,7 @@
         return splitted[0]
 
     def wtxml_readZOrder( aOrderString, aOrderBase ):
-        txt = aOrderString
+        txt = aOrderString.replace( ' ', '' )   # remove spaces
         tokens = []
         operators = []
         prevPos = 0
@@ -81,17 +81,21 @@
         s.read( sPath, i )
 
     def wtxml_updateItems( aCharacterEx ):
+        linkerKey = aCharacterEx.mLinkerKey
         keys = aCharacterEx.mItems.keys()
         for key in keys:
             item = aCharacterEx.getItemKey( key )
             if item != None:
                 if item.mName:
                     if not item.mIsSubitem:
-                        aCharacterEx.delItemKey( key )
-                        actStyle = item.mActiveStyle
+                        actStyle = item.getStyle()
                         if actStyle == None:
                             actStyle = 'default'
-                        aCharacterEx.addItem( item.mName, actStyle )
+                        # this is done to update only that items, which are in items database and to not touch the others
+                        newItem = WTXmlLinker.c( linkerKey ).create( item.mName, actStyle )
+                        if newItem[0] != None:
+                            aCharacterEx.delItemKey( key )
+                            aCharacterEx.addItemDirect( key, newItem[0] )
 
     def wtxml_updateAll( aCharacterEx ):
         wtxml_updateLinker( aCharacterEx )
