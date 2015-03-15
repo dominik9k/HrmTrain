@@ -546,7 +546,8 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
                 with d3
                 
                 #Cumming.
-                $herViewHead.data().addItem( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_04.png', G_Z_FACE + 1 ) )
+                #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_04.png', G_Z_FACE + 1 ) )
+                $herViewHead.data().addItem( 'item_sperm', '04' )
 
                 $herViewHead.showQ( "body_48.png", posHead )
                 her "Профессор..."
@@ -598,7 +599,8 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
                 $herViewHead.showQ( "body_44.png", posHead )
                 her "Могу я получить оплату?"
                 $herViewHead.hideQ()
-                $herViewHead.data().addItem( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 2 ) )
+                #$herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 2 ) )
+                $herViewHead.data().addItem( 'item_sperm_dried' )
 
         
         
@@ -1129,7 +1131,8 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
                 with d3
                 
                 #Cumming.
-                $herViewHead.data().addItem( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_04.png', G_Z_FACE + 1 ) )
+                #$herViewHead.data().addItemKey( 'sperm', CharacterExItem( herViewHead.mMiscFolder, 'sperm_04.png', G_Z_FACE + 1 ) )
+                $herViewHead.data().addItem( 'item_sperm', '04' )
                 $herViewHead.showQ( "body_48.png", posHead )
                 her "Профессор..."
                 $herViewHead.hideQ()
@@ -1157,8 +1160,9 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
                 with d3
                 stop music fadeout 1.0 
                 ">Минутой позже."
-                $herViewHead.data().delItem( 'sperm' )
-                $herViewHead.data().addItem( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                $herViewHead.data().delItem( 'item_sperm' )
+                #$herViewHead.data().addItemKey( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+                $herViewHead.data().addItem( 'item_sperm_dried' )
                 $herViewHead.showQ( "body_122.png", posHead )
                 her "Мне кажется, вам нравится, сэр?"
                 $herViewHead.hideQ()
@@ -1173,7 +1177,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
             
         
     
-    $herViewHead.data().delItem( 'sperm' )
+    $herViewHead.data().delItem( 'item_sperm' )
     $ gryffindor += current_payout #35
     hide screen h_c_u
     hide screen g_c_u

@@ -110,7 +110,8 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     with d3
     $herView.hideQQ()
     #$ only_upper = True #No lower body displayed. 
-    $herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+    #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+    $herView.data().addItem( 'item_pose_show_tits' )
     $herView.showQQ( "body_82.png", pos )
     pause
     her "...................................."

@@ -1170,23 +1170,26 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
 
 label addTitsPose:
     # add tits pose!
-    $herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+    #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+    $herView.data().addItem( 'item_pose_show_tits' )
     return
     
 label addSperm:
     # add sperm item!
-    $herView.data().addItem( 'sperm', CharacterExItem( herView.mMiscFolder, 'sperm_00.png', G_Z_FACE + 1 ) )
+    #$herView.data().addItemKey( 'sperm', CharacterExItem( herView.mMiscFolder, 'sperm_00.png', G_Z_FACE + 1 ) )
+    $herView.data().addItem( 'item_sperm', '00' )
     return
 
 label delSperm:
     # add sperm item!
-    $herView.data().delItem( 'sperm' )
+    $herView.data().delItem( 'item_sperm' )
     return
     
 label addAfterSperm:
     # del pose and add aftersperm
     $herView.data().delPose()
-    $herView.data().addItem( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+    #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
+    $herView.data().addItem( 'item_sperm_dried' )
     return
     
 label loadState_and_could_not_flirt:

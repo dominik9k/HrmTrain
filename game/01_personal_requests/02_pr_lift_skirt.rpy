@@ -87,7 +87,8 @@ label new_request_02: #SHOW ME YOUR Трусики
     # add pose with lifted skirt
     if whoring<13:
         $herView.data().saveState()
-        $herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
+        #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
+        $herView.data().addItem( 'item_pose_lifted_skirt' )
         $ pos = POS_120
     
     if whoring >= 0 and whoring <= 2: #LEVEL 01   <============================= Fist event.

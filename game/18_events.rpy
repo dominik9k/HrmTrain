@@ -2275,7 +2275,8 @@ label event_11: #Third visit, after second special date with Snape. Hermione com
     show screen bld1
     with Dissolve(.3)
     
-    $ herView.data().addItem( 'robe', CharacterExItemRobe( herView.mClothesFolder, "robe.png", G_Z_DRESS + 1, 'body' ) )
+    #$ herView.data().addItemKey( 'robe', CharacterExItemRobe( herView.mClothesFolder, "robe.png", G_Z_DRESS + 1, 'body' ) )
+    $herView.data().addItem( 'item_robe_study' )
     
     $ pos = POS_370
     $herView.showQ( "body_09.png", pos )
@@ -2380,7 +2381,7 @@ label event_11: #Third visit, after second special date with Snape. Hermione com
     with Dissolve(.3)
     pause.5
     
-    $ herView.data().delItem( 'robe' )
+    $ herView.data().delItem( 'item_robe_study' )
     
     $ event11_happened = True #Allows next event to start.
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
