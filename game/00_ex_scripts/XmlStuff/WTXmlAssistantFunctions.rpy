@@ -4,7 +4,7 @@
     
     def wtxml_parseBool( aString ):
         # only this 3 values is equal to True, all other - False
-        return aString in [ '1', 'true', 'True' ]
+        return aString in [ '1', 'true', 'True', True ]
 
     def wtxml_getFileNameFromPath( aPath ):
         filename = ntpath.basename( aPath ).encode( "utf-8" )

@@ -574,7 +574,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         
         # add black-white hermione as a pose, higher then face
         #$herViewHead.data().addPose( CharacterExItem( herViewHead.mPoseFolder, 'hermione_bw_strip.png', G_Z_FACE + 1 ) )
-        $herViewHead.data().additem( 'item_pose_bw_strip' )
+        $herViewHead.data().addItem( 'item_pose_bw_strip' )
         $herViewHead.showQ( "body_96.png", posHead )
         with hpunch
         her "(Профессор Снейп???????!)"
