@@ -91,19 +91,19 @@
             self._addItem( aKey, aCharacterExItem )
 
         # add item to character with specific key
-        def addItemKey( self, aKey, aName ):
-            newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName )
+        def addItemKey( self, aKey, aName, aStyle = 'default' ):
+            newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName, aStyle )
             if newItem[0] != None:
                 self.addItemDirect( aKey, newItem[0] )
 
         # add item to character, key info is get from item's data
-        def addItem( self, aName ):
-            newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName )
+        def addItem( self, aName, aStyle = 'default' ):
+            newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName, aStyle )
             if newItem[0] != None:
                 self.addItemDirect( newItem[0].mKey, newItem[0] )
 
-        def addItemSet( self, aSetName ):
-            self._applyToSet( aSetName, __EData_Add )
+        def addItemSet( self, aSetName, aStyle = 'default' ):
+            self._applyToSet( aSetName, __EData_Add, aStyle )
 
 
         # delete item by key
@@ -371,7 +371,7 @@
             if setDesc == None:
                 return
             if aWhatToDo == __EData_Add:
-                setItems = WTXmlLinker.c( self.mLinkerKey ).create( aSetName )
+                setItems = WTXmlLinker.c( self.mLinkerKey ).create( aSetName, aStringParam )
                 for item in setItems:
                     if item != None:
                         self.addItemDirect( item.mKey, item )

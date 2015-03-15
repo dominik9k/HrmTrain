@@ -128,6 +128,8 @@
 
     ########################################################################################
     # we need additional class for parade pose ( hide all items with zOrder lover, then G_Z_FACE )
+    # XML DONE item_pose_parade / item_pose_bug
+
     class CharacterExItemPoseParade( CharacterExItem ):
         def _fillHideList( self ):
             None
@@ -154,7 +156,7 @@
 
     ########################################################################################
     # we need additional class for splatters (body 169, 170, 171)
-    # XML WORKING
+    # XML DONE
     class CharacterExItemSplatters( CharacterExItem ):
         def _fillHideList( self ):
             None

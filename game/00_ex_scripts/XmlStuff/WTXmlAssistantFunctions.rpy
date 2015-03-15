@@ -2,16 +2,16 @@
     import ntpath
     # xml assistant functions
     
-    def _parseBool( aString ):
+    def wtxml_parseBool( aString ):
         # only this 3 values is equal to True, all other - False
         return aString in [ '1', 'true', 'True' ]
 
-    def _getFileNameFromPath( aPath ):
+    def wtxml_getFileNameFromPath( aPath ):
         filename = ntpath.basename( aPath ).encode( "utf-8" )
         splitted = filename.rsplit( '.', 1 )
         return splitted[0]
 
-    def _assistantReadZOrder( aOrderString, aOrderBase ):
+    def wtxml_readZOrder( aOrderString, aOrderBase ):
         txt = aOrderString
         tokens = []
         operators = []
@@ -48,7 +48,7 @@
                 tokInd += 1
             return res
 
-    def _assistantReadList( aChild, aListToRead ):
+    def wtxml_readList( aChild, aListToRead ):
             itemList = list( aChild )
             if not itemList:
                 aListToRead.append( aChild.text )
@@ -56,13 +56,45 @@
                 for hideItem in itemList:
                     aListToRead.append( hideItem.text )
 
-    def __xmlUpdateItems( aCharacterEx ):
-        linkKey = aCharacterEx.mLinkerKey
+
+    def wtxml_updateLinker( aCharacterEx ):
+        linkerKey = aCharacterEx.mLinkerKey
+        # folder storage
+        f = WTXmlLinker.f( linkerKey )
+        fPath = f.mDataPath
+        f.CLEAR()
+        f.read( fPath )
+        # order storage
+        o = WTXmlLinker.o( linkerKey )
+        oPath = o.mDataPath
+        o.CLEAR()
+        o.read( oPath )
+        # item storage
+        i = WTXmlLinker.i( linkerKey )
+        iPath = i.mDataPath
+        i.CLEAR()
+        i.read( iPath, f, o )
+        # set storage
+        s = WTXmlLinker.s( linkerKey )
+        sPath = s.mDataPath
+        s.CLEAR()
+        s.read( sPath, i )
+
+    def wtxml_updateItems( aCharacterEx ):
         keys = aCharacterEx.mItems.keys()
         for key in keys:
-            item = aCharacterEx.mItems[ key ]
+            item = aCharacterEx.getItemKey( key )
             if item != None:
                 if item.mName:
-                    aCharacterEx.delItemKey( key )
-                    aCharacterEx.addItemKey( key, item.mName )
+                    if not item.mIsSubitem:
+                        aCharacterEx.delItemKey( key )
+                        actStyle = item.mActiveStyle
+                        if actStyle == None:
+                            actStyle = 'default'
+                        aCharacterEx.addItem( item.mName, actStyle )
+
+    def wtxml_updateAll( aCharacterEx ):
+        wtxml_updateLinker( aCharacterEx )
+        wtxml_updateItems( aCharacterEx )
+        
         

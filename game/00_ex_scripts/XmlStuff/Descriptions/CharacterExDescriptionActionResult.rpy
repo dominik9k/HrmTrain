@@ -79,25 +79,35 @@
             # item value will be set to 'cap'
             self.mParams = {}
 
+            # custom conditions for setParams result - filter all items to get that ones, to which result will be applied
+            # !!! if <filter></filter> block is missed, result will be applied to ALL ITEMS IN THE CharacterData, excluding self !!!
+            self.mConditionBlock = None
+
         # overridden parent method
         def read( self, aElementRoot, aFolderBase, aOrderBase ):
             super( CharacterExDescriptionActionResultSetParams, self ).read( aElementRoot, aFolderBase, aOrderBase )
-            self.mTarget = aElementRoot.get('target')
-            if self.mTarget not in [ 'self', 'matched', 'unmatched' ]:
+            self.mTarget = aElementRoot.get('target', 'self')
+            if self.mTarget not in [ 'self', 'custom' ]:
                 self.mTarget = 'self'
 
             operPossible = [ 'set', 'inc', 'dec' ]
-            for param in aElementRoot:
-                operMeth = param.get('oper')
-                if operMeth == None or ( operMeth not in operPossible ):
-                    operMeth = 'set'
-                # can be None
-                valueCap = param.get('cap')
-                # we need additional checking for folder and zorder params
-                val = param.text
-                if param.tag == 'folder':
-                    val = aFolderBase.get( val )
-                elif param.tag == 'zorder':
-                    val = _assistantReadZOrder( val, aOrderBase )
-                    valueCap = _assistantReadZOrder( valueCap, aOrderBase )
-                self.mParams[ param.tag ] = ( val, operMeth, valueCap )
+            for child in aElementRoot:
+                if child.tag == 'filter':
+                    # read filter
+                    self.mConditionBlock = CharacterExDescriptionActionBlock( child, aFolderBase, aOrderBase )
+                else:
+                    # read parameters
+                    param = child
+                    operMeth = param.get('oper', 'set')
+                    if operMeth not in operPossible:
+                        operMeth = 'set'
+                    # can be None
+                    valueCap = param.get('cap')
+                    # we need additional checking for folder and zorder params
+                    val = param.text
+                    if param.tag == 'folder':
+                        val = aFolderBase.get( val )
+                    elif param.tag == 'zorder':
+                        val = wtxml_readZOrder( val, aOrderBase )   # from WTXmlAssistantFuctions
+                        valueCap = wtxml_readZOrder( valueCap, aOrderBase ) # from WTXmlAssistantFunctions
+                    self.mParams[ param.tag ] = ( val, operMeth, valueCap )

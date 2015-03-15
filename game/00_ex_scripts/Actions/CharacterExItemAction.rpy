@@ -2,34 +2,6 @@ init -999 python:
     import itertools
 
     ###########################################################
-    class CharacterExItemActionBlock(store.object):
-       
-        def __init__( self ):
-            self.mConditions = []    # array of ICharacterExItemActionCondition
-
-        @classmethod
-        def create( cls, aBlockDescription ):
-            desc = aBlockDescription
-            block = cls()
-            for cond in desc.mConditions:
-                condition = CharacterExItemActionConditionFactory.create( cond )
-                block.mConditions.append( condition )
-            return block
-
-        def check( self, aItems, aEventSenderItem, isNeedPassedItems ):
-            passedItems = []
-            for cond in self.mConditions:
-                ( res, passed ) = cond.check( aItems, aEventSenderItem, isNeedPassedItems )
-                if not res:
-                    return ( False, passedItems )
-                elif passed != None:
-                    passedItems.extend( passed )
-
-            if not passedItems:
-                passedItems = None
-            return ( True, passedItems )
-
-    ###########################################################
     class CharacterExItemAction(store.object):
         _indSelfAdded = 0
         _indSelfRemoved = 1
@@ -49,12 +21,12 @@ init -999 python:
             self.mBadResults = []   #array of bad results. Bad results are applied if NO blocks passed
 
         # checking all conditions
-        def _checkBlocks( self, aArrayItems, aEventSenderItem, isNeedPassedItems ):
+        def _checkBlocks( self, aArrayItems, aEventSenderItem ):
             for block in self.mBlocks:
-                ( res, passed ) = block.check( aArrayItems, aEventSenderItem, isNeedPassedItems )
-                if res:
-                    return ( True, passed )
-            return ( False, None )
+                res = block.check( aArrayItems, aEventSenderItem, False )
+                if res.isPassed:
+                    return True
+            return False
 
         @classmethod
         def create( cls, aActionDescription ):
@@ -94,20 +66,14 @@ init -999 python:
             if self.mEvent == 'selfRemoved':
                 arrayItems.append( aParentItem )
 
-            isNeedPassedItems = False
-            for res in self.mResults:
-                isNeedPassedItems = isNeedPassedItems or res.isNeedPassedItems()
-            for res in self.mBadResults:
-                isNeedPassedItems = isNeedPassedItems or res.isNeedPassedItems()
-
             # check conditions
-            ( actionActive, arrPassedItems ) = self._checkBlocks( arrayItems, aEventSenderItem, isNeedPassedItems )
+            actionActive = self._checkBlocks( arrayItems, aEventSenderItem )
 
             if actionActive:
                 # start applying results of action
                 # if we are here, it means all conditions are passed
                 for res in self.mResults:
-                    res.apply( aCharacterEx, aParentItem, arrPassedItems )
+                    res.apply( aCharacterEx, aParentItem )
             else:
                 for badRes in self.mBadResults:
-                    badRes.apply( aCharacterEx, aParentItem, arrayItems )
+                    badRes.apply( aCharacterEx, aParentItem )

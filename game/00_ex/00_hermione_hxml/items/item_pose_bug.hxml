@@ -4,10 +4,10 @@
 	<key>pose</key>
 
 	<style name="default">
-		<frame>pose_parade.png</frame>
+		<frame>hermione_bugged_branch.png</frame>
 		<folder>pose</folder>
 		<visible>1</visible>
-		<zorder>pose</zorder>
+		<zorder>face+5</zorder>
 		<actions>
 			<action event="selfAdded">
 				<body>

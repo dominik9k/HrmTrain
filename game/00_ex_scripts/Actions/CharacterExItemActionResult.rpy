@@ -21,12 +21,8 @@ init -999 python:
     class ICharacterExItemActionResult:
         def __init__( self ):
             self.mType = ""     # type of result
-
-        # should return True only when result need items, which passed the conditions
-        def isNeedPassedItems( self ):
-            return False
-            
-        def apply( self, aCharacterEx, aParentItem, aItemsToChange = None ):
+           
+        def apply( self, aCharacterEx, aParentItem ):
             None
 
     ###########################################################
@@ -63,7 +59,7 @@ init -999 python:
                 return ""
 
         # overridden parent method
-        def apply( self, aCharacterEx, aParentItem, aItemsToChange = None ):
+        def apply( self, aCharacterEx, aParentItem ):
             if self.mKeys and self.mNames:
                 for key,name in itertools.izip_longest( self.mKeys, self.mNames ):   
                     if key != "":
@@ -144,6 +140,7 @@ init -999 python:
         def __init__( self ):
             super( CharacterExItemActionResultSetParams, self ).__init__()
             self.mTarget = ""
+            self.mConditionBlock = None # can be None or CharacterExItemActionBlock
             self.mParamKey = None   # can be ( string, oper, cap )
             self.mParamFileName = None  # can be ( string, oper, cap )
             self.mParamFileFolder = None    # can be ( string, oper, cap )
@@ -158,6 +155,8 @@ init -999 python:
 
             res.mType = desc.mType
             res.mTarget = desc.mTarget
+            if desc.mConditionBlock != None:
+                res.mConditionBlock = CharacterExItemActionBlock.create( desc.mConditionBlock )
             for name,tup in desc.mParams.iteritems():
                 ( val, oper, cap ) = tup
                 operFunc = res._operSet
@@ -185,24 +184,25 @@ init -999 python:
                 return True
 
         # overridden parent method
-        def apply( self, aCharacterEx, aParentItem, aItemsToChange = None ):
+        def apply( self, aCharacterEx, aParentItem ):
             itemsToApply = []
             if self.mTarget == 'self':
                 itemsToApply.append( aParentItem )
-            elif self.mTarget == 'matched':
-                itemsToApply = aItemsToChange
-            elif self.mTarget == 'unmatched':
-                charExItems = aCharacterEx.getAllItems().values()
-                for item in charExItems:
-                    if item not in aItemsToChange:
-                        itemsToApply.append( item )
+            elif self.mTarget == 'custom' or self.mTarget == 'customUnion':
+                if self.mConditionBlock != None:
+                    needUnion = self.mTarget == 'customUnion'
+                    res = self.mConditionBlock.check( aCharacterEx.getAllItems().values(), aParentItem, True, needUnion )
+                    if res.isPassed and res.passedItems != None:
+                        if aParentItem.mKey in res.passedItems.keys():
+                            del res.passedItems[ aParentItem.mKey ]
+                        itemsToApply = res.passedItems.values()
+
             for item in itemsToApply:
                 item.mKey = self._setParam( self.mParamKey, item.mKey, str )
                 item.mFileName = self._setParam( self.mParamFileName, item.mFileName, str )
                 item.mFileFolder = self._setParam( self.mParamFileFolder, item.mFileFolder, str )
                 item.setIsVisible( bool(self._setParam( self.mParamIsVisible, item.mIsVisible, int )) )
                 item.zorder = self._setParam( self.mParamZOrder, item.zorder, int )
-
 
         def _setParam( self, aTupple, aCurrentValue, aConvertFunc ):
             if aTupple != None:
@@ -211,4 +211,4 @@ init -999 python:
                     cap = aConvertFunc( cap )
                 return oper( aCurrentValue, aConvertFunc( val ), cap )
             else:
-                return aConvertFunc( aCurrentValue )
+                return aCurrentValue

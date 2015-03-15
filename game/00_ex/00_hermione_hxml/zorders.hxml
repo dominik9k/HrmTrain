@@ -16,8 +16,8 @@
     <order name="hands_top">1200</order>
     <order name="hair">1300</order> <!-- its just synonym for hair_front -->
     <order name="hair_front">1400</order>
-    <order name="face">1500</order>
-    <order name="hair_top">1600</order>
-    <order name="headwear">1700</order>
-    <order name="pose">4000</order>
+    <order name="pose">2000</order>
+    <order name="face">2100</order>
+    <order name="hair_top">2200</order>
+    <order name="headwear">2300</order>
 </zOrders>

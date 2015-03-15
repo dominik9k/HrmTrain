@@ -1066,7 +1066,8 @@ label your_whore:
         sna "Вот ваша корона..."
         sna "И ваш пьедестал..."
 
-        $herViewHead.data().addItemKey( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
+        #$herViewHead.data().addItemKey( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
+        $herViewHead.data().additem( 'item_tiara' )
         $herViewHead.showQ( "body_160.png", posHead )
         her "Спасибо, профессор."
         $herViewHead.hideQ()
@@ -2889,7 +2890,8 @@ label your_whore:
         m "Отличная речь..."
         m "Очень возбуждающая...Кхм, я имел ввиду вдохновляющая."
 
-        $herViewHead.data().addItemKey( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
+        #$herViewHead.data().addItemKey( 'tiara', CharacterExItem( herViewHead.mClothesFolder, "tiara.png", G_Z_FACE + 1 ) )
+        $herViewHead.data().addItem( 'item_tiara' )
         $herViewHead.showQ( "body_165.png", posHead )
         her "Спасибо, сэр."
         $herViewHead.hideQ()

@@ -5,9 +5,15 @@
         # constructor
         def __init__( self ):
            self.mItems = {} # map of ( name, item_description )
+           self.mDataPath = ""   # here we save the path, from where we've loaded data last time
+
+        # call this to clear all loaded info
+        def CLEAR( self ):
+            self.mItems.clear()
 
         # this should be called at the beginning of the game, path is the location of zorders.xml file
         def read( self, aStartPath, aFolderBase, aZOrderBase ):
+            self.mDataPath = aStartPath
             fileList = renpy.list_files()
             for item in fileList:
                 if item.endswith( '.hxml' ):
@@ -20,7 +26,7 @@
             root = opened.getroot()
             itemDesc = CharacterExDescriptionItem( root, aFolderBase, aZOrderBase )
             if not itemDesc.mName:
-                itemDesc.mName = _getFileNameFromPath( aFilePath )  #from WTXmlAssistansFunctions
+                itemDesc.mName = wtxml_getFileNameFromPath( aFilePath )  #from WTXmlAssistansFunctions
             self.mItems[ itemDesc.mName ] = itemDesc
 
         # return ItemDescription or None

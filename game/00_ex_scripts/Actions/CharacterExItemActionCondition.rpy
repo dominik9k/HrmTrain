@@ -2,6 +2,14 @@ init -999 python:
     import itertools
 
     ###########################################################
+    # class for condition check result
+    ###########################################################    
+    class CharacterExItemActionConditionResult:
+        def __init__( self, aIsPassed = False, aPassedItems = None ):
+            self.isPassed = aIsPassed
+            self.passedItems = aPassedItems # dictionary with passed items, can be None. ( Key == item.mKey, Value == item )
+
+    ###########################################################
     # factory for creating conditions
     ###########################################################
     class CharacterExItemActionConditionFactory:
@@ -18,12 +26,13 @@ init -999 python:
     class ICharacterExItemActionCondition:
         # aItems - items to check
         # aEventSenderItem - item, who intitate current event
-        # isNeedPassedItems - whether this condition should return items, which passed it or not
-        # @result - function should return a tupple ( bool, array/None ), where first item means passed/failed condition, 
-        #           second is an empty list in case of isNeedPassedItems == False, and items which passed the condition
-        #           in case of isNeedPassedItems == True
-        def check( self, aItems, aEventSenderItem, isNeedPassedItems ):
-            return ( False, None )
+        # aIsNeedPassedItems - flag to determine whether condition should return passed items or not
+        # @return - function should return the CharacterExItemActionConditionResult object, with result.isPassed param set to True,
+        #           if condition is passed, and False otherwise. In addition, if aIsNeedPassedItems is set to True,
+        #           function should return all items which passed the condition 
+        #           ( as dictionary, result.passedItems field of CharacterExItemActionConditionResult )
+        def check( self, aItems, aEventSenderItem, aIsNeedPassedItems = False ):
+            return CharacterExItemActionConditionResult( False )
 
     ###########################################################
     class CharacterExItemActionConditionParams( store.object ):
@@ -83,13 +92,13 @@ init -999 python:
                 elif name == 'folder':
                     cond.mParamFileFolder = ( val, methFunc, str )
                 elif name == 'visible':
-                    cond.mParamIsVisible = ( val, methFunc, _parseBool )    #_parseBool is from WTXmlAssitantFunctions
+                    cond.mParamIsVisible = ( val, methFunc, wtxml_parseBool )    #_parseBool is from WTXmlAssitantFunctions
                 elif name == 'zorder':
                     cond.mParamZOrder = ( val, methFunc, int )
                 elif name == 'style':
                     cond.mParamStyle = ( val, methFunc, str )
                 elif name == 'actionItem':
-                    cond.mParamActionItem = _parseBool( val ) # IT'S NOT A TUPPLE!  #_parseBool is from WTXmlAssitantFunctions
+                    cond.mParamActionItem = wtxml_parseBool( val ) # IT'S NOT A TUPPLE!  #_parseBool is from WTXmlAssitantFunctions
 
             return cond
 
@@ -121,7 +130,7 @@ init -999 python:
             return cond
 
         # overridden parent method
-        def check( self, aItems, aEventSenderItem, isNeedPassedItems ):
+        def check( self, aItems, aEventSenderItem, aIsNeedPassedItems = False ):
             # select result function
             resFunc = None
             if self.mType == 'hasItem':
@@ -131,23 +140,25 @@ init -999 python:
 
             # fail condition if the type is incorrect
             if resFunc == None:
-                return ( False, None )
+                return False
 
-            # in case of isNeedPassedItems == True, we should check all items for this condition and create passed items list
-            if isNeedPassedItems:
-                passedItems = []
+            if aIsNeedPassedItems:
+                passedItems = {}
                 isPassed = False
                 for item in aItems:
                     isCurPassed = self._checkOne( item, aEventSenderItem )
                     if isCurPassed:
-                        passedItems.append( item )
+                        passedItems[ item.mKey ] = item
                     isPassed = isPassed or isCurPassed
-                return ( resFunc( isPassed ), passedItems )
+                if not passedItems:
+                    passedItems = None
+                return CharacterExItemActionConditionResult( resFunc( isPassed ), passedItems )
             else:
                 for item in aItems:
                     if self._checkOne( item, aEventSenderItem ):
-                        return ( resFunc( True ), None )
-                return ( resFunc( False ), None )
+                        return CharacterExItemActionConditionResult( resFunc( True ) )
+                return CharacterExItemActionConditionResult( resFunc( False ) )
+                
 
         def _checkOne( self, aItem, aEventSenderItem ):
             #check action item - ignore all compare methods

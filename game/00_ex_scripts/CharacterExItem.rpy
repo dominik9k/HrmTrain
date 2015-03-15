@@ -96,8 +96,10 @@ init -998 python:
             item.position = Transform( pos = ( 0, 0 ) ) 
             if aPos is not None:
                 item.position = aPos
-            # parent of item, should be string key or None. When parent item is hidden, this item also hide, and the same with showing parent
+            # parent of item, should be string key or None. When parent item is hidden, this item also hides, and the same with showing parent
             item.parent = aParent
+            # stub for compatibility
+            item.mActiveStyle = 'default'
 
             # here is the list of keys to hide with this item
             item._fillHideList()

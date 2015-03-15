@@ -20,9 +20,16 @@
         def __init__( self ):
            self.mSets = {}  # map with ( string, array of strings )
            self.mSetInfos = {}  # map with ( string, setInfo )
+           self.mDataPath = ""   # here we save the path, from where we've loaded data last time
+
+        # call this to clear all loaded info
+        def CLEAR( self ):
+            self.mSets.clear()
+            self.mSetInfos.clear()
 
         # this should be called at the beginning of the game, path is the location of zorders.xml file
         def read( self, aStartPath, aItemBase ):
+            self.mDataPath = aStartPath
             fileList = renpy.list_files()
             for item in fileList:
                 if item.endswith( '.hxml' ):
@@ -37,7 +44,7 @@
                 if item.tag == 'set':
                     setKey = item.get( 'name' )
                     if not setKey:
-                        setKey = _getFileNameFromPath( aFilePath )  #from WTXmlAssistansFunctions
+                        setKey = wtxml_getFileNameFromPath( aFilePath )  #from WTXmlAssistansFunctions
                     setItems = []
                     for setIt in item:
                         setItems.append( setIt.text )

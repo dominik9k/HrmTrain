@@ -55,8 +55,8 @@
                 self.mVer = False
                 param = 'horizontal'
                 if param in self.mParams.keys():
-                    self.mHor = _parseBool( self.mParams[ param ] ) #from WTXmlAssitantFunctions
+                    self.mHor = wtxml_parseBool( self.mParams[ param ] ) #from WTXmlAssitantFunctions
                 param = 'vertical'
                 if param in self.mParams.keys():
-                    self.mVer = _parseBool( self.mParams[ param ] ) #from WTXmlAssitantFunctions
+                    self.mVer = wtxml_parseBool( self.mParams[ param ] ) #from WTXmlAssitantFunctions
             
