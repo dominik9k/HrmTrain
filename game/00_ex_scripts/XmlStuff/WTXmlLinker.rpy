@@ -3,7 +3,7 @@
         _lkHermione = 'hermione'
 
         @staticmethod
-        def gerHermioneLinkerKey():
+        def getHermioneLinkerKey():
             return WTXmlLinker._lkHermione
 
         @staticmethod

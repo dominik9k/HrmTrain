@@ -14,7 +14,7 @@ init python:
 
     # initing creator
     global Hermione_ItemCreator
-    Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB, WTXmlLinker.gerHermioneLinkerKey() )
+    Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB, WTXmlLinker.getHermioneLinkerKey() )
 
     # fill variables
     Hermione_FB.read( '00_ex/00_hermione_hxml/folders.hxml' )
@@ -4858,7 +4858,7 @@ label start:
         # dialogue-face view
         global herViewHead     
         
-    $ herData = CharacterExData( WTXmlLinker.gerHermioneLinkerKey() )
+    $ herData = CharacterExData( WTXmlLinker.getHermioneLinkerKey() )
     $ herData.clearState()
     
     $ herView = CharacterExView( 5, her, 'hermione' )

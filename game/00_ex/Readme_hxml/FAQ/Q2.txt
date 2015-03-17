@@ -1,0 +1,142 @@
+ВОПРОС:
+Cейчас вопрос только один, но большой. 
+А если совсем новый персонаж. Что нужно сделать, чтобы подключить его? Куда помеcтить картинки? Какие новые файлы создать, что в них прописать?
+
+
+ОТВЕТ:
+
+Как правильно добавить нового персонажа:
+1) Прописать переменные хранилища для персонажа
+идем в файл script.rpy. Там в самом начале находится объявление:
+
+	# declare variables
+	global Hermione_FB
+	global Hermione_OB
+	global Hermione_IB
+	global Hermione_SB
+
+	# initing variables
+	Hermione_FB = CharacterExFolderStorage()
+	Hermione_OB = CharacterExOrderStorage()
+	Hermione_IB = CharacterExItemStorage()
+	Hermione_SB = CharacterExSetStorage()
+
+	# initing creator
+	global Hermione_ItemCreator
+	Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB, WTXmlLinker.gerHermioneLinkerKey() )
+
+	# fill variables
+	Hermione_FB.read( '00_ex/00_hermione_hxml/folders.hxml' )
+	Hermione_OB.read( '00_ex/00_hermione_hxml/zorders.hxml' )
+	Hermione_IB.read( '00_ex/00_hermione_hxml/items/', Hermione_FB, Hermione_OB )
+	Hermione_SB.read( '00_ex/00_hermione_hxml/sets/', Hermione_IB )
+
+после всего этого добавляем ОЧЕНЬ ПОХОЖИЕ ПЕРЕМЕННЫЕ :D
+Лучше название давать исходя из имени персонажа. Примером будет Daphne:
+
+	# declare variables
+	global Daphne_FB
+	global Daphne_OB
+	global Daphne_IB
+	global Daphne_SB
+
+	# initing variables
+	Daphne_FB = CharacterExFolderStorage()
+	Daphne_OB = CharacterExOrderStorage()
+	Daphne_IB = CharacterExItemStorage()
+	Daphne_SB = CharacterExSetStorage()
+
+	# initing creator
+	global Daphne_ItemCreator
+	Daphne_ItemCreator = CharacterExItemCreator( Daphne_IB, Daphne_SB, WTXmlLinker.getDaphneLinkerKey() )
+
+	# fill variables
+	Daphne_FB.read( '00_ex/00_Daphne_hxml/folders.hxml' )
+	Daphne_OB.read( '00_ex/00_Daphne_hxml/zorders.hxml' )
+	Daphne_IB.read( '00_ex/00_Daphne_hxml/items/', Daphne_FB, Daphne_OB )
+	Daphne_SB.read( '00_ex/00_Daphne_hxml/sets/', Daphne_IB )
+
+Соответсвенно нужно будет создать папку 00_ex/00_Daphne_hxml и туда разместить файлы folders.hxml, zorders.hxml, папки items и sets.
+дальше новые вещи для дафны кидать в items, новые сэты - в sets.
+
+2) Добавить ссылки в линкер
+Идем в game\00_ex_scripts\XmlStuff\WTXmlLinker.rpy
+там в каждой функции со странным название (f, o, ...) дописываем:
+	elif aKey == WTXmlLinker._lkDaphne:
+		return Daphne_xx
+где вместо xx те же две буквы, что и в предыдущем if-е этой функции
+
+Дальше добавляем рядом с:
+	_lkHermione = 'hermione'
+что-то типо 
+	_lkDaphne = 'Daphne'
+
+и добавялем функцию:
+    @staticmethod
+    def getDaphneLinkerKey():
+        return WTXmlLinker._lkDaphne
+
+3) Объявить персонажа для диалога
+находим:
+	###HARRY POTTER CHARACTERS###
+    $ translators = Character('Переводчик', color="#0089BE", show_two_window=True, ctc="ctc3", ctc_position="fixed")
+    $ her = Character('Гермиона', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
+    $ her2 = Character('Гермиона', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
+
+добавляем
+    $ daph = Character('Дафна', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
+    $ daph2 = Character('Дафна', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
+
+4) Создать переменную для отображения персонажа
+Возвращаемся в script.rpy:
+находим там:
+    # main data of hermione
+    global herData
+    # full-sized view
+    global herView
+    # dialogue-face view
+    global herViewHead  
+
+добавляем:
+	# main data of Daphne
+    global daphData
+    # full-sized view
+    global daphView
+    # dialogue-face view
+    global daphViewHead
+
+находим:
+	$ herData = CharacterExData( WTXmlLinker.getHermioneLinkerKey() )
+    $ herData.clearState()
+    
+    $ herView = CharacterExView( 5, her, 'hermione' )
+    $ herView.attach( herData )
+    
+    $ herViewHead = CharacterExView( 8, her2, 'hermione_head' )
+    $ herViewHead.pushScreenTag( 'head' )
+    $ herViewHead.attach( herData )
+
+и ниже добавляем:
+    $ daphData = CharacterExData( WTXmlLinker.getDaphneLinkerKey() )
+    $ daphData.clearState()
+    
+    $ daphView = CharacterExView( 5, daph, 'daphne' )
+    $ daphView.attach( daphData )
+    
+    $ daphViewHead = CharacterExView( 8, daph2, 'daphne_head' )
+    $ daphViewHead.pushScreenTag( 'head' )
+    $ daphViewHead.attach( daphData )
+
+5) Заполнить персонажа... вещами:
+находим:
+    $herView.data().addItemSet( 'hermione_body' )
+    $herView.data().addItemSet( 'hermione_start_clothes' )
+
+    и ниже добавляем шмотки на нового перса.
+    пример:
+    $daphView.data().addItemSet( 'daphne_body' )
+    $daphView.data().addItemSet( 'daphne_start_clothes' )    
+
+6) ВСЕ!
+
+дальше в игре по аналогии с herView, herData, herViewHead - используем daphView, daphDatam daphViewHead
