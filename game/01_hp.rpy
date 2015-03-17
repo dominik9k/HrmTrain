@@ -369,8 +369,8 @@ $ daytime = True #True when it is daytime. Turns False during nighttime.
 $ hermione_sleeping = False
 $ hermione_takes_classes = False
 $ snape_busy = False
-$ fire_in_fireplace = False
-hide screen fireplace_fire
+#$ fire_in_fireplace = False # Remove comment to proffer everyday Fireplace
+#hide screen fireplace_fire
 
 ### EVENTS RELATED FLAGS ###
 $ days_without_an_event +=1
