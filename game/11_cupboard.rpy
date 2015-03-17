@@ -623,6 +623,177 @@ label cupboard:
 
                 "- Ничего -":
                     jump cupboard
+
+        "- Священные свитки. Часть III -" if not day == 1 and cataloug_found:
+            label sc_col_men_2:
+            menu:
+                "- С.31: [scroll_31_name] -" if sscroll_31 or persistent.ss_31:
+                    $ the_gift = "03_hp/19_extras/31.png" # SACRED SCROLL 31.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.32: [scroll_32_name] -" if sscroll_32 or persistent.ss_32:
+                    $ the_gift = "03_hp/19_extras/32.png" # SACRED SCROLL 32.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.33: [scroll_33_name] -" if sscroll_33 or persistent.ss_33:
+                    $ the_gift = "03_hp/19_extras/33.png" # SACRED SCROLL 33.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.34: [scroll_34_name] -" if sscroll_34 or persistent.ss_34:
+                    $ the_gift = "03_hp/19_extras/34.png" # SACRED SCROLL 34.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.35: [scroll_35_name] -" if sscroll_35 or persistent.ss_35:
+                    $ the_gift = "03_hp/19_extras/35.png" # SACRED SCROLL 35.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.36: [scroll_36_name] -" if sscroll_36 or persistent.ss_36:
+                    $ the_gift = "03_hp/19_extras/36.png" # SACRED SCROLL 36.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.37: [scroll_37_name] -" if sscroll_37 or persistent.ss_37:
+                    $ the_gift = "03_hp/19_extras/37.png" # SACRED SCROLL 37.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.38: [scroll_38_name] -" if sscroll_38 or persistent.ss_38:
+                    $ the_gift = "03_hp/19_extras/38.png" # SACRED SCROLL 38.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.39: [scroll_39_name] -" if sscroll_39 or persistent.ss_39:
+                    $ the_gift = "03_hp/19_extras/39.png" # SACRED SCROLL 39.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                    
+                "- С.40: [scroll_40_name] -" if sscroll_40 or persistent.ss_40:
+                    $ the_gift = "03_hp/19_extras/40.png" # SACRED SCROLL 40.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                
+                "- С.41: [scroll_41_name] -" if sscroll_41 or persistent.ss_41:
+                    $ the_gift = "03_hp/19_extras/41.png" # SACRED SCROLL 41.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                
+                "- С.42: [scroll_42_name] -" if sscroll_42 or persistent.ss_42:
+                    $ the_gift = "03_hp/19_extras/42.png" # SACRED SCROLL 42.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                
+                "- С.43: [scroll_43_name] -" if sscroll_43 or persistent.ss_43:
+                    $ the_gift = "03_hp/19_extras/43.png" # SACRED SCROLL 43.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                
+                "- С.44: [scroll_44_name] -" if sscroll_44 or persistent.ss_44:
+                    $ the_gift = "03_hp/19_extras/44.png" # SACRED SCROLL 44.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+                
+                "- С.45: [scroll_45_name] -" if sscroll_45 or persistent.ss_45:
+                    $ the_gift = "03_hp/19_extras/45.png" # SACRED SCROLL 45.
+                    show screen gift
+                    show screen ctc
+                    with d3
+                    pause
+                    hide screen gift
+                    hide screen ctc
+                    with d3
+                    jump sc_col_men_2
+
+                "- Ничего -":
+                    jump cupboard
             
         "- Ничего -":
             jump day_main_menu
