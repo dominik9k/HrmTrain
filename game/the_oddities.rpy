@@ -199,7 +199,7 @@ label the_oddities:
                                 $ gold -= 60
                                 show screen points
                                 $ order_placed = True
-                                $ bought_owl2 = True #Affects 15_mail.rpy
+                                $ bought_owl2_2 = True #Affects 15_mail.rpy
                                 call thx_4_shoping #Massage that says "Thank you for shopping here!".
                                 jump desk
                             else:

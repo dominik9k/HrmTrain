@@ -819,8 +819,8 @@ label mail_02: #Packages only. <================================================
         with d3
         call screen main_menu_01
         
-    if bought_owl2:
-        define bought_owl2 = False #Fix Error
+    if bought_owl2_2:
+        define bought_owl2_2 = False #Fix Error
         $ bought_owl = False #Affects 15_mail.rpy
         $ package_is_here = False # Turns True when days_in_delivery >= 5. Package is displayed.
         $ days_in_delivery = 0 #Count's +1 every day when order_placed = True
