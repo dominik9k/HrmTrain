@@ -1621,9 +1621,342 @@ label the_oddities:
                             hide screen gift
                             jump sscrolls2
 
+                "- Ничего -":
+                    jump the_oddities
 
+        "- Священные свитки. Часть III -":
+            label sscrolls:
+            menu:
 
+                "- С.31: [scroll_31_name] -" if not sscroll_31:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_31 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
 
+                "- С.32: [scroll_32_name] -" if not sscroll_32:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_32 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.33: [scroll_33_name] -" if not sscroll_33:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_33 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.34: [scroll_34_name] -" if not sscroll_34:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_34 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.35: [scroll_35_name] -" if not sscroll_35:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_35 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.36: [scroll_36_name] -" if not sscroll_36:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_36 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.37: [scroll_37_name] -" if not sscroll_37:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_37 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.38: [scroll_38_name] -" if not sscroll_38:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_38 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.39: [scroll_39_name] -" if not sscroll_39:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_39 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.40: [scroll_40_name] -" if not sscroll_40:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_40 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.41: [scroll_41_name] -" if not sscroll_41:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_41 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.42: [scroll_42_name] -" if not sscroll_42:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_42 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.43: [scroll_43_name] -" if not sscroll_43:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_43 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.44: [scroll_44_name] -" if not sscroll_44:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_44 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
+
+                "- С.45: [scroll_45_name] -" if not sscroll_44:
+                    $ the_gift = "03_hp/18_store/31.png" # SACRED SCROLL.
+                    show screen gift
+                    with d3
+                    call sscroll
+                    menu:
+                        "- Купить свиток (30 золота) -":
+                            if gold >= 30:
+                                $ gold -=30
+                                $ sscroll_45 = True # Turns TRUE if the scroll had been bought.
+                                $ renpy.play('sounds/win_04.mp3')   #Not loud.
+                                call sscroll_bought
+                                call thx_4_shoping2 #Massage that says "Thank you for shopping here!".
+                                jump desk
+                            else:
+                                call no_gold #Massage: m "I don't have enough gold".
+                                hide screen gift
+                                jump sscrolls
+                        "- Ничего -":
+                            hide screen gift
+                            jump sscrolls
 
                 "- Ничего -":
                     jump the_oddities

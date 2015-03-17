@@ -4360,9 +4360,38 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
     if sscroll_29:
         $ persistent.ss_29 = True # Sacred Scroll 29 will be unlocked in the gallery.
     if sscroll_30:
-        $ persistent.ss_30 = True # Sacred Scroll 12 will be unlocked in the gallery.
+        $ persistent.ss_30 = True # Sacred Scroll 30 will be unlocked in the gallery.
 
-
+    if sscroll_31:
+        $ persistent.ss_31 = True # Sacred Scroll 31 will be unlocked in the gallery.
+    if sscroll_32:
+        $ persistent.ss_32 = True # Sacred Scroll 32 will be unlocked in the gallery.
+    if sscroll_33:
+        $ persistent.ss_33 = True # Sacred Scroll 33 will be unlocked in the gallery.
+    if sscroll_34:
+        $ persistent.ss_34 = True # Sacred Scroll 34 will be unlocked in the gallery.
+    if sscroll_35:
+        $ persistent.ss_35 = True # Sacred Scroll 35 will be unlocked in the gallery.
+    if sscroll_36:
+        $ persistent.ss_36 = True # Sacred Scroll 36 will be unlocked in the gallery.
+    if sscroll_37:
+        $ persistent.ss_37 = True # Sacred Scroll 37 will be unlocked in the gallery.
+    if sscroll_38:
+        $ persistent.ss_38 = True # Sacred Scroll 38 will be unlocked in the gallery.
+    if sscroll_39:
+        $ persistent.ss_39 = True # Sacred Scroll 39 will be unlocked in the gallery.
+    if sscroll_40:
+        $ persistent.ss_40 = True # Sacred Scroll 40 will be unlocked in the gallery.
+    if sscroll_41:
+        $ persistent.ss_41 = True # Sacred Scroll 41 will be unlocked in the gallery.
+    if sscroll_42:
+        $ persistent.ss_42 = True # Sacred Scroll 42 will be unlocked in the gallery.
+    if sscroll_43:
+        $ persistent.ss_43 = True # Sacred Scroll 43 will be unlocked in the gallery.
+    if sscroll_44:
+        $ persistent.ss_44 = True # Sacred Scroll 44 will be unlocked in the gallery.
+    if sscroll_45:
+        $ persistent.ss_45 = True # Sacred Scroll 45 will be unlocked in the gallery.
 
 
 

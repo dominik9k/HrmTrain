@@ -762,6 +762,22 @@ init -2:
     $ sscroll_29 = False
     $ sscroll_30 = False
     #
+    $ sscroll_31 = False # Turns TRUE if the scroll had been bought.
+    $ sscroll_32 = False
+    $ sscroll_33 = False
+    $ sscroll_34 = False
+    $ sscroll_35 = False
+    $ sscroll_36 = False
+    $ sscroll_37 = False
+    $ sscroll_38 = False
+    $ sscroll_39 = False
+    $ sscroll_40 = False
+    $ sscroll_41 = False
+    $ sscroll_42 = False
+    $ sscroll_43 = False
+    $ sscroll_44 = False
+    $ sscroll_45 = False
+    #
     $ scroll_01_name = "Свиток #1"
     $ scroll_02_name = "Свиток #2"
     $ scroll_03_name = "Свиток #3"
@@ -794,6 +810,22 @@ init -2:
     $ scroll_28_name = "Свиток #28"
     $ scroll_29_name = "Свиток #29"
     $ scroll_30_name = "Свиток #30"
+    #
+    $ scroll_31_name = "Свиток #31"
+    $ scroll_32_name = "Свиток #32"
+    $ scroll_33_name = "Свиток #33"
+    $ scroll_34_name = "Свиток #34"
+    $ scroll_35_name = "Свиток #35"
+    $ scroll_36_name = "Свиток #36"
+    $ scroll_37_name = "Свиток #37"
+    $ scroll_38_name = "Свиток #38"
+    $ scroll_39_name = "Свиток #39"
+    $ scroll_40_name = "Свиток #40"
+    $ scroll_41_name = "Свиток #41"
+    $ scroll_42_name = "Свиток #42"
+    $ scroll_43_name = "Свиток #43"
+    $ scroll_44_name = "Свиток #44"
+    $ scroll_45_name = "Свиток #45"
     
     
     
