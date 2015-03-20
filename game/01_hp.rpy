@@ -90,6 +90,8 @@ $ teachers_pet = 0
 $ classmates_pet = 0
 $ being_mean = 0 #+1 every time you are being mean to hermione.
 
+$currentBook=None
+$item=None
 
 
 $ dates = 0 #Tracks how many times Hermione been tutored.
@@ -369,8 +371,8 @@ $ daytime = True #True when it is daytime. Turns False during nighttime.
 $ hermione_sleeping = False
 $ hermione_takes_classes = False
 $ snape_busy = False
-#$ fire_in_fireplace = False # Remove comment to proffer everyday Fireplace
-#hide screen fireplace_fire
+$ fire_in_fireplace = False
+hide screen fireplace_fire
 
 ### EVENTS RELATED FLAGS ###
 $ days_without_an_event +=1
@@ -727,108 +729,7 @@ init -2:
     
     $ config.autoreload = False
     
-     ### SACRED SCROLLS ###
-    #
-    $ sscroll_01 = False # Turns TRUE if the scroll had been bought.
-    $ sscroll_02 = False
-    $ sscroll_03 = False
-    $ sscroll_04 = False
-    $ sscroll_05 = False
-    $ sscroll_06 = False
-    $ sscroll_07 = False
-    $ sscroll_08 = False
-    $ sscroll_09 = False
-    $ sscroll_10 = False
-    #
-    $ sscroll_11 = False # Turns TRUE if the scroll had been bought.
-    $ sscroll_12 = False
-    $ sscroll_13 = False
-    $ sscroll_14 = False
-    $ sscroll_15 = False
-    $ sscroll_16 = False
-    $ sscroll_17 = False
-    $ sscroll_18 = False
-    $ sscroll_19 = False
-    $ sscroll_20 = False
-    #
-    $ sscroll_21 = False # Turns TRUE if the scroll had been bought.
-    $ sscroll_22 = False
-    $ sscroll_23 = False
-    $ sscroll_24 = False
-    $ sscroll_25 = False
-    $ sscroll_26 = False
-    $ sscroll_27 = False
-    $ sscroll_28 = False
-    $ sscroll_29 = False
-    $ sscroll_30 = False
-    #
-    $ sscroll_31 = False # Turns TRUE if the scroll had been bought.
-    $ sscroll_32 = False
-    $ sscroll_33 = False
-    $ sscroll_34 = False
-    $ sscroll_35 = False
-    $ sscroll_36 = False
-    $ sscroll_37 = False
-    $ sscroll_38 = False
-    $ sscroll_39 = False
-    $ sscroll_40 = False
-    $ sscroll_41 = False
-    $ sscroll_42 = False
-    $ sscroll_43 = False
-    $ sscroll_44 = False
-    $ sscroll_45 = False
-    #
-    $ scroll_01_name = "Свиток #1"
-    $ scroll_02_name = "Свиток #2"
-    $ scroll_03_name = "Свиток #3"
-    $ scroll_04_name = "Свиток #4"
-    $ scroll_05_name = "Свиток #5"
-    $ scroll_06_name = "Свиток #6"
-    $ scroll_07_name = "Свиток #7"
-    $ scroll_08_name = "Свиток #8"
-    $ scroll_09_name = "Свиток #9"
-    $ scroll_10_name = "Свиток #10"
-    #
-    $ scroll_11_name = "Свиток #11"
-    $ scroll_12_name = "Свиток #12"
-    $ scroll_13_name = "Свиток #13"
-    $ scroll_14_name = "Свиток #14"
-    $ scroll_15_name = "Свиток #15"
-    $ scroll_16_name = "Свиток #16"
-    $ scroll_17_name = "Свиток #17"
-    $ scroll_18_name = "Свиток #18"
-    $ scroll_19_name = "Свиток #19"
-    $ scroll_20_name = "Свиток #20"
-    #
-    $ scroll_21_name = "Свиток #21"
-    $ scroll_22_name = "Свиток #22"
-    $ scroll_23_name = "Свиток #23"
-    $ scroll_24_name = "Свиток #24"
-    $ scroll_25_name = "Свиток #25"
-    $ scroll_26_name = "Свиток #26"
-    $ scroll_27_name = "Свиток #27"
-    $ scroll_28_name = "Свиток #28"
-    $ scroll_29_name = "Свиток #29"
-    $ scroll_30_name = "Свиток #30"
-    #
-    $ scroll_31_name = "Свиток #31"
-    $ scroll_32_name = "Свиток #32"
-    $ scroll_33_name = "Свиток #33"
-    $ scroll_34_name = "Свиток #34"
-    $ scroll_35_name = "Свиток #35"
-    $ scroll_36_name = "Свиток #36"
-    $ scroll_37_name = "Свиток #37"
-    $ scroll_38_name = "Свиток #38"
-    $ scroll_39_name = "Свиток #39"
-    $ scroll_40_name = "Свиток #40"
-    $ scroll_41_name = "Свиток #41"
-    $ scroll_42_name = "Свиток #42"
-    $ scroll_43_name = "Свиток #43"
-    $ scroll_44_name = "Свиток #44"
-    $ scroll_45_name = "Свиток #45"
-    
-    
-    
+
     
     
     

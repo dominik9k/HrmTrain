@@ -176,108 +176,16 @@ label door:
                     
                     
                     "- Дать ей подарок -" if not gifted:
-                        menu:
-                            "- Чупа-чупс -([candy])" if candy >= 1:
-                                $ gifted = True 
-                                jump giving_candy #28_gifts.rpy
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                choose.AddItem("- "+o._caption+" -", 
+                                    "menu_gifts_actions" , True, o.Name)
+
+                        $ choose.Show("day_time_requests")
+
+
                                 
-                            "- Шоколад -([chocolate])" if chocolate >= 1:
-                                $ gifted = True 
-                                jump giving_chocolate #28_gifts.rpy
-                            
-                            "- Чучело совы -([owl])" if owl >= 1:
-                                $ gifted = True 
-                                jump giving_owl #28_gifts.rpy
-                                
-                            "- Сливочное пиво -([beer])" if beer >= 1:
-                                $ gifted = True 
-                                jump giving_beer #28_gifts.rpy
-                                
-                            "- Обучающий журнал -([mag1])" if mag1 >= 1:
-                                $ gifted = True 
-                                jump giving_mag1 #28_gifts.rpy
-                                
-                            "- Женский журнал -([mag2])" if mag2 >= 1:
-                                $ gifted = True 
-                                jump giving_mag2 #28_gifts.rpy
-                                
-                            "- Журнал для взрослых -([mag3])" if mag3 >= 1:
-                                $ gifted = True 
-                                jump giving_mag3 #28_gifts.rpy
-                                
-                            "- Порно журнал -([mag4])" if mag4 >= 1:
-                                $ gifted = True 
-                                jump giving_mag4 #28_gifts.rpy
-                            
-                            "- Постер Виктора Крама -([krum])" if krum >= 1:
-                                $ gifted = True 
-                                jump giving_krum #28_gifts.rpy
-                            
-                            "- Сексуальное нижнее белье -([lingerie])" if lingerie >= 1:
-                                $ gifted = True 
-                                jump giving_lingerie #28_gifts.rpy
-                            
-                            "- Упаковка презервативов -([condoms])" if condoms >= 1:
-                                $ gifted = True 
-                                jump giving_condoms #28_gifts.rpy
-                                
-                            "- Банка анальной смазки -([anal_lube])" if anal_lube >= 1:
-                                $ gifted = True 
-                                jump giving_lube #28_gifts.rpy
-                            
-                            "- Вибратор -([vibrator])" if vibrator >= 1:
-                                $ gifted = True 
-                                jump giving_vibrator #28_gifts.rpy
-                            
-                            "- Кляп и наручники  -([ballgag])" if ballgag >= 1:
-                                $ gifted = True 
-                                jump giving_ballgag #28_gifts.rpy
-                                
-                            "- Анальная пробка  -([plug])" if plug >= 1:
-                                $ gifted = True 
-                                jump giving_plug #28_gifts.rpy
-                                
-                            "- Страпон \"Фестрал\"  -([strapon])" if strapon >= 1:
-                                $ gifted = True 
-                                jump giving_strapon #28_gifts.rpy
-                            
-                            "- Леди Спид Стик-2000  -([broom])" if broom >= 1:
-                                $ gifted = True 
-                                jump giving_broom #28_gifts.rpy
-                                
-                            "- Секс-кукла \"Джуанна\"  -([sexdoll])" if sexdoll >= 1:
-                                $ gifted = True 
-                                jump giving_sexdoll #28_gifts.rpy
-                            
-                            "- Школьная мини-юбка -" if have_miniskirt: # Turns TRUE when you have the skirt in your possession.
-                                $ gifted = True
-                                jump giving_skirt #28_gifts.rpy
-                            
-                            "- \"А.В.Н.Э.\" значок -" if badge_01 == 1:
-                                $ gifted = True
-                                jump giving_badge_01 #28_gifts.rpy
-                            
-                            "- Ажурные чулки -" if nets == 1:
-                                $ gifted = True
-                                jump giving_nets #28_gifts.rpy
-                                
-                                
-                                
-                                
-                            "- Бальное платье -" if "ball_dress" in gifts12 and not gave_the_dress:
-                                show screen  blktone
-                                with d3
-                                m "(Я чувствую, что не будет обратного пути после того, как я дам ей это платье...)"
-                                m "(Я готов сделать это?)"
-                                hide screen blktone
-                                menu:
-                                    "\"Да, вполне...\"":
-                                        jump giving_thre_dress #27_final_events.rpy
-                                    "\"Нет, не готов...\"":
-                                        jump day_time_requests
-                            "- Ничего -":
-                                jump day_time_requests
-                
                     
                     # "- Ending \"Your whore\"- ":
                         #jump your_whore
@@ -309,22 +217,22 @@ label door:
                             pass
                         menu:
                             
-                            "- Надеть значок -" if (herView.data().getItemKey( G_N_BADGE )==None) and  badge_01 == 7: #not ba_01 and badge_01 == 7:
+                            "- Надеть значок -" if (herView.data().getItemKey( G_N_BADGE )==None) and  hermi.Items.Any("badge_01"): #not ba_01 and badge_01 == 7:
                                 jump badge_put
                             
-                            "- Снять значок -" if (herView.data().getItemKey( G_N_BADGE )!=None) and  badge_01 == 7: #ba_01 and badge_01 == 7:
+                            "- Снять значок -" if (herView.data().getItemKey( G_N_BADGE )!=None) and  hermi.Items.Any("badge_01"): #ba_01 and badge_01 == 7:
                                 jump badge_take
                             
-                            "- Надеть колготки -" if (herView.data().getItemKey( G_N_NETS )==None) and  nets == 7: #not ne_01 and nets == 7: # Не перевел
+                            "- Надеть колготки -" if (herView.data().getItemKey( G_N_NETS )==None) and  hermi.Items.Any("nets"): #not ne_01 and nets == 7: # Не перевел
                                 jump nets_put
                             
-                            "- Снять колготки -" if (herView.data().getItemKey( G_N_NETS )!=None) and  nets == 7: #ne_01 and nets == 7:
+                            "- Снять колготки -" if (herView.data().getItemKey( G_N_NETS )!=None) and  hermi.Items.Any("nets"): #ne_01 and nets == 7:
                                 jump nets_take
                             
-                            "- Надеть мини-юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'default' ) and gave_miniskirt: #not legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.:
+                            "- Надеть мини-юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'default' ) and hermi.Items.Any("miniskirt"): #not legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.:
                                 jump mini_on #28_gifts.rpy
 
-                            "- Надеть длинную юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'short' ) and gave_miniskirt: #legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.
+                            "- Надеть длинную юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'short' ) and and hermi.Items.Any("miniskirt"): #legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.
                                 jump mini_off #28_gifts.rpy
                             
                            

@@ -4220,178 +4220,24 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
 
         
     $ persistent.game_complete = True # Turns TRUE after you beat the game. Unlocks the gallery.
-
-#    if public_whore_ending:
-#        $ persistent.ending_02 = True # Unlocked ending 01.
-#    else:
-#        $ persistent.ending_01 = True # Unlocked ending 01.
     $ end.UpdatePersistent()
 
         
     $ persistent.gold = 0
     $ persistent.gold = persistent.gold + gold
-        
-    ### THE SKIRT ###
-    if gave_miniskirt: #Turns True when Hermione has the miniskirt.
-        $ persistent.haveskirt = True # Makes sure you only need to buy the skirt once. Checked at the +new game screen.
-   
-    
-    ### POSSESSIONS ###
-    $ persistent.lolipop = 0
-    $ persistent.lolipop = persistent.lolipop + candy # LOLIPOP.
-    
-    $ persistent.choco = 0
-    $ persistent.choco = persistent.choco + chocolate # CHOCOLATE.
-                    
-    $ persistent.owl = 0
-    $ persistent.owl = persistent.owl + owl # PLUSH OWL.
-                
-    $ persistent.beer = 0
-    $ persistent.beer = persistent.beer + beer # BUTTERBEER
-                
-    $ persistent.mag1 = 0
-    $ persistent.mag1 = persistent.mag1 + mag1 #MAGAZINE # 1
-    
-    $ persistent.mag2 = 0
-    $ persistent.mag2 = persistent.mag2 + mag2 #MAGAZINE #  2
-    
-    $ persistent.mag3 = 0
-    $ persistent.mag3 = persistent.mag3 + mag3 #MAGAZINE # 3
-    
-    $ persistent.mag4 = 0
-    $ persistent.mag4 = persistent.mag4 + mag4 #MAGAZINE # 1
 
-    $ persistent.krum = 0
-    $ persistent.krum = persistent.krum + krum # KRUM POSTER.
 
-    $ persistent.lin = 0
-    $ persistent.lin = persistent.lin + lingerie # LENGERIE.
+    python:
+        persistent.ItemSet=dict()
 
-    $ persistent.con = 0 
-    $ persistent.con = persistent.con + condoms # CONDOMS.
-       
-    $ persistent.vib = 0
-    $ persistent.vib = persistent.vib + vibrator # VIBRATOR.
-        
-    $ persistent.lube = 0
-    $ persistent.lube = persistent.lube + anal_lube # Anal lubricant.
+        if hermi.Items.Any("miniskirt"):
+            persistent.itemSet.update("miniskirt", hermi.items.Count("miniskirt"))
+ 
+        for o in hero.Items():
+            if o.Name not in {"nets", "badge_01", "ball_dress"}:
+                persistent.itemSet.update(o.Name, hero.items.Count(o.Name))       
 
-    $ persistent.gag = 0
-    $ persistent.gag = persistent.gag + ballgag # BALL GAG.
-          
-    $ persistent.plug = 0
-    $ persistent.plug = persistent.plug + plug # ANAL PLUG.
-          
-    $ persistent.strap = 0
-    $ persistent.strap = persistent.strap + strapon # STRAP-ON.
-           
-    $ persistent.broom = 0
-    $ persistent.broom = persistent.broom + broom # BROOM.
-              
-    $ persistent.doll = 0
-    $ persistent.doll = persistent.doll + sexdoll  # SEX DOLL.
 
-    $ persistent.wine = 0
-    $ persistent.wine = persistent.wine + wine # WINE.
-
-    $herView.data().loadState()
-           
-    ### SACRED SCROLLS ###
-    
-    if sscroll_01:
-        $ persistent.ss_01 = True # Sacred Scroll 01 will be unlocked in the gallery.
-    if sscroll_02:
-        $ persistent.ss_02 = True # Sacred Scroll 02 will be unlocked in the gallery.
-    if sscroll_03:
-        $ persistent.ss_03 = True # Sacred Scroll 03 will be unlocked in the gallery.
-    if sscroll_04:
-        $ persistent.ss_04 = True # Sacred Scroll 04 will be unlocked in the gallery.
-    if sscroll_05:
-        $ persistent.ss_05 = True # Sacred Scroll 05 will be unlocked in the gallery.
-    if sscroll_06:
-        $ persistent.ss_06 = True # Sacred Scroll 06 will be unlocked in the gallery.
-    if sscroll_07:
-        $ persistent.ss_07 = True # Sacred Scroll 07 will be unlocked in the gallery.
-    if sscroll_08:
-        $ persistent.ss_08 = True # Sacred Scroll 08 will be unlocked in the gallery.
-    if sscroll_09:
-        $ persistent.ss_09 = True # Sacred Scroll 09 will be unlocked in the gallery.
-    if sscroll_10:
-        $ persistent.ss_10 = True # Sacred Scroll 10 will be unlocked in the gallery.
-        
-    if sscroll_11:
-        $ persistent.ss_11 = True # Sacred Scroll 11 will be unlocked in the gallery.
-    if sscroll_12:
-        $ persistent.ss_12 = True # Sacred Scroll 12 will be unlocked in the gallery.
-    if sscroll_13:
-        $ persistent.ss_13 = True # Sacred Scroll 13 will be unlocked in the gallery.
-    if sscroll_14:
-        $ persistent.ss_14 = True # Sacred Scroll 14 will be unlocked in the gallery.
-    if sscroll_15:
-        $ persistent.ss_15 = True # Sacred Scroll 15 will be unlocked in the gallery.
-    if sscroll_16:
-        $ persistent.ss_16 = True # Sacred Scroll 16 will be unlocked in the gallery.
-    if sscroll_17:
-        $ persistent.ss_17 = True # Sacred Scroll 17 will be unlocked in the gallery.
-    if sscroll_18:
-        $ persistent.ss_18 = True # Sacred Scroll 18 will be unlocked in the gallery.
-    if sscroll_19:
-        $ persistent.ss_19 = True # Sacred Scroll 19 will be unlocked in the gallery.
-    if sscroll_20:
-        $ persistent.ss_20 = True # Sacred Scroll 11 will be unlocked in the gallery.
-            
-             
-    if sscroll_21:
-        $ persistent.ss_21 = True # Sacred Scroll 21 will be unlocked in the gallery.
-    if sscroll_22:
-        $ persistent.ss_22 = True # Sacred Scroll 22 will be unlocked in the gallery.
-    if sscroll_23:
-        $ persistent.ss_23 = True # Sacred Scroll 23 will be unlocked in the gallery.
-    if sscroll_24:
-        $ persistent.ss_24 = True # Sacred Scroll 24 will be unlocked in the gallery.
-    if sscroll_25:
-        $ persistent.ss_25 = True # Sacred Scroll 25 will be unlocked in the gallery.
-    if sscroll_26:
-        $ persistent.ss_26 = True # Sacred Scroll 26 will be unlocked in the gallery.
-    if sscroll_27:
-        $ persistent.ss_27 = True # Sacred Scroll 27 will be unlocked in the gallery.
-    if sscroll_28:
-        $ persistent.ss_28 = True # Sacred Scroll 28 will be unlocked in the gallery.
-    if sscroll_29:
-        $ persistent.ss_29 = True # Sacred Scroll 29 will be unlocked in the gallery.
-    if sscroll_30:
-        $ persistent.ss_30 = True # Sacred Scroll 30 will be unlocked in the gallery.
-
-    if sscroll_31:
-        $ persistent.ss_31 = True # Sacred Scroll 31 will be unlocked in the gallery.
-    if sscroll_32:
-        $ persistent.ss_32 = True # Sacred Scroll 32 will be unlocked in the gallery.
-    if sscroll_33:
-        $ persistent.ss_33 = True # Sacred Scroll 33 will be unlocked in the gallery.
-    if sscroll_34:
-        $ persistent.ss_34 = True # Sacred Scroll 34 will be unlocked in the gallery.
-    if sscroll_35:
-        $ persistent.ss_35 = True # Sacred Scroll 35 will be unlocked in the gallery.
-    if sscroll_36:
-        $ persistent.ss_36 = True # Sacred Scroll 36 will be unlocked in the gallery.
-    if sscroll_37:
-        $ persistent.ss_37 = True # Sacred Scroll 37 will be unlocked in the gallery.
-    if sscroll_38:
-        $ persistent.ss_38 = True # Sacred Scroll 38 will be unlocked in the gallery.
-    if sscroll_39:
-        $ persistent.ss_39 = True # Sacred Scroll 39 will be unlocked in the gallery.
-    if sscroll_40:
-        $ persistent.ss_40 = True # Sacred Scroll 40 will be unlocked in the gallery.
-    if sscroll_41:
-        $ persistent.ss_41 = True # Sacred Scroll 41 will be unlocked in the gallery.
-    if sscroll_42:
-        $ persistent.ss_42 = True # Sacred Scroll 42 will be unlocked in the gallery.
-    if sscroll_43:
-        $ persistent.ss_43 = True # Sacred Scroll 43 will be unlocked in the gallery.
-    if sscroll_44:
-        $ persistent.ss_44 = True # Sacred Scroll 44 will be unlocked in the gallery.
-    if sscroll_45:
-        $ persistent.ss_45 = True # Sacred Scroll 45 will be unlocked in the gallery.
 
 
 
