@@ -39,7 +39,7 @@ init:
 
     python:
         global debug
-    $debug=Debug(3)
+    $debug=Debug(0)
     $debug.SaveHeader()
 
 
