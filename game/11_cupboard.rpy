@@ -84,10 +84,14 @@ label cupboard:
                 $_scrollSection=0
                 jump sc_col
 
-
         "- Священные свитки. Часть II -" if not day == 1 and cataloug_found:
             label sc_col_men_2:
                 $_scrollSection=1
+                jump sc_col
+
+        "- Священные свитки. Часть III -" if not day == 1 and cataloug_found:
+            label sc_col_men_2:
+                $_scrollSection=2
                 jump sc_col
 
 

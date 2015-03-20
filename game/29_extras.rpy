@@ -18,6 +18,10 @@ label gallery:
             $_scrollSection=1
             jump volone 
             
+        "- Священные свитки. Часть III -":
+            $_scrollSection=2
+            jump volone 
+
 #        "- Gallery volume 02 -":
 #            jump volumetwo
         
@@ -98,8 +102,7 @@ label volone:
             if i<=_itemCount:
                 choose.AddItem("- C."+str(i)+": Священный свиток #"+str(i)+" -", 
                     "vol_description" , True, i)
-        choose.AddItem("- Ничего -", "after_cam", True, "")
-    $ choose.Show()
+    $ choose.Show("after_cam")
 
 label vol_description:
 
@@ -146,8 +149,9 @@ label vol_description:
     show image "03_hp/19_extras/"+str(choose.choice).zfill(2)+".png" with d3
     if commentaries:
         python:
-            for i in range(len(_descrs[choose.choice-1])):
-                renpy.say(a1,_descrs[choose.choice-1][i])
+            if _itemCount<2:
+                for i in range(len(_descrs[choose.choice-1])):
+                    renpy.say(a1,_descrs[choose.choice-1][i])
     show screen ctc
     pause
     hide screen ctc

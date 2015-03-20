@@ -5,9 +5,8 @@ label menu_dahr_book:
             if e.GetValue("block")==_block: # Нужно ставить GetValue("block")  а не _block - у ивента такого объекта может не быть
                 choose.AddItem("- Книга: "+e._caption+" - "+("{image=check_08.png}" if e._status>-2 else "{image=check_07.png}"), 
                     "menu_dahre_book_2", True, e.Name)
-        choose.AddItem("- Ничего -", "the_oddities", True, "")
 
-    $ choose.Show()
+    $ choose.Show("the_oddities")
 
     label menu_dahre_book_2:
         $ the_gift = event._img     # "03_hp/18_store/08.png" # Copper book of spirit.
@@ -48,9 +47,8 @@ label menu_dahr_gifts_and_gears:
                 if o._block==_block:
                     choose.AddItem("- "+o._caption+" - ("+str(o._price)+" гал.) -" if _temp and itsDAHR.Count(o.Name)>0 else "{color=#858585}- Товар временно отсутствует -{/color}", 
                         "menu_dahr_gift_order" if _temp else "out" , True, o.Name)
-        choose.AddItem("- Ничего -", "the_oddities", True, "")
 
-    $ choose.Show() 
+    $ choose.Show("the_oddities") 
 
 
 
@@ -213,16 +211,10 @@ label thx_4_shoping:
             "Экспресс-доставка (+50%% за срочность)":
                 $days_in_delivery2=1
                 $gold -= _price*itemCount//2
+                dahr "Спасибо за покупку в \"Приблудах Дахра\". Ваш заказ будет доставлен завтра."
             "Обычная доставка":
-                pass
+                dahr "Спасибо за покупку в \"Приблудах Дахра\". Доставка вашего заказа займет около [days_in_delivery2] дней."
 
-    if days_in_delivery2 ==  1:
-        dahr "Спасибо за покупку в \"Приблудах Дахра\". Ваш заказ будет доставлен завтра."
-        hide screen gift
-        with d3
-        return
-    else:
-        dahr "Спасибо за покупку в \"Приблудах Дахра\". Доставка вашего заказа займет около [days_in_delivery2] дней."
         hide screen gift
         with d3
         return

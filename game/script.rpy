@@ -252,7 +252,7 @@ init:
 #            itemList.append(item)
 
         global itsDAHR
-        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":30}))
+        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":45}))
 
         global itsOWL
         itsOWL=RegEntry(ItemCollection("OWL"))
