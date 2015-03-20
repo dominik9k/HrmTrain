@@ -18,7 +18,7 @@ label menu_dahr_book:
             call do_have_book
             jump the_oddities
         menu:
-            "- Купить книгу за [event._price] золота -":
+            "- Купить книгу за [event._price] галлеонов -":
                 if gold >= event._price:
                     $ gold -= event._price
                     $ order_placed = True
@@ -210,7 +210,7 @@ label thx_4_shoping:
     if gold >= _price*itemCount//2:
         menu:
             dahr "Вы заказали [itemCount] шт. предметов \"[_caption]\". Вы оплатите экспресс-доставку?"
-            "Экспресс-доставка (+50%% за срочность)":
+            "Экспресс-доставка (+50% за срочность)":
                 $days_in_delivery2=1
                 $gold -= _price*itemCount//2
             "Обычная доставка":
