@@ -122,7 +122,7 @@ label snape_tutor_1:
     sna2 "Ладно-ладно, не серчай. Не говорить слово на букву \"б\", ясно." #snape
     hide screen s_head2
     m "Вот и славно. Так о чем мы там говорили?"
-    $ s_sprite = "03_hp/10_snape_main/snape_03.png"                                         # SNAPE
+    $ s_sprite = "03_hp/10_snape_main/snape_23.png"                                         # SNAPE
     show screen s_head2
     sna2 "В общем, есть... зелье, которое может тебе помочь." #snape
     $ s_sprite = "03_hp/10_snape_main/snape_02.png"                                         # SNAPE
@@ -158,7 +158,7 @@ label snape_tutor_1:
     $ s_sprite = "03_hp/10_snape_main/snape_03.png"                                         # SNAPE
     show screen s_head2
     sna2 "Ну... Некоторые из ингридиентов запрещены, так что мне прийдется привлечь свои каналы..." #snape
-    $ s_sprite = "03_hp/10_snape_main/snape_03.png"
+    $ s_sprite = "03_hp/10_snape_main/snape_23.png"
     sna2 "Так что, думаю, тысяч десять." #snape
     show screen s_head2
     m "..."
