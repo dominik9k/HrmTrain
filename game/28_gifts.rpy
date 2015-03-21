@@ -1,5 +1,4 @@
 label menu_gifts_actions:
-    "Проверка"
     $item=hero.Items(choose.choice)
     $ gifted = True 
 

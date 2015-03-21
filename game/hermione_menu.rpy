@@ -24,8 +24,10 @@ label hermione_approaching:
             ]:
             (_val, _img, _char, _text)=t
             if hermi.liking>=_val:
-                    herView.showQQ( _img, pos )
-                    renpy.say(_char, _text)
+                herView.showQQ( _img, pos )
+                renpy.say(_char, _text)
+                break
+
 
 
     label hermione_main_menu:
@@ -163,10 +165,10 @@ label hermione_approaching:
 
 label hermione_chat:
     menu:
-        "Спросить насчет учебников" if teacher_jinn_quest = 3:
+        "Спросить насчет учебников" if teacher_jinn_quest == 3:
             jump hermione_bookbuying
             
-        "Купить учебники" if teacher_jinn_quest = 4:
+        "Купить учебники" if teacher_jinn_quest == 4:
             jump hermione_bookbuying
             
         "Болтать":
