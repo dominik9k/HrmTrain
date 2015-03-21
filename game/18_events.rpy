@@ -46,9 +46,9 @@ label event_00:
     show screen ctc
     with Dissolve(.3)
     pause
+    hide screen ctc
     who2 "Альбус...есть минута?"
     hide screen snape_main
-    hide screen ctc
     
 #    show screen ctc
 #    pause
