@@ -270,7 +270,7 @@ label new_personal_request:
                 
                 
             "- Ничего -":
-                jump day_time_requests
+                jump hermione_main_menu
     
         
         
@@ -342,7 +342,7 @@ label new_personal_request:
 
     else:
         her "Гриффиндор лидирует. Мне это не нужно сейчас."
-        jump day_time_requests
+        jump hermione_main_menu
                 
 
 

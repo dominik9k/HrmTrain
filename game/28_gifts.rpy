@@ -13,7 +13,7 @@ label menu_gifts_actions:
             "\"Да, вполне...\"":
                 jump giving_thre_dress #27_final_events.rpy
             "\"Нет, не готов...\"":
-                jump day_time_requests
+                jump hermione_main_menu
 
 
     jump expression "giving_"+item.Name
@@ -53,7 +53,7 @@ label giving_skirt:
     #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
     $ pos = POS_370
     $herView.showQ( "body_01.png", pos )
-    jump day_time_requests
+    jump hermione_main_menu
     
     
     
@@ -74,7 +74,7 @@ label mini_on:
                 $herView.hideQQ()
                 #_#with d3            
                 $herView.showQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
             "\"Я дам тебе 15 очков.\"":
                 $ gryffindor +=15
                 her "........................"
@@ -103,7 +103,7 @@ label mini_on:
                 $ hermi.liking -= 5
                 call upset                                                                                                                                                                                                                #HERMIONE
                 $herView.showQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
             "\"Я дам тебе 15 очков.\"":
                 $ gryffindor +=15
                 $herView.hideshowQQ( "body_07.png", pos )
@@ -116,7 +116,7 @@ label mini_on:
                 $herView.hideshowQQ( "body_01.png", pos )
                 her "Ладно..."
                 $herView.hideshowQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
 
     if hermi.whoring >= 12 and hermi.whoring <= 17: # Lv 5-6.
         $herView.hideshowQQ( "body_15.png", pos )
@@ -138,7 +138,7 @@ label mini_on:
                 $herView.hideshowQQ( "body_13.png", pos )
                 her "Ох..."
                 $herView.hideshowQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
         
 
 
@@ -164,7 +164,7 @@ label mini_on:
     with d3
                                                                                                                                                                                                                      #HERMIONE
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
     
     
 label mini_off:
@@ -199,7 +199,7 @@ label mini_off:
     pause.3
     hide screen blkfade
     with d3
-    jump day_time_requests
+    jump hermione_main_menu
    
     
     
@@ -221,7 +221,7 @@ label badge_put:
     pause.3
     hide screen blkfade
     with d3
-    jump day_time_requests
+    jump hermione_main_menu
     
     
 label badge_take:
@@ -241,7 +241,7 @@ label badge_take:
     pause.3
     hide screen blkfade
     with d3
-    jump day_time_requests
+    jump hermione_main_menu
     
     
 ### FISHNETS ###
@@ -258,7 +258,7 @@ label nets_put:
                 $herView.hideshowQQ( "body_69.png", pos )
                 her "С радостью..."
                 $herView.hideshowQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
             "\"Я дам тебе 15 очков.\"":
                 $ gryffindor +=15
                 her "........................"
@@ -286,7 +286,7 @@ label nets_put:
                 $ hermi.liking -= 5
                 call upset                                                                                                                                                                                                                #HERMIONE
                 $herView.showQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
             "\"Я дам тебе 15 очков.\"":
                 $ gryffindor +=15
                 $herView.hideshowQQ( "body_07.png", pos )
@@ -299,7 +299,7 @@ label nets_put:
                 $herView.hideshowQQ( "body_01.png", pos )
                 her "Ладно..."
                 $herView.hideshowQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
 
     if hermi.whoring >= 12 and hermi.whoring <= 17: # Lv 5-6.
         $herView.hideshowQQ( "body_15.png", pos )
@@ -323,7 +323,7 @@ label nets_put:
                 $herView.hideshowQQ( "body_13.png", pos )
                 her "Ох..."
                 $herView.hideshowQQ( None, pos )
-                jump day_time_requests
+                jump hermione_main_menu
         
 
     
@@ -350,7 +350,7 @@ label nets_put:
     with d3
     pause.1
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
     
     
 label nets_take:
@@ -386,7 +386,7 @@ label nets_take:
     hide screen blkfade
     with d3
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
     
     
     
@@ -468,7 +468,7 @@ label giving_lube: # JAR OF Анальный лубрикант.
  
     $ pos = POS_370
     $herView.showQQ( None, pos )    
-    jump day_time_requests
+    jump hermione_main_menu
         
         
         
@@ -538,7 +538,7 @@ label giving_condoms: # A PACK OF CONDOMS
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
         
         
      
@@ -624,7 +624,7 @@ label giving_candy: # CANDY.
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
     
         
         
@@ -715,7 +715,7 @@ label giving_chocolate: # CHOCOLATE.
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
         
 
     ### VIBRATOR ###
@@ -795,7 +795,7 @@ label giving_vibrator: # VIBRATOR.
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
         
         
         
@@ -918,7 +918,7 @@ label giving_strapon: # STRAP-ON.
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
         
         
         
@@ -1004,7 +1004,7 @@ label giving_ballgag: # BALL GAG.
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
         
         
         
@@ -1095,7 +1095,7 @@ label giving_plug:
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests
+    jump hermione_main_menu
         
         
         
@@ -1185,7 +1185,7 @@ label giving_mag1:
  
     $ pos = POS_370
     $herView.showQQ( None, pos  )
-    jump day_time_requests    
+    jump hermione_main_menu    
         
         
         
@@ -1271,7 +1271,7 @@ label giving_mag2:
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests        
+    jump hermione_main_menu        
         
         
         
@@ -1352,7 +1352,7 @@ label giving_mag3:
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests            
+    jump hermione_main_menu            
         
         
         
@@ -1439,7 +1439,7 @@ label giving_mag4:
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                
+    jump hermione_main_menu                
         
         
         
@@ -1540,7 +1540,7 @@ label giving_beer:
  
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                
+    jump hermione_main_menu                
             
         
         
@@ -1642,7 +1642,7 @@ label giving_owl:
 
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                
+    jump hermione_main_menu                
     
     
     
@@ -1716,7 +1716,7 @@ label giving_sexdoll:
         
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                
+    jump hermione_main_menu                
         
         
       ### SEXY LINGERIE ###
@@ -1784,7 +1784,7 @@ label giving_lingerie:
 
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                
+    jump hermione_main_menu                
         
     ### BROOM ###
 label giving_broom: 
@@ -1890,7 +1890,7 @@ label giving_broom:
 
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                
+    jump hermione_main_menu                
         
     ### KRUM POSTER ###
 label giving_krum: 
@@ -1972,7 +1972,7 @@ label giving_krum:
 
 
     $ pos = POS_370
-    jump day_time_requests                    
+    jump hermione_main_menu                    
         
         
         
@@ -2004,7 +2004,7 @@ label giving_badge_01:
 
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                    
+    jump hermione_main_menu                    
             
         
         
@@ -2036,7 +2036,7 @@ label giving_nets:
 
     $ pos = POS_370
     $herView.showQQ( None, pos )
-    jump day_time_requests                    
+    jump hermione_main_menu                    
             
    
     

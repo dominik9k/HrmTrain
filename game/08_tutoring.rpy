@@ -195,6 +195,7 @@ label tutoring:
                 call hermione_leave_tutoring
              
             "Зяблик сжирает эту хрень!":
+                $ zyablik_switch = 1
                 g4 "Он вонзает свой острый, как бритва, клюв в тушу бедной твари!"
                 $herView.hideQQ()
                 $herView.showQQ( "body_18.png", pos )
@@ -292,6 +293,7 @@ label tutoring:
         m "..."
         m "Вряд ли я смогу обучать ее, сам ничего толком не зная об этом мире..."
         m "Думаю, мне стоит поговорить об этом со Снейпом."
+        $ teacher_jinn_quest = 1
 
         $herView.data().loadState()
         jump day_start    

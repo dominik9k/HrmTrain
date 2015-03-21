@@ -93,176 +93,8 @@ label door:
                 jump night_main_menu
                 
             else:
-                #play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 
-                #stop music fadeout 2.0
-                
-                $ menu_x = 0.2 #Menu is moved to the left side.
-                $ pos = POS_410
-                
-                $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-                $ hermione_chibi_xpos = 400 #Near the desk.
-                show screen hermione_02 #Hermione stands still.
-                show screen bld1
-                with d3
-
-                python:
-                    for t in [
-                        (0, "body_01.png", her, "Да, профессор?"),
-                        (-2, "body_03.png", "", ">Похоже, Гермиона по-прежнему немного расстроена вами..."),
-                        (-9, "body_03.png", "", ">Вы расстроили Гермиону."),
-                        (-19, "body_09.png", "", ">Гермиона очень расстроена вами."),
-                        (-39, "body_05.png", "", ">Гермиона злится на вас."),
-                        (-49, "body_47.png", "", ">Гермиона очень злится на вас."),
-                        (-59, "body_47.png", "", ">Гермиона гневается на вас."),
-                        (-100, "body_47.png", "", ">Гермиона ненавидит вас.")
-                        ]:
-                        (_val, _img, _char, _text)=t
-                        if hermi.liking>=_val:
-                                herView.showQQ( _img, pos )
-                                renpy.say(_char, _text)
-
-
-                label day_time_requests:
-                menu:
-                    "- Поговорить -" if not chitchated_with_her:
-                        $ chitchated_with_her = True #Prevents you from chitchatting with Hermione more then once per time of day. Turns back to False every night. (And every day).
-                        if hermi.liking >= -7:
-                            jump chit_chat
-                        else:
-                            her "Мне нечего сказать вам..."    
-                            jump day_time_requests
-
-                    "- Обучение -" if not daytime and not tut_happened and hermi.whoring <= 12:
-                        if hermi.liking==0:
-                            jump tutoring
-                        python:
-                            for t in [
-                            (-2, "Извините, возможно завтра..."),
-                            (-19, "Сегодня я не в настроении..."),
-                            (-100, "После того, что вы сделали?\nЯ думаю - нет...")
-                            ]:
-                                (_val, _text)=t
-                                if hermi.liking>=_val:
-                                    renpy.say(her, _text)
-                        jump day_time_requests
-
-                    "- Купить \"сексуальный\" рейтинг -" if this.Has("her_wants_buy"):#buying_favors_from_hermione_unlocked:
-                            if hermi.liking==0:
-                                jump new_personal_request
-                            python:
-                                for t in [
-                                (-2, "Мне жаль, профессор, может быть в другой раз..."),
-                                (-9, "Мне не хочется сегодня...\nМожет быть через пару дней..."),
-                                (-19, "Нет, спасибо...."),
-                                (-29, "После того, что вы сделали?\nЯ так не думаю..."),
-                                (-39, "Вы серьезно!?"),
-                                (-100, "Это какая-то ваша пошлая шутка?!\nПосле того, что вы сделали, я не хочу повторять это!")
-                                ]:
-                                    (_val, _text)=t
-                                    if hermi.liking>=_val:
-                                        renpy.say(her, _text)
-                            jump day_time_requests
-                   
-                    
-                    
-                    "- Дать ей подарок -" if not gifted:
-                        $ choose = RunMenu()
-                        python:
-                            for o in hero.Items():
-                                choose.AddItem("- "+o._caption+" -", 
-                                    "menu_gifts_actions" , True, o.Name)
-
-                        $ choose.Show("day_time_requests")
-
-
-                                
-                    
-                    # "- Ending \"Your whore\"- ":
-                        #jump your_whore
-                        
-                    # "- Ending \"Public whore\"- ":
-                        # $ public_whore_ending = True #If TRUE the game will end with "Public Whore Ending".
-                        # jump your_whore
-                        
-                    "- Гардероб -" if dress_code:
-                        if $hermi.liking==0:
-                            menu:
-                                
-                                "- Надеть значок -" if (herView.data().getItemKey( G_N_BADGE )==None) and  hermi.Items.Any("badge_01"): #not ba_01 and badge_01 == 7:
-                                    jump badge_put
-                                
-                                "- Снять значок -" if (herView.data().getItemKey( G_N_BADGE )!=None) and  hermi.Items.Any("badge_01"): #ba_01 and badge_01 == 7:
-                                    jump badge_take
-                                
-                                "- Надеть колготки -" if (herView.data().getItemKey( G_N_NETS )==None) and  hermi.Items.Any("nets"): #not ne_01 and nets == 7: # Не перевел
-                                    jump nets_put
-                                
-                                "- Снять колготки -" if (herView.data().getItemKey( G_N_NETS )!=None) and  hermi.Items.Any("nets"): #ne_01 and nets == 7:
-                                    jump nets_take
-                                
-                                "- Надеть мини-юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'default' ) and hermi.Items.Any("miniskirt"): #not legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.:
-                                    jump mini_on #28_gifts.rpy
-
-                                "- Надеть длинную юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'short' ) and and hermi.Items.Any("miniskirt"): #legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.
-                                    jump mini_off #28_gifts.rpy
-                            
-  
-                                "- Ничего -":
-                                    jump day_time_requests
-                        else:
-                            python:
-                                for t in [
-                                (-2, "Мне очень жаль, профессор, может быть в другой раз..."),
-                                (-9, "Что не так с моей одеждой?"),
-                                (-19, "Нет, спасибо...."),
-                                (-29, "Я так не думаю..."),
-                                (-39, "Нет!"),
-                                (-100, "Я никогда не позволю вам снова решать, что мне носить!")
-                                ]:
-                                    (_val, _text)=t
-                                    if hermi.liking>=_val:
-                                        renpy.say(her, _text)
-                            jump day_time_requests
-                   
-                    
-                    "- Попросить уйти -":
-#                        if daytime:
-#                            play music "music/Brittle Rille.mp3" fadein 1 fadeout 1
-#                        else:
-#                            play music "music/Music for Manatees.mp3" fadein 1 fadeout 1
-                        $ menu_x = 0.5 #Menu position is back to default. (Center).
-                        if daytime:
-                            if hermi.liking>=-2:
-                                her "О, хорошо! Тогда я пойду на уроки."
-                            elif hermi.liking >= -6:
-                                her "..............................."
-                            else: 
-                                her "*Гм!*..."
-                        else:
-                            if hermi.liking>=-2:
-                                her "О, хорошо! Тогда я пойду спать."
-                            elif hermi.liking >= -6:
-                                her "..............................."
-                            else: 
-                                her "Пф!..."
-
-                        hide screen bld1
-                        $herView.hideQ() 
-                        hide screen blktone 
-                        hide screen hermione_02
-                        hide screen ctc
-                        with d3
-
-                        if daytime:
-                            $ hermione_takes_classes = True
-                            jump day_main_menu
-                        else:
-                            $ hermione_sleeping = True
-                            jump night_main_menu
-
-                            
-                            
-            
+                jump hermione_approaching
+               
         "{color=#858585}- Позвать Снейпа -{/color}" if this.Has("snape_summon") and snape_busy:#hanging_with_snape
             ">Профессор Снейп недоступен."
             if daytime:
@@ -274,7 +106,9 @@ label door:
             play music "music/Dark Fog.mp3" fadein 1 fadeout 1 # SNAPE'S THEME
             jump summon_snape
         "- Ничего -":
-            jump day_main_menu
+            jump day_main_menu                
+                        
+
     
     
                 

@@ -261,7 +261,12 @@ if this.event_05._finish2==4:
     $ door_examined = True
     $ fireplace_examined = True
     $ rum_times = 4
-
+    
+# QUESTS #==============================================================================================================================================
+$ zyablik_switch = 0
+### TUTORING QUEST ####
+$ teacher_jinn_quest = 0
+$ study_book_quest_counter = 0
 ###SCREENS### NO NEED FOR THIS ONE ANYMORE. (SHOWS WHORING THOUGH).
 screen statistics: #более подробно см. здесь http://www.renpy.org/doc/html/screens.html
     hbox: #горизонтальный «контейнер», где будет изображение золота и его количество
@@ -662,6 +667,12 @@ call points_changes #Makes changes in the Slytherin house points.
 call points_changes_gryffindor #Makes changes in the Gryffindor (And the rest of the houses) house points. (07_points_gry.rpy)
 # call snape_bonus # Not in use anymore.
 
+###QUEST SHIT###
+if teacher_jinn_quest == 5:
+    $ study_book_quest_counter += 1
+    
+if study_book_quest_counter == 3:
+    jump event_16
 
 
 
