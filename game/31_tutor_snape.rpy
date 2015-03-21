@@ -122,7 +122,7 @@ label snape_tutor_1:
     sna2 "Ладно-ладно, не серчай. Не говорить слово на букву \"б\", ясно." #snape
     hide screen s_head2
     m "Вот и славно. Так о чем мы там говорили?"
-    $ s_sprite = "03_hp/10_snape_main/snape_23.png"                                         # SNAPE
+    $ s_sprite = "03_hp/10_snape_main/snape_03.png"                                         # SNAPE
     show screen s_head2
     sna2 "В общем, есть... зелье, которое может тебе помочь." #snape
     $ s_sprite = "03_hp/10_snape_main/snape_02.png"                                         # SNAPE
@@ -158,7 +158,7 @@ label snape_tutor_1:
     $ s_sprite = "03_hp/10_snape_main/snape_03.png"                                         # SNAPE
     show screen s_head2
     sna2 "Ну... Некоторые из ингридиентов запрещены, так что мне прийдется привлечь свои каналы..." #snape
-    $ s_sprite = "03_hp/10_snape_main/snape_23.png"
+    $ s_sprite = "03_hp/10_snape_main/snape_03.png"
     sna2 "Так что, думаю, тысяч десять." #snape
     show screen s_head2
     m "..."
@@ -205,6 +205,7 @@ label snape_tutor_1:
     sna2 "Тебе нельзя покидать эту комнату и тебя никто не должен видеть, помнишь?" #snape
     m "..."
     m "Зануда."
+    hide screen s_head2
     $ teacher_jinn_quest = 2
     stop music fadeout 1.0
     $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
