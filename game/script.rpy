@@ -1,26 +1,9 @@
 ﻿# тут инитим всякую фигню для персонажей и xml загрузки
 init python:
-    # declare variables
-    global Hermione_FB
-    global Hermione_OB
-    global Hermione_IB
-    global Hermione_SB
 
-    # initing variables
-    Hermione_FB = CharacterExFolderStorage()
-    Hermione_OB = CharacterExOrderStorage()
-    Hermione_IB = CharacterExItemStorage()
-    Hermione_SB = CharacterExSetStorage()
-
-    # initing creator
-    global Hermione_ItemCreator
-    Hermione_ItemCreator = CharacterExItemCreator( Hermione_IB, Hermione_SB, WTXmlLinker.getHermioneLinkerKey() )
-
-    # fill variables
-    Hermione_FB.read( '00_ex/00_hermione_hxml/folders.hxml' )
-    Hermione_OB.read( '00_ex/00_hermione_hxml/zorders.hxml' )
-    Hermione_IB.read( '00_ex/00_hermione_hxml/items/', Hermione_FB, Hermione_OB )
-    Hermione_SB.read( '00_ex/00_hermione_hxml/sets/', Hermione_IB )
+    # create all stuff for hermione character
+    WTXmlLinker.prepareCharacterResources( 'hermione', 
+        '00_ex_characters', '00_ex_characters/00_hermione', '00_ex_characters/00_hermione' )
 
 
 init:
@@ -4962,7 +4945,8 @@ label start:
         # dialogue-face view
         global herViewHead     
         
-    $ herData = CharacterExData( WTXmlLinker.getHermioneLinkerKey() )
+    #$ herData = CharacterExData( WTXmlLinker.getHermioneLinkerKey() )
+    $ herData = CharacterExData( WTXmlLinker.getLinkerKey_hermione() )
     $ herData.clearState()
     
     $ herView = CharacterExView( 5, her, 'hermione' )
