@@ -148,7 +148,7 @@ label snape_tutor_1:
     show screen s_head2
     sna2 "Именно." #snape
     hide screen s_head2
-    m "Так все что мне нужно, так это купить ингридиенты, так?"
+    m "Так все что мне нужно, так это купить ингредиенты, так?"
     $ s_sprite = "03_hp/10_snape_main/23.png"                                         # SNAPE
     show screen s_head2
     sna2 "Точно." #snape
