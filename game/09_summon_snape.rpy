@@ -43,7 +43,7 @@ label summon_snape:
                 call not_today #Snape says: "I am busy tonight."
 #            elif snape_friendship >= 39 and whoring <= 5: # Whoring level <= 2. Makes sure you don't proceed after Date #6 until reached Whoring lvl 3.
 #                call not_today #Snape says: "I am busy tonight."
-            elif snape_friendship >= 88 and whoring <= 14: # Whoring level <= 5. Makes sure you don't proceed after Date #12 until reached Whoring lvl 6.
+            elif snape_friendship >= 88 and hermi.whoring <= 14: # hermi.whoring level <= 5. Makes sure you don't proceed after Date #12 until reached Whoring lvl 6.
                 call not_today #Snape says: "I am busy tonight."
             else:
                 pass

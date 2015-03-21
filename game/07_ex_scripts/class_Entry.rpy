@@ -30,7 +30,13 @@
             else:
                 return GetArrayValue(self.Name, subkey) 
 
-        def SetValue(self, subkey, value):
+        def SetValue(self, subkey, value, minim=None, maxim=None):
+            if minim!=None:
+                if value<minim:
+                    value=minim
+            if maxim!=None:
+                if value>maxim:
+                    value=maxim
             if subkey in self.defVals:
                 if IsStoreSubKey(self.Name, subkey):
                     oldVal=GetStoreValue(self.Name, subkey)
@@ -52,15 +58,8 @@
                     fn(self, subkey, oldVal, value)
             return value
 
-        def IncValue(self, subkey, incVal, minimum=None, maximum=None):
-            __temp=self.GetValue(subkey)+incVal
-            if minimum!=None:
-                if __temp<minimum:
-                    __temp=minimum
-            if maximum!=None:
-                if __temp>maximum:
-                    __temp=maximum
-            return self.SetValue(subkey, __temp)
+        def IncValue(self, subkey, incVal, minim=None, maxim=None):
+            return self.SetValue(subkey, self.GetValue(subkey)+incVal, minim, maxim)
 
 
 

@@ -22,7 +22,7 @@ label new_request_30: #LV.8 (Whoring = 21 - 23)
     if request_30_points == 0: # <================================================================================ FIRST TIME
         m "Мисс Грейнджер..."
         m "Сегодня я хочу, чтобы вы занялись сексом с любым одноклассником на ваш выбор."
-        if whoring <=20 or request_24_points <= 1: # Counts how many times you sent Hermione to give blowjob to a boy.
+        if hermi.whoring <=20 or request_24_points <= 1: # Counts how many times you sent Hermione to give blowjob to a boy.
             jump too_much
         play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
         $herView.hideshowQQ( "body_47.png", pos )

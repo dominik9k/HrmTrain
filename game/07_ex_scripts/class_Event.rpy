@@ -15,8 +15,7 @@
 
             super(Event, self).__init__(Name=self.Name, Type="Event", defVals=defVals, constVals=constVals )
 
-            self.defVals = {"startCount": 0, "finishCount": 0, "start1": -1, "start2": -1, "finish1": -1, "finish2": -1, "bakfinish1": -1, "bakfinish2": -1,
-                            "whored": -1, "bakwhored": -1}        # Это словарь доп. аргументов по умолчанию
+            self.defVals = {"startCount": 0, "finishCount": 0, "start1": -1, "start2": -1, "finish1": -1, "finish2": -1, "bakfinish1": -1, "bakfinish2": -1}        # Это словарь доп. аргументов по умолчанию
             if defVals!=None:
                 self.defVals.update(defVals)
 
@@ -61,11 +60,9 @@
 # Запомнить значения дат finish для отката на случай, если ивент будет начат и прерван.             
             self.SetValue("bakfinish1", self.GetValue("finish1"))
             self.SetValue("bakfinish2", self.GetValue("finish2"))
-            self.SetValue("bakwhored", self.GetValue("whored"))
             if self.GetValue("finish1")==-1:
                 self.SetValue("finish1", day)
             self.SetValue("finish2", day)
-            self.SetValue("whored", whoring)
             self.IncValue("finishCount", 1)
             return
 
@@ -104,7 +101,6 @@
         def NotFinished(self):
             self.SetValue("finish1", self.GetValue("bakfinish1"))
             self.SetValue("finish2", self.GetValue("bakfinish2"))
-            self.SetValue("whored", self.GetValue("bakwhored"))
             self.IncValue("finishCount", -1)
 #            if self.GetValue("finishCount")<0: 
 #                self.SetValue("finishCount", 0) # В некоторых случаях finishCount оказывается <0, видимо, из-за неправильной обработки отката. Пока не удается поймать где это, просто блокируем такие ситуации  

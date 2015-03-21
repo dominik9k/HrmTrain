@@ -26,7 +26,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
         $herView.hideshowQQ( "body_17.png", pos )
         her "Сэр..?"
         m "Насколько вы знакомы с термином \"Анальный секс\"?"
-        if whoring <=20:
+        if hermi.whoring <=20:
             jump too_much
         $herView.hideshowQQ( "body_79.png", pos )
         her "90 очков..."
@@ -1014,8 +1014,8 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
     with d3
     her "Спасибо, сэр..."
 
-    if whoring <= 23: # Level 08 <
-        $ whoring +=1
+    if hermi.whoring <= 23: # Level 08 <
+        $ hermi.whoring +=1
 
 #    if request_31_points == 0:
 #        $ new_request_31_01 = True # HEARTS.

@@ -27,7 +27,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
         her "Да, профессор?"
         m "Сегодня я планирую дать \"Гриффиндору\" 55 очков..."
         m "Если вы у меня отсосете..."
-        if whoring <=14: # LEVEL 05
+        if hermi.whoring <=14: # LEVEL 05
             jump too_much
         $herView.hideshowQQ( "body_87.png", pos )
         her "Ох..."
@@ -712,7 +712,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
         menu:
             m "..."
             "\"Пожалуйста, заходите, Северус.\"":
-                $ mad = 30
+                $ hermi.liking -= 30
                 $herViewHead.showQ( "body_76.png", posHead )
                 stop music fadeout 1.0
                 her "(Сэр, нет!)"
@@ -1204,8 +1204,8 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
     with d3
     her "Спасибо, сэр..."
 
-    if whoring <= 17:
-        $ whoring +=1
+    if hermi.whoring <= 17:
+        $ hermi.whoring +=1
 
     
     

@@ -22,7 +22,7 @@ label new_request_20: #LV.5 (Whoring = 12 - 14)
         $herView.hideshowQQ( "body_07.png", pos )
         her "?!"
         
-        if whoring <=11 or request_15_points <= 1: # Counts how many times you sent Hermione to flash a classmate.
+        if hermi.whoring <=11 or request_15_points <= 1: # Counts how many times you sent Hermione to flash a classmate.
             jump too_much
         play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
         $herView.hideshowQQ( "body_02.png", pos )
@@ -46,7 +46,7 @@ label new_request_20: #LV.5 (Whoring = 12 - 14)
     else: # <================================================================================ NOT FIRST TIME
         m "45 очков так и ждут, когда их заберут!"
         m "Интересуетесь, мисс Грейнджер?"
-        if whoring >= 12 and whoring <= 14: # LEVEL 05 FIRST EVENT.
+        if hermi.whoring >= 12 and hermi.whoring <= 14: # LEVEL 05 FIRST EVENT.
             play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
             $herView.hideshowQQ( "body_03.png", pos )
             her "Это зависит от того..."
@@ -68,7 +68,7 @@ label new_request_20: #LV.5 (Whoring = 12 - 14)
             $herView.hideshowQQ( "body_79.png", pos )
             her "................"
 
-        elif whoring >= 15 and whoring <= 17: # LEVEL 06. Event level 02.
+        elif hermi.whoring >= 15 and hermi.whoring <= 17: # LEVEL 06. Event level 02.
             $herView.hideshowQQ( "body_70.png", pos )
             her "Наверное..."
             m "Отлично. Все что мне нужно, так это чтобы ты немного развлеклась с другой девушкой."
@@ -80,7 +80,7 @@ label new_request_20: #LV.5 (Whoring = 12 - 14)
             m "Отлично. Тогда увидимся после уроков."
 
             
-        elif whoring >= 18: # LEVEL 07+ Event level 03.
+        elif hermi.whoring >= 18: # LEVEL 07+ Event level 03.
             play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
             $herView.hideshowQQ( "body_06.png", pos )
             her "Конечно, почему нет?"
@@ -143,7 +143,7 @@ label new_request_20_complete: # <==============================================
 
     $ request_20 = False 
 
-    if whoring >= 12 and whoring <= 14: # LEVEL 05                    
+    if hermi.whoring >= 12 and hermi.whoring <= 14: # LEVEL 05                    
         if one_out_of_three == 1: ### EVENT (A)
             stop music fadeout 1.0
             m "Мисс Грейнджер..."
@@ -184,7 +184,7 @@ label new_request_20_complete: # <==============================================
             m "Тебе не заплатят, ты знаешь об этом, так?"
             $herView.hideshowQQ( "body_30.png", pos )
             her "Мне все равно..."
-            $ mad +=25
+            $ hermi.liking -=25
             jump could_not_flirt #Sent here when choose "Favor failed! No points for you!" (Hermione is leaving without getting any points).
             
         elif one_out_of_three == 2: ### EVENT (B)
@@ -266,7 +266,7 @@ label new_request_20_complete: # <==============================================
                     m "Вы свободны."
                     $herView.hideshowQQ( "body_21.png", pos )
                     her "......"
-                    $ mad +=25
+                    $ hermi.liking -=25
                     jump could_not_flirt #Sent here when choose "Favor failed! No points for you!" (Hermione is leaving without getting any points).
                             
                 "\"Ладно. Вот твоя плата.\"":
@@ -274,7 +274,7 @@ label new_request_20_complete: # <==============================================
 
 
 
-    elif whoring >= 15 and whoring <= 17: # LEVEL 06. Event level 02.     
+    elif hermi.whoring >= 15 and hermi.whoring <= 17: # LEVEL 06. Event level 02.     
         if one_out_of_three == 1: ### EVENT (A)
             m "Мисс Грейнджер, вы выполнили задание?"
             show screen blktone
@@ -437,7 +437,7 @@ label new_request_20_complete: # <==============================================
             m "Отличная работа."
             $herView.hideshowQQ( "body_45.png", pos )
 
-    elif whoring >= 18: # LEVEL 07+                  
+    elif hermi.whoring >= 18: # LEVEL 07+                  
         if one_out_of_three == 1: ### EVENT (A) # Snowballing
             label snowballing:
                 pass

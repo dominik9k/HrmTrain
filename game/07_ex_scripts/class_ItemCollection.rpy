@@ -1,6 +1,6 @@
 ﻿init -997 python:
   
-# Класс - обертка для словаря ивентов
+# Класс - обертка для словаря предметов
     class ItemCollection(Entry):
         # constructor - Event initializing
         def __init__( self, Name, fillingSet=None):
@@ -20,14 +20,15 @@
         def __call__( self, sName=None):
             if sName==None:  # ItemCollection() - список всех, которых количество больше 0
                 return self.GetList(0)
-            for o in itemList: # Item по имени
+            for o in itemList: # Item по имени, но при этом поле count заполняется числом элементов
                 if o.Name==sName:
+                    o.SetValue("count", self.Count(sName))
                     return o
             return None
 
 
         def AddItem(self, Name, count=1): # на вход сет {"имя вещи":кол-во} кол-во может быть отрицательным  
-            self.IncValue(Name+"_count",count, minimum=0)
+            self.IncValue(Name+"_count",count, minim=0)
             return self.__call__(Name)
 
 
@@ -40,17 +41,18 @@
 
         def Receive(self, collection, Name, count=1):
             collection.AddItem(Name,count)
-            self.AddItem(Name,count)
-            return
+            return self.AddItem(Name,count)
 
 
         def Clear(self, Name=None):
             self.Fill(Name,0)
+            return
 
         def Fill(self, Name=None, value=1):
             for o in itemList: # Item по имени
                 if Name==None or o.GetValue("block")==Name:
                     self.SetValue(o.Name+"_count",value)
+            return 
 
 
 
@@ -66,11 +68,10 @@
             for i in range(len(itemList)):
                 if self.Count(itemList[i].Name)>level:
                     self.__list.append(itemList[i])
+                    itemList[i].SetValue("count",self.Count(itemList[i].Name))
             return self.__list
 
-        
-        def First(self):
-            return self.GetList()[0]
+       
 
 
 

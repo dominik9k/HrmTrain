@@ -34,7 +34,7 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
         $herView.hideshowQQ( "body_129.png", pos )
         her "Занятся сексом, сэр?"
         m "Вообще-то -  да. Но как вы догадались...?"
-        if whoring <=17:
+        if hermi.whoring <=17:
             jump too_much
         $herView.hideshowQQ( "body_128.png", pos )
         her "Не сложно было догадаться..."
@@ -952,8 +952,8 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
     with d3
     her "Спасибо, сэр..."
 
-    if whoring <= 20: # Level 07 <
-        $ whoring +=1
+    if hermi.whoring <= 20: # Level 07 <
+        $ hermi.whoring +=1
 
 
 

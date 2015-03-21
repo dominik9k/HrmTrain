@@ -76,7 +76,7 @@ $ snape_friendship = 0 #Get's +1 after every evening spent is Snape's company.
 $ snape_events = 0 #Get's +1 point every time a special event with Snape happens. 
 
 
-$ level = "00" #Hermione's whoring level.
+#$ level = "00" #Hermione's whoring level.
 
 $ hermione_takes_classes = False #Turns True when Hermione becomes unavailable for summon after performing personal request in the morning.
 $ hermione_sleeping = False
@@ -85,7 +85,7 @@ $ hermione_sleeping = False
 
 $ tutoring_events = 0 #Get's +1 point every time a tutoring special event happens. 
 $ knowledge = 0
-$ whoring = 0 #Default: 0
+#$ whoring = 0 #Default: 0
 $ teachers_pet = 0
 $ classmates_pet = 0
 $ being_mean = 0 #+1 every time you are being mean to hermione.
@@ -314,33 +314,33 @@ hide screen cloud_night_02 #NIGHT CLOUDS.
 hide screen cloud_night_03 #NIGHT CLOUDS.
 hide screen bld1 #You know what this is. Just making sure it doesn't get stuck.
  
-if whoring >= 0 and whoring <= 2:
-    $ level = "01"
-if whoring >= 3 and whoring <= 5:
-    $ level = "02"
-if whoring >= 6 and whoring <= 8:
-    $ level = "03"
-if whoring >= 9 and whoring <= 11:
-    $ level = "04"
-if whoring >= 12 and whoring <= 14:
-    $ level = "05"
+#if whoring >= 0 and whoring <= 2:
+#    $ level = "01"
+#if whoring >= 3 and whoring <= 5:
+#    $ level = "02"
+#if whoring >= 6 and whoring <= 8:
+#    $ level = "03"
+#if whoring >= 9 and whoring <= 11:
+#    $ level = "04"
+#if whoring >= 12 and whoring <= 14:
+#    $ level = "05"
     
-if whoring >= 15 and whoring <= 17:
-    $ level = "06"
+#if whoring >= 15 and whoring <= 17:
+#    $ level = "06"
     
-if whoring >= 18 and whoring <= 20:
-    $ level = "07"
+#if whoring >= 18 and whoring <= 20:
+#    $ level = "07"
     
-if whoring >= 21 and whoring <= 23:
-    $ level = "08"
+#if whoring >= 21 and whoring <= 23:
+#    $ level = "08"
     
-if whoring >= 24 and whoring <= 26:
-    $ level = "09"
+#if whoring >= 24 and whoring <= 26:
+#    $ level = "09"
     
-if whoring >= 27 and whoring <= 29:
-    $ level = "10"
+#if whoring >= 27 and whoring <= 29:
+#    $ level = "10"
 
-if whoring >= 12 and not touched_by_boy: #Turns true if sent Hermione to get touched by a boy at least once.
+if hermi.whoring >= 12 and not touched_by_boy: #Turns true if sent Hermione to get touched by a boy at least once.
     $ lock_public_favors = True #Turns True if reached whoring level 05 while public event "Touched by boy" never attempted. Locks public events.
 
 
@@ -388,9 +388,8 @@ if day_of_week == 7: #Counts days of the week. Everyday +1. When day_of_week = 7
 $ day_of_week += 1
 
 ### HERMIONE ###
-if mad >= 1:
-    $ mad -= 1
-
+# Ежеденевные изменения для всех персонажей
+$hermi.liking+=1
     
 
 ### MUGGLE ODDITIES RELATED FLAGS ###

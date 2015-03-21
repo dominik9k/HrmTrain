@@ -62,9 +62,9 @@ label cupboard:
                         hide screen points
                         $slytherin+=100
                         show screen points
-                    "ЧИТ: Гермиона больше не злиться на вас":
+                    "ЧИТ: Гермиона не злится на вас":
                         hide screen points
-                        $mad=0
+                        $hermi.liking=0
                         show screen points
                         "Готово можете проверить"
                     "ЧИТ: +100 золотых":
@@ -185,7 +185,7 @@ label rummaging:
         $arrProb={"candy":[2,2,2,0], "wine": [7,5,4,0], "chocolate":[1,1,0,4], "lingere":[1,1,0,1], "sexdoll":[1,1,1,1],
         "krum":[0,1,1,1],"owl":[0,0,4,4], "broom":[0,0,0,1]} #"gold":[8, 9, 8, 8]
 
-        $_level=GetStage(whoring, 0, 6, 4)-1
+        $_level=GetStage(hermi.whoring, 0, 6, 4)-1
         $_randValue=one_of_tw
         $_name="gold"
         python:

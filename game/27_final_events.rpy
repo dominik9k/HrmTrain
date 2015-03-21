@@ -69,19 +69,19 @@ label want_to_rule:
             menu:  
                 m "..."
                 "\"Сначала покажи мне сиськи.\"":
-                    $ mad += 9
+                    $ hermi.liking -= 9
                     $ d_flag_01 = True
                     pass
                 "\"Сначала покажи мне свою киску.\"":
-                    $ mad += 9
+                    $ hermi.liking -= 9
                     $ d_flag_02 = True
                     pass
                 "\"Сначала разденься.\"":
-                    $ mad += 17
+                    $ hermi.liking -= 17
                     $ d_flag_03 = True
                     pass
                 "\"Тебе придется переспать со мной.\"" if not d_flag_04:
-                    $ mad += 17
+                    $ hermi.liking -= 17
                     $ d_flag_04 = True
                     $herView.hideQQ()
                     $herView.showQQ( "body_18.png", pos )
@@ -1013,7 +1013,7 @@ label giving_thre_dress:
     with d5
     
     
-    $ mad = 0
+    $ hermi.liking = 0
     stop music fadeout 1.0
     m "Вот... Это тебе..."
     $ the_gift = "03_hp/18_store/01.png" # DRESS.
