@@ -39,11 +39,11 @@ label summon_snape:
             #$ snape_busy = True
             jump snape_chitchat
 
-        "Купить зелье на букву \"Б\"" if teacher_jin_quest == 2 and gold >= 7000:
+        "Купить зелье на букву \"Б\"" if teacher_jinn_quest == 2 and gold >= 7000:
             jump snape_tutor_2
         "\"Отвиснуть.\"" if not daytime and not sfmax: # Turns TRUE when friendship with Snape been maxed out.
         
-            if teacher_jin_quest == 1:
+            if teacher_jinn_quest == 1:
                 jump snape_tutor_1
                 
             elif one_of_ten == 10:
