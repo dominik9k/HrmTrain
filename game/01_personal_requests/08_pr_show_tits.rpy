@@ -1110,7 +1110,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
 #        $ level = "05"
 #        $ new_request_08_03 = True # HEARTS.
 
-    $SetHearts(GetStage(whoring, 6, 3, 4))
+    $SetHearts(GetStage(hermi.whoring, 6, 3, 4))
 
 
     hide screen bld1
@@ -1164,6 +1164,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
     # load from pose with tits and that sperm!
     $herView.data().loadState()
     
+    $event.Finalize()    
     jump finish_daytime_event
 
 

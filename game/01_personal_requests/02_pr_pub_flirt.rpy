@@ -101,6 +101,9 @@ label new_request_02_b:
 
 
     $ hermione_takes_classes = True
+
+    $event.Finalize()    
+
     jump day_main_menu
    
         
@@ -538,6 +541,8 @@ label new_request_02_b_complete:
     $ hermione_sleeping = True
     
     $ p_level_02_active = True #When turns TRUE public favors of level 02 become available. 
+
+    $event.Finalize()    
     
     if hermi.whoring <= 2:
         $ hermi.whoring +=1

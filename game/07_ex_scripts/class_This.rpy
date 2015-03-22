@@ -38,7 +38,7 @@ init -992 python:
                 if this(s)!=None:
     # Если перешли на метку, которая есть ивент, автоматически запускается увеличение счетчика стартов-финишей. 
     # Случаи, когда ивент завершается на середине (и требуют уменьшения счетчика финишей) обрабатываются в коде самого ивента                
-                    this().IncPassed()
+                    this().LabelExecute()
 
         except Exception:
             pass
@@ -99,10 +99,10 @@ init -992 python:
         return IsRunNumberOrMore(2)
 
     def IsRunNumber(num): # Это запуск номер num
-        return event._finishCount==num
+        return event._finishCount==num-1
 
     def IsRunNumberOrMore(num): # Это запуск номер num или последующий?
-        return event._finishCount>=num
+        return event._finishCount>=num-1
 
 
 #    def OnJumpExecute(loc, target, expression):

@@ -61,6 +61,9 @@ label new_request_02_c:
 
 
     $ hermione_takes_classes = True
+
+    $event.Finalize()    
+
     jump day_main_menu
 
     
@@ -659,6 +662,8 @@ label could_not_flirt_02: #Sent here when chose "Задание провален
     $ request_02_b_points += 1
 #    $ request_02_b = False 
     $ hermione_sleeping = True
+    
+    $event.Finalize()    
     
     return   
 

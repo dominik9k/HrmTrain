@@ -1026,7 +1026,6 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
 
 
 #    $ request_31_points += 1
-    $SetHearts(GetStage(event._finishCount,1,1,1))
 
 
     hide screen bld1
@@ -1048,6 +1047,8 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
 
     call music_block
     
+    $event.Finalize()    
+    $SetHearts(GetStage(event._finishCount,1,1,1))
     if daytime:
         $ hermione_takes_classes = True
         jump night_main_menu

@@ -520,6 +520,7 @@ label want_to_rule:
     
     call music_block
     
+    $this.want_to_rule.Finalize()
     return
     
 #==========================
@@ -766,6 +767,8 @@ label against_the_rule:
     hide screen bld1
 
     stop bg_sounds #Stops playing the fire SFX.
+
+    $this.against_the_rule.Finalize()
    
     jump night_start
          
@@ -904,6 +907,8 @@ label crying_about_dress:
     $ hermione_takes_classes = True
     
     call music_block
+
+    $this.crying_about_dress.Finalize()    
     
     return 
     
@@ -1000,7 +1005,8 @@ label sorry_about_hesterics:
     with d3
     
     call music_block
-    
+    $this.sorry_about_hesterics.Finalize()
+
     return
     
     
@@ -1117,6 +1123,9 @@ label giving_thre_dress:
 
     call music_block
     
+    
+    $this.giving_thre_dress.Finalize()
+
     if daytime:
         $ hermione_takes_classes = True
         jump night_main_menu
@@ -1715,6 +1724,8 @@ label good_bye_snape:
 
     hide screen end_u_4                                           #<---- SCREEN
     jump your_whore
+    
+    $this.good_bye_snape.Finalize()
     
     return
     

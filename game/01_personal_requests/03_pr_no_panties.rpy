@@ -157,7 +157,7 @@ label new_request_03: #(Whoring = 3 - 5)
     else:
         play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
     ### END OF BLOCK ###
-
+    $event.Finalize()
     jump day_main_menu
     
     
@@ -535,5 +535,6 @@ label panties_soaked_in_cum:
                     her "Мои очки, сэр!"
                     
                     
+    $event.Finalize()    
 
     jump back_from_panties

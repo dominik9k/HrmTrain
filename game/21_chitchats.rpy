@@ -1742,7 +1742,10 @@ label chitchat_event_01: #Snape says: so you tutor her now?". Happens after tuto
     $ days_without_an_event = 0
     
     play music "music/Brittle Rille.mp3" fadein 1 fadeout 1
+
     
+    $this.chitchat_event_01.Finalize()
+
     jump day_main_menu
 
 

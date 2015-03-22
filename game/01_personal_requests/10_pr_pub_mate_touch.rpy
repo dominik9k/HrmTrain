@@ -144,6 +144,9 @@ label new_request_10:
 
 
     $ hermione_takes_classes = True
+
+    $event.Finalize()    
+
     jump day_main_menu
 
         
@@ -555,6 +558,9 @@ label new_request_10_complete: #<===============================================
     $ request_10_points += 1 
 #    $ request_10 = False 
     $ hermione_sleeping = True
+
+    $event.Finalize()    
+
     return
 
 

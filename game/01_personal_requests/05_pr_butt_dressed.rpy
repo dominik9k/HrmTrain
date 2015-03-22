@@ -25,7 +25,7 @@ label new_request_05:
 #        $ level = "04"
 #        $ new_request_05_03 = True # HEARTS.
 
-    $SetHearts(GetStage(whoring, 3, 3, 3))
+    $SetHearts(GetStage(hermi.whoring, 3, 3, 3))
 
         
         
@@ -793,6 +793,7 @@ label screams_of_rapings:
     with Dissolve(.3)
     pause.5
 
+    $event.Finalize()    
     if daytime:
         $ hermione_takes_classes = True
         jump day_main_menu

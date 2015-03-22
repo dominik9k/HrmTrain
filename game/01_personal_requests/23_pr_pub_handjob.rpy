@@ -150,6 +150,8 @@ label new_request_23: #LV.6 (Whoring = 15 - 17)
     call music_block
     
     $ hermione_takes_classes = True
+
+    $event.Finalize()    
     jump day_main_menu
     
 
@@ -758,6 +760,7 @@ label new_request_23_complete: # <==============================================
 
     call music_block
 
+    $event.Finalize()    
     return
 
     

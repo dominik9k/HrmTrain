@@ -1455,7 +1455,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
     if IsRunNumberOrMore(3): 
         $SetHearts(3)
     else:
-        $SetHearts(GetStage(whoring,12,3,2))
+        $SetHearts(GetStage(hermi.whoring,12,3,2))
 
 
 #    $ request_16_points += 1
@@ -1478,6 +1478,9 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
     $herView.data().loadState()
 
     call music_block
+
+    $event.Finalize()    
+
     if daytime:
         $ hermione_takes_classes = True
         jump night_main_menu

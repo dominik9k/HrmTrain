@@ -73,6 +73,7 @@ label new_request_30: #LV.8 (Whoring = 21 - 23)
 
 
     $ hermione_takes_classes = True
+    $event.Finalize()    
     jump day_main_menu
     
     
@@ -232,6 +233,7 @@ label new_request_30_complete: # <==============================================
     
     call music_block
     
+    $event.Finalize()    
     return
 
     
@@ -321,6 +323,7 @@ label new_request_30_complete_a: #Hermione does not show up. This is label where
     
     call music_block 
     
+    $event.Finalize()    
     return
 
   

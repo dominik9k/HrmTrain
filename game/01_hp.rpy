@@ -671,7 +671,7 @@ call points_changes_gryffindor #Makes changes in the Gryffindor (And the rest of
 if teacher_jinn_quest == 5:
     $ study_book_quest_counter += 1
     
-if study_book_quest_counter == 3:
+if study_book_quest_counter == 3 and teacher_jinn_quest == 5:
     jump event_16
 
 

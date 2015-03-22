@@ -254,6 +254,7 @@ label event_00:
     
     $ days_without_an_event = 0
     
+    $this.event_02.Finalize() # Сюда попадаем из ивента event_02
     jump day_start
 
 
@@ -286,6 +287,7 @@ label event_01: #First event in the game. Gennie finds himself at the desk.
     m "Я думаю, необходимо осмотреться здесь..."
     hide screen bld1
     with d3
+    $this.event_01.Finalize()
     return
 ###############################################################################################################################################################
 label event_02:
@@ -435,6 +437,7 @@ label event_03:
     hide screen snape_01_f #Snape stands still. (Mirrored).
     with Dissolve(.3)
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
+    $this.event_03.Finalize()
     jump day_start
 ###############################################################################################################################################################
 label event_04:
@@ -966,6 +969,7 @@ label event_06: #THE TALK AFTER THE DUEL ENDS.
 
     $sna_head_state = 7
     sna_head_main "(Джинн? Что-то новое...)"
+    $this.event_05.Finalize()
     jump day_start
 ###############################################################################################################################################################        
 label event_07: #THE TALK WITH SNAPE THE DAY AFTER THE DUEL.
@@ -1275,7 +1279,7 @@ label event_07: #THE TALK WITH SNAPE THE DAY AFTER THE DUEL.
     hide screen blktone
     with d3
 #    $ hanging_with_snape = True
-    
+    $this.event_07.Finalize()
     jump day_start
 
 ###############################################################################################################################################################
@@ -1585,6 +1589,7 @@ label event_08: # HERMONE SHOWS UP FOR THE FIRST TIME. IN USE.
 #    $ snape_against_hermione = True #Turns True after event_08. Activates special date with Snape # 01.
 #    $ event08_happened = True
     play music "music/Brittle Rille.mp3" fadein 1 fadeout 1
+    $this.event_08.Finalize()
     return
 
 ### FOLLOWING EVENT IS NOT IN USE ANYMORE ###
@@ -1700,6 +1705,7 @@ label event_08_02:
     pause.5
     m "..................................."
     m "Я начинаю наслаждаться нашими встречами все меньше и меньше..."
+    $this.event_08_02.Finalize()
     return
 #NOT IN USE###############################################################################################################################################################    
 label event_08_03:
@@ -1817,7 +1823,7 @@ label event_08_03:
     
 #    $ snape_against_hermione = True #Turns True after event_08_03. Activates event_09 when hanging out with Snape next time.
 
-#    $ cEvent_08_03.IncPassed()
+    $this.event_08_03.Finalize()
     return
 
             
@@ -1979,6 +1985,7 @@ label event_09: #Second visit from Hermione. Says she sent a letter to the Mines
 #    $ snape_against_hermione_02 = True #Turns True after event_09. Activates second event when hanging out with Snape.
     
     play music "music/Brittle Rille.mp3" fadein 1 fadeout 1
+    $this.event_09.Finalize()
     return
 
 
@@ -2387,7 +2394,7 @@ label event_11: #Third visit, after second special date with Snape. Hermione com
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     
     play music "music/Music for Manatees.mp3" fadein 1 fadeout 1
-
+    $this.event_11.Finalize()
     return
 
 
@@ -2498,7 +2505,7 @@ label event_12: # Hermione complains that she did failed a test. (EVENING EVENT!
 
     $ event12_happened = True #Allows next event to start.
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
-    
+    $this.event_12.Finalize()
     return
 
 
@@ -2614,7 +2621,7 @@ label event_13: # Hermione complains that she almost failed a test. (EVENING EVE
 
     $ event13_happened = True #Allows next event to start.
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
-    
+    $this.event_13.Finalize()
     return
 
 
@@ -2767,7 +2774,7 @@ label event_14: # Hermione comes after her breakdown (when she failed the test).
     
     
     play music "music/Brittle Rille.mp3" fadein 1 fadeout 1
-
+    $this.event_14.Finalize()
     return
 
 
@@ -3215,6 +3222,7 @@ label event_15: # Hermione comes and asks to buy a favour from her.
     $ buying_favors_from_hermione_unlocked = True 
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     $ event15_happened = True #Turns TRUE after event_15
+    $this.event_15.Finalize()
     return
 
 
@@ -3369,7 +3377,7 @@ label event_16: #Учебники доставлены
             m "Именно поэтому я доверил это вам, студентам гордого Гриффиндора!"
             m "Я думал, что вам не нужна награда."
             $herView.hideshowQQ( "body_16.png", pos )
-            her "Но ведь система очков была придумана для того, чтобы поощерять учеников за..."
+            her "Но ведь система очков была придумана для того, чтобы поощрать учеников за..."
             m "Вы абсолютно правы. Но, судя по вашим словам, я ошибался. Ошибался в вас. Можете забирать свои очки и выметаться из моего кабинета."
             $herView.hideshowQQ( "body_77.png", pos )
             her "..."
@@ -3401,7 +3409,7 @@ label event_16: #Учебники доставлены
             with Dissolve(.3)
             show screen bld1
             with d3
-            m "Надеюсь, я не перестарался...?"
+            m "Надеюсь, я не перестарался..?"
             m "Впрочем, какая разница? Моя работа - превращать недоступных девушек в шлюх, а не беспокоиться об их чувствах."
     m "Что ж, пора вызывать Снейпа."
     m "Хм... Интересно, как работает система вызова людей в эту комнату?"
@@ -3535,7 +3543,7 @@ label event_16: #Учебники доставлены
     g4 "Неужели Снейп просто надул меня?"
     m "Да еще и эти шуточки с названием..."
     m "Ладно, думаю, стоит ему шанс..."
-    if $ zyablik_switch == 1:
+    if zyablik_switch == 1:
         m "Начну, пожалуй, с самой большой книги."
         m "Она называется... \"Мифологическая биология для чайников\"."
         "\"Глава 1 - Мантикоры\"..."
@@ -3632,8 +3640,10 @@ label event_16: #Учебники доставлены
         "Квест выполнен! Джинни получает +50 к интеллекту и возможность обучать Гермиону! (в будущих обновлениях, конечно)"
         g4 "Будущие обновления? Значит все это было напрасно?"
         m "... пошло все к черту..."
-        
-    jump day_main_menu
+    if daytime:
+        jump night_start
+    else: 
+        jump day_start
 
 
 
