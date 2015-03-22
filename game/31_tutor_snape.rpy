@@ -133,7 +133,7 @@ label snape_tutor_1:
     m "Какой вообще смысл во всей этой школе, если все можно выучить буквально за ночь?"
     $ s_sprite = "03_hp/10_snape_main/snape_03.png"                                         # SNAPE
     show screen s_head2
-    sna2 "Ну, во-первых, большинство ингридиентов очень редки и на них нужна чертова куча денег." #snape
+    sna2 "Ну, во-первых, большинство ингредиентов очень редки и на них нужна чертова куча денег." #snape
     $ s_sprite = "03_hp/10_snape_main/snape_04.png"                                         # SNAPE
     show screen s_head2
     sna2 "Во-вторых, процесс варки чертовски сложен." #snape
@@ -148,7 +148,7 @@ label snape_tutor_1:
     show screen s_head2
     sna2 "Именно." #snape
     hide screen s_head2
-    m "Так все что мне нужно, так это купить ингридиенты, так?"
+    m "Так все что мне нужно, так это купить ингредиенты, так?"
     $ s_sprite = "03_hp/10_snape_main/23.png"                                         # SNAPE
     show screen s_head2
     sna2 "Точно." #snape
@@ -157,7 +157,7 @@ label snape_tutor_1:
     m "И во сколько мне обойдется эта радость?"
     $ s_sprite = "03_hp/10_snape_main/snape_03.png"                                         # SNAPE
     show screen s_head2
-    sna2 "Ну... Некоторые из ингридиентов запрещены, так что мне прийдется привлечь свои каналы..." #snape
+    sna2 "Ну... Некоторые из ингредиентов запрещены, так что мне прийдется привлечь свои каналы..." #snape
     $ s_sprite = "03_hp/10_snape_main/snape_23.png"
     sna2 "Так что, думаю, тысяч десять." #snape
     show screen s_head2

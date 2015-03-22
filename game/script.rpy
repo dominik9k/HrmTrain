@@ -152,9 +152,7 @@ init:
             else:
                 this.AddEvent(s, points={"public"}) 
             s+="_complete"
-            #Поменял условие e._finishCount==e.prevInList._finishCount на e._finish2==e.prevInList._finish2 
-            #Почему-то раньше сбивался счетчик и завершение ивента начинало вызваться каждую ночь. В новой логике, сбитый счетчик к таким последствиям не приведет
-            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finish2==e.prevInList._finish2, defVals={"availChoices":{1,2,3}},
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount==e.prevInList._finishCount, defVals={"availChoices":{1,2,3}},
                 OnChange=lambda e, subKey, oldVal, newVal: OnValueChange(e, subKey, oldVal, newVal)  ) # После срабатывания предыдущего это условие done нарушается и ивент готов к запуску. Нет ограничений по кол-ву запусков
 
 

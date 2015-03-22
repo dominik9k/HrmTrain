@@ -639,7 +639,7 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
     $ request_02_c_points += 1 #Leveling up the event.
 #    $ request_02_c = False 
     $ hermione_sleeping = True
-
+    $event.Finalize()    
     return    
     
 label could_not_flirt_02: #Sent here when chose "Задание провалено! Ты не получишь очки!"
@@ -662,8 +662,5 @@ label could_not_flirt_02: #Sent here when chose "Задание провален
     $ request_02_b_points += 1
 #    $ request_02_b = False 
     $ hermione_sleeping = True
-    
-    $event.Finalize()    
-    
     return   
 
