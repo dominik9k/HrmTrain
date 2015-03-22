@@ -117,25 +117,26 @@ label menu_dahr_gift_order:
                     "- Ничего -":
                         hide screen gift
                         jump the_oddities
+
+
+        if gold >= item._price*itemCount:
+            hide screen points
+            $ gold -=item._price*itemCount
+            show screen points
+            $ order_placed = True
+            $itsOWL.AddItem(item.Name,itemCount)
+            if item.Name in {"scroll", "ball_dress"}:
+                $itsDAHR.AddItem(item.Name,-itemCount)
+    #        $ bought_candy = True #Affects 15_mail.rpy
+            call thx_4_shoping #Massage that says "Thank you for shopping here!".
+            jump desk
+        else:
+            call no_gold #Massage: m "I don't have enough gold".
+            jump the_oddities
+
     else:
         ">Извините, товар закончился"
-
-
-    if gold >= item._price*itemCount:
-        hide screen points
-        $ gold -=item._price*itemCount
-        show screen points
-        $ order_placed = True
-        $itsOWL.AddItem(item.Name,itemCount)
-        if item.Name in {"scroll", "ball_dress"}:
-            $itsDAHR.AddItem(item.Name,-itemCount)
-#        $ bought_candy = True #Affects 15_mail.rpy
-        call thx_4_shoping #Massage that says "Thank you for shopping here!".
-        jump desk
-    else:
-        call no_gold #Massage: m "I don't have enough gold".
-        jump the_oddities
-
+        hide screen gift
 
 
 
