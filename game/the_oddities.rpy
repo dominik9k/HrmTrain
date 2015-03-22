@@ -95,13 +95,13 @@ label menu_dahr_gift_order:
 
     if itsDAHR.Count(item.Name)>0:
         if item._block=="gears":
-                menu:
-                    dahr "[item._description]"
-                    "- Купить ([item._price] галеонов) -":
-                        $itemCount=1
-                    "- Ничего -":
-                        hide screen gift
-                        jump the_oddities
+            menu:
+                dahr "[item._description]"
+                "- Купить ([item._price] галеонов) -":
+                    $itemCount=1
+                "- Ничего -":
+                    hide screen gift
+                    jump the_oddities
         else:
             $_price2=item._price*2
             $_price3=item._price*3
@@ -237,5 +237,6 @@ label no_gold:
 
 label out:
     dahr "Этот товар закончился на складе"
-    return
+    jump the_oddities
+#    return
 

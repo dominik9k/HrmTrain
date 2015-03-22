@@ -52,6 +52,7 @@ label hermione_approaching:
                     (_val, _text)=t
                     if hermi.liking>=_val:
                         renpy.say(her, _text)
+                        break
             jump hermione_main_menu
 
         "- Купить \"сексуальный\" рейтинг -" if this.Has("her_wants_buy"):#buying_favors_from_hermione_unlocked:
@@ -69,6 +70,7 @@ label hermione_approaching:
                         (_val, _text)=t
                         if hermi.liking>=_val:
                             renpy.say(her, _text)
+                            break
                 jump hermione_main_menu
        
         
@@ -125,6 +127,7 @@ label hermione_approaching:
                         (_val, _text)=t
                         if hermi.liking>=_val:
                             renpy.say(her, _text)
+                            break
                 jump hermione_main_menu
        
         

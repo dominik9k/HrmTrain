@@ -40,7 +40,7 @@
 
 
         def Receive(self, collection, Name, count=1):
-            collection.AddItem(Name,count)
+            collection.AddItem(Name,-count)
             return self.AddItem(Name,count)
 
 
