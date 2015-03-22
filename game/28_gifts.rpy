@@ -19,7 +19,7 @@ label menu_gifts_actions:
 
 
 
-label giving_skirt:
+label giving_miniskirt:
     $ dress_code = True # Turns TRUE when you gift the miniskirt. Unlocks the "dress code" button.
     $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
 #    $ have_miniskirt = False # Turns TRUE when you have the skirt in your possession.

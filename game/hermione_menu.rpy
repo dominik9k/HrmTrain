@@ -88,7 +88,7 @@ label hermione_approaching:
 
             
         "- Гардероб -" if dress_code:
-            if $hermi.liking==0:
+            if hermi.liking==0:
                 menu:
                     
                     "- Надеть значок -" if (herView.data().getItemKey( G_N_BADGE )==None) and  hermi.Items.Any("badge_01"): #not ba_01 and badge_01 == 7:
@@ -106,7 +106,7 @@ label hermione_approaching:
                     "- Надеть мини-юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'default' ) and hermi.Items.Any("miniskirt"): #not legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.:
                         jump mini_on #28_gifts.rpy
 
-                    "- Надеть длинную юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'short' ) and and hermi.Items.Any("miniskirt"): #legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.
+                    "- Надеть длинную юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'short' ) and hermi.Items.Any("miniskirt"): #legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.
                         jump mini_off #28_gifts.rpy
                 
 
