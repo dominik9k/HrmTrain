@@ -1653,7 +1653,7 @@ label good_bye_snape:
         play music "music/Plaint.mp3" fadein 1 fadeout 1 #SAD CREDITS MUSIC.
         
         centered "{size=+7}{color=#cbcbcb}Поздравляем с завершением игры!{/color}{/size}\n\n\
-                  {size=+5}{color=#cbcbcb}Это концовка \"00\" из \"02\".{/color}{/size}"
+                  {size=+5}{color=#cbcbcb}Это концовка \"00\" из \"03\".{/color}{/size}"
         
         centered "{size=+7}{color=#cbcbcb}Спасибо за ваше то, что играли!{/color}{/size}\n\n\
                   {size=+5}{color=#cbcbcb}AKABUR 2014{/color}{/size}"
