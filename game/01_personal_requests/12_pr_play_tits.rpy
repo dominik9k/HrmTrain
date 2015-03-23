@@ -78,7 +78,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
             her "Конечно, сэр..."
     
 
-    label new_request_12_mainonly:
+
     $herView.hideQQ()
     hide screen blktone
     with d3
@@ -93,7 +93,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     with Dissolve(1)
     pause.5
 
-
+    label new_request_12_mainonly:
     hide screen hermione_walk_01
     hide screen genie
     show screen ctc

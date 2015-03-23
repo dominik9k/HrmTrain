@@ -183,7 +183,7 @@ $ s_reading_lvl = 0 #+1 When complete first book on speed reading. +1 again when
 
 ### MUGGLE ODDITIES ### =========================================================================
 $ order_placed = False #TRUE when and order has been placed on an item.
-$ days_in_delivery = 0 # +1 day, every day since the orer has been made (when order_placed = True).
+#$ days_in_delivery = 0 # +1 day, every day since the orer has been made (when order_placed = True).
 $ days_in_delivery2 = 0 # +1 day, every day since the orer has been made (when order_placed = True).
 $ package_is_here = False # Turns true when days_in_delivery >= 5. Package is displayed.
 
@@ -396,15 +396,6 @@ $ day_of_week += 1
 # Ежеденевные изменения для всех персонажей
 $hermi.liking+=1
     
-
-### MUGGLE ODDITIES RELATED FLAGS ###
-#if order_placed: #TRUE when and order has been placed on an item.
-#    $ days_in_delivery +=1
-#    if days_in_delivery >= 3: # BY DEAFULT WAS 5. Changed for testing.
-#        $ package_is_here = True
-#        $ order_placed = False
-
-
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.

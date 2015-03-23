@@ -32,7 +32,6 @@ label new_request_03: #(Whoring = 3 - 5)
     if IsFirstRun() and hermi.whoring <= 5: #First time this event taking place. and LEVEL 02.   <===================================== ONE TIME EVENT.
         stop music fadeout 10.0
 #        $ new_request_03_01 = True # HEARTS.
-        $SetHearts(1)
 
 #        $ request_03 += 1
         $herView.hideshowQQ( "body_11.png", pos )
@@ -197,7 +196,6 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
         "\"Как прошел ваш день, Мисс Грейнджер?\"":
             if  hermi.whoring <= 5: #LEVEL 02. EVENT LEVEL: 01
 #                $ new_request_03_01 = True # HEARTS.
-#                SetHearts(1)
 
                 $herView.hideQQ()
                 $ pos = POS_120
@@ -221,7 +219,6 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
                     m "Да, да..."
             elif hermi.whoring >= 6 and hermi.whoring <= 8: #LEVEL 03. EVENT LEVEL 02.
 #                $ new_request_03_02 = True # HEARTS.
-                $SetHearts(2)
 
                 $herView.hideQQ()
                 $ pos = POS_120
@@ -269,7 +266,6 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
                             her "И мои очки."
             elif hermi.whoring >= 9: #LEVEL 04. EVENT LEVEL 03.
 #                $ new_request_03_03 = True # HEARTS.
-                $SetHearts(3)
 
                 $herView.hideQQ()
                 $ pos = POS_120
@@ -333,7 +329,7 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
     play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
 
     $event.Finalize()    
-
+    $SetHearts(GetStage(hermi.whoring, 3, 3, 3), this.new_request_03)
     return 
     
     

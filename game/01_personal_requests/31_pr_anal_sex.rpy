@@ -1006,7 +1006,8 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
     hide screen blkfade
     with d3
  
-    jump new_request_08_finish
+    if event.Name=="new_request_08": 
+        jump new_request_08_finish
     m "Да, мисс Грейнджер, 90 очков \"Гриффиндору\"." 
     $ gryffindor +=90
     $herView.showQ( "body_141.png", pos )
@@ -1048,7 +1049,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
     call music_block
     
     $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,1,1))
+    $SetHearts(GetStage(event._finishCount,1,3,1))
     if daytime:
         $ hermione_takes_classes = True
         jump night_main_menu

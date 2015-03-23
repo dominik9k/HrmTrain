@@ -660,7 +660,8 @@ label could_not_flirt_02: #Sent here when chose "Задание провален
     with Dissolve(.3)
     
     $ request_02_b_points += 1
+    jump finish_daytime_event
 #    $ request_02_b = False 
-    $ hermione_sleeping = True
-    return   
+#    $ hermione_sleeping = True
+#    return   
 

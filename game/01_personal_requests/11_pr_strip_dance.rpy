@@ -2692,7 +2692,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
     call music_block
 
     $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,1,1))
+    $SetHearts(GetStage(event._finishCount,1,3,1))
 
     if daytime:
         $ hermione_takes_classes = True

@@ -1195,6 +1195,6 @@ label addAfterSperm:
     
 label loadState_and_could_not_flirt:
     $herView.data().loadState()
-    call could_not_flirt
-    jump finish_daytime_event
+    jump could_not_flirt
+#    jump finish_daytime_event
 

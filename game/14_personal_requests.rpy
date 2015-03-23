@@ -1215,14 +1215,15 @@ label could_not_flirt: #Sent here when choose "Задание провалено
     
     $ request_02_b_points += 1
     $ request_02_b = False 
+    $event.Finilize() # Увеличиваем счетчик выполнений ивента. Если этого не делать, то после фейла Гермионы в публичных (фейл приводит в эту ветку), начинает рассинхронизироваться счетчик заданий и отчетов
 
-    if daytime:
-        $ hermione_takes_classes = True
-    else:
-        $ hermione_sleeping = True
-    return
+#    if daytime:
+#        $ hermione_takes_classes = True
+#    else:
+#        $ hermione_sleeping = True
+#    return
 
-label finish_daytime_event:
+    label finish_daytime_event:
     call music_block
     
     if daytime:

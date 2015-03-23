@@ -990,7 +990,7 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
     #call music_block 
     
     $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,1,1))
+    $SetHearts(GetStage(event._finishCount,1,3,1))
     if daytime:
         jump night_start
     else:

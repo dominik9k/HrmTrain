@@ -75,10 +75,10 @@ init -992 python:
             availSet-={o}                
         return o
 
-    def GetStage(value, minValue, maxLevel=3, step=3): # Получить фазу в которой находится прохождение ивента. 0 - невозможно пройти, дальше - уровни
+    def GetStage(value, minValue, levelCount=3, step=3): # Получить фазу в которой находится прохождение ивента. 0 - невозможно пройти, дальше - уровни
         value=value-minValue
         if value<0: return 0
-        if int(value/step)+1>=maxLevel: return maxLevel
+        if int(value/step)+1>=levelCount: return levelCount
         return int(value/step)+1
 
     def OnValueChange(e, subKey, oldVal, newVal):
@@ -89,8 +89,10 @@ init -992 python:
             Execute(e,s, subKey=="startCount")  
         return
 
-    def SetHearts(heartCount): # Установить количество сердечек текущему ивенту
-        return event.SetValue("heartCount",heartCount)
+    def SetHearts(heartCount, _event=None): # Установить количество сердечек текущему ивенту
+        if _event==None:
+            _event=event
+        return _event.SetValue("heartCount",heartCount)
 
     def IsFirstRun(): # Это первый запуск текущего ивента?
         return IsRunNumber(1) 
