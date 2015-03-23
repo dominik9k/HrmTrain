@@ -79,8 +79,9 @@ label hermione_approaching:
             $ choose = RunMenu()
             python:
                 for o in hero.Items():
-                    choose.AddItem("- "+o._caption+" -", 
-                        "menu_gifts_actions" , True, o.Name)
+                    if not o.Name in {"wine", "scroll"}:
+                        choose.AddItem("- "+o._caption+" -", 
+                            "menu_gifts_actions" , True, o.Name)
 
             $ choose.Show("hermione_main_menu")
 
