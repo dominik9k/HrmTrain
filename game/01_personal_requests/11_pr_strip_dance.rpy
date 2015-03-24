@@ -560,6 +560,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         
         $ posHead = gMakePos( pos.xpos, pos.ypos )
         
+
         $ tt_xpos=330 #Defines position of the Snape's full length sprite. (Default 300). 140 - center.
         $ tt_ypos=340#(Default 0). Right bottom corner: 340
         $ s_sprite = "03_hp/10_snape_main/snape_01.png"
@@ -1197,7 +1198,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                             show screen s_head2                                                          #SNAPE
                             sna "О, теперь мы займемся этим?"
                             sna "Не против, если я присоединюсь?.."
-                            $ posHead.ypos = 380
+                            $ posHead.ypos = 340
                             $herViewHead.showQ( "body_94.png", posHead )
                             
                             her "!!!"
