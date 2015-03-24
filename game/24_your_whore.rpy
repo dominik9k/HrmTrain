@@ -3744,9 +3744,13 @@ label test:
     {color=#fff}\
     {a=http://wtrus.ixbb.ru/profile.php?id=3}Khan{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
     \n\n\
-    {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}{/size}\n\
+    {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\
-    {size=-3}{a=http://wtrus.ixbb.ru/profile.php?id=42}appo{/a} - программирование{/size}; {a=http://wtrus.ixbb.ru/profile.php?id=46}Dimon_Tools{/a} - корректура, тех.поддержка; {a=http://wtrus.ixbb.ru/profile.php?id=65}i11idan{/a} - программирование; {a=http://wtrus.ixbb.ru/profile.php?id=54}Lrm{/a} - программирование{/size};\n\n\
+    {a=http://wtrus.ixbb.ru/profile.php?id=42}appo{/a} - программирование; {a=http://wtrus.ixbb.ru/profile.php?id=46}Dimon_Tools{/a} - корректура, тех.поддержка; {a=http://wtrus.ixbb.ru/profile.php?id=65}i11idan{/a} - программирование; {a=http://wtrus.ixbb.ru/profile.php?id=54}Lrm{/a} - программирование;{/size}\n\
+    \n\n\
+    {size=-5}{color=#e5e297}-\{Тестирование:\}-{/color}\n\
+    {color=#fff}\
+    BAPK, darg55, Fuhrick, suhi, Y-ART, Zilot{/color}{/size}\n\
     \n\n\n\
     "
 
