@@ -292,7 +292,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                             m "Я не стану мучать вас сложными наказаниями, вы просто отсосете у меня. Это вы любите..."
                             $herView.hideshowQQ( "body_47.png", pos )
                             her "Ничего подобного..."
-                            m "Мне послышалось? Или стоит выбрать наказание серьезнее?"
+                            m "Мне послышалось?.. Или стоит выбрать наказание серьезнее?"
                             $herView.hideshowQQ( "body_34.png", pos )
                             her "Эмм... Хорошо, сэр. Да, я люблю."
                             m "Скажите полностью, будьте добры!"
@@ -1110,7 +1110,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
 #        $ level = "05"
 #        $ new_request_08_03 = True # HEARTS.
 
-    $SetHearts(GetStage(hermi.whoring, 6, 3, 4))
+    $SetHearts(GetStage(hermi.whoring, 6, 4, 3))
 
 
     hide screen bld1

@@ -355,7 +355,6 @@ label new_request_04:
 
 
     label new_request_04_finish:
-    $SetHearts(GetStage(hermi.whoring, 3, 3, 3))
 
     if hermi.whoring <= 5:
         $ hermi.whoring +=1
@@ -452,6 +451,8 @@ label new_request_04:
     else:
         play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
     ### END OF BLOCK ###
+
+    $SetHearts(GetStage(hermi.whoring, 3, 4, 3))
 
     $event.Finalize()    
 

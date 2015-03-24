@@ -117,6 +117,12 @@ label new_request_03: #(Whoring = 3 - 5)
             m "Было ощущение?"
             $herView.hideshowQQ( "body_68.png", pos )
             her "Ну, если быть честной, то я теперь не всегда их надеваю..."
+            if hermi.whoring >= 15: #LEVEL 05
+                $herView.hideshowQQ( "body_78.png", pos )
+                her "Могут быть разные обстоятельства, и трусики будут только мешать."
+                m "Мешать?.."
+                $herView.hideshowQQ( "body_68.png", pos )
+                her "Ах, это неважно, сэр."
         else:
             $herView.hideQQ()
             ">Гермиона снимает трусики и отдает их вам..."
@@ -273,8 +279,7 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
                 her "Еще один обычный день в Хогвартсе..."
                 her "Ничего примечательного..."
                 if hermi.whoring>=15:
-                    $SetHearts(4)
-                    m "Отсутствие белья больше не доставляет вам неудобств, мисс Грейндер?"
+                    m "Отсутствие белья больше не доставляет вам неудобств, мисс Грейнджер?"
                     $herView.hideshowQQ( "body_29.png", pos )
                     her "Неудобства, сэр? О чем вы... Ах, это!"
                     her "Ну мы же взрослые люди, профессор. Если девушка не носит белье, что в этом такого?..."
@@ -328,8 +333,12 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
 
     play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
 
+    if hermi.whoring<15:
+        $SetHearts(GetStage(hermi.whoring, 3, 3, 3), this.new_request_03)
+    else:
+        $SetHearts(4, this.new_request_03)
+
     $event.Finalize()    
-    $SetHearts(GetStage(hermi.whoring, 3, 3, 3), this.new_request_03)
     return 
     
     

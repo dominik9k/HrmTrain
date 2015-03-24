@@ -152,7 +152,7 @@ init:
             else:
                 this.AddEvent(s, points={"public"}) 
             s+="_complete"
-            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount==e.prevInList._finishCount, defVals={"availChoices":{1,2,3}},
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount, defVals={"availChoices":{1,2,3}},
                 OnChange=lambda e, subKey, oldVal, newVal: OnValueChange(e, subKey, oldVal, newVal)  ) # После срабатывания предыдущего это условие done нарушается и ивент готов к запуску. Нет ограничений по кол-ву запусков
 
 

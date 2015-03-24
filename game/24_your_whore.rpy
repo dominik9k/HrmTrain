@@ -4229,16 +4229,18 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
     $ persistent.gold = 0
     $ persistent.gold = persistent.gold + gold
 
-
+#label test2:
+#    $hermi.Items.AddItem("miniskirt")
+#    $hero.Items.AddItem("wine",2)
     python:
-        persistent.ItemSet=dict()
+        persistent.itemSet=dict() 
 
         if hermi.Items.Any("miniskirt"):
-            persistent.itemSet.update("miniskirt", hermi.items.Count("miniskirt"))
+            persistent.itemSet.update({"miniskirt": hermi.Items.Count("miniskirt")})
  
         for o in hero.Items():
             if o.Name not in {"nets", "badge_01", "ball_dress"}:
-                persistent.itemSet.update(o.Name, hero.items.Count(o.Name))       
+                persistent.itemSet.update({o.Name: hero.Items.Count(o.Name)})       
 
 
 

@@ -1013,7 +1013,7 @@ label sorry_about_hesterics:
 #=========================
 label giving_thre_dress:
 #    $ gave_the_dress = True #Turns True when Hermione has the dress.
-    $hermi.Items.Receive(hero.Items,"ball_dress",-1)
+    $hermi.Items.Receive(hero.Items,"ball_dress")
     $ days_without_an_event = 0
     $herView.hideQ()
     with d5
