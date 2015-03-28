@@ -384,6 +384,7 @@ init python:
     
     ## To archive files, classify them as 'archive'.
     
+    build.classify('game/**.hxml', 'archive')
     build.classify('game/**.png', 'archive')
     build.classify('game/**.jpg', 'archive')
     build.classify('game/**.ogg', 'archive')
