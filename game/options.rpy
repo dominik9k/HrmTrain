@@ -379,6 +379,8 @@ init python:
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
+    build.classify('**/_backup_and_src/**', None)
+    build.classify('**/FAQ_private/**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     
