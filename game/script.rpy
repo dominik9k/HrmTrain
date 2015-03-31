@@ -5150,7 +5150,7 @@ label start:
             "Новая игра +" ">Хотите перенести все золото и имущество из предыдущей игры?"
             "\"Да, пожалуйста.\"":
                 $ gold = gold + persistent.gold
-                ">[persistent.gold] золота было добавлено."
+                ">[persistent.gold] галеонов было добавлено."
                 python:
                     if persistent.itemSet!=None:
                         for o in persistent.itemSet:
