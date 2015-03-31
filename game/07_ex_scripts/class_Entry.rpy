@@ -1,15 +1,13 @@
 ﻿init -997 python:
   
-# Класс - обертка для словаря ивентов
+# Базовый класс, содержит методы работы с хранилищами arr и elog
     class Entry(store.object):
-        # constructor - Event initializing
+        # constructor - Entry initializing
         def __init__( self, Name, Type, defVals=None, constVals=None): # 
             self.Name=Name
             self.Type=Type
 
-            self.defVals = defVals        # Это словарь доп. аргументов по умолчанию
-
-#            SetArrayValue(self.Name, "Type", Type) 
+            self.defVals = defVals        # Это словарь доп. аргументов со значениями по умолчанию
 
             if constVals!=None:
                 for s in constVals:
@@ -52,7 +50,7 @@
 
             InitEntryField(self, subkey)
 
-            if IsArrayKey("onChange"): # Если подключено обработка на изменение
+            if IsArrayKey("onChange"): # Если подключена обработка на изменение
                 fn=GetArrayValue(self.Name,"onChange")
                 if fn!=None:
                     fn(self, subkey, oldVal, value)
