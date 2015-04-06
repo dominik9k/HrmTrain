@@ -114,7 +114,7 @@ init:
         global hero
         hero=RegEntry(Person("hero", "Джинн"))
         global hermi
-        hermi=RegEntry(Person("hermi", "Гермиона", CharacterExData(WTXmlLinker.getLinkerKey_hermione()),
+        hermi=RegEntry(Person("hermione", "Гермиона", CharacterExData(WTXmlLinker.getLinkerKey_hermione()),
             constVals={"pos_def": POS_140, "pos2_def": gMakePos( 390, 340 )}))
         global daphne
         daphne=RegEntry(Person("daphne", "Дафна", CharacterExData( WTXmlLinker.getLinkerKey_daphne()), 
@@ -4958,7 +4958,7 @@ label start:
 
     call main_ex_CharacterExItem_constants
     python:
-        # it's the fucking magick = make custom class variable being saved by Ren'Py...
+        # it's the fucking magic - make custom class variable being saved by Ren'Py...
         # global keyword says to python that this variable will be global
         # and because it's defined after 'start' label - it'll be saved by Ren'Py, great!
         

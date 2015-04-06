@@ -88,21 +88,31 @@
         #===================================================#
         # add additional stuff on hermione ( permanent )
         def addItemDirect( self, aKey, aCharacterExItem ):
+            # debug
+            CharacterExDebuger.Log( 'CharacterExData::addItemDirect: aKey = ' + aKey )
+            if not aCharacterExItem:
+                CharacterExDebuger.LogE( 'CharacterExData::addItemDirect: aCharacterExItem = None' )
             self._addItem( aKey, aCharacterExItem )
 
         # add item to character with specific key
         def addItemKey( self, aKey, aName, aStyle = 'default' ):
+            # debug
+            CharacterExDebuger.Log( 'CharacterExData::addItemKey: aKey = ' + aKey + ', aName = ' + aName + ', aStyle = ' + aStyle )
             newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName, aStyle )
             if newItem[0] != None:
                 self.addItemDirect( aKey, newItem[0] )
 
         # add item to character, key info is get from item's data
         def addItem( self, aName, aStyle = 'default' ):
+            # debug
+            CharacterExDebuger.Log( 'CharacterExData::addItem: aName = ' + aName + ', aStyle = ' + aStyle )            
             newItem = WTXmlLinker.c( self.mLinkerKey ).create( aName, aStyle )
             if newItem[0] != None:
                 self.addItemDirect( newItem[0].mKey, newItem[0] )
 
         def addItemSet( self, aSetName, aStyle = 'default' ):
+            # debug
+            CharacterExDebuger.Log( 'CharacterExData::addItemSet: aSetName = ' + aSetName + ', aStyle = ' + aStyle )
             self._applyToSet( aSetName, __EData_Add, aStyle )
 
         #===================================================#

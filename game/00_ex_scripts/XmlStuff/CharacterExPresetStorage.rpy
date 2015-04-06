@@ -61,4 +61,6 @@
             if aPresetName in self.mPresets.keys():
                 return self.mPresets[ aPresetName ] # this is an array
             else:
+                # debug
+                CharacterExDebuger.LogE( 'CharacterExPresetStorage::get: cant find preset with aPresetName = ' + aPresetName )
                 return None

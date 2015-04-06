@@ -95,6 +95,8 @@ init -998 python:
         # if aFace doesn't have '.' in self, this function assumes that you want to apply a preset with name aFace
         def showQ( self, aFace, aPos, aTransition = None ):
             if aFace is not None:
+                # debug
+                CharacterExDebuger.Log( 'CharacterExView::showQ: aFace = ' + aFace )
                 #check for ignoring preset recognition mechanic
                 if aFace.startswith('#'):
                     # we don't want to check for presets - just apply the image
