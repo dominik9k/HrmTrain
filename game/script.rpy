@@ -4,6 +4,10 @@ init python:
     # create all stuff for hermione character
     WTXmlLinker.prepareCharacterResources( 'hermione', 
         '00_ex_characters', '00_ex_characters/00_hermione', '00_ex_characters/00_hermione' )
+    WTXmlLinker.prepareCharacterResources( 'daphne', 
+        '00_ex_characters', '00_ex_characters/01_daphne', '00_ex_characters/01_daphne' )
+    WTXmlLinker.prepareCharacterResources( 'snape', 
+        '00_ex_characters', '00_ex_characters/02_snape', '00_ex_characters/02_snape' )
 
 
 init:
@@ -19,11 +23,13 @@ init:
         global this
         this=This()
         global event
+        global screens
+        screens=ScreenCollection()
 
 # Подключение модуля отладки 
     python:
         global debug
-    $debug=Debug(0) # Если 0 - ничего не происходит, иначе сбрасывает значения перемнных в файл debug.txt
+    $debug=Debug(3) # Если 0 - ничего не происходит, иначе сбрасывает значения перемнных в файл debug.txt
     $debug.SaveHeader()
 
     python:
@@ -108,7 +114,19 @@ init:
         global hero
         hero=RegEntry(Person("hero", "Джинн"))
         global hermi
-        hermi=RegEntry(Person("hermi", "Гермиона"))
+        hermi=RegEntry(Person("hermi", "Гермиона", CharacterExData(WTXmlLinker.getLinkerKey_hermione()),
+            constVals={"pos_def": POS_140, "pos2_def": gMakePos( 390, 340 )}))
+        global daphne
+        daphne=RegEntry(Person("daphne", "Дафна", CharacterExData( WTXmlLinker.getLinkerKey_daphne()), 
+            constVals={"pos_def": POS_140, "pos2_def": gMakePos( 360, 300 )}
+#            {"vData":  )},
+#            "view": CharacterExView( 5, daph, 'daphne' ),
+#            "head": CharacterExView( 8, daph2, 'daphne_head' )
+#            }
+            ))
+        global snape
+        snape=RegEntry(Person("snape", "Снейп", CharacterExData(WTXmlLinker.getLinkerKey_snape()),
+            constVals={"pos_def": POS_140, "pos2_def": gMakePos( 390, 340 )}))
 
 
 
@@ -171,6 +189,12 @@ init:
         this.Where({"NIGHT"})   .AddStep("good_bye_snape",           ready = lambda e: e.prev.IsAgo(2)) 
 
 # КОНЕЦ ГЛАВНОГО СЦЕНАРИЯ
+
+# ВЕТКА ДАФНЫ
+# Ветка включается при вызове общения Снейпа ночью после того, как отработает ивент со снейпом, где он хвалится как трахает студенток
+        this.Where({"SNAPE"},"daphne").AddStep("daphna_pre_01",        ready = lambda e: snape_events >= 6) 
+
+
 
 
 # Книги. Полный цикл от покупки в магазине Дахра до прочтения, до получения бонусов
@@ -644,6 +668,7 @@ image ch_hem blink:
     "03_hp/animation/h_walk_01.png"
     pause 3
     repeat
+
     
 image snape_walk_01: #Default Snape walk animation. 
     "03_hp/09_snape_ani/snape_02.png"
@@ -4842,7 +4867,8 @@ init-2:
     $ vol = Character('Лорд Волдеморт', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ l = Character('Лола', color="#402313", window_right_padding=230, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
     
-    
+#    $ daph = Character('Дафна', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
+#    $ daph2 = Character('Дафна', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).    
 
 #-----------------------___HEADS___---------------------------------#
     
@@ -4919,6 +4945,16 @@ label start:
     init python:
          config.use_cpickle = False
 
+    # Ending class initialization
+    call Ending_constants
+    python:
+        global end
+    $ end = Ending ()
+
+    # Создание elog должно стоять перед вызовами GetValue, так что лучше его сделать сразу после метки start
+    call start_elog
+    call after_load
+
 
     call main_ex_CharacterExItem_constants
     python:
@@ -4931,41 +4967,27 @@ label start:
         # full-sized view
         global herView
         # dialogue-face view
-        global herViewHead     
+        global herViewHead  
+
+    $herData = hermi.GetValue("vData")    
+    $herView = hermi.body    
+    $herViewHead = hermi.head   
         
     #$ herData = CharacterExData( WTXmlLinker.getHermioneLinkerKey() )
-    $ herData = CharacterExData( WTXmlLinker.getLinkerKey_hermione() )
-    $ herData.clearState()
+#    $ herData = CharacterExData( WTXmlLinker.getLinkerKey_hermione() )
+#    $ herData.clearState()
     
-    $ herView = CharacterExView( 5, her, 'hermione' )
-    $ herView.attach( herData )
+#    $ herView = CharacterExView( 5, her, 'hermione' )
+#    $ herView.attach( herData )
     
-    $ herViewHead = CharacterExView( 8, her2, 'hermione_head' )
-    $ herViewHead.pushScreenTag( 'head' )
-    $ herViewHead.attach( herData )
-
-    # lets use saved stuff system, so now fill hermione items
-    #$ herView.data().addLegs( CharacterExItem( herView.mBodyFolder, "legs_universal.png", G_Z_LEGS ) )
-    #$ herView.data().addPanties( CharacterExItem( herView.mClothesFolder, "panties_normal.png", G_Z_PANTIES ) )
-    #$ herView.data().addSkirt( CharacterExItem( herView.mClothesFolder, "skirt_normal.png", G_Z_SKIRT ) )
-    #$ herView.data().addHands( CharacterExItem( herView.mBodyFolder, "hands_universal.png", G_Z_HANDS ) )
-    #$ herView.data().addBody( CharacterExItem( herView.mBodyFolder, "body.png", G_Z_BODY ) )
-    #$ herView.data().addTits( CharacterExItem( herView.mBodyFolder, "tits.png", G_Z_TITS ) )
-    #$ herView.data().addDress( CharacterExItemDress( herView.mClothesFolder, "dress_normal.png", G_Z_DRESS ) )
-    #$ herView.data().addFace( CharacterExItem( herView.mFaceFolder, "body_01.png", G_Z_FACE ) )
+#    $ herViewHead = CharacterExView( 8, her2, 'hermione_head' )
+#    $ herViewHead.pushScreenTag( 'head' )
+#    $ herViewHead.attach( herData )
 
     # test new stuff! load all this with two sets - body and clothes!
-    $herView.data().addItemSet( 'hermione_body' )
-    $herView.data().addItemSet( 'hermione_start_clothes' )
+#    $herView.data().addItemSet( 'hermione_body' )
+#    $herView.data().addItemSet( 'hermione_start_clothes' )
 
-    # Ending class initialization
-    call Ending_constants
-    python:
-        global end
-    $ end = Ending ()
-
-    call start_elog
-    call after_load
 
 
     $ gold = 0
@@ -5145,17 +5167,25 @@ label start:
     $ dress_code = False # Turns TRUE when you gift the miniskirt. Unlocks the "dress code" button.
     
     show image "blackfade.png"
+
+#    menu:
+#        "Тестировать чибиков?":
+#            jump test_daphna
+#        "Продолжить запуск":
+#            pass
+
     if persistent.game_complete: # Offer for game+
         menu:
             "Новая игра +" ">Хотите перенести все золото и имущество из предыдущей игры?"
             "\"Да, пожалуйста.\"":
                 $ gold = gold + persistent.gold
-                ">[persistent.gold] галеонов было добавлено."
+                ">Добавлено: [persistent.gold] галеонов."
                 python:
                     if persistent.itemSet!=None:
                         for o in persistent.itemSet:
-                            renpy.say(">Предмет \""+o+"\": "+str(persistent.itemSet[o])+" шт. добавлено в ваше имущество")
-                            hero.Items.AddItem(o,_value)
+                            hero.Items.AddItem(o,persistent.itemSet[o])
+                            renpy.say("",">Добавлено: \""+hero.Items(o)._caption+"\" ("+str(hero.Items(o)._count)+" шт.)")
+                            
                 
             "\"Не нужно.\"":
                 pass
