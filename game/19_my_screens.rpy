@@ -242,9 +242,9 @@ screen dumbledore: # DUMBLEDORE AND HIS DESK.
     add "03_hp/05_props/dum.png" at Position(xpos=230, ypos=336, xanchor="center", yanchor="center")
 
 ### EMO
-screen thought: #Thinking emotion over a chibi.
+screen thought(position=None): #Thinking emotion over a chibi.
     tag emo
-    add "thought" xpos tt_xpos ypos tt_ypos
+    add "thought" at (position if position!=None else Position(xpos=tt_xpos, ypos=tt_ypos)) 
     zorder 2
 
 ### SNAPE CHIBI
@@ -450,10 +450,10 @@ screen points: #House points screen.
         text "{size=-4}[gold]{/size}" 
 
 
-screen gift:
+screen gift(__par=the_gift):
     zorder 5
     add "03_hp/18_store/00.png" 
-    add the_gift
+    add __par
     
 
 
