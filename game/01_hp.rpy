@@ -503,11 +503,13 @@ show screen points
 
 with fade
 
-$ day +=1
+#$ day +=1
 
 ### DAY EVENTS ###<============================================================================================================================================================
 
-$ this.RunStep("DAY")
+#$ this.RunStep("DAY")
+$ GE.nextDay()
+$ GE.prepare()
 
 
 
@@ -517,7 +519,8 @@ $ this.RunStep("DAY")
     
 
 label day_main_menu:
-    
+#$ GE.fireStage()
+call lblGameEngine_fireStage( GE )
   
 if phoenix_is_feed:
     show screen phoenix_food
@@ -554,8 +557,7 @@ label night_start:
     
 
     
-    
-    
+
 $ daytime = False  
 $ snape_busy = False
 $ hermione_takes_classes = False
@@ -665,10 +667,11 @@ if study_book_quest_counter == 3 and teacher_jinn_quest == 5:
 
 
 
+$ GE.nextStage()
 ### NIGHT REQUESTS ###
+$ GE.fireStage()
 
-
-$ this.RunStep("NIGHT")
+#$ this.RunStep("NIGHT")
 
 
 

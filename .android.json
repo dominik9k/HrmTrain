@@ -1,0 +1,1 @@
+{"layout": null, "orientation": "landscape", "package": "com.domain.witchtrainer", "include_pil": false, "expansion": false, "name": "Witch Trainer", "source": false, "icon_name": "Witch Trainer", "version": "1.2.2d", "target_version": 8, "permissions": ["VIBRATE"], "include_sqlite": false, "store": "none", "numeric_version": "5"}

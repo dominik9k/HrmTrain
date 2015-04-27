@@ -10,11 +10,15 @@ init python:
         '00_ex_characters', '00_ex_characters/02_snape', '00_ex_characters/02_snape' )
 
 
+
+
 init:
     # Scenario initialization
     python:
         global arr
         global entries
+        global GE
+        GE = GameEngine( ScenarioBase( '00_data_scenario/Scenario.sc') )
 
     $arr=dict()
     $entries=[]

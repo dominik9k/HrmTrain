@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<scenario>
+	<act>
+		<name>event_01</name>
+		<stage>DAY</stage>
+		<init>event_01_init</init>
+		<condition>event_01_cond</condition>
+		<execute>event_011</execute>
+		<actions>event_01_actions</actions>
+	</act>
+</scenario>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<stages>
+    <stage>DAY</stage>
+    <stage>NIGHT</stage>
+</stages>
