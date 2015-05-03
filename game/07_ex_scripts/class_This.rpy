@@ -1,11 +1,21 @@
 init -992 python:
+
+#    __show_tooltip=None
+#    def show_tooltip(st, at):
+#        if __show_tooltip!=None:
+#           __show_tooltip="03_hp/24_daphne/dap_walk_a1.png" 
+#        if __show_tooltip=="03_hp/24_daphne/dap_walk_a1.png" :
+#            return tooltip, .5
+#        else:
+#            return Null(), .5
+
   
 # Класс - тот же EventCollection , только со специфическим объявлениями
     class This(EventCollection): # Код специфический для игры, все в этом классе
         def __init__(self):
             super(This, self).__init__()
             self.Name=None
-            self.flag_SCUKO_presented=False
+#            self.flag_SCUKO_presented=False
 
 # this("event_01") пытается вернуть Event c именем event_01 (None, если не нашел в списке)
 # Запоминает парметр - последнее обращение
@@ -75,19 +85,23 @@ init -992 python:
             availSet-={o}                
         return o
 
+    def Sign(value):
+        return (value>0)-(value<0)
+
+
     def GetStage(value, minValue, levelCount=3, step=3): # Получить фазу в которой находится прохождение ивента. 0 - невозможно пройти, дальше - уровни
         value=value-minValue
         if value<0: return 0
         if int(value/step)+1>=levelCount: return levelCount
         return int(value/step)+1
 
-    def OnValueChange(e, subKey, oldVal, newVal):
-        if ("NIGHT" in e._points): # Если вторая половина публичной услуги - произвести случайный выбор варианта
-            s="one_out_of_three=RandFromSet(_e._availChoices)" 
-            if e.Name=="new_request_30_complete":
-                s="one_out_of_three=RandFromSet(_e._availChoices,{1})"
-            Execute(e,s, subKey=="startCount")  
-        return
+#    def OnValueChange(e, subKey, oldVal, newVal):
+#        if ("NIGHT" in e._points): # Если вторая половина публичной услуги - произвести случайный выбор варианта
+#            s="one_out_of_three=RandFromSet(_e._availChoices)" 
+#            if e.Name=="new_request_30_complete":
+#                s="one_out_of_three=RandFromSet(_e._availChoices,{1})"
+#            Execute(e,s, subKey=="startCount")  
+#        return
 
     def SetHearts(heartCount, _event=None): # Установить количество сердечек текущему ивенту
         if _event==None:
@@ -106,6 +120,13 @@ init -992 python:
     def IsRunNumberOrMore(num): # Это запуск номер num или последующий?
         return event._finishCount>=num-1
 
+    def Say(formatstring):
+        if ":>" in formatstring:
+            __temp=formatstring.split(":>")
+            __person=GetEntry(__temp[0])
+            __person(__temp[1])
+        else:
+            screens.Say(formatstring)
 
     def StringFormat(s):
         __pars=s.split(" ")
@@ -138,6 +159,7 @@ init -992 python:
 
 
         return s
+
 
 
 

@@ -1359,7 +1359,7 @@ label event_08_02:
             $hero("#(Дерьмо!)")
     
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-    $hermi.chibi.State("door", speed="go").Trans(d4, "go center", "blink")
+    $hermi.chibi.State("door", speed="go").Trans(d4, "blink").Trans("go center", "blink") # Если делать dissolve в движении, то сбивается счетчик времени. Лучше выполнить появление чибика стоя, затем уже двигать его 
     pause.5
     $screens.ShowD3("bld1")
 
@@ -1431,7 +1431,7 @@ label event_08_03:
 
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
 
-    $hermi.chibi.State("door", speed="go").Trans(d4, "go center", "blink")
+    $hermi.chibi.State("door", speed="go").Trans(d4, "blink").Trans("go center", "blink") # Если делать dissolve в движении, то сбивается счетчик времени. Лучше выполнить появление чибика стоя, затем уже двигать его 
     pause.5
     $screens.ShowD3("bld1")
 
@@ -2471,7 +2471,7 @@ label event_15: # Hermione comes and asks to buy a favour from her.
     menu:
         "\"Кто это?\"":
             her "Это я, Гермиона Грейнджер." 
-            m "(Снвоа эта молоденькая ведьма...)" 
+            m "(Снова эта молоденькая ведьма...)" 
             her "Могу я войти, сэр?"
             menu:
                 m "..."

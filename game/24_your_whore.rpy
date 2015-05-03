@@ -2524,6 +2524,7 @@ label your_whore:
         m "Давай, девчонка, возьми себя в руки!"
         $herViewHead.showQ( "body_178.png", posHead )
         if end.IsEnding(const_ENDING_STRONG_GIRL):
+            $music("Supergirl")
             her2 "Простите, сэр. Я пыталась не стать конченной шлюхой перед этими уродами, хотя знала, что вам нравится, чтобы я была именно шлюхой."
             her2 "Но, видно, против природы не пойдешь и все вышло, как вы любите."
             her2 "Мне ведь получилось вам угодить, сэр?"
@@ -2625,7 +2626,7 @@ label your_whore:
             $herViewHead.showQ( "body_179.png", posHead )
             #$ h_body = "03_hp/13_hermione_main/body_176.png" # HERMIONE
             her "Счастливого пути, сэр..."
-            $MusicStop()
+            $music()
         else:
             her "Я... Я... Что?"
             her "Я не понимаю... Я..."
@@ -3723,7 +3724,7 @@ label test:
     $ dermo = "ch_sna defend"
     
     show screen credits_chibi
-    centered "{cps=20}{size=+5}{color=#ea91b0}-Тренер Ведьмы 1.3 (русская редакция)-{/color}{/size}\n\n\n\
+    centered "{cps=20}{size=+5}{color=#ea91b0}-Тренер Ведьмы 1.4 (русская редакция)-{/color}{/size}\n\n\n\
     {color=#e5e297}-\{Перевод Witch Trainer\}-{/color}\n\
     {color=#fff}\
     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15155170}Discordnk90{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=8041771}maniac4a{/a}, \n\
@@ -3744,13 +3745,21 @@ label test:
     {color=#fff}\
     {a=http://wtrus.ixbb.ru/profile.php?id=3}Khan{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
     \n\n\
+    {color=#e5e297}-\{Арты:\}-{/color}\n\
+    {color=#fff}\
+    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}\n\
+    \n\n\
     {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\
-    {a=http://wtrus.ixbb.ru/profile.php?id=42}appo{/a} - программирование; {a=http://wtrus.ixbb.ru/profile.php?id=46}Dimon_Tools{/a} - корректура, тех.поддержка; {a=http://wtrus.ixbb.ru/profile.php?id=65}i11idan{/a} - программирование; {a=http://wtrus.ixbb.ru/profile.php?id=54}Lrm{/a} - программирование;{/size}\n\
+    {a=http://wtrus.ixbb.ru/profile.php?id=54}Lrm{/a} - программирование;{/size}{a=http://wtrus.ixbb.ru/profile.php?id=269}qwert{/a} - корректура \n\
     \n\n\
     {size=-5}{color=#e5e297}-\{Тестирование:\}-{/color}\n\
     {color=#fff}\
     BAPK, darg55, Fuhrick, suhi, Y-ART, Zilot{/color}{/size}\n\
+    \n\n\
+    {size=-7}{color=#e5e297}-\{На ранних этапах игры участие также принимали:\}-{/color}\n\
+    {color=#fff}\
+    appo, Dimon_Tools, illidan{/color}{/size}\n\
     \n\n\n\
     "
 

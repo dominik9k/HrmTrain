@@ -12,9 +12,9 @@
                 constVals.update({"caption": caption})                
 
             if defVals==None:
-                defVals={"liking":0, "whoring":0}
+                defVals={"liking":0, "whoring":0, "talkTime":0, "giftTime":0}
             else:
-                defVals.update({"liking":0, "whoring":0})
+                defVals.update({"liking":0, "whoring":0, "talkTime":0})
 
 # Инициализация объектов тела и головы
             if charData!=None:
@@ -69,7 +69,7 @@
                 self.Visibility(self._talkingView, True, self.__trans)
 # Если аргументы закончились - прервать                
             for o in self.__args:
-                if o==None:
+                if (o==None) or (o==""):
                     break
                 if not isinstance( o, basestring ): # если не строка, значит Character
                     self.curchar=o
@@ -106,7 +106,7 @@
 
                 self.__temp=s.split(" ")
                 for i in range(4):
-                    self.body.data().setStyleKey( ['brows', 'eyes', 'blush', 'mouth'][i], self.__temp[i] )
+                    self.body.data().setStyleKey( ['brows', 'eyes', 'blush', 'mouth'][i], ['brows', 'eyes', 'blush', 'mouth'][i]+"_"+self.__temp[i] )
 
             return
 
@@ -114,15 +114,38 @@
             return self
 
 
+        def ItemSetsCustomize(self, sets, isClear=True): 
+            if isClear:
+                self.data.mItems.clear() # Удалить все итемы
+            for o in sets:
+                self.body.data().addItemSet( self.Name+'_'+o )
+            return self
+
+        def ItemsCustomize(self, update=None, delete=None, chibi=None): 
+            if delete!=None:
+                for o in delete:
+                    self.data.delItem( 'item_'+o )
+
+            if update!=None:
+                for o in update:
+                    oo=o.split(":")
+                    self.data.addItem('item_'+oo[0], "default" if len(oo)==1 else oo[0]+"_"+oo[1])
+
+            if chibi!=None:
+                self.chibi.SetValue("appearance",chibi)
+            return self
+
+
         def LoadDefItemSets(self): # Пригодилось только один раз - когда изначально подгрузился неправильный набор сетов, перегрузить его в процесс игры
-            self.body.data().addItemSet( self.Name+'_body' )
-            self.body.data().addItemSet( self.Name+'_start_clothes' )
+            self.ItemSetsCustomize({"body", "start_clothes"}, True)
+#            self.body.data().addItemSet( self.Name+'_body' )
+#            self.body.data().addItemSet( self.Name+'_start_clothes' )
             return
 
 # Задает видимость персоны. 
 # body+ - показывать тело всегда, без плюса только во время реплики, 
-# head+ - показывать тело всегда, без плюса только во время реплики
-# Например, строка: bodyhead  означает, что во время реплики необходимо показать и голову и тело. а когда говорит горой все скрывать
+# head+ - показывать голову всегда, без плюса только во время реплики
+# Например, строка: bodyhead  означает, что во время реплики необходимо показать и голову и тело. а когда говорит герой все скрывать
 # isTalking - если истина, то сразу показывать в режиме реплики
         def Visibility(self, talkingView=" ", isTalking=True, transition=None):
             debug.SaveString(self.Name+" "+talkingView+" "+str(isTalking))
@@ -163,6 +186,18 @@
 
             return self
 
+        def IsTalk(self):
+            return self.GetValue("talkTime")==time.stamp
+
+        def CommitTalk(self):
+            return self.SetValue("talkTime", time.stamp) 
+
+        def IsGift(self):
+            return self.GetValue("giftTime")==time.stamp 
+
+        def CommitGift(self):
+            return self.SetValue("giftTime", time.stamp) 
+
         @property
         def pos(self):
             return self.GetValue("pos")
@@ -179,6 +214,10 @@
             self.SetValue("pos2", value)
 #            self.head.showQ(None, self.GetValue(value))
 
+
+        @property
+        def data(self):
+            return self.body.data()
 
         @property
         def char(self):

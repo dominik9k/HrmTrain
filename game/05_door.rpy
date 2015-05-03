@@ -105,6 +105,26 @@ label door:
         "- Позвать Снейпа -" if this.Has("snape_summon") and not snape_busy:#hanging_with_snape
             play music "music/Dark Fog.mp3" fadein 1 fadeout 1 # SNAPE'S THEME
             jump summon_snape
+
+        "{color=#858585}- Позвать Дафну -{/color}" if this.Has("daphne_pre_finish") and (not time.IsAllStartedAgo(daphne._visitInterval, points={"daphne_private","daphne_public"})):
+            $screens.ShowD3("bld1")
+            if daphne._visitInterval>1:
+                "> У вас соглашение с Гермионой - вы не можете вызывать Дафну чаще, чем раз в [daphne._visitInterval] часов."
+            else:
+                $Say(["Дафна сейчас на уроке.", "Дафна уже спит."][daytime])
+                pass
+            $screens.HideD3("bld1")
+            if daytime:
+                jump day_main_menu
+            else:
+                jump night_main_menu
+
+
+        "- Позвать Дафну -" if this.Has("daphne_pre_finish") and (time.IsAllStartedAgo(daphne._visitInterval, points={"daphne_private","daphne_public"})):
+            play music "music/Dark Fog.mp3" fadein 1 fadeout 1 # SNAPE'S THEME
+            jump daphne_approaching
+
+
         "- Ничего -":
             jump day_main_menu                
                         

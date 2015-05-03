@@ -4,7 +4,7 @@ label menu_dahr_book:
         for e in this.List:
             if e.GetValue("block")==_block: # Нужно ставить GetValue("block")  а не _block - у ивента такого объекта может не быть
                 choose.AddItem("- Книга: "+e._caption+" - "+("{image=check_08.png}" if e._status>-2 else "{image=check_07.png}"), 
-                    "menu_dahre_book_2", True, e.Name)
+                    "menu_dahre_book_2", e.Name)
 
     $ choose.Show("the_oddities")
 
@@ -39,14 +39,14 @@ label menu_dahr_gifts_and_gears:
         for o in itsDAHR():
             if not (o.Name in {"scroll"}): 
                 _temp={"candy": fn0, "chocolate": fn0, "owl": fn0, "beer": fn3, "mag1": fn0, "mag2": fn0, "mag3": fn0, "mag4": fn3,
-                     "condoms": fn3, "vibrator": fn3, "lubricant": fn0,"ballgag": fn0, "plug": fn3, "strapon": fn3,
+                     "condoms": fn3, "perfume": fn0,"vibrator": fn3, "lubricant": fn0,"ballgag": fn0, "plug": fn3, "strapon": fn3,
                      "ball_dress": lambda e: this.Has("sorry_about_hesterics"), "badge_01": fn0, "nets": fn0, 
                             "miniskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("miniskirt")+hermi.Items.Count("miniskirt")+itsOWL.Count("miniskirt")==0)}[o.Name](o)
 
 #            elif _block=="gears" and o._block=="gears": 
                 if o._block==_block:
                     choose.AddItem("- "+o._caption+" - ("+str(o._price)+" гал.) -" if _temp and itsDAHR.Count(o.Name)>0 else "{color=#858585}- Товар временно отсутствует -{/color}", 
-                        "menu_dahr_gift_order" if _temp else "out" , True, o.Name)
+                        "menu_dahr_gift_order" if _temp else "out", o.Name)
 
     $ choose.Show("the_oddities") 
 

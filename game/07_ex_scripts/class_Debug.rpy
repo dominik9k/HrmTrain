@@ -22,7 +22,8 @@ init -990 python:
         def SaveString(self, s, Level=3):
             if Level<=self.Level:
                 f1 = open(self.FileName, 'a')
-                s=s+"\n"
+                s=s.encode('utf8')+"\n"
+
                 f1.write(s)
                 f1.close()
 
@@ -57,8 +58,10 @@ init -990 python:
             s=f1.read()
 #            self.SaveString(s)
             f1.close()
-            self.SaveString(str(Execute(None,s)))
+#            self.SaveString(str(Execute(None,s)))
+            Execute(None,s)
             return s
 
-
+    def le():
+        return debug.LoadExecute()
 

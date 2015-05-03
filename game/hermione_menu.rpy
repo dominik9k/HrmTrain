@@ -29,6 +29,8 @@ label hermione_approaching:
                 break
 
 
+    $ this.RunStep("HERMIENTER")      
+
 
     label hermione_main_menu:
     menu:
@@ -80,8 +82,7 @@ label hermione_approaching:
             python:
                 for o in hero.Items():
                     if not o.Name in {"wine", "scroll"}:
-                        choose.AddItem("- "+o._caption+" -", 
-                            "menu_gifts_actions" , True, o.Name)
+                        choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
 
             $ choose.Show("hermione_main_menu")
 
@@ -153,6 +154,7 @@ label hermione_approaching:
                 else: 
                     her "Пф!..."
 
+            label hermione_goout:
             hide screen bld1
             $herView.hideQ() 
             hide screen blktone 
@@ -168,6 +170,8 @@ label hermione_approaching:
                 jump night_main_menu
 
 label hermione_chat:
+    if not teacher_jinn_quest in {3,4}:
+        jump chit_chat_hermione
     menu:
         "Спросить насчет учебников" if teacher_jinn_quest == 3:
             jump hermione_bookbuying
@@ -181,6 +185,7 @@ label hermione_chat:
         
 ### CHITCHAT WITH HERMIONE ###
 label chit_chat_hermione:
+    $ this.RunStep("HERMICHAT")
     $ one_of_ten = renpy.random.randint(1, 10) #Generating one number out of three for various porpoises.
     $ pos = POS_410
     

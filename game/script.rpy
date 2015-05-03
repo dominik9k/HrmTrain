@@ -25,11 +25,17 @@ init:
         global event
         global screens
         screens=ScreenCollection()
+        global choose
+        choose=None
+        global time
+        time=Time()
+        global music
+        music=Music()
 
 # Подключение модуля отладки 
     python:
         global debug
-    $debug=Debug(0) # Если 0 - ничего не происходит, иначе сбрасывает значения перемнных в файл debug.txt
+    $debug=Debug(-1) # Если 0 - ничего не происходит, иначе сбрасывает значения перемнных в файл debug.txt
     $debug.SaveHeader()
 
     python:
@@ -53,6 +59,8 @@ init:
             "Дайте их своей девушке, чтобы проверить ее, своей жене, чтобы постыдить ее и вашей дочери, чтобы избежать \"разговоров\".", "gifts", None ),
         ("condoms", "Упаковка презервативов", 50, "03_hp/18_store/10.png", 
             "\"Презервативы Розовый единорог\". \nПокажите всем однорогое существо!\n{size=-4}Может содержать слюну реального единорога.{/size}", "gifts", None ),
+        ("perfume", "Духи", 150, "03_hp/18_store/33.png", 
+            "Духи \"В добрые руки\" источают невыразимый аромат и даются только в добрые руки.", "gifts", None ),
         ("vibrator", "Вибратор", 55, "03_hp/18_store/13.png", 
             "Великолепный, волшебный усиленный вибратор изготовлен из лозы дерева, с ядром жилы дракона.", "gifts", None ),
         ("lubricant", "Банка лубриканта", 60, "03_hp/18_store/09.png", 
@@ -112,18 +120,25 @@ init:
 
 # Инициализация персон
         global hero
-        hero=RegEntry(Person("hero", "Джинн"))
+        hero=RegEntry(Person("hero", "Джинн", 
+            defVals={"perfumeused": 0})           
+            )
+
         global hermi
         hermi=RegEntry(Person("hermione", "Гермиона", CharacterExData(WTXmlLinker.getLinkerKey_hermione()),
-            defVals={"pos": POS_370, "pos2": gMakePos( 390, 340 )}))
+            defVals={"pos": POS_410, "pos2": gMakePos( 390, 340 ), 
+                "SCUKO_presented":False, "incomePercent":0, "pointsPerDaphneVisit":0},
+                constVals={"pos_door": gMakePos( 410, 0 ), "pos_doorleft": gMakePos( 370, 0 )}))        
         SetArrayValue("chibihermione", "door", [610,250])
         SetArrayValue("chibihermione", "center", [400,250])
 
         global daphne
         daphne=RegEntry(Person("daphne", "Дафна", CharacterExData( WTXmlLinker.getLinkerKey_daphne()), 
-            defVals={"pos": POS_140, "pos2": gMakePos( 340, 420 )}, constVals={"pos_door": POS_370, "pos_center": POS_140}))
-        SetArrayValue("chibidaphne", "door", [610,250])
-        SetArrayValue("chibidaphne", "center", [400,250])
+            defVals={"pos": POS_140, "pos2": gMakePos( 340, 420 ), 
+                "visitInterval":1}, 
+            constVals={"pos_door": gMakePos( 460, -60 ), "pos_center": POS_140}))
+        SetArrayValue("chibidaphne", "door", [610,220])
+        SetArrayValue("chibidaphne", "center", [370,220])
 
         global snape
         snape=RegEntry(Person("snape", "Северус Снейп", CharacterExData(WTXmlLinker.getLinkerKey_snape()),
@@ -131,7 +146,6 @@ init:
             constVals={"pos_door": gMakePos( 350, 0 ), "pos_doorleft": gMakePos( 300, 0 ), "pos_center": POS_140}))
         SetArrayValue("chibisnape", "door", [610,210])
         SetArrayValue("chibisnape", "center", [360,210])
-
 
 
 
@@ -169,13 +183,11 @@ init:
             s="new_request_"+s
             # 3-й ивент добавляем здесь, он должен по порядку идти перед завершающим
             if s=="new_request_03": 
-                this.AddEvent(s+"::\"Вор трусиков\"", points={"private"}, defVals={"heartCount": 0}, 
-                OnChange=lambda e, subKey, oldVal, newVal: OnValueChange(e, subKey, oldVal, newVal))
+                this.AddEvent(s+"::\"Вор трусиков\"", points={"private"}, defVals={"heartCount": 0})
             else:
                 this.AddEvent(s, points={"public"}) 
             s+="_complete"
-            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount, defVals={"availChoices":{1,2,3}},
-                OnChange=lambda e, subKey, oldVal, newVal: OnValueChange(e, subKey, oldVal, newVal)  ) # После срабатывания предыдущего это условие done нарушается и ивент готов к запуску. Нет ограничений по кол-ву запусков
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
 
 
 # Следующее событие (первый раз трахнуться с одноклассниками) НЕ помещено в главный сценарий. 
@@ -183,6 +195,8 @@ init:
 # Однако в списке событий предшествует последующим - сделано для того, чтобы если событие может выполняться, оно имело приоритет перед оставшимися
 # Если флаг request_30_a установить (устанавливается при вызове request_30 ветка 1), запустится разово 
         this.Where({"DAY"},"new_request_30_complete_a").AddStep("new_request_30_complete_a", ready = lambda e: request_30_a) 
+# Аналогичное событие, которое может никогда не произойти - Герми уловила запах духов        
+        this.Where({"HERMIENTER"},"giving_perfume").AddStep("giving_perfume", ready = lambda e: hero._perfumeused==time.stamp) 
 
         this.Where({"DAY"})     .AddStep("want_to_rule",             ready = lambda e: hermi.whoring >= 15) # Запустится, как только whoring превысит значение
         this                    .AddStep("against_the_rule",         ready = lambda e: e.prev.IsAgo(2)) # Через два дня
@@ -195,9 +209,33 @@ init:
 # КОНЕЦ ГЛАВНОГО СЦЕНАРИЯ
 
 # ВЕТКА ДАФНЫ
-# Ветка включается при вызове общения Снейпа ночью после того, как отработает ивент со снейпом, где он хвалится как трахает студенток
+# Ветка включается при вызове Снейпа ночью после того, как отработает ивент со Cнейпом, где он хвалится как трахает студенток
         this.Where({"SNAPE"},"daphne").AddStep("daphne_pre_01",        ready = lambda e: snape_events >= 6) 
         this.Where({"DAY"},"daphne").AddStep("daphne_pre_02",        ready = lambda e: e.prev.IsAgo(2)) 
+        this.Where({"SNAPE", "CHITCHAT"},"daphne").AddStep("daphne_pre_03") 
+        this.Where({"MAIL"},"daphne").AddStep("daphne_pre_04",        ready = lambda e: e.prev.IsAgo(3)) 
+        this.Where({"SNAPE", "CHITCHAT"},"daphne").AddStep("daphne_pre_05") 
+        this.Where({"MAIL"},"daphne_pre_06").AddStep("daphne_pre_06", ready = lambda e: e.prevInList.IsAgo(2)) 
+        this.Where({"HERMICHAT"},"daphne").AddStep("daphne_pre_07",   ready = lambda e: e._start2+2<=day)
+# Будет стартовать через день, пока не завершится daphne_pre_finish
+        this.Where({"DAY"},"daphne").AddStep("daphne_pre_finish",     ready = lambda e: (e.prev.IsAgo(2) and e._start2+2<=day), done=lambda e: e._finishCount>=4, constVals={"members":{"daphne"}}) 
+
+
+        this.AddEvent("daphne_approaching", constVals={"members":{"daphne"}}) # Это просто для счетчика вызывалась ли Дафна сегодня (ну и для отладки может помочь)
+
+# Поскольку точка "DAPHENTER" предваряет вызов меню и ивентов ниже, никаких дополнительных условий в ивентах меню не требуется
+        this.Where({"DAPHENTER"},"dap_interlude_02").AddStep("dap_interlude_02", ready=lambda e: this.dap_request_02._finishCount>=1,constVals={"members":{"daphne"}})
+
+        li={"02":["\"Покажись!\"","#(Становится жарковато. Предложу ей что-нибудь снять...)"]}
+        for s in li:
+                this.AddEvent("dap_request_"+s+"::"+li[s][0], points={"daphne_private"}, constVals={"eventPlan":li[s][1], "members":{"daphne"}}, defVals={"heartCount": 0}) 
+
+        li={"01":["\"Расскажи о девушках\"","#(Я расспрошу ее о ее подружках...)"]}
+        for s in li:
+            __s="dap_request_"+s
+            this.AddEvent(__s+"::"+li[s][0], points={"daphne_public"}, constVals={"eventPlan":li[s][1], "members":{"daphne"}})
+            __s+="_complete"
+            this.Where({"NIGHT"}, __s).AddStep(__s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
 
 
 
@@ -271,13 +309,14 @@ init:
         fn3=lambda o: hermi.whoring>=3
 
 
+    call daphne_images_init
+
 # Включить обработку перехода по меткам (label). 
     $onLabelExecute=lambda s: OnLabelExecute(s)
 
+
 #    $renpy.game.onJumpExecute=lambda name, target,expression: OnJumpExecute(name, target,expression)
     
-
-
 
 
 
@@ -3789,6 +3828,7 @@ image heart:
 
 
 image side mage = "mage.png"
+image side mage1 = "mage1.png"
 image side mage2 = "mage2.png"
 image side mage3 = "mage3.png"
 image side mage4 = "mage4.png"
@@ -4776,6 +4816,7 @@ define pat = Character('silvarius2000',
 
 define s = Character(None, color="#402313", ctc="ctc3", ctc_position="fixed")
 define m = Character(None, window_left_padding=200, image="mage", color="#402313", ctc="ctc3", ctc_position="fixed")
+define g1 = Character(None, window_left_padding=200, image="mage1", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g = Character(None, window_left_padding=300, image="mage2", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g2 = Character(None, window_left_padding=300, image="mage3", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g4 = Character(None, window_left_padding=200, image="mage4", color="#402313", ctc="ctc3", ctc_position="fixed")

@@ -419,10 +419,7 @@ screen ctc:
     zorder 7
     add "ctc4"
 screen points: #House points screen.
-    if hermi.liking <0:                                                                    # LRM ##############################################################################################
-        add "03_hp/11_misc/points_02_m.png" at Position(xpos=0, ypos=1)             # LRM ##############################################################################################
-    else:                                                                           # LRM ##############################################################################################
-        add "03_hp/11_misc/points_02.png" at Position(xpos=0, ypos=1)               # LRM ##############################################################################################
+    add "03_hp/11_misc/points_02.png" at Position(xpos=0, ypos=1)  
     hbox: #горизонтальный «контейнер», где будет изображение золота и его количество
         spacing 10 xpos 146 ypos 11#отступ для текста, если надо прямо в левом углу — убираем его        
         text "{size=-5}[slytherin]{/size}" #сумма текстом
@@ -436,25 +433,6 @@ screen points: #House points screen.
         spacing 10 xpos 37 ypos 11
         text "{size=-5}[ravenclaw]{/size}" 
     
-#            "> Распутство: {color=#B40000}{size=+4}{b}[whoring]{/b}{/size}{/color}-я степень."
-
-
-    hbox:                                       # распутство Гермионы ################################# LRM #########################################################
-        spacing 10 xpos 470 ypos 11
-        text "{size=-5}[hermi.whoring]{/size}" 
-    hbox:                                       # злость Гермионы ##################################### LRM #########################################################
-        spacing 10 xpos 540 ypos 11
-        $_mad=-hermi.liking
-#        if mad < 0:
-#            $ mad = 0
-#        if mad >= 1:
-        if _mad >= 1:
-            text "{color=#750c1d}{size=-5}[_mad]{/size}{/color}"
-        else:
-            text "{size=-5}[_mad]{/size}"
-
- 
-
     hbox: ### DAYS COUNTER ###
         spacing 10 xpos 630 ypos 10
         text "{size=-3}[day]{/size}" 
@@ -485,15 +463,26 @@ screen gift(__par=the_gift):
 
 
 
-screen letter:
+screen letter(par1=letter_text):
     zorder 4
     add "03_hp/11_misc/letter.png" at Position(xpos=200, ypos=30)  
-    hbox: #горизонтальный «контейнер», где будет изображение золота и его количество
+    hbox: 
         spacing 40 xpos 270 ypos 80 xmaximum 250#отступ для текста, если надо прямо в левом углу — убираем его        
-        text letter_text
+        text par1
 screen blkfade:
     zorder 5
     add "blackfade.png"
+
+screen letterbig(par1=letter_text):
+    zorder 4
+    add "03_hp/11_misc/letterbig.png" at Position(xpos=40, ypos=30)  
+    hbox: 
+        spacing 40 xpos 150 ypos 80 xmaximum 480#отступ для текста, если надо прямо в левом углу — убираем его        
+        text par1
+screen blkfade:
+    zorder 5
+    add "blackfade.png"
+
  
 screen jerkingimage:
     zorder jerk_zorder
