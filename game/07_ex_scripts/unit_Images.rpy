@@ -50,19 +50,37 @@ label daphne_images_init:
 
     image chibidaphne c blink:
         choice 12.0:
-            "03_hp/24_daphne/dap_walk_a1.png"
+            "03_hp/24_daphne/dap_blink_c1.png"
             pause.4
         choice:
-            "03_hp/24_daphne/dap_blink_a2.png"
+            "03_hp/24_daphne/dap_blink_c2.png"
             pause.08
         repeat
 
     image chibidaphne d blink:
         choice 12.0:
-            "03_hp/24_daphne/dap_walk_a1.png"
+            "03_hp/24_daphne/dap_blink_d1.png"
             pause.4
         choice:
-            "03_hp/24_daphne/dap_blink_a2.png"
+            "03_hp/24_daphne/dap_blink_d2.png"
+            pause.08
+        repeat
+
+    image chibidaphne e blink:
+        choice 12.0:
+            "03_hp/24_daphne/dap_blink_e1.png"
+            pause.4
+        choice:
+            "03_hp/24_daphne/dap_blink_e2.png"
+            pause.08
+        repeat
+
+    image chibidaphne f blink:
+        choice 12.0:
+            "03_hp/24_daphne/dap_blink_f1.png"
+            pause.4
+        choice:
+            "03_hp/24_daphne/dap_blink_f2.png"
             pause.08
         repeat
 

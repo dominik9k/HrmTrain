@@ -179,6 +179,7 @@ label daphne_approaching(isKnocking=False):
 #            with d3
 
             $daphne.Visibility()
+            $daphne.chibi.Hide()
             $screens.Hide("bld1", "blktone", d3, "ctc")
 
             if daytime:
