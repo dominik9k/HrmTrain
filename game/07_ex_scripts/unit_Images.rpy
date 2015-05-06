@@ -3,10 +3,10 @@ label daphne_images_init:
         __path="03_hp/24_daphne/dap_walk_"
 #        __path="03_hp/animation/h_walk_"
         # GO
-        for s in {"a", "b", "c", "d", "e"}:  
+        for s in {"a", "b", "c", "d", "e", "f"}:  
             __s=s
-            if not s in {"a", "b"}: # Это заглушка пока нет чибиков от художника, потом просто убрать ее
-                s="a"
+#            if not s in {"a", "b"}: # Это заглушка пока нет чибиков от художника, потом просто убрать ее
+#                s="a"
 
             renpy.image("chibidaphne "+__s+" go", Animation(__path+s+"1.png", .08,
                                         __path+s+"2.png", .08,
