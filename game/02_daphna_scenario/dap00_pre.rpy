@@ -65,7 +65,7 @@ label daphne_pre_02: #LV.1 (Whoring = 0 - 2)
     $daphne.LoadDefItemSets()
     $music("Daphne Theme")
 #    $daphne.chibi.SetValue("appearance","a")
-    $daphne.chibi.State("door", speed="go").Trans(d4, "blink").Trans("go center", "blink") # Если делать dissolve в движении, то сбивается счетчик времени. Лучше выполнить появление чибика стоя, затем уже двигать его 
+    $daphne.chibi.State("door", speed="go", appearance="a").Trans(d4, "blink").Trans("go center", "blink") # Если делать dissolve в движении, то сбивается счетчик времени. Лучше выполнить появление чибика стоя, затем уже двигать его 
     pause.5
     $screens.ShowD3("bld1")
 
