@@ -20,7 +20,7 @@ label daphne_approaching(isKnocking=False):
         $hero("Да, девочка?")
         $daphne("~55 00 1 dis// Чем тут у вас несет?...")
         $hero("?!")
-        $daphne("~55 s0 1 dis// Вы тут что, крыс травили?!// Я не могу ни секунды здесь оставаться!")
+        $daphne("~55 s0 1 dis// Вы что тут, крыс травили?!// Я не могу ни секунды здесь оставаться!")
         $daphne.liking-=5
         $daphne.Visibility(transition=d3).chibi.Trans("goout door").Hide(d3)    
         $ renpy.play('sounds/door.mp3') #Sound of a door opening.
