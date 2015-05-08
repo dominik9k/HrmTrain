@@ -119,6 +119,7 @@
 
 # ДАФНА =========================
 screen chibidaphnescreen( aImgs, x1=0, x2=0, y=0, lag=1.0 ):   
+    zorder 2
     add aImgs at chibitrans(x1, x2, y, lag) #chibitrans(700, 200, 10.0) # Transform( pos = ( 500, 500 ) )  #at gSumPos( aPos, element.position )
 
 transform chibitrans(x1=0, x2=0, y=0, lag=1.0): 
@@ -181,6 +182,7 @@ transform chibitrans(x1=0, x2=0, y=0, lag=1.0):
 
 # СНЕЙП ======================
 screen chibisnapescreen( aImgs, x1=0, x2=0, y=0, lag=1.0 ):   
+    zorder 2
     add aImgs at chibitrans(x1, x2, y, lag) #chibitrans(700, 200, 10.0) # Transform( pos = ( 500, 500 ) )  #at gSumPos( aPos, element.position )
 
 image chibisnape go: #Default Snape walk animation. 
@@ -211,6 +213,7 @@ image chibisnape blink: #Snape stands still near the door.
 
 # ГЕРМИОНА ======================
 screen chibihermionescreen( aImgs, x1=0, x2=0, y=0, lag=1.0 ):   
+    zorder 2
     add aImgs at chibitrans(x1, x2, y, lag) #chibitrans(700, 200, 10.0) # Transform( pos = ( 500, 500 ) )  #at gSumPos( aPos, element.position )
 
 image chibihermione blink:

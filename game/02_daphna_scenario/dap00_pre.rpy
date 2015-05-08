@@ -520,7 +520,7 @@ label daphne_pre_finish: #LV.1 (Whoring = 0 - 2)
             python:
                 choose = RunMenu()
                 for o in hero.Items():
-                    if not o.Name in {"scroll"}:
+                    if not o.Name in {"scroll", "ball_dress"}:
                         choose.AddItem("- "+o._caption+" -", "daphne_giving", o.Name)
 
                 choose.Show("daphne_pre_finish_menu")
