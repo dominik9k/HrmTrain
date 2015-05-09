@@ -32,7 +32,7 @@ label daphne_images_init:
 # Здесь есть вероятность (choice), а в renpy нет функции, которая при анимации вероятность задает, пока для каждого чибика отдельный экран 
     image chibidaphne a blink:
         choice 12.0:
-            "03_hp/24_daphne/dap_walk_a1.png"
+            "03_hp/24_daphne/dap_blink_a1.png"
             pause.4
         choice:
             "03_hp/24_daphne/dap_blink_a2.png"
