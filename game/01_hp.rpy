@@ -130,6 +130,7 @@ $ tutoring_offer_made = False #If you offered her to tutor her (In event_12). Af
 
 $ phoenix_is_feed = False #When True the graphic of bird food being displayed on top of the phoenix food can.
 $ fire_in_fireplace = False #When True there is a fire going in the fireplace.
+$ hat_act = False
 
 #$ summoning_hermione_unlocked = False #Unlocks after event_14. Adds "Summon Hermione" button to the door.
 #$ tutoring_hermione_unlocked = False #Unlocks after event_14.
@@ -252,6 +253,7 @@ $ cupboard_examined = False
 $ bird_examined = False
 $ door_examined = False
 $ fireplace_examined = False
+$ hat_examined = False
 
 if this.event_05._finish2==4: 
     $ day = 4 # Если в начале новой игры выбрано перепрыгнуть на утро после дуэли т.е. event_05._finish2=4, установить день = 4
@@ -260,6 +262,7 @@ if this.event_05._finish2==4:
     $ bird_examined = True
     $ door_examined = True
     $ fireplace_examined = True
+    $ hat_examined = True
     $ rum_times = 4
     
 # QUESTS #==============================================================================================================================================
@@ -302,6 +305,7 @@ $ aftersperm = False #Shows cum stains on Hermione's uniform.
     
 $ phoenix_is_feed = False #At the beginning of every new day Phoenix is not fed.
 $ only_upper = False #When False legs are displayed in the hermione_main acreen.
+$ hat_act = False
 
 stop bg_sounds #Stops playing the fire SFX.
 stop weather #Stops playing the rain SFX.
@@ -377,6 +381,7 @@ $ hermione_sleeping = False
 $ hermione_takes_classes = False
 $ snape_busy = False
 $ fire_in_fireplace = False
+$ hat_act = False
 hide screen fireplace_fire
 
 ### EVENTS RELATED FLAGS ###
@@ -508,8 +513,6 @@ with fade
 
 $ day +=1
 
-
-#jump test
 ### DAY EVENTS ###<============================================================================================================================================================
 
 $ this.RunStep("DAY")
@@ -529,11 +532,11 @@ if phoenix_is_feed:
     
     
 
-if day == 1 and daytime and bird_examined and desk_examined and cupboard_examined and door_examined and fireplace_examined:
+if day == 1 and daytime and bird_examined and desk_examined and cupboard_examined and door_examined and fireplace_examined and hat_examined:
     show screen bld1
     with d3
     m "Уже темнеет..."
-    m "Я просто проведу весь остаток дня в этой комнате?"
+    m "Я просто проведу остаток дня в этой комнате?"
     hide screen bld1
     with d3
     jump night_start
@@ -567,6 +570,7 @@ $ hermione_takes_classes = False
 $ chitchated_with_snape = False #Prevents you from chitchating more then once a day. Turns back to False every night and every day.
 $ chitchated_with_her = False #Prevents you from chitchatting with Hermione more then once per time of day. Turns back to False every night. (And every day).
 $ gifted = False #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+$ hat_act = False
 
 stop bg_sounds #Stops playing the fire SFX.
 stop weather #Stops playing the rain SFX.
@@ -678,10 +682,9 @@ $ this.RunStep("NIGHT")
 
 
 
-
 label night_main_menu:
-    
-    
+
+
 if phoenix_is_feed:
     show screen phoenix_food
     

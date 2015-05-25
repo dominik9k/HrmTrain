@@ -47,7 +47,7 @@ label door:
                     jump examining_the_door
                 "- Оставить в покое -":
                     m "Кто знает, какие опасности могут скрываться за этой дверью?"
-                    m "Я думаю не стоит ничего с ней делать..."
+                    m "Я думаю мне стоит оставить её в покое..."
                     pass
             show screen genie
             hide screen genie_stands

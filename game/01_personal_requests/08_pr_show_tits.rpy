@@ -15,7 +15,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             show screen blktone
             with d3
             pass
-        "\"(Не сейчас)\"":
+        "\"(Не сейчас.)\"":
             $event.NotFinished()
             jump new_personal_request
     
@@ -404,7 +404,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                 her_head_main "Нет, сэр, пожалуйста! Вы не должны..."
                 m "Это не займет много времени, просто стой."
                 $her_head_state = 24
-                her_head_main "Сэр, я не соглашалась на это!"
+                her_head_main "Сэр, Я не соглашалась на это!"
                 with hpunch
                 $her_head_state = 23
                 her_head_main "Вы должны отпустить меня сейчас же!!!"
@@ -673,7 +673,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                 ">Вы продолжаете дрочить свой член..."
                 $her_head_state = 12
                 her_head_main "Профессор, нет..."
-                her_head_main "Вы должны... убрать это..."
+                her_head_main "Вы должны... Убрать это..."
                 m "Успокойся, девочка. Я же не трогаю тебя?"
                 $her_head_state = 19
                 her_head_main "Но..."
@@ -948,7 +948,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                         show screen bld1
                         with d3
                         $her_head_state = 9
-                        her_head_main "Профессор, я не имела в виду, что вы можете... кончить на меня, сэр..."
+                        her_head_main "Профессор, я не имела в виду, что вы можете ... кончить на меня, сэр..."
                         g4 "Ох, это здорово, да..."
                         $ no_blinking = False #When True - blinking animation is not displayed. 
                         hide screen jerking_off_cum

@@ -10,7 +10,7 @@ label new_request_20: #LV.5 (Whoring = 12 - 14)
     menu:
         "\"(Да, давай сделаем это!)\"":
             pass
-        "\"(Не сейчас)\"":
+        "\"(Не сейчас.)\"":
             $event.NotFinished()
             jump new_personal_request
             

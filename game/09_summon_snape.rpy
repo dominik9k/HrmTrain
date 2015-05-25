@@ -178,7 +178,6 @@ label snape_dates:  ### HANGING WITH SNAPE ###
         
         
 
- 
     $ snape_friendship +=1
     jump day_start
     
@@ -235,7 +234,7 @@ label special_date_with_snape: #TAKES PLACE AFTER FIRST VISIT FROM HERMIONE.
     $sna_head_state = 2
     sna_head_main "Да... Ты прав..."
     $sna_head_state = 7
-    sna_head_main "Этот ублюдок Джеймс Поттер действительно бесит меня-"
+    sna_head_main "Этот ублюдок Джеймс Поттер действительно бесил меня-"
     $sna_head_state = 6
     sna_head_main "Подожди, как ты узнал это?"
     m "Ну... Я читал книги..."
@@ -400,9 +399,9 @@ label special_date_with_snape_02: #TAKES PLACE AFTER SECOND VISIT FROM HERMIONE.
     $sna_head_state = 3
     sna_head_main "Черт, как же я ненавижу, когда она исправляет меня во время моих занятий..."
     $sna_head_state = 6
-    sna_head_main "И благодаря ей \"Гриффиндор\" уже не раз брал кубок..."
+    sna_head_main "И благодаря ей \"Гриффиндор\" далеко впереди всех остальных сейчас..."
     $sna_head_state = 7
-    sna_head_main "Боюсь, что так будет и в этом году..."
+    sna_head_main "Даже \"Слизерин\" не так догоняет в этом году..."
     $sna_head_state = 16
     sna_head_main "........................"
     $sna_head_state = 6

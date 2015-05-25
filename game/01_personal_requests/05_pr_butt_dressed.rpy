@@ -7,7 +7,7 @@ label new_request_05:
     menu:
         "\"(Да, давай попробуем!)\"":
             pass
-        "\"(Не сейчас)\"":
+        "\"(Не сейчас.)\"":
             $event.NotFinished()
             jump new_personal_request
 

@@ -13,7 +13,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
             show screen blktone
             with d3
             pass
-        "\"(Не сейчас)\"":
+        "\"(Не сейчас.)\"":
             $event.NotFinished()
             jump new_personal_request
 
@@ -593,7 +593,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         with d3
         menu:
             m "..."
-            "\"Северус, я сейчас занят.\"":
+            "\"Северус, Я сейчас занят.\"":
                 $ s_sprite = "03_hp/10_snape_main/snape_13.png"
                 show screen s_head
                 sna "Да... Я вижу..."

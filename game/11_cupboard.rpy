@@ -13,6 +13,7 @@ label cupboard:
             with Dissolve(0.5)
             m "Хм....."
             m "Шкаф..."
+            m "Я думаю, в нем есть что-то полезное..."
             m "Может порыться в нем чуть позже..."
             show screen genie
             hide screen genie_stands_f
@@ -73,6 +74,15 @@ label cupboard:
                         $hermi.liking=0
                         show screen points
                         "Готово можете проверить"
+                    "ЧИТ: Дафна не гневается на вас":
+                        hide screen points
+                        $daphne.liking=0
+                        show screen points
+                        "Запрос выполнен"
+                    "ЧИТ: Дафна становиться более распутной":
+                        hide screen points
+                        $daphne.whoring+=1
+                        show screen points
                     "ЧИТ: +100 галеонов":
                         hide screen points
                         $gold+=100

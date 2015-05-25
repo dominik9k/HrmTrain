@@ -11,7 +11,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
             show screen blktone
             with d3
             pass
-        "\"(Не сейчас)\"":
+        "\"(Не сейчас.)\"":
             $event.NotFinished()
             jump new_personal_request
  
