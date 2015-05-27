@@ -2,7 +2,7 @@ label mail:
 
     $ this.RunStep("MAIL")    
 
-    if finished_report >= 1:
+    if finished_report >= 1 and letter_from_ficbook_fun == False:
         $ letters -= 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
         $ got_paycheck = False #When TRUE the paycheck is in the mail. Can't do paper work.
         hide screen owl
@@ -22,6 +22,126 @@ label mail:
         hide screen letter
         hide screen bld1
         hide screen ctc
+            
+
+        $ finished_report = 0
+
+        if (hermi._incomePercent>0):
+            $dgold=dgold*hermi._incomePercent//100
+            $gold-=dgold
+            "> Согласно вашему соглашению с Гермионой [dgold] галеонов ([hermi._incomePercent]%%) перечисляются на ее счет"
+        call screen main_menu_01
+        
+    ###"УЛУЧШЕННЫЕ" ОТЧЕТЫ###
+    if finished_report >= 1 and letter_from_ficbook_fun == True:
+        $ one_of_ten = renpy.random.randint(1, 6)
+        $ letters -= 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
+        $ got_paycheck = False #When TRUE the paycheck is in the mail. Can't do paper work.
+        hide screen owl
+        show screen owl_02
+        ">Вы читаете свои сообщения."
+        
+        
+        
+        $dgold=([80, 140, 180, 220, 300, 400][finished_report-1])*turbo
+        
+        if one_of_ten == 1:
+            play sound "sounds/money.mp3"  #Quiet...
+            $ letter_text = "{size=-7}ОТ:Министерства Магии\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Благодарим Вас за отчеты, присланные на этой неделе.\n Ваша оплата:{/size} \n{size=+4}[dgold] галеонов.{/size}\n\n\n{size=-3}-С уважением-{/size}"
+            show screen bld1
+            show screen letter
+            show screen ctc
+            pause
+            hide screen letter
+            hide screen bld1
+            hide screen ctc
+        
+        if one_of_ten == 2:
+            play sound "sounds/money.mp3"  #Quiet...
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nмы всем офисом благодарим Вас за новую главу! Позвольте передать вам {size=-2}[dgold] галеонов.{/size} и наше искреннее восхищение.{/size}\n\n\n{size=-6}-С уважением-{/size}"
+            show screen bld1
+            show screen letter
+            show screen ctc
+            pause
+            hide screen letter
+            hide screen bld1
+            hide screen ctc
+            
+        if one_of_ten == 3:
+            play sound "sounds/money.mp3"  #Quiet...
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nна правах человека, ведущего связь с Вами, могу ли я узнать, будут ли Педреро и Хуанито вместе? Отправляю вам {size=-2}[dgold]галеонов{/size} и скромную надежду на ответ.{/size}\n\n\n{size=-6}-С уважением-{/size}"
+            show screen bld1
+            show screen letter
+            show screen ctc
+            g9 "Хороший писатель никогда не раскроет никогда не раскрывает сюжетных поворотов!"
+            m "..."
+            m "Я и вправду сказал это?"
+            hide screen letter
+            hide screen bld1
+            hide screen ctc
+            
+        if one_of_ten == 4:
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-3}Дорогой Альбус,/nновые главы вышли великолепными, особенно когда...{/size}"
+            show screen bld1
+            show screen letter
+            show screen ctc
+            pause
+            hide screen letter
+            hide screen bld1
+            hide screen ctc
+            g1 "..."
+            g1 "..."
+            g1 "Fuck, no."
+            m "Я ничего не хочу об этом знать."
+            play sound "sounds/money.mp3"  #Quiet...
+            g9 "Ну, по крайней мере, в конверте лежали мои [dgold]галеонов."
+            
+        if one_of_ten == 5:
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nна правах главы Вашего фан-клуба, позвольте пригласить Вас на пенную вечеренку, адрес и время написаны на приглашении. Мы ждем вас с нетерпением!{/size}"
+            show screen bld1
+            show screen letter
+            show screen ctc
+            pause
+            hide screen letter
+            hide screen bld1
+            hide screen ctc
+            g9 "Вечеринка, полная фанаток-извращенок? Впишите меня!"
+            m "Ах, ну да... \"Будь хорошим джином, Джинни и сиди взаперти весь день, как осел.\""
+            m "Черт."
+            play sound "sounds/money.mp3"  #Quiet...
+            g4 "Зачем мне [dgold]галеонов, если я не могу их как следует потратить?!"
+            
+        if one_of_ten == 6:
+            $ letter_text = "{size=-7}ОТ:XXX\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}У МЕНЯ БРАТ УМЕР ИЗ-ЗА ТАКИХ ИСТОРИЙ, ГОРИ В АДУ, ГРЯЗНЫЙ ИЗВРАЩЕНЕЦ!!!{/size}"
+            show screen bld1
+            show screen letter
+            show screen ctc
+            pause
+            hide screen letter
+            hide screen bld1
+            hide screen ctc
+            m "..."
+            g9 "О, монетки!"
+            play sound "sounds/money.mp3"  #Quiet...
+            "> Получено [dgold] галеонов"
+            m "..."
+            m "Смертные."
+                
+    #Слишком большое письмо      
+    #   if one_of_ten == 7:
+    #       $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nсегодня мне приснился странный сон. Я была обычным маглом, писателем. И писала истории о мальчике-котором-выжил. И когда издатель запретил мне убить Поттера в последнем бою, я проснулась в холодном поту. Странный сон, правда?{/size}"
+            
+    #    if one_of_ten == 8:
+    #        $ letter_text =
+            
+    #    if one_of_ten == 9:
+    #        $ letter_text =
+            
+    #    if one_of_ten == 10:
+    #        $ letter_text =
+            
+        
+        $ gold += dgold
             
 
         $ finished_report = 0
@@ -128,8 +248,42 @@ if work_unlock: # Send a letter that will unlock an ability to write reports
     hide screen blktone8
     with d3
     call screen main_menu_01
-
-
+    
+###Mail about improved "reports"###
+if total_report >= 10 and letter_from_ficbook_fun == False:
+    $ letters -= 1
+    $ letter_from_ficbook_fun = True
+    hide screen owl
+    show screen owl_02
+    $ letter_text = "{size=-7}От: Жодана Кроулинг\nКому: Профессору Альбусу Дамблдору\n\n{/size}{size=-4}Дорогой Альбус Дамблдор.\nВ связи с открывшимся в Вас новым даром, Комитет Образования решил удвоить финансирование вашей отчетности.\nЖдем от вас больше захватывающих отчетов, в особенности про потомственного волшебника Педреро.\n\n{size=-3}С уважением,\nваша преданная фанатка и секретарь Комитета Образования,\nЖодана Кроулинг.{/size}"
+    label letter_funletter:
+    show screen bld1
+    show screen letter
+    show screen ctc
+    with Dissolve(.3)
+    pause
+    menu:
+        "- Закончить чтение -":
+            pass    
+        "- Продолжить чтение -":
+            jump letter_work
+    hide screen letter
+    hide screen bld1
+    hide screen ctc
+    with Dissolve(.3)
+    m "..."
+    m "Это определенно самый странный мир из увиденных мною."
+    show screen blktone8
+    with d3
+    $ renpy.play('sounds/win2.mp3')   #Not loud.
+    ">Теперь вы получаете в два раза больше денег за... \nОтчеты."
+    ">Оно того стоит?"
+    m "Деньги не пахнут."
+    hide screen blktone8
+    with d3
+    call screen main_menu_01
+    
+    
     
 label mail_02: #Packages only. <=====================================================================### PACKAGES ###=================================================== 
 

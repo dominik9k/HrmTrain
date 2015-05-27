@@ -178,7 +178,10 @@ label snape_dates:  ### HANGING WITH SNAPE ###
         
         
 
+ 
     $ snape_friendship +=1
+    if avogadro_law == True:
+        $ snape_friendship +=4
     jump day_start
     
    

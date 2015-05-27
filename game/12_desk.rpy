@@ -199,12 +199,28 @@ label reading_book_xx:
     
     call chapter_check_book_xx #Checks if the chapter just finished was the last one.
     
-    
+#Проверка на концентрацию
+    if concentration>0:
+        if concentration == 1:
+            $ concentraton_check = renpy.random.randint(1, 6) #Copper book.
+            if concentraton_check == 1:
+                call concetrationg_reading
+        if concentration == 2:
+            $ concentraton_check = renpy.random.randint(1, 4) #Bronze book.
+            if concentraton_check == 1:
+                call concetrationg_reading
+        if concentration == 3:
+            $ concentraton_check = renpy.random.randint(1, 2) #Silver book.
+            if concentraton_check == 1:
+                call concetrationg_reading
+        if concentration == 4:                                                               #Golden book.
+            call concetrationg_reading
+        
 #===### SPEED READING FOR DUMMIES BONUS CHECK ###
     if s_reading_lvl>0:
-        $ speed_dummies = Rand([60,30,20][s_reading_lvl-1]//turbo)  # Массив содержит размер интервала для расчета вероятности. Первая книга 10/60 шансов прочитать доп. главу, вторая 10/30, 3-я 10/20 . В режиме турбо интервал уменьшается вдвое
+        $ speed_dummies = Rand([60,30,10][s_reading_lvl-1]//turbo)  # Массив содержит размер интервала для расчета вероятности. Первая книга 10/60 шансов прочитать доп. главу, вторая 10/30, 3-я 10/20 . В режиме турбо интервал уменьшается вдвое
         if speed_dummies <= 10: #Success.
-            ">Используя изученные вами начальные методы скорочтения, вы рациональнее используете время и продолжаете читать."
+            ">Используя изученные вами методы скорочтения, вы рациональнее используете время и продолжаете читать."
             call chap_finished_xx
             call chapter_check_book_xx #Checks if the chapter just finished was the last one.
 #            ">Осталось еще несколько глав."
@@ -234,7 +250,12 @@ label reading_book_xx:
     else: 
         jump day_start
         
-######    
+###### Concentration reading
+label concetrationg_reading:
+    ">Во время чтения вы идеально сконцентрированы, что позволяет вам прочитать дополнительную главу."
+    call chap_finished_xx
+    call chapter_check_book_xx
+    return
 label chap_finished_xx:
     if event.Name=="book_05":
         $event.IncValue("status", 1)  #+=1
@@ -567,6 +588,7 @@ label report_chapters_check:
         ">Вы закончили отчет."
         $ report_chapters = 0
         $ finished_report += 1
+        $ total_report += 1
     return
 ### FULL MOON BONUS ###
 label f_moon_bonus:
@@ -592,6 +614,8 @@ label concentration_label:
     $ report_chapters += 1
     ">Во время работы вы идеально сконцентрированы.\n>И заканчиваете дополнительную главу.\n>Вы закончили [report_chapters]-ю главу."
     return
+
+    
 ### SPEEDWRITING
 label speedwriting_label:
     $ renpy.play('sounds/win_04.mp3')   #Not loud.

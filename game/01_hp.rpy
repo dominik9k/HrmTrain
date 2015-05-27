@@ -59,6 +59,7 @@ $ day = 0
 $ day_of_week = 0 #Counts days of the week. Everyday +1. When day_of_week = 7 resets to zero.
 $ report_chapters = 0 #Shows how many chapters of a current report has been completed so far. Resets to zero when report is finished.
 $ finished_report = 0 #Shows amount of completed reports.
+$ total_report = 0
 
 $ got_mail = False #Turns true is you have WORK mail waiting. Owl will be displayed.
 $ got_package = False #Turns TRUE when package from the "Muggle Oddities" catalog has arrived.
@@ -69,6 +70,7 @@ $ letters = 0 #Shows how many letters are waiting to be read. +1 every new lette
 
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
+$ letter_from_ficbook_fun = False
 
 ###SNAPE STATS###
 $ snape_busy = False #When True, you can't summon Snape.
@@ -265,6 +267,7 @@ if this.event_05._finish2==4:
     $ hat_examined = True
     $ rum_times = 4
     
+$ report_talk = False
 # QUESTS #==============================================================================================================================================
 $ zyablik_switch = 0
 ### TUTORING QUEST ####
@@ -494,6 +497,9 @@ if package_is_here:
     show screen package
 show screen genie
 
+if total_report >= 10 and letter_from_ficbook_fun == False:
+    $letters+=1
+    
 if this.IsStep("MAIL"):
     $letters+=1
 if got_mail or mail_from_her or letters >= 1:
@@ -513,6 +519,8 @@ with fade
 
 $ day +=1
 
+
+#jump test
 ### DAY EVENTS ###<============================================================================================================================================================
 
 $ this.RunStep("DAY")
@@ -561,7 +569,7 @@ label night_start:
     play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
     
 
-    
+
     
     
 $ daytime = False  
@@ -672,6 +680,10 @@ if teacher_jinn_quest == 5:
 if study_book_quest_counter == 3 and teacher_jinn_quest == 5:
     jump event_16
 
+if total_report == 5 and report_talk == False:
+    $ report_talk = True
+    jump bad_reports
+
 
 
 ### NIGHT REQUESTS ###
@@ -682,9 +694,10 @@ $ this.RunStep("NIGHT")
 
 
 
+
 label night_main_menu:
-
-
+    
+    
 if phoenix_is_feed:
     show screen phoenix_food
     
