@@ -34,6 +34,16 @@ label hermione_approaching:
 
     label hermione_main_menu:
     menu:
+### DR'S NEWSPAPER ooo ###
+
+        "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4:
+            dr "Вот и закончилось демо моего блока ивентов. Я понимаю, что вы хотели бы продолжения, и оно будет. Чуть позже."
+            dr "А пока что можно оставить отзыв на форуме, чтобы я работал над ошибками и мог учесть пожелания игроков."
+            dr "Спасибо за внимание."
+            dr "P.S. На всякий случай напомню, что уже в демо вы можете заниматься газетным делом для заработка денег. После соответствующих улучшений доход повысится."
+            jump hermione_main_menu
+
+###
         "- Поговорить -" if not chitchated_with_her:
             $ chitchated_with_her = True #Prevents you from chitchatting with Hermione more then once per time of day. Turns back to False every night. (And every day).
             if hermi.liking >= -7:

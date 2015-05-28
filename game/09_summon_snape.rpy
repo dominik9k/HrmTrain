@@ -41,6 +41,19 @@ label summon_snape:
 
         "Купить зелье на букву \"Б\"" if teacher_jinn_quest == 2 and gold >= 7000:
             jump snape_tutor_2
+            
+### DR'S NEWSPAPER ooo ###
+
+        "Поговорить о газете" if nsp_pre_letter == 2 and nsp_pre_snape < 5:
+            $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
+            jump newsp_pre_snape_dialog
+            
+        "Поговорить о газете" if nsp_newspaper_menu == 3:
+            $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
+            jump newsp_pre_snape_dialog2
+
+###
+
         "\"Отвиснуть.\"" if not daytime and not sfmax: # Turns TRUE when friendship with Snape been maxed out.
         
             if teacher_jinn_quest == 1:

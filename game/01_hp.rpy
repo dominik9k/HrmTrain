@@ -68,6 +68,52 @@ $ mail_from_her = False #Turns TRUE when there is a mail from Hermione. Basicall
 $ letter_text = []
 $ letters = 0 #Shows how many letters are waiting to be read. +1 every new letter arrives. -1 Every time you read one letter.
 
+### DR'S newspaper ooo ###
+
+$ nsp_genie_typographic = 0 # Джин: Тип типографского набора, в начале - 0. Отсюда же Качество печати для Газеты
+$ nsp_genie_typographic_exp = 0 # Растет при каждой публикации на 1, для покупки набора след уровня нужно не менее 2 публикаций с прошлым. При этом счетчик сбрасывается.
+$ nsp_genie_writer = 0 # Джин: Навык писателя статей, в начале - 0. Отсюда же Мастерство написания для Газеты.
+$ nsp_genie_photocamera = 0 # Джин: Тип используемого фотоаппарата, в начале - 0. Отсюда же украшения газеты.
+$ nsp_genie_photocamera_exp = 3 # Растет при каждом ивенте на 1, для покупки фотоаппарата след уровня нужно не менее 3 ивентов с прошлым. При этом счетчик сбрасывается. Для покупки первого аппарата опыт уже как бы есть.
+$ nsp_genie_sphere = False # Джин: Наличие хрустального шара.
+$ nsp_genie_sphere_level = 0 # Джин: Навык владения хрустальным шаром.
+$ nsp_genie_sphere_level_exp = 0 # Джин: Опыт владения хрустальным шаром.
+$ nsp_genie_sphere_ruby_level = 0 # Джин: Уровень рубина для шара
+$ nsp_genie_sphere_diamond_level = 0 # Джин: Уровень алмаза для шара
+$ nsp_genie_sphere_sapphire_level = 0 # Джин: Уровень сапфира для шара
+$ nsp_genie_sphare_video = False # Джин: Наличие навыка переноса видео в газету
+
+$ nsp_germiona_mediasex = 0 # Гермиона: Медиа-развращенность
+$ nsp_germiona_impudence = 0 # Гермиона: Наглость/смелость
+$ nsp_germiona_artistry = 0 # Гермиона: Артистичность
+$ nsp_germiona_anon_rights = 100 # Гермиона: Анонимность в "Права и дискриминация"
+$ nsp_germiona_anon_magls = 100 # Гермиона: Анонимность в "О жизни маглов публично"
+$ nsp_germiona_anon_kviddich = 100  # Гермиона: Анонимность в "О квиддиче"
+$ nsp_germiona_anon_sex = 100  # Гермиона: Анонимность в "О Сексе"
+$ nsp_germiona_anon_maniak = 100  # Гермиона: Анонимность в "Маньяк"
+$ nsp_germiona_anon_nude = 100  # Гермиона: Анонимность в "Голый репортер в маске"
+$ nsp_germiona_anon_forest = 100  # Гермиона: Анонимность в "Запретный лес"
+$ nsp_germiona_anon_studio = 100  # Гермиона: Анонимность в "Студия у Джина"
+
+$ nsp_newspaper_bonus_text = "" # Газета: Текст, описание бонусного контента
+$ nsp_newspaper_bonus_point = 0 # Газета: Баллы за бонусный контент
+$ nsp_newspaper_lasr_text = "" # Газета: Тект, реакция школы на предыдущий выпуск
+$ nsp_newspaper_last_money = 0 # Газета: Оценка публики, равна деньгам за предыдущий выпуск
+
+$ nsp_newspaper_qual = 10 # Газета: Качество текущего выпуска
+$ nsp_newspaper_cur_money = 10 # Газета: Оплата текущего выпуска
+$ nsp_newspaper_published = False # Газета была опубликована
+
+$ nsp_newspaper_articles = 0 # Газета: Количество написанных статей. Когда количество достигает 8, газету можно публиковать и счетчик сбрасывается.
+$ nsp_newspaper_ready = False # Газета: Готовность.
+
+$ nsp_pre_jobs_max = 0 # Подсчет максимального числа отчетов, которые были отосланы. Если число больше или равно 4, то приходит письмо о газете.
+
+$ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не было, 1 - есть, 2 - уже прочитано.
+$ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
+$ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
+$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
+
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
 $ letter_from_ficbook_fun = False
@@ -404,7 +450,37 @@ $ day_of_week += 1
 # Ежеденевные изменения для всех персонажей
 $hermi.liking+=1
 $daphne.liking+=1
-    
+
+### DR'S newspaper ooo ###
+
+if nsp_pre_jobs_max < finished_report:
+    $ nsp_pre_jobs_max = finished_report
+
+$ nsp_germiona_anon_rights += 10
+$ nsp_germiona_anon_magls += 10
+$ nsp_germiona_anon_kviddich += 10
+$ nsp_germiona_anon_sex += 10
+$ nsp_germiona_anon_maniak += 10
+$ nsp_germiona_anon_nude += 10
+$ nsp_germiona_anon_forest += 10
+$ nsp_germiona_anon_studio += 10
+
+if nsp_germiona_anon_rights > 100:
+    $ nsp_germiona_anon_rights = 100
+if nsp_germiona_anon_magls > 100:
+    $ nsp_germiona_anon_magls = 100
+if nsp_germiona_anon_kviddich > 100:
+    $ nsp_germiona_anon_kviddich = 100
+if nsp_germiona_anon_sex > 100:
+    $ nsp_germiona_anon_sex = 100
+if nsp_germiona_anon_maniak > 100:
+    $ nsp_germiona_anon_maniak = 100
+if nsp_germiona_anon_nude > 100:
+    $ nsp_germiona_anon_nude = 100
+if nsp_germiona_anon_forest > 100:
+    $ nsp_germiona_anon_forest = 100
+if nsp_germiona_anon_studio > 100:
+    $ nsp_germiona_anon_studio = 100
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.
@@ -491,7 +567,15 @@ if day == 2:
 if day == 12: # LETTER THAT UNLOCKS PAPERWORK BUTTON.
     $ work_unlock = True # Send a letter that will unlock an ability to write reports.
     $ letters += 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
-    
+
+### DR'S NEWSPAPER ooo ###
+
+if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter < 2:
+    $ nsp_pre_letter = 1
+    $ letters += 1
+
+###
+
 if package_is_here:
     play sound "sounds/owl.mp3"  #Quiet...
     show screen package

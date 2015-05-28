@@ -283,7 +283,15 @@ if total_report >= 10 and letter_from_ficbook_fun == False:
     with d3
     call screen main_menu_01
     
-    
+### DR'S NEWSPAPER ooo ###
+
+if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter == 1:
+    jump newsp_pre_letter
+
+if nsp_newspaper_published == True:
+    jump newsp_letter
+
+###    
     
 label mail_02: #Packages only. <=====================================================================### PACKAGES ###=================================================== 
 
