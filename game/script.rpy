@@ -296,7 +296,101 @@ init:
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10 if _block=="books_edu" else 20} )
 
+#### DR'S NEWSPAPER ooo ###
+# Товары для газеты
 
+        tu=[("nsp_newsp_book_pre::\"Самоучитель газетного дела\"",           100, "08_newspaper_scenario/books/prebook.png", "Эта книга описывает элементарные основы оформления и публикации газеты.",
+                "теперь я могу издавать собственную газету."),
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp"
+
+            lam=lambda e:e._status>=e._units
+            event=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
+                
+        
+
+#######
+#### DR'S NEWSPAPER ooo ###
+# Товары для газеты
+    python:
+
+        tu=[("nsp_newsp_book_p01::\"Журналистика для любителей\"",           120, "08_newspaper_scenario/books/Book_p1.png", "Эта книга описывает основы журналистики.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p02a::\"Журналистика для продвинутых. Том 1\"",           200, "08_newspaper_scenario/books/Book_p2a.png", "Эта книга описывает принципы журналистики.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p02b::\"Журналистика для продвинутых. Том 2\"",           300, "08_newspaper_scenario/books/Book_p2b.png", "Эта книга описывает принципы журналистики.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p03a::\"Журналистика для экспертов. Том 1\"",           500, "08_newspaper_scenario/books/Book_p3a.png", "Эта книга описывает секреты журналистики.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p03b::\"Журналистика для экспертов. Том 2\"",           600, "08_newspaper_scenario/books/Book_p3b.png", "Эта книга описывает секреты журналистики.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+               
+            ("nsp_newsp_book_p04::\"Стань писателем для любителей.\"",           300, "08_newspaper_scenario/books/Book_p4.png", "Эта книга описывает основы писательского ремесла.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p05a::\"Стань писателем для продвинутых. Том 1\"",           600, "08_newspaper_scenario/books/Book_p5a.png", "Эта книга описывает принципы писательского ремесла.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p05b::\"Стань писателем для продвинутых. Том 2\"",           800, "08_newspaper_scenario/books/Book_p5b.png", "Эта книга описывает принципы писательского ремесла.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p06a::\"Стань писателем для экспертов. Том 1\"",           1200, "08_newspaper_scenario/books/Book_p6a.png", "Эта книга описывает секреты писательского ремесла.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+            ("nsp_newsp_book_p06b::\"Стань писателем для экспертов. Том 2\"",           1500, "08_newspaper_scenario/books/Book_p6b.png", "Эта книга описывает секреты писательского ремесла.",
+                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp"
+
+            lam=lambda e:e._status>=e._units
+            event=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
+                
+        tu=[("nsp_newsp_book_typo1::\"Типографический набор для любителей\"",           90, "08_newspaper_scenario/upd/Typo1.png", "Прилагающееся к типографическому набору руководство содержит все необходимое.",
+                "Благодаря прочитанному руководству вы можете использовать \"Типографический набор для любителей\"."),
+                
+            ("nsp_newsp_book_typo2::\"Типографический набор для продвинутых\"",           200, "08_newspaper_scenario/upd/Typo2.png", "Прилагающееся к типографическому набору руководство содержит все необходимое.",
+                "Благодаря прочитанному руководству вы можете использовать \"Типографический набор для продвинутых\"."),
+                
+            ("nsp_newsp_book_typo3::\"Типографический набор для профессионалов\"",           400, "08_newspaper_scenario/upd/Typo3.png", "Прилагающееся к типографическому набору руководство содержит все необходимое.",
+                "Благодаря прочитанному руководству вы можете использовать \"Типографический набор для профессионалов\"."),
+                
+            ("nsp_newsp_book_typo4::\"Типографический набор для малых редакций\"",           800, "08_newspaper_scenario/upd/Typo4.png", "Прилагающееся к типографическому набору руководство содержит все необходимое.",
+                "Благодаря прочитанному руководству вы можете использовать \"Типографический набор для малых редакций\"."),
+                
+            ("nsp_newsp_book_typo5::\"Типографический набор для средних редакций\"",          1500, "08_newspaper_scenario/upd/Typo5.png", "Прилагающееся к типографическому набору руководство содержит все необходимое.",
+                "Благодаря прочитанному руководству вы можете использовать \"Типографический набор для средних редакций\"."),
+               
+            ("nsp_newsp_book_typo6::\"Типографический набор для больших редакций\"",          3000, "08_newspaper_scenario/upd/Typo6.png", "Прилагающееся к типографическому набору руководство содержит все необходимое.",
+                "Благодаря прочитанному руководству вы можете использовать \"Типографический набор для больших редакций\"."),
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp2"
+
+            lam=lambda e:e._status>=e._units
+            event=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 3} )
+
+####### 
 
 
 # Создает переменные одноименные с названиями ивентов. В результате к ивентам можно получить доступ не this("event_01") а this.event_01 
@@ -4908,6 +5002,9 @@ init-2:
     $ translators = Character('Переводчик', color="#0089BE", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ skaz = Character('Сказочник', color="#0000FF")
     $ nyark = Character ('Nyarkohotep', color="FF0000")
+    ### DR'S CODE ooo ###
+    $ dr = Character('Дрон', color="#00FF00")
+    ###
     $ her = Character('Гермиона', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ her2 = Character('Гермиона', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
     $ sna = Character('Северус Снейп', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
