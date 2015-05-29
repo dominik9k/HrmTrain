@@ -110,6 +110,21 @@ label cupboard:
                 $_scrollSection=2
                 jump sc_col
 
+        "- Священные свитки. Часть IV -" if not day == 1 and cataloug_found:
+            label sc_col_men_4:
+                $_scrollSection=3
+                jump sc_col
+
+        "- Священные свитки. Часть V -" if not day == 1 and cataloug_found:
+            label sc_col_men_5:
+                $_scrollSection=4
+                jump sc_col
+
+        "- Священные свитки. Часть VI -" if not day == 1 and cataloug_found:
+            label sc_col_men_6:
+                $_scrollSection=5
+                jump sc_col
+
 
                 label sc_col:
                     $ choose = RunMenu()

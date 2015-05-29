@@ -105,6 +105,7 @@ label menu_dahr_gift_order:
         else:
             $_price2=item._price*2
             $_price3=item._price*3
+            $_price50=item._price*50
             if itsDAHR.Count(item.Name)>0:
                 menu:
                     dahr "[item._description]"
@@ -114,6 +115,8 @@ label menu_dahr_gift_order:
                         $itemCount=2
                     "- Купить 3 ([_price3] галеонов) -" if itsDAHR.Count(item.Name)>2:
                         $itemCount=3
+                    "- Купить 50 ([_price50] галеонов) -" if itsDAHR.Count(item.Name)>3:
+                        $itemCount=50
                     "- Ничего -":
                         hide screen gift
                         jump the_oddities
