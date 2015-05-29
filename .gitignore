@@ -1,4 +1,5 @@
 *.rpyc
+*.rpy~
 *.pyo
 /Witch Trainer.exe
 /log.txt
