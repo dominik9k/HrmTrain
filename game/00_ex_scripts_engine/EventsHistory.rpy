@@ -16,7 +16,6 @@
         def __init__( self ):
             self.mHistory = []
 
-
         def record( self, aEventName, aFinishDay ):
             self.mHistory.insert( 0, EventsHistoryRecord.create( aEventName, aFinishDay ) )
 

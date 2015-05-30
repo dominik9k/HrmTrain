@@ -11,15 +11,10 @@
             
             self.mDay = 0
 
-            # dictionary of objects
-            self.mGlobalVariables = { 'global_test' : 0 }
-
             self.mCurrentEvent = None
 
-            # dictionary of dictionary of objects
-            self.mLocalVariablesBase = { 'event_test': { 'localVar': 0 } }
-            # this is points to dictionary with local variables for current event
-            self.mLocalVariables = None
+            self.mLocals = LocalVariableStorage()
+            self.mGlobals = GlobalVariableStorage()
 
         def fireAction( self, aActionKey ):
             if self.mCurrentEvent:
@@ -71,56 +66,27 @@
 
         # for working with global variables
         def globals( self, aName ):
-            if aName in self.mGlobalVariables.keys():
-                return self.mGlobalVariables[ aName ]
-            else:
-                GameEngineDebugger.LogE( 'GameEngine.globals - no object for key ' + aName )
-                return None
+            return self.mGlobals.get( aName )
 
         def globalsWrite( self, aName, aValue ):
-            if aName in self.mGlobalVariables.keys():
-                self.mGlobalVariables[ aName ] = aValue
-            else:
-                GameEngineDebugger.LogE( 'GameEngine.globalsWrite - no object for key ' + aName )
+            self.mGlobals.set( aName, aValue )
 
         def globalsWriteNew( self, aName, aValue ):
-            self.mGlobalVariables[ aName ] = aValue
+            self.mGlobals.setNew( aName, aValue )
 
         # for working with local variables
         def locals( self, aName ):
-            if self.mLocalVariables != None:
-                if aName in self.mLocalVariables.keys():
-                    return self.mLocalVariables[ aName ]
-                else:
-                    GameEngineDebugger.LogE( 'GameEngine.locals - no object for key ' + aName )
-            else:
-                GameEngineDebugger.LogE( 'GameEngine.locals - unknown current event!' )
-            return None
+            self.mLocals.get( aName )
 
         def localsWrite( self, aName, aValue ):
-            if self.mLocalVariables != None:
-                if aName in self.mLocalVariables.keys():
-                    self.mLocalVariables[ aName ] = aValue
-                else:
-                    GameEngineDebugger.LogE( 'GameEngine.localsWrite - no object for key ' + aName )
-            else:
-                GameEngineDebugger.LogE( 'GameEngine.localsWrite - unknown current event!' )
+            self.mLocals.set( aName, aValue )
 
         def localsWriteNew( self, aName, aValue ):
-            if self.mLocalVariables != None:
-                self.mLocalVariables[ aName ] = aValue
-            else:
-                GameEngineDebugger.LogE( 'GameEngine.localsWriteNew - no object for key ' + aName )
+            self.mLocals.setNew( aName, aValue )
 
+        # call this with None to unselect locals
         def setLocals( self, aEventName ):
-            if aEventName == None:
-                # clear settings
-                self.mLocalVariables = None
-            else:
-                if aEventName not in self.mLocalVariablesBase.keys():
-                    self.mLocalVariablesBase[ aEventName ] = {}
-                self.mLocalVariables = self.mLocalVariablesBase[ aEventName ]
-
+            self.mLocals.choose( aEventName )
 
         # call this in the end of the event
         def finish( self ):
