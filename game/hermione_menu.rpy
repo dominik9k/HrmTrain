@@ -7,6 +7,7 @@ label hermione_approaching:
                 
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     $ hermione_chibi_xpos = 400 #Near the desk.
+    $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
     show screen hermione_02 #Hermione stands still.
     show screen bld1
     with d3
@@ -36,12 +37,11 @@ label hermione_approaching:
     menu:
 ### DR'S NEWSPAPER ooo ###
 
-        "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4:
-            dr "Вот и закончилось демо моего блока ивентов. Я понимаю, что вы хотели бы продолжения, и оно будет. Чуть позже."
-            dr "А пока что можно оставить отзыв на форуме, чтобы я работал над ошибками и мог учесть пожелания игроков."
-            dr "Спасибо за внимание."
-            dr "P.S. На всякий случай напомню, что уже в демо вы можете заниматься газетным делом для заработка денег. После соответствующих улучшений доход повысится."
-            jump hermione_main_menu
+        "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4 or nsp_newspaper_menu == 5 :
+            jump nsp_hermione_pre1
+            
+        "- Дать журналистское задание -" if nsp_newspaper_menu == 6:
+            jump nsp_newsp_themes
 
 ###
         "- Поговорить -" if not chitchated_with_her:

@@ -109,10 +109,68 @@ $ nsp_newspaper_ready = False # Газета: Готовность.
 
 $ nsp_pre_jobs_max = 0 # Подсчет максимального числа отчетов, которые были отосланы. Если число больше или равно 4, то приходит письмо о газете.
 
+$ nsp_germiona_menu_rights = 1 # Гермиона: Доступность раздела "Права и дискриминация"
+$ nsp_germiona_menu_magls = 1 # Гермиона: Доступность раздела "О жизни маглов публично"
+$ nsp_germiona_menu_kviddich = 1  # Гермиона: Доступность раздела "О квиддиче"
+$ nsp_germiona_menu_sex = 0  # Гермиона: Доступность раздела "О Сексе"
+$ nsp_germiona_menu_maniak = -1  # Гермиона: Доступность раздела "Маньяк"
+$ nsp_germiona_menu_nude = 0  # Гермиона: Доступность раздела "Голый репортер в маске"
+$ nsp_germiona_menu_forest = -1  # Гермиона: Доступность раздела "Запретный лес"
+$ nsp_germiona_menu_studio = 1  # Гермиона: Доступность раздела "Студия у Джина"
+
+$ nsp_event_rights_1 = 0
+$ nsp_event_rights_2 = 0
+$ nsp_event_rights_3 = 0
+$ nsp_event_rights_4 = 0
+$ nsp_event_rights_5 = 0
+
+$ nsp_event_magls_1 = 0
+$ nsp_event_magls_2 = 0
+$ nsp_event_magls_3 = 0
+$ nsp_event_magls_4 = 0
+$ nsp_event_magls_5 = 0
+
+$ nsp_event_kviddich_1 = 0
+$ nsp_event_kviddich_2 = 0
+$ nsp_event_kviddich_3 = 0
+$ nsp_event_kviddich_4 = 0
+$ nsp_event_kviddich_5 = 0
+$ nsp_event_kviddich_6 = 0
+
+$ nsp_event_sex_1 = 0
+$ nsp_event_sex_2 = 0
+$ nsp_event_sex_3 = 0
+$ nsp_event_sex_4 = 0
+$ nsp_event_sex_5 = 0
+
+$ nsp_event_maniak_1 = 0
+$ nsp_event_maniak_2 = 0
+$ nsp_event_maniak_3 = 0
+
+$ nsp_event_nude_1 = 0
+$ nsp_event_nude_2 = 0
+$ nsp_event_nude_3 = 0
+$ nsp_event_nude_4 = 0
+$ nsp_event_nude_5 = 0
+
+$ nsp_event_forest_1 = 0
+$ nsp_event_forest_2 = 0
+
+$ nsp_event_studio_1 = 0
+$ nsp_event_studio_2 = 0
+$ nsp_event_studio_3 = 0
+$ nsp_event_studio_4 = 0
+$ nsp_event_studio_5 = 0
+$ nsp_event_studio_6 = 0
+
+### DR'S DEBUG ###
 $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не было, 1 - есть, 2 - уже прочитано.
 $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
-$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
+#$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
+$ nsp_newspaper_menu = 6
+
+###
 
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
