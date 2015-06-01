@@ -84,7 +84,7 @@ $ nsp_genie_sphere_sapphire_level = 0 # Джин: Уровень сапфира 
 $ nsp_genie_sphare_video = False # Джин: Наличие навыка переноса видео в газету
 
 $ nsp_germiona_mediasex = 0 # Гермиона: Медиа-развращенность
-$ nsp_germiona_impudence = 0 # Гермиона: Наглость/смелость
+$ nsp_germiona_impudence = 0 # Гермиона: Наглость
 $ nsp_germiona_artistry = 0 # Гермиона: Артистичность
 $ nsp_germiona_anon_rights = 100 # Гермиона: Анонимность в "Права и дискриминация"
 $ nsp_germiona_anon_magls = 100 # Гермиона: Анонимность в "О жизни маглов публично"

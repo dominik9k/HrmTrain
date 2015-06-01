@@ -47,6 +47,51 @@ label nsp_newsp_themes:
     $ nsp_germiona_statimg_forest = "Block"  # Гермиона: Доступность раздела "Запретный лес"
     $ nsp_germiona_statimg_studio = "Block"  # Гермиона: Доступность раздела "Студия у Джина"
     
+    $ nsp_germiona_rights_1_statimg = "Block"
+    $ nsp_germiona_rights_2_statimg = "Block"
+    $ nsp_germiona_rights_3_statimg = "Block"
+    $ nsp_germiona_rights_4_statimg = "Block"
+    $ nsp_germiona_rights_5_statimg = "Block"
+    
+    $ nsp_germiona_magls_1_statimg = "Block"
+    $ nsp_germiona_magls_2_statimg = "Block"
+    $ nsp_germiona_magls_3_statimg = "Block"
+    $ nsp_germiona_magls_4_statimg = "Block"
+    $ nsp_germiona_magls_5_statimg = "Block"
+    
+    $ nsp_germiona_kviddich_1_statimg = "Block"
+    $ nsp_germiona_kviddich_2_statimg = "Block"
+    $ nsp_germiona_kviddich_3_statimg = "Block"
+    $ nsp_germiona_kviddich_4_statimg = "Block"
+    $ nsp_germiona_kviddich_5_statimg = "Block"
+    $ nsp_germiona_kviddich_6_statimg = "Block"
+    
+    $ nsp_germiona_sex_1_statimg = "Block"
+    $ nsp_germiona_sex_2_statimg = "Block"
+    $ nsp_germiona_sex_3_statimg = "Block"
+    $ nsp_germiona_sex_4_statimg = "Block"
+    $ nsp_germiona_sex_5_statimg = "Block"
+    
+    $ nsp_germiona_maniak_1_statimg = "Block"
+    $ nsp_germiona_maniak_2_statimg = "Block"
+    $ nsp_germiona_maniak_3_statimg = "Block"
+    
+    $ nsp_germiona_nude_1_statimg = "Block"
+    $ nsp_germiona_nude_2_statimg = "Block"
+    $ nsp_germiona_nude_3_statimg = "Block"
+    $ nsp_germiona_nude_4_statimg = "Block"
+    $ nsp_germiona_nude_5_statimg = "Block"
+    
+    $ nsp_germiona_forest_1_statimg = "Block"
+    $ nsp_germiona_forest_2_statimg = "Block"
+    
+    $ nsp_germiona_studio_1_statimg = "Block"
+    $ nsp_germiona_studio_2_statimg = "Block"
+    $ nsp_germiona_studio_3_statimg = "Block"
+    $ nsp_germiona_studio_4_statimg = "Block"
+    $ nsp_germiona_studio_5_statimg = "Block"
+    $ nsp_germiona_studio_6_statimg = "Block"
+    
     if nsp_germiona_menu_rights == 1:
         $ nsp_germiona_statimg_rights = "New"
     if nsp_germiona_menu_magls == 1:
@@ -63,6 +108,23 @@ label nsp_newsp_themes:
         $ nsp_germiona_statimg_forest = "New"
     if nsp_germiona_menu_studio == 1:
         $ nsp_germiona_statimg_studio = "New"
+        
+    if nsp_germiona_menu_rights == 2:
+        $ nsp_germiona_statimg_rights = "New"
+    if nsp_germiona_menu_magls == 2:
+        $ nsp_germiona_statimg_magls = "New"
+    if nsp_germiona_menu_kviddich == 2:
+        $ nsp_germiona_statimg_kviddich = "New"
+    if nsp_germiona_menu_sex == 2:
+        $ nsp_germiona_statimg_sex = "New"
+    if nsp_germiona_menu_maniak == 2:
+        $ nsp_germiona_statimg_maniak = "New"
+    if nsp_germiona_menu_nude == 2:
+        $ nsp_germiona_statimg_nude = "New"
+    if nsp_germiona_menu_forest == 2:
+        $ nsp_germiona_statimg_forest = "New"
+    if nsp_germiona_menu_studio == 2:
+        $ nsp_germiona_statimg_studio = "New"    
     
 
 #    call nsp_events_init
@@ -74,7 +136,7 @@ label nsp_newsp_themes:
             if nsp_germiona_menu_rights == 1 :
                 $ nsp_germiona_menu_rights = 2
         
-#            if nsp_germiona_menu_rights == 1 :
+#            if nsp_germiona_menu_rights == 2 :
 #                menu:
 
             jump hermione_goout
@@ -159,6 +221,7 @@ label nsp_newsp_themes:
             jump hermione_main_menu
 
 #label nsp_events_init:
-    
+
+#    $ nsp_event_
 
             
