@@ -27,11 +27,13 @@ label lrm_stats_00:
 
 label lrm_stats:
     $ hat_examined = True
+    
+### DR'S NEWSPAPER ooo Добавление новых параметров по мере их открытия в игре.###
     $ par1_add1 = ""
     $ par1_add2 = ""
     $ par1_add3 = ""
-    if nsp_germiona_mediasex > 0:
-        $ par1_add1 = "{size=-6}Медиа-развр.:{/size}{size=-4} [nsp_germiona_mediasex]{/size}\n                    {size=-6}{/size}"
+    if nsp_germiona_mediawhoring > 0:
+        $ par1_add1 = "{size=-6}Медиа-развр.:{/size}{size=-4} [nsp_germiona_mediawhoring]{/size}\n                    {size=-6}{/size}"
     if nsp_germiona_impudence > 0:
         $ par1_add2 = "{size=-6}Наглость:{/size}{size=-4} [nsp_germiona_impudence]{/size}\n                    {size=-6}{/size}"
     if nsp_germiona_artistry > 0:
@@ -64,6 +66,7 @@ label lrm_stats:
         par3="{size=-3}Снейп{/size}          {size=-6}Откровенность: {/size}"
         "{size=-4}[snape_friendship]{/size}\n                     {size=-6}Дружба:{/size} {size=-6}[snape_events]{/size}",
         )
+###
 # Если этого не делать, то при включенной ускоренной прокрутке окно появляется и тут же исчезает. 
 # Если ставить, то при ускоренной прокрутке чтобы окно исчезло нужно щелкать дважды. 
 # Пока непонятно почему так, но это намного предпочтительнее мелькания

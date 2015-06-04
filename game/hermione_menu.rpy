@@ -41,7 +41,22 @@ label hermione_approaching:
             jump nsp_hermione_pre1
             
         "- Дать журналистское задание -" if nsp_newspaper_menu == 6:
-            jump nsp_newsp_themes
+            if hermi.liking==0:
+                jump nsp_newsp_themes
+            python:
+                for t in [
+                (-2, "Мне жаль, профессор, может быть в другой раз..."),
+                (-9, "Мне не хочется сегодня...\nМожет быть через пару дней..."),
+                (-19, "Нет, спасибо...."),
+                (-29, "После того, что вы сделали?\nЯ так не думаю..."),
+                (-39, "Вы серьезно!?"),
+                (-100, "Это какая-то ваша пошлая шутка?!\nПосле того, что вы сделали, я не хочу повторять это!")
+                ]:
+                    (_val, _text)=t
+                    if hermi.liking>=_val:
+                        renpy.say(her, _text)
+                        break
+            jump hermione_main_menu
 
 ###
         "- Поговорить -" if not chitchated_with_her:

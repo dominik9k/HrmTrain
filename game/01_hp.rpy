@@ -83,7 +83,7 @@ $ nsp_genie_sphere_diamond_level = 0 # Джин: Уровень алмаза д�
 $ nsp_genie_sphere_sapphire_level = 0 # Джин: Уровень сапфира для шара
 $ nsp_genie_sphare_video = False # Джин: Наличие навыка переноса видео в газету
 
-$ nsp_germiona_mediasex = 0 # Гермиона: Медиа-развращенность
+$ nsp_germiona_mediawhoring = 0 # Гермиона: Медиа-развращенность
 $ nsp_germiona_impudence = 0 # Гермиона: Наглость
 $ nsp_germiona_artistry = 0 # Гермиона: Артистичность
 $ nsp_germiona_anon_rights = 100 # Гермиона: Анонимность в "Права и дискриминация"
@@ -118,6 +118,7 @@ $ nsp_germiona_menu_nude = 0  # Гермиона: Доступность раз�
 $ nsp_germiona_menu_forest = -1  # Гермиона: Доступность раздела "Запретный лес"
 $ nsp_germiona_menu_studio = 1  # Гермиона: Доступность раздела "Студия у Джина"
 
+### Events flags
 $ nsp_event_rights_1 = 0
 $ nsp_event_rights_2 = 0
 $ nsp_event_rights_3 = 0
@@ -162,6 +163,25 @@ $ nsp_event_studio_3 = 0
 $ nsp_event_studio_4 = 0
 $ nsp_event_studio_5 = 0
 $ nsp_event_studio_6 = 0
+
+### Letters flags
+
+$ nsp_day = 0
+$ nsp_day_letter7 = 0
+
+$ nsp_letter_1 = 0
+$ nsp_letter_2 = 0
+$ nsp_letter_3 = 0
+$ nsp_letter_4 = 0
+$ nsp_letter_5 = 0
+$ nsp_letter_6 = 0
+$ nsp_letter_7 = 0
+$ nsp_letter_8 = 0
+$ nsp_letter_9 = 0
+$ nsp_letter_10 = 0
+$ nsp_letter_11 = 0
+$ nsp_letter_12 = 0
+$ nsp_letter_13 = 0
 
 ### DR'S DEBUG ###
 $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не было, 1 - есть, 2 - уже прочитано.
@@ -539,6 +559,10 @@ if nsp_germiona_anon_forest > 100:
     $ nsp_germiona_anon_forest = 100
 if nsp_germiona_anon_studio > 100:
     $ nsp_germiona_anon_studio = 100
+    
+if nsp_newspaper_menu >= 6 :
+    $ nsp_day += 1
+    $ nsp_day_letter7 += 1
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.
@@ -631,6 +655,24 @@ if day == 12: # LETTER THAT UNLOCKS PAPERWORK BUTTON.
 if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter < 2:
     $ nsp_pre_letter = 1
     $ letters += 1
+
+if nsp_day == 10:
+    $ nsp_letter_1 = 1
+    $ letters += 1
+    
+if nsp_day == 40:
+    $ nsp_letter_2 = 1
+    $ letters += 1
+    
+if nsp_day == 20:
+    $ nsp_letter_9 = 1
+    $ letters += 1
+    
+if nsp_day_letter7 == 4:
+    if one_of_ten <= 4:
+        $ nsp_letter_7 = 1
+        $ letters += 1 
+    $ nsp_day_letter7 = 0
 
 ###
 

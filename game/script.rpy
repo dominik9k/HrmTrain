@@ -208,6 +208,17 @@ init:
 
 # КОНЕЦ ГЛАВНОГО СЦЕНАРИЯ
 
+### DR'S NEWSPAPER ooo ###
+
+        tu=["rights_1","rights_2","rights_3","rights_4","rights_5"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+
+###
+
 # ВЕТКА ДАФНЫ
 # Ветка включается при вызове Снейпа ночью после того, как отработает ивент со Cнейпом, где он хвалится как трахает студенток
         this.Where({"SNAPE"},"daphne").AddStep("daphne_pre_01",        ready = lambda e: snape_events >= 6) 
