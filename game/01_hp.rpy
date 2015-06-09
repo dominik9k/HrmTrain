@@ -563,6 +563,17 @@ if nsp_germiona_anon_studio > 100:
 if nsp_newspaper_menu >= 6 :
     $ nsp_day += 1
     $ nsp_day_letter7 += 1
+    
+if nsp_letter_7 == 3:
+    $ nsp_letter_7 = 0
+    $ letters -= 1
+
+# На случай бага-пересечения с другим письмом.
+if nsp_letter_7 == 2:
+    $ nsp_letter_7 = 0
+    
+if nsp_letter_7 == 1:
+    $ nsp_letter_7 = 2
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.
@@ -652,10 +663,10 @@ if day == 12: # LETTER THAT UNLOCKS PAPERWORK BUTTON.
 
 ### DR'S NEWSPAPER ooo ###
 
-if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter < 2:
+if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter < 1:
     $ nsp_pre_letter = 1
     $ letters += 1
-
+    
 if nsp_day == 10:
     $ nsp_letter_1 = 1
     $ letters += 1
@@ -667,9 +678,9 @@ if nsp_day == 40:
 if nsp_day == 20:
     $ nsp_letter_9 = 1
     $ letters += 1
-    
-if nsp_day_letter7 == 4:
-    if one_of_ten <= 4:
+
+if nsp_day_letter7 == 4 and nsp_letter_7 == 0:
+    if one_of_ten <= 10:
         $ nsp_letter_7 = 1
         $ letters += 1 
     $ nsp_day_letter7 = 0
