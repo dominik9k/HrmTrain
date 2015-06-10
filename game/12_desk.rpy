@@ -277,7 +277,6 @@ label desk:
                                     $ nsp_newspaper_cur_money = int((nsp_newspaper_qual + (nsp_newspaper_bonus_point/10) ) * (0.7 + (one_of_ten * 0.06) ))
                                     
                                     $ nsp_newspaper_published = True
-                                    $ letters += 1
                                     $ nsp_genie_typographic_exp += 1
                                     
                                     ">Вы поставили на свежий выпуск газеты магический штамп и лист исчез с тихим шуршанием, чтобы спустя мгновение возникнуть на стенде главного холла вместо прежнего."

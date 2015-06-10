@@ -288,7 +288,7 @@ if total_report >= 10 and letter_from_ficbook_fun == False:
 if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter == 1:
     jump newsp_pre_letter
 
-if nsp_newspaper_published == True:
+if nsp_newspaper_published_mail == True:
     jump newsp_letter
     
 if nsp_letter_1 == 1:

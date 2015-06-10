@@ -39,8 +39,12 @@ label hermione_approaching:
 
         "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4 or nsp_newspaper_menu == 5 :
             jump nsp_hermione_pre1
-            
-        "- Дать журналистское задание -" if nsp_newspaper_menu == 6:
+
+        "{color=#858585}- Дать журналистское задание -{/color}" if nsp_newspaper_menu == 6 and not daytime :
+            ">Журналистские задания недоступны в это время суток."
+            jump hermione_main_menu
+             
+        "- Дать журналистское задание -" if nsp_newspaper_menu == 6 and daytime :
             if hermi.liking==0:
                 jump nsp_newsp_themes
             python:

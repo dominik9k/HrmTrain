@@ -210,12 +210,26 @@ init:
 
 ### DR'S NEWSPAPER ooo ###
 
-        tu=["rights_1","rights_2","rights_3","rights_4","rights_5"]
+        tu=["rights_1","rights_2","rights_3","rights_4","rights_5"] #,"magls_1","magls_2","magls_3","magls_4","magls_5","kviddich_1","kviddich_2","kviddich_3","kviddich_4","kviddich_5","kviddich_6"]
         for s in tu:
             s="nsp_event_"+s
             this.AddEvent(s) 
             s+="_complete"
             this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+#        tu=["sex_1","sex_2","sex_3","sex_4","sex_5","maniac_1","maniac_2","maniac_3","nude_1","nude_2","nude_3","nude_4","nude_5"]
+#        for s in tu:
+#            s="nsp_event_"+s
+#            this.AddEvent(s) 
+#            s+="_complete" 
+#            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+#        tu=["forest_1","forest_2","studio_1","studio_2","studio_3","studio_4","studio_5","studio_6"]
+#        for s in tu:
+#            s="nsp_event_"+s
+#            this.AddEvent(s) 
+#            s+="_complete"
+#            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
 
 ###
 
