@@ -170,15 +170,7 @@ label desk:
             $ desk_examined = True
             m "Обычный стол..."
             jump day_main_menu
-        "- Делать бумажную работу -" if finished_report < 6 and not got_paycheck and not day == 1 and work_unlock2:
-            jump paperwork
-        "{color=#858585}- Делать бумажную работу -{/color}" if finished_report >= 6 and not got_paycheck:
-            m "Я уже завершил шесть отчетов на этой неделе."
-            jump desk
-        "{color=#858585}- Делать бумажную работу -{/color}" if got_paycheck: # When TRUE paycheck is in the mail.
-            m "Сначала мне нужно получить оплату."
-            jump desk
-
+            
 ### DR'S NEWSPAPER ooo ###
 
         "- Писать статьи для газеты -" if nsp_newspaper_articles < 8 and nsp_newspaper_menu > 0 and nsp_newspaper_ready == False and nsp_newspaper_published == False:
@@ -193,7 +185,17 @@ label desk:
             m "Газета была недавно опубликована. Перед продолжением работы нужно прочитать отзыв из министерства."
             jump desk
             
-###           
+###   
+            
+        "- Делать бумажную работу -" if finished_report < 6 and not got_paycheck and not day == 1 and work_unlock2:
+            jump paperwork
+        "{color=#858585}- Делать бумажную работу -{/color}" if finished_report >= 6 and not got_paycheck:
+            m "Я уже завершил шесть отчетов на этой неделе."
+            jump desk
+        "{color=#858585}- Делать бумажную работу -{/color}" if got_paycheck: # When TRUE paycheck is in the mail.
+            m "Сначала мне нужно получить оплату."
+            jump desk
+        
         "- Книжная коллекция -" if not day == 1 and cataloug_found: 
             label books_list:
                 $choose=None

@@ -93,7 +93,7 @@ $ nsp_germiona_anon_rights = 100 # Гермиона: Анонимность в "
 $ nsp_germiona_anon_magls = 100 # Гермиона: Анонимность в "О жизни маглов публично"
 $ nsp_germiona_anon_kviddich = 100  # Гермиона: Анонимность в "О квиддиче"
 $ nsp_germiona_anon_sex = 100  # Гермиона: Анонимность в "О Сексе"
-$ nsp_germiona_anon_maniak = 100  # Гермиона: Анонимность в "Маньяк"
+$ nsp_germiona_anon_maniac = 100  # Гермиона: Анонимность в "Маньяк"
 $ nsp_germiona_anon_nude = 100  # Гермиона: Анонимность в "Голый репортер в маске"
 $ nsp_germiona_anon_forest = 100  # Гермиона: Анонимность в "Запретный лес"
 $ nsp_germiona_anon_studio = 100  # Гермиона: Анонимность в "Студия у Джина"
@@ -116,10 +116,10 @@ $ nsp_pre_jobs_max = 0 # Подсчет максимального числа о
 $ nsp_germiona_menu_rights = 1 # Гермиона: Доступность раздела "Права и дискриминация"
 $ nsp_germiona_menu_magls = 1 # Гермиона: Доступность раздела "О жизни маглов публично"
 $ nsp_germiona_menu_kviddich = 1  # Гермиона: Доступность раздела "О квиддиче"
-$ nsp_germiona_menu_sex = 0  # Гермиона: Доступность раздела "О Сексе"
-$ nsp_germiona_menu_maniak = -1  # Гермиона: Доступность раздела "Маньяк"
-$ nsp_germiona_menu_nude = 0  # Гермиона: Доступность раздела "Голый репортер в маске"
-$ nsp_germiona_menu_forest = -1  # Гермиона: Доступность раздела "Запретный лес"
+$ nsp_germiona_menu_sex = 1  # Гермиона: Доступность раздела "О Сексе"
+$ nsp_germiona_menu_maniac = 1  # Гермиона: Доступность раздела "Маньяк"
+$ nsp_germiona_menu_nude = 1  # Гермиона: Доступность раздела "Голый репортер в маске"
+$ nsp_germiona_menu_forest = 1  # Гермиона: Доступность раздела "Запретный лес"
 $ nsp_germiona_menu_studio = 1  # Гермиона: Доступность раздела "Студия у Джина"
 
 ### Events flags
@@ -148,9 +148,9 @@ $ nsp_event_sex_3 = 0
 $ nsp_event_sex_4 = 0
 $ nsp_event_sex_5 = 0
 
-$ nsp_event_maniak_1 = 0
-$ nsp_event_maniak_2 = 0
-$ nsp_event_maniak_3 = 0
+$ nsp_event_maniac_1 = 0
+$ nsp_event_maniac_2 = 0
+$ nsp_event_maniac_3 = 0
 
 $ nsp_event_nude_1 = 0
 $ nsp_event_nude_2 = 0
@@ -542,7 +542,7 @@ $ nsp_germiona_anon_rights += 10
 $ nsp_germiona_anon_magls += 10
 $ nsp_germiona_anon_kviddich += 10
 $ nsp_germiona_anon_sex += 10
-$ nsp_germiona_anon_maniak += 10
+$ nsp_germiona_anon_maniac += 10
 $ nsp_germiona_anon_nude += 10
 $ nsp_germiona_anon_forest += 10
 $ nsp_germiona_anon_studio += 10
@@ -555,8 +555,8 @@ if nsp_germiona_anon_kviddich > 100:
     $ nsp_germiona_anon_kviddich = 100
 if nsp_germiona_anon_sex > 100:
     $ nsp_germiona_anon_sex = 100
-if nsp_germiona_anon_maniak > 100:
-    $ nsp_germiona_anon_maniak = 100
+if nsp_germiona_anon_maniac > 100:
+    $ nsp_germiona_anon_maniac = 100
 if nsp_germiona_anon_nude > 100:
     $ nsp_germiona_anon_nude = 100
 if nsp_germiona_anon_forest > 100:
