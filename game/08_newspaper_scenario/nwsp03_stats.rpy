@@ -81,7 +81,7 @@ label newsp_stats_00:
     "{size=-4} Качество печати газеты:\n[nsp_genie_typographic] ([nsp_genie_typographic_text]){/size}\n"
     "{size=-4} Качество статей газеты:\n[nsp_genie_writer] ([nsp_genie_writer_text]){/size}\n"
     "{size=-4} Качество украшений газеты:\n[nsp_genie_photocamera] ([nsp_genie_photocamera_text]){/size}\n"
-    "{size=-4} Бонусный контент:\nнет{/size}\n"
+    "{size=-4} Бонусный контент:\n[nsp_newspaper_bonus_text]{/size}\n"
     "{size=-4} Качество бонусного контента:\n[nsp_newspaper_bonus_point]{/size}\n"
     "{size=-4} Прошлая награда:\n[nsp_newspaper_last_money] {/size}\n",
         )

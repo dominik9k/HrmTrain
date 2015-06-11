@@ -19,6 +19,9 @@ label nsp_event_rights_1_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о правах "
+    $ nsp_genie_sphere_diamond_req = 1
+    
     if nsp_germiona_rights_1_statimg == "New" :
         $ cur_level = nsp_event_rights_1 + 1
     else :
@@ -33,6 +36,10 @@ label nsp_event_rights_1_complete :
             $ nsp_germiona_mediawhoring += 1
             
         $ nsp_event_rights_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 10
+        
+        call nsp_bonus_calc
             
     elif cur_level == 2 :
         ">текст ивента прав 1-2"
@@ -43,6 +50,10 @@ label nsp_event_rights_1_complete :
             $ nsp_germiona_mediawhoring += 1
             
         $ nsp_event_rights_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 20
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента прав 1-3" 
@@ -53,6 +64,10 @@ label nsp_event_rights_1_complete :
             $ nsp_germiona_mediawhoring += 1
             
         $ nsp_event_rights_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 30
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента прав 1-4"  
@@ -67,6 +82,10 @@ label nsp_event_rights_1_complete :
             
         $ nsp_event_rights_1 = cur_level
         
+        $ nsp_newspaper_bonus_base = 40
+
+        call nsp_bonus_calc
+        
     elif cur_level == 5 :
         ">текст ивента прав 1-5"
         
@@ -79,6 +98,10 @@ label nsp_event_rights_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 60
+
+        call nsp_bonus_calc
         
 
     call nsp_hermione_goout
@@ -113,6 +136,9 @@ label nsp_event_rights_2_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о правах "
+    $ nsp_genie_sphere_diamond_req = 1
+    
     if nsp_germiona_rights_2_statimg == "New" :
         $ cur_level = nsp_event_rights_2 + 1
     else :
@@ -126,7 +152,11 @@ label nsp_event_rights_2_complete :
         elif nsp_germiona_mediawhoring < 30 :
             $ nsp_germiona_mediawhoring += 1
             
-        $ nsp_event_rights_2 = cur_level        
+        $ nsp_event_rights_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 20
+
+        call nsp_bonus_calc        
 
     elif cur_level == 2 :
         ">текст ивента прав 2-2"
@@ -137,6 +167,10 @@ label nsp_event_rights_2_complete :
             $ nsp_germiona_mediawhoring += 1
             
         $ nsp_event_rights_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 30
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента прав 2-3"   
@@ -150,6 +184,10 @@ label nsp_event_rights_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 40
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента прав 2-4"            
@@ -163,6 +201,10 @@ label nsp_event_rights_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 60
+
+        call nsp_bonus_calc
             
     elif cur_level == 5 :
         ">текст ивента прав 2-5" 
@@ -176,6 +218,10 @@ label nsp_event_rights_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 80
+
+        call nsp_bonus_calc
 
     call nsp_hermione_goout
 
@@ -204,6 +250,9 @@ label nsp_event_rights_3_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о правах "
+    $ nsp_genie_sphere_diamond_req = 4
+    
     if nsp_germiona_rights_3_statimg == "New" :
         $ cur_level = nsp_event_rights_3 + 1
     else :
@@ -219,6 +268,10 @@ label nsp_event_rights_3_complete :
             
         $ nsp_event_rights_3 = cur_level
         
+        $ nsp_newspaper_bonus_base = 10
+
+        call nsp_bonus_calc
+        
     elif cur_level == 2 :
         ">текст ивента прав 3-2"
         
@@ -232,6 +285,10 @@ label nsp_event_rights_3_complete :
             
         $ nsp_event_rights_3 = cur_level
         
+        $ nsp_newspaper_bonus_base = 30
+
+        call nsp_bonus_calc
+        
     elif cur_level == 3 :
         ">текст ивента прав 3-3" 
         
@@ -243,7 +300,13 @@ label nsp_event_rights_3_complete :
         if nsp_germiona_impudence < 20 :
             $ nsp_germiona_impudence += 1 
             
-        $ nsp_event_rights_3 = cur_level  
+        $ nsp_event_rights_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 60
+
+        call nsp_bonus_calc
+        
+        $ hermi.liking -= 10
         
     elif cur_level == 4 :
         ">текст ивента прав 3-4" 
@@ -257,6 +320,10 @@ label nsp_event_rights_3_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 80
+
+        call nsp_bonus_calc
             
     elif cur_level == 5 :
         ">текст ивента прав 3-5"  
@@ -270,6 +337,10 @@ label nsp_event_rights_3_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 100
+
+        call nsp_bonus_calc
             
 
     call nsp_hermione_goout
@@ -299,6 +370,9 @@ label nsp_event_rights_4_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о правах "
+    $ nsp_genie_sphere_diamond_req = 2
+    
     if nsp_germiona_rights_4_statimg == "New" :
         $ cur_level = nsp_event_rights_4 + 1
     else :
@@ -314,6 +388,10 @@ label nsp_event_rights_4_complete :
             
         $ nsp_event_rights_4 = cur_level
         
+        $ nsp_newspaper_bonus_base = 40
+
+        call nsp_bonus_calc
+        
     elif cur_level == 2 :
         ">текст ивента прав 4-2"
         
@@ -323,6 +401,10 @@ label nsp_event_rights_4_complete :
             $ nsp_germiona_mediawhoring += 1
             
         $ nsp_event_rights_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 50
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента прав 4-3" 
@@ -336,6 +418,10 @@ label nsp_event_rights_4_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 70
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента прав 4-4"  
@@ -349,6 +435,10 @@ label nsp_event_rights_4_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 100
+
+        call nsp_bonus_calc
             
     elif cur_level == 5 :
         ">текст ивента прав 4-5"  
@@ -362,6 +452,12 @@ label nsp_event_rights_4_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 130
+
+        call nsp_bonus_calc
+        
+        $ hermi.liking -= 2
             
 
     call nsp_hermione_goout
@@ -395,6 +491,9 @@ label nsp_event_rights_5_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о правах "
+    $ nsp_genie_sphere_diamond_req = 2
+    
     if nsp_germiona_rights_5_statimg == "New" :
         $ cur_level = nsp_event_rights_5 + 1
     else :
@@ -412,6 +511,10 @@ label nsp_event_rights_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 30
+
+        call nsp_bonus_calc
 
     elif cur_level == 2 :
         ">текст ивента прав 5-2"  
@@ -425,6 +528,10 @@ label nsp_event_rights_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 70
+
+        call nsp_bonus_calc
 
     elif cur_level == 3 :
         ">текст ивента прав 5-3"   
@@ -438,6 +545,10 @@ label nsp_event_rights_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 80
+
+        call nsp_bonus_calc
            
     elif cur_level == 4 :
         ">текст ивента прав 5-4"   
@@ -451,6 +562,10 @@ label nsp_event_rights_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 110
+
+        call nsp_bonus_calc
            
     elif cur_level == 5 :
         ">текст ивента прав 5-5"   
@@ -464,6 +579,10 @@ label nsp_event_rights_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 140
+
+        call nsp_bonus_calc
  
     elif cur_level == 6 :
         ">текст ивента прав 5-6"     
@@ -477,6 +596,10 @@ label nsp_event_rights_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 170
+
+        call nsp_bonus_calc
  
     elif cur_level == 7 :
         ">текст ивента прав 5-7"  
@@ -490,6 +613,10 @@ label nsp_event_rights_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_rights_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 190
+
+        call nsp_bonus_calc
 
 
     call nsp_hermione_goout

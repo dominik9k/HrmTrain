@@ -17,6 +17,9 @@ label nsp_event_maniac_1_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о маньяке "
+    $ nsp_genie_sphere_diamond_req = 3
+    
     if nsp_germiona_maniac_1_statimg == "New" :
         $ cur_level = nsp_event_maniac_1 + 1
     else :
@@ -34,6 +37,10 @@ label nsp_event_maniac_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 60
+
+        call nsp_bonus_calc
             
     elif cur_level == 2 :
         ">текст ивента маньяка 1-2"
@@ -47,6 +54,10 @@ label nsp_event_maniac_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 70
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента маньяка 1-3" 
@@ -60,6 +71,10 @@ label nsp_event_maniac_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 90
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента маньяка 1-4"  
@@ -73,6 +88,10 @@ label nsp_event_maniac_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 100
+
+        call nsp_bonus_calc
         
 
     call nsp_hermione_goout
@@ -104,6 +123,9 @@ label nsp_event_maniac_2_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о маньяке "
+    $ nsp_genie_sphere_diamond_req = 3
+    
     if nsp_germiona_maniac_2_statimg == "New" :
         $ cur_level = nsp_event_maniac_2 + 1
     else :
@@ -120,7 +142,11 @@ label nsp_event_maniac_2_complete :
         if nsp_germiona_impudence < 60 :
             $ nsp_germiona_impudence += 1
             
-        $ nsp_event_maniac_2 = cur_level        
+        $ nsp_event_maniac_2 = cur_level  
+        
+        $ nsp_newspaper_bonus_base = 110
+
+        call nsp_bonus_calc      
 
     elif cur_level == 2 :
         ">текст ивента маньяка 2-2"
@@ -134,6 +160,10 @@ label nsp_event_maniac_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 115
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента маньяка 2-3"   
@@ -147,6 +177,10 @@ label nsp_event_maniac_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 120
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента маньяка 2-4"            
@@ -160,6 +194,10 @@ label nsp_event_maniac_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 140
+
+        call nsp_bonus_calc
  
 
     call nsp_hermione_goout
@@ -189,6 +227,9 @@ label nsp_event_maniac_3_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о маньяке "
+    $ nsp_genie_sphere_diamond_req = 3
+    
     if nsp_germiona_maniac_3_statimg == "New" :
         $ cur_level = nsp_event_maniac_3 + 1
     else :
@@ -207,6 +248,10 @@ label nsp_event_maniac_3_complete :
             
         $ nsp_event_maniac_3 = cur_level
         
+        $ nsp_newspaper_bonus_base = 130
+
+        call nsp_bonus_calc
+        
     elif cur_level == 2 :
         ">текст ивента маньяка 3-2"
         
@@ -220,6 +265,12 @@ label nsp_event_maniac_3_complete :
             
         $ nsp_event_maniac_3 = cur_level
         
+        $ nsp_newspaper_bonus_base = 160
+
+        call nsp_bonus_calc
+        
+        $ hermi.liking -= 4
+        
     elif cur_level == 3 :
         ">текст ивента маньяка 3-3" 
         
@@ -231,7 +282,13 @@ label nsp_event_maniac_3_complete :
         if nsp_germiona_impudence < 70 :
             $ nsp_germiona_impudence += 1 
             
-        $ nsp_event_maniac_3 = cur_level  
+        $ nsp_event_maniac_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 195
+
+        call nsp_bonus_calc
+        
+        $ hermi.liking -= 6
         
     elif cur_level == 4 :
         ">текст ивента маньяка 3-4" 
@@ -245,6 +302,10 @@ label nsp_event_maniac_3_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 220
+
+        call nsp_bonus_calc
             
     elif cur_level == 5 :
         ">текст ивента маньяка 3-5"  
@@ -258,6 +319,10 @@ label nsp_event_maniac_3_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_maniac_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 230
+
+        call nsp_bonus_calc
             
 
     call nsp_hermione_goout

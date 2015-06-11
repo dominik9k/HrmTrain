@@ -2140,3 +2140,157 @@ else:
     $ hermione_sleeping = True
         
     return
+    
+label nsp_bonus_calc :
+    
+    $ nsp_photo_koef = 0
+    $ nsp_ruby_koef = 0
+    $ nsp_saphire_koef = 0
+    
+    if nsp_genie_photocamera == 0 :
+        $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
+        $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base)
+        return
+    
+    if not nsp_genie_sphere_video :
+        if nsp_genie_photocamera == 1 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с ч/б фото"
+            $ nsp_photo_koef = 2
+        elif nsp_genie_photocamera == 2 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с цв. фото"
+            $ nsp_photo_koef = 4
+        elif nsp_genie_photocamera == 3 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с 3д-фото"
+            $ nsp_photo_koef = 6
+        elif nsp_genie_photocamera == 4 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с живыми фото"
+            $ nsp_photo_koef = 10
+            
+        if nsp_genie_sphere_ruby_level_eff == 0 :
+            $ nsp_ruby_koef = 0
+        elif nsp_genie_sphere_ruby_level_eff == 1 :
+            $ nsp_ruby_koef = 1
+        elif nsp_genie_sphere_ruby_level_eff == 2 :
+            $ nsp_ruby_koef = 1.3
+        elif nsp_genie_sphere_ruby_level_eff == 3 :
+            $ nsp_ruby_koef = 1.5
+        elif nsp_genie_sphere_ruby_level_eff == 4 :
+            $ nsp_ruby_koef = 1.7
+        elif nsp_genie_sphere_ruby_level_eff == 5 :
+            $ nsp_ruby_koef = 2
+            
+        if nsp_genie_sphere_sapphire_level_eff == 0 :
+            $ nsp_saphire_koef = 0
+        elif nsp_genie_sphere_sapphire_level_eff == 1 :
+            $ nsp_saphire_koef = 0
+        elif nsp_genie_sphere_sapphire_level_eff == 2 :
+            $ nsp_saphire_koef = 0.1
+        elif nsp_genie_sphere_sapphire_level_eff == 3 :
+            $ nsp_saphire_koef = 0.3
+        elif nsp_genie_sphere_sapphire_level_eff == 4 :
+            $ nsp_saphire_koef = 0.6
+        elif nsp_genie_sphere_sapphire_level_eff == 5 :
+            $ nsp_saphire_koef = 1
+            
+        $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + (nsp_photo_koef * nsp_ruby_koef * nsp_saphire_koef)) )
+        
+        return
+        
+    else :          
+        if nsp_genie_sphere_ruby_level_eff == 0 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base)
+            $ nsp_ruby_koef = 0
+        elif nsp_genie_sphere_ruby_level_eff == 1 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с 30 сек видео"
+            $ nsp_ruby_koef = 15
+        elif nsp_genie_sphere_ruby_level_eff == 2 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с 1 мин видео"
+            $ nsp_ruby_koef = 25
+        elif nsp_genie_sphere_ruby_level_eff == 3 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с 2 мин видео"
+            $ nsp_ruby_koef = 35
+        elif nsp_genie_sphere_ruby_level_eff == 4 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с 5 мин видео"
+            $ nsp_ruby_koef = 55
+        elif nsp_genie_sphere_ruby_level_eff == 5 :
+            $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base) + "\n   с 10 мин видео"
+            $ nsp_ruby_koef = 80
+            
+        if nsp_genie_sphere_sapphire_level_eff == 0 :
+            $ nsp_saphire_koef = 0
+        elif nsp_genie_sphere_sapphire_level_eff == 1 :
+            $ nsp_saphire_koef = 0
+        elif nsp_genie_sphere_sapphire_level_eff == 2 :
+            $ nsp_saphire_koef = 0.1
+        elif nsp_genie_sphere_sapphire_level_eff == 3 :
+            $ nsp_saphire_koef = 0.3
+        elif nsp_genie_sphere_sapphire_level_eff == 4 :
+            $ nsp_saphire_koef = 0.6
+        elif nsp_genie_sphere_sapphire_level_eff == 5 :
+            $ nsp_saphire_koef = 1
+            
+        $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + (nsp_ruby_koef * nsp_saphire_koef)) )
+        
+        return
+
+
+    $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
+    
+    return
+    
+label nsp_bonus_calc_photo :
+    
+    $ nsp_photo_koef = 0
+    
+    if nsp_genie_photocamera == 0 :
+        $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
+        return
+    
+    if nsp_genie_photocamera == 1 :
+        $ nsp_newspaper_bonus_text = "  Ч/б развратные фото\n   Гермионы"
+        $ nsp_photo_koef = 2
+    elif nsp_genie_photocamera == 2 :
+        $ nsp_newspaper_bonus_text = "  Цв развратные фото\n   Гермионы"
+        $ nsp_photo_koef = 4
+    elif nsp_genie_photocamera == 3 :
+        $ nsp_newspaper_bonus_text = "  3д-фото развратные\n   Гермионы"
+        $ nsp_photo_koef = 6
+    elif nsp_genie_photocamera == 4 :
+        $ nsp_newspaper_bonus_text = "  Живые развратные фото\n   Гермионы"
+        $ nsp_photo_koef = 10
+    
+    $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + nsp_photo_koef * 2) * (0.5 + ( nsp_germiona_artistry / 3)) )
+    
+    return
+        
+label nsp_bonus_calc_video :
+    
+    $ nsp_photo_koef = 0
+    
+    if nsp_genie_photocamera == 0 or not nsp_genie_sphere_video :
+        $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
+        return
+              
+    if nsp_genie_sphere_ruby_level_eff == 0 :
+        $ nsp_newspaper_bonus_text = "  Развратная статья\n   о Гермионе"
+        $ nsp_ruby_koef = 0
+    elif nsp_genie_sphere_ruby_level_eff == 1 :
+        $ nsp_newspaper_bonus_text = "  30 сек развратного видео\n   Гермионы"
+        $ nsp_ruby_koef = 15
+    elif nsp_genie_sphere_ruby_level_eff == 2 :
+        $ nsp_newspaper_bonus_text = "  1 мин развратного видео\n   Гермионы"
+        $ nsp_ruby_koef = 25
+    elif nsp_genie_sphere_ruby_level_eff == 3 :
+        $ nsp_newspaper_bonus_text = "  2 мин развратного видео\n   Гермионы"
+        $ nsp_ruby_koef = 35
+    elif nsp_genie_sphere_ruby_level_eff == 4 :
+        $ nsp_newspaper_bonus_text = "  5 мин развратного видео\n   Гермионы"
+        $ nsp_ruby_koef = 55
+    elif nsp_genie_sphere_ruby_level_eff == 5 :
+        $ nsp_newspaper_bonus_text = "  10 мин развратного видео\n   Гермионы"
+        $ nsp_ruby_koef = 80
+            
+    $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + nsp_ruby_koef) )
+        
+    return
+        

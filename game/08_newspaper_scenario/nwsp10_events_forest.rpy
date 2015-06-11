@@ -19,6 +19,9 @@ label nsp_event_forest_1_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о Запретном лесе "
+    $ nsp_genie_sphere_diamond_req = 4
+    
     if nsp_germiona_forest_1_statimg == "New" :
         $ cur_level = nsp_event_forest_1 + 1
     else :
@@ -33,6 +36,10 @@ label nsp_event_forest_1_complete :
             $ nsp_germiona_mediawhoring += 1
             
         $ nsp_event_forest_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 10
+
+        call nsp_bonus_calc
             
     elif cur_level == 2 :
         ">текст ивента леса 1-2"
@@ -46,6 +53,10 @@ label nsp_event_forest_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_forest_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 30
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента леса 1-3" 
@@ -59,6 +70,10 @@ label nsp_event_forest_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_forest_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 70
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента леса 1-4"  
@@ -73,6 +88,10 @@ label nsp_event_forest_1_complete :
             
         $ nsp_event_forest_1 = cur_level
         
+        $ nsp_newspaper_bonus_base = 140
+
+        call nsp_bonus_calc
+        
     elif cur_level == 5 :
         ">текст ивента леса 1-5"
         
@@ -85,6 +104,10 @@ label nsp_event_forest_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_forest_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 200
+
+        call nsp_bonus_calc
         
 
     call nsp_hermione_goout
@@ -119,6 +142,9 @@ label nsp_event_forest_2_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о Запретном лесе "
+    $ nsp_genie_sphere_diamond_req = 4
+    
     if nsp_germiona_forest_2_statimg == "New" :
         $ cur_level = nsp_event_forest_2 + 1
     else :
@@ -135,7 +161,11 @@ label nsp_event_forest_2_complete :
         if nsp_germiona_impudence < 30 :
             $ nsp_germiona_impudence += 1
             
-        $ nsp_event_forest_2 = cur_level        
+        $ nsp_event_forest_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 30
+
+        call nsp_bonus_calc       
 
     elif cur_level == 2 :
         ">текст ивента леса 2-2"
@@ -149,6 +179,10 @@ label nsp_event_forest_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_forest_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 50
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента леса 2-3"   
@@ -162,6 +196,10 @@ label nsp_event_forest_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_forest_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 90
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента леса 2-4"            
@@ -175,6 +213,12 @@ label nsp_event_forest_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_forest_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 90
+
+        call nsp_bonus_calc
+        
+        $ hermi.liking -= 10
             
     elif cur_level == 5 :
         ">текст ивента леса 2-5" 
@@ -188,6 +232,10 @@ label nsp_event_forest_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_forest_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 130
+
+        call nsp_bonus_calc
 
     call nsp_hermione_goout
 

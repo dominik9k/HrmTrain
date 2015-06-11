@@ -85,21 +85,21 @@ $ nsp_genie_sphere_diamond_level = 0 # Джин: Уровень алмаза д�
 $ nsp_genie_sphere_sapphire_level = 0 # Джин: Уровень сапфира для шара
 $ nsp_genie_sphere_video = False # Джин: Наличие навыка переноса видео в газету
 
+$ nsp_genie_sphere_diamond_req = 0
+
+$ nsp_genie_sphere_ruby_level_eff = 0
+$ nsp_genie_sphere_diamond_level_eff = 0
+$ nsp_genie_sphere_sapphire_level_eff = 0
+
 ### DR'S DEBUG
 $ nsp_germiona_mediawhoring = 40 # Гермиона: Медиа-развращенность
 $ nsp_germiona_impudence = 20 # Гермиона: Наглость
 $ nsp_germiona_artistry = 0 # Гермиона: Артистичность
-$ nsp_germiona_anon_rights = 100 # Гермиона: Анонимность в "Права и дискриминация"
-$ nsp_germiona_anon_magls = 100 # Гермиона: Анонимность в "О жизни маглов публично"
-$ nsp_germiona_anon_kviddich = 100  # Гермиона: Анонимность в "О квиддиче"
-$ nsp_germiona_anon_sex = 100  # Гермиона: Анонимность в "О Сексе"
-$ nsp_germiona_anon_maniac = 100  # Гермиона: Анонимность в "Маньяк"
-$ nsp_germiona_anon_nude = 100  # Гермиона: Анонимность в "Голый репортер в маске"
-$ nsp_germiona_anon_forest = 100  # Гермиона: Анонимность в "Запретный лес"
-$ nsp_germiona_anon_studio = 100  # Гермиона: Анонимность в "Студия у Джина"
 
-$ nsp_newspaper_bonus_text = "" # Газета: Текст, описание бонусного контента
+$ nsp_newspaper_bonus_text = "нет" # Газета: Текст, описание бонусного контента
 $ nsp_newspaper_bonus_point = 0 # Газета: Баллы за бонусный контент
+$ nsp_newspaper_bonus_base = 0 # Газета: Базовый бонус эвента
+$ nsp_newspaper_bonus_text_base = 0 # Газета: Базовый текст эвента
 $ nsp_newspaper_lasr_text = "" # Газета: Тект, реакция школы на предыдущий выпуск
 $ nsp_newspaper_last_money = 0 # Газета: Оценка публики, равна деньгам за предыдущий выпуск
 
@@ -537,32 +537,6 @@ $daphne.liking+=1
 
 if nsp_pre_jobs_max < finished_report:
     $ nsp_pre_jobs_max = finished_report
-
-$ nsp_germiona_anon_rights += 10
-$ nsp_germiona_anon_magls += 10
-$ nsp_germiona_anon_kviddich += 10
-$ nsp_germiona_anon_sex += 10
-$ nsp_germiona_anon_maniac += 10
-$ nsp_germiona_anon_nude += 10
-$ nsp_germiona_anon_forest += 10
-$ nsp_germiona_anon_studio += 10
-
-if nsp_germiona_anon_rights > 100:
-    $ nsp_germiona_anon_rights = 100
-if nsp_germiona_anon_magls > 100:
-    $ nsp_germiona_anon_magls = 100
-if nsp_germiona_anon_kviddich > 100:
-    $ nsp_germiona_anon_kviddich = 100
-if nsp_germiona_anon_sex > 100:
-    $ nsp_germiona_anon_sex = 100
-if nsp_germiona_anon_maniac > 100:
-    $ nsp_germiona_anon_maniac = 100
-if nsp_germiona_anon_nude > 100:
-    $ nsp_germiona_anon_nude = 100
-if nsp_germiona_anon_forest > 100:
-    $ nsp_germiona_anon_forest = 100
-if nsp_germiona_anon_studio > 100:
-    $ nsp_germiona_anon_studio = 100
     
 if nsp_newspaper_menu >= 6 :
     $ nsp_day += 1

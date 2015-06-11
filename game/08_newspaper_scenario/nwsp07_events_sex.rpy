@@ -19,6 +19,9 @@ label nsp_event_sex_1_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о сексе "
+    $ nsp_genie_sphere_diamond_req = 2
+    
     if nsp_germiona_sex_1_statimg == "New" :
         $ cur_level = nsp_event_sex_1 + 1
     else :
@@ -33,6 +36,10 @@ label nsp_event_sex_1_complete :
             $ nsp_germiona_mediawhoring += 1
             
         $ nsp_event_sex_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 20
+
+        call nsp_bonus_calc
             
     elif cur_level == 2 :
         ">текст ивента секса 1-2"
@@ -46,6 +53,10 @@ label nsp_event_sex_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 35
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента секса 1-3" 
@@ -59,6 +70,10 @@ label nsp_event_sex_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 70
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента секса 1-4"  
@@ -73,6 +88,10 @@ label nsp_event_sex_1_complete :
             
         $ nsp_event_sex_1 = cur_level
         
+        $ nsp_newspaper_bonus_base = 100
+
+        call nsp_bonus_calc
+        
     elif cur_level == 5 :
         ">текст ивента секса 1-5"
         
@@ -85,6 +104,10 @@ label nsp_event_sex_1_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_1 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 140
+
+        call nsp_bonus_calc
         
 
     call nsp_hermione_goout
@@ -119,6 +142,9 @@ label nsp_event_sex_2_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о сексе "
+    $ nsp_genie_sphere_diamond_req = 2
+    
     if nsp_germiona_sex_2_statimg == "New" :
         $ cur_level = nsp_event_sex_2 + 1
     else :
@@ -135,7 +161,11 @@ label nsp_event_sex_2_complete :
         if nsp_germiona_impudence < 10 :
             $ nsp_germiona_impudence += 1
             
-        $ nsp_event_sex_2 = cur_level        
+        $ nsp_event_sex_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 30
+
+        call nsp_bonus_calc       
 
     elif cur_level == 2 :
         ">текст ивента секса 2-2"
@@ -149,6 +179,10 @@ label nsp_event_sex_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 60
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента секса 2-3"   
@@ -162,6 +196,10 @@ label nsp_event_sex_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 90
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента секса 2-4"            
@@ -175,6 +213,10 @@ label nsp_event_sex_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_2 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 110
+
+        call nsp_bonus_calc
             
     elif cur_level == 5 :
         ">текст ивента секса 2-5" 
@@ -188,6 +230,10 @@ label nsp_event_sex_2_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_2 = cur_level 
+        
+        $ nsp_newspaper_bonus_base = 150
+
+        call nsp_bonus_calc
 
     call nsp_hermione_goout
 
@@ -216,6 +262,9 @@ label nsp_event_sex_3_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о сексе "
+    $ nsp_genie_sphere_diamond_req = 2
+    
     if nsp_germiona_sex_3_statimg == "New" :
         $ cur_level = nsp_event_sex_3 + 1
     else :
@@ -231,6 +280,10 @@ label nsp_event_sex_3_complete :
             
         $ nsp_event_sex_3 = cur_level
         
+        $ nsp_newspaper_bonus_base = 40
+
+        call nsp_bonus_calc
+        
     elif cur_level == 2 :
         ">текст ивента секса 3-2"
         
@@ -243,6 +296,10 @@ label nsp_event_sex_3_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 50
+
+        call nsp_bonus_calc
         
     elif cur_level == 3 :
         ">текст ивента секса 3-3" 
@@ -257,6 +314,10 @@ label nsp_event_sex_3_complete :
             
         $ nsp_event_sex_3 = cur_level  
         
+        $ nsp_newspaper_bonus_base = 85
+
+        call nsp_bonus_calc
+        
     elif cur_level == 4 :
         ">текст ивента секса 3-4" 
         
@@ -269,6 +330,10 @@ label nsp_event_sex_3_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 115
+
+        call nsp_bonus_calc
             
     elif cur_level == 5 :
         ">текст ивента секса 3-5"  
@@ -282,6 +347,10 @@ label nsp_event_sex_3_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_3 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 145
+
+        call nsp_bonus_calc
             
 
     call nsp_hermione_goout
@@ -311,6 +380,9 @@ label nsp_event_sex_4_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о сексе "
+    $ nsp_genie_sphere_diamond_req = 2
+    
     if nsp_germiona_sex_4_statimg == "New" :
         $ cur_level = nsp_event_sex_4 + 1
     else :
@@ -329,6 +401,10 @@ label nsp_event_sex_4_complete :
             
         $ nsp_event_sex_4 = cur_level
         
+        $ nsp_newspaper_bonus_base = 55
+
+        call nsp_bonus_calc
+        
     elif cur_level == 2 :
         ">текст ивента секса 4-2"
         
@@ -341,6 +417,10 @@ label nsp_event_sex_4_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 80
+
+        call nsp_bonus_calc
             
     elif cur_level == 3 :
         ">текст ивента секса 4-3" 
@@ -354,6 +434,10 @@ label nsp_event_sex_4_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 115
+
+        call nsp_bonus_calc
             
     elif cur_level == 4 :
         ">текст ивента секса 4-4"  
@@ -367,6 +451,10 @@ label nsp_event_sex_4_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 160
+
+        call nsp_bonus_calc
             
     elif cur_level == 5 :
         ">текст ивента секса 4-5"  
@@ -380,6 +468,10 @@ label nsp_event_sex_4_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_4 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 180
+
+        call nsp_bonus_calc
             
 
     call nsp_hermione_goout
@@ -409,6 +501,9 @@ label nsp_event_sex_5_complete :
 
     $ cur_level = 0
     
+    $ nsp_newspaper_bonus_text_base = " о сексе "
+    $ nsp_genie_sphere_diamond_req = 2
+    
     if nsp_germiona_sex_5_statimg == "New" :
         $ cur_level = nsp_event_sex_5 + 1
     else :
@@ -426,6 +521,10 @@ label nsp_event_sex_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 50
+
+        call nsp_bonus_calc
 
     elif cur_level == 2 :
         ">текст ивента секса 5-2"  
@@ -439,6 +538,10 @@ label nsp_event_sex_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 85
+
+        call nsp_bonus_calc
 
     elif cur_level == 3 :
         ">текст ивента секса 5-3"   
@@ -452,6 +555,10 @@ label nsp_event_sex_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 110
+
+        call nsp_bonus_calc
            
     elif cur_level == 4 :
         ">текст ивента секса 5-4"   
@@ -465,6 +572,10 @@ label nsp_event_sex_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 155
+
+        call nsp_bonus_calc
            
     elif cur_level == 5 :
         ">текст ивента секса 5-5"   
@@ -478,6 +589,10 @@ label nsp_event_sex_5_complete :
             $ nsp_germiona_impudence += 1
             
         $ nsp_event_sex_5 = cur_level
+        
+        $ nsp_newspaper_bonus_base = 210
+
+        call nsp_bonus_calc
         
 
     call nsp_hermione_goout
