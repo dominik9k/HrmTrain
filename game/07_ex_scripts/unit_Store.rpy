@@ -1,4 +1,49 @@
 label after_load:
+
+#===TG MODS START===
+
+    if not hasattr(renpy.store,'day'): #important! [needed in case of new game!]
+        $ day = 0
+    if not hasattr(renpy.store,'desk_examined'): #important! [needed in case of new game!]
+        $ desk_examined = False
+    if not hasattr(renpy.store,'cal_new_year'): #important!
+        $ cal_new_year = False
+    if not hasattr(renpy.store,'cal_month'): #important!
+        $ cal_month = 9
+    if not hasattr(renpy.store,'cal_day'): #important!
+        $ cal_day = 13
+        if day > 0:
+            $ day_to_date()
+    if not hasattr(renpy.store,'important_dates'): #important!
+        $ important_dates = {
+            'four_seasons':[(9,22,"Autumn"),(12,21,"Winter"),(3,20,"Spring"),(6,21,"Summer")],
+            'term_dates':[(9,1,"Autumn term"),(12,19),(1,15,"Winter term"),(4,2),(4,15,"Spring term"),(6,26)],
+            'holiday_dates':[(12,20,"Christmas holidays"),(1,14),(4,3,"Easter holidays"),(4,14),(6,27,"Summer holidays"),(8,31)],
+            'OWL_dates':[(6,10),(6,21)],
+            'hogsmeade_weekends':[(9,23),(10,15),(11,4),(11,26),(12,16),(2,4),(2,24),(3,17),(5,4),(5,26),(6,15)],
+            'dumblegenies_arrival':[(9,14)],
+            'hermiones_periods':[(9,18),(10,16),(11,13),(12,11),(1,8),(2,5),(3,4),(4,1),(4,29),(5,27),(6,24),(7,22),(8,19)],
+            'ball_dates':[(9,30,"Autumn Ball"),(12,16,"Yule Ball"),(3,30,"Spring Fling"),(6,22,"Prom")] }
+    if not hasattr(renpy.store,'known_dates'): #important!
+        $ known_dates = {
+            'OWL_dates':False,
+            'hogsmeade_weekends':False,
+            'hermiones_periods':False,
+            'ball_dates':False }
+        if desk_examined:
+            $ known_dates['hogsmeade_weekends'] = True
+    if not hasattr(renpy.store,'circled_days'): #important!
+        $ circled_days = [[0],[],[],[],[],[],[],[],[],[],[],[],[]]
+    if not hasattr(renpy.store,'starred_days'): #important!
+        $ starred_days = [[0],[],[],[],[],[],[],[],[],[],[],[],[]]
+    if not hasattr(renpy.store,'cal_notes'): #important!
+        $ cal_notes = [[(0,"")],[],[],[],[],[],[],[],[],[],[],[],[]]
+        if desk_examined:
+            $ dates_list = important_dates['hogsmeade_weekends']
+            $ add_cal_notes(dates_list, 'hogsmeade_weekends')
+
+#===TG MODS STOP===
+
 # Метка - зерезервированная RenPy. На нее программа переходит после загрузки.
 # Код ниже инициализирует переменные хранилища, если они не были инициализированы (например, написан новый шаг сценария)
 # Этот же код вызываем из блока start для начальной инициализации переменных

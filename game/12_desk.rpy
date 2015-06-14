@@ -169,6 +169,28 @@ label desk:
         "- Осмотреть -" if not desk_examined:
             $ desk_examined = True
             m "Обычный стол..."
+#===TG MODS START===
+
+            m "Хм... это календарь?"
+            $ renpy.say(m, "И если я прочел это правильно.....\n\nIt's........... \"%s %d, %s\"?" % (month_info[cal_month][5], cal_day, week_info[day_of_date((cal_month, cal_day))][1]))
+            m "Что бы это ни значило......"
+            m "Но, похоже кто-то рисовал на нем."
+            m "Может быть стоит его немного изучить...."
+
+            # Let's say Dumblegenie learns of the Hogsmeade dates from Dumbledore previously marking them down on the
+            # in the calendar.
+            $ known_dates['hogsmeade_weekends'] = True
+
+            # Further, let's then allow those dates to show up by adding them to the places they need to go.
+            $ dates_list = important_dates['hogsmeade_weekends']
+            $ add_cal_notes(dates_list, 'hogsmeade_weekends')
+
+            show screen cal_button_flash
+            pause(1.5)
+            hide screen cal_button_flash
+
+#===TG MODS STOP===
+
             jump day_main_menu
         "- Делать бумажную работу -" if finished_report < 6 and not got_paycheck and not day == 1 and work_unlock2:
             jump paperwork
@@ -304,7 +326,40 @@ label desk:
             
             
 
-        
+ #===TG MODS START===
+
+        "-Иследовать календарь-" if desk_examined and not day == 1:
+            menu:
+                # This is when playing an old game, and the above event didn't happen (since the mod wasn't installed,
+                # and the desk is now set to (forever) examined.)
+                #
+                # I might later turn this into a general function to refresh the calendar. Possibly allow purging of
+                # data to make a clean slate. Possibly only to correct things.
+                #
+                # I'll do that kind of thing later, once more has been implemented.
+                "-Recheck the dates-" if desk_examined and not known_dates['hogsmeade_weekends']:
+                    m "Перелистывая страницы........"
+                    m "Кто-то.... явно любит все эти \"Хогсмид по выходным\"."
+                    m "Кто-то пьянчуга, судя по ним."
+                    $ known_dates['hogsmeade_weekends'] = True
+                    $ dates_list = important_dates['hogsmeade_weekends']
+                    $ add_cal_notes(dates_list, 'hogsmeade_weekends')
+                    show screen cal_button_flash
+                    pause(1.5)
+                    hide screen cal_button_flash
+                    if daytime:
+                        jump day_main_menu
+                    else:
+                        jump night_main_menu
+
+                "-Ничего-":
+                    if daytime:
+                        jump day_main_menu
+                    else:
+                        jump night_main_menu
+
+#===TG MODS STOP===
+    
   
             
             

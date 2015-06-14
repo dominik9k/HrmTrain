@@ -99,11 +99,174 @@ screen main_menu_01:
             #hovered [Show("gui_tooltip", my_picture="hoot", my_tt_xpos=250, my_tt_ypos=180) ] 
             #unhovered [Hide("gui_tooltip")]
             action [Hide("main_menu_01"), Jump("mail")]
-    
 
+#===TG MODS START===
 
+    if desk_examined == True:
+        imagebutton: # CALENDAR on button
+            xpos 636
+            ypos 16
+            focus_mask True
+            xanchor "center"
+            yanchor "center"
+            idle "03_hp/11_misc/cal_button.png" 
+            hover "03_hp/11_misc/cal_button_active.png"
+            action [Hide("main_menu_01"), Jump("calendar")]
 
-        
+        # Notification icon (for starred or circled dates).
+        if cal_day in circled_days[cal_month] or cal_day in starred_days[cal_month]:
+            add "03_hp/11_misc/cal_notify.png" at Position(xpos=590, ypos=1)
+
+        # Needed because of new (overlaying) calendar imagebutton.
+        hbox: ### DATE ###
+            spacing 10 xpos 619 ypos 10
+            python:
+                # for those who like days-months instead...
+                # {size=-4}[cal_day] " + month_info[cal_month][4] + "{/size}"
+                status_date = "{size=-4}" + month_info[cal_month][4] + " [cal_day]{/size}"
+                if cal_day in holidays[cal_month] or cal_day in weekends[cal_month]:
+                   status_date = "{color=942121}" + status_date + "{/color}"
+            text status_date
+
+# CALENDAR POPUP
+screen calendar:
+    zorder 4
+
+    imagebutton: # CALENDAR screen off button
+        xpos 636
+        ypos 16
+        focus_mask True
+        xanchor "center"
+        yanchor "center"
+        idle "03_hp/11_misc/cal_button.png" 
+        hover "03_hp/11_misc/cal_button_active.png"
+        action [Hide("calendar"), Jump("calendar_cleanup")]
+
+    # Notification icon (for starred or circled dates).
+    if cal_day in circled_days[cal_month] or cal_day in starred_days[cal_month]:
+        add "03_hp/11_misc/cal_notify.png" at Position(xpos=590, ypos=1)
+
+    # Needed because of new (overlaying) calendar imagebutton.
+    hbox: ### DATE ###
+        spacing 10 xpos 619 ypos 10
+        python:
+            # for those who like days-months instead...
+            # {size=-4}[cal_day] " + month_info[cal_month][4] + "{/size}"
+            status_date = "{size=-4}" + month_info[cal_month][4] + " [cal_day]{/size}"
+            if cal_day in holidays[cal_month] or cal_day in weekends[cal_month]:
+               status_date = "{color=942121}" + status_date + "{/color}"
+        text status_date
+
+    add "03_hp/11_misc/calendar.png" at Position(align=(0.5, 0.5))
+    add "03_hp/11_misc/cal_w.png" at Position(align=(0.5, 0.29))
+
+    # We only have data for 1 year, 1 sept 1995 - 31 aug 1996
+    if cal_browsing_month > 9 or cal_browsing_new_year:
+        imagebutton: # calendar backwards
+            xpos 243
+            ypos 125
+            focus_mask True
+            xanchor "center"
+            yanchor "center"
+            idle "03_hp/11_misc/cal_arrow_left.png" 
+            hover "03_hp/11_misc/cal_arrow_left_active.png"
+            action [Jump("calendar_decrement")]
+    else:
+        add "03_hp/11_misc/cal_arrow_left_disabled.png" at Position(xpos=243, ypos=125, xanchor="center", yanchor="center")
+
+    if cal_browsing_month < 8 or not cal_browsing_new_year:
+        imagebutton: # calendar forwards
+            xpos 557
+            ypos 125
+            focus_mask True
+            xanchor "center"
+            yanchor "center"
+            idle "03_hp/11_misc/cal_arrow_right.png" 
+            hover "03_hp/11_misc/cal_arrow_right_active.png"
+            action [Jump("calendar_increment")]
+    else:
+        add "03_hp/11_misc/cal_arrow_right_disabled.png" at Position(xpos=557, ypos=125, xanchor="center", yanchor="center")
+
+    python:
+        if cal_browsing_month < 10:
+            cal_month_str = "0" + str(cal_browsing_month)
+        else:
+            cal_month_str = str(cal_browsing_month)
+
+    add "03_hp/11_misc/cal_m" + cal_month_str + ".png" at Position(align=(0.5, 0.17))
+
+    $ curr_col = month_info[cal_browsing_month][1]
+    $ curr_row = 1
+    $ curr_day = 1
+
+    # Print out all the information of a day in a single loop.
+    # Date, moon phase, crosses, circles, notes, etc.
+    for x in range(month_info[cal_browsing_month][0]):
+        $ curr_x, curr_y = cal_pos(curr_col, curr_row)
+
+        # Print the moon phases.
+        if curr_day == month_info[cal_browsing_month][2]:
+            add "03_hp/11_misc/cal_moon_new.png" at Position(xpos=curr_x+26, ypos=curr_y-7)
+        elif curr_day == month_info[cal_browsing_month][3]:
+            add "03_hp/11_misc/cal_moon_full.png" at Position(xpos=curr_x+26, ypos=curr_y-7)
+
+        python:
+            if curr_day < 10:
+                curr_day_str = "0" + str(curr_day)
+            else:
+                curr_day_str = str(curr_day)
+            if curr_col == 1 or curr_col == 7 or curr_day in holidays[cal_browsing_month]:
+                curr_day_str += "r"
+
+        # Print all the dates.
+        add "03_hp/11_misc/cal_d" + curr_day_str + ".png" at Position(xpos=curr_x, ypos=curr_y)
+
+        # Print all the circles.
+        if curr_day in circled_days[cal_browsing_month]:
+            $ variant = str(renpy.random.randint(1, 7))
+            add "03_hp/11_misc/cal_circle" + variant + ".png" at Position(xpos=curr_x-36, ypos=curr_y-28)
+
+        # Print all the stars.
+        if curr_day in starred_days[cal_browsing_month]:
+            $ variant = str(renpy.random.randint(1, 7))
+            add "03_hp/11_misc/cal_star" + variant + ".png" at Position(xpos=curr_x-36, ypos=curr_y-28)
+
+        # Print all the notes.
+        for x in (range(len(cal_notes[cal_browsing_month]))):
+            if cal_notes[cal_browsing_month][x][0] == curr_day:
+                add "03_hp/11_misc/" + cal_notes[cal_browsing_month][x][1] + ".png"at Position(xpos=curr_x-36, ypos=curr_y-28)
+
+        # Finally, we print all the crosses.
+        if (cal_browsing_month == cal_month and curr_day < cal_day) or (cal_browsing_month < cal_month and cal_browsing_month >= 9 and not cal_new_year) or (cal_browsing_month < cal_month and cal_browsing_month >= 1 and cal_new_year) or (cal_browsing_month > cal_month and cal_browsing_month <= 8 and not cal_new_year) or (cal_browsing_month > cal_month and cal_browsing_month >= 9 and cal_new_year):
+            $ variant = str(renpy.random.randint(1, 7))
+            add "03_hp/11_misc/cal_cross" + variant + ".png" at Position(xpos=curr_x-36, ypos=curr_y-28)
+
+        python:
+            if curr_col + 1 > 7:
+                curr_col = 0
+                curr_row += 1
+
+            curr_col += 1
+            curr_day += 1
+
+screen cal_button_flash:
+    zorder 4
+
+    add "03_hp/11_misc/cal_button_active.png" at Position(xpos=636, ypos=16, xanchor="center", yanchor="center")
+
+    # Need to print the date here too, so it doesn't look silly.
+    hbox: ### DATE ###
+        spacing 10 xpos 619 ypos 10
+        python:
+            # for those who like days-months instead...
+            # {size=-4}[cal_day] " + month_info[cal_month][4] + "{/size}"
+            status_date = "{size=-4}" + month_info[cal_month][4] + " [cal_day]{/size}"
+            if cal_day in holidays[cal_month] or cal_day in weekends[cal_month]:
+               status_date = "{color=942121}" + status_date + "{/color}"
+        text status_date
+
+#===TG MODS STOP===
+
 screen gui_tooltip:
     add my_picture xpos my_tt_xpos ypos my_tt_ypos
     
@@ -437,6 +600,22 @@ screen points: #House points screen.
         spacing 10 xpos 630 ypos 10
         text "{size=-3}[day]{/size}" 
     
+#===TG MODS START===
+
+    # This is displayed at game start, so I changed it to match my display style.
+    # So, this makes things look less stupid.
+    hbox: ### DATE ###
+        spacing 10 xpos 619 ypos 10
+        python:
+            # for those who like days-months instead...
+            # {size=-4}[cal_day] " + month_info[cal_month][4] + "{/size}"
+            status_date = "{size=-4}" + month_info[cal_month][4] + " [cal_day]{/size}"
+            if cal_day in holidays[cal_month] or cal_day in weekends[cal_month]:
+               status_date = "{color=942121}" + status_date + "{/color}"
+        text status_date
+
+#===TG MODS STOP===
+
     hbox: ### DGOLD COUNTER ###
         spacing 10 xpos 734 ypos 10
         text "{size=-4}[gold]{/size}" 

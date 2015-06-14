@@ -54,6 +54,134 @@ label hp:
 
 $ day = 0 
 
+#===TG MODS START===
+
+# These set the game to start on September 14. The game usually forwards past the first day when starting a new game,
+# so cal_day needs to be set a day prior to when you want things to begin.
+$ cal_new_year = False
+$ cal_month = 9
+$ cal_day = 13
+
+# Circled days. This structure holds all the dates that show up circled.
+#
+# So, if you want to add a date, you can just put the date in here directly, or you can add them dynamically later.
+# It doesn't make much sense to add them now, so I recommend adding them as events take place within the scene.
+#
+# jan-dec, going down. Actually, it's jan-aug,1996, and sep-dec,1995.
+#
+# (eg: 4,24,29 in the March list would make those days circled.)
+$ circled_days = [[0],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []]
+
+# Starred days. This structure holds all the dates that show up starred.
+#
+# So, if you want to add a date, you can just put the date in here directly, or you can add them dynamically later.
+# It doesn't make much sense to add them now, so I recommend adding them as events take place within the scene.
+#
+# jan-dec, going down. Actually, it's jan-aug,1996, and sep-dec,1995.
+#
+# (eg: 4,24,29 in the March list would make those days starred.)
+$ starred_days = [[0],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []]
+
+# Calendar notes. These relate to the hand-written notes that can be posted on the calendar. You need to photoshop
+# them yourself if you want more. Check the archive for fonts, etc.
+#
+# ( day,
+#   filename of the png that has the message (without .png extension) )
+#
+# NOTE: you can have several notes on the same day. They will just overlap.
+#
+# So, if you want to add a note, you can just put the entry here directly, or you can add them dynamically later.
+# It doesn't make much sense to add them now, so I recommend adding them as events take place within the scene.
+#
+# Each element is a tuple, so: (date, "filename"), (date, "filename"), etc.
+#
+# eg: (13, "cal_note_hermione_tutoring"), (27, "cal_note_hogsmeade_weekends").
+#
+# If you do make new notes, put them in with the others: 03_hp/11_misc/
+$ cal_notes = [[(0,"")],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []]
+
+# Dictionary of unrelated items, grouped by key and giving a list of dates.
+#
+# 'key' : ( month, day, "desc" ), ( month, day, "desc" ), etc
+#
+# This is an open dictionary. So, if you want to add an important date to it, go ahead. Just make sure the key is
+# unique if the stuff you're entering is separate from what's already present. If in doubt, put some kind of unique
+# prefix before any meaningful name. Remember, other mods might make use of this too.
+#
+# These additional dates can either be entered directly here with all the or later, using coding to add to the
+# dictionary. Makes no real difference.
+#
+# four_seasons = start dates of: (autumn) -> (winter) -> (spring) -> (summer)
+# term_dates = the 3 school terms: (start_term1,'name'), (end_term1), (start_term2, 'name'), etc.
+# holiday_dates = same as above, but different.
+# OWL_dates = fifth-years take their Ordinary Wizarding Levels. 2 weeks.
+# hogsmeade_weekends = dates are every 3 weeks, alternating between Sat & Sun.
+# ball_dates = possible seasonal ball dates. Dunno about this yet.
+$ important_dates = {
+    'four_seasons':[(9,22,"Autumn"),(12,21,"Winter"),(3,20,"Spring"),(6,21,"Summer")],
+    'term_dates':[(9,1,"Autumn term"),(12,19),(1,15,"Winter term"),(4,2),(4,15,"Spring term"),(6,26)],
+    'holiday_dates':[(12,20,"Christmas holidays"),(1,14),(4,3,"Easter holidays"),(4,14),(6,27,"Summer holidays"),(8,31)],
+    'OWL_dates':[(6,10),(6,21)],
+    'hogsmeade_weekends':[(9,23),(10,15),(11,4),(11,26),(12,16),(2,4),(2,24),(3,17),(5,4),(5,26),(6,15)],
+    'dumblegenies_arrival':[(9,14)],
+    'hermiones_periods':[(9,18),(10,16),(11,13),(12,11),(1,8),(2,5),(3,4),(4,1),(4,29),(5,27),(6,24),(7,22),(8,19)],
+    'ball_dates':[(9,30,"Autumn Ball"),(12,16,"Yule Ball"),(3,30,"Spring Fling"),(6,22,"Prom")] }
+
+# Dictionary of flags for (date) knowledge for a bunch of things.
+# Pretty crude, but this might be built on as this mod is further developed.
+$ known_dates = {
+    'OWL_dates':False,
+    'hogsmeade_weekends':False,
+    'hermiones_periods':False,
+    'ball_dates':False }
+
+### FLOO POWDER TRAVEL STUFF ###
+
+$ travel_fire = False
+
+# temp variables for floo powder travel mod
+$ floo_travel_known = True
+$ hogsmeade_known = True
+$ inv_floo_powder = 1
+$ Hermione_here = False
+
+#===TG MODS STOP===
 
 ### PAPERWORK (MONEY-MAKING) RELATED FLAGS ###
 $ day_of_week = 0 #Counts days of the week. Everyday +1. When day_of_week = 7 resets to zero.
@@ -312,8 +440,10 @@ if this.event_05._finish2==4:
     $ fireplace_examined = True
     $ hat_examined = True
     $ rum_times = 4
-    
-$ report_talk = False
+$ report_talk = False    
+
+
+
 # QUESTS #==============================================================================================================================================
 $ zyablik_switch = 0
 ### TUTORING QUEST ####
@@ -603,8 +733,12 @@ with fade
 
 $ day +=1
 
+#===TG MODS START===
 
-#jump test
+$ increment_cal_date()
+
+#===TG MODS STOP===
+
 ### DAY EVENTS ###<============================================================================================================================================================
 
 $ this.RunStep("DAY")
