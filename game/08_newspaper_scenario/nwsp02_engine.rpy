@@ -2253,13 +2253,14 @@ label nsp_bonus_calc_photo :
         $ nsp_newspaper_bonus_text = "  Цв развратные фото\n   Гермионы"
         $ nsp_photo_koef = 4
     elif nsp_genie_photocamera == 3 :
-        $ nsp_newspaper_bonus_text = "  3д-фото развратные\n   Гермионы"
+        $ nsp_newspaper_bonus_text = "  Развратные 3д-фото\n   Гермионы"
         $ nsp_photo_koef = 6
     elif nsp_genie_photocamera == 4 :
         $ nsp_newspaper_bonus_text = "  Живые развратные фото\n   Гермионы"
         $ nsp_photo_koef = 10
     
-    $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + nsp_photo_koef * 2) * (0.5 + ( nsp_germiona_artistry / 3)) )
+    $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + nsp_photo_koef ) * (0.5 + ( nsp_germiona_artistry / 3)) )
+    $ nsp_genie_photocamera_exp += 1
     
     return
         
@@ -2290,7 +2291,7 @@ label nsp_bonus_calc_video :
         $ nsp_newspaper_bonus_text = "  10 мин развратного видео\n   Гермионы"
         $ nsp_ruby_koef = 80
             
-    $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + nsp_ruby_koef) )
+    $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + (nsp_ruby_koef/2)) )
         
     return
         

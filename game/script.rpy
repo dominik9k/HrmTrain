@@ -414,6 +414,30 @@ init:
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 3} )
+                
+        tu=[("nsp_newsp_book_photo1::Фотоаппарат \"Гелиофотус 2\"",          250, "08_newspaper_scenario/photo/photo1.png", "Старинный фотоаппарат, способный делать вяло движущиеся черно-белые фотографии.",
+                "Благодаря прочитанному руководству вы можете использовать \"Гелиофотус 2\"."),
+                
+            ("nsp_newsp_book_photo2::Фотоаппарат \"Обскура Магика 60\"",           500, "08_newspaper_scenario/photo/photo2.png", "Невзрачный фотоаппарат, содержащий в качестве основного элемента волшебную серебрянную пластину. Позволяет делать цветные фотографии средней активности.",
+                "Благодаря прочитанному руководству вы можете использовать \"Обскура Магика 60\"."),
+                
+            ("nsp_newsp_book_photo3::Фотоаппарат \"Паномагик а777\"",           1000, "08_newspaper_scenario/photo/photo3.png", "Обработанный пылью фей фотоаппарат, напоминающий магловский ультразум. Способен делать активные 3д-фотографии.",
+                "Благодаря прочитанному руководству вы можете использовать \"Паномагик а777\"."),
+                
+            ("nsp_newsp_book_photo4::Фотоаппарат \"Моменто Мемориус 2000\"",           2500, "08_newspaper_scenario/photo/photo4.png", "Мощнейший фотоаппарат, слабо светящийся в темноте. Сделанные им фото по-настоящему живут и способны даже выглядывать из кадра.",
+                "Благодаря прочитанному руководству вы можете использовать \"Моменто Мемориус 2000\"."),
+
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp2"
+
+            lam=lambda e:e._status>=e._units
+            event=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 2} )
 
 ####### 
 

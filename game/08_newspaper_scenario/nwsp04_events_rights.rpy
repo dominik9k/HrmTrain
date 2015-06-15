@@ -272,6 +272,8 @@ label nsp_event_rights_3_complete :
 
         call nsp_bonus_calc
         
+        $ nsp_event_rights_3_unpub = True
+        
     elif cur_level == 2 :
         ">текст ивента прав 3-2"
         
@@ -288,6 +290,8 @@ label nsp_event_rights_3_complete :
         $ nsp_newspaper_bonus_base = 30
 
         call nsp_bonus_calc
+        
+        $ nsp_event_rights_3_unpub = True
         
     elif cur_level == 3 :
         ">текст ивента прав 3-3" 
@@ -308,6 +312,8 @@ label nsp_event_rights_3_complete :
         
         $ hermi.liking -= 10
         
+        $ nsp_event_rights_3_unpub = True
+        
     elif cur_level == 4 :
         ">текст ивента прав 3-4" 
         
@@ -324,6 +330,8 @@ label nsp_event_rights_3_complete :
         $ nsp_newspaper_bonus_base = 80
 
         call nsp_bonus_calc
+        
+        $ nsp_event_rights_3_unpub = True
             
     elif cur_level == 5 :
         ">текст ивента прав 3-5"  
@@ -340,8 +348,7 @@ label nsp_event_rights_3_complete :
         
         $ nsp_newspaper_bonus_base = 100
 
-        call nsp_bonus_calc
-            
+        call nsp_bonus_calc        
 
     call nsp_hermione_goout
 

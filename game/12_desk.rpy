@@ -87,8 +87,23 @@ label menu_reading_book:
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
+                        
+                if event.GetValue("block")=="books_newsp2":
+                    if event.Name == "nsp_newsp_book_photo2" and (nsp_genie_photocamera < 1 or nsp_genie_photocamera_exp < 3):
+                        m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
+                        hide screen gift
+                        jump books_list
+                        
+                    if event.Name == "nsp_newsp_book_photo3" and (nsp_genie_photocamera < 2 or nsp_genie_photocamera_exp < 3):
+                        m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
+                        hide screen gift
+                        jump books_list
 
-                    
+                    if event.Name == "nsp_newsp_book_photo4" and (nsp_genie_photocamera < 3 or nsp_genie_photocamera_exp < 3):
+                        m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
+                        hide screen gift
+                        jump books_list
+                        
 ############
 
                 if event.GetValue("block")=="books_edu":
@@ -152,6 +167,8 @@ label menu_reading_book:
 
 label desk:
     $ menu_x = 0.5 
+    ### DR'S DEBUG    
+    $ cataloug_found = True
     menu:
 ### DR'S NEWSPAPER ooo ###
 
@@ -195,7 +212,7 @@ label desk:
         "{color=#858585}- Делать бумажную работу -{/color}" if got_paycheck: # When TRUE paycheck is in the mail.
             m "Сначала мне нужно получить оплату."
             jump desk
-        
+
         "- Книжная коллекция -" if not day == 1 and cataloug_found: 
             label books_list:
                 $choose=None
@@ -529,6 +546,9 @@ label chap_finished_xx:
 
     if event.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
             $event.IncValue("status", 1)  #+=1
+            
+    if event.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
+            $event.IncValue("status", 1)  #+=1
 
 ###        
     $ renpy.play('sounds/win_04.mp3')   #Not loud.
@@ -651,6 +671,10 @@ label chapter_check_book_xx: #Checks if the chapter just finished was the last o
         if event.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
             $ nsp_genie_typographic += 1
             $ nsp_genie_typographic_exp = 0
+            
+        if event.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
+            $ nsp_genie_photocamera += 1
+            $ nsp_genie_photocamera_exp = 0
             
 ###
             
