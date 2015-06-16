@@ -77,7 +77,8 @@ $ nsp_genie_writer = 10 # Джин: Навык писателя статей, в
 ###
 $ nsp_genie_photocamera = 0 # Джин: Тип используемого фотоаппарата, в начале - 0. Отсюда же украшения газеты.
 $ nsp_genie_photocamera_exp = 3 # Растет при каждом ивенте на 1, для покупки фотоаппарата (кроме 1-го) след уровня нужно не менее 3 ивентов с прошлым. При этом счетчик сбрасывается. Для покупки первого аппарата опыт уже как бы есть.
-$ nsp_genie_sphere = False # Джин: Наличие хрустального шара.
+#DR'S DEBUG
+$ nsp_genie_sphere = True # Джин: Наличие хрустального шара.
 $ nsp_genie_sphere_level = 0 # Джин: Навык владения хрустальным шаром.
 $ nsp_genie_sphere_level_exp = 0 # Джин: Опыт владения хрустальным шаром.
 $ nsp_genie_sphere_ruby_level = 0 # Джин: Уровень рубина для шара
@@ -192,7 +193,7 @@ $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не бы
 $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
 #$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
-$ nsp_newspaper_menu = 6
+$ nsp_newspaper_menu = 15
 
 ###
 
@@ -699,12 +700,11 @@ $ day +=1
 #jump test
 ### DAY EVENTS ###<============================================================================================================================================================
 
+if nsp_newspaper_menu == 8 :
+    jump nsp_snape_dialog3
+
 $ this.RunStep("DAY")
 
-
-
-
-    
     
     
 
@@ -729,12 +729,6 @@ if day == 1 and daytime and bird_examined and desk_examined and cupboard_examine
 
 show screen animation_feather
 call screen main_menu_01
-
-
-
-    
-
-
 
 
 

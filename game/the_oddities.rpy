@@ -157,6 +157,10 @@ label the_oddities:
                 $_label="newspaper_menu2"
                 $_block="books_newsp2"
                 jump menu_dahre_upd
+                
+        "- Для Вашего Хрустального шара -" if nsp_genie_sphere :
+            jump nsp_sphere_dahre
+            
 ###
         "- Образовательные книги -":
             label education_menu:

@@ -438,6 +438,21 @@ init:
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 2} )
+                
+        tu=[("nsp_newsp_book_video::Книга \"Я и мой шар\"",         5000, "08_newspaper_scenario/sphere/Book_sphere.png", "Книга о секретах использования полученного в хрустальном шаре изображения для газеты.",
+                "Благодаря прочитанной книге вы можете помещать в газету видеоролики, показанные хрустальным шаром."),
+
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp2"
+
+            lam=lambda e:e._status>=e._units
+            event=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
 
 ####### 
 

@@ -134,7 +134,7 @@ label nsp_newsp_themes:
     
     menu:
     
-        "- О правах и дискриминации {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_rights].png} -" if nsp_newspaper_menu == 6:
+        "- О правах и дискриминации {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_rights].png} -" if nsp_newspaper_menu >= 6:
     
             if nsp_germiona_menu_rights == 1 :
                 ">Диалог тема 1"
@@ -222,10 +222,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
 
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu == 6 and nsp_genie_writer < 2:
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 2:
             jump nsp_newsp_themes
                         
-        "- О жизни маглов {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_magls].png} -" if nsp_newspaper_menu == 6 and nsp_genie_writer >= 2 :
+        "- О жизни маглов {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_magls].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 2 :
     
             if nsp_germiona_menu_magls == 1 :
                 ">Диалог тема 2"
@@ -313,10 +313,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
         
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu == 6 and nsp_genie_writer < 4 :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 4 :
             jump nsp_newsp_themes
             
-        "- О квиддиче {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_kviddich].png} -" if nsp_newspaper_menu == 6 and nsp_genie_writer >= 4 :
+        "- О квиддиче {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_kviddich].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 4 :
     
             if nsp_germiona_menu_kviddich == 1 :
                 ">Диалог тема 3"
@@ -437,10 +437,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
 
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu == 6 and nsp_genie_writer < 1 :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 1 :
             jump nsp_newsp_themes
             
-        "- О сексе {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_sex].png} -" if nsp_newspaper_menu == 6 and nsp_genie_writer >= 1 :
+        "- О сексе {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_sex].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 1 :
     
             if nsp_germiona_menu_sex == 1 :
                 ">Диалог тема 4"
@@ -522,10 +522,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
                 
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu == 6 and (nsp_letter_2 < 2 or nsp_genie_writer < 6) :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and (nsp_letter_2 < 2 or nsp_genie_writer < 6) :
             jump nsp_newsp_themes
             
-        "- Маньяк {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_maniac].png} -" if nsp_newspaper_menu == 6 and nsp_letter_2 >= 2 and nsp_genie_writer >= 6 :
+        "- Маньяк {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_maniac].png} -" if nsp_newspaper_menu >= 6 and nsp_letter_2 >= 2 and nsp_genie_writer >= 6 :
     
             if nsp_germiona_menu_maniac == 1 :
                 ">Диалог тема 5"
@@ -595,10 +595,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
         
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu == 6 and nsp_genie_writer < 4 :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 4 :
             jump nsp_newsp_themes
             
-        "- Голый репортер в маске {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_nude].png} -" if nsp_newspaper_menu == 6 and nsp_genie_writer >= 4 :
+        "- Голый репортер в маске {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_nude].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 4 :
     
             if nsp_germiona_menu_nude == 1 :
                 ">Диалог тема 6"
@@ -686,10 +686,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
 
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu == 6 and nsp_letter_1 < 2 and nsp_letter_9 < 2 :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_letter_1 < 2 and nsp_letter_9 < 2 :
             jump nsp_newsp_themes
             
-        "- Запретный лес {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_forest].png} -" if nsp_newspaper_menu == 6 and ( nsp_letter_1 >= 2 or nsp_letter_9 >= 2 ) :
+        "- Запретный лес {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_forest].png} -" if nsp_newspaper_menu >= 6 and ( nsp_letter_1 >= 2 or nsp_letter_9 >= 2 ) :
     
             if nsp_germiona_menu_forest == 1 :
                 ">Диалог тема 7"
@@ -737,10 +737,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
         
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu == 6 and nsp_genie_photocamera == 0 :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_photocamera == 0 :
             jump nsp_newsp_themes
             
-        "- Студия у Джина {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_studio].png} -" if nsp_newspaper_menu == 6 and nsp_genie_photocamera > 0 :
+        "- Студия у Джина {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_studio].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_photocamera > 0 :
     
             if nsp_germiona_menu_studio == 1 :
                 ">Диалог тема 8"
@@ -2150,6 +2150,10 @@ label nsp_bonus_calc :
     if nsp_genie_photocamera == 0 :
         $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
         $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base)
+        
+        if nsp_newspaper_menu == 7 :
+            $ nsp_newspaper_menu = 6
+        
         return
     
     if not nsp_genie_sphere_video :
@@ -2194,6 +2198,11 @@ label nsp_bonus_calc :
             
         $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + (nsp_photo_koef * nsp_ruby_koef * nsp_saphire_koef)) )
         
+        if nsp_newspaper_menu == 7 :
+            $ nsp_newspaper_menu = 6
+            
+        $ nsp_genie_photocamera_exp += 1
+        
         return
         
     else :          
@@ -2231,10 +2240,20 @@ label nsp_bonus_calc :
             
         $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + (nsp_ruby_koef * nsp_saphire_koef)) )
         
+        $ nsp_genie_sphere_level_exp += 1
+        
+        call nsp_genie_sphere_level_check
+        
+        if nsp_newspaper_menu == 7 :
+            $ nsp_newspaper_menu = 6
+        
         return
 
 
     $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
+  
+    if nsp_newspaper_menu == 7 :
+        $ nsp_newspaper_menu = 6
     
     return
     
@@ -2244,6 +2263,10 @@ label nsp_bonus_calc_photo :
     
     if nsp_genie_photocamera == 0 :
         $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
+        
+        if nsp_newspaper_menu == 7 :
+            $ nsp_newspaper_menu = 6
+        
         return
     
     if nsp_genie_photocamera == 1 :
@@ -2262,6 +2285,9 @@ label nsp_bonus_calc_photo :
     $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + nsp_photo_koef ) * (0.5 + ( nsp_germiona_artistry / 3)) )
     $ nsp_genie_photocamera_exp += 1
     
+    if nsp_newspaper_menu == 6 :
+        $ nsp_newspaper_menu = 7
+    
     return
         
 label nsp_bonus_calc_video :
@@ -2270,6 +2296,10 @@ label nsp_bonus_calc_video :
     
     if nsp_genie_photocamera == 0 or not nsp_genie_sphere_video :
         $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
+        
+        if nsp_newspaper_menu == 7 :
+            $ nsp_newspaper_menu = 6
+        
         return
               
     if nsp_genie_sphere_ruby_level_eff == 0 :
@@ -2292,6 +2322,72 @@ label nsp_bonus_calc_video :
         $ nsp_ruby_koef = 80
             
     $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + (nsp_ruby_koef/2)) )
+    
+    if nsp_newspaper_menu == 7 :
+        $ nsp_newspaper_menu = 6
+        
+    $ nsp_genie_sphere_level_exp += 1
+        
+    call nsp_genie_sphere_level_check
         
     return
+    
+label nsp_genie_sphere_level_check :
+
+    if nsp_genie_sphere_level == 0 nsp_genie_sphere_level_exp >= 2 :
+        $ nsp_genie_sphere_level_exp = 0
+        $ nsp_genie_sphere_level += 1
+    elif nsp_genie_sphere_level == 1 nsp_genie_sphere_level_exp >= 5 :
+        $ nsp_genie_sphere_level_exp = 0
+        $ nsp_genie_sphere_level += 1
+    elif nsp_genie_sphere_level == 2 nsp_genie_sphere_level_exp >= 10 :
+        $ nsp_genie_sphere_level_exp = 0
+        $ nsp_genie_sphere_level += 1
+    elif nsp_genie_sphere_level == 3 nsp_genie_sphere_level_exp >= 20 :
+        $ nsp_genie_sphere_level_exp = 0
+        $ nsp_genie_sphere_level += 1
+    elif nsp_genie_sphere_level == 4 nsp_genie_sphere_level_exp >= 30 :
+        $ nsp_genie_sphere_level_exp = 0
+        $ nsp_genie_sphere_level += 1
         
+    $ nsp_genie_sphere_ruby_level_eff = nsp_genie_sphere_ruby_level
+    $ nsp_genie_sphere_diamond_level_eff = nsp_genie_sphere_diamond_level
+    $ nsp_genie_sphere_sapphire_level_eff = nsp_genie_sphere_saphire_level
+        
+    if nsp_genie_sphere_level == 0 :
+        if nsp_genie_sphere_ruby_level_eff > 0 :
+            $ nsp_genie_sphere_ruby_level_eff = 0
+        if nsp_genie_sphere_diamond_level_eff > 0 :
+            $ nsp_genie_sphere_diamond_level_eff = 0
+        if nsp_genie_sphere_sapphire_level_eff > 1 :
+            $ nsp_genie_sphere_sapphire_level_eff = 1
+    elif nsp_genie_sphere_level == 1 :
+        if nsp_genie_sphere_ruby_level_eff > 1 :
+            $ nsp_genie_sphere_ruby_level_eff = 1
+        if nsp_genie_sphere_diamond_level_eff > 2 :
+            $ nsp_genie_sphere_diamond_level_eff = 2
+        if nsp_genie_sphere_sapphire_level_eff > 2 :
+            $ nsp_genie_sphere_sapphire_level_eff = 2
+    elif nsp_genie_sphere_level == 2 :
+        if nsp_genie_sphere_ruby_level_eff > 2 :
+            $ nsp_genie_sphere_ruby_level_eff = 2
+        if nsp_genie_sphere_diamond_level_eff > 3 :
+            $ nsp_genie_sphere_diamond_level_eff =  3
+        if nsp_genie_sphere_sapphire_level_eff > 3 :
+            $ nsp_genie_sphere_sapphire_level_eff = 3
+    elif nsp_genie_sphere_level == 3 :
+        if nsp_genie_sphere_ruby_level_eff > 3 :
+            $ nsp_genie_sphere_ruby_level_eff = 3
+        if nsp_genie_sphere_diamond_level_eff > 3 :
+            $ nsp_genie_sphere_diamond_level_eff = 3
+        if nsp_genie_sphere_sapphire_level_eff > 4 :
+            $ nsp_genie_sphere_sapphire_level_eff = 4
+    elif nsp_genie_sphere_level == 4 :
+        if nsp_genie_sphere_ruby_level_eff > 4 :
+            $ nsp_genie_sphere_ruby_level_eff = 4
+        if nsp_genie_sphere_diamond_level_eff > 4 :
+            $ nsp_genie_sphere_diamond_level_eff = 4
+        if nsp_genie_sphere_sapphire_level_eff > 5 :
+            $ nsp_genie_sphere_sapphire_level_eff = 5
+
+    return

@@ -112,7 +112,7 @@ if nsp_pre_snape == 0 or nsp_pre_snape == 1:
         $snape("~01//Кстати о приятных занятиях. Мне уже пора.")
         $hero("#(Нет, так дело не пойдет, нужно сначала сильнее расположить Снейпа к себе.)")
 
-jump snape_nothing_exit
+    jump snape_nothing_exit
 
 label newsp_pre_snape_dialog2:
 
@@ -144,7 +144,7 @@ label newsp_pre_snape_dialog2:
 
    
 
-jump snape_nothing_exit
+    jump snape_nothing_exit
 
 label nsp_hermione_pre1 :
 
@@ -242,3 +242,49 @@ label nsp_hermione_pre1 :
     else:
         $ hermione_sleeping = True
         jump night_main_menu
+
+label nsp_snape_dialog3 :
+
+    $ renpy.play('sounds/door.mp3') #Sound of a door opening.
+    $ menu_x = 0.2 #Menu is moved to the left side. (Default menu_x = 0.5)
+    $ tt_xpos=350 #Defines position of the Snape's full length sprite.
+    $ tt_ypos=0
+    $ s_sprite = "03_hp/10_snape_main/snape_01.png"
+    show screen snape_02 #Snape stands still.
+    show screen bld1
+    show screen snape_main
+    with Dissolve(.3)
+    $screens.Hide("snape_main")
+    $snape.State("door").Visibility("body")
+    
+    $hero (g9, "Привет, Северус. Зачем пожаловал ?")
+    $snape("~02//{size=+2}Ха-ха-ха.{/size}")
+    $hero (m, "Что ?")
+    $snape ("~28//{size=+5}Му-ха-ха-ха-ха !{/size}")
+    $hero ("Похоже ты чем-то очень доволен ?")
+    $snape ("~02//И он еще спрашивает... Ну ты шутник.")
+    $hero ("Ничего не понимаю.")
+    $hero ("Минутку... Ага!")
+    $hero ("Тебе так сильно понравился последний выпуск газеты ?")
+    $snape ("~02//Не то слово ! Непристойные фото этой маленькой шлюхи прямо на стенде !")
+    $snape ("~02//Прямо в главном зале !")
+    $snape ("~02//Да я не променял бы это дажде на секс с тре... нет с двумя лучшими моими ученицами!")
+    $hero (g9,"Я так понимаю, теперь тебе уже не скучно говорить про газету ?")
+    $snape ("~09//Да, пожалуй я был не прав. Издавать {size=+3}такую{/size} газету - было отличной идеей.")
+    $snape ("~06//И я кое-что тебе принес.")
+    $hero (m,"Вот как ?")
+    $snape ("~01//Да. Это хрустальный шар, который я нашел среди своего ненужного хлама.")
+    $snape ("~01//Когда-то один древний маг пытался сделать или найти артефакт, который мог бы показывать людей или предметы на расстоянии.")
+    $snape ("~01//В итоге он объявился с этим хрустальным шаром. Вроде бы ему удавалось частично достичь нужного эффекта, хотя точной информации уже не осталось.")
+    $snape ("~01//Так или иначе, в ходе экспериментов шар треснул и перестал работать. Восстановить его пока что никому не удавалось.")
+    $snape ("~04//Я подумал, что если не помогает магия волшебников, идеи могут быть у тебя.")
+    $snape ("~10//С работающим шаром твои возможности по сбору материалов могли бы значительно вырасти.")
+    $snape ("~28//Раздевалки девочек, их спальни, всевозможные маленькие секреты...")
+    $snape ("~02//Ты просто {size=+4}обязан{/size} его починить !.")
+    $hero (m,"Да, пожалуй оно стоит того !")    
+    
+    $ nsp_newspaper_menu = 9
+    
+    jump snape_nothing_exit
+
+
