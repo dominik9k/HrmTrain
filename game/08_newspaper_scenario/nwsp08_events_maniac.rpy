@@ -18,7 +18,7 @@ label nsp_event_maniac_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маньяке "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_maniac_1_photo
     
     if nsp_germiona_maniac_1_statimg == "New" :
         $ cur_level = nsp_event_maniac_1 + 1
@@ -124,7 +124,7 @@ label nsp_event_maniac_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маньяке "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_maniac_2_photo
     
     if nsp_germiona_maniac_2_statimg == "New" :
         $ cur_level = nsp_event_maniac_2 + 1
@@ -228,7 +228,7 @@ label nsp_event_maniac_3_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маньяке "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_maniac_3_photo
     
     if nsp_germiona_maniac_3_statimg == "New" :
         $ cur_level = nsp_event_maniac_3 + 1

@@ -20,7 +20,7 @@ label nsp_event_sex_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о сексе "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_sex_1_photo
     
     if nsp_germiona_sex_1_statimg == "New" :
         $ cur_level = nsp_event_sex_1 + 1
@@ -143,7 +143,7 @@ label nsp_event_sex_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о сексе "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_sex_2_photo
     
     if nsp_germiona_sex_2_statimg == "New" :
         $ cur_level = nsp_event_sex_2 + 1
@@ -263,7 +263,7 @@ label nsp_event_sex_3_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о сексе "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_sex_3_photo
     
     if nsp_germiona_sex_3_statimg == "New" :
         $ cur_level = nsp_event_sex_3 + 1
@@ -381,7 +381,7 @@ label nsp_event_sex_4_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о сексе "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_sex_4_photo
     
     if nsp_germiona_sex_4_statimg == "New" :
         $ cur_level = nsp_event_sex_4 + 1
@@ -502,7 +502,7 @@ label nsp_event_sex_5_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о сексе "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_sex_5_photo
     
     if nsp_germiona_sex_5_statimg == "New" :
         $ cur_level = nsp_event_sex_5 + 1

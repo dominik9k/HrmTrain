@@ -78,7 +78,7 @@ $ nsp_genie_writer = 10 # Джин: Навык писателя статей, в
 $ nsp_genie_photocamera = 0 # Джин: Тип используемого фотоаппарата, в начале - 0. Отсюда же украшения газеты.
 $ nsp_genie_photocamera_exp = 3 # Растет при каждом ивенте на 1, для покупки фотоаппарата (кроме 1-го) след уровня нужно не менее 3 ивентов с прошлым. При этом счетчик сбрасывается. Для покупки первого аппарата опыт уже как бы есть.
 #DR'S DEBUG
-$ nsp_genie_sphere = True # Джин: Наличие хрустального шара.
+$ nsp_genie_sphere = False # Джин: Наличие хрустального шара.
 $ nsp_genie_sphere_level = 0 # Джин: Навык владения хрустальным шаром.
 $ nsp_genie_sphere_level_exp = 0 # Джин: Опыт владения хрустальным шаром.
 $ nsp_genie_sphere_ruby_level = 0 # Джин: Уровень рубина для шара
@@ -101,7 +101,8 @@ $ nsp_newspaper_bonus_text = "нет" # Газета: Текст, описани
 $ nsp_newspaper_bonus_point = 0 # Газета: Баллы за бонусный контент
 $ nsp_newspaper_bonus_base = 0 # Газета: Базовый бонус эвента
 $ nsp_newspaper_bonus_text_base = 0 # Газета: Базовый текст эвента
-$ nsp_newspaper_lasr_text = "" # Газета: Тект, реакция школы на предыдущий выпуск
+$ nsp_newspaper_bonus_point_last = 0
+$ nsp_newspaper_qual_last = 0
 $ nsp_newspaper_last_money = 0 # Газета: Оценка публики, равна деньгам за предыдущий выпуск
 
 $ nsp_newspaper_qual = 10 # Газета: Качество текущего выпуска
@@ -193,7 +194,7 @@ $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не бы
 $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
 #$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
-$ nsp_newspaper_menu = 15
+$ nsp_newspaper_menu = 6
 
 ###
 
@@ -535,6 +536,7 @@ $hermi.liking+=1
 $daphne.liking+=1
 
 ### DR'S newspaper ooo ###
+#">>>[nsp_newspaper_articles] [nsp_newspaper_ready] [nsp_newspaper_published] [nsp_newspaper_published_mail]"
 
 if nsp_pre_jobs_max < finished_report:
     $ nsp_pre_jobs_max = finished_report
@@ -666,6 +668,11 @@ if nsp_day_letter7 == 7 and nsp_letter_7 == 0 and nsp_event_rights_3 < 5 :
         $ nsp_letter_7 = 1
         $ letters += 1 
     $ nsp_day_letter7 = 0
+    
+if letters == 0 :
+    $ nsp_newspaper_published = False
+    $ nsp_newspaper_published_mail = False 
+    $ nsp_newspaper_ready = False
 
 ###
 

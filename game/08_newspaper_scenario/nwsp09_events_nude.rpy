@@ -20,7 +20,7 @@ label nsp_event_nude_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " об эксгибиционизме "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_nude_1_photo
     
     if nsp_germiona_nude_1_statimg == "New" :
         $ cur_level = nsp_event_nude_1 + 1
@@ -146,7 +146,7 @@ label nsp_event_nude_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " об эксгибиционизме "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_nude_2_photo
     
     if nsp_germiona_nude_2_statimg == "New" :
         $ cur_level = nsp_event_nude_2 + 1
@@ -266,7 +266,7 @@ label nsp_event_nude_3_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " об эксгибиционизме "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_nude_3_photo
     
     if nsp_germiona_nude_3_statimg == "New" :
         $ cur_level = nsp_event_nude_3 + 1
@@ -411,7 +411,7 @@ label nsp_event_nude_4_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " об эксгибиционизме "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_nude_4_photo
     
     if nsp_germiona_nude_4_statimg == "New" :
         $ cur_level = nsp_event_nude_4 + 1
@@ -536,7 +536,7 @@ label nsp_event_nude_5_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " об эксгибиционизме "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_nude_5_photo
     
     if nsp_germiona_nude_5_statimg == "New" :
         $ cur_level = nsp_event_nude_5 + 1

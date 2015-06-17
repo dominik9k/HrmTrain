@@ -20,7 +20,7 @@ label nsp_event_kviddich_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о квиддиче "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_kviddich_1_photo
     
     if nsp_germiona_kviddich_1_statimg == "New" :
         $ cur_level = nsp_event_kviddich_1 + 1
@@ -146,7 +146,7 @@ label nsp_event_kviddich_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о квиддиче "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_kviddich_2_photo
     
     if nsp_germiona_kviddich_2_statimg == "New" :
         $ cur_level = nsp_event_kviddich_2 + 1
@@ -266,7 +266,7 @@ label nsp_event_kviddich_3_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о квиддиче "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_kviddich_3_photo
     
     if nsp_germiona_kviddich_3_statimg == "New" :
         $ cur_level = nsp_event_kviddich_3 + 1
@@ -391,7 +391,7 @@ label nsp_event_kviddich_4_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о квиддиче "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_kviddich_4_photo
     
     if nsp_germiona_kviddich_4_statimg == "New" :
         $ cur_level = nsp_event_kviddich_4 + 1
@@ -516,7 +516,7 @@ label nsp_event_kviddich_5_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о квиддиче "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_kviddich_5_photo
     
     if nsp_germiona_kviddich_5_statimg == "New" :
         $ cur_level = nsp_event_kviddich_5 + 1
@@ -643,7 +643,7 @@ label nsp_event_kviddich_6_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о квиддиче "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_kviddich_6_photo
     
     if nsp_germiona_kviddich_6_statimg == "New" :
         $ cur_level = nsp_event_kviddich_6 + 1

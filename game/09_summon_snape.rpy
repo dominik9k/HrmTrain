@@ -44,13 +44,17 @@ label summon_snape:
             
 ### DR'S NEWSPAPER ooo ###
 
-        "Поговорить о газете" if nsp_pre_letter == 2 and nsp_pre_snape < 5:
+        "- Поговорить о газете -" if nsp_pre_letter == 2 and nsp_pre_snape < 5:
             $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
             jump newsp_pre_snape_dialog
             
-        "Поговорить о газете" if nsp_newspaper_menu == 3:
+        "- Поговорить о газете -" if nsp_newspaper_menu == 3:
             $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
             jump newsp_pre_snape_dialog2
+            
+        "- Впечатления о газете -" if nsp_newspaper_menu >= 5 :
+            $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
+            jump nsp_snape_dialog_stat
 
 ###
 

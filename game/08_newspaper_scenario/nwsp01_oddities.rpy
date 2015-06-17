@@ -94,6 +94,7 @@ label nsp_sphere_dahre:
                             if gold >= 100:
                                 $ gold -= 100
                                 $ nsp_genie_sphere_sapphire_level = 1
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился осколок сапфира."
                                 hide screen gift
                                 jump desk
@@ -114,6 +115,7 @@ label nsp_sphere_dahre:
                             if gold >= 200:
                                 $ gold -= 200
                                 $ nsp_genie_sphere_sapphire_level = 2
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился маленький сапфир."
                                 hide screen gift
                                 jump desk
@@ -135,6 +137,7 @@ label nsp_sphere_dahre:
                             if gold >= 400:
                                 $ gold -= 400
                                 $ nsp_genie_sphere_sapphire_level = 3
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился сапфир."
                                 hide screen gift
                                 jump desk
@@ -156,6 +159,7 @@ label nsp_sphere_dahre:
                             if gold >= 700:
                                 $ gold -= 700
                                 $ nsp_genie_sphere_sapphire_level = 4
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился крупный сапфир."
                                 hide screen gift
                                 jump desk
@@ -177,6 +181,7 @@ label nsp_sphere_dahre:
                             if gold >= 1000:
                                 $ gold -= 1000
                                 $ nsp_genie_sphere_sapphire_level = 5
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился совершенный сапфир."
                                 hide screen gift
                                 jump desk
@@ -207,6 +212,7 @@ label nsp_sphere_dahre:
                             if gold >= 200:
                                 $ gold -= 200
                                 $ nsp_genie_sphere_ruby_level = 1
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился осколок рубина."
                                 hide screen gift
                                 jump desk
@@ -227,6 +233,7 @@ label nsp_sphere_dahre:
                             if gold >= 600:
                                 $ gold -= 600
                                 $ nsp_genie_sphere_ruby_level = 2
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился маленький рубин."
                                 hide screen gift
                                 jump desk
@@ -248,6 +255,7 @@ label nsp_sphere_dahre:
                             if gold >= 1500:
                                 $ gold -= 1500
                                 $ nsp_genie_sphere_ruby_level = 3
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился рубин."
                                 hide screen gift
                                 jump desk
@@ -269,6 +277,7 @@ label nsp_sphere_dahre:
                             if gold >= 5000:
                                 $ gold -= 5000
                                 $ nsp_genie_sphere_ruby_level = 4
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился крупный рубин."
                                 hide screen gift
                                 jump desk
@@ -290,6 +299,7 @@ label nsp_sphere_dahre:
                             if gold >= 20000:
                                 $ gold -= 20000
                                 $ nsp_genie_sphere_ruby_level = 5
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился совершенный рубин."
                                 hide screen gift
                                 jump desk
@@ -320,6 +330,7 @@ label nsp_sphere_dahre:
                             if gold >= 500:
                                 $ gold -= 500
                                 $ nsp_genie_sphere_diamond_level = 1
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился осколок алмаза."
                                 hide screen gift
                                 jump desk
@@ -340,6 +351,7 @@ label nsp_sphere_dahre:
                             if gold >= 1500:
                                 $ gold -= 1500
                                 $ nsp_genie_sphere_diamond_level = 2
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился маленький алмаз."
                                 hide screen gift
                                 jump desk
@@ -361,6 +373,7 @@ label nsp_sphere_dahre:
                             if gold >= 5000:
                                 $ gold -= 5000
                                 $ nsp_genie_sphere_diamond_level = 3
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился алмаз."
                                 hide screen gift
                                 jump desk
@@ -382,6 +395,7 @@ label nsp_sphere_dahre:
                             if gold >= 15000:
                                 $ gold -= 15000
                                 $ nsp_genie_sphere_diamond_level = 4
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился крупный алмаз."
                                 hide screen gift
                                 jump desk
@@ -403,6 +417,7 @@ label nsp_sphere_dahre:
                             if gold >= 40000:
                                 $ gold -= 40000
                                 $ nsp_genie_sphere_diamond_level = 5
+                                call nsp_genie_sphere_level_check
                                 ">За окном мелькнула стремительная тень и по столу покатился совершенный алмаз."
                                 hide screen gift
                                 jump desk

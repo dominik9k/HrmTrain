@@ -37,6 +37,9 @@ label hermione_approaching:
     menu:
 ### DR'S NEWSPAPER ooo ###
 
+        "- Тренировка с Хрустальным шаром -" if nsp_newspaper_menu >= 15 and nsp_genie_sphere_sapphire_level >= 1 :
+            jump nsp_hermione_train
+
         "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4 or nsp_newspaper_menu == 5 :
             jump nsp_hermione_pre1
 
@@ -61,6 +64,13 @@ label hermione_approaching:
                         renpy.say(her, _text)
                         break
             jump hermione_main_menu
+            
+        "- Впечатления от газеты -" if nsp_newspaper_menu >= 6 :
+            if hermi.liking >= -7:
+                jump nsp_hermione_dialog_status
+            else:
+                her "Мне нечего сказать вам..."    
+                jump hermione_main_menu            
 
 ###
         "- Поговорить -" if not chitchated_with_her:

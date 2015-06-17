@@ -20,7 +20,7 @@ label nsp_event_rights_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о правах "
-    $ nsp_genie_sphere_diamond_req = 1
+    $ nsp_genie_sphere_req = nsp_germiona_rights_1_photo
     
     if nsp_germiona_rights_1_statimg == "New" :
         $ cur_level = nsp_event_rights_1 + 1
@@ -137,7 +137,7 @@ label nsp_event_rights_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о правах "
-    $ nsp_genie_sphere_diamond_req = 1
+    $ nsp_genie_sphere_req = nsp_germiona_rights_2_photo
     
     if nsp_germiona_rights_2_statimg == "New" :
         $ cur_level = nsp_event_rights_2 + 1
@@ -251,7 +251,7 @@ label nsp_event_rights_3_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о правах "
-    $ nsp_genie_sphere_diamond_req = 4
+    $ nsp_genie_sphere_req = nsp_germiona_rights_3_photo
     
     if nsp_germiona_rights_3_statimg == "New" :
         $ cur_level = nsp_event_rights_3 + 1
@@ -378,7 +378,7 @@ label nsp_event_rights_4_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о правах "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_rights_4_photo
     
     if nsp_germiona_rights_4_statimg == "New" :
         $ cur_level = nsp_event_rights_4 + 1
@@ -499,7 +499,7 @@ label nsp_event_rights_5_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о правах "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_rights_5_photo
     
     if nsp_germiona_rights_5_statimg == "New" :
         $ cur_level = nsp_event_rights_5 + 1

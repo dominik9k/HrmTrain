@@ -93,6 +93,51 @@ label nsp_newsp_themes:
     $ nsp_germiona_studio_5_statimg = "Block"
     $ nsp_germiona_studio_6_statimg = "Block"
     
+    $ nsp_germiona_rights_1_photo = "dis"
+    $ nsp_germiona_rights_2_photo = "dis"
+    $ nsp_germiona_rights_3_photo = "dis"
+    $ nsp_germiona_rights_4_photo = "dis"
+    $ nsp_germiona_rights_5_photo = "dis"
+    
+    $ nsp_germiona_magls_1_photo = "dis"
+    $ nsp_germiona_magls_2_photo = "dis"
+    $ nsp_germiona_magls_3_photo = "dis"
+    $ nsp_germiona_magls_4_photo = "dis"
+    $ nsp_germiona_magls_5_photo = "dis"
+    
+    $ nsp_germiona_kviddich_1_photo = "dis"
+    $ nsp_germiona_kviddich_2_photo = "dis"
+    $ nsp_germiona_kviddich_3_photo = "dis"
+    $ nsp_germiona_kviddich_4_photo = "dis"
+    $ nsp_germiona_kviddich_5_photo = "dis"
+    $ nsp_germiona_kviddich_6_photo = "dis"
+    
+    $ nsp_germiona_sex_1_photo = "dis"
+    $ nsp_germiona_sex_2_photo = "dis"
+    $ nsp_germiona_sex_3_photo = "dis"
+    $ nsp_germiona_sex_4_photo = "dis"
+    $ nsp_germiona_sex_5_photo = "dis"
+    
+    $ nsp_germiona_maniac_1_photo = "dis"
+    $ nsp_germiona_maniac_2_photo = "dis"
+    $ nsp_germiona_maniac_3_photo = "dis"
+    
+    $ nsp_germiona_nude_1_photo = "dis"
+    $ nsp_germiona_nude_2_photo = "dis"
+    $ nsp_germiona_nude_3_photo = "dis"
+    $ nsp_germiona_nude_4_photo = "dis"
+    $ nsp_germiona_nude_5_photo = "dis"
+    
+    $ nsp_germiona_forest_1_photo = "dis"
+    $ nsp_germiona_forest_2_photo = "dis"
+    
+    $ nsp_germiona_studio_1_photo = "en"
+    $ nsp_germiona_studio_2_photo = "en"
+    $ nsp_germiona_studio_3_photo = "en"
+    $ nsp_germiona_studio_4_photo = "en"
+    $ nsp_germiona_studio_5_photo = "en"
+    $ nsp_germiona_studio_6_photo = "en"
+    
     $ cur_level = 0
     
     # DR'S DEBUG
@@ -142,7 +187,7 @@ label nsp_newsp_themes:
         
             if nsp_germiona_menu_rights == 2 :
                 menu:
-                    "- Сексуальные домогательства учеников -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_1_statimg].png}" :
+                    "- Сексуальные домогательства учеников -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_1_photo].png}" :
                         if nsp_germiona_rights_1_statimg == "New" :
                             $ cur_level = nsp_event_rights_1 + 1
                             jump nsp_event_rights_1
@@ -157,7 +202,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Сексуальные домогательства учителей -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_2_statimg].png}" if nsp_genie_writer >= 1 :
+                    "- Сексуальные домогательства учителей -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_2_photo].png}" if nsp_genie_writer >= 1 :
                         if nsp_germiona_rights_2_statimg == "New" :
                             $ cur_level = nsp_event_rights_2 + 1
                             jump nsp_event_rights_2
@@ -172,7 +217,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Интервью с защитницей прав женщин -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_3_statimg].png}" if nsp_genie_writer >= 4 and (nsp_letter_7 ==3 or nsp_event_rights_3 > 0) :
+                    "- Интервью с защитницей прав женщин -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_3_photo].png}" if nsp_genie_writer >= 4 and (nsp_letter_7 ==3 or nsp_event_rights_3 > 0) :
                         if nsp_germiona_rights_3_statimg == "New" :
                             $ cur_level = nsp_event_rights_3 + 1
                             jump nsp_event_rights_3
@@ -193,7 +238,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Заседание ООП с демонстрацией для девочек -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_4_statimg].png}" if nsp_genie_writer >= 8 :
+                    "- Заседание ООП с демонстрацией для девочек -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_4_photo].png}" if nsp_genie_writer >= 8 :
                         if nsp_germiona_rights_4_statimg == "New" :
                             $ cur_level = nsp_event_rights_4 + 1
                             jump nsp_event_rights_4
@@ -208,7 +253,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Заседание ООП с демонстрацией для смешанной группы -\n{image=08_newspaper_scenario/hearts/heart_7[nsp_event_rights_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_5_statimg].png}" if nsp_genie_writer >= 10 and (nsp_event_rights_4 >= 3) :
+                    "- Заседание ООП с демонстрацией для смешанной группы -\n{image=08_newspaper_scenario/hearts/heart_7[nsp_event_rights_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_5_photo].png}" if nsp_genie_writer >= 10 and (nsp_event_rights_4 >= 3) :
                         if nsp_germiona_rights_5_statimg == "New" :
                             $ cur_level = nsp_event_rights_5 + 1
                             jump nsp_event_rights_5
@@ -233,7 +278,7 @@ label nsp_newsp_themes:
                 
             if nsp_germiona_menu_magls == 2 :
                 menu:
-                    "- Откровенная одежда маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_1_statimg].png}" :
+                    "- Откровенная одежда маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_1_photo].png}" :
                         if nsp_germiona_magls_1_statimg == "New" :
                             $ cur_level = nsp_event_magls_1 + 1
                             jump nsp_event_magls_1
@@ -248,7 +293,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Сауна маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_2_statimg].png}" if nsp_genie_writer >= 4 :
+                    "- Сауна маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_2_photo].png}" if nsp_genie_writer >= 4 :
                         if nsp_germiona_magls_2_statimg == "New" :
                             $ cur_level = nsp_event_magls_2 + 1
                             jump nsp_event_magls_2
@@ -263,7 +308,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Пляж маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_3_statimg].png}" if nsp_genie_writer >= 6 :
+                    "- Пляж маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_3_photo].png}" if nsp_genie_writer >= 6 :
                         if nsp_germiona_magls_3_statimg == "New" :
                             $ cur_level = nsp_event_magls_3 + 1
                             jump nsp_event_magls_3
@@ -278,7 +323,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Фотостудия маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_4_statimg].png}" if nsp_genie_writer >= 8 :
+                    "- Фотостудия маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_4_photo].png}" if nsp_genie_writer >= 8 :
                         if nsp_germiona_magls_4_statimg == "New" :
                             $ cur_level = nsp_event_magls_4 + 1
                             jump nsp_event_magls_4
@@ -293,7 +338,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Медобследование по-магловски -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_5_statimg].png}" if nsp_genie_writer >= 10 :
+                    "- Медобследование по-магловски -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_5_photo].png}" if nsp_genie_writer >= 10 :
                         if nsp_germiona_magls_5_statimg == "New" :
                             $ cur_level = nsp_event_magls_5 + 1
                             jump nsp_event_magls_5
@@ -324,7 +369,7 @@ label nsp_newsp_themes:
                 
             if nsp_germiona_menu_kviddich == 2 :
                 menu:
-                    "- Тренировка болельщицы -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_1_statimg].png}" :
+                    "- Тренировка болельщицы -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_1_photo].png}" :
                         if nsp_germiona_kviddich_1_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_1 + 1
                             jump nsp_event_kviddich_1
@@ -339,7 +384,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Помощь команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_2_statimg].png}" if nsp_genie_writer >= 4 :
+                    "- Помощь команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_2_photo].png}" if nsp_genie_writer >= 4 :
                         if nsp_germiona_kviddich_2_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_2 + 1
                             jump nsp_event_kviddich_2
@@ -360,7 +405,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Диверсия для команды Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_3_statimg].png}" if nsp_genie_writer >= 6 :
+                    "- Диверсия для команды Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_3_photo].png}" if nsp_genie_writer >= 6 :
                         if nsp_germiona_kviddich_3_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_3 + 1
                             jump nsp_event_kviddich_3
@@ -375,7 +420,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Бег на стадионе без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_4_statimg].png}" if nsp_genie_writer >= 8 :
+                    "- Бег на стадионе без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_4_photo].png}" if nsp_genie_writer >= 8 :
                         if nsp_germiona_kviddich_4_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_4 + 1
                             jump nsp_event_kviddich_4
@@ -396,7 +441,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Полет без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_5_statimg].png}" if nsp_genie_writer >= 10 :
+                    "- Полет без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_5_photo].png}" if nsp_genie_writer >= 10 :
                         if nsp_germiona_kviddich_5_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_5 + 1
                             jump nsp_event_kviddich_5
@@ -417,7 +462,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Игра в команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_6_statimg].png}" if nsp_genie_writer >= 10 and nsp_event_kviddich_2 >= 5 and nsp_event_kviddich_5 >= 5 :
+                    "- Игра в команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_6_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_6_photo].png}" if nsp_genie_writer >= 10 and nsp_event_kviddich_2 >= 5 and nsp_event_kviddich_5 >= 5 :
                         if nsp_germiona_kviddich_6_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_6 + 1
                             jump nsp_event_kviddich_6
@@ -448,7 +493,7 @@ label nsp_newsp_themes:
         
             if nsp_germiona_menu_sex == 2 :
                 menu:
-                    "- Без трусов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_1_statimg].png}" :
+                    "- Без трусов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_sex_1_photo].png}" :
                         if nsp_germiona_sex_1_statimg == "New" :
                             $ cur_level = nsp_event_sex_1 + 1
                             jump nsp_event_sex_1
@@ -463,7 +508,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Дилдо в вагине -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_2_statimg].png}" if nsp_genie_writer >= 4 :
+                    "- Дилдо в вагине -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_sex_2_photo].png}" if nsp_genie_writer >= 4 :
                         if nsp_germiona_sex_2_statimg == "New" :
                             $ cur_level = nsp_event_sex_2 + 1
                             jump nsp_event_sex_2
@@ -478,7 +523,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Дилдо в попе -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_3_statimg].png}" if nsp_genie_writer >= 5 :
+                    "- Дилдо в попе -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_sex_3_photo].png}" if nsp_genie_writer >= 5 :
                         if nsp_germiona_sex_3_statimg == "New" :
                             $ cur_level = nsp_event_sex_3 + 1
                             jump nsp_event_sex_3
@@ -493,7 +538,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- День вибратора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_4_statimg].png}" if nsp_genie_writer >= 6 :
+                    "- День вибратора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_sex_4_photo].png}" if nsp_genie_writer >= 6 :
                         if nsp_germiona_sex_4_statimg == "New" :
                             $ cur_level = nsp_event_sex_4 + 1
                             jump nsp_event_sex_4
@@ -508,7 +553,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Афродизиак -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_5_statimg].png}" if nsp_genie_writer >= 9 :
+                    "- Афродизиак -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_sex_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_sex_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_sex_5_photo].png}" if nsp_genie_writer >= 9 :
                         if nsp_germiona_sex_5_statimg == "New" :
                             $ cur_level = nsp_event_sex_5 + 1
                             jump nsp_event_sex_5
@@ -533,7 +578,7 @@ label nsp_newsp_themes:
                 
             if nsp_germiona_menu_maniac == 2 :
                 menu:
-                    "- Выслеживание маньяка -\n{image=08_newspaper_scenario/hearts/heart_4[nsp_event_maniac_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_maniac_1_statimg].png}" :
+                    "- Выслеживание маньяка -\n{image=08_newspaper_scenario/hearts/heart_4[nsp_event_maniac_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_maniac_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_maniac_1_photo].png}" :
                         if nsp_germiona_maniac_1_statimg == "New" :
                             $ cur_level = nsp_event_maniac_1 + 1
                             jump nsp_event_maniac_1
@@ -554,7 +599,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Интервью с маньяком -\n{image=08_newspaper_scenario/hearts/heart_4[nsp_event_maniac_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_maniac_2_statimg].png}" if nsp_genie_writer >= 6 and nsp_event_maniac_1 >= 4 :
+                    "- Интервью с маньяком -\n{image=08_newspaper_scenario/hearts/heart_4[nsp_event_maniac_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_maniac_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_maniac_2_photo].png}" if nsp_genie_writer >= 6 and nsp_event_maniac_1 >= 4 :
                         if nsp_germiona_maniac_2_statimg == "New" :
                             $ cur_level = nsp_event_maniac_2 + 1
                             jump nsp_event_maniac_2
@@ -575,7 +620,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Ловля маньяка на живца -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_maniac_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_maniac_3_statimg].png}" if nsp_genie_writer >= 6 and nsp_event_maniac_2 >= 4:
+                    "- Ловля маньяка на живца -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_maniac_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_maniac_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_maniac_3_photo].png}" if nsp_genie_writer >= 6 and nsp_event_maniac_2 >= 4:
                         if nsp_germiona_maniac_3_statimg == "New" :
                             $ cur_level = nsp_event_maniac_3 + 1
                             jump nsp_event_maniac_3
@@ -606,7 +651,7 @@ label nsp_newsp_themes:
         
             if nsp_germiona_menu_nude == 2 :
                 menu:
-                    "- Перед спальней Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_1_statimg].png}" :
+                    "- Перед спальней Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_nude_1_photo].png}" :
                         if nsp_germiona_nude_1_statimg == "New" :
                             $ cur_level = nsp_event_nude_1 + 1
                             jump nsp_event_nude_1
@@ -621,7 +666,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Женская спальня Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_2_statimg].png}" if nsp_genie_writer >= 5 :
+                    "- Женская спальня Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_nude_2_photo].png}" if nsp_genie_writer >= 5 :
                         if nsp_germiona_nude_2_statimg == "New" :
                             $ cur_level = nsp_event_nude_2 + 1
                             jump nsp_event_nude_2
@@ -636,7 +681,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Мужская спальня Слизерина -\n{image=08_newspaper_scenario/hearts/heart_6[nsp_event_nude_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_3_statimg].png}" if nsp_genie_writer >= 6 :
+                    "- Мужская спальня Слизерина -\n{image=08_newspaper_scenario/hearts/heart_6[nsp_event_nude_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_nude_3_photo].png}" if nsp_genie_writer >= 6 :
                         if nsp_germiona_nude_3_statimg == "New" :
                             $ cur_level = nsp_event_nude_3 + 1
                             jump nsp_event_nude_3
@@ -651,7 +696,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Стойкость без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_4_statimg].png}" if nsp_genie_writer >= 8 :
+                    "- Стойкость без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_nude_4_photo].png}" if nsp_genie_writer >= 8 :
                         if nsp_germiona_nude_4_statimg == "New" :
                             $ cur_level = nsp_event_nude_4 + 1
                             jump nsp_event_nude_4
@@ -672,7 +717,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Маскировка без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_5_statimg].png}" if nsp_genie_writer >= 10 :
+                    "- Маскировка без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_nude_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_nude_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_nude_5_photo].png}" if nsp_genie_writer >= 10 :
                         if nsp_germiona_nude_5_statimg == "New" :
                             $ cur_level = nsp_event_nude_5 + 1
                             jump nsp_event_nude_5
@@ -702,7 +747,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes  
                 
-                    "- Поход в Запретный лес -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_forest_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_forest_1_statimg].png}" if nsp_genie_writer >= 4 and nsp_letter_1 >= 2 :
+                    "- Поход в Запретный лес -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_forest_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_forest_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_forest_1_photo].png}" if nsp_genie_writer >= 4 and nsp_letter_1 >= 2 :
                         if nsp_germiona_forest_1_statimg == "New" :
                             $ cur_level = nsp_event_forest_1 + 1
                             jump nsp_event_forest_1
@@ -717,7 +762,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Контакт с кентавром -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_forest_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_forest_2_statimg].png}" if nsp_genie_writer >= 7 and nsp_letter_9 >= 2 :
+                    "- Контакт с кентавром -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_forest_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_forest_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_forest_2_photo].png}" if nsp_genie_writer >= 7 and nsp_letter_9 >= 2 :
                         if nsp_germiona_forest_2_statimg == "New" :
                             $ cur_level = nsp_event_forest_2 + 1
                             jump nsp_event_forest_2
@@ -748,7 +793,7 @@ label nsp_newsp_themes:
 
             if nsp_germiona_menu_studio == 2 :
                 menu:
-                    "- Интервью с фотосессией -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_1_statimg].png}" :
+                    "- Интервью с фотосессией -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_1_photo].png}" :
                         if nsp_germiona_studio_1_statimg == "New" :
                             $ cur_level = nsp_event_studio_1 + 1
                             jump nsp_event_studio_1
@@ -763,7 +808,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Интервью с видеосессией -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_2_statimg].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
+                    "- Интервью с видеосессией -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_2_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
                         if nsp_germiona_studio_2_statimg == "New" :
                             $ cur_level = nsp_event_studio_2 + 1
                             jump nsp_event_studio_2
@@ -778,7 +823,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Постановочные фото папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_3_statimg].png}" if nsp_genie_writer >= 0 :
+                    "- Постановочные фото папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_3_photo].png}" if nsp_genie_writer >= 0 :
                         if nsp_germiona_studio_3_statimg == "New" :
                             $ cur_level = nsp_event_studio_3 + 1
                             jump nsp_event_studio_3
@@ -793,7 +838,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Постановочные видео папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_4_statimg].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
+                    "- Постановочные видео папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_4_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
                         if nsp_germiona_studio_4_statimg == "New" :
                             $ cur_level = nsp_event_studio_4 + 1
                             jump nsp_event_studio_4
@@ -808,7 +853,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Порнофото инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_5_statimg].png}" if nsp_genie_writer >= 0 :
+                    "- Порнофото инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_5_photo].png}" if nsp_genie_writer >= 0 :
                         if nsp_germiona_studio_5_statimg == "New" :
                             $ cur_level = nsp_event_studio_5 + 1
                             jump nsp_event_studio_5
@@ -823,7 +868,7 @@ label nsp_newsp_themes:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Порновидео инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_6_statimg].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
+                    "- Порновидео инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_6_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_6_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
                         if nsp_germiona_studio_6_statimg == "New" :
                             $ cur_level = nsp_event_studio_6 + 1
                             jump nsp_event_studio_6
@@ -1909,6 +1954,66 @@ label nsp_init_flags_forest :
     elif  nsp_germiona_forest_2_statimg == "New":
         $ nsp_germiona_statimg_forest = "New"
 
+        
+### Photo flags
+
+    if nsp_genie_photocamera >= 1 :
+
+        $ nsp_germiona_rights_1_photo = "en"
+        $ nsp_germiona_rights_2_photo = "en" 
+
+    if nsp_genie_sphere and nsp_genie_sphere_sapphire_level_eff >= 3 and nsp_genie_sphere_ruby_level_eff >= 1 :
+            
+        if nsp_genie_sphere_diamond_level_eff >= 2 :
+        
+            $ nsp_germiona_rights_4_photo = "en"
+            $ nsp_germiona_rights_5_photo = "en"  
+            
+            $ nsp_germiona_magls_1_photo = "en"
+            $ nsp_germiona_magls_4_photo = "en"
+            $ nsp_germiona_magls_5_photo = "en"
+            
+            $ nsp_germiona_sex_1_photo = "en"
+            $ nsp_germiona_sex_2_photo = "en"
+            $ nsp_germiona_sex_3_photo = "en"
+            $ nsp_germiona_sex_4_photo = "en"
+            $ nsp_germiona_sex_5_photo = "en"
+            
+            $ nsp_germiona_sex_1_photo = "en"
+            $ nsp_germiona_sex_2_photo = "en"
+            $ nsp_germiona_sex_3_photo = "en"
+            $ nsp_germiona_sex_4_photo = "en"
+            $ nsp_germiona_sex_5_photo = "en"
+            
+            $ nsp_germiona_nude_1_photo = "en"
+            $ nsp_germiona_nude_2_photo = "en"
+            $ nsp_germiona_nude_3_photo = "en"
+            $ nsp_germiona_nude_4_photo = "en"
+            $ nsp_germiona_nude_5_photo = "en"
+            
+        if nsp_genie_sphere_diamond_level_eff >= 3 :
+        
+            $ nsp_germiona_magls_2_photo = "en"
+            $ nsp_germiona_magls_3_photo = "en"
+            
+            $ nsp_germiona_kviddich_1_photo = "en"
+            $ nsp_germiona_kviddich_2_photo = "en"
+            $ nsp_germiona_kviddich_3_photo = "en"
+            $ nsp_germiona_kviddich_4_photo = "en"
+            $ nsp_germiona_kviddich_5_photo = "en"
+            $ nsp_germiona_kviddich_6_photo = "en"
+            
+            $ nsp_germiona_maniac_1_photo = "en"
+            $ nsp_germiona_maniac_2_photo = "en"
+            $ nsp_germiona_maniac_3_photo = "en"
+            
+        if nsp_genie_sphere_diamond_level_eff >= 4 :
+        
+            $ nsp_germiona_rights_3_photo = "en"
+            
+            $ nsp_germiona_forest_1_photo = "en"
+            $ nsp_germiona_forest_2_photo = "en"
+
     return      
     
     
@@ -2147,7 +2252,7 @@ label nsp_bonus_calc :
     $ nsp_ruby_koef = 0
     $ nsp_saphire_koef = 0
     
-    if nsp_genie_photocamera == 0 :
+    if nsp_genie_photocamera == 0 or nsp_genie_sphere_req == "dis" :
         $ nsp_newspaper_bonus_point = nsp_newspaper_bonus_base
         $ nsp_newspaper_bonus_text = "  Развратная статья\n  " + str (nsp_newspaper_bonus_text_base)
         
@@ -2202,6 +2307,11 @@ label nsp_bonus_calc :
             $ nsp_newspaper_menu = 6
             
         $ nsp_genie_photocamera_exp += 1
+        
+        if nsp_genie_sphere :
+            $ nsp_genie_sphere_level_exp += 1
+        
+            call nsp_genie_sphere_level_check
         
         return
         
@@ -2334,25 +2444,30 @@ label nsp_bonus_calc_video :
     
 label nsp_genie_sphere_level_check :
 
-    if nsp_genie_sphere_level == 0 nsp_genie_sphere_level_exp >= 2 :
+    if nsp_genie_sphere_level == 0 and nsp_genie_sphere_level_exp >= 2 :
         $ nsp_genie_sphere_level_exp = 0
         $ nsp_genie_sphere_level += 1
-    elif nsp_genie_sphere_level == 1 nsp_genie_sphere_level_exp >= 5 :
+        ">Ваше мастерство владения Хрустальным шаром повысилось до [nsp_genie_sphere_level] уровня."
+    elif nsp_genie_sphere_level == 1 and nsp_genie_sphere_level_exp >= 5 :
         $ nsp_genie_sphere_level_exp = 0
         $ nsp_genie_sphere_level += 1
-    elif nsp_genie_sphere_level == 2 nsp_genie_sphere_level_exp >= 10 :
+        ">Ваше мастерство владения Хрустальным шаром повысилось до [nsp_genie_sphere_level] уровня."
+    elif nsp_genie_sphere_level == 2 and nsp_genie_sphere_level_exp >= 10 :
         $ nsp_genie_sphere_level_exp = 0
         $ nsp_genie_sphere_level += 1
-    elif nsp_genie_sphere_level == 3 nsp_genie_sphere_level_exp >= 20 :
+        ">Ваше мастерство владения Хрустальным шаром повысилось до [nsp_genie_sphere_level] уровня."
+    elif nsp_genie_sphere_level == 3 and nsp_genie_sphere_level_exp >= 20 :
         $ nsp_genie_sphere_level_exp = 0
         $ nsp_genie_sphere_level += 1
-    elif nsp_genie_sphere_level == 4 nsp_genie_sphere_level_exp >= 30 :
+        ">Ваше мастерство владения Хрустальным шаром повысилось до [nsp_genie_sphere_level] уровня."
+    elif nsp_genie_sphere_level == 4 and nsp_genie_sphere_level_exp >= 30 :
         $ nsp_genie_sphere_level_exp = 0
         $ nsp_genie_sphere_level += 1
+        ">Ваше мастерство владения Хрустальным шаром повысилось до [nsp_genie_sphere_level] уровня."
         
     $ nsp_genie_sphere_ruby_level_eff = nsp_genie_sphere_ruby_level
     $ nsp_genie_sphere_diamond_level_eff = nsp_genie_sphere_diamond_level
-    $ nsp_genie_sphere_sapphire_level_eff = nsp_genie_sphere_saphire_level
+    $ nsp_genie_sphere_sapphire_level_eff = nsp_genie_sphere_sapphire_level
         
     if nsp_genie_sphere_level == 0 :
         if nsp_genie_sphere_ruby_level_eff > 0 :
@@ -2366,15 +2481,15 @@ label nsp_genie_sphere_level_check :
             $ nsp_genie_sphere_ruby_level_eff = 1
         if nsp_genie_sphere_diamond_level_eff > 2 :
             $ nsp_genie_sphere_diamond_level_eff = 2
-        if nsp_genie_sphere_sapphire_level_eff > 2 :
-            $ nsp_genie_sphere_sapphire_level_eff = 2
+        if nsp_genie_sphere_sapphire_level_eff > 3 :
+            $ nsp_genie_sphere_sapphire_level_eff = 3
     elif nsp_genie_sphere_level == 2 :
         if nsp_genie_sphere_ruby_level_eff > 2 :
             $ nsp_genie_sphere_ruby_level_eff = 2
         if nsp_genie_sphere_diamond_level_eff > 3 :
             $ nsp_genie_sphere_diamond_level_eff =  3
-        if nsp_genie_sphere_sapphire_level_eff > 3 :
-            $ nsp_genie_sphere_sapphire_level_eff = 3
+        if nsp_genie_sphere_sapphire_level_eff > 4 :
+            $ nsp_genie_sphere_sapphire_level_eff = 4
     elif nsp_genie_sphere_level == 3 :
         if nsp_genie_sphere_ruby_level_eff > 3 :
             $ nsp_genie_sphere_ruby_level_eff = 3

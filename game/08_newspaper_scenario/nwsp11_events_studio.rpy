@@ -20,7 +20,6 @@ label nsp_event_studio_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о фотостудии "
-    $ nsp_genie_sphere_diamond_req = 1
     
     if nsp_germiona_studio_1_statimg == "New" :
         $ cur_level = nsp_event_studio_1 + 1
@@ -133,7 +132,6 @@ label nsp_event_studio_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о фотостудии "
-    $ nsp_genie_sphere_diamond_req = 1
     
     if nsp_germiona_studio_2_statimg == "New" :
         $ cur_level = nsp_event_studio_2 + 1
@@ -241,7 +239,6 @@ label nsp_event_studio_3_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о фотостудии "
-    $ nsp_genie_sphere_diamond_req = 1
     
     if nsp_germiona_studio_3_statimg == "New" :
         $ cur_level = nsp_event_studio_3 + 1
@@ -349,7 +346,6 @@ label nsp_event_studio_4_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о фотостудии "
-    $ nsp_genie_sphere_diamond_req = 1
     
     if nsp_germiona_studio_4_statimg == "New" :
         $ cur_level = nsp_event_studio_4 + 1
@@ -457,7 +453,6 @@ label nsp_event_studio_5_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о фотостудии "
-    $ nsp_genie_sphere_diamond_req = 1
     
     if nsp_germiona_studio_5_statimg == "New" :
         $ cur_level = nsp_event_studio_5 + 1
@@ -565,7 +560,6 @@ label nsp_event_studio_6_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о фотостудии "
-    $ nsp_genie_sphere_diamond_req = 1
     
     if nsp_germiona_studio_6_statimg == "New" :
         $ cur_level = nsp_event_studio_6 + 1

@@ -20,7 +20,7 @@ label nsp_event_magls_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маглах "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_magls_1_photo
     
     if nsp_germiona_magls_1_statimg == "New" :
         $ cur_level = nsp_event_magls_1 + 1
@@ -140,7 +140,7 @@ label nsp_event_magls_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маглах "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_magls_2_photo
     
     if nsp_germiona_magls_2_statimg == "New" :
         $ cur_level = nsp_event_magls_2 + 1
@@ -257,7 +257,7 @@ label nsp_event_magls_3_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маглах "
-    $ nsp_genie_sphere_diamond_req = 3
+    $ nsp_genie_sphere_req = nsp_germiona_magls_3_photo
     
     if nsp_germiona_magls_3_statimg == "New" :
         $ cur_level = nsp_event_magls_3 + 1
@@ -375,7 +375,7 @@ label nsp_event_magls_4_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маглах "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_magls_4_photo
     
     if nsp_germiona_magls_4_statimg == "New" :
         $ cur_level = nsp_event_magls_4 + 1
@@ -496,7 +496,7 @@ label nsp_event_magls_5_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о маглах "
-    $ nsp_genie_sphere_diamond_req = 2
+    $ nsp_genie_sphere_req = nsp_germiona_magls_5_photo
     
     if nsp_germiona_magls_5_statimg == "New" :
         $ cur_level = nsp_event_magls_5 + 1

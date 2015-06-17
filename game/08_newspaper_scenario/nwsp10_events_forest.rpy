@@ -20,7 +20,7 @@ label nsp_event_forest_1_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о Запретном лесе "
-    $ nsp_genie_sphere_diamond_req = 4
+    $ nsp_genie_sphere_req = nsp_germiona_forest_1_photo
     
     if nsp_germiona_forest_1_statimg == "New" :
         $ cur_level = nsp_event_forest_1 + 1
@@ -143,7 +143,7 @@ label nsp_event_forest_2_complete :
     $ cur_level = 0
     
     $ nsp_newspaper_bonus_text_base = " о Запретном лесе "
-    $ nsp_genie_sphere_diamond_req = 4
+    $ nsp_genie_sphere_req = nsp_germiona_forest_2_photo
     
     if nsp_germiona_forest_2_statimg == "New" :
         $ cur_level = nsp_event_forest_2 + 1

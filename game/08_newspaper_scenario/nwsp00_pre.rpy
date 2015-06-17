@@ -287,4 +287,68 @@ label nsp_snape_dialog3 :
     
     jump snape_nothing_exit
 
+label nsp_hermione_train :
+
+    if nsp_newspaper_menu == 15 :
+        $ nsp_newspaper_menu = 16
+        
+        $herView.hideshowQQ( "body_01.png", pos )
+        her "Здравствуйте, профессор."
+        $herView.hideshowQQ( "body_13.png", pos )        
+        her "А что это у вас в руках ? Похоже на хрустальный шар."
+        her "Неужели вы хотите позаниматься со мною прорицаниями ?"
+        m "Я хочу позаниматься с тобой грязным се... Кхм. Новым заклинанием."
+        m "Оно позволит улучшить материалы, получаемые в ходе репортажа и поможет нашей газете."
+        $herView.hideshowQQ( "body_06.png", pos )  
+        her "Мне уже не терпится..."
+        $herView.hideshowQQ( "body_35.png", pos )
+        m "(Эх, что она со мной делает.)"
+        $herView.hideshowQQ( "body_01.png", pos )        
+        ">Прошло два часа."
+        m "Итак, все готово. Я скоро вызову тебя для дополнительных тренировок."
+        her "Да, сэр."
+        $ nsp_genie_sphere_level_exp += 1
+        call nsp_genie_sphere_level_check
+        
+    else :
+    
+        m "Итак, девочка, мы должны установить связь в пределах комнаты."
+        $herView.hideshowQQ( "body_122.png", pos )
+        her "Всегда готова к связям с вами, сэр !"
+        "Прошло 2 часа, ваше владение хрустальным шаром улучшилось."
+        $ nsp_genie_sphere_level_exp += 1
+        call nsp_genie_sphere_level_check
+        
+    ">Опыт владения шаром [nsp_genie_sphere_level].[nsp_genie_sphere_level_exp]."
+
+    hide screen bld1
+    $herView.hideQ()
+    hide screen blktone 
+    hide screen ctc
+    with Dissolve(.3)
+    
+    $ walk_xpos=400 #Animation of walking chibi. (From)
+    $ walk_xpos2=610 #Coordinates of it's movement. (To)
+    $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
+    show screen hermione_walk_01_f 
+    pause 2
+    hide screen hermione_walk_01_f 
+
+    $ renpy.play('sounds/door.mp3') #Sound of a door opening.
+    with Dissolve(.3)
+        
+    ### MUSIC BLOCK ###
+    if daytime:
+        play music "music/Brittle Rille.mp3" fadein 1 fadeout 1 # DAY MUSIC
+    else:
+        play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
+    ### END OF BLOCK ###
+
+    $event.Finalize()    
+    if daytime:
+        $ hermione_takes_classes = True
+        jump day_main_menu
+    else:
+        $ hermione_sleeping = True
+        jump night_main_menu
 
