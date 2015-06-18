@@ -173,8 +173,7 @@ label menu_reading_book:
 label desk:
     $ menu_x = 0.5 
     $ nsp_genie_sphere_video_txt = ""
-    ### DR'S DEBUG    
-    $ cataloug_found = True
+
     menu:
 ### DR'S NEWSPAPER ooo ###
 
@@ -334,8 +333,8 @@ label desk:
             jump day_start
             
 ### DR'S NEWSPAPER ooo ###
-#DR'S DEBUG
-        "- Газета -" if nsp_newspaper_menu >= 2: # and cataloug_found: 
+
+        "- Газета -" if nsp_newspaper_menu >= 2 and cataloug_found: 
             label nsp_newspaper_list:
                 $choose=None
                 menu:

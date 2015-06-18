@@ -140,9 +140,6 @@ label nsp_newsp_themes:
     
     $ cur_level = 0
     
-    # DR'S DEBUG
-    $ hermi.whoring = 24
-    
     if nsp_germiona_menu_rights > 0:
         call nsp_init_flags_rights
     if nsp_germiona_menu_magls > 0:

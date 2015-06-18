@@ -195,9 +195,7 @@ label nsp_hermione_pre1 :
         m "Здравствуй, Гермиона"
         m "Что ты думаешь по поводу позиции ведущего журналиста в стенгазете ?"
        
-        # DR'S DEBUG
-    #if hermi.whoring >= 12 and touched_by_boy == True and lock_public_favors == False : 
-    if lock_public_favors == False : 
+    if hermi.whoring >= 12 and touched_by_boy == True and lock_public_favors == False : 
         $herView.hideshowQQ( "body_11.png", pos )
         her "Сэр, примите меня в вашу редакцию, вы не пожалеете ! Скажу без ложной скромности, что никто в школе не составляет текст домашних заданий быстрее."
         m "(О да, детка !)"

@@ -72,12 +72,9 @@ $ letters = 0 #Shows how many letters are waiting to be read. +1 every new lette
 
 $ nsp_genie_typographic = 0 # Джин: Тип типографского набора, в начале - 0. Отсюда же Качество печати для Газеты
 $ nsp_genie_typographic_exp = 0 # Растет при каждой публикации на 1, для покупки набора след уровня нужно не менее 2 публикаций с прошлым. При этом счетчик сбрасывается.
-### DR'S DEBUG
-$ nsp_genie_writer = 10 # Джин: Навык писателя статей, в начале - 0. Отсюда же Мастерство написания для Газеты.
-###
+$ nsp_genie_writer = 0 # Джин: Навык писателя статей, в начале - 0. Отсюда же Мастерство написания для Газеты.
 $ nsp_genie_photocamera = 0 # Джин: Тип используемого фотоаппарата, в начале - 0. Отсюда же украшения газеты.
 $ nsp_genie_photocamera_exp = 3 # Растет при каждом ивенте на 1, для покупки фотоаппарата (кроме 1-го) след уровня нужно не менее 3 ивентов с прошлым. При этом счетчик сбрасывается. Для покупки первого аппарата опыт уже как бы есть.
-#DR'S DEBUG
 $ nsp_genie_sphere = False # Джин: Наличие хрустального шара.
 $ nsp_genie_sphere_level = 0 # Джин: Навык владения хрустальным шаром.
 $ nsp_genie_sphere_level_exp = 0 # Джин: Опыт владения хрустальным шаром.
@@ -92,9 +89,8 @@ $ nsp_genie_sphere_ruby_level_eff = 0
 $ nsp_genie_sphere_diamond_level_eff = 0
 $ nsp_genie_sphere_sapphire_level_eff = 0
 
-### DR'S DEBUG
-$ nsp_germiona_mediawhoring = 40 # Гермиона: Медиа-развращенность
-$ nsp_germiona_impudence = 20 # Гермиона: Наглость
+$ nsp_germiona_mediawhoring = 0 # Гермиона: Медиа-развращенность
+$ nsp_germiona_impudence = 0 # Гермиона: Наглость
 $ nsp_germiona_artistry = 0 # Гермиона: Артистичность
 
 $ nsp_newspaper_bonus_text = "нет" # Газета: Текст, описание бонусного контента
@@ -189,12 +185,10 @@ $ nsp_letter_11 = 0
 $ nsp_letter_12 = 0
 $ nsp_letter_13 = 0
 
-### DR'S DEBUG ###
 $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не было, 1 - есть, 2 - уже прочитано.
 $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
-#$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
-$ nsp_newspaper_menu = 6
+$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
 
 ###
 

@@ -75,8 +75,7 @@ label door:
                 with d3
                 jump night_main_menu
 
-# DR'S DEBUG
-        "- Позвать Гермиону -" : #if this.Has("her_summon") and not hermione_takes_classes and not hermione_sleeping: #summoning_hermione_unlocked 
+        "- Позвать Гермиону -" if this.Has("her_summon") and not hermione_takes_classes and not hermione_sleeping: #summoning_hermione_unlocked 
      
             if hermione_takes_classes:
                 show screen bld1
