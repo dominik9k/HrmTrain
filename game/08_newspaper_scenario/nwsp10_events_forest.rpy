@@ -1,3 +1,7 @@
+label nsp_theme_forest :
+    ">Диалог тема 7"
+    return
+
 label nsp_event_forest_1 :
 
     if cur_level == 1 :

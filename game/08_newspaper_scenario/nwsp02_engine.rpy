@@ -179,7 +179,7 @@ label nsp_newsp_themes:
         "- О правах и дискриминации {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_rights].png} -" if nsp_newspaper_menu >= 6:
     
             if nsp_germiona_menu_rights == 1 :
-                ">Диалог тема 1"
+                call nsp_theme_rights
                 $ nsp_germiona_menu_rights = 2
         
             if nsp_germiona_menu_rights == 2 :
@@ -270,7 +270,7 @@ label nsp_newsp_themes:
         "- О жизни маглов {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_magls].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 2 :
     
             if nsp_germiona_menu_magls == 1 :
-                ">Диалог тема 2"
+                call nsp_theme_magls
                 $ nsp_germiona_menu_magls = 2
                 
             if nsp_germiona_menu_magls == 2 :
@@ -361,7 +361,7 @@ label nsp_newsp_themes:
         "- О квиддиче {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_kviddich].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 4 :
     
             if nsp_germiona_menu_kviddich == 1 :
-                ">Диалог тема 3"
+                call nsp_theme_kviddich
                 $ nsp_germiona_menu_kviddich = 2
                 
             if nsp_germiona_menu_kviddich == 2 :
@@ -485,7 +485,7 @@ label nsp_newsp_themes:
         "- О сексе {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_sex].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 1 :
     
             if nsp_germiona_menu_sex == 1 :
-                ">Диалог тема 4"
+                call nsp_theme_sex
                 $ nsp_germiona_menu_sex = 2
         
             if nsp_germiona_menu_sex == 2 :
@@ -570,7 +570,7 @@ label nsp_newsp_themes:
         "- Маньяк {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_maniac].png} -" if nsp_newspaper_menu >= 6 and nsp_letter_2 >= 2 and nsp_genie_writer >= 6 :
     
             if nsp_germiona_menu_maniac == 1 :
-                ">Диалог тема 5"
+                call nsp_theme_maniac
                 $ nsp_germiona_menu_maniac = 2
                 
             if nsp_germiona_menu_maniac == 2 :
@@ -643,7 +643,7 @@ label nsp_newsp_themes:
         "- Голый репортер в маске {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_nude].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 4 :
     
             if nsp_germiona_menu_nude == 1 :
-                ">Диалог тема 6"
+                call nsp_theme_nude
                 $ nsp_germiona_menu_nude = 2
         
             if nsp_germiona_menu_nude == 2 :
@@ -734,7 +734,7 @@ label nsp_newsp_themes:
         "- Запретный лес {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_forest].png} -" if nsp_newspaper_menu >= 6 and ( nsp_letter_1 >= 2 or nsp_letter_9 >= 2 ) :
     
             if nsp_germiona_menu_forest == 1 :
-                ">Диалог тема 7"
+                call nsp_theme_forest
                 $ nsp_germiona_menu_forest = 2
                 
             if nsp_germiona_menu_forest == 2 :
@@ -785,7 +785,7 @@ label nsp_newsp_themes:
         "- Студия у Джина {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_studio].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_photocamera > 0 :
     
             if nsp_germiona_menu_studio == 1 :
-                ">Диалог тема 8"
+                call nsp_theme_studio
                 $ nsp_germiona_menu_studio = 2
 
             if nsp_germiona_menu_studio == 2 :

@@ -1,3 +1,10 @@
+label nsp_theme_nude :
+    
+    $herView.hideshowQQ( "body_01.png", pos )
+    
+
+    return
+
 label nsp_event_nude_1 :
 
     if cur_level == 1 :

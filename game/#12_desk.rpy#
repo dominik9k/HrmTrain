@@ -254,7 +254,7 @@ label desk:
             show screen bld1
             with d3
         
-            call nsp_theme_maniac
+            call nsp_theme_nude
             jump hermione_goout
             
         "- Тест 2 -" :

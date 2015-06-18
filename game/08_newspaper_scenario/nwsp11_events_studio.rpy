@@ -1,3 +1,7 @@
+label nsp_theme_studio :
+    ">Диалог тема 8"
+    return
+
 label nsp_event_studio_1 :
 
     if cur_level == 1 :
