@@ -172,7 +172,9 @@ label nsp_newsp_themes:
     if nsp_germiona_menu_forest == 1:
         $ nsp_germiona_statimg_forest = "New"
     if nsp_germiona_menu_studio == 1:
-        $ nsp_germiona_statimg_studio = "New"   
+        $ nsp_germiona_statimg_studio = "New"  
+        
+    call nsp_init_flag_photo
     
     menu:
     
@@ -1951,10 +1953,13 @@ label nsp_init_flags_forest :
     elif  nsp_germiona_forest_2_statimg == "New":
         $ nsp_germiona_statimg_forest = "New"
 
+    return
+    
+label nsp_init_flag_photo :
         
 ### Photo flags
 
-    if nsp_genie_photocamera >= 1 :
+    if nsp_genie_photocamera >= 1 and nsp_germiona_menu_studio >= 2:
 
         $ nsp_germiona_rights_1_photo = "en"
         $ nsp_germiona_rights_2_photo = "en" 

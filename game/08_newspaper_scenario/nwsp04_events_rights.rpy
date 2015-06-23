@@ -25,7 +25,30 @@ label nsp_theme_rights :
 label nsp_event_rights_1 :
 
     if cur_level == 1 :
-        ">текст преивента прав 1-1"
+        $herView.hideshowQQ( "body_01.png", pos )
+        
+        if nsp_event_rights_1 == 0 :
+            m "Сегодня тебе предстоит составить репортаж о том, как некоторые ученики пристают к девочкам. Возможно, это слизеринцы."
+            m "Нам действительно нужен этот материал."
+            $herView.hideshowQQ( "body_02.png", pos )
+            her "Вы хотите, чтобы я провела расследование ?"
+            m "Не ты ли жаловалась, что такое происходит ? Теперь есть возможность привлечь внимание читателей к проблеме."
+            $herView.hideshowQQ( "body_24.png", pos )
+            her "Да, но я..."
+            her "Возможно, я немного преувеличила."
+            her "То есть некоторые ученики действительно ведут себя неподобающе, но это происходит не так часто."
+            m "Это не важно, от тебя требуется только придумать сюжет и убедительно пересказать его мне."
+            $herView.hideshowQQ( "body_13.png", pos )
+            her "Ну, если вы так считаете... Хорошо."
+            $herView.hideshowQQ( "body_01.png", pos )
+        else :
+            m "Сегодня тебе снова предстоит придумать рассказ о домогательствах."
+            m "Есть вдохновение ?"
+            $herView.hideshowQQ( "body_06.png", pos )
+            her "Наверное да, сэр."
+            
+        $herView.hideshowQQ( "body_01.png", pos )
+        
     elif cur_level == 2 :
         ">текст преивента прав 1-2"
     elif cur_level == 3 :
@@ -52,7 +75,58 @@ label nsp_event_rights_1_complete :
         $ cur_level = nsp_event_rights_1
 
     if cur_level == 1 :
-        ">текст ивента прав 1-1"
+    
+        $herView.hideshowQQ( "body_01.png", pos )
+        g9 "Ты пришла ? Отлично, я готов записывать."
+        $herView.hideshowQQ( "body_06.png", pos )
+        her "Хорошо, сэр"
+        her "Сегодня я шла по улице в сторону оранжереи."
+        her "Вот."
+        g9 "Отлично, продолжай."
+        $herView.hideshowQQ( "body_09.png", pos )
+        her "И у двери стояла группа слизеринцев. Один из них позвал меня и я..."
+        m "И ты пошла с ним в укромное место ?"
+        $herView.hideshowQQ( "body_13.png", pos )
+        her "Э... Нет, сэр. Я попыталась пройти мимо. Но один из них загородил мне дорогу."
+        her "Пока я пыталась его обойти, подошли остальные."
+        $herView.hideshowQQ( "body_24.png", pos )
+        her "И они... Они трогали меня..."
+        m "Трогали ? Как именно трогали ?"
+        $herView.hideshowQQ( "body_31.png", pos )
+        her "Я ..."
+        $herView.hideshowQQ( "body_33.png", pos )
+        ">Гермиона покраснела и замолчала."
+        $herView.hideshowQQ( "body_30.png", pos )
+        her "Сэр, напоминаю вам, что это выдуманная история !"
+        m "Да, но у любой истории должно быть окончание."
+        $herView.hideshowQQ( "body_45.png", pos )
+        her "Ммм. Хорошо."
+        her "Один из них схватил меня за локоть и начал поглаживать плечо."
+        her "Другой погладил по щеке."
+        $herView.hideshowQQ( "body_54.png", pos )
+        her "Третий... Третий..."
+        m "И что же третий ?"
+        her "Третий подошел сзади и положио руку мне на живот."
+        $herView.hideshowQQ( "body_85.png", pos )
+        her "Сэр, я больше не могу."
+        m "Ну же, еще пару фраз для завершения."
+        her "Мне очень стыдно такое представлять."
+        g4 "Сосредоточься !"
+        $herView.hideshowQQ( "body_81.png", pos )
+        her "Ладно. Четвертый парень усмехнулся и посмотрел мне в глаза. Маленькая шлюха, сказал он."
+        her "И..."
+        m "И ?"
+        $herView.hideshowQQ( "body_59.png", pos )
+        her "И приподняв край моей юбки провел рукой по обнаженному бедру."
+        her "А потом я вырвалась и убежала."
+        her "Вот и вся история, сэр."
+        g9 "Ну что же, совсем неплохо."
+        $herView.hideshowQQ( "body_02.png", pos )
+        her "Правда, сэр ?"
+        m "Да. До следующего раза."
+        $herView.hideshowQQ( "body_14.png", pos )
+        her "Следующего ра... Да, профессор, как скажете."
+        $herView.hideshowQQ( "body_01.png", pos )
         
         if nsp_germiona_mediawhoring < 10 :
             $ nsp_germiona_mediawhoring += 2
@@ -256,7 +330,11 @@ label nsp_event_rights_2_complete :
 label nsp_event_rights_3 :
 
     if cur_level == 1 :
+    
+        $herView.hideshowQQ( "body_01.png", pos )
         ">текст преивента прав 3-1"
+        $herView.hideshowQQ( "body_01.png", pos )
+        
     elif cur_level == 2 :
         ">текст преивента прав 3-2"
     elif cur_level == 3 :

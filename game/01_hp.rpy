@@ -653,7 +653,7 @@ if nsp_day == 40:
     $ nsp_letter_2 = 1
     $ letters += 1
     
-if nsp_day == 20:
+if nsp_day >= 20 and nsp_letter_9 == 0 and nsp_event_forest_1 >= 1:
     $ nsp_letter_9 = 1
     $ letters += 1
 

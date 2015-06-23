@@ -253,8 +253,12 @@ label desk:
             show screen hermione_02 #Hermione stands still.
             show screen bld1
             with d3
-        
-            call nsp_theme_maniac
+            
+            $ nsp_germiona_magls_1_statimg = "New"
+            $ nsp_germiona_magls_1_photo = "dis"
+            $ nsp_event_magls_1 = 0
+            $ cur_level = 1
+            call nsp_event_magls_1
             jump hermione_goout
             
         "- Тест 2 -" :

@@ -35,7 +35,70 @@ label nsp_theme_magls :
 label nsp_event_magls_1 :
 
     if cur_level == 1 :
-        ">текст преивента маглов 1-1"
+
+        $herView.hideshowQQ( "body_01.png", pos )
+    
+        if nsp_event_magls_1 == 0 :  
+        
+            g9 "(Занятно, когда я как следует поискал, в шкафу обнаружился целый ворох разной магловской одежды.)"
+            g9 "Ты готова снять сегодня всю маговскую одежду и выйти на публику ?"
+            $herView.hideshowQQ( "body_18.png", pos )
+            her "Сэр ???"
+            m "... В магловской одежде."
+            $herView.hideshowQQ( "body_24.png", pos )
+            her "Опять вы меня разыграли."
+            $herView.hideshowQQ( "body_10.png", pos )
+            her "Ну, если вы уверены, что это поможет улучшить отношения к маглорожденным..."
+            her "Я готова попробовать."
+            m "Отлично. Для начала надень-ка деловой наряд успешной магловки."
+            $herView.hideshowQQ( "body_11.png", pos )
+            her "Магловки… Мне не нравится, как это звучит."
+            her "Ладно, думаю ничего страшного тут нет."
+            
+            $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+            $ herView.data().addItemSet( 'hermione_business_clothes' )
+            hide screen hermione_02
+            show screen nsp_hermione_business
+            $herView.hideshowQQ( "body_01.png", pos )
+            pause.5
+            $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+            $screens.Show("ctc").Pause().Hide("ctc")
+            
+            m "И не забудь, что нужно выглядеть привлекательно."
+            m "Мы хотим улучшить репутацию маглов, а не потерять последний шанс."
+            m "Попробуй расстегнуть пару верхних пуговиц."
+            $herView.hideshowQQ( "body_02.png", pos )
+            her "Да, сэр."
+            $ herView.data().setStyleKey( 'blouse_business1', 'opened_1' )
+            pause.5
+            g9 "Вот, гораздо лучше."
+            $herView.hideshowQQ( "body_12.png", pos )
+            her "(Ну еще бы.)"
+
+        else :
+            m "Готова к маскараду ? Сегодня это деловой костюм."
+            $herView.hideshowQQ( "body_15.png", pos )
+            her "Всегда, сэр."
+            
+            $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+            $ herView.data().showItemSet( 'hermione_business_clothes' )
+            $ herView.data().setStyleKey( 'blouse_business1', 'opened_1' )
+            hide screen hermione_02
+            show screen nsp_hermione_business
+            pause.5
+            $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+            $screens.Show("ctc").Pause().Hide("ctc")
+            
+            m "Отлично."
+            g9 "На месте \"чистокровок\" я бы вду… то есть задумался."
+            $herView.hideshowQQ( "body_06.png", pos )
+            her "Спасибо, сэр."
+        
+        $herView.hideshowQQ( "body_01.png", pos )
+        hide screen nsp_hermione_business
+        $ herView.data().hideItemSet( 'hermione_business_clothes' )
+    
+    
     elif cur_level == 2 :
         ">текст преивента маглов 1-2"
     elif cur_level == 3 :
@@ -62,7 +125,45 @@ label nsp_event_magls_1_complete :
         $ cur_level = nsp_event_magls_1
 
     if cur_level == 1 :
-        ">текст ивента маглов 1-1"
+    
+        hide screen hermione_02
+        show screen nsp_hermione_business
+        $ herView.data().showItemSet( 'hermione_business_clothes' )
+        $ herView.data().setStyleKey( 'blouse_business1', 'opened_1' )
+        $herView.hideshowQQ( "body_01.png", pos )
+    
+        her "А вот и я, сэр"
+        m "Рассказывай."
+        $herView.hideshowQQ( "body_04.png", pos )
+        her "Как вы и просили, я весь день проходила в этом наряде."
+        m "И тебе удалось улучшить отношение к маглам ?"
+        $herView.hideshowQQ( "body_08.png", pos )
+        her "Ой не знаю, профессор."
+        her "Сегодня на меня гораздо чаще обращали внимание слизеринцы..."
+        her "Так что, наверное, можно сказать, что мне удалось заинтересовать общественность."
+        m "И в чем же проявлялось их внимание."
+        $herView.hideshowQQ( "body_45.png", pos )
+        her "Они… Они..."
+        m "Они приставали к тебе ?"
+        her "Нет, сэр. Они смотрели."
+        m "Всего лишь смотрели ?"
+        $herView.hideshowQQ( "body_52.png", pos )
+        her "Они… Многие из них смотрели на меня с вожделением. Мне весь день было не по себе."
+        her "Могу я уже переодеться в обычную одежду ?"
+        m "Да, разумеется."
+
+        $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+        $ herView.data().hideItemSet( 'hermione_business_clothes' )
+        hide screen nsp_hermione_business
+        show screen hermione_02
+        $herView.hideshowQQ( "body_01.png", pos )
+        pause.5
+        $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+        $screens.Show("ctc").Pause().Hide("ctc")
+            
+        her "Надеюсь, что мне удалось помочь нашему общему делу."
+        m "Не сомневайся."
+        g9 "(Тебе определенно удалось помочь мне развеять скуку, маленькая шлюха.)"
         
         if nsp_germiona_mediawhoring < 10 :
             $ nsp_germiona_mediawhoring += 2
