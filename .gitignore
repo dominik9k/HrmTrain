@@ -7,3 +7,5 @@
 /traceback.txt
 /game/bytecode.rpyb
 /tmp
+*.rpy~
+game/the_oddities.rpy~

@@ -322,6 +322,20 @@ $ hermione_out_halfday = 0
 
 ###
 
+### DR'S wardrobe ###
+
+$ wrd_skirts_skirt03_xshort = 0
+$ wrd_skirts_skirt04_xxshort = 0
+$ wrd_skirts_skirt05_xsmall = 0
+$ wrd_skirts_skirt06_xxsmall = 0
+$ wrd_skirts_skirt07_xxxsmall = 0
+
+$ wrd_shirts_standard02_untucked_tie = 0
+$ wrd_shirts_standard03_untucked = 0
+$ wrd_shirts_standard04_untucked_unbuttoned = 0
+$ wrd_shirts_standard05_untucked_unbuttoned_double = 0
+$ wrd_shirts_standard06_skimpy_tied = 0
+
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
 $ letter_from_ficbook_fun = False
