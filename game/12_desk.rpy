@@ -87,8 +87,28 @@ label menu_reading_book:
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
+                        
+                if event.GetValue("block")=="books_newsp2":
+                    if event.Name == "nsp_newsp_book_photo2" and (nsp_genie_photocamera < 1 or nsp_genie_photocamera_exp < 3):
+                        m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
+                        hide screen gift
+                        jump books_list
+                        
+                    if event.Name == "nsp_newsp_book_photo3" and (nsp_genie_photocamera < 2 or nsp_genie_photocamera_exp < 3):
+                        m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
+                        hide screen gift
+                        jump books_list
 
-                    
+                    if event.Name == "nsp_newsp_book_photo4" and (nsp_genie_photocamera < 3 or nsp_genie_photocamera_exp < 3):
+                        m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
+                        hide screen gift
+                        jump books_list
+                        
+                    if event.Name == "nsp_newsp_book_video" and (nsp_genie_photocamera < 4 or nsp_genie_sphere_ruby_level_eff < 1 or nsp_genie_sphere_diamond_level_eff < 1 or nsp_genie_sphere_sapphire_level_eff < 3):
+                        m "Для освоения навыков из этой книги вам понадобится владение всеми видами фотоаппаратов, хрустальный шар, сапфир 3 уровня, рубин и алмаз."
+                        hide screen gift
+                        jump books_list
+                        
 ############
 
                 if event.GetValue("block")=="books_edu":
@@ -152,6 +172,8 @@ label menu_reading_book:
 
 label desk:
     $ menu_x = 0.5 
+    $ nsp_genie_sphere_video_txt = ""
+
     menu:
 ### DR'S NEWSPAPER ooo ###
 
@@ -164,6 +186,54 @@ label desk:
             $ nsp_newspaper_menu = 5
             m "Вы обнаружили дополнительный каталог дополнительных средств для печатного дела."
             jump day_main_menu
+            
+        "- Попытаться починить хрустальный шар -" if nsp_newspaper_menu >= 9 and nsp_newspaper_menu < 15:
+            
+            if nsp_newspaper_menu == 9 :
+                ">Вы внимательно осмотрели шар со всех сторон. На вид он кажется сделан из тусклого стекла, которое почти не пропускаяет свет."
+                ">Никаких подсказок. В такой ситуации можно прибегнуть к внутреннему зрению джина."
+                ">На это ушло много времени, но вам удалось обнаружить особую магическую ауру шара."
+            elif nsp_newspaper_menu == 10 :
+                ">После долгой медитации вы обнаружили, что аура шара чужда этому месту. возможно даже..."
+                ">Нет, лучше это все-таки проверить."
+            elif nsp_newspaper_menu == 11 :
+                ">Новое исследование подтвердило вашу догадку. Этот предмет не из мира Хогвартса."
+            elif nsp_newspaper_menu == 12 :
+                ">Потраченное время все-таки принесло плоды. Вам удалось уловить отблески солнца, играющие на бескрайних песках."
+                ">Сухость воздуха и остроту колючек. Чары и месть, отвагу и честь..."
+                ">Этот хрустальный шар был сделан в мире Аграбы, в вашем родном мире !"
+                ">Вот почему он работает не как шар для предсказаний ! В Аграбе правила магии совсем иные !"
+                ">Теперь нет сомнений, что вы сможете его починить."
+            elif nsp_newspaper_menu == 13 :
+                ">Вы потратили много времени на попытки призвать свою космическую силу."
+                $hero (g4,"Ыыыыыыыть.")
+                $hero (g4,"Аргх!")
+                $hero (g4,"Ааааать.")
+                $hero (g4,"Ух.")
+                ">И так в течение нескольких часов..."
+                ">Безрезультатно."
+            elif nsp_newspaper_menu == 14 :
+                $hero (m,"Почему же все бесполезно ?")
+                $hero ("Конечно я никогда не был по-настоящему {size=+4}всесильным{/size}, но это уже слишком.")
+                $hero ("А ведь что-то могло бы задать моей магии необходимый импульс.")
+                $hero (g6,"Хм.")
+                $hero (g6,"Раньше лучшим стимулом было выполнение какого-нибудь желания.")
+                $hero (g7,"Итак, Джин, сконцентрируйся. Снейп желает фотографии из самых укромных мест, и единственное средство - работающий шар.")
+                $hero (g4,"Ну же ! Напрягись ! Ыыыыыы.")
+                ">Кажется, у вас начало получаться !"
+                $hero (g4,"Аргх !")
+                $hero (g8,"Фу-ух !")
+                ">На столе перед вами лежит целый хрстальный шар. Слабое свечение исходит изнутри"
+                ">Теперь вы способны легко понять, как он устроен, и составляете небольшую инструкцию."
+                $hero (m,"Наконец-то !")
+                $ nsp_genie_sphere = True
+                
+            $ nsp_newspaper_menu += 1
+            
+            if daytime:
+                jump night_start
+            else: 
+                jump day_start  
 
 ###
         "- Осмотреть -" if not desk_examined:
@@ -192,15 +262,47 @@ label desk:
 #===TG MODS STOP===
 
             jump day_main_menu
-        "- Делать бумажную работу -" if finished_report < 6 and not got_paycheck and not day == 1 and work_unlock2:
-            jump paperwork
-        "{color=#858585}- Делать бумажную работу -{/color}" if finished_report >= 6 and not got_paycheck:
-            m "Я уже завершил шесть отчетов на этой неделе."
-            jump desk
-        "{color=#858585}- Делать бумажную работу -{/color}" if got_paycheck: # When TRUE paycheck is in the mail.
-            m "Сначала мне нужно получить оплату."
-            jump desk
 
+## DR'S DEBUG TEST           
+        "- Тест 1 -" if False:
+        
+            $ menu_x = 0.2 #Menu is moved to the left side.
+            $ pos = POS_410
+                
+            $ renpy.play('sounds/door.mp3') #Sound of a door opening.
+            $ hermione_chibi_xpos = 400 #Near the desk.
+            $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
+            show screen hermione_02 #Hermione stands still.
+            show screen bld1
+            with d3
+            
+            $ nsp_germiona_studio_1_statimg = "New"
+            $ nsp_germiona_studio_1_photo = "dis"
+            $ nsp_event_studio_1 = 0
+            $ cur_level = 1
+            call nsp_event_studio_1
+            jump hermione_goout
+            
+        "- Тест 2 -" if False:
+        
+            $ menu_x = 0.2 #Menu is moved to the left side.
+            $ pos = POS_410
+                
+            $ renpy.play('sounds/door.mp3') #Sound of a door opening.
+            $ hermione_chibi_xpos = 400 #Near the desk.
+            $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
+            show screen hermione_02 #Hermione stands still.
+            show screen bld1
+            with d3
+            $ hermi.whoring = 24
+            call nsp_newsp_themes
+            jump hermione_goout            
+            
+        "- Тест 3 -" if False:
+        
+            call nsp_theme_rights
+            jump desk
+            
 ### DR'S NEWSPAPER ooo ###
 
         "- Писать статьи для газеты -" if nsp_newspaper_articles < 8 and nsp_newspaper_menu > 0 and nsp_newspaper_ready == False and nsp_newspaper_published == False:
@@ -215,7 +317,17 @@ label desk:
             m "Газета была недавно опубликована. Перед продолжением работы нужно прочитать отзыв из министерства."
             jump desk
             
-###           
+###   
+            
+        "- Делать бумажную работу -" if finished_report < 6 and not got_paycheck and not day == 1 and work_unlock2:
+            jump paperwork
+        "{color=#858585}- Делать бумажную работу -{/color}" if finished_report >= 6 and not got_paycheck:
+            m "Я уже завершил шесть отчетов на этой неделе."
+            jump desk
+        "{color=#858585}- Делать бумажную работу -{/color}" if got_paycheck: # When TRUE paycheck is in the mail.
+            m "Сначала мне нужно получить оплату."
+            jump desk
+
         "- Книжная коллекция -" if not day == 1 and cataloug_found: 
             label books_list:
                 $choose=None
@@ -233,6 +345,7 @@ label desk:
                             $_label="manuals_on_newspaper"
                             $_block="books_newsp2"
                             jump menu_reading_book
+                            
 ###
                     "- Обучающие книги -":
                         label books_on_improvement:
@@ -282,7 +395,8 @@ label desk:
             jump day_start
             
 ### DR'S NEWSPAPER ooo ###
-        "- Газета -" if nsp_newspaper_menu >= 2: # and cataloug_found: 
+
+        "- Газета -" if nsp_newspaper_menu >= 2 and cataloug_found: 
             label nsp_newspaper_list:
                 $choose=None
                 menu:
@@ -296,13 +410,20 @@ label desk:
                                 "- Да -":
                                     $ nsp_newspaper_ready = False 
                                     $ nsp_newspaper_qual = (10 * (1 + nsp_genie_writer) * (1 + nsp_genie_typographic)) + (5 * nsp_genie_photocamera)
+                                    $ nsp_newspaper_qual_last = nsp_newspaper_qual
                                     $ nsp_newspaper_cur_money = int((nsp_newspaper_qual + (nsp_newspaper_bonus_point/10) ) * (0.7 + (one_of_ten * 0.06) ))
                                     
                                     $ nsp_newspaper_published = True
-                                    $ letters += 1
                                     $ nsp_genie_typographic_exp += 1
                                     
                                     ">Вы поставили на свежий выпуск газеты магический штамп и лист исчез с тихим шуршанием, чтобы спустя мгновение возникнуть на стенде главного холла вместо прежнего."
+                                    
+                                    $ nsp_newspaper_bonus_point_last = nsp_newspaper_bonus_point
+                                    $ nsp_newspaper_bonus_text = "нет"
+                                    $ nsp_newspaper_bonus_point = 0
+                                    
+                                    if nsp_newspaper_menu == 7 :
+                                        $ nsp_newspaper_menu = 8
                                     
                                     call screen main_menu_01
                             
@@ -319,6 +440,36 @@ label desk:
 
                     "- Ничего -":
                         jump desk
+                        
+        "- Хрустальный шар -" if nsp_genie_sphere :
+                
+            $choose=None
+            if nsp_genie_sphere_video :
+                $ nsp_genie_sphere_video_txt = "\nВозможен перенос видео в газету"
+            else :
+                $ nsp_genie_sphere_video_txt = ""
+
+            menu:
+            
+                "Уровень владения: [nsp_genie_sphere_level]\nСила сапфира [nsp_genie_sphere_sapphire_level_eff]\nСила рубина [nsp_genie_sphere_ruby_level_eff]\nСила алмаза [nsp_genie_sphere_diamond_level_eff][nsp_genie_sphere_video_txt]"
+                
+                "- Инструкции -":
+                
+                    call bigletter(["Инструкция к Хрустальному Шару.\n\nШар позволяет получать изображение на расстоянии. К сожалению, для вызова и поддержания данной магии необходимо "
+                    "специальное простое заклинание со стороны другого волшебника. Иначе говоря, подсмотреть за кем-то вряд ли получится.\n\nКроме того, нужны три фокусных камня: сапфир, рубин и алмаз.\n\n"
+                    "Сапфир отвечает за интенсивность связи. В зависимости от уровня он обеспечивает: 1 - разговор, 2 - слышимость звуков вокруг другого, 3 - изображение головы, 4 - изображение тела, 5 - полную картину.\n\n",
+                    "Рубин отвечает за время четкого фокуса (влияет на возможности любой записи изображения): 1 - 30 секунд в день, 2 - 1 минута, 3 - 2 минуты, "
+                    "4 - 5 минут, 5 - 10 минут.\n\nАлмаз отвечает за дальность действия шара: 1 - только комната, 2 - главное здание Хогвартса, 3 - основная территория Хогвартса, "
+                    "4 - все окрестности Хогвартса (Запретный лес, Хогсмид), 5 - неограничено.\n\nКроме того, недостаточный навык владения шаром будет ограничивать силу камня.\n\n",
+                    "Навык будет постепенно расти за счет любого применения шара. Если параметры шара не позволяют проводить съемку, то после журналистского задания будет получена "
+                    "только статья, которая принесет намного меньше популярности.\n\n"
+                    "Для начала нужно купить любой сапфир и поговорить с Гермионой. В дальнейшем понадобятся сапфир не ниже 3 уровня, рубин и алмаз. Фотоъемка в студии не использует "
+                    "шар. После приобретения рубина, алмаза, сапфира 3 уровня и наилучшего фотоаппарата появится новая возможность, не забудьте внимательно изучить доступные книги в инструментах для газеты.\n\n"])
+
+                    jump desk
+                
+                "- Ничего -":
+                    jump desk
 
 ###
         "- Ничего -":
@@ -561,7 +712,7 @@ label chap_finished_xx:
         [
         "Во вводной главе говорится об истории появления и развития газет в мире магов.",
         "Вы изучаете основы написания газетных статей.",
-        "Вы изучаете основы написания газетных статей..",
+        "Вы изучаете основы написания газетных статей.",
         "Вы изучаете основы написания газетных статей.",
         "Вы изучаете основы редактирования газет.",
         "Вы изучаете основы редактирования газет.",
@@ -573,13 +724,33 @@ label chap_finished_xx:
         )
 
     if event.Name in ["nsp_newsp_book_p01", "nsp_newsp_book_p02a", "nsp_newsp_book_p02b", "nsp_newsp_book_p03a", "nsp_newsp_book_p03b"]:
-            $event.IncValue("status", 1)  #+=1
+        $event.IncValue("status", 1)  #+=1
             
     if event.Name in ["nsp_newsp_book_p04", "nsp_newsp_book_p05a", "nsp_newsp_book_p05b", "nsp_newsp_book_p06a", "nsp_newsp_book_p06b"]:
-            $event.IncValue("status", 1)  #+=1
+        $event.IncValue("status", 1)  #+=1
 
     if event.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
-            $event.IncValue("status", 1)  #+=1
+        $event.IncValue("status", 1)  #+=1
+            
+    if event.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
+        $event.IncValue("status", 1)  #+=1
+            
+    if event.Name=="nsp_newsp_book_video":
+        $event.IncValue("status", 1)  #+=1
+        $renpy.say("Глава [event._status]", 
+        [
+        "Во вводной главе говорится об истории появления и развития прорицательства в мире магов. И только в конце вы сообразили, что это вообще вас не касается.",
+        "Вы изучаете принципы компоновки видеокадра.",
+        "Вы изучаете художественные правила видеомонтажа.",
+        "Глава содержит в себе биографию автора. Безобразие.",
+        "Вы изучаете заклинания для переноса информации из шара на бумагу.",
+        "Вы продолжаете изучать заклинания для переноса информации из шара на бумагу.",
+        "Внезапно, целая глава посвящена философским мыслям автора о жизни. Пожалуй, эти страницы стоит приберечь для борьбы с бессонницей.",
+        "Вы продолжаете изучать заклинания для переноса информации из шара на бумагу. Кажется, начинает понемногу получаться.",
+        "Вы завершаете изучать заклинания для переноса информации из шара на бумагу. Остается прочитать заключительную главу.",
+        "Ну разумеется, в последней главе находится фотография автора и его благодарности жене, детям, домашним животным и маглам по соседству.",
+        ][event._status-1]
+        )
 
 ###        
     $ renpy.play('sounds/win_04.mp3')   #Not loud.
@@ -702,6 +873,13 @@ label chapter_check_book_xx: #Checks if the chapter just finished was the last o
         if event.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
             $ nsp_genie_typographic += 1
             $ nsp_genie_typographic_exp = 0
+            
+        if event.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
+            $ nsp_genie_photocamera += 1
+            $ nsp_genie_photocamera_exp = 0
+            
+        if event.Name == "nsp_newsp_book_video" :
+            $ nsp_genie_sphere_video = True
             
 ###
             

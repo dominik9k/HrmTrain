@@ -145,6 +145,19 @@ label the_oddities:
     $choose=None
     menu:
         dahr "Добро пожаловать в \"каталог Приблуд Дахра\". Ваши предпочтения не покажутся нам странными!"
+### DR'S NEWSPAPER ooo ###
+        "- Для редакций: Образовательные книги -" if nsp_pre_dahre >= 1:
+            label newspaper_menu:
+                $_label="newspaper_menu"
+                $_block="books_newsp"
+                jump menu_dahre_newsp
+
+        "- Для редакций: Инструменты -" if nsp_newspaper_menu >= 5:
+            label newspaper_menu2:
+                $_label="newspaper_menu2"
+                $_block="books_newsp2"
+                jump menu_dahre_upd
+###
         "- Образовательные книги -":
             label education_menu:
                 $_label="education_menu"

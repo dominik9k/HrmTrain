@@ -7,6 +7,7 @@ label hermione_approaching:
                 
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     $ hermione_chibi_xpos = 400 #Near the desk.
+    $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
     show screen hermione_02 #Hermione stands still.
     show screen bld1
     with d3
@@ -36,12 +37,40 @@ label hermione_approaching:
     menu:
 ### DR'S NEWSPAPER ooo ###
 
-        "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4:
-            dr "Вот и закончилось демо моего блока ивентов. Я понимаю, что вы хотели бы продолжения, и оно будет. Чуть позже."
-            dr "А пока что можно оставить отзыв на форуме, чтобы я работал над ошибками и мог учесть пожелания игроков."
-            dr "Спасибо за внимание."
-            dr "P.S. На всякий случай напомню, что уже в демо вы можете заниматься газетным делом для заработка денег. После соответствующих улучшений доход повысится."
+        "- Тренировка с Хрустальным шаром -" if nsp_newspaper_menu >= 15 and nsp_genie_sphere_sapphire_level >= 1 :
+            jump nsp_hermione_train
+
+        "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4 or nsp_newspaper_menu == 5 :
+            jump nsp_hermione_pre1
+
+        "{color=#858585}- Дать журналистское задание -{/color}" if nsp_newspaper_menu >= 6 and not daytime :
+            ">Журналистские задания недоступны в это время суток."
             jump hermione_main_menu
+             
+        "- Дать журналистское задание -" if nsp_newspaper_menu >= 6 and daytime :
+            if hermi.liking==0:
+                jump nsp_newsp_themes
+            python:
+                for t in [
+                (-2, "Мне жаль, профессор, может быть в другой раз..."),
+                (-9, "Мне не хочется сегодня...\nМожет быть через пару дней..."),
+                (-19, "Нет, спасибо...."),
+                (-29, "После того, что вы сделали?\nЯ так не думаю..."),
+                (-39, "Вы серьезно!?"),
+                (-100, "Это какая-то ваша пошлая шутка?!\nПосле того, что вы сделали, я не хочу повторять это!")
+                ]:
+                    (_val, _text)=t
+                    if hermi.liking>=_val:
+                        renpy.say(her, _text)
+                        break
+            jump hermione_main_menu
+            
+        "- Впечатления от газеты -" if nsp_newspaper_menu >= 6 :
+            if hermi.liking >= -7:
+                jump nsp_hermione_dialog_status
+            else:
+                her "Мне нечего сказать вам..."    
+                jump hermione_main_menu            
 
 ###
         "- Поговорить -" if not chitchated_with_her:

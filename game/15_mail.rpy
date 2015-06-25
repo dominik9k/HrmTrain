@@ -288,8 +288,47 @@ if total_report >= 10 and letter_from_ficbook_fun == False:
 if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter == 1:
     jump newsp_pre_letter
 
-if nsp_newspaper_published == True:
+if nsp_newspaper_published_mail == True:
     jump newsp_letter
+    
+if nsp_letter_1 == 1:
+    jump nsp_text_letter_1
+    
+if nsp_letter_2 == 1:
+    jump nsp_text_letter_2
+    
+if nsp_letter_3 == 1:
+    jump nsp_text_letter_3
+    
+if nsp_letter_4 == 1:
+    jump nsp_text_letter_4
+    
+if nsp_letter_5 == 1:
+    jump nsp_text_letter_5
+    
+if nsp_letter_6 == 1:
+    jump nsp_text_letter_6
+    
+if nsp_letter_7 == 1:
+    jump nsp_text_letter_7
+    
+if nsp_letter_8 == 1:
+    jump nsp_text_letter_8
+   
+if nsp_letter_9 == 1:
+    jump nsp_text_letter_9
+    
+if nsp_letter_10 == 1:
+    jump nsp_text_letter_10
+    
+if nsp_letter_11 == 1:
+    jump nsp_text_letter_11
+    
+if nsp_letter_12 == 1:
+    jump nsp_text_letter_12
+    
+if nsp_letter_13 == 1:
+    jump nsp_text_letter_13
 
 ###    
     

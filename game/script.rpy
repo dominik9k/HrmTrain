@@ -208,6 +208,38 @@ init:
 
 # КОНЕЦ ГЛАВНОГО СЦЕНАРИЯ
 
+### DR'S NEWSPAPER ooo ###
+
+        tu=["rights_1","rights_2","rights_3","rights_4","rights_5","magls_1","magls_2","magls_3","magls_4","magls_5","kviddich_1","kviddich_2","kviddich_3","kviddich_4","kviddich_5","kviddich_6"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+        tu=["sex_1","sex_2","sex_3","sex_4","sex_5","maniac_1","maniac_2","maniac_3","nude_1","nude_2","nude_3","nude_4","nude_5"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete" 
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+        tu=["forest_1"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"DAY"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+        tu=["forest_2","studio_1","studio_2","studio_3","studio_4","studio_5","studio_6"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+
+###
+
 # ВЕТКА ДАФНЫ
 # Ветка включается при вызове Снейпа ночью после того, как отработает ивент со Cнейпом, где он хвалится как трахает студенток
         this.Where({"SNAPE"},"daphne").AddStep("daphne_pre_01",        ready = lambda e: snape_events >= 6) 
@@ -300,7 +332,7 @@ init:
 # Товары для газеты
 
         tu=[("nsp_newsp_book_pre::\"Самоучитель газетного дела\"",           100, "08_newspaper_scenario/books/prebook.png", "Эта книга описывает элементарные основы оформления и публикации газеты.",
-                "теперь я могу издавать собственную газету."),
+                "Теперь я могу издавать собственную газету."),
                 ]
 
         for t in tu:
@@ -389,6 +421,45 @@ init:
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 3} )
+                
+        tu=[("nsp_newsp_book_photo1::Фотоаппарат \"Гелиофотус 2\"",          250, "08_newspaper_scenario/photo/photo1.png", "Старинный фотоаппарат, способный делать вяло движущиеся черно-белые фотографии.",
+                "Благодаря прочитанному руководству вы можете использовать \"Гелиофотус 2\"."),
+                
+            ("nsp_newsp_book_photo2::Фотоаппарат \"Обскура Магика 60\"",           500, "08_newspaper_scenario/photo/photo2.png", "Невзрачный фотоаппарат, содержащий в качестве основного элемента волшебную серебрянную пластину. Позволяет делать цветные фотографии средней активности.",
+                "Благодаря прочитанному руководству вы можете использовать \"Обскура Магика 60\"."),
+                
+            ("nsp_newsp_book_photo3::Фотоаппарат \"Паномагик а777\"",           1000, "08_newspaper_scenario/photo/photo3.png", "Обработанный пылью фей фотоаппарат, напоминающий магловский ультразум. Способен делать активные 3д-фотографии.",
+                "Благодаря прочитанному руководству вы можете использовать \"Паномагик а777\"."),
+                
+            ("nsp_newsp_book_photo4::Фотоаппарат \"Моменто Мемориус 2000\"",           2500, "08_newspaper_scenario/photo/photo4.png", "Мощнейший фотоаппарат, слабо светящийся в темноте. Сделанные им фото по-настоящему живут и способны даже выглядывать из кадра.",
+                "Благодаря прочитанному руководству вы можете использовать \"Моменто Мемориус 2000\"."),
+
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp2"
+
+            lam=lambda e:e._status>=e._units
+            event=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 2} )
+                
+        tu=[("nsp_newsp_book_video::Книга \"Я и мой шар\"",         5000, "08_newspaper_scenario/sphere/Book_sphere.png", "Книга о секретах использования полученного в хрустальном шаре изображения для газеты.",
+                "Благодаря прочитанной книге вы можете помещать в газету видеоролики, показанные хрустальным шаром."),
+
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp2"
+
+            lam=lambda e:e._status>=e._units
+            event=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
 
 ####### 
 
@@ -3918,6 +3989,58 @@ image heart:
     "ani01/h02.png"
     pause.1
     repeat
+    
+### DR'S Newspaper ooo ###
+
+image nsp_cheerleader_dance1_ani:
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_02.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_03.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_04.png"
+    pause.5    
+    repeat   
+    
+image nsp_cheerleader_dance2_ani:
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_02.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_03.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_04.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.5  
+    "03_hp/08_animation_02/nsp01_cheerleader_05.png"
+    pause.5  
+    repeat 
+    
+image nsp_hermiona_panic_ani:
+    "03_hp/animation/h_run_01.png"
+    pause.07
+    "03_hp/animation/h_run_02.png"
+    pause.07
+    "03_hp/animation/h_run_03.png"
+    pause.07
+    "03_hp/animation/h_run_04.png"
+    pause.07
+    "03_hp/animation/h_run_05.png"
+    pause.07
+    "03_hp/animation/h_run_01f.png"
+    pause.07
+    "03_hp/animation/h_run_02f.png"
+    pause.07
+    "03_hp/animation/h_run_03f.png"
+    pause.07
+    "03_hp/animation/h_run_04f.png"
+    pause.07
+    "03_hp/animation/h_run_05f.png"
+    pause.07
+    repeat
+    
 ##########################SEX################
 
 

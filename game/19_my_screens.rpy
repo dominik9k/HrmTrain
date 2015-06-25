@@ -536,6 +536,33 @@ screen hermione_run: #Hermione running. facing right. (Leaving tower).
     tag hermione
     add "ch_hem run_f" at custom_walk_02(walk_xpos, walk_xpos2)
     
+### DR'S Newspaper ooo ###
+
+screen nsp_hermione_business :
+    tag hermione
+    add "03_hp/animation/nsp_business.png" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
+screen nsp_hermione_cheerleader_gryffindor :
+    tag hermione
+    add "03_hp/08_animation_02/nsp01_cheerleader_01.png" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
+screen nsp_hermione_cheerleader_gryffindor_dance1 :
+    tag hermione
+    add "nsp_cheerleader_dance1_ani" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
+screen nsp_hermione_cheerleader_gryffindor_dance2 :
+    tag hermione
+    add "nsp_cheerleader_dance2_ani" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
+screen nsp_hermione_panic :
+    tag hermione
+    add "nsp_hermiona_panic_ani" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
 ### GENIE CHIBI ###
 
 screen genie_walk: #Default Genie walk animation. 

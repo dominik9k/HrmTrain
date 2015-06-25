@@ -202,45 +202,139 @@ $ nsp_genie_typographic = 0 # Джин: Тип типографского наб
 $ nsp_genie_typographic_exp = 0 # Растет при каждой публикации на 1, для покупки набора след уровня нужно не менее 2 публикаций с прошлым. При этом счетчик сбрасывается.
 $ nsp_genie_writer = 0 # Джин: Навык писателя статей, в начале - 0. Отсюда же Мастерство написания для Газеты.
 $ nsp_genie_photocamera = 0 # Джин: Тип используемого фотоаппарата, в начале - 0. Отсюда же украшения газеты.
-$ nsp_genie_photocamera_exp = 3 # Растет при каждом ивенте на 1, для покупки фотоаппарата след уровня нужно не менее 3 ивентов с прошлым. При этом счетчик сбрасывается. Для покупки первого аппарата опыт уже как бы есть.
+$ nsp_genie_photocamera_exp = 3 # Растет при каждом ивенте на 1, для покупки фотоаппарата (кроме 1-го) след уровня нужно не менее 3 ивентов с прошлым. При этом счетчик сбрасывается. Для покупки первого аппарата опыт уже как бы есть.
 $ nsp_genie_sphere = False # Джин: Наличие хрустального шара.
 $ nsp_genie_sphere_level = 0 # Джин: Навык владения хрустальным шаром.
 $ nsp_genie_sphere_level_exp = 0 # Джин: Опыт владения хрустальным шаром.
 $ nsp_genie_sphere_ruby_level = 0 # Джин: Уровень рубина для шара
 $ nsp_genie_sphere_diamond_level = 0 # Джин: Уровень алмаза для шара
 $ nsp_genie_sphere_sapphire_level = 0 # Джин: Уровень сапфира для шара
-$ nsp_genie_sphare_video = False # Джин: Наличие навыка переноса видео в газету
+$ nsp_genie_sphere_video = False # Джин: Наличие навыка переноса видео в газету
 
-$ nsp_germiona_mediasex = 0 # Гермиона: Медиа-развращенность
-$ nsp_germiona_impudence = 0 # Гермиона: Наглость/смелость
+$ nsp_genie_sphere_diamond_req = 0
+
+$ nsp_genie_sphere_ruby_level_eff = 0
+$ nsp_genie_sphere_diamond_level_eff = 0
+$ nsp_genie_sphere_sapphire_level_eff = 0
+
+$ nsp_germiona_mediawhoring = 0 # Гермиона: Медиа-развращенность
+$ nsp_germiona_impudence = 0 # Гермиона: Наглость
 $ nsp_germiona_artistry = 0 # Гермиона: Артистичность
-$ nsp_germiona_anon_rights = 100 # Гермиона: Анонимность в "Права и дискриминация"
-$ nsp_germiona_anon_magls = 100 # Гермиона: Анонимность в "О жизни маглов публично"
-$ nsp_germiona_anon_kviddich = 100  # Гермиона: Анонимность в "О квиддиче"
-$ nsp_germiona_anon_sex = 100  # Гермиона: Анонимность в "О Сексе"
-$ nsp_germiona_anon_maniak = 100  # Гермиона: Анонимность в "Маньяк"
-$ nsp_germiona_anon_nude = 100  # Гермиона: Анонимность в "Голый репортер в маске"
-$ nsp_germiona_anon_forest = 100  # Гермиона: Анонимность в "Запретный лес"
-$ nsp_germiona_anon_studio = 100  # Гермиона: Анонимность в "Студия у Джина"
 
-$ nsp_newspaper_bonus_text = "" # Газета: Текст, описание бонусного контента
+$ nsp_newspaper_bonus_text = "нет" # Газета: Текст, описание бонусного контента
 $ nsp_newspaper_bonus_point = 0 # Газета: Баллы за бонусный контент
-$ nsp_newspaper_lasr_text = "" # Газета: Тект, реакция школы на предыдущий выпуск
+$ nsp_newspaper_bonus_base = 0 # Газета: Базовый бонус эвента
+$ nsp_newspaper_bonus_text_base = 0 # Газета: Базовый текст эвента
+$ nsp_newspaper_bonus_point_last = 0
+$ nsp_newspaper_qual_last = 0
 $ nsp_newspaper_last_money = 0 # Газета: Оценка публики, равна деньгам за предыдущий выпуск
 
 $ nsp_newspaper_qual = 10 # Газета: Качество текущего выпуска
 $ nsp_newspaper_cur_money = 10 # Газета: Оплата текущего выпуска
 $ nsp_newspaper_published = False # Газета была опубликована
+$ nsp_newspaper_published_mail = False # Письмо о награде за газету пришло
 
 $ nsp_newspaper_articles = 0 # Газета: Количество написанных статей. Когда количество достигает 8, газету можно публиковать и счетчик сбрасывается.
 $ nsp_newspaper_ready = False # Газета: Готовность.
 
 $ nsp_pre_jobs_max = 0 # Подсчет максимального числа отчетов, которые были отосланы. Если число больше или равно 4, то приходит письмо о газете.
 
+$ nsp_germiona_menu_rights = 1 # Гермиона: Доступность раздела "Права и дискриминация"
+$ nsp_germiona_menu_magls = 1 # Гермиона: Доступность раздела "О жизни маглов публично"
+$ nsp_germiona_menu_kviddich = 1  # Гермиона: Доступность раздела "О квиддиче"
+$ nsp_germiona_menu_sex = 1  # Гермиона: Доступность раздела "О Сексе"
+$ nsp_germiona_menu_maniac = 1  # Гермиона: Доступность раздела "Маньяк"
+$ nsp_germiona_menu_nude = 1  # Гермиона: Доступность раздела "Голый репортер в маске"
+$ nsp_germiona_menu_forest = 1  # Гермиона: Доступность раздела "Запретный лес"
+$ nsp_germiona_menu_studio = 1  # Гермиона: Доступность раздела "Студия у Джина"
+
+### Events flags
+$ nsp_event_rights_1 = 0
+$ nsp_event_rights_2 = 0
+$ nsp_event_rights_3 = 0
+$ nsp_event_rights_4 = 0
+$ nsp_event_rights_5 = 0
+
+$ nsp_event_magls_1 = 0
+$ nsp_event_magls_2 = 0
+$ nsp_event_magls_3 = 0
+$ nsp_event_magls_4 = 0
+$ nsp_event_magls_5 = 0
+
+$ nsp_event_kviddich_1 = 0
+$ nsp_event_kviddich_2 = 0
+$ nsp_event_kviddich_3 = 0
+$ nsp_event_kviddich_4 = 0
+$ nsp_event_kviddich_5 = 0
+$ nsp_event_kviddich_6 = 0
+
+$ nsp_event_sex_1 = 0
+$ nsp_event_sex_2 = 0
+$ nsp_event_sex_3 = 0
+$ nsp_event_sex_4 = 0
+$ nsp_event_sex_5 = 0
+
+$ nsp_event_maniac_1 = 0
+$ nsp_event_maniac_2 = 0
+$ nsp_event_maniac_3 = 0
+
+$ nsp_event_nude_1 = 0
+$ nsp_event_nude_2 = 0
+$ nsp_event_nude_3 = 0
+$ nsp_event_nude_4 = 0
+$ nsp_event_nude_5 = 0
+
+$ nsp_event_forest_1 = 0
+$ nsp_event_forest_2 = 0
+
+$ nsp_event_studio_1 = 0
+$ nsp_event_studio_2 = 0
+$ nsp_event_studio_3 = 0
+$ nsp_event_studio_4 = 0
+$ nsp_event_studio_5 = 0
+$ nsp_event_studio_6 = 0
+
+### Letters flags
+
+$ nsp_day = 0
+$ nsp_day_letter7 = 0
+
+$ nsp_letter_1 = 0
+$ nsp_letter_2 = 0
+$ nsp_letter_3 = 0
+$ nsp_letter_4 = 0
+$ nsp_letter_5 = 0
+$ nsp_letter_6 = 0
+$ nsp_letter_7 = 0
+$ nsp_letter_8 = 0
+$ nsp_letter_9 = 0
+$ nsp_letter_10 = 0
+$ nsp_letter_11 = 0
+$ nsp_letter_12 = 0
+$ nsp_letter_13 = 0
+
 $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не было, 1 - есть, 2 - уже прочитано.
 $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
 $ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
+
+$ hermione_out_halfday = 0
+
+###
+
+### DR'S wardrobe ###
+
+$ wrd_skirts_skirt03_xshort = 0
+$ wrd_skirts_skirt04_xxshort = 0
+$ wrd_skirts_skirt05_xsmall = 0
+$ wrd_skirts_skirt06_xxsmall = 0
+$ wrd_skirts_skirt07_xxxsmall = 0
+
+$ wrd_shirts_standard02_untucked_tie = 0
+$ wrd_shirts_standard03_untucked = 0
+$ wrd_shirts_standard04_untucked_unbuttoned = 0
+$ wrd_shirts_standard05_untucked_unbuttoned_double = 0
+$ wrd_shirts_standard06_skimpy_tied = 0
 
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
@@ -582,35 +676,24 @@ $hermi.liking+=1
 $daphne.liking+=1
 
 ### DR'S newspaper ooo ###
+#">>>[nsp_newspaper_articles] [nsp_newspaper_ready] [nsp_newspaper_published] [nsp_newspaper_published_mail]"
 
 if nsp_pre_jobs_max < finished_report:
     $ nsp_pre_jobs_max = finished_report
+    
+if nsp_newspaper_menu >= 6 :
+    $ nsp_day += 1
+    $ nsp_day_letter7 += 1
+    
+if nsp_letter_7 == 3:
+    $ nsp_letter_7 = 0
 
-$ nsp_germiona_anon_rights += 10
-$ nsp_germiona_anon_magls += 10
-$ nsp_germiona_anon_kviddich += 10
-$ nsp_germiona_anon_sex += 10
-$ nsp_germiona_anon_maniak += 10
-$ nsp_germiona_anon_nude += 10
-$ nsp_germiona_anon_forest += 10
-$ nsp_germiona_anon_studio += 10
-
-if nsp_germiona_anon_rights > 100:
-    $ nsp_germiona_anon_rights = 100
-if nsp_germiona_anon_magls > 100:
-    $ nsp_germiona_anon_magls = 100
-if nsp_germiona_anon_kviddich > 100:
-    $ nsp_germiona_anon_kviddich = 100
-if nsp_germiona_anon_sex > 100:
-    $ nsp_germiona_anon_sex = 100
-if nsp_germiona_anon_maniak > 100:
-    $ nsp_germiona_anon_maniak = 100
-if nsp_germiona_anon_nude > 100:
-    $ nsp_germiona_anon_nude = 100
-if nsp_germiona_anon_forest > 100:
-    $ nsp_germiona_anon_forest = 100
-if nsp_germiona_anon_studio > 100:
-    $ nsp_germiona_anon_studio = 100
+# На случай бага-пересечения с другим письмом.
+if nsp_letter_7 == 2:
+    $ nsp_letter_7 = 0
+    
+if nsp_letter_7 == 1:
+    $ nsp_letter_7 = 2
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.
@@ -700,9 +783,37 @@ if day == 12: # LETTER THAT UNLOCKS PAPERWORK BUTTON.
 
 ### DR'S NEWSPAPER ooo ###
 
-if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter < 2:
+if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter < 1:
     $ nsp_pre_letter = 1
     $ letters += 1
+   
+if nsp_newspaper_published_mail == False and nsp_newspaper_published == True :
+    $ nsp_newspaper_published_mail = True
+    $ letters += 1
+    
+if nsp_day == 10:
+    $ nsp_letter_1 = 1
+    $ letters += 1
+    
+# DR'S PUB DISABLE    
+#if nsp_day == 40:
+#    $ nsp_letter_2 = 1
+#    $ letters += 1
+    
+#if nsp_day >= 20 and nsp_letter_9 == 0 and nsp_event_forest_1 >= 1:
+#    $ nsp_letter_9 = 1
+#    $ letters += 1
+
+#if nsp_day_letter7 == 7 and nsp_letter_7 == 0 and nsp_event_rights_3 < 5 :
+#    if one_of_ten <= 7:
+#        $ nsp_letter_7 = 1
+#        $ letters += 1 
+#    $ nsp_day_letter7 = 0
+    
+if letters == 0 :
+    $ nsp_newspaper_published = False
+    $ nsp_newspaper_published_mail = False 
+    $ nsp_newspaper_ready = False
 
 ###
 
@@ -741,12 +852,18 @@ $ increment_cal_date()
 
 ### DAY EVENTS ###<============================================================================================================================================================
 
-$ this.RunStep("DAY")
+### DR'S Newspaper ooo ###
+if nsp_newspaper_menu == 8 :
+    jump nsp_snape_dialog3
 
+$ hermione_out_halfday -= 1
 
-
-
+if hermione_out_halfday <= 0 :
+    $ hermione_out_halfday = 0
+    $ this.RunStep("DAY")
     
+    
+###
     
     
 
@@ -771,12 +888,6 @@ if day == 1 and daytime and bird_examined and desk_examined and cupboard_examine
 
 show screen animation_feather
 call screen main_menu_01
-
-
-
-    
-
-
 
 
 
@@ -906,9 +1017,15 @@ if total_report == 5 and report_talk == False:
 
 ### NIGHT REQUESTS ###
 
+### DR'S Newspaper ooo ###
 
-$ this.RunStep("NIGHT")
+$ hermione_out_halfday -= 1
 
+if hermione_out_halfday <= 0 :
+    $ hermione_out_halfday = 0
+    $ this.RunStep("NIGHT")
+
+###
 
 
 
