@@ -242,7 +242,7 @@ label desk:
             jump day_main_menu
 
 ## DR'S DEBUG TEST           
-        "- Тест 1 -" :
+        "- Тест 1 -" if False:
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -254,14 +254,29 @@ label desk:
             show screen bld1
             with d3
             
-            $ nsp_germiona_magls_1_statimg = "New"
-            $ nsp_germiona_magls_1_photo = "dis"
-            $ nsp_event_magls_1 = 0
+            $ nsp_germiona_studio_1_statimg = "New"
+            $ nsp_germiona_studio_1_photo = "dis"
+            $ nsp_event_studio_1 = 0
             $ cur_level = 1
-            call nsp_event_magls_1
+            call nsp_event_studio_1
             jump hermione_goout
             
-        "- Тест 2 -" :
+        "- Тест 2 -" if False:
+        
+            $ menu_x = 0.2 #Menu is moved to the left side.
+            $ pos = POS_410
+                
+            $ renpy.play('sounds/door.mp3') #Sound of a door opening.
+            $ hermione_chibi_xpos = 400 #Near the desk.
+            $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
+            show screen hermione_02 #Hermione stands still.
+            show screen bld1
+            with d3
+            $ hermi.whoring = 24
+            call nsp_newsp_themes
+            jump hermione_goout            
+            
+        "- Тест 3 -" if False:
         
             call nsp_theme_rights
             jump desk

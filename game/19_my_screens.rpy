@@ -380,6 +380,26 @@ screen nsp_hermione_business :
     add "03_hp/animation/nsp_business.png" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
     zorder 2
     
+screen nsp_hermione_cheerleader_gryffindor :
+    tag hermione
+    add "03_hp/08_animation_02/nsp01_cheerleader_01.png" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
+screen nsp_hermione_cheerleader_gryffindor_dance1 :
+    tag hermione
+    add "nsp_cheerleader_dance1_ani" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
+screen nsp_hermione_cheerleader_gryffindor_dance2 :
+    tag hermione
+    add "nsp_cheerleader_dance2_ani" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
+screen nsp_hermione_panic :
+    tag hermione
+    add "nsp_hermiona_panic_ani" at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
+    zorder 2
+    
 ### GENIE CHIBI ###
 
 screen genie_walk: #Default Genie walk animation. 

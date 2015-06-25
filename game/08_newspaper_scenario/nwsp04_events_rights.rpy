@@ -76,6 +76,7 @@ label nsp_event_rights_1_complete :
 
     if cur_level == 1 :
     
+        show screen hermione_02
         $herView.hideshowQQ( "body_01.png", pos )
         g9 "Ты пришла ? Отлично, я готов записывать."
         $herView.hideshowQQ( "body_06.png", pos )

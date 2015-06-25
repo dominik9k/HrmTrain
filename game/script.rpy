@@ -224,7 +224,14 @@ init:
             s+="_complete" 
             this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
             
-        tu=["forest_1","forest_2","studio_1","studio_2","studio_3","studio_4","studio_5","studio_6"]
+        tu=["forest_1"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"DAY"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+        tu=["forest_2","studio_1","studio_2","studio_3","studio_4","studio_5","studio_6"]
         for s in tu:
             s="nsp_event_"+s
             this.AddEvent(s) 
@@ -3982,6 +3989,58 @@ image heart:
     "ani01/h02.png"
     pause.1
     repeat
+    
+### DR'S Newspaper ooo ###
+
+image nsp_cheerleader_dance1_ani:
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_02.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_03.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_04.png"
+    pause.5    
+    repeat   
+    
+image nsp_cheerleader_dance2_ani:
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_02.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_03.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_04.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.5  
+    "03_hp/08_animation_02/nsp01_cheerleader_05.png"
+    pause.5  
+    repeat 
+    
+image nsp_hermiona_panic_ani:
+    "03_hp/animation/h_run_01.png"
+    pause.07
+    "03_hp/animation/h_run_02.png"
+    pause.07
+    "03_hp/animation/h_run_03.png"
+    pause.07
+    "03_hp/animation/h_run_04.png"
+    pause.07
+    "03_hp/animation/h_run_05.png"
+    pause.07
+    "03_hp/animation/h_run_01f.png"
+    pause.07
+    "03_hp/animation/h_run_02f.png"
+    pause.07
+    "03_hp/animation/h_run_03f.png"
+    pause.07
+    "03_hp/animation/h_run_04f.png"
+    pause.07
+    "03_hp/animation/h_run_05f.png"
+    pause.07
+    repeat
+    
 ##########################SEX################
 
 

@@ -350,3 +350,28 @@ label nsp_hermione_train :
         $ hermione_sleeping = True
         jump night_main_menu
 
+label nsp_her_demo :
+
+    dr "Приветствую вас, игрок."
+    dr "К сожалению, в рамках эвентов газеты данное событие дальше не сделано."
+    dr "Ждите продолжения в следующих версиях."
+
+    if nsp_event_rights_1 >= 1 and nsp_event_magls_1 >= 1 and nsp_event_kviddich_1 >= 1 and nsp_event_forest_1 >= 1 and nsp_event_studio_1 >= 1 :
+        call nsp_her_demo2
+    
+    jump nsp_newsp_themes
+
+label nsp_her_demo2 :
+
+    dr "Вам удалось открыть все эвенты газеты, готовые в данной версии игры."
+    dr "Но не расстраивайтесь, в будущем добавится еще много интересного !"
+    dr "А если хотите стимулировать меня и других разработчиков работать быстрее, то :"
+    dr "1) Оставьте отзыв на форуме {a=http://wtrus.ixbb.ru{/a}"
+    dr "2) Принимайте активное участие в обсуждениях на форуме {a=http://wtrus.ixbb.ru{/a}"
+    dr "3) Создавайте свой контент для игры."
+    dr "4) ....."
+    dr "5) PROFIT"
+    dr "До новых встреч."
+    
+    return
+

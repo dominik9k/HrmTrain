@@ -189,6 +189,8 @@ label nsp_newsp_themes:
                     "- Сексуальные домогательства учеников -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_1_photo].png}" :
                         if nsp_germiona_rights_1_statimg == "New" :
                             $ cur_level = nsp_event_rights_1 + 1
+                            if cur_level == 2 :
+                                jump nsp_her_demo
                             jump nsp_event_rights_1
                         elif nsp_germiona_rights_1_statimg == "Explored" or nsp_germiona_rights_1_statimg == "Full":
                             $ cur_level = nsp_event_rights_1
@@ -197,11 +199,12 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
                     
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 1:
+# DR'S PUB DISABLE        
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 1 and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Сексуальные домогательства учителей -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_2_photo].png}" if nsp_genie_writer >= 1 :
+                    "- Сексуальные домогательства учителей -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_2_photo].png}" if nsp_genie_writer >= 1 and False :
                         if nsp_germiona_rights_2_statimg == "New" :
                             $ cur_level = nsp_event_rights_2 + 1
                             jump nsp_event_rights_2
@@ -212,11 +215,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 4 or (nsp_letter_7 < 3 and nsp_event_rights_3 == 0):
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 4 or (nsp_letter_7 < 3 and nsp_event_rights_3 == 0) and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Интервью с защитницей прав женщин -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_3_photo].png}" if nsp_genie_writer >= 4 and (nsp_letter_7 ==3 or nsp_event_rights_3 > 0) :
+                    "- Интервью с защитницей прав женщин -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_3_photo].png}" if nsp_genie_writer >= 4 and (nsp_letter_7 ==3 or nsp_event_rights_3 > 0)  and False:
                         if nsp_germiona_rights_3_statimg == "New" :
                             $ cur_level = nsp_event_rights_3 + 1
                             jump nsp_event_rights_3
@@ -233,11 +236,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 8:
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 8 and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Заседание ООП с демонстрацией для девочек -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_4_photo].png}" if nsp_genie_writer >= 8 :
+                    "- Заседание ООП с демонстрацией для девочек -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_rights_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_4_photo].png}" if nsp_genie_writer >= 8  and False:
                         if nsp_germiona_rights_4_statimg == "New" :
                             $ cur_level = nsp_event_rights_4 + 1
                             jump nsp_event_rights_4
@@ -248,11 +251,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 10 or (nsp_event_rights_4 < 3):
+                    "{color=#858585}-Не открытое действие-{/color}" if (nsp_genie_writer < 10 or (nsp_event_rights_4 < 3)) and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Заседание ООП с демонстрацией для смешанной группы -\n{image=08_newspaper_scenario/hearts/heart_7[nsp_event_rights_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_5_photo].png}" if nsp_genie_writer >= 10 and (nsp_event_rights_4 >= 3) :
+                    "- Заседание ООП с демонстрацией для смешанной группы -\n{image=08_newspaper_scenario/hearts/heart_7[nsp_event_rights_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_rights_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_rights_5_photo].png}" if nsp_genie_writer >= 10 and (nsp_event_rights_4 >= 3)  and False:
                         if nsp_germiona_rights_5_statimg == "New" :
                             $ cur_level = nsp_event_rights_5 + 1
                             jump nsp_event_rights_5
@@ -280,6 +283,8 @@ label nsp_newsp_themes:
                     "- Откровенная одежда маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_1_photo].png}" :
                         if nsp_germiona_magls_1_statimg == "New" :
                             $ cur_level = nsp_event_magls_1 + 1
+                            if cur_level == 2 :
+                                jump nsp_her_demo
                             jump nsp_event_magls_1
                         elif nsp_germiona_magls_1_statimg == "Explored" or nsp_germiona_magls_1_statimg == "Full":
                             $ cur_level = nsp_event_magls_1
@@ -288,11 +293,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
                     
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 4:
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 4 and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Сауна маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_2_photo].png}" if nsp_genie_writer >= 4 :
+                    "- Сауна маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_2_photo].png}" if nsp_genie_writer >= 4  and False:
                         if nsp_germiona_magls_2_statimg == "New" :
                             $ cur_level = nsp_event_magls_2 + 1
                             jump nsp_event_magls_2
@@ -303,11 +308,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 6 :
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 6  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Пляж маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_3_photo].png}" if nsp_genie_writer >= 6 :
+                    "- Пляж маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_3_photo].png}" if nsp_genie_writer >= 6  and False:
                         if nsp_germiona_magls_3_statimg == "New" :
                             $ cur_level = nsp_event_magls_3 + 1
                             jump nsp_event_magls_3
@@ -318,11 +323,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 8:
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 8 and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Фотостудия маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_4_photo].png}" if nsp_genie_writer >= 8 :
+                    "- Фотостудия маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_4_photo].png}" if nsp_genie_writer >= 8  and False:
                         if nsp_germiona_magls_4_statimg == "New" :
                             $ cur_level = nsp_event_magls_4 + 1
                             jump nsp_event_magls_4
@@ -333,11 +338,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 10 :
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 10  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Медобследование по-магловски -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_5_photo].png}" if nsp_genie_writer >= 10 :
+                    "- Медобследование по-магловски -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_5_photo].png}" if nsp_genie_writer >= 10  and False:
                         if nsp_germiona_magls_5_statimg == "New" :
                             $ cur_level = nsp_event_magls_5 + 1
                             jump nsp_event_magls_5
@@ -371,6 +376,8 @@ label nsp_newsp_themes:
                     "- Тренировка болельщицы -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_1_photo].png}" :
                         if nsp_germiona_kviddich_1_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_1 + 1
+                            if cur_level == 2 :
+                                jump nsp_her_demo
                             jump nsp_event_kviddich_1
                         elif nsp_germiona_kviddich_1_statimg == "Explored" or nsp_germiona_kviddich_1_statimg == "Full":
                             $ cur_level = nsp_event_kviddich_1
@@ -379,11 +386,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
                     
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 4:
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 4 and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Помощь команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_2_photo].png}" if nsp_genie_writer >= 4 :
+                    "- Помощь команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_2_photo].png}" if nsp_genie_writer >= 4  and False:
                         if nsp_germiona_kviddich_2_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_2 + 1
                             jump nsp_event_kviddich_2
@@ -400,11 +407,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 6 :
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 6  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Диверсия для команды Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_3_photo].png}" if nsp_genie_writer >= 6 :
+                    "- Диверсия для команды Слизерина -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_3_photo].png}" if nsp_genie_writer >= 6  and False:
                         if nsp_germiona_kviddich_3_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_3 + 1
                             jump nsp_event_kviddich_3
@@ -415,11 +422,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 8:
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 8 and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Бег на стадионе без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_4_photo].png}" if nsp_genie_writer >= 8 :
+                    "- Бег на стадионе без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_4_photo].png}" if nsp_genie_writer >= 8  and False:
                         if nsp_germiona_kviddich_4_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_4 + 1
                             jump nsp_event_kviddich_4
@@ -436,11 +443,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 10 :
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 10  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Полет без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_5_photo].png}" if nsp_genie_writer >= 10 :
+                    "- Полет без одежды -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_5_photo].png}" if nsp_genie_writer >= 10  and False:
                         if nsp_germiona_kviddich_5_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_5 + 1
                             jump nsp_event_kviddich_5
@@ -457,11 +464,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
                             
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 10 or nsp_event_kviddich_2 < 5 or nsp_event_kviddich_5 < 5 :
+                    "{color=#858585}-Не открытое действие-{/color}" if (nsp_genie_writer < 10 or nsp_event_kviddich_2 < 5 or nsp_event_kviddich_5 < 5)  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Игра в команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_6_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_6_photo].png}" if nsp_genie_writer >= 10 and nsp_event_kviddich_2 >= 5 and nsp_event_kviddich_5 >= 5 :
+                    "- Игра в команде Гриффиндора -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_6_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_6_photo].png}" if nsp_genie_writer >= 10 and nsp_event_kviddich_2 >= 5 and nsp_event_kviddich_5 >= 5  and False:
                         if nsp_germiona_kviddich_6_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_6 + 1
                             jump nsp_event_kviddich_6
@@ -481,10 +488,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
 
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 1 :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 1  and False:
             jump nsp_newsp_themes
             
-        "- О сексе {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_sex].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 1 :
+        "- О сексе {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_sex].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 1  and False:
     
             if nsp_germiona_menu_sex == 1 :
                 call nsp_theme_sex
@@ -566,10 +573,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
                 
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and (nsp_letter_2 < 2 or nsp_genie_writer < 6) :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and (nsp_letter_2 < 2 or nsp_genie_writer < 6)  and False:
             jump nsp_newsp_themes
             
-        "- Маньяк {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_maniac].png} -" if nsp_newspaper_menu >= 6 and nsp_letter_2 >= 2 and nsp_genie_writer >= 6 :
+        "- Маньяк {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_maniac].png} -" if nsp_newspaper_menu >= 6 and nsp_letter_2 >= 2 and nsp_genie_writer >= 6  and False:
     
             if nsp_germiona_menu_maniac == 1 :
                 call nsp_theme_maniac
@@ -639,10 +646,10 @@ label nsp_newsp_themes:
                     "- Ничего -" :
                         jump nsp_newsp_themes
         
-        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 4 :
+        "{color=#858585}--Не открытое действие-{/color}" if nsp_newspaper_menu >= 6 and nsp_genie_writer < 4  and False:
             jump nsp_newsp_themes
             
-        "- Голый репортер в маске {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_nude].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 4 :
+        "- Голый репортер в маске {image=08_newspaper_scenario/flags/[nsp_germiona_statimg_nude].png} -" if nsp_newspaper_menu >= 6 and nsp_genie_writer >= 4  and False:
     
             if nsp_germiona_menu_nude == 1 :
                 call nsp_theme_nude
@@ -749,6 +756,8 @@ label nsp_newsp_themes:
                     "- Поход в Запретный лес -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_forest_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_forest_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_forest_1_photo].png}" if nsp_genie_writer >= 4 and nsp_letter_1 >= 2 :
                         if nsp_germiona_forest_1_statimg == "New" :
                             $ cur_level = nsp_event_forest_1 + 1
+                            if cur_level == 2 :
+                                jump nsp_her_demo
                             jump nsp_event_forest_1
                         elif nsp_germiona_forest_1_statimg == "Explored" or nsp_germiona_forest_1_statimg == "Full":
                             $ cur_level = nsp_event_forest_1
@@ -757,11 +766,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
                     
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 7 or nsp_letter_9 < 2 :
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 7 or nsp_letter_9 < 2  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Контакт с кентавром -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_forest_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_forest_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_forest_2_photo].png}" if nsp_genie_writer >= 7 and nsp_letter_9 >= 2 :
+                    "- Контакт с кентавром -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_forest_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_forest_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_forest_2_photo].png}" if nsp_genie_writer >= 7 and nsp_letter_9 >= 2  and False:
                         if nsp_germiona_forest_2_statimg == "New" :
                             $ cur_level = nsp_event_forest_2 + 1
                             jump nsp_event_forest_2
@@ -795,6 +804,8 @@ label nsp_newsp_themes:
                     "- Интервью с фотосессией -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_1_photo].png}" :
                         if nsp_germiona_studio_1_statimg == "New" :
                             $ cur_level = nsp_event_studio_1 + 1
+                            if cur_level == 2 :
+                                jump nsp_her_demo
                             jump nsp_event_studio_1
                         elif nsp_germiona_studio_1_statimg == "Explored" or nsp_germiona_studio_1_statimg == "Full":
                             $ cur_level = nsp_event_studio_1
@@ -803,11 +814,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
                     
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 0 or not nsp_genie_sphere_video :
+                    "{color=#858585}-Не открытое действие-{/color}" if (nsp_genie_writer < 0 or not nsp_genie_sphere_video)  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes                    
                         
-                    "- Интервью с видеосессией -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_2_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
+                    "- Интервью с видеосессией -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_2].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_2_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_2_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video  and False:
                         if nsp_germiona_studio_2_statimg == "New" :
                             $ cur_level = nsp_event_studio_2 + 1
                             jump nsp_event_studio_2
@@ -818,11 +829,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 0 :
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 0  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Постановочные фото папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_3_photo].png}" if nsp_genie_writer >= 0 :
+                    "- Постановочные фото папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_3].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_3_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_3_photo].png}" if nsp_genie_writer >= 0  and False:
                         if nsp_germiona_studio_3_statimg == "New" :
                             $ cur_level = nsp_event_studio_3 + 1
                             jump nsp_event_studio_3
@@ -833,11 +844,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 0 or not nsp_genie_sphere_video :
+                    "{color=#858585}-Не открытое действие-{/color}" if (nsp_genie_writer < 0 or not nsp_genie_sphere_video) and False :
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Постановочные видео папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_4_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
+                    "- Постановочные видео папарацци -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_4].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_4_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_4_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video  and False:
                         if nsp_germiona_studio_4_statimg == "New" :
                             $ cur_level = nsp_event_studio_4 + 1
                             jump nsp_event_studio_4
@@ -848,11 +859,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 0 :
+                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 0  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Порнофото инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_5_photo].png}" if nsp_genie_writer >= 0 :
+                    "- Порнофото инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_5].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_5_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_5_photo].png}" if nsp_genie_writer >= 0  and False:
                         if nsp_germiona_studio_5_statimg == "New" :
                             $ cur_level = nsp_event_studio_5 + 1
                             jump nsp_event_studio_5
@@ -863,11 +874,11 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
                             
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 0 or not nsp_genie_sphere_video :
+                    "{color=#858585}-Не открытое действие-{/color}" if (nsp_genie_writer < 0 or not nsp_genie_sphere_video)  and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         
-                    "- Порновидео инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_6_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_6_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video :
+                    "- Порновидео инкогнито -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_studio_6].png} {image=08_newspaper_scenario/flags/[nsp_germiona_studio_6_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_studio_6_photo].png}" if nsp_genie_writer >= 0 and nsp_genie_sphere_video  and False:
                         if nsp_germiona_studio_6_statimg == "New" :
                             $ cur_level = nsp_event_studio_6 + 1
                             jump nsp_event_studio_6
@@ -2397,7 +2408,7 @@ label nsp_bonus_calc_photo :
     $ nsp_newspaper_bonus_point = int ( nsp_newspaper_bonus_base * (1 + nsp_photo_koef ) * (0.5 + ( nsp_germiona_artistry / 3)) )
     $ nsp_genie_photocamera_exp += 1
     
-    if nsp_newspaper_menu == 6 :
+    if nsp_newspaper_menu == 6 and cur_level >= 2 :
         $ nsp_newspaper_menu = 7
     
     return

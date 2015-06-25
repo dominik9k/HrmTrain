@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
 <item>
-	<key>skirt_business1</key>
+	<key>skirts_skirt_business1</key>
 
 	<style name="default">
-		<frame>skirt_business1.png</frame>
+		<frame>skirts/skirt_business1.png</frame>
 		<folder>clothes</folder>
 		<visible>1</visible>
 		<zorder>skirt</zorder>

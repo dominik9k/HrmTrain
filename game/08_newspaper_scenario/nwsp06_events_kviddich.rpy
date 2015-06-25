@@ -32,7 +32,64 @@ label nsp_theme_kviddich :
 label nsp_event_kviddich_1 :
 
     if cur_level == 1 :
-        ">текст преивента квиддича 1-1"
+
+        $herView.hideshowQQ( "body_01.png", pos )
+        
+        if nsp_event_kviddich_1 == 0 :
+    
+            g9 "(Форма болельщицы для Гермионы нашлась в шкафу. Иногда настоящий Дамблдор меня удивляет.)"
+            m "Итак, девочка, ты не хочешь быть болельщицей ?"
+            $herView.hideshowQQ( "body_13.png", pos )
+            her "Нет, сэр. Я уже вам говорила. А почему вы спрашиваете ?"
+            m "Простое любопытство. Ведь ты стремишься быть лучше всех во всем, а быть болельщицей, насколько я понимаю, престижно."
+            $herView.hideshowQQ( "body_28.png", pos )
+            her "Престижно ? При чем тут престижность ? Быть болельщицей, значит заявить, что ты тупая шл… , в смысле спортсменка."
+            $herView.hideshowQQ( "body_16.png", pos )
+            her "И ничего более. Простите, сэр."
+            m "Все в порядке, продолжай."
+            $herView.hideshowQQ( "body_04.png", pos )
+            her "Сэр, эти болельщицы постоянно флиртуют и вертят парнями. А может быть и учителями."
+            her "Именно они чаще всего добывают баллы нечестным путем."
+            her "А еще, у них что-то вроде закрытого клуба, куда не берут посторонних."
+            m "Вот как. Ну что же, я рад, что наши наблюдения совпадают."
+            $herView.hideshowQQ( "body_11.png", pos )
+            her "Сэр, не стоит их защи… Совпадают ?"
+            m "Да, и более того, мне кажется, что давно пора расследовать их деятельность."
+            m "Правда как директор я не должен вмешиваться напрямую."
+            m "А вот в качестве редактора газеты..."
+            $herView.hideshowQQ( "body_06.png", pos )
+            her "Вы сделаете это, сэр ?"
+            her "Вы покажете всем, что накачанные попы и оголенные животы - это ничто по сравнению со знаниями и высокими оценками ?"
+            m "Кто, я ? То есть да, именно так."
+            m "Но тебе придется внедриться к ним, а сначала - потренироваться."
+            $herView.hideshowQQ( "body_07.png", pos )
+            her "Но сэр, какой в этом смысл ? Ведь они не возьмут постороннюю девчонку, тем более у них пока есть полный состав."
+            her "К тому же, меня. Они уже знают о моем отношении."
+            m "Да, но подумай на один шаг вперед."
+            m "Предположим, в клубе болельщиц появится вакансия. Кого они возьмут ?"
+            m "Ученицу, которая уже много тренировалась или полного новичка ?"
+            $herView.hideshowQQ( "body_13.png", pos )
+            her "Я поняла, сэр."
+            her "Да, вы правы, как всегда."
+            g9 "Приходи вечером, я помогу тебе изучить основы."
+            $herView.hideshowQQ( "body_17.png", pos )
+            her "У меня нет формы болельщицы, профессор."
+            her "(Похоже это не станет проблемой.)"
+            m "Это не станет проблемой."
+            $herView.hideshowQQ( "body_16.png", pos )
+            her "(Ну что я говорила.)"
+
+        else :
+        
+            m "Предлагаю продолжить твою тренировку болельщицы вечером."
+            $herView.hideshowQQ( "body_16.png", pos )
+            her "Сэр, я по-прежнему не уверена, что это хорошая идея."
+            g9 "Я гарантирую, в конце ты признаешь, что все это было не зря."
+            $herView.hideshowQQ( "body_15.png", pos )
+            her "Как скажете, сэр."
+            
+        $herView.hideshowQQ( "body_01.png", pos )
+        
     elif cur_level == 2 :
         ">текст преивента квиддича 1-2"
     elif cur_level == 3 :
@@ -59,7 +116,86 @@ label nsp_event_kviddich_1_complete :
         $ cur_level = nsp_event_kviddich_1
 
     if cur_level == 1 :
-        ">текст ивента квиддича 1-1"
+    
+        show screen hermione_02
+        $herView.hideshowQQ( "body_01.png", pos )
+        
+        if nsp_event_kviddich_1 == 0 :
+            her "Здравствуйте, сэр. Я буду тренироваться здесь ?"
+            m "Да. Вот твой костюм."
+        else :
+            her "Добрый вечер, сэр."
+            m "Привет. Вот твой костюм."
+        
+        $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+        $ herView.data().addItemSet( 'hermione_cheerleader_gryffindor' )
+        hide screen hermione_02
+        show screen nsp_hermione_cheerleader_gryffindor
+        $herView.hideshowQQ( "body_03.png", pos )
+        pause.5
+        $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+        $screens.Show("ctc").Pause().Hide("ctc")
+            
+        her "Я готова, сэр."
+        $herView.hideshowQQ( "body_13.png", pos )
+        her "Никак не могу сообразить, откуда у вас взялся костюм для меня."
+        g9 "(Об этом лучше спросить Дамблдора…)"
+        her "Что ?"
+        m "Я говорю, лучше спросить об этом попозже. Скажем, через пару месяцев."
+        m "А сейчас, приступим. Тебе нужно исполнить танец болельщицы."
+        m "Попробуй танцевать так, как ты сама это представляешь."
+        $herView.hideshowQQ( "body_15.png", pos )
+        her "Я попробую, профессор."
+        
+        show screen ctc
+        pause
+        ">Гермиона танцует очень скованно, словно делает это впервые."
+        hide screen nsp_hermione_cheerleader_gryffindor
+        show screen nsp_hermione_cheerleader_gryffindor_dance1
+        with d3
+        pause
+        
+        m "Мда, хотел бы я сказать, что у тебя неплохо получается, но это не соответствует роли жесткого тренера."
+        $herView.hideshowQQ( "body_13.png", pos )
+        her "Жесткого тренера ?"
+        g4 "Да, девочка. {size=+4}Выше колени !{/size}"
+        
+        ">Гермиона начинает прыгать активнее, ее юбку подбрасывает при каждом движении. Лицо краснеет."
+        $herView.hideshowQQ( "body_94.png", pos )
+        hide screen nsp_hermione_cheerleader_gryffindor_dance1
+        show screen nsp_hermione_cheerleader_gryffindor_dance2
+        with d3
+        pause
+        
+        her "Уфф… Уфф..."
+        g9 "Отлично, так гораздо лучше."
+        $herView.hideshowQQ( "body_94.png", pos )
+        her "Уфф…. Правда… Уфф…. Сэр ?"
+        g4 "Да. То есть {size=+4}отставить разговоры ! Выпячивай грудь между прыжками ! {/size}"
+        g4 "{size=+4}Еще сильнее ! Да, вот так. И верти задом так, как будто хочешь им стереть с доски свою ошибку в домашнем задании ! {/size}"
+        $herView.hideshowQQ( "body_97.png", pos )
+        her "Ох, сэр. Уфф… Я больше не могу."
+        g4 "Еще 20 секунд."
+        $herView.hideshowQQ( "body_98.png", pos )
+        her "Уфф… Уфф… Ах..."
+        m "Хорошо. Можешь расслабиться. Ты теперь на один шаг ближе к цели."
+        $herView.hideshowQQ( "body_90.png", pos )
+        her "Ох… Да, сэр."
+
+        $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+        $ herView.data().delItemSet( 'hermione_cheerleader_gryffindor' )
+        hide screen nsp_hermione_cheerleader_gryffindor_dance2
+        show screen hermione_02
+        $herView.hideshowQQ( "body_33.png", pos )
+        pause.5
+        $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+        $screens.Show("ctc").Pause().Hide("ctc")
+        
+        her "Пойду под душ, профессор."
+        g9 "Я бы не отказался тебя проводить, но дела... "
+        $herView.hideshowQQ( "body_45.png", pos )
+        her "Пожалуйста, держите себя в руках, сэр !"
+
         
         if nsp_germiona_mediawhoring < 10 :
             $ nsp_germiona_mediawhoring += 2
@@ -153,7 +289,15 @@ label nsp_event_kviddich_1_complete :
 label nsp_event_kviddich_2 :
 
     if cur_level == 1 :
-        ">текст преивента квиддича 2-1"        
+        ">текст преивента квиддича 2-1" 
+        
+        m "Гермиона, соревнование между школами и их газетами привело к определенным последствиям."
+        her "Плохим последствиям, сэр ?"
+        m "Хороший вопрос. Дело в том, что теперь все школьные команды по квиддичу будут в центре внимания."
+        m "Возможно в будущем состоятся межшкольные игры. А пока что от нас требуется освещение состояния команд в прессе."
+        m "Ты в курсе, как обстоят дела "
+
+        
         
     elif cur_level == 2 :
         ">текст преивента квиддича 2-2"

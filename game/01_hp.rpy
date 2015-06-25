@@ -190,6 +190,8 @@ $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о г
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
 $ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
 
+$ hermione_out_halfday = 0
+
 ###
 
 ### GETTING LETTERS ###
@@ -649,19 +651,20 @@ if nsp_day == 10:
     $ nsp_letter_1 = 1
     $ letters += 1
     
-if nsp_day == 40:
-    $ nsp_letter_2 = 1
-    $ letters += 1
+# DR'S PUB DISABLE    
+#if nsp_day == 40:
+#    $ nsp_letter_2 = 1
+#    $ letters += 1
     
-if nsp_day >= 20 and nsp_letter_9 == 0 and nsp_event_forest_1 >= 1:
-    $ nsp_letter_9 = 1
-    $ letters += 1
+#if nsp_day >= 20 and nsp_letter_9 == 0 and nsp_event_forest_1 >= 1:
+#    $ nsp_letter_9 = 1
+#    $ letters += 1
 
-if nsp_day_letter7 == 7 and nsp_letter_7 == 0 and nsp_event_rights_3 < 5 :
-    if one_of_ten <= 7:
-        $ nsp_letter_7 = 1
-        $ letters += 1 
-    $ nsp_day_letter7 = 0
+#if nsp_day_letter7 == 7 and nsp_letter_7 == 0 and nsp_event_rights_3 < 5 :
+#    if one_of_ten <= 7:
+#        $ nsp_letter_7 = 1
+#        $ letters += 1 
+#    $ nsp_day_letter7 = 0
     
 if letters == 0 :
     $ nsp_newspaper_published = False
@@ -701,11 +704,18 @@ $ day +=1
 #jump test
 ### DAY EVENTS ###<============================================================================================================================================================
 
+### DR'S Newspaper ooo ###
 if nsp_newspaper_menu == 8 :
     jump nsp_snape_dialog3
 
-$ this.RunStep("DAY")
+$ hermione_out_halfday -= 1
 
+if hermione_out_halfday <= 0 :
+    $ hermione_out_halfday = 0
+    $ this.RunStep("DAY")
+    
+    
+###
     
     
 
@@ -859,9 +869,15 @@ if total_report == 5 and report_talk == False:
 
 ### NIGHT REQUESTS ###
 
+### DR'S Newspaper ooo ###
 
-$ this.RunStep("NIGHT")
+$ hermione_out_halfday -= 1
 
+if hermione_out_halfday <= 0 :
+    $ hermione_out_halfday = 0
+    $ this.RunStep("NIGHT")
+
+###
 
 
 

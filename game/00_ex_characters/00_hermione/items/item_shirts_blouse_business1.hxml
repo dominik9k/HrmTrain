@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
 <item>
-	<key>blouse_business1</key>
+	<key>shirts_blouse_business1</key>
 
 	<style name="default">
-		<frame>blouse_business1.png</frame>
+		<frame>shirts/blouse_business1.png</frame>
 		<folder>clothes</folder>
 		<visible>1</visible>
 		<zorder>dress</zorder>
@@ -18,7 +18,7 @@
 		<actions></actions>
 	</style>
 	<style name="opened_1">
-		<frame>blouse_business2.png</frame>
+		<frame>shirts/blouse_business2.png</frame>
 		<folder>clothes</folder>
 	</style>	
 </item>

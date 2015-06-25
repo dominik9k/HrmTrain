@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
 <item>
-	<key>tights</key>
+	<key>stockings_tights</key>
 
 	<style name="default">
-		<frame>tights.png</frame>
+		<frame>stockings/tights.png</frame>
 		<folder>clothes</folder>
 		<parent>legs</parent>
 		<zorder>legs+1</zorder>

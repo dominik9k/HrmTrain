@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<item>
+	<key>skirts_cheerleader_gryffindor</key>
+
+	<style name="default">
+		<frame>skirts/cheerleader_gryffindor.png</frame>
+		<folder>clothes</folder>
+		<visible>1</visible>
+		<zorder>skirt</zorder>
+		<hidelist>
+			<item>skirt</item>
+			<item>nets</item>
+			<item>panties</item>
+		</hidelist>
+	</style>	
+</item>

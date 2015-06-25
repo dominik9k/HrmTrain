@@ -69,7 +69,7 @@ label nsp_event_magls_1 :
             m "Попробуй расстегнуть пару верхних пуговиц."
             $herView.hideshowQQ( "body_02.png", pos )
             her "Да, сэр."
-            $ herView.data().setStyleKey( 'blouse_business1', 'opened_1' )
+            $ herView.data().setStyleKey( 'shirt_blouse_business1', 'opened_1' )
             pause.5
             g9 "Вот, гораздо лучше."
             $herView.hideshowQQ( "body_12.png", pos )
@@ -82,7 +82,7 @@ label nsp_event_magls_1 :
             
             $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
             $ herView.data().showItemSet( 'hermione_business_clothes' )
-            $ herView.data().setStyleKey( 'blouse_business1', 'opened_1' )
+            $ herView.data().setStyleKey( 'shirt_blouse_business1', 'opened_1' )
             hide screen hermione_02
             show screen nsp_hermione_business
             pause.5
@@ -129,7 +129,7 @@ label nsp_event_magls_1_complete :
         hide screen hermione_02
         show screen nsp_hermione_business
         $ herView.data().showItemSet( 'hermione_business_clothes' )
-        $ herView.data().setStyleKey( 'blouse_business1', 'opened_1' )
+        $ herView.data().setStyleKey( 'shirt_blouse_business1', 'opened_1' )
         $herView.hideshowQQ( "body_01.png", pos )
     
         her "А вот и я, сэр"

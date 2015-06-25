@@ -59,7 +59,7 @@ label door:
             
        
             
-        "{color=#858585}- Позвать Гермиону -{/color}" if this.Has("her_summon")  and hermione_takes_classes or hermione_sleeping:#summoning_hermione_unlocked
+        "{color=#858585}- Позвать Гермиону -{/color}" if this.Has("her_summon")  and hermione_takes_classes or hermione_sleeping or hermione_out_halfday > 0:#summoning_hermione_unlocked
             if hermione_takes_classes:
                 show screen bld1
                 with d3
@@ -74,8 +74,18 @@ label door:
                 hide screen bld1
                 with d3
                 jump night_main_menu
+            elif hermione_out_halfday > 0:
+                show screen bld1
+                with d3
+                ">Гермиона сейчас находится вне пределов Хогвартса."
+                hide screen bld1
+                with d3
+                if daytime:
+                    jump day_main_menu
+                else: 
+                    jump night_main_menu               
 
-        "- Позвать Гермиону -" if this.Has("her_summon") and not hermione_takes_classes and not hermione_sleeping: #summoning_hermione_unlocked 
+        "- Позвать Гермиону -" if this.Has("her_summon") and not hermione_takes_classes and not hermione_sleeping and hermione_out_halfday <= 0: #summoning_hermione_unlocked 
      
             if hermione_takes_classes:
                 show screen bld1
