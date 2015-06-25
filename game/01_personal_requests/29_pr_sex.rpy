@@ -535,7 +535,7 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
         $herViewHead.showQ( "body_132.png", posHead )
         her "Это из-за вас, сэр...{image=textheart.png}"
         $herViewHead.showQ( "body_134.png", posHead )
-        her2 "Вы долбите моё маленькую киску своим гигантским членом...{image=textheart.png}"
+        her2 "Вы долбите мою маленькую киску своим гигантским членом...{image=textheart.png}"
         $herViewHead.hideQ()
         g4 "Аааа, шлюха!"
         $herViewHead.showQ( "body_134.png", posHead )

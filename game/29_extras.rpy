@@ -20,6 +20,18 @@ label gallery:
             
         "- Священные свитки. Часть III -":
             $_scrollSection=2
+            jump volone
+
+        "- Священные свитки. Часть IV -":
+            $_scrollSection=3
+            jump volone
+
+        "- Священные свитки. Часть V -":
+            $_scrollSection=4
+            jump volone
+
+        "- Священные свитки. Часть VI -":
+            $_scrollSection=5
             jump volone 
 
 #        "- Gallery volume 02 -":
@@ -143,6 +155,7 @@ label vol_description:
     ["Очередной (довольно большой) сайд-квест..."],
     [".........."],
     ["Одни из самых ранних набросков по сайд-квесту школьной команды по квиддичу..."]
+    ["Незнаю что описывать Хд..."]
     ]
 
     
