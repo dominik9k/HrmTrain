@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<item>
+	<key>skirts_skirt04_xxshort</key>
+
+	<style name="default">
+		<frame>skirts/skirt_xxshort.png</frame>
+		<folder>clothes</folder>
+		<visible>1</visible>
+		<zorder>skirt</zorder>
+		<hidelist>
+			<item>skirt</item>
+			<item>nets</item>
+			<item>panties</item>
+		</hidelist>
+	</style>	
+</item>
