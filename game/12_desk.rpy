@@ -283,7 +283,7 @@ label desk:
             call nsp_event_studio_1
             jump hermione_goout
             
-        "- Тест 2 -" if False:
+        "- Тест 2 -" :
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -295,12 +295,13 @@ label desk:
             show screen bld1
             with d3
             $ hermi.whoring = 24
-            call nsp_newsp_themes
-            jump hermione_goout            
+            jump hermione_main_menu
+#            jump hermione_goout            
             
-        "- Тест 3 -" if False:
-        
-            call nsp_theme_rights
+        "- Тест 3 -" :
+
+            $ hermi.whoring = 24
+            call the_oddities
             jump desk
             
 ### DR'S NEWSPAPER ooo ###

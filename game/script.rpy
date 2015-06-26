@@ -79,14 +79,36 @@ init:
             "\"Леди Спид Стик-2000\", элегантный способ передвижения для страстных ведьм. Торговой маркой гарантируется полное удовлетворение от эффекта. Закажите одну штуку для вашей ведьмы, и она больше не будет использовать ее скучную старую метлу!", "cupboard", None ),
         ("sexdoll", "Секс-кукла \"Джуанна\"", 0, "03_hp/18_store/23.png", 
             "Секс-кукла \"Джуанна\"... Очень реалистичная. Выглядит почти как настоящий человек под каким-то заклинанием.", "cupboard", None ),
+        ("shortskirt", "Укороченная школьная юбка", 700, "03_hp/18_store/07.png", 
+            "Укороченная школьная юбка. Знаметно улучшает оценки.", "gears_skirt", None ),
+        ("xshortskirt", "Сильно укороченная школьная юбка", 1000, "03_hp/18_store/07.png", 
+            "Сильно укороченная школьная юбка. Значительно улучшает оценки.", "gears_skirt", None ),
+        ("xxshortskirt", "Короткая школьная юбка", 1500, "03_hp/18_store/07.png", 
+            "Короткая школьная юбка. Сильно улучшаяет оценки.", "gears_skirt", None ),
+        ("xsmallskirt", "Школьная мини-юбка", 3000, "03_hp/18_store/07.png", 
+            "Школьная мини-юбка. Резко улучшает оценки. Повышает рейтинг игры до 12+.", "gears_skirt", None ),
+        ("xxsmallskirt", "Укороченная школьная мини-юбка", 5000, "03_hp/18_store/07.png", 
+            "Укороченная школьная мини-юбка. Фантастически улучшает оценки. Повышает рейтинг игры до 16+.", "gears_skirt", None ),
+        ("xxxsmallskirt", "Супер-короткая школьная мини-юбка", 0, "03_hp/18_store/07.png", 
+            "Супер-короткая школьная мини-юбка. Заставляет всех забыть про оценки. В том числе и учителей. Повышает рейтинг игры до 35+.", "gears_skirt", None ),
+        ("skirt_cheerleader", "Юбка болельщицы Гриффиндора", 500, "03_hp/18_store/07.png", 
+            "Юбка болельщицы Гриффиндора. Настоящая. Остерегайтесь подделок.", "gears_skirt", None ),
+        ("skirt_business", "Миниюбка бизнес-вумен", 1000, "03_hp/18_store/07.png", 
+            "Миниюбка бизнес-вумен. Чем меньше прикрыты ноги, тем выгоднее условия контракта.", "gears_skirt", None ),
+        ("skimpyshirt", "Школьная рубашка-минитопик", 5000, "03_hp/18_store/07.png", 
+            "Школьная рубашка-минитопик. Будит в окружающих зверя. Если точнее - мартовского кота.", "gears_shirt", None ),
+        ("shirt_cheerleader", "Кофта болельщицы Гриффиндора", 500, "03_hp/18_store/07.png", 
+            "Кофта болельщицы Гриффиндора. Стимулирует игроков сильнее играть, а болельщиков сильнее болеть.", "gears_shirt", None ), 
+        ("shirt_business", "Белая рубашка в деловом стиле", 500, "03_hp/18_store/07.png", 
+            "Белая рубашка в деловом стиле. Цвет непорочности для порочных.", "gears_shirt", None ), 
         ("ball_dress", "Бальное платье", 1500, "03_hp/18_store/01.png", 
-            "Роскошное вечернее платье для особых случаев", "gears", None ),
+            "Роскошное вечернее платье для особых случаев", "gears_dress", None ),
         ("badge_01", "Значок \"А.В.Н.Э.\"", 100, "03_hp/18_store/29.png", 
-            "Значок \"А.В.Н.Э.\". Симулируй заботу...", "gears", None ),
+            "Значок \"А.В.Н.Э.\". Симулируй заботу...", "gears_other", None ),
         ("nets", "Ажурные чулки", 700, "03_hp/18_store/30.png", 
-            "Ажурные чулки. Вопреки распространенному мнению, они не были изобретены рыбаком.", "gears", None ),
-        ("miniskirt", "Школьная мини-юбка", 0, "03_hp/18_store/07.png", 
-            "Школьная мини-юбка. Резко улучшает оценки.", "gears", None ),
+            "Ажурные чулки. Вопреки распространенному мнению, они не были изобретены рыбаком.", "gears_stockings", None ),
+        ("tights", "Колготки", 200, "03_hp/18_store/30.png", 
+            "Колготки. Не кантовать.", "gears_stockings", None ),
         ("wine", "Вино Дамблдора", 0, "03_hp/18_store/27.png", 
             "Бутылка из тайника профессора Дамблдора...", "cupboard", None ),
         ("potions", "Неизвестное зелье", 0, "03_hp/18_store/32.png", 
@@ -95,6 +117,8 @@ init:
             "Священный свиток содержит тайные знания...", "scroll", None) # {"pic":"03_hp/19_extras/xx.png"} )
 
         ]
+
+       
 
 # Заполнение массива предметов
         itemList=[]
@@ -113,7 +137,7 @@ init:
 
 # Инициализация коллекций предметов
         global itsDAHR
-        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":45}))
+        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":45, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
 
         global itsOWL
         itsOWL=RegEntry(ItemCollection("OWL"))
@@ -5273,7 +5297,7 @@ label start:
     $ no_blinking = False #When True - blinking animation is not displayed. 
     $ sperm_on_tits = False #Sperm on tits when Hermione pulls her shirt up.
     $ aftersperm = False #Shows cum stains on Hermione's uniform.
-    $ legs_02 = False # Turns TRUE when miniskirt is activated.
+    $ legs_02 = False # Turns TRUE when xxxsmallskirt is activated.
     $ h_tears = False #Displays a layer with tears.
      
     $ current_payout = 0 #Used when haggling about price of th favor.
@@ -5429,13 +5453,13 @@ label start:
     
     
    
-    ### MINISKIRT ###
+    ### XXXSMALLSKIRT ###
 #    $ bought_skirt_already = False # Turns TRUE after you redeem the voucher and get the mini skirt.
-#    $ bought_miniskirt = False #Affects 15_mail.rpy
-#    $ have_miniskirt = False # Turns TRUE when you have the skirt in your possession.
-#    $ gave_miniskirt = False #Turns True when Hermione has the miniskirt.
+#    $ bought_xxxsmallskirt = False #Affects 15_mail.rpy
+#    $ have_xxxsmallskirt = False # Turns TRUE when you have the skirt in your possession.
+#    $ gave_xxxsmallskirt = False #Turns True when Hermione has the xxxsmallskirt.
     
-    $ dress_code = False # Turns TRUE when you gift the miniskirt. Unlocks the "dress code" button.
+    $ dress_code = False # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
     
     show image "blackfade.png"
 

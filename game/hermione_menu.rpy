@@ -129,32 +129,12 @@ label hermione_approaching:
                     
         
 
-            
-        "- Гардероб -" if dress_code and this.Has("her_wants_buy"):
+# DR'S DEBUG            
+        "- Гардероб -" : #if dress_code and this.Has("her_wants_buy"):
             if hermi.liking==0:
-                menu:
-                    
-                    "- Надеть значок -" if (herView.data().getItemKey( G_N_BADGE )==None) and  hermi.Items.Any("badge_01"): #not ba_01 and badge_01 == 7:
-                        jump badge_put
-                    
-                    "- Снять значок -" if (herView.data().getItemKey( G_N_BADGE )!=None) and  hermi.Items.Any("badge_01"): #ba_01 and badge_01 == 7:
-                        jump badge_take
-                    
-                    "- Надеть колготки -" if (herView.data().getItemKey( G_N_NETS )==None) and  hermi.Items.Any("nets"): #not ne_01 and nets == 7: # Не перевел
-                        jump nets_put
-                    
-                    "- Снять колготки -" if (herView.data().getItemKey( G_N_NETS )!=None) and  hermi.Items.Any("nets"): #ne_01 and nets == 7:
-                        jump nets_take
-                    
-                    "- Надеть мини-юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'default' ) and hermi.Items.Any("miniskirt"): #not legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.:
-                        jump mini_on #28_gifts.rpy
+            
+                jump wrd_menu
 
-                    "- Надеть длинную юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'short' ) and hermi.Items.Any("miniskirt"): #legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.
-                        jump mini_off #28_gifts.rpy
-                
-
-                    "- Ничего -":
-                        jump hermione_main_menu
             else:
                 python:
                     for t in [
@@ -931,3 +911,172 @@ label hermione_bookbuying:
         m "{size=-4}(Нужно больше золота!){/size}"
         m "(У меня такое ощущение, что где-то я уже слышал эту фразу...)"
         jump hermione_main_menu
+
+
+label wrd_menu :
+    menu:
+    
+        "- Новые вещи ! -" if wrd_new_items > 0 :
+            menu :
+                
+                "- Надеть значок \"А.В.Н.Э.\" -" if hermi.Items.Any("badge_01") and wrd_badge_01 == 0 :
+                    jump wrd_badge_01_first_dress
+            
+                "- Надеть ажурные чулки -" if hermi.Items.Any("nets") and wrd_nets == 0 :
+                    jump wrd_nets_first_dress
+            
+                "- Надеть колготки -" if hermi.Items.Any("tights") and wrd_tights == 0 :
+                    jump wrd_tights_first_dress
+                    
+                "- Надеть укороченную школьную юбку -" if hermi.Items.Any("shortskirt") and wrd_shortskirt == 0 :
+                    jump wrd_shortskirt_first_dress
+            
+                "- Надеть сильно укороченную школьную юбку -" if hermi.Items.Any("xshortskirt") and wrd_xshortskirt == 0 :
+                    jump wrd_xshortskirt_first_dress
+            
+                "- Надеть короткую школьную юбку -" if hermi.Items.Any("xxshortskirt") and wrd_xxshortskirt == 0 :
+                    jump wrd_xxshortskirt_first_dress
+            
+                "- Надеть школьную мини-юбку -" if hermi.Items.Any("xsmallskirt") and wrd_xsmallskirt == 0 :
+                    jump wrd_xsmallskirt_first_dress
+            
+                "- Надеть укороченную школьную мини-юбку -" if hermi.Items.Any("xxsmallskirt") and wrd_xxsmallskirt == 0 :
+                    jump wrd_xxsmallskirt_first_dress
+            
+                "- Надеть супер-короткую школьную мини-юбку -" if hermi.Items.Any("xxxsmallskirt") and wrd_xxxsmallskirt == 0 :
+                    jump wrd_xxxsmallskirt_first_dress
+                    
+                "- Надеть юбку болельщицы Гриффиндора -" if hermi.Items.Any("skirt_cheerleader") and wrd_skirt_cheerleader == 0 :
+                    jump wrd_skirt_cheerleader_first_dress
+                    
+                "- Надеть миниюбку бизнес-вумен -" if hermi.Items.Any("skirt_business") and wrd_skirt_business == 0 :
+                    jump wrd_skirt_business_first_dress
+                    
+                "- Надеть школьную рубашку без жилетки -" if wrd_standart02 == 0 :
+                    jump wrd_standart02_first_dress
+                    
+                "- Надеть школьную рубашку без жилетки и галстука -" if wrd_standart02 >= 1 and wrd_standart03 == 0 :
+                    jump wrd_standart03_first_dress
+                    
+                "- Надеть школьную рубашку и расстегнуть верхние пуговицы -" if wrd_standart03 >= 1 and wrd_standart04 == 0 :
+                    jump wrd_standart04_first_dress
+                    
+                "- Надеть школьную рубашку, застегнутую на одну пуговицу -" if wrd_standart04 >= 1 and wrd_standart05 == 0 :
+                    jump wrd_standart05_first_dress
+            
+                "- Надеть школьную рубашку мини-топик -" if hermi.Items.Any("skimpyshirt") and wrd_skimpyshirt == 0 :
+                    jump wrd_skimpyshirt_first_dress
+                    
+                "- Надеть кофту болельщицы Гриффиндора -" if hermi.Items.Any("shirt_cheerleader") and wrd_shirt_cheerleader == 0 :
+                    jump wrd_shirt_cheerleader_first_dress
+                    
+                "- Надеть белую рубашку в деловом стиле -" if hermi.Items.Any("shirt_business") and wrd_shirt_business == 0 :
+                    jump wrd_shirt_business_first_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+                    
+    
+        "- Юбки -":
+            menu:
+
+                "- Надеть длинную школьную юбку -" :
+                    jump wrd_skirt_dress
+            
+                "- Надеть укороченную школьную юбку -" if wrd_shortskirt >= 1 :
+                    jump wrd_shortskirt_dress
+            
+                "- Надеть сильно укороченную школьную юбку -" if wrd_xshortskirt >= 1 :
+                    jump wrd_xshortskirt_dress
+            
+                "- Надеть короткую школьную юбку -" if wrd_xxshortskirt >= 1 :
+                    jump wrd_xxshortskirt_dress
+            
+                "- Надеть школьную мини-юбку -" if wrd_xsmallskirt >= 1 :
+                    jump wrd_xsmallskirt_dress
+            
+                "- Надеть укороченную школьную мини-юбку -" if wrd_xxsmallskirt >= 1 :
+                    jump wrd_xxsmallskirt_dress
+            
+                "- Надеть супер-короткую школьную мини-юбку -" if wrd_xxxsmallskirt >= 1 :
+                    jump wrd_xxxsmallskirt_dress
+                    
+                "- Надеть юбку болельщицы Гриффиндора -" if wrd_skirt_cheerleader >= 1 :
+                    jump wrd_skirt_cheerleader_dress
+                    
+                "- Надеть миниюбку бизнес-вумен -" if wrd_skirt_business >= 1 :
+                    jump wrd_skirt_business_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+        
+        "- Верх -":
+            menu:
+
+                "- Надеть школьную рубашку с жилеткой -" :
+                    jump wrd_standart01_dress
+
+                "- Надеть школьную рубашку без жилетки -" if wrd_standart02 >= 1 :
+                    jump wrd_standart02_dress
+                    
+                "- Надеть школьную рубашку без жилетки и галстука -" if wrd_standart03 >= 1 :
+                    jump wrd_standart03_dress
+                    
+                "- Надеть школьную рубашку и расстегнуть верхние пуговицы -" if wrd_standart04 >= 1 :
+                    jump wrd_standart04_dress
+                    
+                "- Надеть школьную рубашку, застегнутую на одну пуговицу -" if wrd_standart05 >= 1 :
+                    jump wrd_standart05_dress
+            
+                "- Надеть школьную рубашку мини-топик -" if wrd_skimpyshirt >= 1 :
+                    jump wrd_skimpyshirt_dress
+                    
+                "- Надеть кофту болельщицы Гриффиндора -" if wrd_shirt_cheerleader >= 1 :
+                    jump wrd_shirt_cheerleader_dress
+                    
+                "- Надеть белую рубашку в деловом стиле -" if wrd_shirt_business >= 1 :
+                    jump wrd_shirt_business_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+        
+        
+        "- Чулки/Колготки -":
+            menu:
+            
+                "- Снять чулки -" :
+                    jump wrd_nonets_dress
+            
+                "- Надеть ажурные чулки -" if wrd_nets >= 1 :
+                    jump wrd_nets_dress
+                    
+                "- Надеть колготки -" if wrd_tights >= 1 :
+                    jump wrd_tights_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+        
+#        "- Платья-":
+
+        
+        "- Прочее -":
+            menu:
+            
+                "- Снять значки -" :
+                    jump wrd_nobadge_dress
+            
+                "- Надеть значок \"А.В.Н.Э.\" -" if wrd_badge_01 >= 1 :
+                    jump wrd_badge_01_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+                
+
+        "- Ничего -":
+            jump hermione_main_menu
+        
+
+
+
+            
+            

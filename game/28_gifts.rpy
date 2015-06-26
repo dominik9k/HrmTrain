@@ -19,14 +19,15 @@ label menu_gifts_actions:
 
 
 
-label giving_miniskirt:
-    $ dress_code = True # Turns TRUE when you gift the miniskirt. Unlocks the "dress code" button.
+label giving_xxxsmallskirt:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
     $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
-#    $ have_miniskirt = False # Turns TRUE when you have the skirt in your possession.
-#    $ gave_miniskirt = True #Turns True when Hermione has the miniskirt.
+    $ wrd_new_items += 1
+#    $ have_xxxsmallskirt = False # Turns TRUE when you have the skirt in your possession.
+#    $ gave_xxxsmallskirt = True #Turns True when Hermione has the xxxsmallskirt.
     $ days_without_an_event = 0
     $herView.hideQ( d5 )
-    $hermi.Items.Receive(hero.Items,"miniskirt")
+    $hermi.Items.Receive(hero.Items,"xxxsmallskirt")
 
     $ hermi.liking = 0
     m "Вот... Это тебе..."
@@ -34,7 +35,7 @@ label giving_miniskirt:
     show screen gift
     with d3
     $ renpy.play('sounds/win2.mp3')
-    ">Вы дали школьную мини-юбку Гермионе..."
+    ">Вы дали супер-короткую школьную мини-юбку Гермионе..."
     hide screen gift
     with d3
     $herView.hideQQ()
@@ -2017,7 +2018,7 @@ label giving_krum:
      ### S.P.E.W. BADGE ###
 label giving_badge_01: 
     $herView.hideQ( d5 )
-
+    $ wrd_new_items += 1
     $ pos = POS_140
 
     $ hermi.liking += 30
@@ -2048,7 +2049,7 @@ label giving_badge_01:
     ### Ажурные чулки ###
 label giving_nets: 
     $herView.hideQ( d5 )
-
+    $ wrd_new_items += 1
     $ pos = POS_140
 
     $ hermi.liking += 30
@@ -2075,7 +2076,33 @@ label giving_nets:
     jump hermione_main_menu                    
             
    
+label giving_tights: 
+    $herView.hideQ( d5 )
+    $ wrd_new_items += 1
+    $ pos = POS_140
+
+    $ hermi.liking += 30
+    $hermi.Items.Receive(hero.Items,item.Name) #        
+    $herView.showQ( "body_03.png", pos, d5 )
+    her "Колготки ?"
+    $herView.hideQQ()
+    $ the_gift = "03_hp/18_store/30.png" # FISHNETS.
+    show screen gift
+    with d3
+    ">Вы даете Гермионе колготки..."
+    hide screen gift
+
+    $ dress_code = True
+
+    $herView.showQQ( "body_04.png", pos )
+    her "Спасибо, сэр."
+    call happy
     
+    $herView.addFaceName( "body_03.png" )
+
+    $ pos = POS_370
+    $herView.showQQ( None, pos )
+    jump hermione_main_menu        
     
         
         
@@ -2101,5 +2128,703 @@ label giving_nets:
         return
         
         
+label giving_shortskirt:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
 
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"shortskirt")
 
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали укороченную школьную юбку Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Юбка?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu
+
+    
+label giving_xshortskirt:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"xshortskirt")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали сильно укороченную школьную юбку Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Юбка?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu
+    
+    
+label giving_xxshortskirt:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"xxshortskirt")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали короткую школьную юбку Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Юбка?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu
+    
+    
+label giving_xsmallskirt:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"xsmallskirt")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали школьную мини-юбку Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Юбка?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu
+    
+    
+label giving_xxsmallskirt:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"xxsmallskirt")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали укороченную школьную мини-юбку Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Юбка?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu    
+  
+    
+label giving_skirt_cheerleader:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"skirt_cheerleader")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали юбку болельщицы Гриффиндора Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Юбка?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu 
+    
+    
+label giving_skirt_business:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"skirt_business")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали миниюбку бизнес-вумен Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Юбка?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu 
+    
+    
+label giving_skimpyshirt:
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"skimpyshirt")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали школьную рубашку-минитопик Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Рубашка ? У нее какой-то странный размер."
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu   
+    
+label giving_shirt_business :
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"shirt_business")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали белую рубашку в деловом стиле Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Рубашка ?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu  
+    
+label giving_shirt_cheerleader :
+    $ dress_code = True # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
+    $ gifted = True #Prevents you from giving Hermione a several gifts in a row. Turns back to False every night and every morning.
+    $ wrd_new_items += 1
+
+    $ days_without_an_event = 0
+    $herView.hideQ( d5 )
+    $hermi.Items.Receive(hero.Items,"shirt_cheerleader")
+
+    $ hermi.liking = 0
+    m "Вот... Это тебе..."
+    $ the_gift = "03_hp/18_store/07.png" # Miniskirt.
+    show screen gift
+    with d3
+    $ renpy.play('sounds/win2.mp3')
+    ">Вы дали кофту болельщицы Гриффиндора Гермионе..."
+    hide screen gift
+    with d3
+    $herView.hideQQ()
+    $ pos = POS_140
+    $herView.showQQ( "body_01.png", pos )
+    her "Хм...? Что это?"
+    $herView.hideshowQQ( "body_11.png", pos )
+    her "Кофта ?"
+    $herView.hideshowQQ( "body_06.png", pos )
+    her "Спасибо, профессор."
+    m "Не стоит благодарности."
+    $herView.hideQQ()
+    $ renpy.play('sounds/win_04.mp3')   #Not loud.
+    show screen notes
+    #">\"Dresscode\" option unlocked. From now on you can affect Hermione's attire choices."
+    $ pos = POS_370
+    $herView.showQ( "body_01.png", pos )
+    jump hermione_main_menu 
+    
+### DR'S Wardrobe
+
+label wrd_badge_01_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_badge_01 = 1
+    jump wrd_badge_01_dress
+
+label wrd_nets_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_nets = 1
+    jump wrd_nets_dress
+    
+label wrd_tights_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_tights = 1
+    jump wrd_tights_dress
+
+label wrd_shortskirt_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_shortskirt = 1
+    jump wrd_shortskirt_dress
+
+label wrd_xshortskirt_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_xshortskirt = 1
+    jump wrd_xshortskirt_dress
+
+label wrd_xxshortskirt_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_xxshortskirt = 1
+    jump wrd_xxshortskirt_dress
+
+label wrd_xsmallskirt_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_xsmallskirt = 1
+    jump wrd_xsmallskirt_dress
+
+label wrd_xxsmallskirt_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_xxsmallskirt = 1
+    jump wrd_xxsmallskirt_dress
+
+label wrd_xxxsmallskirt_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_xxxsmallskirt = 1
+    jump wrd_xxxsmallskirt_dress
+    
+label wrd_skirt_cheerleader_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_skirt_cheerleader = 1
+    jump wrd_skirt_cheerleader_dress
+    
+label wrd_skirt_business_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_skirt_business = 1
+    jump wrd_skirt_business_dress
+
+label wrd_standart02_first_dress :
+    $ wrd_standart02 = 1
+    jump wrd_standart02_dress
+
+label wrd_standart03_first_dress :
+    $ wrd_standart03 = 1
+    jump wrd_standart03_dress
+
+label wrd_standart04_first_dress :
+    $ wrd_standart04 = 1
+    jump wrd_standart04_dress
+
+label wrd_standart05_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_standart05 = 1
+    jump wrd_standart05_dress
+
+label wrd_skimpyshirt_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_skimpyshirt = 1
+    jump wrd_skimpyshirt_dress
+    
+label wrd_shirt_cheerleader_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_shirt_cheerleader = 1
+    jump wrd_shirt_cheerleader_dress
+    
+label wrd_shirt_business_first_dress :
+    $ wrd_new_items -= 1
+    $ wrd_shirt_business = 1
+    jump wrd_shirt_business_dress
+
+label wrd_nobadge_dress :
+    call wrd_badges_undress
+    jump wrd_dress_change
+
+label wrd_badge_01_dress :
+    call wrd_badges_undress
+    $ wrd_badge_01 = 1
+    jump wrd_dress_change
+
+label wrd_nonets_dress :
+    call wrd_nets_undress
+    jump wrd_dress_change
+
+label wrd_nets_dress :
+    call wrd_nets_undress
+    $ wrd_nets = 1
+    jump wrd_dress_change
+    
+label wrd_tights_dress :
+    call wrd_nets_undress
+    $ wrd_tights = 1
+    jump wrd_dress_change
+
+label wrd_skirt_dress :
+    call wrd_skirts_undress
+    $ wrd_skirt = 1
+    jump wrd_dress_change
+
+label wrd_shortskirt_dress :
+    call wrd_skirts_undress
+    $ wrd_shortskirt = 1
+    jump wrd_dress_change
+
+label wrd_xshortskirt_dress :
+    call wrd_skirts_undress
+    $ wrd_xshortskirt = 1
+    jump wrd_dress_change
+
+label wrd_xxshortskirt_dress :
+    call wrd_skirts_undress
+    $ wrd_xxshortskirt = 1
+    jump wrd_dress_change
+
+label wrd_xsmallskirt_dress :
+    call wrd_skirts_undress
+    $ wrd_xsmallskirt = 1
+    jump wrd_dress_change
+
+label wrd_xxsmallskirt_dress :
+    call wrd_skirts_undress
+    $ wrd_xxsmallskirt = 1
+    jump wrd_dress_change
+
+label wrd_xxxsmallskirt_dress :
+    call wrd_skirts_undress
+    $ wrd_xxxsmallskirt = 1
+    jump wrd_dress_change
+
+label wrd_skirt_cheerleader_dress :
+    call wrd_skirts_undress
+    $ wrd_skirt_cheerleader = 1
+    jump wrd_dress_change
+
+label wrd_skirt_business_dress :
+    call wrd_skirts_undress
+    $ wrd_skirt_business = 1
+    jump wrd_dress_change
+
+label wrd_standart01_dress :
+    call wrd_shirts_undress
+    $ wrd_standart01 = 1
+    jump wrd_dress_change
+
+label wrd_standart02_dress :
+    call wrd_shirts_undress
+    $ wrd_standart02 = 1
+    jump wrd_dress_change
+
+label wrd_standart03_dress :
+    call wrd_shirts_undress
+    $ wrd_standart03 = 1
+    jump wrd_dress_change
+
+label wrd_standart04_dress :
+    call wrd_shirts_undress
+    $ wrd_standart04 = 1
+    jump wrd_dress_change
+
+label wrd_standart05_dress :
+    call wrd_shirts_undress
+    $ wrd_standart05 = 1
+    jump wrd_dress_change
+
+label wrd_skimpyshirt_dress : 
+    call wrd_shirts_undress
+    $ wrd_skimpyshirt = 1  
+    jump wrd_dress_change 
+
+label wrd_shirt_cheerleader_dress : 
+    call wrd_shirts_undress
+    $ wrd_shirt_cheerleader = 1  
+    jump wrd_dress_change
+
+label wrd_shirt_business_dress : 
+    call wrd_shirts_undress
+    $ wrd_shirt_business = 1  
+    jump wrd_dress_change        
+
+    
+label wrd_badges_undress :
+
+    if wrd_badge_01 == 1 :
+        $ wrd_badge_01 = 2
+    return
+
+label wrd_nets_undress :
+
+    if wrd_nets == 1 :
+        $ wrd_nets = 2
+    if wrd_tights == 1 :
+        $ wrd_tights = 2
+    return
+
+label wrd_skirts_undress :
+
+    if wrd_skirt == 1 :
+        $ wrd_skirt = 2
+    if wrd_shortskirt == 1 :
+        $ wrd_shortskirt = 2
+    if wrd_xshortskirt == 1 :
+        $ wrd_xshortskirt = 2
+    if wrd_xxshortskirt == 1 :
+        $ wrd_xxshortskirt = 2
+    if wrd_xsmallskirt == 1 :
+        $ wrd_xsmallskirt = 2
+    if wrd_xxsmallskirt == 1 :
+        $ wrd_xxsmallskirt = 2
+    if wrd_xxxsmallskirt == 1 :
+        $ wrd_xxxsmallskirt = 2
+    if wrd_skirt_cheerleader == 1 :
+        $ wrd_skirt_cheerleader = 2
+    if wrd_skirt_business == 1 :
+        $ wrd_skirt_business = 2
+    return
+
+label wrd_shirts_undress :
+    if wrd_standart01 == 1 :
+        $ wrd_standart01 = 2
+    if wrd_standart02 == 1 :
+        $ wrd_standart02 = 2
+    if wrd_standart03 == 1 :
+        $ wrd_standart03 = 2
+    if wrd_standart04 == 1 :
+        $ wrd_standart04 = 2
+    if wrd_standart05 == 1 :
+        $ wrd_standart05 = 2
+    if wrd_skimpyshirt == 1 :
+        $ wrd_skimpyshirt = 2
+    if wrd_shirt_cheerleader == 1 :
+        $ wrd_shirt_cheerleader = 2
+    if wrd_shirt_business == 1 :
+        $ wrd_shirt_business = 2
+    return
+    
+label wrd_dress_change :
+
+    $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+    $ herView.data().delItem( 'item_tits' )
+    $ herView.data().delItem( 'item_tits_no' )
+
+    $ herView.data().delItem( 'item_badge' )
+
+    $ herView.data().delItem( 'item_nets' )
+    $ herView.data().delItem( 'item_stockings_tights' )
+
+    $ herView.data().delItem( 'item_skirt' )
+    $ herView.data().delItem( 'item_skirts_skirt02_short' )
+    $ herView.data().delItem( 'item_skirts_skirt03_xshort' )
+    $ herView.data().delItem( 'item_skirts_skirt04_xxshort' )
+    $ herView.data().delItem( 'item_skirts_skirt05_xsmall' )
+    $ herView.data().delItem( 'item_skirts_skirt06_xxsmall' )
+    $ herView.data().delItem( 'item_skirts_skirt07_xxxsmall' )
+    $ herView.data().delItem( 'item_skirts_skirt_business' )
+    $ herView.data().delItem( 'item_skirts_cheerleader_gryffindor' )
+        
+    $ herView.data().delItem( 'item_dress' )
+    $ herView.data().delItem( 'item_shirts_standard02_untucked_tie' )
+    $ herView.data().delItem( 'item_shirts_standard03_untucked' )
+    $ herView.data().delItem( 'item_shirts_standard04_untucked_unbuttoned' )
+    $ herView.data().delItem( 'item_shirts_standard05_untucked_unbuttoned_double' )
+    $ herView.data().delItem( 'item_shirts_standard06_skimpy_tied' )
+    $ herView.data().delItem( 'item_shirts_blouse_business' )
+    $ herView.data().delItem( 'item_shirts_cheerleader_gryffindor' )
+    
+    if wrd_tits == 1 :
+        $ herView.data().addItem( 'item_tits' )
+    if wrd_tits_no == 1 :
+        $ herView.data().addItem( 'item_tits_no' )   
+    
+    if wrd_badge_01 == 1 :
+        $ herView.data().addItem( 'item_badge' )
+        
+    if wrd_nets == 1 :
+        $ herView.data().addItem( 'item_nets' )
+    if wrd_tights == 1 :
+        $ herView.data().addItem( 'item_stockings_tights' )
+
+    if wrd_skirt == 1 :
+        $ herView.data().addItem( 'item_skirt' )
+    if wrd_shortskirt == 1 :
+        $ herView.data().addItem( 'item_skirts_skirt02_short' )
+    if wrd_xshortskirt == 1 :
+        $ herView.data().addItem( 'item_skirts_skirt03_xshort' )
+    if wrd_xxshortskirt == 1 :
+        $ herView.data().addItem( 'item_skirts_skirt04_xxshort' )
+    if wrd_xsmallskirt == 1 :
+        $ herView.data().addItem( 'item_skirts_skirt05_xsmall' )
+    if wrd_xxsmallskirt == 1 :
+        $ herView.data().addItem( 'item_skirts_skirt06_xxsmall' )
+    if wrd_xxxsmallskirt == 1 :
+        $ herView.data().addItem( 'item_skirts_skirt07_xxxsmall' )
+    if wrd_skirt_business == 1 :
+        $ herView.data().addItem( 'item_skirts_skirt_business' )
+    if wrd_skirt_cheerleader == 1 :
+        $ herView.data().addItem( 'item_skirts_cheerleader_gryffindor' )
+    
+    if wrd_standart01 == 1 :
+        $ herView.data().addItem( 'item_dress' )
+    if wrd_standart02 == 1 :
+        $ herView.data().addItem( 'item_shirts_standard02_untucked_tie' )
+    if wrd_standart03 == 1 :
+        $ herView.data().addItem( 'item_shirts_standard03_untucked' )
+    if wrd_standart04 == 1 :
+        $ herView.data().addItem( 'item_shirts_standard04_untucked_unbuttoned' )
+    if wrd_standart05 == 1 :
+        $ herView.data().addItem( 'item_shirts_standard05_untucked_unbuttoned_double' )
+    if wrd_skimpyshirt == 1 :
+        $ herView.data().addItem( 'item_shirts_standard06_skimpy_tied' )
+    if wrd_shirt_business == 1 :
+        $ herView.data().addItem( 'item_shirts_blouse_business' )
+    if wrd_shirt_cheerleader == 1 :
+        $ herView.data().addItem( 'item_shirts_cheerleader_gryffindor' )
+    
+
+    $herView.hideshowQQ( "body_01.png", pos )
+    
+    pause.5
+    $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+    $screens.Show("ctc").Pause().Hide("ctc")
+    
+    jump hermione_main_menu
+    
+    
