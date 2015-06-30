@@ -4908,7 +4908,6 @@ init-2:
     $ translators = Character('Переводчик', color="#0089BE", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ skaz = Character('Сказочник', color="#0000FF")
     $ nyark = Character ('Nyarkohotep', color="FF0000")
-    $ felix = Character ('Феликс', color="191970")
     $ her = Character('Гермиона', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ her2 = Character('Гермиона', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
     $ sna = Character('Северус Снейп', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
