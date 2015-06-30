@@ -218,13 +218,19 @@ init:
         this.Where({"MAIL"},"daphne_pre_06").AddStep("daphne_pre_06", ready = lambda e: e.prevInList.IsAgo(2)) 
         this.Where({"HERMICHAT"},"daphne").AddStep("daphne_pre_07",   ready = lambda e: e._start2+2<=day)
 # Будет стартовать через день, пока не завершится daphne_pre_finish
-        this.Where({"DAY"},"daphne").AddStep("daphne_pre_finish",     ready = lambda e: (e.prev.prevInList.IsFinished() and e.prev.IsAgo(2) and e._start2+3<=day), done=lambda e: e._finishCount>=4, constVals={"members":{"daphne"}}) 
-
+        this.Where({"DAY"},"daphne").AddStep("daphne_pre_finish",     ready = lambda e: (e.prev.prevInList.IsFinished() and e.prev.IsAgo(2) and e._start2+2<=day), done=lambda e: e._finishCount>=4, constVals={"members":{"daphne"}}) 
 
         this.AddEvent("daphne_approaching", constVals={"members":{"daphne"}}) # Это просто для счетчика вызывалась ли Дафна сегодня (ну и для отладки может помочь)
 
 # Поскольку точка "DAPHENTER" предваряет вызов меню и ивентов ниже, никаких дополнительных условий в ивентах меню не требуется
         this.Where({"DAPHENTER"},"dap_interlude_02").AddStep("dap_interlude_02", ready=lambda e: this.dap_request_02._finishCount>=1,constVals={"members":{"daphne"}})
+
+        li={"03":["\"Популярность\"","#(Пора занять её чем-то новым...)"]}
+        for s in li:
+            __s="dap_request_"+s
+            this.AddEvent(__s+"::"+li[s][0], points={"daphne_public"}, constVals={"eventPlan":li[s][1], "members":{"daphne"}})
+            __s+="_complete"
+            this.Where({"NIGHT"}, __s).AddStep(__s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
 
         li={"02":["\"Покажись!\"","#(Становится жарковато. Предложу ей что-нибудь снять...)"]}
         for s in li:
@@ -247,14 +253,14 @@ init:
 # и группы разделены книгами другой направленности  (другой block)
         tu=[
         
-            ("book_01::\"Медная книга духа\"",            80, "03_hp/18_store/08.png", "Эта книга описывает элементарные приемы, позволяющие улучшить свою концентрацию.",
-                "шанс 1 к 6, что я завершу дополнительную главу при чтении книг и во время работы с отчетом."),
-            ("book_02::\"Бронзовая книга духа\"",         160, "03_hp/18_store/08.png", "Эта книга описывает базовые приемы, позволяющие улучшить свою концентрацию.",
-                "шанс 1 к 4, что я завершу дополнительную главу при чтении книг и во время работы с отчетом."),
-            ("book_03::\"Серебрянная книга духа\"",       250, "03_hp/18_store/08.png", "Эта книга описывает продвинутые приемы, позволяющие улучшить свою концентрацию.",
-                "шанс 1 к 2, что я завершу дополнительную главу при чтении книг и во время работы с отчетом. "),
-            ("book_04::\"Золотая книга духа\"",          300, "03_hp/18_store/08.png", "Эта книга описывает экспертные приемы, позволяющие улучшить свою концентрацию.",
-                "я всегда буду завершать дополнительную главу как при чтении книг, так и при работе с отчетами."),
+            ("book_01::\"Медная книга духа\"",            40, "03_hp/18_store/08.png", "Эта книга описывает элементарные приемы, позволяющие улучшить свою эффективность.",
+                "шанс 1 к 6, что я завершу дополнительную главу, во время работы с отчетом."),
+            ("book_02::\"Бронзовая книга духа\"",         80, "03_hp/18_store/08.png", "Эта книга описывает базовые приемы, позволяющие улучшить свою эффективность.",
+                "шанс 1 к 4, что я завершу дополнительную главу, во время работы с отчетом."),
+            ("book_03::\"Серебрянная книга духа\"",       90, "03_hp/18_store/08.png", "Эта книга описывает продвинутые приемы, позволяющие улучшить свою эффективность.",
+                "шанс 1 к 2, что я завершу дополнительную главу, во время работы с отчетом. "),
+            ("book_04::\"Золотая книга духа\"",          100, "03_hp/18_store/08.png", "Эта книга описывает экспертные приемы, позволяющие улучшить свою эффективность.",
+                ""),
 
             ("book_05::\"Сказ о Галадриэле. Книга I.\"", 200, "03_hp/18_store/04.png", "Эта книга рассказывает историю эльфийской принцессы, которая бросает вызов традициям своего народа и выбирает оковы для ее собственной судьбы. Или все не так?",
                 "В результате мое воображение улучшилось."),          
@@ -262,11 +268,11 @@ init:
                 "В результате мое воображение улучшилось."),
 
             ("book_08::\"Скорочтение для чайников\"",     50, "03_hp/18_store/08.png", "Эта книга содержит несколько базовых методов, которые помогут вам улучшить навык скорочтения.",
-                "небольшой шанс прочесть дополнительную главу, во время чтения."),
+                "большой шанс прочесть дополнительную главу, во время чтения."),
             ("book_09::\"Скорочтение для любителей\"",    90, "03_hp/18_store/08.png", "Эта книга содержит несколько продвинутых методов, которые помогут вам улучшить навык скорочтения.",
                 "большой шанс закончить дополнительную главу, во время чтения."),
             ("book_10::\"Скорочтение для экспертов\"",    150, "03_hp/18_store/08.png", "Эта книга содержит несколько экспертных методов, которые помогут вам улучшить навык скорочтения.",
-                "всегда заканчивать дополнительную главу во время чтения"),
+                "большой шанс закончить дополнительную главу, во время чтения."),
             ("book_06::\"Игра Кресел\"",                 100, "03_hp/18_store/02.png", "Эпический рассказ о предательстве, убийствах и изнасилованиях, а затем еще несколько убийств, немного больше предательства и еще больше изнасилований.",
                 "В результате мое воображение улучшилось.\nНо больше я не стану читать эту хрень!"),
             ("book_07::\"Моя дорогая вайфу\"",           300, "03_hp/18_store/03.png", "Переживите славные дни в вашей школе. Ваша сводная сестра Ши, учительница Мисс Стивенс или таинственная девушка из библиотеки? Кто станет вашей окончательной \"вайфу\"?",
@@ -439,9 +445,6 @@ image slave06 = "slave/slave01_04.png"
 image threetitsmad4 = "threetits/baretitsmad4.png"
 image blkfade = "blackfade.png"
 image blk50 = im.Alpha("blackfade.png", 0.5) 
-
-
-
 
 
 
@@ -4827,6 +4830,7 @@ define g8 = Character(None, window_left_padding=200, image="mage8", color="#4023
 define g9 = Character(None, window_left_padding=200, image="mage9", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g10 = Character(None, window_left_padding=200, image="mage10", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g11 = Character(None, window_left_padding=200, image="mage11", color="#402313", ctc="ctc3", ctc_position="fixed")
+define a = Character(None, window_left_padding=220, image="aka", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a1 = Character(None, window_left_padding=220, image="aka1", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a2 = Character(None, window_left_padding=220, image="aka2", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a3 = Character(None, window_left_padding=220, image="aka3", color="#402313", ctc="ctc3", ctc_position="fixed")
@@ -4907,15 +4911,14 @@ init-2:
     ###HARRY POTTER CHARACTERS###
     $ translators = Character('Переводчик', color="#0089BE", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ skaz = Character('Сказочник', color="#0000FF")
-    $ nyark = Character ('Nyarkohotep', color="FF0000")
-    $ felix = Character ('Феликс', color="191970")
+    $ felix = Character('Феликс', color="#7789CA")
     $ her = Character('Гермиона', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ her2 = Character('Гермиона', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
     $ sna = Character('Северус Снейп', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ sna2 = Character('Северус Снейп', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed")  #Text box used for "head only" speech. (Because it has padding).
     $ vol = Character('Лорд Волдеморт', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ l = Character('Лола', color="#402313", window_right_padding=230, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
-    
+
 #    $ daph = Character('Дафна', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
 #    $ daph2 = Character('Дафна', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Это текстовое окно, оно используется для головы(потому что имеет отступы)
 
@@ -5040,8 +5043,7 @@ label start:
 
 
     $ gold = 0
-    $ turbo =1
-    $ avogadro_law = False
+    $ turbo =1 
     
     $ rum_times = 0 # Counts how many times have you rummaged the cupboard. +1 every time you do that. Needed to make to grand 2 potions before the fight.
     
@@ -5248,38 +5250,7 @@ label start:
 #            $ h_xpos=370 #Defines position of the Hermione's full length sprite. (Default 370). (Center: 140)                                                       #HERMIONE
 #            $ h_ypos=0 #Defines position of the Hermione's full length sprite. (Default 370). (Center: 140)                                                       #HERMIONE
 #            jump test
-    nyark "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
-    nyark "Игра получилась объемная, и становится больше с каждым новым обновлением."
-    nyark "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
-    nyark "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
-    m "Почему \"Авогадро\"?"
-    nyark "..."
-    nyark "... потому что звучит круто?"
-    m "У меня для тебя плохие новости..."
-    m "И вообще, игра еще не началась, а ты уже занимаешься самовставками, при том, что работы сделал с гулькин нос."
-    nyark "Но я..."
-    m "И что с этим красным цветом на твоем нике?"
-    nyark "Красный - цвет силы!"
-    m "..."
-    m "Я ухожу отсюда."
-    $ renpy.play('sounds/door.mp3')
-    nyark "..."
-    nyark "Чем плох красненький..?"
-    nyark "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
-    nyark "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
-    nyark "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
-    
-    menu:
-        "Дай мне чит!":
-            $ avogadro_law = True
-            $ gold = gold + 10000
-            $ slytherin = 3000
-            ">Добавлена здоровая куча золота.\n>Слизерин находится в далеком отрыве от всех.\n>Поладить со Снейпом стало гораздо легче."
-            
-        "Нет, читеры должны гореть в аду!":
-            nyark "..."
-            nyark "Ты - истинный самурай."
-            pass
+
     menu:         
         "Вы желаете пропустить интро?"
         "Начать интро.":
