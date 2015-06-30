@@ -283,11 +283,17 @@ label nsp_newsp_themes:
                     "- Откровенная одежда маглов -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_magls_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_magls_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_magls_1_photo].png}" :
                         if nsp_germiona_magls_1_statimg == "New" :
                             $ cur_level = nsp_event_magls_1 + 1
+                            if cur_level == 1 and wrd_rent_business == 0 and ( not hermi.Items.Any("tights") or not hermi.Items.Any("skirt_business") or not hermi.Items.Any("shirt_business") ) :
+                                ">Для данного задания понадобятся юбка и рубашка бизнес-леди, колготки. Как вариант, можно воспользоваться прокатом."
+                                jump nsp_newsp_themes
                             if cur_level == 2 :
                                 jump nsp_her_demo
                             jump nsp_event_magls_1
                         elif nsp_germiona_magls_1_statimg == "Explored" or nsp_germiona_magls_1_statimg == "Full":
                             $ cur_level = nsp_event_magls_1
+                            if cur_level == 1 and wrd_rent_business == 0 and ( not hermi.Items.Any("tights") or not hermi.Items.Any("skirt_business") or not hermi.Items.Any("shirt_business") ) :
+                                ">Для данного задания понадобятся юбка и рубашка бизнес-леди, колготки. Как вариант, можно воспользоваться прокатом."
+                                jump nsp_newsp_themes
                             jump nsp_event_magls_1                        
                         else :
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
@@ -376,11 +382,18 @@ label nsp_newsp_themes:
                     "- Тренировка болельщицы -\n{image=08_newspaper_scenario/hearts/heart_5[nsp_event_kviddich_1].png} {image=08_newspaper_scenario/flags/[nsp_germiona_kviddich_1_statimg].png} {image=08_newspaper_scenario/flags/Photo_[nsp_germiona_kviddich_1_photo].png}" :
                         if nsp_germiona_kviddich_1_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_1 + 1
+                            $ cur_level = nsp_event_magls_1 + 1
+                            if cur_level == 1 and wrd_rent_cheerleader == 0 and ( not hermi.Items.Any("wrd_skirt_cheerleader") or not hermi.Items.Any("wrd_shirt_cheerleader") ) :
+                                ">Для данного задания понадобятся юбка и кофта болельщицы Гриффиндора. Как вариант, можно воспользоваться прокатом."
+                                jump nsp_newsp_themes
                             if cur_level == 2 :
                                 jump nsp_her_demo
                             jump nsp_event_kviddich_1
                         elif nsp_germiona_kviddich_1_statimg == "Explored" or nsp_germiona_kviddich_1_statimg == "Full":
                             $ cur_level = nsp_event_kviddich_1
+                            if cur_level == 1 and wrd_rent_cheerleader == 0 and ( not hermi.Items.Any("wrd_skirt_cheerleader") or not hermi.Items.Any("wrd_shirt_cheerleader") ) :
+                                ">Для данного задания понадобятся юбка и кофта болельщицы Гриффиндора. Как вариант, можно воспользоваться прокатом."
+                                jump nsp_newsp_themes
                             jump nsp_event_kviddich_1                        
                         else :
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."

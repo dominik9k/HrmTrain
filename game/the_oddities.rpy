@@ -75,7 +75,7 @@ label menu_dahr_gift_order:
     $itemCount=0
     if item.Name=="xxxsmallskirt":
         menu:
-            "- Купить юбку (---) -":
+            "- Купить супер-короткую мини-юбку (---) -":
                 if vouchers >= 1: #Shows the amount of DAHR's vouchers in your possession.
                     $ vouchers -= 1 #Shows the amount of DAHR's vouchers in your possession.
                     $ order_placed = True
@@ -299,9 +299,113 @@ label wrd_dahr_gears:
         "- Прочее -":
             $_block="gears_other"
             jump menu_dahr_gifts_and_gears
+            
+        "- Прокат на день -":
+            jump wrd_dahr_rent_menu
     
         "- Ничего -":
              jump the_oddities
 
-             
-             
+label wrd_dahr_rent_menu :
+
+    $ add = ""
+
+    menu:
+        "- Форма веселой школьницы (100 галлеонов) -" if wrd_rent_happy_schoolgirl == 0 :
+            if hermi.whoring < 3 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 100 :
+                menu :
+                    ">Вы уверены, что хотите взять напрокат на один день форму веселой школьницы за 100 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 100
+                        ">В шкафу раздался шорох и материализовался комплект веселой школьницы. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_happy_schoolgirl = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма веселой школьницы. -{/color}" if wrd_rent_happy_schoolgirl == 1 :
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Форма игривой школьницы (250 галлеонов) -" if wrd_rent_playful_schoolgirl == 0:
+            if hermi.whoring < 12 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 250 :
+                menu :
+                    "Вы уверены, что хотите взять напрокат на один день форму игривой школьницы за 250 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 250
+                        ">В шкафу раздался шорох и материализовался комплект игривой школьницы. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_playful_schoolgirl = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма игривой школьницы. -{/color}" if wrd_rent_playful_schoolgirl == 1:
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Форма болельщицы Гриффиндора (125 галлеонов) -" if wrd_rent_cheerleader == 0 :
+            if hermi.whoring < 6 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 125 :
+                menu :
+                    "Вы уверены, что хотите взять напрокат на один день форму болельщицы Гриффиндора за 125 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 125
+                        ">В шкафу раздался шорох и материализовался комплект болельщицы Гриффиндора. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_cheerleader = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма болельщицы Гриффиндора -{/color}" if wrd_rent_cheerleader == 1 :
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Одежда бизнес-леди (200 галлеонов) -" if wrd_rent_business == 0 :
+            if hermi.whoring < 9 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 200 :
+                menu :
+                    "Вы уверены, что хотите взять напрокат на один день одежду бизнес-леди за 200 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 200
+                        ">В шкафу раздался шорох и материализовался комплект бизнес-леди. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_business = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма бизнес-леди -{/color}" if wrd_rent_business == 1 :
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Ничего -" :
+            jump wrd_dahr_gears

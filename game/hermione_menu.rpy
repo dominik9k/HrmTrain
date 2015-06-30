@@ -1044,7 +1044,7 @@ label wrd_menu :
         "- Чулки/Колготки -":
             menu:
             
-                "- Снять чулки -" :
+                "- Снять чулки/колготки -" :
                     jump wrd_nonets_dress
             
                 "- Надеть ажурные чулки -" if wrd_nets >= 1 :
@@ -1071,12 +1071,172 @@ label wrd_menu :
                 "- Ничего -":
                     jump wrd_menu
                 
+                    
+        "- Примерка вещей напрокат -" :
+            jump wrd_hermi_rent_menu
+            
 
         "- Ничего -":
             jump hermione_main_menu
         
 
+label wrd_hermi_rent_menu :
 
+    menu:
+        "- Форма веселой школьницы -" if wrd_rent_happy_schoolgirl == 1 :
+        
+           if hermi.whoring < 3 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_skirts_skirt03_xshort' )
+               $ herView.data().addItem( 'item_shirts_standard03_untucked' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+               
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               
+               jump wrd_menu
+           
+        
+        "- Форма игривой школьницы -" if wrd_rent_playful_schoolgirl == 1:
+        
+           if hermi.whoring < 12 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_skirts_skirt05_xsmall' )
+               $ herView.data().addItem( 'item_shirts_standard05_untucked_unbuttoned_double' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+               
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               
+               jump wrd_menu
+
+        
+        "- Форма болельщицы Гриффиндора -" if wrd_rent_cheerleader == 1 :
+        
+           if hermi.whoring < 6 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_skirts_cheerleader_gryffindor' )
+               $ herView.data().addItem( 'item_shirts_cheerleader_gryffindor' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+               
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               
+               jump wrd_menu
+
+        
+        "- Одежда бизнес-леди -" if wrd_rent_business == 1 :
+        
+           if hermi.whoring < 9 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_stockings_tights' )
+               $ herView.data().addItem( 'item_skirts_skirt_business' )
+               $ herView.data().addItem( 'item_shirts_blouse_business' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+               
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+
+               jump wrd_menu
+        
+        "- Ничего -" :
+            jump wrd_menu
 
             
             

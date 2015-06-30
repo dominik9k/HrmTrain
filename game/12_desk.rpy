@@ -264,11 +264,13 @@ label desk:
             jump day_main_menu
 
 ## DR'S DEBUG TEST           
-        "- Тест 1 -" if False:
+        "- Тест 1 -" :
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
                 
+            $ hermi.whoring = 24
+            
             $ renpy.play('sounds/door.mp3') #Sound of a door opening.
             $ hermione_chibi_xpos = 400 #Near the desk.
             $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.

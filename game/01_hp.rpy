@@ -312,11 +312,11 @@ $ nsp_letter_10 = 0
 $ nsp_letter_11 = 0
 $ nsp_letter_12 = 0
 $ nsp_letter_13 = 0
-
+#DR'S DEBUG
 $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не было, 1 - есть, 2 - уже прочитано.
 $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
-$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
+$ nsp_newspaper_menu = 6 # Газета: Уровень разблокировки газетных меню.
 
 $ hermione_out_halfday = 0
 
@@ -357,6 +357,12 @@ $ wrd_badge_01 = 0
 $ wrd_nets = 0
 $ wrd_tights = 0
 
+# RENT
+
+$ wrd_rent_happy_schoolgirl = 0
+$ wrd_rent_playful_schoolgirl = 0
+$ wrd_rent_cheerleader = 0
+$ wrd_rent_business = 0
 
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
@@ -716,6 +722,25 @@ if nsp_letter_7 == 2:
     
 if nsp_letter_7 == 1:
     $ nsp_letter_7 = 2
+    
+# RENT RESET
+
+if wrd_rent_happy_schoolgirl == 1 :
+    ">С мягким шелестом форма веселой школьницы рассыпалась в пыль."
+    
+if wrd_rent_playful_schoolgirl == 1 :
+    ">С мягким шелестом форма игривой школьницы рассыпалась в пыль."
+    
+if wrd_rent_cheerleader == 1 :
+    ">С мягким шелестом форма болельщицы Гриффиндора рассыпалась в пыль."
+    
+if wrd_rent_business == 1 :
+    ">С мягким шелестом одежда бизнес-леди рассыпалась в пыль."    
+    
+$ wrd_rent_happy_schoolgirl = 0
+$ wrd_rent_playful_schoolgirl = 0
+$ wrd_rent_cheerleader = 0
+$ wrd_rent_business = 0
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.
