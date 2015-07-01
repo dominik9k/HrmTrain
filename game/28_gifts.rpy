@@ -3216,11 +3216,6 @@ label wrd_xxsmallskirt_first_dress :
 
 
     $ wrd_new_items -= 1
-    $ wrd_xsmallskirt = 1
-    jump wrd_xsmallskirt_dress
-
-
-    $ wrd_new_items -= 1
     $ wrd_xxsmallskirt = 1
     jump wrd_xxsmallskirt_dress
 
@@ -3370,12 +3365,12 @@ label wrd_xxxsmallskirt_first_dress :
     
 label wrd_skirt_cheerleader_first_dress :
 
-    if nsp_event_kviddich_1 < 1 or if hermi.whoring < 9 or nsp_germiona_mediawhoring < 10 or nsp_germiona_impudence < 0 :
+    if nsp_event_kviddich_1 < 1 or hermi.whoring < 9 or nsp_germiona_mediawhoring < 10 or nsp_germiona_impudence < 0 :
         $herView.hideshowQQ( "body_02.png", pos )
         her "Сэр, я не болельщица, не люблю болельщиц и не вижу смысла одеваться как одна из них !"
         her "Поэтому мой окончательный ответ - нет."
         m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
-        m "Хорошо, не буду наставивать."
+        m "Хорошо, не буду настаивать."
         $herView.hideshowQQ( "body_01.png", pos )
         jump hermione_main_menu
 
@@ -3473,12 +3468,12 @@ label wrd_skirt_cheerleader_first_dress :
     
 label wrd_skirt_business_first_dress :
 
-    if nsp_event_magls_1 < 1 or if hermi.whoring < 9 or nsp_germiona_mediawhoring < 10 or nsp_germiona_impudence < 0 :
+    if nsp_event_magls_1 < 1 or hermi.whoring < 9 or nsp_germiona_mediawhoring < 10 or nsp_germiona_impudence < 0 :
         $herView.hideshowQQ( "body_02.png", pos )
         her "Сэр, я не магл, кто бы что ни говорил. Зачем давать лишний повод ?"
         her "Поэтому мой окончательный ответ - нет."
         m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
-        m "Хорошо, не буду наставивать."
+        m "Хорошо, не буду настаивать."
         $herView.hideshowQQ( "body_01.png", pos )
         jump hermione_main_menu
 
@@ -3577,39 +3572,374 @@ label wrd_skirt_business_first_dress :
 
 label wrd_standart02_first_dress :
 
+    if hermi.whoring >= 0 and hermi.whoring <= 8:
+        $herView.hideshowQQ( "body_15.png", pos )
+        her "Хм...?"
+        $herView.hideshowQQ( "body_17.png", pos )
+        her "Но это не соответствует форме Хогвартса."
+        menu:
+            m "..."
+            "\"Я дам тебе 10 очков.\"":
+                $ gryffindor +=10
+                $herView.hideshowQQ( "body_07.png", pos )
+                her "Хм..."
+                $herView.hideshowQQ( "body_68.png", pos )
+                her "Ладно, я не против."
+            "\"Ладно. Забудь\"":
+                $herView.hideshowQQ( "body_13.png", pos )
+                her "Как скажете."
+                $herView.hideshowQQ( None, pos )
+                jump hermione_main_menu
+        
     
+    if hermi.whoring >= 9:
+        $herView.hideshowQQ( "body_118.png", pos )
+        her "Слушаюсь, сэр..."
+        $herView.hideQQ()
+        $herView.addFaceName( "body_78.png" )
 
     $ wrd_standart02 = 1
     jump wrd_standart02_dress
 
+    
 label wrd_standart03_first_dress :
+
+    if hermi.whoring >= 0 and hermi.whoring <= 11:
+        $herView.hideshowQQ( "body_15.png", pos )
+        her "Хм...?"
+        $herView.hideshowQQ( "body_17.png", pos )
+        her "Но это не соответствует форме Хогвартса."
+        menu:
+            m "..."
+            "\"Я дам тебе 15 очков.\"":
+                $ gryffindor +=15
+                $herView.hideshowQQ( "body_07.png", pos )
+                her "Хм..."
+                $herView.hideshowQQ( "body_68.png", pos )
+                her "Ладно, я не против."
+            "\"Ладно. Забудь\"":
+                $herView.hideshowQQ( "body_13.png", pos )
+                her "Как скажете."
+                $herView.hideshowQQ( None, pos )
+                jump hermione_main_menu
+        
+    
+    if hermi.whoring >= 12:
+        $herView.hideshowQQ( "body_118.png", pos )
+        her "Слушаюсь, сэр..."
+        $herView.hideQQ()
+        $herView.addFaceName( "body_78.png" )
+
     $ wrd_standart03 = 1
     jump wrd_standart03_dress
 
 label wrd_standart04_first_dress :
+
+    if hermi.whoring >= 0 and hermi.whoring <= 14:
+        $herView.hideshowQQ( "body_15.png", pos )
+        her "Хм...?"
+        $herView.hideshowQQ( "body_17.png", pos )
+        her "Но это не соответствует правилам Хогвартса."
+        menu:
+            m "..."
+            "\"Я дам тебе 20 очков.\"":
+                $ gryffindor +=20
+                $herView.hideshowQQ( "body_07.png", pos )
+                her "Хм..."
+                $herView.hideshowQQ( "body_68.png", pos )
+                her "Ладно, я не против."
+            "\"Ладно. Забудь\"":
+                $herView.hideshowQQ( "body_13.png", pos )
+                her "Как скажете."
+                $herView.hideshowQQ( None, pos )
+                jump hermione_main_menu
+        
+    
+    if hermi.whoring >= 15:
+        $herView.hideshowQQ( "body_118.png", pos )
+        her "Слушаюсь, сэр..."
+        $herView.hideQQ()
+        $herView.addFaceName( "body_78.png" )
+
     $ wrd_standart04 = 1
     jump wrd_standart04_dress
 
 label wrd_standart05_first_dress :
-    $ wrd_new_items -= 1
+
+    if hermi.whoring >= 0 and hermi.whoring <= 20:
+        $herView.hideshowQQ( "body_15.png", pos )
+        her "Сэр ?"
+        $herView.hideshowQQ( "body_17.png", pos )
+        her "Вы же это не серьезно ? Ведь все-таки тут школа."
+        menu:
+            m "..."
+            "\"Я дам тебе 25 очков.\"":
+                $ gryffindor +=25
+                $herView.hideshowQQ( "body_07.png", pos )
+                her "О, сэр."
+                $herView.hideshowQQ( "body_68.png", pos )
+                her "Ладно, я постараюсь к этому привыкнуть."
+            "\"Ладно. Забудь\"":
+                $herView.hideshowQQ( "body_13.png", pos )
+                her "Как скажете."
+                $herView.hideshowQQ( None, pos )
+                jump hermione_main_menu
+        
+    
+    if hermi.whoring >= 21:
+        $herView.hideshowQQ( "body_118.png", pos )
+        her "Слушаюсь, сэр..."
+        $herView.hideQQ()
+        $herView.addFaceName( "body_78.png" )
+
     $ wrd_standart05 = 1
     jump wrd_standart05_dress
 
 label wrd_skimpyshirt_first_dress :
+
+    if wrd_standart05 == 0 :
+        $herView.hideshowQQ( "body_04.png", pos )
+        her "Вы шутите, сэр?!"
+        her "Да это не рубашка, а сплошной разврат."
+        her "Я не стану показываться на людях в таком виде!"
+        m "(Похоже, для начала нужно будет предложить ей менее оьткровенные варианты.)"
+        m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+        $herView.hideshowQQ( "body_79.png", pos )
+        her "Лучше бы это и вправду была шутка, профессор!"
+        jump hermione_main_menu
+
+    $pos = POS_370
+
+    if hermi.whoring >= 0 and hermi.whoring <= 11: # Lv 1-4
+        $herView.hideshowQQ( "body_04.png", pos )
+        her "Сэр, как вы можете просить меня ходить по школе в этой тряпочке ?!"
+        her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+        m "(Мне нравится ход ее мыслей.)"
+        $herView.hideshowQQ( "body_79.png", pos )
+        her "Да ей даже с доски не сотрешь !"
+        her "Нет, это невозможно !"
+        $ hermi.liking -= 15
+        call upset
+        jump hermione_main_menu
+    
+    if hermi.whoring >= 12 and hermi.whoring <= 17: # Lv 5-6
+        $herView.hideshowQQ( "body_04.png", pos )
+        her "Сэр, как вы можете просить меня ходить по школе в этой тряпочке ?!"
+        her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+        m "(Мне нравится ход ее мыслей.)"
+        $herView.hideshowQQ( "body_79.png", pos )
+        her "Это исключено !"
+        menu:
+            m "..."
+            "\"Ладно. Забудь.\"":
+                $herView.hideshowQQ( "body_66.png", pos )
+                her "С удовольствием..."
+                $herView.hideQQ()
+                #_#with d3            
+                $herView.showQQ( None, pos )
+                $ hermi.liking -= 5
+                call upset
+                jump hermione_main_menu
+            "\"Я дам тебе 40 очков.\"":
+                $herView.hideshowQQ( "body_21.png", pos )
+                her "{size=+3}Засуньте себе свои очки в ...{/size}"
+                $herView.hideshowQQ( "body_33.png", pos )
+                her "Простите, сэр."
+                her "Я хочу сказать, что категорически отказываюсь !"
+                $herView.hideQQ()
+                $ hermi.liking -= 5
+                call upset
+                jump hermione_main_menu
+    
+    if hermi.whoring >= 18 and hermi.whoring <= 20: # Lv 7-8
+        $herView.hideshowQQ( "body_04.png", pos )
+        her "Вы же не всерьез, сэр?!"
+        her "Эта рубашка слишком откровенная!"
+        $herView.hideshowQQ( "body_79.png", pos )
+        her "Мои буф... мою грудь будет видно всем !"
+        menu:
+            m "..."
+            "\"Ладно. Забудь.\"":
+                $herView.hideshowQQ( "body_66.png", pos )
+                her "С удовольствием..."
+                $herView.hideQQ()
+                #_#with d3            
+                $herView.showQQ( None, pos )
+                jump hermione_main_menu
+            "\"Я дам тебе 40 очков.\"":
+                her "........................"
+                her "..............................."
+                her "Этого мало, сэр !"
+                
+                menu:
+                    "\"Ладно. Забудь.\"":
+                        $herView.hideshowQQ( "body_66.png", pos )
+                        her "С удовольствием..."
+                        $herView.hideQQ()
+                        $herView.showQQ( None, pos )
+                        jump hermione_main_menu
+                    "\"40 очков ?\"" :
+                        $ gryffindor +=50
+                        $herView.hideshowQQ( "body_66.png", pos )
+                        her "Ох... ладно..."
+                        her "Уверена, что я еще пожалею об этом..."
+                        her "(Не могу поверить, что я на это иду...)"
+                        $herView.hideQQ()
+                        $ hermi.liking -= 20
+                        call upset
+                    
+        
+        
+
+    if hermi.whoring >= 21 and hermi.whoring <= 23: # Lv 7-8
+        $herView.hideshowQQ( "body_15.png", pos )
+        her "Эта рубашка такая открытая... ?"
+        $herView.hideshowQQ( "body_17.png", pos )
+        her "И совсем маленькая!"
+        her "Сэр, вы уверены, что мне нужно это делать ?"
+        her "Мне кажется, это плохая идея..."
+        menu:
+            m "..."
+            "\"Просто надень её!\"":
+                $herView.hideshowQQ( "body_07.png", pos )
+                her "Сэр, заставлять меня делать это недопустимо!"
+                $herView.hideshowQQ( "body_09.png", pos )
+                her "Я отказываюсь!"
+                $herView.hideQQ()
+                $ hermi.liking -= 15
+                call upset                                                                                                                                                                                                                #HERMIONE
+                $herView.showQQ( None, pos )
+                jump hermione_main_menu
+            "\"Я дам тебе 40 очков.\"":
+                $herView.hideshowQQ( "body_07.png", pos )
+                her "Мммммм"
+                $herView.hideshowQQ( "body_08.png", pos )
+                her "Мне трудно решиться..."
+                menu:
+                    "\"Ладно. Забудь.\"":
+                        $herView.hideshowQQ( "body_66.png", pos )
+                        her "С удовольствием..."
+                        $herView.hideQQ()
+                        $herView.showQQ( None, pos )
+                        jump hermione_main_menu
+                    "\"50 очков ?\"" :
+                        $ gryffindor +=50
+                        $herView.hideshowQQ( "body_66.png", pos )
+                        her "Ох... ладно..."
+                        her "Постараюсь смириться."
+                        her "(Не могу поверить, что я на это иду...)"
+                        $herView.hideQQ()
+                        call upset
+            "\"Ладно. Забудь.\"":
+                $herView.hideshowQQ( "body_01.png", pos )
+                her "Ладно..."
+                $herView.hideshowQQ( None, pos )
+                jump hermione_main_menu
+                
+    if hermi.whoring >= 24 : # Lv Max.                
+        $herView.hideshowQQ( "body_118.png", pos )
+        her "Слушаюсь, сэр..."
+        $herView.hideQQ()
+        $herView.addFaceName( "body_78.png" )
+
     $ wrd_new_items -= 1
     $ wrd_skimpyshirt = 1
     jump wrd_skimpyshirt_dress
     
 label wrd_shirt_cheerleader_first_dress :
+
+    if nsp_event_kviddich_1 < 1 or hermi.whoring < 9 or nsp_germiona_mediawhoring < 10 or nsp_germiona_impudence < 0 :
+        $herView.hideshowQQ( "body_02.png", pos )
+        her "Сэр, я не болельщица, не люблю болельщиц и не вижу смысла одеваться как одна из них !"
+        her "Поэтому мой окончательный ответ - нет."
+        m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
+        m "Хорошо, не буду настаивать."
+        $herView.hideshowQQ( "body_01.png", pos )
+        jump hermione_main_menu
+
+    $pos = POS_370
+    if hermi.whoring >= 0 and hermi.whoring <= 17: # Lv 1-2
+        $herView.hideshowQQ( "body_04.png", pos )
+        her "Вы же не всерьез, сэр?!"
+        her "Эта кофта слишком открытая !"
+        $herView.hideshowQQ( "body_79.png", pos )
+        her "...Она не полностью прикрывает мои буф... мою... мой бюст !"
+        menu:
+            m "..."
+            "\"Ладно. Забудь.\"":
+                $herView.hideshowQQ( "body_66.png", pos )
+                her "С удовольствием..."
+                $herView.hideQQ()
+                #_#with d3            
+                $herView.showQQ( None, pos )
+                jump hermione_main_menu
+            "\"Я дам тебе 20 очков.\"":
+                $ gryffindor +=20
+                her "........................"
+                her "..............................."
+                $herView.hideshowQQ( "body_66.png", pos )
+                her "Ну, ладно..."
+                $herView.hideQQ()
+        
+    
+    if hermi.whoring >= 18: # Lv 7+
+        $herView.hideshowQQ( "body_118.png", pos )
+        her "Слушаюсь, сэр..."
+        $herView.hideQQ()
+        $herView.addFaceName( "body_78.png" )
+
+    $ wrd_new_items -= 1
+    $ wrd_skirt_cheerleader = 1
+    jump wrd_skirt_cheerleader_dress
+
     $ wrd_new_items -= 1
     $ wrd_shirt_cheerleader = 1
     jump wrd_shirt_cheerleader_dress
     
+    
 label wrd_shirt_business_first_dress :
+
+    if nsp_event_magls_1 < 1 or hermi.whoring < 9 or nsp_germiona_mediawhoring < 10 or nsp_germiona_impudence < 0 :
+        $herView.hideshowQQ( "body_02.png", pos )
+        her "Сэр, я не магл, кто бы что ни говорил. Зачем давать лишний повод ?"
+        her "Поэтому мой окончательный ответ - нет."
+        m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
+        m "Хорошо, не буду настаивать."
+        $herView.hideshowQQ( "body_01.png", pos )
+        jump hermione_main_menu
+
+
+    if hermi.whoring >= 0 and hermi.whoring <= 14:
+        $herView.hideshowQQ( "body_15.png", pos )
+        her "Хм...?"
+        $herView.hideshowQQ( "body_17.png", pos )
+        her "Но это не соответствует правилам Хогвартса."
+        menu:
+            m "..."
+            "\"Я дам тебе 20 очков.\"":
+                $ gryffindor +=20
+                $herView.hideshowQQ( "body_07.png", pos )
+                her "Хм..."
+                $herView.hideshowQQ( "body_68.png", pos )
+                her "Ладно, я не против."
+            "\"Ладно. Забудь\"":
+                $herView.hideshowQQ( "body_13.png", pos )
+                her "Как скажете."
+                $herView.hideshowQQ( None, pos )
+                jump hermione_main_menu
+        
+    
+    if hermi.whoring >= 15:
+        $herView.hideshowQQ( "body_118.png", pos )
+        her "Слушаюсь, сэр..."
+        $herView.hideQQ()
+        $herView.addFaceName( "body_78.png" )
+
     $ wrd_new_items -= 1
     $ wrd_shirt_business = 1
     jump wrd_shirt_business_dress
 
+    
 label wrd_nobadge_dress :
     call wrd_badges_undress
     jump wrd_dress_change

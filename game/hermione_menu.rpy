@@ -916,7 +916,7 @@ label hermione_bookbuying:
 label wrd_menu :
     menu:
     
-        "- Новые вещи ! -" if wrd_new_items > 0 :
+        "- Новые вещи ! -" if wrd_new_items > 0 or (wrd_standart02 == 0 and hermi.whoring >= 3) or (wrd_standart02 >= 1 and wrd_standart03 == 0 and hermi.whoring >= 6) or (wrd_standart03 >= 1 and wrd_standart04 == 0 and hermi.whoring >= 9) or (wrd_standart04 >= 1 and wrd_standart05 == 0 and hermi.whoring >= 15) :
             menu :
                 
                 "- Надеть значок \"А.В.Н.Э.\" -" if hermi.Items.Any("badge_01") and wrd_badge_01 == 0 :
@@ -952,16 +952,16 @@ label wrd_menu :
                 "- Надеть миниюбку бизнес-вумен -" if hermi.Items.Any("skirt_business") and wrd_skirt_business == 0 :
                     jump wrd_skirt_business_first_dress
                     
-                "- Надеть школьную рубашку без жилетки -" if wrd_standart02 == 0 :
+                "- Надеть школьную рубашку без жилетки -" if wrd_standart02 == 0 and hermi.whoring >= 3 :
                     jump wrd_standart02_first_dress
                     
-                "- Надеть школьную рубашку без жилетки и галстука -" if wrd_standart02 >= 1 and wrd_standart03 == 0 :
+                "- Надеть школьную рубашку без жилетки и галстука -" if wrd_standart02 >= 1 and wrd_standart03 == 0 and hermi.whoring >= 6 :
                     jump wrd_standart03_first_dress
                     
-                "- Надеть школьную рубашку и расстегнуть верхние пуговицы -" if wrd_standart03 >= 1 and wrd_standart04 == 0 :
+                "- Надеть школьную рубашку и расстегнуть верхние пуговицы -" if wrd_standart03 >= 1 and wrd_standart04 == 0 and hermi.whoring >= 9 :
                     jump wrd_standart04_first_dress
                     
-                "- Надеть школьную рубашку, застегнутую на одну пуговицу -" if wrd_standart04 >= 1 and wrd_standart05 == 0 :
+                "- Надеть школьную рубашку, застегнутую на одну пуговицу -" if wrd_standart04 >= 1 and wrd_standart05 == 0 and hermi.whoring >= 15 :
                     jump wrd_standart05_first_dress
             
                 "- Надеть школьную рубашку мини-топик -" if hermi.Items.Any("skimpyshirt") and wrd_skimpyshirt == 0 :
