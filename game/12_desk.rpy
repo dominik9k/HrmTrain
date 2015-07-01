@@ -303,7 +303,7 @@ label desk:
         "- Тест 3 -" if False:
 
             $ hermi.whoring = 24
-            call the_oddities
+            call nsp_her_demo2
             jump desk
             
 ### DR'S NEWSPAPER ooo ###
