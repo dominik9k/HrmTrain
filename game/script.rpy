@@ -274,13 +274,19 @@ init:
         this.Where({"MAIL"},"daphne_pre_06").AddStep("daphne_pre_06", ready = lambda e: e.prevInList.IsAgo(2)) 
         this.Where({"HERMICHAT"},"daphne").AddStep("daphne_pre_07",   ready = lambda e: e._start2+2<=day)
 # Будет стартовать через день, пока не завершится daphne_pre_finish
-        this.Where({"DAY"},"daphne").AddStep("daphne_pre_finish",     ready = lambda e: (e.prev.prevInList.IsFinished() and e.prev.IsAgo(2) and e._start2+3<=day), done=lambda e: e._finishCount>=4, constVals={"members":{"daphne"}}) 
-
+        this.Where({"DAY"},"daphne").AddStep("daphne_pre_finish",     ready = lambda e: (e.prev.prevInList.IsFinished() and e.prev.IsAgo(2) and e._start2+2<=day), done=lambda e: e._finishCount>=4, constVals={"members":{"daphne"}}) 
 
         this.AddEvent("daphne_approaching", constVals={"members":{"daphne"}}) # Это просто для счетчика вызывалась ли Дафна сегодня (ну и для отладки может помочь)
 
 # Поскольку точка "DAPHENTER" предваряет вызов меню и ивентов ниже, никаких дополнительных условий в ивентах меню не требуется
         this.Where({"DAPHENTER"},"dap_interlude_02").AddStep("dap_interlude_02", ready=lambda e: this.dap_request_02._finishCount>=1,constVals={"members":{"daphne"}})
+
+        li={"03":["\"Популярность\"","#(Пора занять её чем-то новым...)"]}
+        for s in li:
+            __s="dap_request_"+s
+            this.AddEvent(__s+"::"+li[s][0], points={"daphne_public"}, constVals={"eventPlan":li[s][1], "members":{"daphne"}})
+            __s+="_complete"
+            this.Where({"NIGHT"}, __s).AddStep(__s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
 
         li={"02":["\"Покажись!\"","#(Становится жарковато. Предложу ей что-нибудь снять...)"]}
         for s in li:
@@ -5068,6 +5074,7 @@ define g8 = Character(None, window_left_padding=200, image="mage8", color="#4023
 define g9 = Character(None, window_left_padding=200, image="mage9", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g10 = Character(None, window_left_padding=200, image="mage10", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g11 = Character(None, window_left_padding=200, image="mage11", color="#402313", ctc="ctc3", ctc_position="fixed")
+define a = Character(None, window_left_padding=220, image="aka", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a1 = Character(None, window_left_padding=220, image="aka1", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a2 = Character(None, window_left_padding=220, image="aka2", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a3 = Character(None, window_left_padding=220, image="aka3", color="#402313", ctc="ctc3", ctc_position="fixed")
@@ -5152,7 +5159,7 @@ init-2:
     ### DR'S CODE ooo ###
     $ dr = Character('Дрон', color="#00FF00")
     ###
-    $ felix = Character ('Феликс', color="191970")
+    $ felix = Character('Феликс', color="#7789CA")
     ###
     $ her = Character('Гермиона', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ her2 = Character('Гермиона', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
