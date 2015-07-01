@@ -40,7 +40,7 @@ label nsp_event_magls_1 :
     
         if nsp_event_magls_1 == 0 :  
         
-            g9 "(Занятно, когда я как следует поискал, в шкафу обнаружился целый ворох разной магловской одежды.)"
+            g9 "(Интересно, что подумает Дамблдор, если оставить ему на память женскую одежду в шкафу...)"
             g9 "Ты готова снять сегодня всю маговскую одежду и выйти на публику ?"
             $herView.hideshowQQ( "body_18.png", pos )
             her "Сэр ???"
@@ -81,7 +81,7 @@ label nsp_event_magls_1 :
             her "Всегда, сэр."
             
             $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-            $ herView.data().showItemSet( 'hermione_business_clothes' )
+            $ herView.data().addItemSet( 'hermione_business_clothes' )
             $ herView.data().setStyleKey( 'shirt_blouse_business1', 'opened_1' )
             hide screen hermione_02
             show screen nsp_hermione_business
@@ -96,7 +96,7 @@ label nsp_event_magls_1 :
         
         $herView.hideshowQQ( "body_01.png", pos )
         hide screen nsp_hermione_business
-        $ herView.data().hideItemSet( 'hermione_business_clothes' )
+        $ herView.data().delItemSet( 'hermione_business_clothes' )
     
     
     elif cur_level == 2 :
@@ -128,7 +128,7 @@ label nsp_event_magls_1_complete :
     
         hide screen hermione_02
         show screen nsp_hermione_business
-        $ herView.data().showItemSet( 'hermione_business_clothes' )
+        $ herView.data().addItemSet( 'hermione_business_clothes' )
         $ herView.data().setStyleKey( 'shirt_blouse_business1', 'opened_1' )
         $herView.hideshowQQ( "body_01.png", pos )
     
@@ -153,7 +153,7 @@ label nsp_event_magls_1_complete :
         m "Да, разумеется."
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-        $ herView.data().hideItemSet( 'hermione_business_clothes' )
+        $ herView.data().delItemSet( 'hermione_business_clothes' )
         hide screen nsp_hermione_business
         show screen hermione_02
         $herView.hideshowQQ( "body_01.png", pos )

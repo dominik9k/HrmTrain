@@ -154,6 +154,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
         #$ only_upper = True #No lower body displayed. 
         
         # add tits pose!
+        call wrd_dress_undress_shirts
+        $ herView.data().addItem( 'item_tits' )
         call addTitsPose
     
         $herView.showQQ( "body_81.png", pos )
@@ -209,6 +211,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             $herView.hideQQ()
             
             # add tits pose!
+            call wrd_dress_undress_shirts
+            $ herView.data().addItem( 'item_tits' )
             call addTitsPose
 
             $herView.showQQ( "body_81.png", pos )
@@ -367,6 +371,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             
 
             # add tits pose!
+            call wrd_dress_undress_shirts
+            $ herView.data().addItem( 'item_tits' )
             call addTitsPose
             
             $herView.showQQ( "body_84.png", pos )
@@ -1090,6 +1096,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
     
     # remove pose here, because sometimes we need to keep added items even here ( like sperm )
     $herView.data().delPose()
+    $herView.data().loadState()
 
     $ pos = POS_370
     $herView.showQQ( "body_29.png", pos )

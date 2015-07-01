@@ -144,7 +144,7 @@ label daphne_giving: #Переходит через меню, значит мо�
             $daphne("~55 00 1 smi// Довольная приятная вещица, сэр (хотя я видала и получше).... Спасибо!")
             call daphne_changeliking(+5)
 
-    if item.Name=="miniskirt":
+    if item.Name in {"shortskirt", "xshortskirt", "xxshortskirt", "xsmallskirt", "xxsmallskirt", "xxxsmallskirt", "skirt_cheerleader", "skirt_business", }:
         if daphne.whoring<=6:
             $daphne("~55 00 1 pou// Хм... Она слишком короткая. Не думаю, что захочу ее одевать.")
             $hero("Хорошо, тогда я предложу эту юбку мисс Грейнджер.")
@@ -155,6 +155,11 @@ label daphne_giving: #Переходит через меню, значит мо�
             $daphne("~37 s0 1 pri// ........................")
             $daphne("~37 s0 1 pou// Я беру эту юбку!//# И ничего она не короткая, мне просто показалось.")
             call daphne_changeliking(0)
+            
+    if item.Name in {"skimpyshirt", "shirt_cheerleader", "shirt_business", "tights", }:
+        ">Подумав, вы поняли, что это не лучшая идея."
+        $item=None # Необходимо присвоить, т.к по выходу из меню будет происходить проверка на предложение подарка, в данном случае подарок не предложен. И сразу выйти
+        jump expression daphne_giving_return 
 
     if daphne_giving_return=="daphne_main_menu":
         $daphne.CommitGift()
@@ -167,8 +172,6 @@ label daphne_item_on(item):
 label daphne_item_off(item):
     if item.Name=="skirt":
         pass
-
-    
     
         
         

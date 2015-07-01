@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <item>
-	<key>shirts_blouse_business1</key>
+	<key>shirts_blouse_business</key>
 
 	<style name="default">
 		<frame>shirts/blouse_business1.png</frame>

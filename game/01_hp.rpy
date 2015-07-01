@@ -324,17 +324,45 @@ $ hermione_out_halfday = 0
 
 ### DR'S wardrobe ###
 
-$ wrd_skirts_skirt03_xshort = 0
-$ wrd_skirts_skirt04_xxshort = 0
-$ wrd_skirts_skirt05_xsmall = 0
-$ wrd_skirts_skirt06_xxsmall = 0
-$ wrd_skirts_skirt07_xxxsmall = 0
+$ wrd_new_items = 0
 
-$ wrd_shirts_standard02_untucked_tie = 0
-$ wrd_shirts_standard03_untucked = 0
-$ wrd_shirts_standard04_untucked_unbuttoned = 0
-$ wrd_shirts_standard05_untucked_unbuttoned_double = 0
-$ wrd_shirts_standard06_skimpy_tied = 0
+$ wrd_tits = 0
+$ wrd_tits_no = 1
+
+# SKIRTS
+$ wrd_skirt = 1
+$ wrd_shortskirt = 0
+$ wrd_xshortskirt = 0
+$ wrd_xxshortskirt = 0
+$ wrd_xsmallskirt = 0
+$ wrd_xxsmallskirt = 0
+$ wrd_xxxsmallskirt = 0
+$ wrd_skirt_cheerleader = 0
+$ wrd_skirt_business = 0
+
+# SHIRTS
+$ wrd_standart01 = 1
+$ wrd_standart02 = 0
+$ wrd_standart03 = 0
+$ wrd_standart04 = 0
+$ wrd_standart05 = 0
+$ wrd_skimpyshirt = 0
+$ wrd_shirt_cheerleader = 0
+$ wrd_shirt_business = 0
+
+# OTHER
+$ wrd_badge_01 = 0
+
+# STOCKINGS
+$ wrd_nets = 0
+$ wrd_tights = 0
+
+# RENT
+
+$ wrd_rent_happy_schoolgirl = 0
+$ wrd_rent_playful_schoolgirl = 0
+$ wrd_rent_cheerleader = 0
+$ wrd_rent_business = 0
 
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
@@ -694,6 +722,25 @@ if nsp_letter_7 == 2:
     
 if nsp_letter_7 == 1:
     $ nsp_letter_7 = 2
+    
+# RENT RESET
+
+if wrd_rent_happy_schoolgirl == 1 :
+    ">С мягким шелестом форма веселой школьницы рассыпалась в пыль."
+    
+if wrd_rent_playful_schoolgirl == 1 :
+    ">С мягким шелестом форма игривой школьницы рассыпалась в пыль."
+    
+if wrd_rent_cheerleader == 1 :
+    ">С мягким шелестом форма болельщицы Гриффиндора рассыпалась в пыль."
+    
+if wrd_rent_business == 1 :
+    ">С мягким шелестом одежда бизнес-леди рассыпалась в пыль."    
+    
+$ wrd_rent_happy_schoolgirl = 0
+$ wrd_rent_playful_schoolgirl = 0
+$ wrd_rent_cheerleader = 0
+$ wrd_rent_business = 0
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.
