@@ -282,7 +282,7 @@ label desk:
             $ nsp_germiona_studio_1_photo = "dis"
             $ nsp_event_studio_1 = 0
             $ cur_level = 1
-            call nsp_event_studio_1
+            call new_request_31
             jump hermione_goout
             
         "- Тест 2 -" :
@@ -297,7 +297,7 @@ label desk:
             show screen bld1
             with d3
             $ hermi.whoring = 24
-            jump hermione_main_menu
+            jump hermione_approaching
 #            jump hermione_goout            
             
         "- Тест 3 -" :

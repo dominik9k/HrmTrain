@@ -3942,111 +3942,133 @@ label wrd_shirt_business_first_dress :
     
 label wrd_nobadge_dress :
     call wrd_badges_undress
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_badge_01_dress :
     call wrd_badges_undress
     $ wrd_badge_01 = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_nonets_dress :
     call wrd_nets_undress
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_nets_dress :
     call wrd_nets_undress
     $ wrd_nets = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
     
 label wrd_tights_dress :
     call wrd_nets_undress
     $ wrd_tights = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_skirt_dress :
     call wrd_skirts_undress
     $ wrd_skirt = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_shortskirt_dress :
     call wrd_skirts_undress
     $ wrd_shortskirt = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_xshortskirt_dress :
     call wrd_skirts_undress
     $ wrd_xshortskirt = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_xxshortskirt_dress :
     call wrd_skirts_undress
     $ wrd_xxshortskirt = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_xsmallskirt_dress :
     call wrd_skirts_undress
     $ wrd_xsmallskirt = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_xxsmallskirt_dress :
     call wrd_skirts_undress
     $ wrd_xxsmallskirt = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_xxxsmallskirt_dress :
     call wrd_skirts_undress
     $ wrd_xxxsmallskirt = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_skirt_cheerleader_dress :
     call wrd_skirts_undress
     $ wrd_skirt_cheerleader = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_skirt_business_dress :
     call wrd_skirts_undress
     $ wrd_skirt_business = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_standart01_dress :
     call wrd_shirts_undress
     $ wrd_standart01 = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_standart02_dress :
     call wrd_shirts_undress
     $ wrd_standart02 = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_standart03_dress :
     call wrd_shirts_undress
     $ wrd_standart03 = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_standart04_dress :
     call wrd_shirts_undress
     $ wrd_standart04 = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_standart05_dress :
     call wrd_shirts_undress
     $ wrd_standart05 = 1
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_skimpyshirt_dress : 
     call wrd_shirts_undress
     $ wrd_skimpyshirt = 1  
-    jump wrd_dress_change 
+    call wrd_dress_change 
+    jump hermione_main_menu
 
 label wrd_shirt_cheerleader_dress : 
     call wrd_shirts_undress
     $ wrd_shirt_cheerleader = 1  
-    jump wrd_dress_change
+    call wrd_dress_change
+    jump hermione_main_menu
 
 label wrd_shirt_business_dress : 
     call wrd_shirts_undress
     $ wrd_shirt_business = 1  
-    jump wrd_dress_change        
+    call wrd_dress_change 
+    jump hermione_main_menu       
 
     
 label wrd_badges_undress :
@@ -4106,13 +4128,14 @@ label wrd_shirts_undress :
 
 label wrd_dress_undress :
 
-    $ herView.data().delItem( 'item_tits' )
-    $ herView.data().delItem( 'item_tits_no' )
+    call wrd_dress_undress_skirts
+    call wrd_dress_undress_shirts
+    call wrd_dress_undress_stockings
+    call wrd_dress_undress_badge
 
-    $ herView.data().delItem( 'item_badge' )
-
-    $ herView.data().delItem( 'item_nets' )
-    $ herView.data().delItem( 'item_stockings_tights' )
+    return
+    
+label wrd_dress_undress_skirts :
 
     $ herView.data().delItem( 'item_skirt' )
     $ herView.data().delItem( 'item_skirts_skirt02_short' )
@@ -4123,7 +4146,14 @@ label wrd_dress_undress :
     $ herView.data().delItem( 'item_skirts_skirt07_xxxsmall' )
     $ herView.data().delItem( 'item_skirts_skirt_business' )
     $ herView.data().delItem( 'item_skirts_cheerleader_gryffindor' )
-        
+
+    return
+    
+label wrd_dress_undress_shirts :
+
+    $ herView.data().delItem( 'item_tits' )
+    $ herView.data().delItem( 'item_tits_no' )
+
     $ herView.data().delItem( 'item_dress' )
     $ herView.data().delItem( 'item_shirts_standard02_untucked_tie' )
     $ herView.data().delItem( 'item_shirts_standard03_untucked' )
@@ -4132,6 +4162,19 @@ label wrd_dress_undress :
     $ herView.data().delItem( 'item_shirts_standard06_skimpy_tied' )
     $ herView.data().delItem( 'item_shirts_blouse_business' )
     $ herView.data().delItem( 'item_shirts_cheerleader_gryffindor' )
+
+    return
+    
+label wrd_dress_undress_stockings :
+
+    $ herView.data().delItem( 'item_nets' )
+    $ herView.data().delItem( 'item_stockings_tights' )
+
+    return
+    
+label wrd_dress_undress_badge :
+
+    $ herView.data().delItem( 'item_badge' )
 
     return
     
@@ -4197,6 +4240,7 @@ label wrd_dress_change :
     $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
     $screens.Show("ctc").Pause().Hide("ctc")
     
-    jump hermione_main_menu
+    return
+
     
     

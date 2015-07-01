@@ -510,6 +510,7 @@ label panties_soaked_in_cum:
             $herView.hideQQ()
             
             $herView.data().saveState()
+            call wrd_dress_undress_skirts
             #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
             $herView.data().addItem( 'item_pose_lifted_skirt' )
             #$herView.data().addItemKey( 'panties_cum', CharacterExItem( herView.mMiscFolder, 'panties_sperm.png', G_Z_PANTIES + 1, 'panties' ) )

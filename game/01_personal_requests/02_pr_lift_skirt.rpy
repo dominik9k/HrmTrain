@@ -82,12 +82,12 @@ label new_request_02: #SHOW ME YOUR Трусики
 
         
         
-
+    $herView.data().saveState()
     # save previous state and add pose
     # add pose with lifted skirt
     if hermi.whoring<13:
-        $herView.data().saveState()
-        #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
+        #$herView.data().saveState()
+        call wrd_dress_undress_skirts
         $herView.data().addItem( 'item_pose_lifted_skirt' )
         $ pos = POS_120
     
@@ -271,9 +271,10 @@ label new_request_02: #SHOW ME YOUR Трусики
 #                        g4 "!!?"
                         hide screen bld1
 
+                                            
                         $herView.data().delPanties()
 #                        $herView.data().saveState()
-                        #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
+                        call wrd_dress_undress_skirts
                         $herView.data().addItem( 'item_pose_lifted_skirt' )
                         $ pos = POS_120
 
@@ -379,6 +380,9 @@ label new_request_02: #SHOW ME YOUR Трусики
       
     # load state before doing mess
     $herView.data().loadState()
+    "> !!"
+    #call wrd_dress_change
+    ">22"
 
     show screen hermione_02 #Hermione stands still.
     $herView.showQ( "body_31.png", pos )

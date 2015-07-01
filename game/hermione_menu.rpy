@@ -1107,16 +1107,10 @@ label wrd_hermi_rent_menu :
                pause 1
                
                "Надеюсь, вам понравилось, сэр."
-               
-               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
     
                call wrd_dress_change
 
                $herView.hideshowQQ( "body_01.png", pos )
-    
-               pause.5
-               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
-               $screens.Show("ctc").Pause().Hide("ctc")
                
                jump wrd_menu
            
@@ -1145,16 +1139,10 @@ label wrd_hermi_rent_menu :
                pause 1
                
                "Надеюсь, вам понравилось, сэр."
-               
-               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
     
                call wrd_dress_change
 
                $herView.hideshowQQ( "body_01.png", pos )
-    
-               pause.5
-               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
-               $screens.Show("ctc").Pause().Hide("ctc")
                
                jump wrd_menu
 
@@ -1183,16 +1171,10 @@ label wrd_hermi_rent_menu :
                pause 1
                
                "Надеюсь, вам понравилось, сэр."
-               
-               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
     
                call wrd_dress_change
 
                $herView.hideshowQQ( "body_01.png", pos )
-    
-               pause.5
-               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
-               $screens.Show("ctc").Pause().Hide("ctc")
                
                jump wrd_menu
 
@@ -1222,16 +1204,10 @@ label wrd_hermi_rent_menu :
                pause 1
                
                "Надеюсь, вам понравилось, сэр."
-               
-               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
     
                call wrd_dress_change
 
                $herView.hideshowQQ( "body_01.png", pos )
-    
-               pause.5
-               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
-               $screens.Show("ctc").Pause().Hide("ctc")
 
                jump wrd_menu
         
