@@ -269,6 +269,8 @@ label desk:
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
                 
+            $ hermi.whoring = 24
+            
             $ renpy.play('sounds/door.mp3') #Sound of a door opening.
             $ hermione_chibi_xpos = 400 #Near the desk.
             $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
@@ -280,7 +282,7 @@ label desk:
             $ nsp_germiona_studio_1_photo = "dis"
             $ nsp_event_studio_1 = 0
             $ cur_level = 1
-            call nsp_event_studio_1
+            call new_request_31
             jump hermione_goout
             
         "- Тест 2 -" if False:
@@ -295,12 +297,13 @@ label desk:
             show screen bld1
             with d3
             $ hermi.whoring = 24
-            call nsp_newsp_themes
-            jump hermione_goout            
+            jump hermione_approaching
+#            jump hermione_goout            
             
         "- Тест 3 -" if False:
-        
-            call nsp_theme_rights
+
+            $ hermi.whoring = 24
+            call nsp_her_demo2
             jump desk
             
 ### DR'S NEWSPAPER ooo ###

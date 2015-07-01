@@ -3734,12 +3734,12 @@ label test:
     \n\n\
     {color=#e5e297}-\{Программирование:\}-{/color}\n\
     {color=#fff}\
-    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
+    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}\n\
     \
     \n\n\
     {color=#e5e297}-\{Тексты, сценарии:\}-{/color}\n\
     {color=#fff}\
-    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
+    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}\n\
     \n\n\
     {color=#e5e297}-\{Техническая поддержка (форум):\}-{/color}\n\
     {color=#fff}\
@@ -3747,7 +3747,7 @@ label test:
     \n\n\
     {color=#e5e297}-\{Арты:\}-{/color}\n\
     {color=#fff}\
-    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}\n\
+    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}\n\
     \n\n\
     {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\
@@ -4243,20 +4243,18 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
     $ persistent.gold = persistent.gold + gold
 
 #label test2:
-#    $hermi.Items.AddItem("miniskirt")
+#    $hermi.Items.AddItem("xxxsmallskirt")
 #    $hero.Items.AddItem("wine",2)
     python:
         persistent.itemSet=dict() 
 
-        if hermi.Items.Any("miniskirt"):
-            persistent.itemSet.update({"miniskirt": hermi.Items.Count("miniskirt")})
+        if hermi.Items.Any("xxxsmallskirt"):
+            persistent.itemSet.update({"xxxsmallskirt": hermi.Items.Count("xxxsmallskirt")})
  
         for o in hero.Items():
-            if o.Name not in {"nets", "badge_01", "ball_dress"}:
+            if o.Name not in {"nets", "badge_01", "ball_dress", "shortskirt", "xshortskirt", "xxshortskirt", "xsmallskirt", "xxsmallskirt", "skimpyshirt", }:
                 persistent.itemSet.update({o.Name: hero.Items.Count(o.Name)})       
 
-
-
-
+                
 
 

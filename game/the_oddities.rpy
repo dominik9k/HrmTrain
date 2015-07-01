@@ -41,7 +41,18 @@ label menu_dahr_gifts_and_gears:
                 _temp={"candy": fn0, "chocolate": fn0, "owl": fn0, "beer": fn3, "mag1": fn0, "mag2": fn0, "mag3": fn0, "mag4": fn3,
                      "condoms": fn3, "perfume": fn0,"vibrator": fn3, "lubricant": fn0,"ballgag": fn0, "plug": fn3, "strapon": fn3,
                      "ball_dress": lambda e: this.Has("sorry_about_hesterics"), "badge_01": fn0, "nets": fn0, 
-                            "miniskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("miniskirt")+hermi.Items.Count("miniskirt")+itsOWL.Count("miniskirt")==0)}[o.Name](o)
+                            "shortskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("shortskirt")+hermi.Items.Count("shortskirt")+itsOWL.Count("shortskirt")==0),
+                            "xshortskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("xshortskirt")+hermi.Items.Count("xshortskirt")+itsOWL.Count("xshortskirt")==0),
+                            "xxshortskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("xxshortskirt")+hermi.Items.Count("xxshortskirt")+itsOWL.Count("xxshortskirt")==0),
+                            "xsmallskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("xsmallskirt")+hermi.Items.Count("xsmallskirt")+itsOWL.Count("xsmallskirt")==0),
+                            "xxsmallskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("xxsmallskirt")+hermi.Items.Count("xxsmallskirt")+itsOWL.Count("xxsmallskirt")==0),
+                            "xxxsmallskirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("xxxsmallskirt")+hermi.Items.Count("xxxsmallskirt")+itsOWL.Count("xxxsmallskirt")==0),
+                            "skimpyshirt": lambda e: hermi.whoring >= 3 and (hero.Items.Count("skimpyshirt")+hermi.Items.Count("skimpyshirt")+itsOWL.Count("skimpyshirt")==0),
+                            "tights": lambda e: hermi.whoring >= 3 and (hero.Items.Count("tights")+hermi.Items.Count("tights")+itsOWL.Count("tights")==0),
+                            "shirt_business": lambda e: hermi.whoring >= 3 and (hero.Items.Count("shirt_business")+hermi.Items.Count("shirt_business")+itsOWL.Count("shirt_business")==0),
+                            "skirt_business": lambda e: hermi.whoring >= 3 and (hero.Items.Count("skirt_business")+hermi.Items.Count("skirt_business")+itsOWL.Count("skirt_business")==0),
+                            "shirt_cheerleader": lambda e: hermi.whoring >= 3 and (hero.Items.Count("shirt_cheerleader")+hermi.Items.Count("shirt_cheerleader")+itsOWL.Count("shirt_cheerleader")==0),
+                            "skirt_cheerleader": lambda e: hermi.whoring >= 3 and (hero.Items.Count("skirt_cheerleader")+hermi.Items.Count("skirt_cheerleader")+itsOWL.Count("skirt_cheerleader")==0)}[o.Name](o)
 
 #            elif _block=="gears" and o._block=="gears": 
                 if o._block==_block:
@@ -62,9 +73,9 @@ label menu_dahr_gift_order:
     show screen gift
     with d3
     $itemCount=0
-    if item.Name=="miniskirt":
+    if item.Name=="xxxsmallskirt":
         menu:
-            "- Купить юбку (---) -":
+            "- Купить супер-короткую мини-юбку (---) -":
                 if vouchers >= 1: #Shows the amount of DAHR's vouchers in your possession.
                     $ vouchers -= 1 #Shows the amount of DAHR's vouchers in your possession.
                     $ order_placed = True
@@ -87,21 +98,22 @@ label menu_dahr_gift_order:
                             translators "Как угодно."
                     hide screen gift
                     with d3
-                    jump app
+                    jump menu_dahr_gifts_and_gears
             "- Ничего -":
                 hide screen gift
                 with d3
-                jump app
+                jump menu_dahr_gifts_and_gears
 
     if itsDAHR.Count(item.Name)>0:
-        if item._block=="gears":
+        if _block in {"gears", "gears_shirt", "gears_skirt", "gears_stockings", "gears_other", "gears_dress"} :
             menu:
                 dahr "[item._description]"
                 "- Купить ([item._price] галеонов) -":
                     $itemCount=1
                 "- Ничего -":
                     hide screen gift
-                    jump the_oddities
+                    jump menu_dahr_gifts_and_gears
+
         else:
             $_price2=item._price*2
             $_price3=item._price*3
@@ -185,10 +197,15 @@ label the_oddities:
                 
                             
                             
+        #"- Одежда -":
+        #    label app:
+        #        $_block="gears"
+        #        jump menu_dahr_gifts_and_gears
+                
+                
         "- Одежда -":
             label app:
-                $_block="gears"
-                jump menu_dahr_gifts_and_gears
+                jump wrd_dahr_gears
 
 
 
@@ -260,3 +277,135 @@ label out:
     jump the_oddities
 #    return
 
+label wrd_dahr_gears:
+
+    menu:
+        "- Юбки -":
+            $_block="gears_skirt"
+            jump menu_dahr_gifts_and_gears
+        
+        "- Верх -":
+            $_block="gears_shirt"
+            jump menu_dahr_gifts_and_gears
+        
+        "- Чулки/Колготки -":
+            $_block="gears_stockings"
+            jump menu_dahr_gifts_and_gears
+        
+        "- Платья-":
+            $_block="gears_dress"
+            jump menu_dahr_gifts_and_gears
+        
+        "- Прочее -":
+            $_block="gears_other"
+            jump menu_dahr_gifts_and_gears
+            
+        "- Прокат на день -":
+            jump wrd_dahr_rent_menu
+    
+        "- Ничего -":
+             jump the_oddities
+
+label wrd_dahr_rent_menu :
+
+    $ add = ""
+
+    menu:
+        "- Форма веселой школьницы (100 галлеонов) -" if wrd_rent_happy_schoolgirl == 0 :
+            if hermi.whoring < 3 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 100 :
+                menu :
+                    ">Вы уверены, что хотите взять напрокат на один день форму веселой школьницы за 100 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 100
+                        ">В шкафу раздался шорох и материализовался комплект веселой школьницы. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_happy_schoolgirl = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма веселой школьницы. -{/color}" if wrd_rent_happy_schoolgirl == 1 :
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Форма игривой школьницы (250 галлеонов) -" if wrd_rent_playful_schoolgirl == 0:
+            if hermi.whoring < 12 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 250 :
+                menu :
+                    "Вы уверены, что хотите взять напрокат на один день форму игривой школьницы за 250 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 250
+                        ">В шкафу раздался шорох и материализовался комплект игривой школьницы. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_playful_schoolgirl = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма игривой школьницы. -{/color}" if wrd_rent_playful_schoolgirl == 1:
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Форма болельщицы Гриффиндора (125 галлеонов) -" if wrd_rent_cheerleader == 0 :
+            if hermi.whoring < 6 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 125 :
+                menu :
+                    "Вы уверены, что хотите взять напрокат на один день форму болельщицы Гриффиндора за 125 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 125
+                        ">В шкафу раздался шорох и материализовался комплект болельщицы Гриффиндора. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_cheerleader = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма болельщицы Гриффиндора -{/color}" if wrd_rent_cheerleader == 1 :
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Одежда бизнес-леди (200 галлеонов) -" if wrd_rent_business == 0 :
+            if hermi.whoring < 9 :
+                $add = "Интуиция подсказывает вам, что Гермиона откажется это надевать."
+            if gold >= 200 :
+                menu :
+                    "Вы уверены, что хотите взять напрокат на один день одежду бизнес-леди за 200 галлеонов ? [add]"
+                
+                    "Да" :
+                        $ gold -= 200
+                        ">В шкафу раздался шорох и материализовался комплект бизнес-леди. Вы не уверены, но похоже в кабинете стало меньше пыли."
+                        $ wrd_rent_business = 1
+                        jump wrd_dahr_gears
+                
+                    "Нет" :
+                        jump wrd_dahr_rent_menu
+                    
+            else :
+                ">К сожалению, у вас недостаточно денег."
+                jump wrd_dahr_rent_menu
+        
+        "{color=#858585}- Форма бизнес-леди -{/color}" if wrd_rent_business == 1 :
+            ">Данный комплект уже взят напрокат на сегодня."
+            jump wrd_dahr_rent_menu
+        
+        "- Ничего -" :
+            jump wrd_dahr_gears

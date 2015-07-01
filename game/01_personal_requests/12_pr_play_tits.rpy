@@ -111,6 +111,8 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     $herView.hideQQ()
     #$ only_upper = True #No lower body displayed. 
     #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+    call wrd_dress_undress_shirts
+    $ herView.data().addItem( 'item_tits' )
     $herView.data().addItem( 'item_pose_show_tits' )
     $herView.showQQ( "body_82.png", pos )
     pause
@@ -576,6 +578,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
                 jump no_smacking_tits #Jumps to usual tits molesting scene.
 
     
+    call wrd_dress_change
     hide screen h_c_u
     hide screen g_c_u
     hide screen g_c_c_u # Genie's sperm. Universal.
