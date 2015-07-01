@@ -264,7 +264,7 @@ label desk:
             jump day_main_menu
 
 ## DR'S DEBUG TEST           
-        "- Тест 1 -" :
+        "- Тест 1 -" if False:
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -285,7 +285,7 @@ label desk:
             call new_request_31
             jump hermione_goout
             
-        "- Тест 2 -" :
+        "- Тест 2 -" if False:
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -300,7 +300,7 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" :
+        "- Тест 3 -" if False:
 
             $ hermi.whoring = 24
             call the_oddities

@@ -200,8 +200,7 @@ $ letters = 0 #Shows how many letters are waiting to be read. +1 every new lette
 
 $ nsp_genie_typographic = 0 # Джин: Тип типографского набора, в начале - 0. Отсюда же Качество печати для Газеты
 $ nsp_genie_typographic_exp = 0 # Растет при каждой публикации на 1, для покупки набора след уровня нужно не менее 2 публикаций с прошлым. При этом счетчик сбрасывается.
-# DR'S DEBUG
-$ nsp_genie_writer = 10 # Джин: Навык писателя статей, в начале - 0. Отсюда же Мастерство написания для Газеты.
+$ nsp_genie_writer = 0 # Джин: Навык писателя статей, в начале - 0. Отсюда же Мастерство написания для Газеты.
 $ nsp_genie_photocamera = 0 # Джин: Тип используемого фотоаппарата, в начале - 0. Отсюда же украшения газеты.
 $ nsp_genie_photocamera_exp = 3 # Растет при каждом ивенте на 1, для покупки фотоаппарата (кроме 1-го) след уровня нужно не менее 3 ивентов с прошлым. При этом счетчик сбрасывается. Для покупки первого аппарата опыт уже как бы есть.
 $ nsp_genie_sphere = False # Джин: Наличие хрустального шара.
@@ -313,11 +312,11 @@ $ nsp_letter_10 = 0
 $ nsp_letter_11 = 0
 $ nsp_letter_12 = 0
 $ nsp_letter_13 = 0
-#DR'S DEBUG
+
 $ nsp_pre_letter = 0 # Газета: Письмо о газете. 0 - не было, 1 - есть, 2 - уже прочитано.
 $ nsp_pre_snape = 0 # Газета: Разговоры со снейпом о газете, номер текущего этапа.
 $ nsp_pre_dahre = 0 # Газета: Доступность учебных книг о газете в каталоге Дахры.
-$ nsp_newspaper_menu = 6 # Газета: Уровень разблокировки газетных меню.
+$ nsp_newspaper_menu = 0 # Газета: Уровень разблокировки газетных меню.
 
 $ hermione_out_halfday = 0
 
@@ -329,35 +328,34 @@ $ wrd_new_items = 0
 
 $ wrd_tits = 0
 $ wrd_tits_no = 1
-# DR'S DEBUG
 
 # SKIRTS
 $ wrd_skirt = 1
-$ wrd_shortskirt = 2
-$ wrd_xshortskirt = 2
-$ wrd_xxshortskirt = 2
-$ wrd_xsmallskirt = 2
-$ wrd_xxsmallskirt = 2
-$ wrd_xxxsmallskirt = 2
-$ wrd_skirt_cheerleader = 2
-$ wrd_skirt_business = 2
+$ wrd_shortskirt = 0
+$ wrd_xshortskirt = 0
+$ wrd_xxshortskirt = 0
+$ wrd_xsmallskirt = 0
+$ wrd_xxsmallskirt = 0
+$ wrd_xxxsmallskirt = 0
+$ wrd_skirt_cheerleader = 0
+$ wrd_skirt_business = 0
 
 # SHIRTS
 $ wrd_standart01 = 1
-$ wrd_standart02 = 2
-$ wrd_standart03 = 2
-$ wrd_standart04 = 2
-$ wrd_standart05 = 2
-$ wrd_skimpyshirt = 2
-$ wrd_shirt_cheerleader = 2
-$ wrd_shirt_business = 2
+$ wrd_standart02 = 0
+$ wrd_standart03 = 0
+$ wrd_standart04 = 0
+$ wrd_standart05 = 0
+$ wrd_skimpyshirt = 0
+$ wrd_shirt_cheerleader = 0
+$ wrd_shirt_business = 0
 
 # OTHER
 $ wrd_badge_01 = 0
 
 # STOCKINGS
-$ wrd_nets = 2
-$ wrd_tights = 2
+$ wrd_nets = 0
+$ wrd_tights = 0
 
 # RENT
 

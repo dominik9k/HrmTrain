@@ -380,9 +380,6 @@ label new_request_02: #SHOW ME YOUR Трусики
       
     # load state before doing mess
     $herView.data().loadState()
-    "> !!"
-    #call wrd_dress_change
-    ">22"
 
     show screen hermione_02 #Hermione stands still.
     $herView.showQ( "body_31.png", pos )
