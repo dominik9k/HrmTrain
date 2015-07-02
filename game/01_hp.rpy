@@ -323,7 +323,7 @@ $ hermione_out_halfday = 0
 ###
 
 ### DR'S wardrobe ###
-
+#DR'S DEBUG
 $ wrd_new_items = 0
 
 $ wrd_tits = 0
@@ -331,31 +331,31 @@ $ wrd_tits_no = 1
 
 # SKIRTS
 $ wrd_skirt = 1
-$ wrd_shortskirt = 0
-$ wrd_xshortskirt = 0
-$ wrd_xxshortskirt = 0
-$ wrd_xsmallskirt = 0
-$ wrd_xxsmallskirt = 0
-$ wrd_xxxsmallskirt = 0
-$ wrd_skirt_cheerleader = 0
-$ wrd_skirt_business = 0
+$ wrd_shortskirt = 2
+$ wrd_xshortskirt = 2
+$ wrd_xxshortskirt = 2
+$ wrd_xsmallskirt = 2
+$ wrd_xxsmallskirt = 2
+$ wrd_xxxsmallskirt = 2
+$ wrd_skirt_cheerleader = 2
+$ wrd_skirt_business = 2
 
 # SHIRTS
 $ wrd_standart01 = 1
-$ wrd_standart02 = 0
-$ wrd_standart03 = 0
-$ wrd_standart04 = 0
-$ wrd_standart05 = 0
-$ wrd_skimpyshirt = 0
-$ wrd_shirt_cheerleader = 0
-$ wrd_shirt_business = 0
+$ wrd_standart02 = 2
+$ wrd_standart03 = 2
+$ wrd_standart04 = 2
+$ wrd_standart05 = 2
+$ wrd_skimpyshirt = 2
+$ wrd_shirt_cheerleader = 2
+$ wrd_shirt_business = 2
 
 # OTHER
-$ wrd_badge_01 = 0
+$ wrd_badge_01 = 2
 
 # STOCKINGS
-$ wrd_nets = 0
-$ wrd_tights = 0
+$ wrd_nets = 2
+$ wrd_tights = 2
 
 # RENT
 
@@ -564,7 +564,7 @@ if this.event_05._finish2==4:
     $ rum_times = 4
 $ report_talk = False    
 
-
+call wrd_dress_change_silent
 
 # QUESTS #==============================================================================================================================================
 $ zyablik_switch = 0
@@ -722,25 +722,6 @@ if nsp_letter_7 == 2:
     
 if nsp_letter_7 == 1:
     $ nsp_letter_7 = 2
-    
-# RENT RESET
-
-if wrd_rent_happy_schoolgirl == 1 :
-    ">С мягким шелестом форма веселой школьницы рассыпалась в пыль."
-    
-if wrd_rent_playful_schoolgirl == 1 :
-    ">С мягким шелестом форма игривой школьницы рассыпалась в пыль."
-    
-if wrd_rent_cheerleader == 1 :
-    ">С мягким шелестом форма болельщицы Гриффиндора рассыпалась в пыль."
-    
-if wrd_rent_business == 1 :
-    ">С мягким шелестом одежда бизнес-леди рассыпалась в пыль."    
-    
-$ wrd_rent_happy_schoolgirl = 0
-$ wrd_rent_playful_schoolgirl = 0
-$ wrd_rent_cheerleader = 0
-$ wrd_rent_business = 0
 
 ### MUGGLE ODDITIES RELATED FLAGS ### VERSION TWO. This one randomizes delivery waiting days.
 if order_placed: #TRUE when and order has been placed on an item.
@@ -752,6 +733,7 @@ if order_placed: #TRUE when and order has been placed on an item.
 
 
 scene black
+
 $ raining = False #No rain before the weather has been chosen at the beginning of every day.
 hide screen new_window #Hiding clear sky bg.
 hide screen cloud #THE CLOUD.
@@ -807,7 +789,7 @@ hide screen with_snape #Genie hangs out with Snape in front of the fireplace.
 hide screen with_snape_animated #Genie hangs out with Snape in front of the fireplace.
 if package_is_here:
     hide screen package
-    
+
 
 show screen door   
 show screen cupboard
@@ -833,7 +815,7 @@ if day == 12: # LETTER THAT UNLOCKS PAPERWORK BUTTON.
 if day > 20 and nsp_pre_jobs_max >= 4 and nsp_pre_letter < 1:
     $ nsp_pre_letter = 1
     $ letters += 1
-   
+
 if nsp_newspaper_published_mail == False and nsp_newspaper_published == True :
     $ nsp_newspaper_published_mail = True
     $ letters += 1
@@ -896,6 +878,27 @@ $ day +=1
 $ increment_cal_date()
 
 #===TG MODS STOP===
+    
+# RENT RESET
+    
+if wrd_rent_happy_schoolgirl == 1 :
+    ">С мягким шелестом форма веселой школьницы рассыпалась в пыль."
+    
+if wrd_rent_playful_schoolgirl == 1 :
+    ">С мягким шелестом форма игривой школьницы рассыпалась в пыль."
+    
+if wrd_rent_cheerleader == 1 :
+    ">С мягким шелестом форма болельщицы Гриффиндора рассыпалась в пыль."
+    
+if wrd_rent_business == 1 :
+    ">С мягким шелестом одежда бизнес-леди рассыпалась в пыль."    
+    
+$ wrd_rent_happy_schoolgirl = 0
+$ wrd_rent_playful_schoolgirl = 0
+$ wrd_rent_cheerleader = 0
+$ wrd_rent_business = 0
+
+###
 
 ### DAY EVENTS ###<============================================================================================================================================================
 

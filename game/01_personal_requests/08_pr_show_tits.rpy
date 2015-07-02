@@ -1197,7 +1197,21 @@ label addAfterSperm:
     # del pose and add aftersperm
     $herView.data().delPose()
     #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-    $herView.data().addItem( 'item_sperm_dried' )
+    call wrd_dress_change_silent
+    if wrd_skimpyshirt == 1 :
+        $herView.data().addItem( 'item_sperm_dried_up_mini' )
+    elif wrd_shirt_cheerleader == 1 :
+        pass
+    else :
+        $herView.data().addItem( 'item_sperm_dried_up' )
+        
+    if wrd_xxsmallskirt == 1 :
+        $herView.data().addItem( 'item_sperm_dried_down_mini' )
+    elif wrd_xxxsmallskirt == 1 or wrd_skirt_cheerleader == 1:
+        pass
+    else :
+        $herView.data().addItem( 'item_sperm_dried_down' )
+
     return
     
 label loadState_and_could_not_flirt:

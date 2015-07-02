@@ -2899,6 +2899,12 @@ label event_15: # Hermione comes and asks to buy a favour from her.
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     $ event15_happened = True #Turns TRUE after event_15
     $this.event_15.Finalize()
+    
+    if daytime:
+        $ hermione_takes_classes = True
+    else:
+        $ hermione_sleeping = True
+    
     return
 
 
