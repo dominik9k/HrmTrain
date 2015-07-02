@@ -658,7 +658,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         $herViewHead.hideQ()
         pause 2
         $herViewHead.data().delPose()
-        call wrd_dress_change
+        call wrd_dress_change_silent
         $herViewHead.showQ( "body_33.png", posHead )
         
         
@@ -1592,7 +1592,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         $herView.hideQQ()
                                         $ pos = POS_140
                                         call req11_dress
-                                        call wrd_dress_change
+                                        call wrd_dress_change_silent
                                         $herView.showQQ( "body_29.png", pos )
                                         her "Что ж..."
                                         her "Наша миссия была успешной, сэр?"
@@ -1655,7 +1655,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         pause.5
                                         ">.................{w}.................{w}.................{w}................."
                                         call req11_dress
-                                        call wrd_dress_change
+                                        call wrd_dress_change_silent
                                         $herViewHead.showQ( "body_33.png", posHead )
                                         
                                         
@@ -1798,7 +1798,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                             pause.5
                             ">.................{w}.................{w}.................{w}................."
                             call req11_dress
-                            call wrd_dress_change
+                            call wrd_dress_change_silent
                             $herViewHead.showQ( "body_33.png", posHead )
                             her "Могу я... получить оплату... сэр...?"
                             $herViewHead.hideQ()
@@ -2292,7 +2292,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                             stop music fadeout 5.0
                                             ">.................{w}.................{w}.................{w}................."
                                             call req11_dress
-                                            call wrd_dress_change
+                                            call wrd_dress_change_silent
                                             $herViewHead.showQ( "body_12.png", posHead )
                                             her "...Могу я получить оплату, сэр... пожалуйста?"
                                             $herViewHead.hideQ()
@@ -2517,7 +2517,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         $herViewHead.hideQ()
                                         pause 1
                                         call req11_dress
-                                        call wrd_dress_change
+                                        call wrd_dress_change_silent
                                         $herViewHead.showQ( "body_79.png", posHead )
                                         her "Я хотела бы получить очки!"
                                         $herViewHead.hideQ()
@@ -2643,7 +2643,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
     label done_with_dancing:
     call req11_dress
     $herView.data().delItem( 'item_sperm' )
-    call wrd_dress_change
+    call wrd_dress_change_silent
     
     $ gryffindor += current_payout #35
     

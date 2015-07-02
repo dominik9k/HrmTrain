@@ -4182,6 +4182,18 @@ label wrd_dress_change :
 
     $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
     
+    call wrd_dress_change_silent
+
+    $herView.hideshowQQ( "body_01.png", pos )
+    
+    pause.5
+    $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+    $screens.Show("ctc").Pause().Hide("ctc")
+    
+    return
+    
+label wrd_dress_change_silent :
+    
     call wrd_dress_undress
     
     if wrd_tits == 1 :
@@ -4232,13 +4244,6 @@ label wrd_dress_change :
         $ herView.data().addItem( 'item_shirts_blouse_business' )
     if wrd_shirt_cheerleader == 1 :
         $ herView.data().addItem( 'item_shirts_cheerleader_gryffindor' )
-    
-
-    $herView.hideshowQQ( "body_01.png", pos )
-    
-    pause.5
-    $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
-    $screens.Show("ctc").Pause().Hide("ctc")
     
     return
 
