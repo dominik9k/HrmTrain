@@ -264,7 +264,7 @@ label desk:
             jump day_main_menu
 
 ## DR'S DEBUG TEST           
-        "- Тест 1 -" if False:
+        "- Тест 1 -" :
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -282,10 +282,10 @@ label desk:
             $ nsp_germiona_studio_1_photo = "dis"
             $ nsp_event_studio_1 = 0
             $ cur_level = 1
-            call new_request_31
+            call new_request_11
             jump hermione_goout
             
-        "- Тест 2 -" if False:
+        "- Тест 2 -" :
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -300,10 +300,10 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" if False:
+        "- Тест 3 -" :
 
             $ hermi.whoring = 24
-            call nsp_her_demo2
+            call the_oddities
             jump desk
             
 ### DR'S NEWSPAPER ooo ###
@@ -482,7 +482,7 @@ label desk:
 
  #===TG MODS START===
 
-        "-Иследовать календарь-" if desk_examined and not day == 1:
+        "-Исследовать календарь-" if desk_examined and not day == 1:
             menu:
                 # This is when playing an old game, and the above event didn't happen (since the mod wasn't installed,
                 # and the desk is now set to (forever) examined.)
@@ -491,7 +491,7 @@ label desk:
                 # data to make a clean slate. Possibly only to correct things.
                 #
                 # I'll do that kind of thing later, once more has been implemented.
-                "-Recheck the dates-" if desk_examined and not known_dates['hogsmeade_weekends']:
+                "-Перепроверить даты-" if desk_examined and not known_dates['hogsmeade_weekends']:
                     m "Перелистывая страницы........"
                     m "Кто-то.... явно любит все эти \"Хогсмид по выходным\"."
                     m "Кто-то пьянчуга, судя по ним."

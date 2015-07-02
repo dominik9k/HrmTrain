@@ -623,9 +623,9 @@ screen points: #House points screen.
         spacing 10 xpos 37 ypos 11
         text "{size=-5}[ravenclaw]{/size}" 
     
-    hbox: ### DAYS COUNTER ###
-        spacing 10 xpos 630 ypos 10
-        text "{size=-3}[day]{/size}" 
+#    hbox: ### DAYS COUNTER ###
+#        spacing 10 xpos 630 ypos 10
+#        text "{size=-3}[day]{/size}" 
     
 #===TG MODS START===
 

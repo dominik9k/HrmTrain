@@ -48,7 +48,7 @@ label hermione_approaching:
             jump hermione_main_menu
              
         "- Дать журналистское задание -" if nsp_newspaper_menu >= 6 and daytime :
-            if hermi.liking==0:
+            if hermi.liking>=0:
                 jump nsp_newsp_themes
             python:
                 for t in [
@@ -82,7 +82,7 @@ label hermione_approaching:
                 jump hermione_main_menu
 
         "- Обучение -" if not daytime and not tut_happened and hermi.whoring <= 12:
-            if hermi.liking==0:
+            if hermi.liking>=0:
                 jump tutoring
             python:
                 for t in [
@@ -97,7 +97,7 @@ label hermione_approaching:
             jump hermione_main_menu
 
         "- Купить \"сексуальный\" рейтинг -" if this.Has("her_wants_buy"):#buying_favors_from_hermione_unlocked:
-                if hermi.liking==0:
+                if hermi.liking>=0:
                     jump new_personal_request
                 python:
                     for t in [
@@ -128,9 +128,9 @@ label hermione_approaching:
 
                     
         
-         
-        "- Гардероб -" if dress_code and this.Has("her_wants_buy"):
-            if hermi.liking==0:
+#DR'S DEBUG         
+        "- Гардероб -" : #if dress_code and this.Has("her_wants_buy"):
+            if hermi.liking>=0:
             
                 jump wrd_menu
 
