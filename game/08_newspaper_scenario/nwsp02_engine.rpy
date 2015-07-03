@@ -215,7 +215,7 @@ label nsp_newsp_themes:
                             ">Предлагать это задание Гермионе сейчас не имеет смысла. Нужно сначала ее морально подготовить."
                             jump nsp_newsp_themes
 
-                    "{color=#858585}-Не открытое действие-{/color}" if nsp_genie_writer < 4 or (nsp_letter_7 < 3 and nsp_event_rights_3 == 0) and False:
+                    "{color=#858585}-Не открытое действие-{/color}" if (nsp_genie_writer < 4 or (nsp_letter_7 < 3 and nsp_event_rights_3 == 0)) and False:
                         call nsp_vague_idea
                         jump nsp_newsp_themes
                         

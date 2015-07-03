@@ -128,8 +128,8 @@ label hermione_approaching:
 
                     
         
-#DR'S DEBUG         
-        "- Гардероб -" : #if dress_code and this.Has("her_wants_buy"):
+     
+        "- Гардероб -" if dress_code and this.Has("her_wants_buy"):
             if hermi.liking>=0:
             
                 jump wrd_menu
