@@ -203,6 +203,7 @@ screen main_menu:
         textbutton _("Загрузить") action ShowMenu("load")
         textbutton _("Настройки") action ShowMenu("preferences")
         textbutton _("Экстра") action ShowMenu("extras")
+        textbutton _("Форум") action Start("forum")
         textbutton _("Выход") action Quit(confirm=True)
 
 init -2:
@@ -235,17 +236,11 @@ screen extras:
             textbutton _("{color=#858585}Галерея{/color}") action Start("gallery_locked")
         if persistent.game_complete:
             textbutton _("Галерея") action Start("gallery")
+        textbutton _("От разработчиков") action Start("devel")
         textbutton _("Назад") action Start("assmenu") # Sent here from "EXTRAS" menu. Basically just jumps to the title screen. 
 
 init -2 python:
     style.gm_nav_button.size_group = "gm_nav"
-
-
-
-
-
-
-
 
 
 
