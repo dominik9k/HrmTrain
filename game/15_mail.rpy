@@ -2,7 +2,7 @@ label mail:
 
     $ this.RunStep("MAIL")    
 
-    if finished_report >= 1 and letter_from_ficbook_fun == False:
+    if got_paycheck == True and finished_report >= 1 and letter_from_ficbook_fun == False:
         $ letters -= 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
         $ got_paycheck = False #When TRUE the paycheck is in the mail. Can't do paper work.
         hide screen owl
@@ -33,7 +33,7 @@ label mail:
         call screen main_menu_01
         
     ###"УЛУЧШЕННЫЕ" ОТЧЕТЫ###
-    if finished_report >= 1 and letter_from_ficbook_fun == True:
+    if got_paycheck == True and finished_report >= 1 and letter_from_ficbook_fun == True:
         $ one_of_ten = renpy.random.randint(1, 6)
         $ letters -= 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
         $ got_paycheck = False #When TRUE the paycheck is in the mail. Can't do paper work.
@@ -58,7 +58,7 @@ label mail:
         
         if one_of_ten == 2:
             play sound "sounds/money.mp3"  #Quiet...
-            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nмы всем офисом благодарим Вас за новую главу! Позвольте передать вам {size=-2}[dgold] галеонов.{/size} и наше искреннее восхищение.{/size}\n\n\n{size=-6}-С уважением-{/size}"
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,\nмы всем офисом благодарим Вас за новую главу! Позвольте передать вам {size=-2}[dgold] галеонов.{/size} и наше искреннее восхищение.{/size}\n\n\n{size=-6}-С уважением-{/size}"
             show screen bld1
             show screen letter
             show screen ctc
@@ -69,7 +69,7 @@ label mail:
             
         if one_of_ten == 3:
             play sound "sounds/money.mp3"  #Quiet...
-            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nна правах человека, ведущего связь с Вами, могу ли я узнать, будут ли Педреро и Хуанито вместе? Отправляю вам {size=-2}[dgold]галеонов{/size} и скромную надежду на ответ.{/size}\n\n\n{size=-6}-С уважением-{/size}"
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,\nна правах человека, ведущего связь с Вами, могу ли я узнать, будут ли Педреро и Хуанито вместе? Отправляю вам {size=-2}[dgold]галеонов{/size} и скромную надежду на ответ.{/size}\n\n\n{size=-6}-С уважением-{/size}"
             show screen bld1
             show screen letter
             show screen ctc
@@ -81,7 +81,7 @@ label mail:
             hide screen ctc
             
         if one_of_ten == 4:
-            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-3}Дорогой Альбус,/nновые главы вышли великолепными, особенно когда...{/size}"
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-3}Дорогой Альбус,\nновые главы вышли великолепными, особенно когда...{/size}"
             show screen bld1
             show screen letter
             show screen ctc
@@ -97,7 +97,7 @@ label mail:
             g9 "Ну, по крайней мере, в конверте лежали мои [dgold]галеонов."
             
         if one_of_ten == 5:
-            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nна правах главы Вашего фан-клуба, позвольте пригласить Вас на пенную вечеренку, адрес и время написаны на приглашении. Мы ждем вас с нетерпением!{/size}"
+            $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,\nна правах главы Вашего фан-клуба, позвольте пригласить Вас на пенную вечеренку, адрес и время написаны на приглашении. Мы ждем вас с нетерпением!{/size}"
             show screen bld1
             show screen letter
             show screen ctc
@@ -129,7 +129,7 @@ label mail:
                 
     #Слишком большое письмо      
     #   if one_of_ten == 7:
-    #       $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,/nсегодня мне приснился странный сон. Я была обычным маглом, писателем. И писала истории о мальчике-котором-выжил. И когда издатель запретил мне убить Поттера в последнем бою, я проснулась в холодном поту. Странный сон, правда?{/size}"
+    #       $ letter_text = "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-4}Дорогой Альбус,\nсегодня мне приснился странный сон. Я была обычным маглом, писателем. И писала истории о мальчике-котором-выжил. И когда издатель запретил мне убить Поттера в последнем бою, я проснулась в холодном поту. Странный сон, правда?{/size}"
             
     #    if one_of_ten == 8:
     #        $ letter_text =

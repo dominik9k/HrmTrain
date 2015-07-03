@@ -323,7 +323,7 @@ $ hermione_out_halfday = 0
 ###
 
 ### DR'S wardrobe ###
-#DR'S DEBUG
+
 $ wrd_new_items = 0
 
 $ wrd_tits = 0
@@ -331,31 +331,31 @@ $ wrd_tits_no = 1
 
 # SKIRTS
 $ wrd_skirt = 1
-$ wrd_shortskirt = 2
-$ wrd_xshortskirt = 2
-$ wrd_xxshortskirt = 2
-$ wrd_xsmallskirt = 2
-$ wrd_xxsmallskirt = 2
-$ wrd_xxxsmallskirt = 2
-$ wrd_skirt_cheerleader = 2
-$ wrd_skirt_business = 2
+$ wrd_shortskirt = 0
+$ wrd_xshortskirt = 0
+$ wrd_xxshortskirt = 0
+$ wrd_xsmallskirt = 0
+$ wrd_xxsmallskirt = 0
+$ wrd_xxxsmallskirt = 0
+$ wrd_skirt_cheerleader = 0
+$ wrd_skirt_business = 0
 
 # SHIRTS
 $ wrd_standart01 = 1
-$ wrd_standart02 = 2
-$ wrd_standart03 = 2
-$ wrd_standart04 = 2
-$ wrd_standart05 = 2
-$ wrd_skimpyshirt = 2
-$ wrd_shirt_cheerleader = 2
-$ wrd_shirt_business = 2
+$ wrd_standart02 = 0
+$ wrd_standart03 = 0
+$ wrd_standart04 = 0
+$ wrd_standart05 = 0
+$ wrd_skimpyshirt = 0
+$ wrd_shirt_cheerleader = 0
+$ wrd_shirt_business = 0
 
 # OTHER
-$ wrd_badge_01 = 2
+$ wrd_badge_01 = 0
 
 # STOCKINGS
-$ wrd_nets = 2
-$ wrd_tights = 2
+$ wrd_nets = 0
+$ wrd_tights = 0
 
 # RENT
 
