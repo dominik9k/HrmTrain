@@ -839,10 +839,9 @@ if nsp_day == 10:
 #        $ letters += 1 
 #    $ nsp_day_letter7 = 0
     
-if letters == 0 :
+if letters <= 0 :
     $ nsp_newspaper_published = False
     $ nsp_newspaper_published_mail = False 
-    $ nsp_newspaper_ready = False
 
 ###
 
