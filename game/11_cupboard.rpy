@@ -83,6 +83,7 @@ label cupboard:
                         hide screen points
                         $daphne.whoring+=1
                         show screen points
+                        "Готово"
                     "ЧИТ: +100 галеонов":
                         hide screen points
                         $gold+=100

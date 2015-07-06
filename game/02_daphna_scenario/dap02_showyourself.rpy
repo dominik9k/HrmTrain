@@ -33,8 +33,7 @@ label dap_request_02_complete:
         $daphne("~73 01 1 pur// Хм,... Ну, я надеюсь, что этого пока хватит.")
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-        $daphne.chibi.Hide()
-        $daphne.ItemsCustomize(delete={"sleeves"}).chibi.State(appearance="c").Refresh()
+        $daphne.ItemsCustomize(delete={"sleeves"}).chibi.State(appearance="c")#.Refresh()
         pause.5
         $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
         $screens.Show("ctc").Pause().Hide("ctc")
@@ -54,7 +53,7 @@ label dap_request_02_complete:
         $daphne("~46 00 2 ehh// Отлично, давно хотела снять эти чулки, в них я выгляжу по-уродски.")
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-        $daphne.ItemsCustomize(delete={"stockings"}).chibi.State(appearance="c").Refresh()
+        $daphne.ItemsCustomize(delete={"stockings"}).chibi.State(appearance="c")#.Refresh()
         pause.5
         $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
         $screens.Show("ctc").Pause().Hide("ctc")
@@ -82,7 +81,7 @@ label dap_request_02_complete:
         $daphne("~73 01 2 pur// Но я пока не готова, сэр. И раз сегодня нужно что-то снять...//~55 01 2 pou// Тогда я сниму лифчик. Отвернитесь, сэр!//~55 01 3 pou// Хотя нет, лучше я сама отвернусь.")
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-        $daphne.ItemsCustomize(delete={"bra"}, update={"combi:cheer_topbase_withnipples"}).chibi.State(appearance="f").Refresh()
+        $daphne.ItemsCustomize(delete={"bra"}, update={"combi:cheer_topbase_withnipples"}).chibi.State(appearance="f")#.Refresh()
         pause.5
         $screens.Hide(Dissolve(1), "blkfade") 
         $screens.Show("ctc").Pause().Hide("ctc")
@@ -255,5 +254,12 @@ label dap_request_02_complete:
             
                 $hero("Не спешите мисс Гринграсс...// Вы сегодня хорошо постарались, и заслуживаете поощрение....")
         $daphne.whoring += 2
+    elif IsRunNumber(6):
+        pause 1.0
+        felix "К большому сожалению, данная сюжетная линия пока дописана только до этого момента..."
+        felix "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
+        felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+        felix "Так вы простимулируете нас, и продолжение появится быстрее. :)"
+        call daphne_main_menu_requests
 
     return
