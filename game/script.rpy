@@ -137,7 +137,7 @@ init:
 
 # Инициализация коллекций предметов
         global itsDAHR
-        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":45, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
+        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":68, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
 
         global itsOWL
         itsOWL=RegEntry(ItemCollection("OWL"))

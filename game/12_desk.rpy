@@ -303,6 +303,7 @@ label desk:
         "- Тест 3 -" if False :
 
             $ hermi.whoring = 24
+            $ cataloug_found = True
             call the_oddities
             jump desk
             
