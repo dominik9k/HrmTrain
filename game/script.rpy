@@ -137,7 +137,7 @@ init:
 
 # Инициализация коллекций предметов
         global itsDAHR
-        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":45, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
+        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":68, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
 
         global itsOWL
         itsOWL=RegEntry(ItemCollection("OWL"))
@@ -241,12 +241,12 @@ init:
             s+="_complete"
             this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
             
-        tu=["sex_1","sex_2","sex_3","sex_4","sex_5","maniac_1","maniac_2","maniac_3","nude_1","nude_2","nude_3","nude_4","nude_5"]
-        for s in tu:
-            s="nsp_event_"+s
-            this.AddEvent(s) 
-            s+="_complete" 
-            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+#        tu=["sex_1","sex_2","sex_3","sex_4","sex_5","maniac_1","maniac_2","maniac_3","nude_1","nude_2","nude_3","nude_4","nude_5"]
+#        for s in tu:
+#            s="nsp_event_"+s
+#            this.AddEvent(s) 
+#            s+="_complete" 
+#            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
             
         tu=["forest_1"]
         for s in tu:
