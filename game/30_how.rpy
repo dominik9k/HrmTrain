@@ -400,9 +400,52 @@ label devel:
     dr "......."
     dr "Простите, наболело."
     
-    dr "В общем, если вы хотите пообщаться с людьми, которые {size=+4}действительно{/size} продолжают совершенствование и расширение игры, милости просим."
+    dr "Итак, для вас трудились :"
+    dr "Главный координатор (встречайте стоя !): {color=4F4F4F}Хан ( Khan ){/color}"
+    dr "Главный разработчик : {color=00FF00}Дрон (dron12355){/color}"
+    dr "Разработка и ивенты Дафны : {color=7789CA}Феликс{/color}"
+    dr "Поддержка игры (на плаву) : {color=0000FF}Сказочник{/color}"
+    dr "Перевод на английский язык : {color=0089BE}Хан и Sezt{/color}"
+    dr "Разработка и обучающие ивенты : {color=FF0000}Nyarkohopter{/color}"
+    dr "Чибики Дафны : {color=2F2F2F}Grending{/color}"
+    dr "Дафна : {color=6F6F6F}Zio Dyne{/color}"    
+    
+    dr "Список особых благодарностей :"
+    dr "{color=0F0F0F}Евгений aka Afar{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    
+    $ hx = 370
+    $ hy = 0
+    $ h_red_angry = True
+    $ h_angry = False
+    $ h_smile = False
+    
+    dr "И несравненная Гермиона Грейнджер в роли офисной шл..."
+    show screen l_hermiona
+    her "Что-о-о-о ???"
+    hide screen l_hermiona
+
+    dr "Прости, в роли секретут..."
+    $ h_red_angry = False
+    $ h_angry = True
+    $ h_smile = False
+    show screen l_hermiona
+    her "А на тебя давно в последний раз подавали в суд\n за половую дискриминацию ?"
+    hide screen l_hermiona
+    dr "Бхм. И наша главная офис-леди - мисс Грейнджер."
+    $ h_red_angry = False
+    $ h_angry = False
+    $ h_smile = True
+    show screen l_hermiona    
+    her "Так то лучше !"
+    her "Всем до встречи в игре."
+    hide screen l_hermiona 
+    dr "Недотрога..."
+    dr "Ушла наконец."
+    
+    dr "Итак, приятной игры, друзья !"
+    
+    dr "А если хотите пообщаться с людьми, которые продолжают совершенствование и расширение игры, милости просим."
     dr "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
-    dr "Приятной игры."
 
 
 return
