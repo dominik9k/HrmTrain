@@ -1063,6 +1063,30 @@ screen l_head: #Screen that shows a full sprite of HERMIONE.
     if l_tears:
         add "03_hp/22_lola/tears.png" xpos lx ypos ly
     
+### HERMIONA ###
+
+screen l_hermiona: #Screen that shows a full sprite of HERMIONE.
+    tag body
+    zorder 8
+
+    add "00_ex_characters/00_hermione/graphics/hair/hair_normal_1.png" xpos hx ypos hy 
+    add "00_ex_characters/00_hermione/graphics/body/head.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/hair/hair_normal_2.png" xpos hx ypos hy    
+    add "00_ex_characters/00_hermione/graphics/body/body.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/body/legs_universal.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/body/hands_universal.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/body/tits_no.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/clothes/stockings/tights.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/clothes/skirts/skirt_business1.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/clothes/shirts/blouse_business2.png" xpos hx ypos hy
+    
+    if h_red_angry:
+        add "00_ex_characters/00_hermione/graphics/face/body_47.png" xpos hx ypos hy
+    if h_angry:
+        add "00_ex_characters/00_hermione/graphics/face/body_05.png" xpos hx ypos hy
+    if h_smile:
+        add "00_ex_characters/00_hermione/graphics/face/body_24.png" xpos hx ypos hy
+
     
     
     
