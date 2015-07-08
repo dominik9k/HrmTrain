@@ -802,6 +802,10 @@ show screen candle_02
 
 
 ### DAY MAIL ###
+
+if letters < 0 : # На случай всяких неожиданностей
+    $ letters = 0
+
 if day == 2:
     $ letter_from_hermione_02 = True #Turns true when you get second letter from Hermione.
     $ letters += 1 #Adds one letter in waiting list to be read. Displays owl with envelope.

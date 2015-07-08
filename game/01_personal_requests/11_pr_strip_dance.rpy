@@ -2085,6 +2085,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                     
                     
                     $ posHead = gMakePos( 390, 235 )
+                    $herViewHead.data().delItemKey('tits_no')
+                    $herViewHead.data().addItem('item_tits')
                     $herViewHead.data().hideItemKey('dress')
                     $herViewHead.showQ( "body_90.png", posHead )
                     her "Вам обязательно быть настолько пошлым, сэр?"
