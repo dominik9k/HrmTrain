@@ -105,7 +105,7 @@ init -992 python:
 
     def SetHearts(heartCount, _event=None): # Установить количество сердечек текущему ивенту
         if _event==None:
-            _event=event
+            _event=wtevent
         return _event.SetValue("heartCount",heartCount)
 
     def IsFirstRun(): # Это первый запуск текущего ивента?
