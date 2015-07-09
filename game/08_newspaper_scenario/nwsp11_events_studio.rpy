@@ -94,7 +94,7 @@ label nsp_event_studio_1 :
     elif cur_level == 5 :
         ">текст преивента студии 1-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -233,7 +233,7 @@ label nsp_event_studio_1_complete :
         
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -255,7 +255,7 @@ label nsp_event_studio_2 :
         ">текст преивента студии 2-5" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -345,7 +345,7 @@ label nsp_event_studio_2_complete :
         
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -362,7 +362,7 @@ label nsp_event_studio_3 :
     elif cur_level == 5 :
         ">текст преивента студии 3-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -452,7 +452,7 @@ label nsp_event_studio_3_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -469,7 +469,7 @@ label nsp_event_studio_4 :
     elif cur_level == 5 :
         ">текст преивента студии 4-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -559,7 +559,7 @@ label nsp_event_studio_4_complete :
         
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -576,7 +576,7 @@ label nsp_event_studio_5 :
     elif cur_level == 5 :
         ">текст преивента студии 5-5"   
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -666,7 +666,7 @@ label nsp_event_studio_5_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -683,7 +683,7 @@ label nsp_event_studio_5 :
     elif cur_level == 5 :
         ">текст преивента студии 5-5"   
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -773,6 +773,6 @@ label nsp_event_studio_6_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return

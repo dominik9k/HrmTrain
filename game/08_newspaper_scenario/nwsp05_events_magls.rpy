@@ -114,7 +114,7 @@ label nsp_event_magls_1 :
     elif cur_level == 5 :
         ">текст преивента маглов 1-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -253,7 +253,7 @@ label nsp_event_magls_1_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -275,7 +275,7 @@ label nsp_event_magls_2 :
         ">текст преивента маглов 2-5" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -375,7 +375,7 @@ label nsp_event_magls_2_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -392,7 +392,7 @@ label nsp_event_magls_3 :
     elif cur_level == 5 :
         ">текст преивента маглов 3-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -493,7 +493,7 @@ label nsp_event_magls_3_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -510,7 +510,7 @@ label nsp_event_magls_4 :
     elif cur_level == 5 :
         ">текст преивента маглов 4-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -614,7 +614,7 @@ label nsp_event_magls_4_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -631,7 +631,7 @@ label nsp_event_magls_5 :
     elif cur_level == 5 :
         ">текст преивента маглов 5-5"   
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -735,7 +735,7 @@ label nsp_event_magls_5_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 

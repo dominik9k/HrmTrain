@@ -15,7 +15,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
     
@@ -1435,7 +1435,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
     with d3
     her "Спасибо, сэр..."
 
-    if event.Name=="new_request_02": 
+    if wtevent.Name=="new_request_02": 
         jump new_request_16_jerkonly_to_02
 
     $herViewHead.data().delItem( 'item_sperm' )
@@ -1479,7 +1479,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
 
     call music_block
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     if daytime:
         $ hermione_takes_classes = True

@@ -11,7 +11,7 @@ label new_request_02_c:
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
 
     m "Мисс Грейнджер, я хочу, чтобы вы флиртовали с учителем."
@@ -62,7 +62,7 @@ label new_request_02_c:
 
     $ hermione_takes_classes = True
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     jump day_main_menu
 
@@ -638,7 +638,7 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
     $ request_02_c_points += 1 #Leveling up the event.
 #    $ request_02_c = False 
     $ hermione_sleeping = True
-    $event.Finalize()    
+    $wtevent.Finalize()    
     return    
     
 label could_not_flirt_02: #Sent here when chose "Задание провалено! Ты не получишь очки!"

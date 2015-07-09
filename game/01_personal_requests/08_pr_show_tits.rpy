@@ -16,7 +16,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
     
     if hermi.whoring <=5:
@@ -1171,7 +1171,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
     # load from pose with tits and that sperm!
     $herView.data().loadState()
     
-    $event.Finalize()    
+    $wtevent.Finalize()    
     jump finish_daytime_event
 
 

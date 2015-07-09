@@ -13,7 +13,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
  
@@ -80,7 +80,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
         
         her "*Хлюп* *Чавк!* *Хлюп!*"
         m "Даа..."
-        if (event.Name=="new_request_08") and end.IsEnding(const_ENDING_STRONG_GIRL):
+        if (wtevent.Name=="new_request_08") and end.IsEnding(const_ENDING_STRONG_GIRL):
             $music.Start("Supergirl")                                   
             $ hermione_chibi_xpos = -150 #-185 behind the desk. (Also 5 is something).
             $ hermione_chibi_ypos = 10
@@ -1194,7 +1194,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
     hide screen blkfade
     with d3
     
-    if event.Name=="new_request_08":
+    if wtevent.Name=="new_request_08":
         jump new_request_08_finish
     
     m "Да, мисс Грейнджер. 55 очков \"Гриффиндору\"." 
@@ -1237,8 +1237,8 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
     
     call music_block
     
-    $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,3,1))
+    $wtevent.Finalize()    
+    $SetHearts(GetStage(wtevent._finishCount,1,3,1))
     if daytime:
         $ hermione_takes_classes = True
         jump night_main_menu

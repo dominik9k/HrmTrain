@@ -9,7 +9,7 @@ label new_request_10:
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
     $ pos = POS_140
@@ -145,7 +145,7 @@ label new_request_10:
 
     $ hermione_takes_classes = True
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     jump day_main_menu
 
@@ -559,7 +559,7 @@ label new_request_10_complete: #<===============================================
 #    $ request_10 = False 
     $ hermione_sleeping = True
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     return
 

@@ -1522,14 +1522,14 @@ label event_09: #Second visit from Hermione. Says she sent a letter to the Mines
                 "\"Конечно нет! Я занят! Возвращайся позже!\"":
                     her "Но..."
                     her "Хорошо... Тогда я зайду к вам завтра..."
-                    $event.NotFinished()
+                    $wtevent.NotFinished()
                     return 
                 "\"Конечно. Входи.\"":
                     pass
         "\"Я занят. Приходи позже.\"":
             her "Но..."
             her "Ладно, хорошо..."
-            $event.NotFinished()
+            $wtevent.NotFinished()
             return 
         "\"Да, входи.\"":
             pass
@@ -2478,14 +2478,14 @@ label event_15: # Hermione comes and asks to buy a favour from her.
                 "\"Категорически нет! Я занят! Возвращайся позднее!\"":
                     her "Но..."
                     her "Ладно... Тогда я вернусь позднее..."
-                    $event.NotFinished()
+                    $wtevent.NotFinished()
                     return 
                 "\"Конечно, входи.\"":
                     pass
         "\"Я занят. Приходи позже.\"":
             her "Но..."
             her "Ну, ладно..."
-            $event.NotFinished()
+            $wtevent.NotFinished()
             return
         "\"Да, входи.\"":
             pass

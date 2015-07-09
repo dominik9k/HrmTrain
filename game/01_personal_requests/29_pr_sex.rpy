@@ -14,7 +14,7 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
     
@@ -989,8 +989,8 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
 
     #call music_block 
     
-    $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,3,1))
+    $wtevent.Finalize()    
+    $SetHearts(GetStage(wtevent._finishCount,1,3,1))
     if daytime:
         jump night_start
     else:

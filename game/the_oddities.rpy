@@ -9,19 +9,19 @@ label menu_dahr_book:
     $ choose.Show("the_oddities")
 
     label menu_dahre_book_2:
-        $ the_gift = event._img     # "03_hp/18_store/08.png" # Copper book of spirit.
+        $ the_gift = wtevent._img     # "03_hp/18_store/08.png" # Copper book of spirit.
         show screen gift
         with d3
-        dahr "\"[event._caption]\". [event._description]\n"
-        if event._status>-2: 
+        dahr "\"[wtevent._caption]\". [wtevent._description]\n"
+        if wtevent._status>-2: 
             call do_have_book
             jump the_oddities
         menu:
-            "- Купить книгу за [event._price] галлеонов -":
-                if gold >= event._price:
-                    $ gold -= event._price
+            "- Купить книгу за [wtevent._price] галлеонов -":
+                if gold >= wtevent._price:
+                    $ gold -= wtevent._price
                     $ order_placed = True
-                    $ event.IncValue("status",1)
+                    $ wtevent.IncValue("status",1)
 #                            $ bought_book_01 = True
                     call thx_4_shoping #Massage that says "Thank you for shopping here!".
                     jump desk
@@ -233,8 +233,8 @@ label do_have_book:
 label thx_4_shoping:
 # Пока не было объекта Item книги были сделаны через объект Event. Вероятно, надо переделать, через Item, но из-за спешки при подготовке к релизу пока пусть будет костыль
     if "books_" in _block:
-        $_caption=event._caption
-        $_price=event._price
+        $_caption=wtevent._caption
+        $_price=wtevent._price
         $itemCount=1
     else:
         $item=itsOWL()[0]

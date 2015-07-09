@@ -829,7 +829,7 @@ label request_33_complete:
 #############This massage shows when you make a request, and Hermione refuses because she is not slutty enough yet.
 label too_much:
     if IsEventOnlyAfter("new_personal_request"): # Если попали сюда после ивента, запущенного через меню "new_personal_request", значит ивент не завершен
-        $event.NotFinished()
+        $wtevent.NotFinished()
     stop music fadeout 2.0
     $herView.hideQQ()
     $ pos = POS_120

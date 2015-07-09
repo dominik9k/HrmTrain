@@ -58,7 +58,7 @@ label nsp_event_rights_1 :
     elif cur_level == 5 :
         ">текст преивента прав 1-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -205,7 +205,7 @@ label nsp_event_rights_1_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -227,7 +227,7 @@ label nsp_event_rights_2 :
         ">текст преивента прав 2-5" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -324,7 +324,7 @@ label nsp_event_rights_2_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -345,7 +345,7 @@ label nsp_event_rights_3 :
     elif cur_level == 5 :
         ">текст преивента прав 3-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -455,7 +455,7 @@ label nsp_event_rights_3_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -472,7 +472,7 @@ label nsp_event_rights_4 :
     elif cur_level == 5 :
         ">текст преивента прав 4-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -572,7 +572,7 @@ label nsp_event_rights_4_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -731,7 +731,7 @@ label nsp_event_rights_5_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
