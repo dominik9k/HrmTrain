@@ -79,11 +79,10 @@ label cupboard:
                         $daphne.liking=0
                         show screen points
                         "Запрос выполнен"
-#                    "ЧИТ: Дафна становиться более распутной":
-#                        hide screen points
-#                        $daphne.whoring+=1
-#                        show screen points
-#                        "Готово"
+                    "ЧИТ: Дафна становиться более распутной":
+                        hide screen points
+                        $daphne.whoring+=1
+                        show screen points
                     "ЧИТ: +100 галеонов":
                         hide screen points
                         $gold+=100
@@ -119,12 +118,12 @@ label cupboard:
         "- Священные свитки. Часть V -" if not day == 1 and cataloug_found:
             label sc_col_men_5:
                 $_scrollSection=4
-                jump sc_col_part
+                jump sc_col
 
-#        "- Священные свитки. Часть VI -" if not day == 1 and cataloug_found:
-#            label sc_col_men_6:
-#                $_scrollSection=5
-#                jump sc_col
+        "- Священные свитки. Часть VI -" if not day == 1 and cataloug_found:
+            label sc_col_men_6:
+                $_scrollSection=5
+                jump sc_col
 
 
                 label sc_col:
@@ -132,15 +131,6 @@ label cupboard:
                     python:
                         _itemCount=hero.Items.Count("scroll")
                         for i in range(_scrollSection*15, _scrollSection*15+15):
-                            if i<_itemCount:
-                                choose.AddItem("- C."+str(i+1)+": Священный свиток #"+str(i+1)+" -", "menu_cupboard_scroll_show" , i)
-                    $ choose.Show("cupboard")
-                    
-                label sc_col_part:
-                    $ choose = RunMenu()
-                    python:
-                        _itemCount=hero.Items.Count("scroll")
-                        for i in range(_scrollSection*15, _scrollSection*15+8):
                             if i<_itemCount:
                                 choose.AddItem("- C."+str(i+1)+": Священный свиток #"+str(i+1)+" -", "menu_cupboard_scroll_show" , i)
                     $ choose.Show("cupboard")

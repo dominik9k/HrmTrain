@@ -3724,7 +3724,7 @@ label test:
     $ dermo = "ch_sna defend"
     
     show screen credits_chibi
-    centered "{cps=20}{size=+5}{color=#ea91b0}-Тренер Ведьмы 1.5 (русская редакция)-{/color}{/size}\n\n\n\
+    centered "{cps=20}{size=+5}{color=#ea91b0}-Тренер Ведьмы 1.4 (русская редакция)-{/color}{/size}\n\n\n\
     {color=#e5e297}-\{Перевод Witch Trainer\}-{/color}\n\
     {color=#fff}\
     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15155170}Discordnk90{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=8041771}maniac4a{/a}, \n\
@@ -3734,12 +3734,12 @@ label test:
     \n\n\
     {color=#e5e297}-\{Программирование:\}-{/color}\n\
     {color=#fff}\
-    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
+    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
     \
     \n\n\
     {color=#e5e297}-\{Тексты, сценарии:\}-{/color}\n\
     {color=#fff}\
-    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
+    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
     \n\n\
     {color=#e5e297}-\{Техническая поддержка (форум):\}-{/color}\n\
     {color=#fff}\
@@ -3747,7 +3747,7 @@ label test:
     \n\n\
     {color=#e5e297}-\{Арты:\}-{/color}\n\
     {color=#fff}\
-    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}\n\
+    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}\n\
     \n\n\
     {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\
@@ -3755,7 +3755,7 @@ label test:
     \n\n\
     {size=-5}{color=#e5e297}-\{Тестирование:\}-{/color}\n\
     {color=#fff}\
-    BAPK, suhi, Bananamantana, Melem, Димитрий, Kril' {/color}{/size}\n\ # Обновить список тестировщиков
+    BAPK, suhi, Bananamantana, Melem, Димитрий, Kril' {/color}{/size}\n\
     \n\n\
     {size=-7}{color=#e5e297}-\{На ранних этапах игры участие также принимали:\}-{/color}\n\
     {color=#fff}\
@@ -3813,11 +3813,8 @@ label test:
     {color=#e5e297}\"Hitman\" {/color}{color=#cbcbcb}by  Kevin MacLeod.{/color}\n\
     {color=#e5e297}\"Music for Manatees\" {/color}{color=#cbcbcb}by  Kevin MacLeod.{/color}\n\
     {color=#e5e297}\"Plaint\" {/color}{color=#cbcbcb}by  Kevin MacLeod.{/color}\n\
-    {color=#e5e297}\"Supergirl\" {/color}{color=#cbcbcb}by  Reamonn.{/color}\n\
-    {color=#e5e297}\"Lullaby\" {/color}{color=#cbcbcb}by  Cure.{/color}\n\
-    {color=#e5e297}\"Symphony\" {/color}{color=#cbcbcb}by  Bitter Sweet.{/color}\n\
     {color=#e5e297}\"Under-the-Radar\" {/color}{color=#cbcbcb}by  PhobyAk.{/color}{/cps}"
-
+ 
     
     $ xder = 670
     $ yder = 410
@@ -3852,7 +3849,7 @@ label test:
     \
     {size=-1}{color=#e5e297}-\"AGENT\" pledges-{/size}\n\
     {color=#cbcbcb}Cameron MacDowell, Zarsher, Guynonymous, Nerzha, Silvanus2004, Xipomus, Carpy Rex, Adler, Deitan-Baruch St-Amand, Martin Neal, wetrx, mark howard, \
-Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexandre Rouleau, thomas taylor, Alexander, Redmoonx22, Valdee, Alexander Lykke Landkildehus, Lucas Ferrari, Dom, derek zhang,Charlatan, Preston C T, waylan, Forrest, Loopy, JohnnyBB, Phantom Void, Kyaa, Stephen Richardson, mark herzog, will newton, Sascha Klug, Joshua McDonald, Undying S, John Cawley III, KitsuneEyes, Slingthatcat, Kieran James, Homod saleh al-shammri, randomuser89, Paul Keating, Antonio B, Marko, Tobias, Akhil Chokshi, Smiling_Jack, Clif Morgan, Derek Heynsbergen, Jack Cartwright, Damien Zaid, callmemusashi Mozambiqued, Nemesis Valentine Vanyar, Stalker, Jason, 4nubis, Curtis, Michael Simon, AB, The Wanderer (Mark Hawker), paul, JEB, Voe, Aselobar, Elgrangato82, froste, YllegaL, Bisongun, Skye Tomlinson, Parad0x, Eric Chen, Destiny, Podchamawa Petrovitch, Will, lc, Sathyan Mathai, Lisandro Gil, bill tedd, Tommy Turner, Marcel Kral, Oric13, Ren Ashjiro, anthony donihee, Honey Withers, Christopher, TofuCats, Drake King, Bookfisher Herring, Dustpan, dusty parrott, Bjorn, Robert Jolly, wilson yang, Tudor G, Arzaz, Etienne Ngo, xazathothx, Robert L Schliff, RO, DavidB, Daedilus, david green, Matt, Ketil, ALEXANDER KOVALEV, Oa, John, PG, largo_leet, David, Artemsgvozdem, heyPert.{/color}{/size}\n\n{/cps}"
+Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexandre Rouleau, thomas taylor, Alexander, Redmoonx22, Valdee, Alexander Lykke Landkildehus, Lucas Ferrari, Dom, derek zhang,Charlatan, Preston C T, waylan, Forrest, Loopy, JohnnyBB, Phantom Void, Kyaa, Stephen Richardson, mark herzog, will newton, Sascha Klug, Joshua McDonald, Undying S, John Cawley III, KitsuneEyes, Slingthatcat, Kieran James, Homod saleh al-shammri, randomuser89, Paul Keating, Antonio B, Marko, Tobias, Akhil Chokshi, Smiling_Jack, Clif Morgan, Derek Heynsbergen, Jack Cartwright, Damien Zaid, callmemusashi Mozambiqued, Nemesis Valentine Vanyar, Stalker, Jason, 4nubis, Curtis, Michael Simon, AB, The Wanderer (Mark Hawker), paul, JEB, Voe, Aselobar, Elgrangato82, froste, YllegaL, Bisongun, Skye Tomlinson, Parad0x, Eric Chen, Destiny, Podchamawa Petrovitch, Will, lc, Sathyan Mathai, Lisandro Gil, bill tedd, Tommy Turner, Marcel Kral, Oric13, Ren Ashjiro, anthony donihee, Honey Withers, Christopher, TofuCats, Drake King, Bookfisher Herring, Dustpan, dusty parrott, Bjorn, Robert Jolly, wilson yang, Tudor G, Arzaz, Etienne Ngo, xazathothx, Robert L Schliff, RO, DavidB, Daedilus, david green, Matt, Ketil, ALEXANDER KOVALEV, Oa, John, PG, largo_leet, David, Artemsgvozdem, heyPert.{/color}{/size}\n\n{/cps}"\
          
          
     nvl clear
@@ -4246,17 +4243,19 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
     $ persistent.gold = persistent.gold + gold
 
 #label test2:
-#    $hermi.Items.AddItem("xxxsmallskirt")
+#    $hermi.Items.AddItem("miniskirt")
 #    $hero.Items.AddItem("wine",2)
     python:
         persistent.itemSet=dict() 
 
-        if hermi.Items.Any("xxxsmallskirt"):
-            persistent.itemSet.update({"xxxsmallskirt": hermi.Items.Count("xxxsmallskirt")})
+        if hermi.Items.Any("miniskirt"):
+            persistent.itemSet.update({"miniskirt": hermi.Items.Count("miniskirt")})
  
         for o in hero.Items():
-            if o.Name not in {"nets", "badge_01", "ball_dress", "shortskirt", "xshortskirt", "xxshortskirt", "xsmallskirt", "xxsmallskirt", "skirt_cheerleader", "skimpyshirt", "skirt_business", "shirt_cheerleader", "shirt_business", "tights" }:
+            if o.Name not in {"nets", "badge_01", "ball_dress"}:
                 persistent.itemSet.update({o.Name: hero.Items.Count(o.Name)})       
+
+
 
 
 
