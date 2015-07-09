@@ -3889,10 +3889,6 @@ label wrd_shirt_cheerleader_first_dress :
         $herView.addFaceName( "body_78.png" )
 
     $ wrd_new_items -= 1
-    $ wrd_skirt_cheerleader = 1
-    jump wrd_skirt_cheerleader_dress
-
-    $ wrd_new_items -= 1
     $ wrd_shirt_cheerleader = 1
     jump wrd_shirt_cheerleader_dress
     
