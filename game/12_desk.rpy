@@ -286,7 +286,7 @@ label desk:
             call nsp_wtevent_magls_1
             jump hermione_goout
             
-        "- Тест 2 -" :
+        "- Тест 2 -" if False:
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -301,11 +301,18 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" :
+        "- Тест 3 -" if False:
 
             $ hermi.whoring = 24
             $ cataloug_found = True
             call the_oddities
+            jump desk
+            
+        "- Тест 4 -" if False:
+
+            $ hermi.whoring = 24
+            $ cataloug_found = True
+            call daphne_main_menu
             jump desk
             
 ### DR'S NEWSPAPER ooo ###
