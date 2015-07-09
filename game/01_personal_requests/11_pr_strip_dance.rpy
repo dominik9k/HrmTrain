@@ -441,6 +441,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         with d5
         ">Ее рубашка внезапно спадает на пол."
         g4 "{size=-4}(Когда она успела??!){/size}"
+        call wrd_dress_undress
+        $herView.data().addItem( 'item_tits' )
         hide screen blktone8
         with d3
         hide screen bld1
@@ -1163,6 +1165,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                     hide screen bld1
                     with d3
                     pause
+                    call wrd_dress_undress
+                    $herView.data().addItem( 'item_tits' )
                     show screen no_shirt_no_skirt_dance
                     with d3
                     pause
@@ -2075,6 +2079,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                     show screen ctc
                     pause
                     show screen no_shirt_no_skirt_dance
+                    call wrd_dress_undress
+                    $herView.data().addItem( 'item_tits' )
                     with d3
                     pause
                     hide screen ctc
@@ -2085,9 +2091,6 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                     
                     
                     $ posHead = gMakePos( 390, 235 )
-                    $herViewHead.data().delItemKey('tits_no')
-                    $herViewHead.data().addItem('item_tits')
-                    $herViewHead.data().hideItemKey('dress')
                     $herViewHead.showQ( "body_90.png", posHead )
                     her "Вам обязательно быть настолько пошлым, сэр?"
                     $herViewHead.hideQ()
