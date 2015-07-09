@@ -93,7 +93,7 @@ label daphne_approaching(isKnocking=False):
                         "\"(Не сейчас.)\"":
                             jump daphne_main_menu_requests 
                     
-                    if not event.Name in {"dap_request_01", "IsRunNumber(4)"}: # Дневные задания или задания на которых не обещается подрок
+                    if not wtevent.Name in {"dap_request_01", "IsRunNumber(4)"}: # Дневные задания или задания на которых не обещается подрок
                         call daphne_pre_menu(_return) # Вызов меню подарков
                     else:
                         $screens.HideD3("bld1")
@@ -102,10 +102,10 @@ label daphne_approaching(isKnocking=False):
                         pause.5
                         call music_block
 # Завершение ивента, который исполнялся 
-                    if event._scenario==None: 
-                        $event.Finalize("day_main_menu" if daytime else "night_main_menu")    
+                    if wtevent._scenario==None: 
+                        $wtevent.Finalize("day_main_menu" if daytime else "night_main_menu")    
                     else:
-                        $event.Finalize("night_start" if daytime else "day_start")    
+                        $wtevent.Finalize("night_start" if daytime else "day_start")    
 
 
                      

@@ -10,116 +10,116 @@ label menu_reading_book:
     $ choose.Show("books_list")
 
     label menu_reading_book_2:
-        $ the_gift = event._img#"03_hp/18_store/08.png" # Copper book of spirit.
+        $ the_gift = wtevent._img#"03_hp/18_store/08.png" # Copper book of spirit.
         show screen gift
         with d3
 
-        "\"[event._caption]\"" "[event._description]"#" Вы хотите прочитать ее?"
+        "\"[wtevent._caption]\"" "[wtevent._description]"#" Вы хотите прочитать ее?"
         menu:
             "- Читать книгу -":
 # Проверяем, что освоены предыдущие ступени навыка:
 ### DR'S NEWSPAPER ooo ###
-                if event.GetValue("block")=="books_newsp":
-                    if event.Name=="nsp_newsp_book_p02a" and nsp_genie_writer < 1:
+                if wtevent.GetValue("block")=="books_newsp":
+                    if wtevent.Name=="nsp_newsp_book_p02a" and nsp_genie_writer < 1:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p02b" and nsp_genie_writer < 2:
+                    if wtevent.Name=="nsp_newsp_book_p02b" and nsp_genie_writer < 2:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p03a" and nsp_genie_writer < 3:
+                    if wtevent.Name=="nsp_newsp_book_p03a" and nsp_genie_writer < 3:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p03b" and nsp_genie_writer < 4:
+                    if wtevent.Name=="nsp_newsp_book_p03b" and nsp_genie_writer < 4:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p04" and nsp_genie_writer < 5:
+                    if wtevent.Name=="nsp_newsp_book_p04" and nsp_genie_writer < 5:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p05a" and nsp_genie_writer < 6:
+                    if wtevent.Name=="nsp_newsp_book_p05a" and nsp_genie_writer < 6:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p05b" and nsp_genie_writer < 7:
+                    if wtevent.Name=="nsp_newsp_book_p05b" and nsp_genie_writer < 7:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p06a" and nsp_genie_writer < 8:
+                    if wtevent.Name=="nsp_newsp_book_p06a" and nsp_genie_writer < 8:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
-                    if event.Name=="nsp_newsp_book_p06b" and nsp_genie_writer < 9:
+                    if wtevent.Name=="nsp_newsp_book_p06b" and nsp_genie_writer < 9:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
                     
-                if event.GetValue("block")=="books_newsp2":
-                    if event.Name == "nsp_newsp_book_typo1" and (nsp_genie_typographic < 0 or nsp_genie_typographic_exp < 2):
+                if wtevent.GetValue("block")=="books_newsp2":
+                    if wtevent.Name == "nsp_newsp_book_typo1" and (nsp_genie_typographic < 0 or nsp_genie_typographic_exp < 2):
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
                         
-                    if event.Name == "nsp_newsp_book_typo2" and (nsp_genie_typographic < 1 or nsp_genie_typographic_exp < 2):
+                    if wtevent.Name == "nsp_newsp_book_typo2" and (nsp_genie_typographic < 1 or nsp_genie_typographic_exp < 2):
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
                         
-                    if event.Name == "nsp_newsp_book_typo3" and (nsp_genie_typographic < 2 or nsp_genie_typographic_exp < 2):
+                    if wtevent.Name == "nsp_newsp_book_typo3" and (nsp_genie_typographic < 2 or nsp_genie_typographic_exp < 2):
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
                         
-                    if event.Name == "nsp_newsp_book_typo4" and (nsp_genie_typographic < 3 or nsp_genie_typographic_exp < 2):
+                    if wtevent.Name == "nsp_newsp_book_typo4" and (nsp_genie_typographic < 3 or nsp_genie_typographic_exp < 2):
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
                         
-                    if event.Name == "nsp_newsp_book_typo5" and (nsp_genie_typographic < 4 or nsp_genie_typographic_exp < 2):
+                    if wtevent.Name == "nsp_newsp_book_typo5" and (nsp_genie_typographic < 4 or nsp_genie_typographic_exp < 2):
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
                         
-                    if event.Name == "nsp_newsp_book_typo6" and (nsp_genie_typographic < 5 or nsp_genie_typographic_exp < 2):
+                    if wtevent.Name == "nsp_newsp_book_typo6" and (nsp_genie_typographic < 5 or nsp_genie_typographic_exp < 2):
                         m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
                         hide screen gift
                         jump books_list
                         
-                if event.GetValue("block")=="books_newsp2":
-                    if event.Name == "nsp_newsp_book_photo2" and (nsp_genie_photocamera < 1 or nsp_genie_photocamera_exp < 3):
+                if wtevent.GetValue("block")=="books_newsp2":
+                    if wtevent.Name == "nsp_newsp_book_photo2" and (nsp_genie_photocamera < 1 or nsp_genie_photocamera_exp < 3):
                         m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
                         hide screen gift
                         jump books_list
                         
-                    if event.Name == "nsp_newsp_book_photo3" and (nsp_genie_photocamera < 2 or nsp_genie_photocamera_exp < 3):
+                    if wtevent.Name == "nsp_newsp_book_photo3" and (nsp_genie_photocamera < 2 or nsp_genie_photocamera_exp < 3):
                         m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
                         hide screen gift
                         jump books_list
 
-                    if event.Name == "nsp_newsp_book_photo4" and (nsp_genie_photocamera < 3 or nsp_genie_photocamera_exp < 3):
+                    if wtevent.Name == "nsp_newsp_book_photo4" and (nsp_genie_photocamera < 3 or nsp_genie_photocamera_exp < 3):
                         m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
                         hide screen gift
                         jump books_list
                         
-                    if event.Name == "nsp_newsp_book_video" and (nsp_genie_photocamera < 4 or nsp_genie_sphere_ruby_level_eff < 1 or nsp_genie_sphere_diamond_level_eff < 1 or nsp_genie_sphere_sapphire_level_eff < 3):
+                    if wtevent.Name == "nsp_newsp_book_video" and (nsp_genie_photocamera < 4 or nsp_genie_sphere_ruby_level_eff < 1 or nsp_genie_sphere_diamond_level_eff < 1 or nsp_genie_sphere_sapphire_level_eff < 3):
                         m "Для освоения навыков из этой книги вам понадобится владение всеми видами фотоаппаратов, хрустальный шар, сапфир 3 уровня, рубин и алмаз."
                         hide screen gift
                         jump books_list
                         
 ############
 
-                if event.GetValue("block")=="books_edu":
-                    if event.prevInList.GetValue("block")!=event.GetValue("block") or event.prevInList.IsDone():
+                if wtevent.GetValue("block")=="books_edu":
+                    if wtevent.prevInList.GetValue("block")!=wtevent.GetValue("block") or wtevent.prevInList.IsDone():
                         jump reading_book_xx
                     else:
                         m "Эта книга пока слишком сложна для меня."
                         hide screen gift
                         jump books_list
                 else:
-                    if event.Name=="book_05_b" and not this.book_05.IsDone():
+                    if wtevent.Name=="book_05_b" and not this.book_05.IsDone():
                         m "Есть странные люди, которые приступают к книге со второй ее части. Но я не из таких."
                         jump expression _label
                     else:
@@ -129,14 +129,14 @@ label menu_reading_book:
                 jump expression _label #books_on_improvement
 
     label reading_book_done:
-        $ the_gift = event._img#"03_hp/18_store/08.png" # Copper book of spirit.
+        $ the_gift = wtevent._img#"03_hp/18_store/08.png" # Copper book of spirit.
         show screen gift
         with d3
-        "\"[event._caption]\"" "[event._description]."
+        "\"[wtevent._caption]\"" "[wtevent._description]."
 
 
 # Отдельная обработка для Вайфу - ее нужно читать несколько раз                                
-        if event.Name=="book_07":
+        if wtevent.Name=="book_07":
             if waifu_book_completed:
                 m "Я не думаю, что повторное чтение этой книги даст мне хоть что-то."
                 hide screen gift
@@ -158,12 +158,12 @@ label menu_reading_book:
                     jump reading_book_xx
         else:
             m "Я уже закончил ее. "
-            if event._block=="books_edu" and event._conclusion!="":
-                m "Она дала мне новый навык: [event._conclusion]"
+            if wtevent._block=="books_edu" and wtevent._conclusion!="":
+                m "Она дала мне новый навык: [wtevent._conclusion]"
             else:
-                m "[event._conclusion]"
+                m "[wtevent._conclusion]"
 
-            if event.Name=="book_04":
+            if wtevent.Name=="book_04":
                 g4 "Я обуздал свой дух!"
                 g9 "Мой дух - моя сучка!"
 
@@ -280,13 +280,13 @@ label desk:
             
             $ nsp_germiona_magls_1_statimg = "New"
             $ nsp_germiona_magls_1_photo = "dis"
-            $ nsp_event_magls_1 = 0
+            $ nsp_wtevent_magls_1 = 0
             $ cur_level = 1
             call wrd_dress_change_silent
-            call nsp_event_magls_1
+            call nsp_wtevent_magls_1
             jump hermione_goout
             
-        "- Тест 2 -" if False :
+        "- Тест 2 -" if False:
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -301,11 +301,18 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" if False :
+        "- Тест 3 -" if False:
 
             $ hermi.whoring = 24
             $ cataloug_found = True
             call the_oddities
+            jump desk
+            
+        "- Тест 4 -" if False:
+
+            $ hermi.whoring = 24
+            $ cataloug_found = True
+            call daphne_main_menu
             jump desk
             
 ### DR'S NEWSPAPER ooo ###
@@ -368,7 +375,7 @@ label desk:
                         jump desk
 
         "- Продолжить чтение -" if currentBook!=None:
-            $event=this(currentBook)
+            $wtevent=this(currentBook)
             jump reading_book_xx 
           
         
@@ -556,9 +563,9 @@ label reading_book_xx:
 
 
     if raining:
-        ">Вы читаете книгу [event._caption], слушая дождь, барабанящий по крыше вашей башни."
+        ">Вы читаете книгу [wtevent._caption], слушая дождь, барабанящий по крыше вашей башни."
     else:
-        ">Вы читаете книгу [event._caption]..."
+        ">Вы читаете книгу [wtevent._caption]..."
    
     call chap_finished_xx
     
@@ -603,7 +610,7 @@ label reading_book_xx:
 #            ">Осталось еще несколько глав."
 
     ">Осталось еще несколько глав."       
-    $currentBook=event.Name
+    $currentBook=wtevent.Name
 
     if fire_in_fireplace:
         hide screen reading_near_fire
@@ -622,9 +629,9 @@ label concetrationg_reading:
     call chapter_check_book_xx
     return
 label chap_finished_xx:
-    if event.Name=="book_05":
-        $event.IncValue("status", 1)  #+=1
-        $renpy.say("Глава [event._status]", 
+    if wtevent.Name=="book_05":
+        $wtevent.IncValue("status", 1)  #+=1
+        $renpy.say("Глава [wtevent._status]", 
         [
          "Повествуется о Галадриэли - нежной и доброй эльфийской принцессе.",
          "Повествуется об отце Галадриэли - Короле Метисе и его друге детства - Мофоселисе.",
@@ -646,13 +653,13 @@ label chap_finished_xx:
          "Галадриэль быстро набирает популярность. Люди, Темные Эльфы и даже карлики, она раздвигает ноги для всех.",
          "Слава о молодой и красивой эльфийской шлюхе распространяется окрест. Галадриэль принимает свою новую жизнь в борделе.",
          "Но внезапно все резко меняется. Галадриэль узнает, что она беременна. - Конец первой книги -"
-        ][event._status-1]
+        ][wtevent._status-1]
         )
 
 
-    if event.Name=="book_05_b":
-        $event.IncValue("status", 1)  #+=1
-        $renpy.say("Глава [event._status]",
+    if wtevent.Name=="book_05_b":
+        $wtevent.IncValue("status", 1)  #+=1
+        $renpy.say("Глава [wtevent._status]",
         [   
          "Галадриэль беременна уже несколько месяцев. К удивлению принцессы, ее популярность растет, как будто в прямой зависимости от размера ее живота.",
          "Хотя Галадриэль и ведет себя, как послушная шлюха, на самом деле, она продумывает побег из борделя.",
@@ -675,12 +682,12 @@ label chap_finished_xx:
          "Проходит несколько минут, пока она понимает, что она никогда не была беременна. Все приключения - это лишь сон.",
          "Галадриэль бросается к отцу и обнимает его. Девушка пережила слишком многое в \"прошлой жизни\". Она счастлива и соглашается выйти замуж за канцлера Мофоселиса.",
          "{size=-1}Галадриэль стоит у алтаря. Она довольна и счастлива. Вдруг она замечает нечто, что наполняет ее сердце ужасом. На ее руке - шрам. Место укуса собаки. - Конец -{/size}"
-        ][event._status-1]
+        ][wtevent._status-1]
         )
 
-    if event.Name=="book_06":
-        $event.IncValue("status", 1)  #+=1
-        $renpy.say("Глава [event._status]", 
+    if wtevent.Name=="book_06":
+        $wtevent.IncValue("status", 1)  #+=1
+        $renpy.say("Глава [wtevent._status]", 
         [
         "Семейство благородных северян.",
         "Королевская семья и король.",
@@ -702,18 +709,18 @@ label chap_finished_xx:
         "Персонаж, за которого вы болеете, влюбляется в милую девушку.",
         "Персонаж, за которого вы болели, зверски убит. Его девушку насилуют и тоже убивают.",
         "Новая раса наполовину замороженной нежити включается в историю. Продолжение следует..."
-        ][event._status-1]
+        ][wtevent._status-1]
         )
 
-    if event.Name=="book_07":
+    if wtevent.Name=="book_07":
         $ book_07_units +=1
-        $event._status=book_07_units
+        $wtevent._status=book_07_units
         call waifu
 
 ### DR'S NEWSPAPER ooo ###
-    if event.Name=="nsp_newsp_book_pre":
-        $event.IncValue("status", 1)  #+=1
-        $renpy.say("Глава [event._status]", 
+    if wtevent.Name=="nsp_newsp_book_pre":
+        $wtevent.IncValue("status", 1)  #+=1
+        $renpy.say("Глава [wtevent._status]", 
         [
         "Во вводной главе говорится об истории появления и развития газет в мире магов.",
         "Вы изучаете основы написания газетных статей.",
@@ -725,24 +732,24 @@ label chap_finished_xx:
         "Вы изучаете основы оформления газет.",
         "Вы изучаете основы оформления газет.",
         "В заключительной главе приводится краткий перечень советов начинающему редактору.",
-        ][event._status-1]
+        ][wtevent._status-1]
         )
 
-    if event.Name in ["nsp_newsp_book_p01", "nsp_newsp_book_p02a", "nsp_newsp_book_p02b", "nsp_newsp_book_p03a", "nsp_newsp_book_p03b"]:
-        $event.IncValue("status", 1)  #+=1
+    if wtevent.Name in ["nsp_newsp_book_p01", "nsp_newsp_book_p02a", "nsp_newsp_book_p02b", "nsp_newsp_book_p03a", "nsp_newsp_book_p03b"]:
+        $wtevent.IncValue("status", 1)  #+=1
             
-    if event.Name in ["nsp_newsp_book_p04", "nsp_newsp_book_p05a", "nsp_newsp_book_p05b", "nsp_newsp_book_p06a", "nsp_newsp_book_p06b"]:
-        $event.IncValue("status", 1)  #+=1
+    if wtevent.Name in ["nsp_newsp_book_p04", "nsp_newsp_book_p05a", "nsp_newsp_book_p05b", "nsp_newsp_book_p06a", "nsp_newsp_book_p06b"]:
+        $wtevent.IncValue("status", 1)  #+=1
 
-    if event.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
-        $event.IncValue("status", 1)  #+=1
+    if wtevent.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
+        $wtevent.IncValue("status", 1)  #+=1
             
-    if event.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
-        $event.IncValue("status", 1)  #+=1
+    if wtevent.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
+        $wtevent.IncValue("status", 1)  #+=1
             
-    if event.Name=="nsp_newsp_book_video":
-        $event.IncValue("status", 1)  #+=1
-        $renpy.say("Глава [event._status]", 
+    if wtevent.Name=="nsp_newsp_book_video":
+        $wtevent.IncValue("status", 1)  #+=1
+        $renpy.say("Глава [wtevent._status]", 
         [
         "Во вводной главе говорится об истории появления и развития прорицательства в мире магов. И только в конце вы сообразили, что это вообще вас не касается.",
         "Вы изучаете принципы компоновки видеокадра.",
@@ -754,22 +761,22 @@ label chap_finished_xx:
         "Вы продолжаете изучать заклинания для переноса информации из шара на бумагу. Кажется, начинает понемногу получаться.",
         "Вы завершаете изучать заклинания для переноса информации из шара на бумагу. Остается прочитать заключительную главу.",
         "Ну разумеется, в последней главе находится фотография автора и его благодарности жене, детям, домашним животным и маглам по соседству.",
-        ][event._status-1]
+        ][wtevent._status-1]
         )
 
 ###        
     $ renpy.play('sounds/win_04.mp3')   #Not loud.
     hide screen notes
     show screen notes
-    if event._block=="books_edu": 
-#        $event._status=this.GetCall(event.Name).SetValue("status", event._status+1)  #event.SetValue("status", event._status+1)  #+=1
-        $event.IncValue("status", 1)    
-    ">Вы закончили \"главу [event._status]\" этой книги."
+    if wtevent._block=="books_edu": 
+#        $wtevent._status=this.GetCall(wtevent.Name).SetValue("status", wtevent._status+1)  #wtevent.SetValue("status", wtevent._status+1)  #+=1
+        $wtevent.IncValue("status", 1)    
+    ">Вы закончили \"главу [wtevent._status]\" этой книги."
     return
     
 ###
 label chapter_check_book_xx: #Checks if the chapter just finished was the last one.
-    if (event.IsDone() and event.Name!="book_07") or (event.Name=="book_07" and book_07_units == 20):#book_xx_units == 10:
+    if (wtevent.IsDone() and wtevent.Name!="book_07") or (wtevent.Name=="book_07" and book_07_units == 20):#book_xx_units == 10:
         if fire_in_fireplace:
             show screen done_reading_02  
             hide screen reading_near_fire
@@ -783,12 +790,12 @@ label chapter_check_book_xx: #Checks if the chapter just finished was the last o
         ">Это была последняя глава. Вы закончили эту книгу."
         $currentBook=None
 
-        if event.Name=="book_06":
+        if wtevent.Name=="book_06":
             g4 "Что за херня! Я ненавижу человека, который это написал!"
             m "Впрочем, все эти изнасилования натолкнули меня на пару идей..."
 
 
-        if event.Name=="book_07":
+        if wtevent.Name=="book_07":
             if complited_leena_already and complited_shea_already and complited_stevens_already and victoria >= 1 and shea >= 1 and leena >= 1: #Harem ending. The DAHR's ticket.
                 m "Вау! Отличная книга! Это было неплохо!"
                 
@@ -847,43 +854,43 @@ label chapter_check_book_xx: #Checks if the chapter just finished was the last o
         $ renpy.play('sounds/win_04.mp3')   #Not loud.
         hide screen notes
         show screen notes
-        if event._conclusion!="":
-            if event._block=="books_edu":
-                m "Новый навык: [event._conclusion]"
+        if wtevent._conclusion!="":
+            if wtevent._block=="books_edu":
+                m "Новый навык: [wtevent._conclusion]"
             else:
-                m "[event._conclusion]"
+                m "[wtevent._conclusion]"
 
 # Изменения навыка по завершению книги (кроме Вайфу - book_07 в ней навык меняется отдельно)
 # Можно было сделать через событие, но тогда получится более громоздко. Так что пока так:
-        if event.Name in ["book_01", "book_02", "book_03", "book_04"]:
+        if wtevent.Name in ["book_01", "book_02", "book_03", "book_04"]:
             $ concentration += 1
-        if event.Name in ["book_05", "book_05_b", "book_06"]:     
+        if wtevent.Name in ["book_05", "book_05_b", "book_06"]:     
             $ imagination +=1
-        if event.Name in ["book_08", "book_09", "book_10"]:
+        if wtevent.Name in ["book_08", "book_09", "book_10"]:
             $ s_reading_lvl +=1
-        if event.Name in ["book_12", "book_13", "book_14", "book_15"]:
+        if wtevent.Name in ["book_12", "book_13", "book_14", "book_15"]:
             $ speedwriting += 1
 
 ### DR'S NEWSPAPER ooo ###
 
-        if event.Name=="nsp_newsp_book_pre" and nsp_newspaper_menu == 0:
+        if wtevent.Name=="nsp_newsp_book_pre" and nsp_newspaper_menu == 0:
             $ nsp_newspaper_menu = 1
             
-        if event.Name in ["nsp_newsp_book_p01", "nsp_newsp_book_p02a", "nsp_newsp_book_p02b", "nsp_newsp_book_p03a", "nsp_newsp_book_p03b"]:
+        if wtevent.Name in ["nsp_newsp_book_p01", "nsp_newsp_book_p02a", "nsp_newsp_book_p02b", "nsp_newsp_book_p03a", "nsp_newsp_book_p03b"]:
             $ nsp_genie_writer += 1
             
-        if event.Name in ["nsp_newsp_book_p04", "nsp_newsp_book_p05a", "nsp_newsp_book_p05b", "nsp_newsp_book_p06a", "nsp_newsp_book_p06b"]:
+        if wtevent.Name in ["nsp_newsp_book_p04", "nsp_newsp_book_p05a", "nsp_newsp_book_p05b", "nsp_newsp_book_p06a", "nsp_newsp_book_p06b"]:
             $ nsp_genie_writer += 1
 
-        if event.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
+        if wtevent.Name in ["nsp_newsp_book_typo1", "nsp_newsp_book_typo2", "nsp_newsp_book_typo3", "nsp_newsp_book_typo4", "nsp_newsp_book_typo5", "nsp_newsp_book_typo6"]:
             $ nsp_genie_typographic += 1
             $ nsp_genie_typographic_exp = 0
             
-        if event.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
+        if wtevent.Name in ["nsp_newsp_book_photo1", "nsp_newsp_book_photo2", "nsp_newsp_book_photo3", "nsp_newsp_book_photo4"]:
             $ nsp_genie_photocamera += 1
             $ nsp_genie_photocamera_exp = 0
             
-        if event.Name == "nsp_newsp_book_video" :
+        if wtevent.Name == "nsp_newsp_book_video" :
             $ nsp_genie_sphere_video = True
             
 ###

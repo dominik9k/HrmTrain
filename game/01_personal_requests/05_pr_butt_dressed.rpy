@@ -8,7 +8,7 @@ label new_request_05:
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
 
     
@@ -793,7 +793,7 @@ label screams_of_rapings:
     with Dissolve(.3)
     pause.5
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
     if daytime:
         $ hermione_takes_classes = True
         jump day_main_menu

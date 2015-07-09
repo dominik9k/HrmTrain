@@ -34,7 +34,6 @@ label newsp_letter:
         $hero("{size=-4}Хммм. Ладно, только ради тебя, дам моду еще один шанс.{/size}")
         $ nsp_newspaper_menu = 3
 
-    $event.Finalize()
     call screen main_menu_01
 
 label nsp_newsp_themes:

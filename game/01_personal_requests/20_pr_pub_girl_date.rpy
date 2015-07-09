@@ -11,7 +11,7 @@ label new_request_20: #LV.5 (Whoring = 12 - 14)
         "\"(Да, давай сделаем это!)\"":
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
     
@@ -118,7 +118,7 @@ label new_request_20: #LV.5 (Whoring = 12 - 14)
     
     call music_block 
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     jump day_main_menu
     
@@ -710,7 +710,7 @@ label new_request_20_complete: # <==============================================
 
     call music_block
     
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     return
     

@@ -12,7 +12,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
  
     label new_request_31_start:
@@ -1006,7 +1006,7 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
     hide screen blkfade
     with d3
  
-    if event.Name=="new_request_08": 
+    if wtevent.Name=="new_request_08": 
         jump new_request_08_finish
     m "Да, мисс Грейнджер, 90 очков \"Гриффиндору\"." 
     $ gryffindor +=90
@@ -1048,8 +1048,8 @@ label new_request_31: #LV.8 (Whoring = 21 - 23)
 
     call music_block
     
-    $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,3,1))
+    $wtevent.Finalize()    
+    $SetHearts(GetStage(wtevent._finishCount,1,3,1))
     if daytime:
         $ hermione_takes_classes = True
         jump night_main_menu

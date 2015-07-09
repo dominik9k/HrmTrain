@@ -44,7 +44,7 @@ label nsp_event_nude_1 :
     elif cur_level == 5 :
         ">текст преивента голой 1-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -148,7 +148,7 @@ label nsp_event_nude_1_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -170,7 +170,7 @@ label nsp_event_nude_2 :
         ">текст преивента голой 2-5" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -273,7 +273,7 @@ label nsp_event_nude_2_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -290,7 +290,7 @@ label nsp_event_nude_3 :
     elif cur_level == 5 :
         ">текст преивента голой 3-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -418,7 +418,7 @@ label nsp_event_nude_3_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -435,7 +435,7 @@ label nsp_event_nude_4 :
     elif cur_level == 5 :
         ">текст преивента голой 4-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -543,7 +543,7 @@ label nsp_event_nude_4_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -560,7 +560,7 @@ label nsp_event_nude_5 :
     elif cur_level == 5 :
         ">текст преивента голой 5-5"   
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -666,7 +666,7 @@ label nsp_event_nude_5_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 

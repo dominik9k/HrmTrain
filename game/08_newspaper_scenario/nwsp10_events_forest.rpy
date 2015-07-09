@@ -85,7 +85,7 @@ label nsp_event_forest_1 :
         ">текст преивента леса 1-5"        
     
     $ hermione_out_halfday += 2    
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -233,7 +233,7 @@ label nsp_event_forest_1_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -255,7 +255,7 @@ label nsp_event_forest_2 :
         ">текст преивента леса 2-5" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -360,7 +360,7 @@ label nsp_event_forest_2_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 

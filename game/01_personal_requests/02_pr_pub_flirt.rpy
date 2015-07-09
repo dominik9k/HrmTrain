@@ -8,7 +8,7 @@ label new_request_02_b:
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
     
     m "Мисс Грейнджер?"
@@ -102,7 +102,7 @@ label new_request_02_b:
 
     $ hermione_takes_classes = True
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     jump day_main_menu
    
@@ -542,7 +542,7 @@ label new_request_02_b_complete:
     
     $ p_level_02_active = True #When turns TRUE public favors of level 02 become available. 
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     if hermi.whoring <= 2:
         $ hermi.whoring +=1

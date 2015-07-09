@@ -116,10 +116,10 @@
 # Event.NotFinished - коментировать все (отката нет)
 # В Объекте This(ниже старый код): в сравнении вместо num поставить num -1     
 #    def IsRunNumber(num): # Это запуск номер num
-#        return event._finishCount==num-1 # было - num
+#        return wtevent._finishCount==num-1 # было - num
 
 #    def IsRunNumberOrMore(num): # Это запуск номер num или последующий?
-#        return event._finishCount>=num-1 # было - num
+#        return wtevent._finishCount>=num-1 # было - num
 
         def Finalize(self, label=None):
             self.IncFinished()

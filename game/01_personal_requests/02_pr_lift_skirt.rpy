@@ -8,7 +8,7 @@ label new_request_02: #SHOW ME YOUR Трусики
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
     $herView.showQQ( "body_01.png", pos )
     her "Так, что же мне нужно сделать?"
@@ -439,7 +439,7 @@ label new_request_02: #SHOW ME YOUR Трусики
         $ hermi.whoring +=1
 #    $ request_02 += 1
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
     if daytime:
         $ hermione_takes_classes = True
         jump day_main_menu
