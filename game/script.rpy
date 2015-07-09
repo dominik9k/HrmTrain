@@ -567,6 +567,11 @@ init:
     
 #define m = Character(None, window_left_padding=200, image="mage", color="#402313", ctc="ctc3", ctc_position="fixed")
 
+###### Felix Locking ######
+
+    $ felixblock = False
+
+####################
 
 label splashscreen:
     $ renpy.pause(0)
