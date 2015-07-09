@@ -20,7 +20,8 @@ label daphne_approaching(isKnocking=False):
 
     $daphne.Visibility("body+", False)
 
-
+    $felixblock = False
+    
     python:
         for t in [
             (0, ["daphne:> ~55 00 1 def// Да, профессор?"]),
