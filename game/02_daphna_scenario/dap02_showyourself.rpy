@@ -180,13 +180,13 @@ label dap_request_02_complete:
                 $daphne("~55 00 1 neu// Спасибо, сэр...")
                 $hero("Хм....// «Спасибо... сэр...»// Что-то это мне напоминает....// Ах да....")
                 stop music
-                $screens.Show(Dissolve(1), "blkfade") #По хорошиму сдесь должен быть whitefade, но игру выкидывает, когда я его ставлю. Хз почему.
+                $screens.Show(Dissolve(1), "blkfade") #По хорошему здесь должен быть whitefade, но игру выкидывает, когда я его ставлю. Хз почему.
                 pause 1.5
                 "Мне нравятся ваши трусики Гермиона..."
                 "Спасибо, профессор..."
                 $hero("..................")
                 $hero("#(Хм....)")
-                $hero(g9, "#(Интересно... что сейчас делает Гнрмиона)")
+                $hero(g9, "#(Интересно... что сейчас делает Гермиона)")
                 $daphne("~55 02 2 ehh// #.....Сэр?!")
                 $hero(m, "......?!")
                 $screens.Hide(Dissolve(1), "blkfade")
@@ -205,7 +205,7 @@ label dap_request_02_complete:
                 $screens.Hide(Dissolve(1), "blkfade") 
                 $screens.Show("ctc").Pause().Hide("ctc")
 
-                call daphne_pre_finish_menu_01
+                $wtevent.Finalize("daphne_goout")
                 $hero(g4, "Кажется я перегнул....")
                 $daphne.liking -= 20
                 $wtevent.Finalize ("night_start")

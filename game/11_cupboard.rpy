@@ -79,11 +79,11 @@ label cupboard:
                         $daphne.liking=0
                         show screen points
                         "Запрос выполнен"
-                    "ЧИТ: Дафна становиться более распутной":
-                        hide screen points
-                        $daphne.whoring+=1
-                        show screen points
-                        "Готово"
+#                    "ЧИТ: Дафна становиться более распутной":
+#                        hide screen points
+#                        $daphne.whoring+=1
+#                        show screen points
+#                        "Готово"
                     "ЧИТ: +100 галеонов":
                         hide screen points
                         $gold+=100
