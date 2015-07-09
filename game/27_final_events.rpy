@@ -206,6 +206,8 @@ label want_to_rule:
                     $herView.hideQQ()
 
                     #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+                    call wrd_dress_undress_shirts
+                    $herView.data().addItem( 'item_tits' )
                     $herView.data().addItem( 'item_pose_show_tits' )
 
                     $herView.showQQ( "body_82.png", pos )
@@ -249,6 +251,7 @@ label want_to_rule:
             
 
                     $herView.data().hideItemKey('skirt')
+                    call wrd_dress_undress_skirts
                     #$herView.data().hideItemKey('panties')                    
                     #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
                     $herView.data().addItem( 'item_pose_lifted_skirt' )
@@ -350,6 +353,8 @@ label want_to_rule:
                     
                     
                     $herView.hideQ()
+                    call wrd_dress_undress
+                    $herView.data().addItem('item_tits')
                     $herView.data().hideItemKey('dress')
                     $herView.data().hideItemKey('skirt')
                     $herView.data().hideItemKey('panties')

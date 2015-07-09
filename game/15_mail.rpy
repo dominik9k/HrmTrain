@@ -1,7 +1,6 @@
 label mail:
 
     $ this.RunStep("MAIL")    
-
     if got_paycheck == True and finished_report >= 1 and letter_from_ficbook_fun == False:
         $ letters -= 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
         $ got_paycheck = False #When TRUE the paycheck is in the mail. Can't do paper work.
@@ -73,7 +72,7 @@ label mail:
             show screen bld1
             show screen letter
             show screen ctc
-            g9 "Хороший писатель никогда не раскроет никогда не раскрывает сюжетных поворотов!"
+            g9 "Хороший писатель никогда не раскрывает сюжетных поворотов!"
             m "..."
             m "Я и вправду сказал это?"
             hide screen letter
@@ -403,7 +402,25 @@ label bigletter(__pages): #Письмо родителей Дафны Дамбл
     $screens.Hide("letterbig", "ctc", d3, "bld1")
     return
 
+label bigtext(__pages): #То же, что и bigletter , но не вычетает единичку из писем
+    $screens.Hide("owl").Show("owl_02")
 
+    $__pageIndex=0
+    label letterbig_newpage:
+    $screens.Show("letterbig", par1=__pages[__pageIndex])
+    $screens.Show("ctc", d3, "bld1").Pause()
+
+    menu:
+        "<<< Вернуться " if __pageIndex>0:
+            $__pageIndex-=1                
+            jump letterbig_newpage
+        " Продолжить >>>" if __pageIndex<len(__pages)-1:
+            $__pageIndex+=1
+            jump letterbig_newpage
+        "- Завершить -":
+            pass    
+    $screens.Hide("letterbig", "ctc", d3, "bld1")
+    return
 
 
 

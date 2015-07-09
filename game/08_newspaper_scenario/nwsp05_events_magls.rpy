@@ -56,6 +56,8 @@ label nsp_event_magls_1 :
             her "Ладно, думаю ничего страшного тут нет."
             
             $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+            call wrd_dress_undress
+            $ herView.data().addItem ("item_tits_no")
             $ herView.data().addItemSet( 'hermione_business_clothes' )
             hide screen hermione_02
             show screen nsp_hermione_business
@@ -81,6 +83,8 @@ label nsp_event_magls_1 :
             her "Всегда, сэр."
             
             $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+            call wrd_dress_undress
+            $ herView.data().addItem ("item_tits_no")
             $ herView.data().addItemSet( 'hermione_business_clothes' )
             $ herView.data().setStyleKey( 'shirt_blouse_business1', 'opened_1' )
             hide screen hermione_02
@@ -97,6 +101,8 @@ label nsp_event_magls_1 :
         $herView.hideshowQQ( "body_01.png", pos )
         hide screen nsp_hermione_business
         $ herView.data().delItemSet( 'hermione_business_clothes' )
+        call wrd_dress_change_silent
+        
     
     
     elif cur_level == 2 :
@@ -128,6 +134,8 @@ label nsp_event_magls_1_complete :
     
         hide screen hermione_02
         show screen nsp_hermione_business
+        call wrd_dress_undress
+        $ herView.data().addItem ("item_tits_no")
         $ herView.data().addItemSet( 'hermione_business_clothes' )
         $ herView.data().setStyleKey( 'shirt_blouse_business1', 'opened_1' )
         $herView.hideshowQQ( "body_01.png", pos )
@@ -154,6 +162,7 @@ label nsp_event_magls_1_complete :
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
         $ herView.data().delItemSet( 'hermione_business_clothes' )
+        call wrd_dress_change_silent
         hide screen nsp_hermione_business
         show screen hermione_02
         $herView.hideshowQQ( "body_01.png", pos )
