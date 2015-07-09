@@ -12,7 +12,7 @@ label new_request_23: #LV.6 (Whoring = 15 - 17)
         "\"(Да, давай сделаем это!)\"":
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
     
@@ -151,7 +151,7 @@ label new_request_23: #LV.6 (Whoring = 15 - 17)
     
     $ hermione_takes_classes = True
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
     jump day_main_menu
     
 
@@ -760,7 +760,7 @@ label new_request_23_complete: # <==============================================
 
     call music_block
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
     return
 
     

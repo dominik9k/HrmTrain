@@ -37,5 +37,5 @@ label dap_interlude_02: #LV.1 (Whoring = 0 - 2)
 
     $hero("Вот. Теперь другое дело...// Мисс! У вас странно мечтательный вид,... Вы меня слышите?")
 
-    return event.Finalize()
+    return wtevent.Finalize()
 #    $event.Finalize("daphne_approaching") # возвращается в глвное меню

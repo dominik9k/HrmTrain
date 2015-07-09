@@ -34,6 +34,7 @@ label hermione_approaching:
 
 
     label hermione_main_menu:
+    $ pos = POS_410
     menu:
 ### DR'S NEWSPAPER ooo ###
 

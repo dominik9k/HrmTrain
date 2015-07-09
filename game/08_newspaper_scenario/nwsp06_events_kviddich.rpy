@@ -99,7 +99,7 @@ label nsp_event_kviddich_1 :
     elif cur_level == 5 :
         ">текст преивента квиддича 1-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -285,7 +285,7 @@ label nsp_event_kviddich_1_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -315,7 +315,7 @@ label nsp_event_kviddich_2 :
         ">текст преивента квиддича 2-5" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -418,7 +418,7 @@ label nsp_event_kviddich_2_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -435,7 +435,7 @@ label nsp_event_kviddich_3 :
     elif cur_level == 5 :
         ">текст преивента квиддича 3-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -543,7 +543,7 @@ label nsp_event_kviddich_3_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -560,7 +560,7 @@ label nsp_event_kviddich_4 :
     elif cur_level == 5 :
         ">текст преивента квиддича 4-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -668,7 +668,7 @@ label nsp_event_kviddich_4_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -685,7 +685,7 @@ label nsp_event_kviddich_5 :
     elif cur_level == 5 :
         ">текст преивента квиддича 5-5"   
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -795,7 +795,7 @@ label nsp_event_kviddich_5_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -812,7 +812,7 @@ label nsp_event_kviddich_6 :
     elif cur_level == 5 :
         ">текст преивента квиддича 6-5"   
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -916,6 +916,6 @@ label nsp_event_kviddich_6_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return

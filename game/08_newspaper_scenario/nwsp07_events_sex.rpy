@@ -39,7 +39,7 @@ label nsp_event_sex_1 :
     elif cur_level == 5 :
         ">текст преивента секса 1-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -140,7 +140,7 @@ label nsp_event_sex_1_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -162,7 +162,7 @@ label nsp_event_sex_2 :
         ">текст преивента секса 2-5" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -265,7 +265,7 @@ label nsp_event_sex_2_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -282,7 +282,7 @@ label nsp_event_sex_3 :
     elif cur_level == 5 :
         ">текст преивента секса 3-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -383,7 +383,7 @@ label nsp_event_sex_3_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -400,7 +400,7 @@ label nsp_event_sex_4 :
     elif cur_level == 5 :
         ">текст преивента секса 4-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -504,7 +504,7 @@ label nsp_event_sex_4_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -521,7 +521,7 @@ label nsp_event_sex_5 :
     elif cur_level == 5 :
         ">текст преивента секса 5-5"   
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -625,7 +625,7 @@ label nsp_event_sex_5_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 

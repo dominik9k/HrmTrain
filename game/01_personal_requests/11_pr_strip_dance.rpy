@@ -14,7 +14,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
 
     $ current_payout = 35 #Because will have option to pay extra.
@@ -2701,8 +2701,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
     $herView.data().loadState()
     call music_block
 
-    $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,3,1))
+    $wtevent.Finalize()    
+    $SetHearts(GetStage(wtevent._finishCount,1,3,1))
 
     if daytime:
         $ hermione_takes_classes = True

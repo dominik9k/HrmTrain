@@ -22,7 +22,7 @@ init:
     python:
         global this
         this=This()
-        global event
+        global wtevent
         global screens
         screens=ScreenCollection()
         global choose
@@ -353,7 +353,7 @@ init:
             lam=lambda e:e._status>=e._units
             if "book_07" in _sFullName: # У Вайфу морочливая обработка оставляю первоначальную на исходных флажках
                 lam = lambda e: dear_waifu_completed_once
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10 if _block=="books_edu" else 20} )
@@ -370,7 +370,7 @@ init:
             _block="books_newsp"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
@@ -418,7 +418,7 @@ init:
             _block="books_newsp"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
@@ -447,7 +447,7 @@ init:
             _block="books_newsp2"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 3} )
@@ -471,7 +471,7 @@ init:
             _block="books_newsp2"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 2} )
@@ -486,7 +486,7 @@ init:
             _block="books_newsp2"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )

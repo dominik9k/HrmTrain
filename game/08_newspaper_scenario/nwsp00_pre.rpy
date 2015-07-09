@@ -26,8 +26,6 @@ label newsp_pre_letter: #Приходит письмо из министерст
     $hero("Думаю, однако, что привлечь Гермиону к написанию статей будет нелишне.")
     $hero("Но сначала придется разобраться, что к чему. Да, нужно поговорить со Снейпом !")
 
-    $event.Finalize()
-
     call screen main_menu_01
 
 label newsp_pre_snape_dialog:
@@ -232,8 +230,7 @@ label nsp_hermione_pre1 :
     else:
         play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
     ### END OF BLOCK ###
-
-    $event.Finalize()    
+  
     if daytime:
         $ hermione_takes_classes = True
         jump day_main_menu
@@ -341,8 +338,7 @@ label nsp_hermione_train :
     else:
         play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
     ### END OF BLOCK ###
-
-    $event.Finalize()    
+   
     if daytime:
         $ hermione_takes_classes = True
         jump day_main_menu

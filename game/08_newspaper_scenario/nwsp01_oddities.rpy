@@ -13,23 +13,23 @@ label menu_dahre_newsp:
     $ choose.Show("the_oddities")
 
     label menu_dahre_newsp_2:
-        $ the_gift = event._img     # "03_hp/18_store/08.png" # Copper book of spirit.
+        $ the_gift = wtevent._img     # "03_hp/18_store/08.png" # Copper book of spirit.
         show screen gift
         with d3
-        dahr "\"[event._caption]\". [event._description]\n"
-        if event._status>-2: 
+        dahr "\"[wtevent._caption]\". [wtevent._description]\n"
+        if wtevent._status>-2: 
             call do_have_book
             jump the_oddities
-        if nsp_newspaper_menu < 4 and event.Name <> "nsp_newsp_book_pre":
+        if nsp_newspaper_menu < 4 and wtevent.Name <> "nsp_newsp_book_pre":
             "> Эта книга вас не интересует."
             hide screen gift
             jump expression _label #education_menu
         menu:
-            "- Купить книгу за [event._price] галлеонов -":
-                if gold >= event._price:
-                    $ gold -= event._price
+            "- Купить книгу за [wtevent._price] галлеонов -":
+                if gold >= wtevent._price:
+                    $ gold -= wtevent._price
                     $ order_placed = True
-                    $ event.IncValue("status",1)
+                    $ wtevent.IncValue("status",1)
 #                            $ bought_book_01 = True
                     call thx_4_shoping #Massage that says "Thank you for shopping here!".
                     jump desk
@@ -51,19 +51,19 @@ label menu_dahre_upd:
     $ choose.Show("the_oddities")
 
     label menu_dahre_upd_2:
-        $ the_gift = event._img     # "03_hp/18_store/08.png" # Copper book of spirit.
+        $ the_gift = wtevent._img     # "03_hp/18_store/08.png" # Copper book of spirit.
         show screen gift
         with d3
-        dahr "\"[event._caption]\". [event._description]\n"
-        if event._status>-2: 
+        dahr "\"[wtevent._caption]\". [wtevent._description]\n"
+        if wtevent._status>-2: 
             call do_have_book
             jump the_oddities
         menu:
-            "- Купить за [event._price] галлеонов -":
-                if gold >= event._price:
-                    $ gold -= event._price
+            "- Купить за [wtevent._price] галлеонов -":
+                if gold >= wtevent._price:
+                    $ gold -= wtevent._price
                     $ order_placed = True
-                    $ event.IncValue("status",1)
+                    $ wtevent.IncValue("status",1)
 #                            $ bought_book_01 = True
                     call thx_4_shoping #Massage that says "Thank you for shopping here!".
                     jump desk

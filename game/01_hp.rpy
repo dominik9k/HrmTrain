@@ -688,9 +688,11 @@ hide screen fireplace_fire
 ### EVENTS RELATED FLAGS ###
 $ days_without_an_event +=1
 
+if letters < 0 : # На случай всяких неожиданностей
+    $ letters = 0
 
 ### PAPERWORK (MONEY-MAKING) RELATED FLAGS ###
-if day_of_week == 7: #Counts days of the week. Everyday +1. When day_of_week = 7 resets to zero.
+if day_of_week >= 7: #Counts days of the week. Everyday +1. When day_of_week = 7 resets to zero.
     $ day_of_week = 0
     if finished_report >= 1:
         $ got_paycheck = True #When TRUE the paycheck is in the mail. Can't do paper work.
@@ -803,9 +805,6 @@ show screen candle_02
 
 ### DAY MAIL ###
 
-if letters < 0 : # На случай всяких неожиданностей
-    $ letters = 0
-
 if day == 2:
     $ letter_from_hermione_02 = True #Turns true when you get second letter from Hermione.
     $ letters += 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
@@ -843,9 +842,11 @@ if nsp_day == 10:
 #        $ letters += 1 
 #    $ nsp_day_letter7 = 0
     
-if letters <= 0 :
+if letters <= 0 : # Чинит отчеты и публикации газеты в случае потери писем.
     $ nsp_newspaper_published = False
     $ nsp_newspaper_published_mail = False 
+    $ got_paycheck = False
+    
 
 ###
 

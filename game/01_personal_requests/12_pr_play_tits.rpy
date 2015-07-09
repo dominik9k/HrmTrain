@@ -14,7 +14,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
             with d3
             pass
         "\"(Нет, не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
     
     if hermi.whoring <=8:
@@ -593,7 +593,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     pause.1
     hide screen blkfade
     with d3
-    if event.Name=="new_request_04":
+    if wtevent.Name=="new_request_04":
         jump new_request_04_finish
 
     $ gryffindor += current_payout #35
@@ -641,7 +641,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     $ herView.data().loadState()
     call music_block
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     if daytime:
         $ hermione_takes_classes = True

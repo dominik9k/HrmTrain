@@ -118,7 +118,7 @@ label dap_request_02_complete:
         $hero(".................// А два дня назад мне показалось, что для вас это в порядке вещей.....// Ну тогда надейтесь на удачу.....// Только она сможет вам помочь.....// Можете быть свободны мисс Гринграсс....")
         $daphne("~55 00 2 dis// Пф!...")
         $daphne.liking-=15
-        $event.Finalize("daphne_goout")
+        $wtevent.Finalize("daphne_goout")
         $hero(g4, "#(Не умеешь ты держать рот на замке, Джинни)")
     elif IsRunNumber(5):
         if daphne.whoring < 5:
@@ -208,7 +208,7 @@ label dap_request_02_complete:
                 call daphne_pre_finish_menu_01
                 $hero(g4, "Кажется я перегнул....")
                 $daphne.liking -= 20
-                $event.Finalize ("night_start")
+                $wtevent.Finalize ("night_start")
 
         $hero(m, "Отлично мисс Гринграсс...// Видите... все это может только казаться сложным.")
         $daphne("....Да?!//~73 01 1 smi// .....Наверное вы правы, профессор.")

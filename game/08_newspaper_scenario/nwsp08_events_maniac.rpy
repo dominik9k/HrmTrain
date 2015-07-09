@@ -54,7 +54,7 @@ label nsp_event_maniac_1 :
     elif cur_level == 4 :
         ">текст преивента маньяка 1-4"                  
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -141,7 +141,7 @@ label nsp_event_maniac_1_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -160,7 +160,7 @@ label nsp_event_maniac_2 :
         ">текст преивента маньяка 2-4" 
         
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -247,7 +247,7 @@ label nsp_event_maniac_2_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return
 
@@ -264,7 +264,7 @@ label nsp_event_maniac_3 :
     elif cur_level == 5 :
         ">текст преивента маньяка 3-5"        
             
-    $event.Finalize()    
+    $wtevent.Finalize()    
     
     jump hermione_goout
     
@@ -372,6 +372,6 @@ label nsp_event_maniac_3_complete :
 
     call nsp_hermione_goout
 
-    $event.Finalize() 
+    $wtevent.Finalize() 
 
     return

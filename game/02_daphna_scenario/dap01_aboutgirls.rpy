@@ -70,7 +70,7 @@ label dap_request_01_complete:
         $hero("И тем не менее, я готов вас простимулировать, потому что верю в вас.// В конце концов вы волшебница древнего рода.// Уверен, в следующий раз у вас получится лучше.")
         $daphne("~73 00 1 smo// Спасибо, сэр, я буду очень стараться!")
         $daphne.whoring += 1
-        $event.Finalize("daphne_pre_menu")
+        $wtevent.Finalize("daphne_pre_menu")
     elif IsRunNumber(2):
         $daphne("~55 00 1 neu// Сегодня, профессор Дамблдор, я решила подойти к вопросу системно.")
         $hero("Вот как?")
@@ -95,7 +95,7 @@ label dap_request_01_complete:
         $daphne("~37 00 1 neu// Мне нужно время, чтобы во всем этом разобраться, сэр.")
         $hero("Хорошо, мисс Гринграсс, похоже, вы движетесь в верном направлении. Думаю, стоит вас наградить.")
         $daphne.whoring += 1
-        $event.Finalize("daphne_pre_menu")
+        $wtevent.Finalize("daphne_pre_menu")
     elif IsRunNumber(3):
         $daphne("Мне кажется, я поняла, сэр.")
         $hero("Да?")
@@ -132,7 +132,7 @@ label dap_request_01_complete:
         $hero("Идите, девушка, и подумайте, достойны ли вы своего великого предка!//" 
             "Впрочем, поскольку вы усердно работали, думаю, будет неправильно оставить вас совсем без подарка.")
         $daphne.whoring += 1
-        $event.Finalize("daphne_pre_menu")
+        $wtevent.Finalize("daphne_pre_menu")
     elif IsRunNumber(4):
         $daphne("Эм....// Сэр...")
         $hero("Да мисс Гринграсс....// вы готовы мне что-то рассказать?")
@@ -153,6 +153,6 @@ label dap_request_01_complete:
         $daphne("~46 00 1 neu// ...Хорошо, профессор.")
         $hero("И да... мисс Гринграсс, я думаю вы заслужили поощрение сегодня.")
         $daphne.whoring += 1
-        $event.Finalize("daphne_pre_menu")
+        $wtevent.Finalize("daphne_pre_menu")
 
     return

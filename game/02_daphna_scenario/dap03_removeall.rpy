@@ -136,8 +136,8 @@ label dap_request_03_complete:
     $screens.ShowD3("bld1")
 
     $daphne.State(pos="door").Visibility("body+")("~55 00 1 smi// Добрый вечер, профессор Дамблдор.")
-    if event._finishCount>9:
-        return event.Finalize()
+    if wtevent._finishCount>9:
+        return wtevent.Finalize()
 
         $music("Daphne Theme")
 
@@ -186,9 +186,9 @@ label dap_request_03_complete:
         $daphne("~74 c3 2 gri//Я стараюсь, профессор...")
         $hero("Я вижу....// И по этому, прежде чем вы уйдете, позвольте мне побаловать вас....")
         $daphne.whoring += 1
-        $event.Finalize("daphne_pre_menu")
+        $wtevent.Finalize("daphne_pre_menu")
 
 
     if daphne.whoring<=9:
-        $daphne.whoring=event._finishCount+1
+        $daphne.whoring=wtevent._finishCount+1
     return
