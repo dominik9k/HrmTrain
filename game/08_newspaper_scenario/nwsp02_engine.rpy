@@ -14,14 +14,14 @@ label newsp_letter:
     
     $ gold += nsp_newspaper_cur_money
     
+    $ nsp_newspaper_published = False
+    $ nsp_newspaper_published_mail = False
+    $ nsp_newspaper_last_money = nsp_newspaper_cur_money
+    
     if (hermi._incomePercent>0):
         $nsp_newspaper_cur_money=nsp_newspaper_cur_money*hermi._incomePercent//100
         $gold-=nsp_newspaper_cur_money
         "> Согласно вашему соглашению с Гермионой [dgold] галеонов ([hermi._incomePercent]%%) перечисляются на ее счет"
-    
-    $ nsp_newspaper_published = False
-    $ nsp_newspaper_published_mail = False
-    $ nsp_newspaper_last_money = nsp_newspaper_cur_money
     
     if nsp_newspaper_menu == 2:
         $hero(m,"{size=+1}АРГХ ! Тысяча песчаных змей и один питон!..{/size}")
@@ -382,7 +382,7 @@ label nsp_newsp_themes:
                         if nsp_germiona_kviddich_1_statimg == "New" :
                             $ cur_level = nsp_event_kviddich_1 + 1
                             $ cur_level = nsp_event_magls_1 + 1
-                            if cur_level == 1 and wrd_rent_cheerleader == 0 and ( not hermi.Items.Any("wrd_skirt_cheerleader") or not hermi.Items.Any("wrd_shirt_cheerleader") ) :
+                            if cur_level == 1 and wrd_rent_cheerleader == 0 and ( not hermi.Items.Any("skirt_cheerleader") or not hermi.Items.Any("shirt_cheerleader") ) :
                                 ">Для данного задания понадобятся юбка и кофта болельщицы Гриффиндора. Как вариант, можно воспользоваться прокатом."
                                 jump nsp_newsp_themes
                             if cur_level == 2 :

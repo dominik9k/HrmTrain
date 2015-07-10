@@ -265,7 +265,6 @@ label desk:
 
 ## DR'S DEBUG TEST           
         "- Тест 1 -" if False :
-        
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
                 
@@ -278,15 +277,15 @@ label desk:
             show screen bld1
             with d3
             
-            $ nsp_germiona_magls_1_statimg = "New"
-            $ nsp_germiona_magls_1_photo = "dis"
-            $ nsp_wtevent_magls_1 = 0
+            $ nsp_germiona_kviddich_1_statimg = "New"
+            $ nsp_germiona_kviddich_1_photo = "dis"
+            $ nsp_event_kviddich_1 = 0
             $ cur_level = 1
             call wrd_dress_change_silent
-            call nsp_wtevent_magls_1
+            call nsp_event_kviddich_1
             jump hermione_goout
             
-        "- Тест 2 -" if False:
+        "- Тест 2 -" if False :
         
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
@@ -301,14 +300,14 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" if False:
+        "- Тест 3 -" if False :
 
             $ hermi.whoring = 24
             $ cataloug_found = True
             call the_oddities
             jump desk
             
-        "- Тест 4 -" if False:
+        "- Тест 4 -" if False :
 
             $ hermi.whoring = 24
             $ cataloug_found = True
