@@ -4039,7 +4039,6 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         
     
     else: # PERSONAL WHORE ENDING 
-
         $ renpy.play('sounds/door.mp3') #Sound of a door opening.
         
         $ walk_xpos=610 #Animation of walking chibi. (From)
@@ -4097,7 +4096,6 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         $herViewHead.hideQ()
         pause.1
         
-        
         $ letter_text = "{size=-7}Кому: Гермионе Грейнджер\n\n{/size}{size=-4}Дорогая [word_01]. \nЯ не тот, кто вы думаете... Даже не человек, если честно. В течение нескольких месяцев я выдавал себя за профессор Дамблдора. Но теперь мне нужно вернуться [word_02]. К тому времени, как ты получишь письмо, я буду уже далеко. Мы больше никогда не встретимся, но я буду лелеять воспоминания об этом времени в вашем мире.\n\nПрощай, моя маленькая [word_03]. {size=-3}\n\n-[word_04]-{/size}"
 
         label last_letter:
@@ -4120,7 +4118,6 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
      
         show screen bld1
         with d3
-
         # add shock screen!
         #$herViewHead.data().addPose( CharacterExItem( herViewHead.mPoseFolder, 'hermione_bw_final_shock.png', G_Z_FACE + 1 ) )
         $herViewHead.data().addItem( 'item_pose_final_shock' )
@@ -4168,6 +4165,8 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
 
         # show tits!
         #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
+        call wrd_dress_undress_shirts
+        $ herView.data().addItem( 'item_tits' )
         $herView.data().addItem( 'item_pose_show_tits' )
 
         $herView.showQ( "body_81.png", pos )
@@ -4189,6 +4188,8 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         # Pussy!
         $herView.data().hideItemKey( 'panties' )
         #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
+        call wrd_dress_change_silent
+        call wrd_dress_undress_skirts
         $herView.data().addItem( 'item_pose_lifted_skirt' )
         $herView.showQQ( "body_61.png", pos )
         show screen ctc
@@ -4204,6 +4205,7 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         with d5      
         $herView.data().delPose()
         $herView.data().showItemKey( 'panties' )                                                                                                                                                                                                               #HERMIONE
+        call wrd_dress_change_silent
         $herView.showQ( "body_86.png", pos )
         with d5                                                                                                                                                                                                                       #HERMIONE
         with hpunch
