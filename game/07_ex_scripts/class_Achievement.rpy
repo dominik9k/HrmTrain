@@ -29,14 +29,23 @@ init -999 python:
     class Achievement(store.object):
         # constructor - Achievement initializing
         def __init__( self ):
+            self.Indexes = [ const_ACH_WRD_HERMIONA_SHORTSKIRT, const_ACH_WRD_HERMIONA_XSHORTSKIRT, const_ACH_WRD_HERMIONA_XXSHORTSKIRT,
+                             const_ACH_WRD_HERMIONA_XSMALLSKIRT, const_ACH_WRD_HERMIONA_XXSMALLSKIRT, const_ACH_WRD_HERMIONA_XXXSMALLSKIRT,
+                             const_ACH_WRD_HERMIONA_SKIRT_CHEERLEADER, const_ACH_WRD_HERMIONA_SKIRT_BUSINESS, const_ACH_WRD_HERMIONA_STANDART02,
+                             const_ACH_WRD_HERMIONA_STANDART03, const_ACH_WRD_HERMIONA_STANDART04, const_ACH_WRD_HERMIONA_STANDART05,
+                             const_ACH_WRD_HERMIONA_SKIMPYSHIRT, const_ACH_WRD_HERMIONA_SHIRT_CHEERLEADER, const_ACH_WRD_HERMIONA_SHIRT_BUSINESS,
+                             const_ACH_WRD_HERMIONA_NETS, const_ACH_WRD_HERMIONA_TIGHTS,
+                            
+                            const_ACH_EASTEREGGS_PHOENIX, const_ACH_EASTEREGGS_PHOENIXSCENE            
+                            ]
             self.Values = { const_ACH_WRD_HERMIONA_SHORTSKIRT : False, const_ACH_WRD_HERMIONA_XSHORTSKIRT : False, const_ACH_WRD_HERMIONA_XXSHORTSKIRT : False,
                             const_ACH_WRD_HERMIONA_XSMALLSKIRT : False, const_ACH_WRD_HERMIONA_XXSMALLSKIRT : False, const_ACH_WRD_HERMIONA_XXXSMALLSKIRT : False,
-                            const_ACH_WRD_HERMIONA_SKIRT_CHEERLEADER : False, const_ACH_WRD_HERMIONA_SKIRT_BUSINESS : False, const_ACH_WRD_HERMIONA_STANDARTFalse2 : False,
-                            const_ACH_WRD_HERMIONA_STANDARTFalse3 : False, const_ACH_WRD_HERMIONA_STANDARTFalse4 : False, const_ACH_WRD_HERMIONA_STANDARTFalse5 = 11 : False,
+                            const_ACH_WRD_HERMIONA_SKIRT_CHEERLEADER : False, const_ACH_WRD_HERMIONA_SKIRT_BUSINESS : False, const_ACH_WRD_HERMIONA_STANDART02 : False,
+                            const_ACH_WRD_HERMIONA_STANDART03 : False, const_ACH_WRD_HERMIONA_STANDART04 : False, const_ACH_WRD_HERMIONA_STANDART05 : False,
                             const_ACH_WRD_HERMIONA_SKIMPYSHIRT : False, const_ACH_WRD_HERMIONA_SHIRT_CHEERLEADER : False, const_ACH_WRD_HERMIONA_SHIRT_BUSINESS : False,
                             const_ACH_WRD_HERMIONA_NETS : False, const_ACH_WRD_HERMIONA_TIGHTS : False,
                             
-                            const_ACH_EASTEREGGS_PHOENIX : False, const_ACH_EASTEREGGS_PHOENIXSCENE = False,
+                            const_ACH_EASTEREGGS_PHOENIX : False, const_ACH_EASTEREGGS_PHOENIXSCENE : False
                             } # Ачивменты текущей игры.
                 
 # Добавить ачивмент в список текущей игры для игрока (установить в True) : $ achieve.SetAchievement(const_ACH_WRD_HERMIONA_SHORTSKIRT)               
@@ -152,13 +161,16 @@ init -999 python:
         def UpdatePersistent ( self ):
             if persistent.achieve is None:
                 persistent.achieve = set()
-            for i in self.Values :
-                if i == True:
+            for i in self.Indexes :
+                if self.Values[i] == True:
                     persistent.achieve.update(i);
 
 # Загрузить из persist текущие достижения :  achieve.LoadPersistent():
         def LoadPersistent ( self ):
+            for i in self.Indexes :
+                self.Values[i] = False
             for i in persistent.achieve :
-                self.Values[i] = 
+                self.Values[i] = True
 
 
+                

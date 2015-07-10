@@ -5253,9 +5253,12 @@ label start:
 
     # Ending class initialization
     call Ending_constants
+    call Achievement_constants
     python:
         global end
+        global achieve
     $ end = Ending ()
+    $ achieve = Achievement()
 
     # Создание elog должно стоять перед вызовами GetValue, так что лучше его сделать сразу после метки start
     call start_elog
