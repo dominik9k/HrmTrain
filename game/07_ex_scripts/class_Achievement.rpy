@@ -1,4 +1,4 @@
-﻿label Achivment_constants:
+﻿label Achievement_constants:
 
     define const_ACH_WRD_HERMIONA_SHORTSKIRT = 0
     define const_ACH_WRD_HERMIONA_XSHORTSKIRT = 1
@@ -25,9 +25,9 @@
 
 init -999 python:
   
-# Класс для удобного управления ачивками помимо концовок. При инициализации в игре создается объект $ achive = Achievement()
-    class Achievment(store.object):
-        # constructor - Achievment initializing
+# Класс для удобного управления ачивками помимо концовок. При инициализации в игре создается объект $ achieve = Achievement()
+    class Achievement(store.object):
+        # constructor - Achievement initializing
         def __init__( self ):
             self.Values = { const_ACH_WRD_HERMIONA_SHORTSKIRT : False, const_ACH_WRD_HERMIONA_XSHORTSKIRT : False, const_ACH_WRD_HERMIONA_XXSHORTSKIRT : False,
                             const_ACH_WRD_HERMIONA_XSMALLSKIRT : False, const_ACH_WRD_HERMIONA_XXSMALLSKIRT : False, const_ACH_WRD_HERMIONA_XXXSMALLSKIRT : False,
@@ -39,18 +39,18 @@ init -999 python:
                             const_ACH_EASTEREGGS_PHOENIX : False, const_ACH_EASTEREGGS_PHOENIXSCENE = False,
                             } # Ачивменты текущей игры.
                 
-# Добавить ачивмент в список текущей игры для игрока (установить в True) : $ achive.SetAchievement(const_ACH_WRD_HERMIONA_SHORTSKIRT)               
+# Добавить ачивмент в список текущей игры для игрока (установить в True) : $ achieve.SetAchievement(const_ACH_WRD_HERMIONA_SHORTSKIRT)               
         def SetAchievement( self, iIndex ):
             self.Values[iIndex]=True
 
-# Функция проверяет, заданно ли в текущем списке указанное достижение : if achive.IsAchievement(const_ACH_WRD_HERMIONA_SHORTSKIRT): # дальше код, который выполняется если условие - истинно               
+# Функция проверяет, заданно ли в текущем списке указанное достижение : if achieve.IsAchievement(const_ACH_WRD_HERMIONA_SHORTSKIRT): # дальше код, который выполняется если условие - истинно               
         def IsAchievement( self, iIndex ):
             if self.Values[iIndex]==True:
                 return True
             else:
                 return False
 
-# Получить название ачивмента : achive.Name(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+# Получить название ачивмента : achieve.Name(const_ACH_WRD_HERMIONA_SHORTSKIRT)
         def Name ( self, iIndex ):
             if iIndex == const_ACH_WRD_HERMIONA_SHORTSKIRT :
                 return "Гермиона ходит в укороченной школьной юбке."
@@ -92,7 +92,7 @@ init -999 python:
                 return "Вам удалось обнаружить второй уровень пасхалки Феникса."
             return "Ошибка: незаданный ачивмент."
             
-# Получить описание ачивмента : achive.Description(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+# Получить описание ачивмента : achieve.Description(const_ACH_WRD_HERMIONA_SHORTSKIRT)
         def Description ( self, iIndex ):
             if iIndex == const_ACH_WRD_HERMIONA_SHORTSKIRT :
                 return "Вы купили Гермионе в подарок укороченную школьную юбку. Затем удалось уговорить ее носить эту юбку в школе на занятиях."
@@ -134,25 +134,25 @@ init -999 python:
                 return "Вам удалось увидеть старую сцену времен Акабура под новым углом. С очередной найденной пасхалкой вас!"
             return "Ошибка: незаданный ачивмент."
             
-# Получить название ачивмента с учетом его доступности : achive.DispName(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+# Получить название ачивмента с учетом его доступности : achieve.DispName(const_ACH_WRD_HERMIONA_SHORTSKIRT)
         def DispName ( self, iIndex ):
             if self.Values[iIndex]==True:
                 return self.Name ( iIndex )
             else :
                 return "{color=#858585}- Скрыто -{/color}"
                 
-# Получить описание ачивмента с учетом его доступности : achive.DispDescription(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+# Получить описание ачивмента с учетом его доступности : achieve.DispDescription(const_ACH_WRD_HERMIONA_SHORTSKIRT)
         def DispDescription ( self, iIndex ):
             if self.Values[iIndex]==True:
                 return self.Description ( iIndex )
             else :
                 return "Данное достижение еще не достигнуто. А ведь оно доступно где-то в игре... Терпеливо ждет своего часа..."
 
-# Сохранить в объекте persistent текущие достижения (старые тоже не удаляются), например : $ achive.UpdatePersistent() 
+# Сохранить в объекте persistent текущие достижения (старые тоже не удаляются), например : $ achieve.UpdatePersistent() 
         def UpdatePersistent ( self ):
-            if persistent.endings is None:
-                persistent.endings = set()
-            persistent.endings.update({self.Index});
+            if persistent.achieve is None:
+                persistent.achieve = set()
+            persistent.achieve.update({self.Values});
 
 # Является ли концовка iIndex запомненной (т.е.) проходили ли ее раньше, например : if not end.IsPersistent(1): # дальше код, который выполняется, если условие истинно
         def IsPersistent ( self, iIndex ):
