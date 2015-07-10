@@ -152,10 +152,13 @@ init -999 python:
         def UpdatePersistent ( self ):
             if persistent.achieve is None:
                 persistent.achieve = set()
-            persistent.achieve.update({self.Values});
+            for i in self.Values :
+                if i == True:
+                    persistent.achieve.update(i);
 
-# Является ли концовка iIndex запомненной (т.е.) проходили ли ее раньше, например : if not end.IsPersistent(1): # дальше код, который выполняется, если условие истинно
-        def IsPersistent ( self, iIndex ):
-            return iIndex in persistent.endings
+# Загрузить из persist текущие достижения :  achieve.LoadPersistent():
+        def LoadPersistent ( self ):
+            for i in persistent.achieve :
+                self.Values[i] = 
 
 
