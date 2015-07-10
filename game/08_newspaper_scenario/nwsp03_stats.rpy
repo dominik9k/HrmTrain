@@ -111,18 +111,9 @@ label nsp_snape_dialog_stat :
     
     $ nsp_txt_add = ""
     
-    $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-    $ menu_x = 0.2 #Menu is moved to the left side. (Default menu_x = 0.5)
-    $ tt_xpos=350 #Defines position of the Snape's full length sprite.
-    $ tt_ypos=0
-    $ s_sprite = "03_hp/10_snape_main/snape_01.png"
-    show screen snape_02 #Snape stands still.
-    show screen bld1
-    show screen snape_main
-    with Dissolve(.3)
     $screens.Hide("snape_main")
     $snape.State("door").Visibility("body")
-
+    
     if nsp_newspaper_qual_last >= 770 :
         $ nsp_txt_add = "великолепное глянцевое издание"
     elif nsp_newspaper_qual_last >= 240 :
@@ -178,7 +169,11 @@ label nsp_snape_dialog_stat :
             $snape ("~04//У нас [nsp_txt_add], да, именно [nsp_txt_add]. Формально.")
             $snape ("~06//А когда будут выполнятся мои советы относительно дополнительных материалов, его даже могут начать читать другие люди.")
 
-
+    $screens.Hide("snape_02", "bld1", d3 )
+    $snape.Visibility(transition=d3)
+            
+    show screen snape_main
+    
     jump snape_ready
 
 label nsp_hermione_dialog_status :
