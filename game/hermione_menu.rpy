@@ -949,7 +949,7 @@ label wrd_menu :
                 "- Надеть юбку болельщицы Гриффиндора -" if hermi.Items.Any("skirt_cheerleader") and wrd_skirt_cheerleader == 0 :
                     jump wrd_skirt_cheerleader_first_dress
                     
-                "- Надеть миниюбку бизнес-вумен -" if hermi.Items.Any("skirt_business") and wrd_skirt_business == 0 :
+                "- Надеть миниюбку бизнес-леди -" if hermi.Items.Any("skirt_business") and wrd_skirt_business == 0 :
                     jump wrd_skirt_business_first_dress
                     
                 "- Надеть школьную рубашку без жилетки -" if wrd_standart02 == 0 and hermi.whoring >= 3 :
@@ -1004,7 +1004,7 @@ label wrd_menu :
                 "- Надеть юбку болельщицы Гриффиндора -" if wrd_skirt_cheerleader >= 1 :
                     jump wrd_skirt_cheerleader_dress
                     
-                "- Надеть миниюбку бизнес-вумен -" if wrd_skirt_business >= 1 :
+                "- Надеть миниюбку бизнес-леди -" if wrd_skirt_business >= 1 :
                     jump wrd_skirt_business_dress
             
                 "- Ничего -":

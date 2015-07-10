@@ -2359,7 +2359,7 @@ label giving_skirt_business:
     show screen gift
     with d3
     $ renpy.play('sounds/win2.mp3')
-    ">Вы дали миниюбку бизнес-вумен Гермионе..."
+    ">Вы дали миниюбку бизнес-леди Гермионе..."
     hide screen gift
     with d3
     $herView.hideQQ()
