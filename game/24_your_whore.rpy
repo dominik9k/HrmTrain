@@ -3724,7 +3724,7 @@ label test:
     $ dermo = "ch_sna defend"
     
     show screen credits_chibi
-    centered "{cps=20}{size=+5}{color=#ea91b0}-Тренер Ведьмы 1.5 (русская редакция)-{/color}{/size}\n\n\n\
+    centered "{cps=20}{size=+5}{color=#ea91b0}-Воспитание Ведьмы 1.5 (русская редакция)-{/color}{/size}\n\n\n\
     {color=#e5e297}-\{Перевод Witch Trainer\}-{/color}\n\
     {color=#fff}\
     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15155170}Discordnk90{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=8041771}maniac4a{/a}, \n\

@@ -18,8 +18,8 @@
     define const_ACH_WRD_HERMIONA_NETS = 15
     define const_ACH_WRD_HERMIONA_TIGHTS = 16
     
-    define const_ACH_EASTEREGGS_PHOENIX = 101
-    define const_ACH_EASTEREGGS_PHOENIXSCENE = 102    
+    #define const_ACH_EASTEREGGS_PHOENIX = 101
+    #define const_ACH_EASTEREGGS_PHOENIXSCENE = 102    
     
     return
 
@@ -27,8 +27,15 @@ init -999 python:
   
 # Класс для удобного управления ачивками помимо концовок. При инициализации в игре создается объект $ achieve = Achievement()
     class Achievement(store.object):
+     
+        current = None
+        screen = "achieves_disp"
+    
         # constructor - Achievement initializing
         def __init__( self ):
+        
+            self.choice = None
+        
             self.Indexes = [ const_ACH_WRD_HERMIONA_SHORTSKIRT, const_ACH_WRD_HERMIONA_XSHORTSKIRT, const_ACH_WRD_HERMIONA_XXSHORTSKIRT,
                              const_ACH_WRD_HERMIONA_XSMALLSKIRT, const_ACH_WRD_HERMIONA_XXSMALLSKIRT, const_ACH_WRD_HERMIONA_XXXSMALLSKIRT,
                              const_ACH_WRD_HERMIONA_SKIRT_CHEERLEADER, const_ACH_WRD_HERMIONA_SKIRT_BUSINESS, const_ACH_WRD_HERMIONA_STANDART02,
@@ -36,7 +43,7 @@ init -999 python:
                              const_ACH_WRD_HERMIONA_SKIMPYSHIRT, const_ACH_WRD_HERMIONA_SHIRT_CHEERLEADER, const_ACH_WRD_HERMIONA_SHIRT_BUSINESS,
                              const_ACH_WRD_HERMIONA_NETS, const_ACH_WRD_HERMIONA_TIGHTS,
                             
-                            const_ACH_EASTEREGGS_PHOENIX, const_ACH_EASTEREGGS_PHOENIXSCENE            
+                            #const_ACH_EASTEREGGS_PHOENIX, const_ACH_EASTEREGGS_PHOENIXSCENE,            
                             ]
             self.Values = { const_ACH_WRD_HERMIONA_SHORTSKIRT : False, const_ACH_WRD_HERMIONA_XSHORTSKIRT : False, const_ACH_WRD_HERMIONA_XXSHORTSKIRT : False,
                             const_ACH_WRD_HERMIONA_XSMALLSKIRT : False, const_ACH_WRD_HERMIONA_XXSMALLSKIRT : False, const_ACH_WRD_HERMIONA_XXXSMALLSKIRT : False,
@@ -45,7 +52,7 @@ init -999 python:
                             const_ACH_WRD_HERMIONA_SKIMPYSHIRT : False, const_ACH_WRD_HERMIONA_SHIRT_CHEERLEADER : False, const_ACH_WRD_HERMIONA_SHIRT_BUSINESS : False,
                             const_ACH_WRD_HERMIONA_NETS : False, const_ACH_WRD_HERMIONA_TIGHTS : False,
                             
-                            const_ACH_EASTEREGGS_PHOENIX : False, const_ACH_EASTEREGGS_PHOENIXSCENE : False
+                            #const_ACH_EASTEREGGS_PHOENIX : False, const_ACH_EASTEREGGS_PHOENIXSCENE : False,
                             } # Ачивменты текущей игры.
                 
 # Добавить ачивмент в список текущей игры для игрока (установить в True) : $ achieve.SetAchievement(const_ACH_WRD_HERMIONA_SHORTSKIRT)               
@@ -101,8 +108,8 @@ init -999 python:
                 return "Вам удалось обнаружить второй уровень пасхалки Феникса."
             return "Ошибка: незаданный ачивмент."
             
-# Получить описание ачивмента : achieve.Description(const_ACH_WRD_HERMIONA_SHORTSKIRT)
-        def Description ( self, iIndex ):
+# Получить описание ачивмента : achieve.DescriptionTxt(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+        def DescriptionTxt ( self, iIndex ):
             if iIndex == const_ACH_WRD_HERMIONA_SHORTSKIRT :
                 return "Вы купили Гермионе в подарок укороченную школьную юбку. Затем удалось уговорить ее носить эту юбку в школе на занятиях."
             elif iIndex == const_ACH_WRD_HERMIONA_XSHORTSKIRT :
@@ -141,9 +148,19 @@ init -999 python:
                 return "Ваша природная любовь и сострадание к животным дали неожиданный результат. Потому что добро должно размнож... побеждать."
             elif iIndex == const_ACH_EASTEREGGS_PHOENIXSCENE :
                 return "Вам удалось увидеть старую сцену времен Акабура под новым углом. С очередной найденной пасхалкой вас!"
-            return "Ошибка: незаданный ачивмент."
-            
-# Получить название ачивмента с учетом его доступности : achieve.DispName(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+
+# Получить описание ачивмента : achieve.Description(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+        def Description ( self, iIndex ):
+            return renpy.say (ach, self.DispDescriptionTxt(iIndex))
+                
+# Получить название ачивмента с учетом его доступности : achieve.DispDescriptionTxt(const_ACH_WRD_HERMIONA_SHORTSKIRT)
+        def DispDescriptionTxt ( self, iIndex ):
+            if self.Values[iIndex]==True:
+                return self.DescriptionTxt ( iIndex )
+            else :
+                return "У вас отсутствует данное достижение."
+                
+# Получить описание ачивмента с учетом его доступности : achieve.DispName(const_ACH_WRD_HERMIONA_SHORTSKIRT)
         def DispName ( self, iIndex ):
             if self.Values[iIndex]==True:
                 return self.Name ( iIndex )
@@ -171,6 +188,45 @@ init -999 python:
                 self.Values[i] = False
             for i in persistent.achieve :
                 self.Values[i] = True
+                
+# Показывает текущую таблицу ачивментов : achieve.ShowList():
+        def ShowList ( self , escLabel = None):
+        
+            Achievement.current = self
+            renpy.call_screen(Achievement.screen)
+            
+            
+
+screen achieves_disp:
+    add "03_hp/11_misc/bld.png"
+    window:
+        style "menu_window"
+        xalign menu_x
+        yalign 0.5
+
+        vbox:
+            style "menu"
+            spacing 2
+
+            for i in Achievement.current.Indexes:
+
+                if Achievement.current.Values[i]:
+
+                    button:
+# Если пытаться по нажатию кнопки сделать не jump, а call, чтобы вернуться по окончанию выполнения блока, то все срабатывает корректно, но затем, если сохранить, то сохранение не читается сохранение, оставил только механизм Jump                   
+#                        action [Function(this, sName=Achievement.current.Name(i)), Function(Achievement.current.Description, iIndex=i), Return()] # if not RunMenu.current.runCall else Function(renpy.call, i.label)] 
+                        action [Function(Achievement.current.Description, iIndex=i), Return()] # if not RunMenu.current.runCall else Function(renpy.call, i.label)] 
+                        style "menu_choice_button"
+
+                        text Achievement.current.DispName[i] style "menu_choice"
+            if escLabel!=None:    
+                button:
+                    action [Jump(escLabel)] 
+                    style "menu_choice_button"
+
+                    text "Назад" style "menu_choice"
 
 
+
+    zorder 7
                 

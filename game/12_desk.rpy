@@ -304,6 +304,10 @@ label desk:
 
             $ hermi.whoring = 24
             $ cataloug_found = True
+#            $ persistent.game_complete = True
+#            if persistent.endings is None:
+#                $ persistent.endings = set()
+#            $ persistent.endings.update({1})
             call the_oddities
             jump desk
             

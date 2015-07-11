@@ -5163,6 +5163,7 @@ init-2:
     $ nyark = Character ('Nyarkohotep', color="FF0000")
     ### DR'S CODE ooo ###
     $ dr = Character('Дрон', color="#00FF00")
+    $ ach = Character('Достижение', color = "#888888")
     ###
     $ felix = Character('Феликс', color="#7789CA")
     ###
