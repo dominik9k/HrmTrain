@@ -949,7 +949,7 @@ label wrd_menu :
                 "- Надеть юбку болельщицы Гриффиндора -" if hermi.Items.Any("skirt_cheerleader") and wrd_skirt_cheerleader == 0 :
                     jump wrd_skirt_cheerleader_first_dress
                     
-                "- Надеть миниюбку бизнес-вумен -" if hermi.Items.Any("skirt_business") and wrd_skirt_business == 0 :
+                "- Надеть миниюбку бизнес-леди -" if hermi.Items.Any("skirt_business") and wrd_skirt_business == 0 :
                     jump wrd_skirt_business_first_dress
                     
                 "- Надеть школьную рубашку без жилетки -" if wrd_standart02 == 0 and hermi.whoring >= 3 :
@@ -1004,7 +1004,7 @@ label wrd_menu :
                 "- Надеть юбку болельщицы Гриффиндора -" if wrd_skirt_cheerleader >= 1 :
                     jump wrd_skirt_cheerleader_dress
                     
-                "- Надеть миниюбку бизнес-вумен -" if wrd_skirt_business >= 1 :
+                "- Надеть миниюбку бизнес-леди -" if wrd_skirt_business >= 1 :
                     jump wrd_skirt_business_dress
             
                 "- Ничего -":
@@ -1096,7 +1096,7 @@ label wrd_hermi_rent_menu :
                call wrd_dress_undress
     
                $ herView.data().addItem( 'item_tits_no' )
-               $ herView.data().addItem( 'item_skirts_skirt03_xshort' )
+               $ herView.data().addItem( 'item_skirts_skirt02_short' )
                $ herView.data().addItem( 'item_shirts_standard03_untucked' )
 
                $herView.hideshowQQ( "body_01.png", pos )
@@ -1128,7 +1128,7 @@ label wrd_hermi_rent_menu :
                call wrd_dress_undress
     
                $ herView.data().addItem( 'item_tits_no' )
-               $ herView.data().addItem( 'item_skirts_skirt05_xsmall' )
+               $ herView.data().addItem( 'item_skirts_skirt04_xxshort' )
                $ herView.data().addItem( 'item_shirts_standard05_untucked_unbuttoned_double' )
 
                $herView.hideshowQQ( "body_01.png", pos )

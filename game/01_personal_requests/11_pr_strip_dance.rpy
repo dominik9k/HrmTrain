@@ -2503,7 +2503,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                             hide screen blkfade
                                                             with d3
                                                             call music_block
-                                                            jump restore_state_could_not_flirt #Leaves without getting any очков.
+                                                            jump restore_state_could_not_flirt #Leaves without getting any points.
                                                         
 
                                     else: # You jerk off your cock and Hermione is NOT OK with it.

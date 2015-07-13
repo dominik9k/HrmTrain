@@ -8,3 +8,4 @@
 /game/bytecode.rpyb
 /tmp
 game/the_oddities.rpy~
+*.rpy#

@@ -102,6 +102,7 @@ label nsp_event_forest_1_complete :
         $ cur_level = nsp_event_forest_1
 
     if cur_level == 1 :
+        show screen hermione_02
         $herView.hideshowQQ( "body_01.png", pos )
         her "А вот и я, сэр."
         g9 "Ну как тебе ночевка в лесу ?"

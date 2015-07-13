@@ -1636,3 +1636,13 @@ label gallery_locked:
     hide screen end_u_2                                             #<---- SCREEN
     show screen extras
     return
+
+label sroom_locked:
+    $ end_u_2_pic =  "title2.jpg" #<---- SCREEN
+    show screen end_u_2                                             #<---- SCREEN
+    "{size=+5}Ты не наследник Слизерина ! МУХАХАХА{/size}"
+    ">Пройдите игру, чтобы разблокировать Тайную комнату."
+    hide screen end_u_2                                             #<---- SCREEN
+    show screen extras
+    return
+    

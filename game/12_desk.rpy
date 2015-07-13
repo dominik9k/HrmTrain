@@ -277,12 +277,12 @@ label desk:
             show screen bld1
             with d3
             
-            $ nsp_germiona_kviddich_1_statimg = "New"
-            $ nsp_germiona_kviddich_1_photo = "dis"
-            $ nsp_event_kviddich_1 = 0
+            $ nsp_germiona_forest_1_statimg = "New"
+            $ nsp_germiona_forest_1_photo = "dis"
+            $ nsp_event_forest_1 = 0
             $ cur_level = 1
-            call wrd_dress_change_silent
-            call nsp_event_kviddich_1
+            #call wrd_dress_change_silent
+            call nsp_event_forest_1
             jump hermione_goout
             
         "- Тест 2 -" if False :
@@ -300,10 +300,17 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" if False :
+        "- Тест 3 -" if False:
 
             $ hermi.whoring = 24
             $ cataloug_found = True
+            $ persistent.game_complete = True
+            if persistent.endings is None:
+                $ persistent.endings = set()
+            $ persistent.endings.update({1})
+            python :
+                achieve.SetAchievement(const_ACH_WRD_HERMIONA_SHIRT_BUSINESS)
+                achieve.UpdatePersistent()
             call the_oddities
             jump desk
             
