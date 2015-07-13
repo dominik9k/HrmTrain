@@ -3778,7 +3778,7 @@ label wrd_skimpyshirt_first_dress :
                         $herView.hideQQ()
                         $herView.showQQ( None, pos )
                         jump hermione_main_menu
-                    "\"40 очков ?\"" :
+                    "\"50 очков ?\"" :
                         $ gryffindor +=50
                         $herView.hideshowQQ( "body_66.png", pos )
                         her "Ох... ладно..."

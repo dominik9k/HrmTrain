@@ -1096,7 +1096,7 @@ label wrd_hermi_rent_menu :
                call wrd_dress_undress
     
                $ herView.data().addItem( 'item_tits_no' )
-               $ herView.data().addItem( 'item_skirts_skirt03_xshort' )
+               $ herView.data().addItem( 'item_skirts_skirt02_short' )
                $ herView.data().addItem( 'item_shirts_standard03_untucked' )
 
                $herView.hideshowQQ( "body_01.png", pos )
@@ -1128,7 +1128,7 @@ label wrd_hermi_rent_menu :
                call wrd_dress_undress
     
                $ herView.data().addItem( 'item_tits_no' )
-               $ herView.data().addItem( 'item_skirts_skirt05_xsmall' )
+               $ herView.data().addItem( 'item_skirts_skirt04_xxshort' )
                $ herView.data().addItem( 'item_shirts_standard05_untucked_unbuttoned_double' )
 
                $herView.hideshowQQ( "body_01.png", pos )
