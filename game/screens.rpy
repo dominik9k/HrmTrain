@@ -204,6 +204,7 @@ screen main_menu:
         textbutton _("Настройки") action ShowMenu("preferences")
         textbutton _("Экстра") action ShowMenu("extras")
         textbutton _("Форум") action Start("forum")
+        textbutton _("Язык/Language") action ShowMenu("lang_menu")
         textbutton _("Выход") action Quit(confirm=True)
 
 init -2:
@@ -213,6 +214,24 @@ init -2:
         size_group "mm"
 
 
+#######################
+# Language
+
+screen lang_menu :
+    window:
+        style "gm_root"
+    frame:
+        style_group "gm_nav"
+        xalign .98
+        yalign .98
+
+        
+        has vbox
+        
+        label _("Выбор языка")
+        textbutton "Русский" action Language(None)
+        textbutton "English" action Language("english")
+        textbutton _("Назад") action Start("assmenu")
 
 #######################
 # Extras
