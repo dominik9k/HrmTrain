@@ -2359,7 +2359,7 @@ label giving_skirt_business:
     show screen gift
     with d3
     $ renpy.play('sounds/win2.mp3')
-    ">Вы дали миниюбку бизнес-вумен Гермионе..."
+    ">Вы дали миниюбку бизнес-леди Гермионе..."
     hide screen gift
     with d3
     $herView.hideQQ()
@@ -3778,7 +3778,7 @@ label wrd_skimpyshirt_first_dress :
                         $herView.hideQQ()
                         $herView.showQQ( None, pos )
                         jump hermione_main_menu
-                    "\"40 очков ?\"" :
+                    "\"50 очков ?\"" :
                         $ gryffindor +=50
                         $herView.hideshowQQ( "body_66.png", pos )
                         her "Ох... ладно..."
