@@ -3729,17 +3729,17 @@ label test:
     {color=#fff}\
     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15155170}Discordnk90{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=8041771}maniac4a{/a}, \n\
     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=4472572}Rio-Violente{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=16957111}MrFrost1991{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=18304384}babaylolxz{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15281703}Borzsama{/a},\n\
-     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=11908608}sn0rk95{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=3}Khan{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\n\
+     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=11908608}sn0rk95{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=3}Khan{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\n\     
     {color=#cbcbcb}Если кого-то забыли - простите ;){/color} \
     \n\n\
     {color=#e5e297}-\{Программирование:\}-{/color}\n\
     {color=#fff}\
-    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
+    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Dron{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
     \
     \n\n\
     {color=#e5e297}-\{Тексты, сценарии:\}-{/color}\n\
     {color=#fff}\
-    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
+    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Dron{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
     \n\n\
     {color=#e5e297}-\{Техническая поддержка (форум):\}-{/color}\n\
     {color=#fff}\
@@ -3747,7 +3747,7 @@ label test:
     \n\n\
     {color=#e5e297}-\{Арты:\}-{/color}\n\
     {color=#fff}\
-    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}dron12355{/a}\n\
+    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Dron{/a}\n\
     \n\n\
     {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\
@@ -3760,19 +3760,9 @@ label test:
     {size=-7}{color=#e5e297}-\{На ранних этапах игры участие также принимали:\}-{/color}\n\
     {color=#fff}\
     appo, Dimon_Tools, illidan, darg55, Fuhrick, Y-ART, Zilot{/color}{/size}\n\
-    \n\n\n\
-    "
-
-    centered "{cps=20}{size=+5}{color=#ea91b0}-Witch Trainer-{/color}{/size}\n\n\
-    {color=#e5e297}-\{Сценарист и продюссер\}-{/color}\n{size=+5}{color=#cbcbcb}AKABUR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Главный программист\}-{/color}\n {size=+5}{color=#cbcbcb}AKABUR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Арты\}-{/color}\n   {size=+5}{color=#cbcbcb}AKABUR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Дополнительные арты\}-{/color}\n   {size=+5}{color=#cbcbcb}DAHR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Тексты\}-{/color}\n   {size=+5}{color=#cbcbcb}LYK.D9{/color}{/size}\n\n\
-    {color=#e5e297}-\{Технический менеджер\}-{/color}\n   {size=+5}{color=#cbcbcb}XALJIO{/color}{/size}\n\n\
-    {color=#e5e297}-\{Тестеры\}-{/color}\n   {size=+5}{color=#cbcbcb}XALJIO\nLYK.D9\nDAHR\nAKABUR{/color}{/size}\n\n{/cps}"
-    
-    
+    \n\n\
+    Игра разрабатывается с использованием идеи и артов Акабура и Дахра.\n\
+    "    
     
     nvl clear
 

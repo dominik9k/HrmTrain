@@ -1077,8 +1077,8 @@ screen l_hermiona: #Screen that shows a full sprite of HERMIONE.
     add "00_ex_characters/00_hermione/graphics/body/hands_universal.png" xpos hx ypos hy
     add "00_ex_characters/00_hermione/graphics/body/tits_no.png" xpos hx ypos hy
     add "00_ex_characters/00_hermione/graphics/clothes/stockings/tights.png" xpos hx ypos hy
-    add "00_ex_characters/00_hermione/graphics/clothes/skirts/skirt_business1.png" xpos hx ypos hy
-    add "00_ex_characters/00_hermione/graphics/clothes/shirts/blouse_business2.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/clothes/skirts/skirt_business.png" xpos hx ypos hy
+    add "00_ex_characters/00_hermione/graphics/clothes/shirts/shirt_business_B.png" xpos hx ypos hy
     
     if h_red_angry:
         add "00_ex_characters/00_hermione/graphics/face/body_47.png" xpos hx ypos hy

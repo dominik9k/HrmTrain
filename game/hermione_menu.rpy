@@ -117,17 +117,65 @@ label hermione_approaching:
        
         
         
-        "- Дать ей подарок -" if not gifted:
+        "- Дать ей подарок -" : #if not gifted: Отключено ограничение на число подарков в день.
             $ choose = RunMenu()
             python:
                 for o in hero.Items():
-                    if not o.Name in {"wine", "scroll"}:
+                    if not o.Name in {"wine", "scroll"} and not o.GetValue("block") in ["gears_shirt", "gears_skirt", "gears_stockings", "gears_other", "gears_dress"] :
                         choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
 
             $ choose.Show("hermione_main_menu")
 
+        "- Подарить ей одежду -" :
+            label wrd_clother_hermi :
+                menu:
+                    "- Юбки -":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_skirt" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
 
-                    
+                        $ choose.Show("wrd_clother_hermi")
+        
+                    "- Верх -":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_shirt" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
+
+                        $ choose.Show("wrd_clother_hermi")  
+        
+                    "- Чулки/Колготки -":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_stockings" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
+
+                        $ choose.Show("wrd_clother_hermi")
+        
+                    "- Платья-":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_dress" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
+
+                        $ choose.Show("wrd_clother_hermi")
+        
+                    "- Прочее -": 
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_other" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
+
+                        $ choose.Show("wrd_clother_hermi")
+                            
+                    "- Ничего -":
+                        jump hermione_main_menu                    
         
      
         "- Гардероб -" if dress_code and this.Has("her_wants_buy"):
@@ -919,7 +967,7 @@ label wrd_menu :
         "- Новые вещи ! -" if wrd_new_items > 0 or (wrd_standart02 == 0 and hermi.whoring >= 3) or (wrd_standart02 >= 1 and wrd_standart03 == 0 and hermi.whoring >= 6) or (wrd_standart03 >= 1 and wrd_standart04 == 0 and hermi.whoring >= 9) or (wrd_standart04 >= 1 and wrd_standart05 == 0 and hermi.whoring >= 15) :
             menu :
                 
-                "- Надеть значок \"А.В.Н.Э.\" -" if hermi.Items.Any("badge_01") and wrd_badge_01 == 0 :
+                "- Надеть значок \"А.В.Н.Э.\" -" if hermi.Items.Any("badge") and wrd_badge_01 == 0 :
                     jump wrd_badge_01_first_dress
             
                 "- Надеть ажурные чулки -" if hermi.Items.Any("nets") and wrd_nets == 0 :

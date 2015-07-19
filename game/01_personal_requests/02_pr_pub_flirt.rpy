@@ -136,7 +136,7 @@ label new_request_02_b_complete:
         "\"Расскажи поподробнее\"":
             $herView.hideQQ()
             m "Со сколькими мальчиками вы успели позаигрывать, Мисс Грейнджер?"
-            m "Раскажите мне."
+            m "Расскажите мне."
             show screen blktone
             with d3
             if hermi.whoring >= 0 and hermi.whoring <= 2: ### LEVEL 01

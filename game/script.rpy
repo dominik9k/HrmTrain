@@ -103,7 +103,7 @@ init:
             "Белая рубашка в деловом стиле. Цвет непорочности для порочных.", "gears_shirt", None ), 
         ("ball_dress", "Бальное платье", 1500, "03_hp/18_store/01.png", 
             "Роскошное вечернее платье для особых случаев", "gears_dress", None ),
-        ("badge_01", "Значок \"А.В.Н.Э.\"", 100, "03_hp/18_store/29.png", 
+        ("badge", "Значок \"А.В.Н.Э.\"", 100, "03_hp/18_store/29.png", 
             "Значок \"А.В.Н.Э.\". Симулируй заботу...", "gears_other", None ),
         ("nets", "Ажурные чулки", 700, "03_hp/18_store/30.png", 
             "Ажурные чулки. Вопреки распространенному мнению, они не были изобретены рыбаком.", "gears_stockings", None ),
@@ -113,12 +113,25 @@ init:
             "Бутылка из тайника профессора Дамблдора...", "cupboard", None ),
         ("potions", "Неизвестное зелье", 0, "03_hp/18_store/32.png", 
             "Какое-то зелье...", "cupboard", None ),
+        ("dress", "Школьная рубашка с жилеткой", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка с жилеткой", "gears_shirt", None ),
+        ("standart2", "Школьная рубашка без жилетки", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка без жилетки", "gears_shirt", None ),
+        ("standart3", "Школьная рубашка без жилетки и галстука", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка без жилетки и галстука", "gears_shirt", None ),
+        ("standart4", "Школьная рубашка, расстегнутая сверху", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка, расстегнутая сверху", "gears_shirt", None ),
+        ("standart5", "Школьная рубашка, расстегнутая сверху и снизу", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка, расстегнутая сверху и снизу", "gears_shirt", None ),
+        ("panties", "Скромные белые трусики", 0, "03_hp/18_store/01.png", 
+            "Скромные белые трусики", "gears_panties", None ),
+        ("skirt", "Школьная длинная юбка (50см)", 0, "03_hp/18_store/01.png", 
+            "Школьная длинная юбка.", "gears_skirt", None ),
         ("scroll", "Священный свиток", 30, "03_hp/18_store/31.png", 
-            "Священный свиток содержит тайные знания...", "scroll", None) # {"pic":"03_hp/19_extras/xx.png"} )
+            "Священный свиток содержит тайные знания...", "scroll", None), # {"pic":"03_hp/19_extras/xx.png"} )
 
         ]
 
-       
 
 # Заполнение массива предметов
         itemList=[]
@@ -155,7 +168,7 @@ init:
                 constVals={"pos_door": gMakePos( 410, 0 ), "pos_doorleft": gMakePos( 370, 0 )}))        
         SetArrayValue("chibihermione", "door", [610,250])
         SetArrayValue("chibihermione", "center", [400,250])
-
+        
         global daphne
         daphne=RegEntry(Person("daphne", "Дафна", CharacterExData( WTXmlLinker.getLinkerKey_daphne()), 
             defVals={"pos": POS_140, "pos2": gMakePos( 340, 420 ), 
@@ -5159,13 +5172,14 @@ init-2:
     
     ###HARRY POTTER CHARACTERS###
     $ translators = Character('Переводчик', color="#0089BE", show_two_window=True, ctc="ctc3", ctc_position="fixed")
-    $ skaz = Character('Сказочник', color="#0000FF")
-    $ nyark = Character ('Nyarkohotep', color="FF0000")
+    #$ skaz = Character('Сказочник', color="#0000FF")
+    #$ nyark = Character ('Nyarkohotep', color="FF0000")
     ### DR'S CODE ooo ###
-    $ dr = Character('Дрон', color="#00FF00")
+    #$ dr = Character('Дрон', color="#00FF00")
     $ ach = Character('Достижение', color = "#888888")
+    $ dev = Character('??????', color = "#0000FF")
     ###
-    $ felix = Character('Феликс', color="#7789CA")
+    #$ felix = Character('Феликс', color="#7789CA")
     ###
     $ her = Character('Гермиона', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ her2 = Character('Гермиона', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
@@ -5265,7 +5279,6 @@ label start:
     call start_elog
     call after_load
 
-
     call main_ex_CharacterExItem_constants
     python:
         # it's the fucking magic - make custom class variable being saved by Ren'Py...
@@ -5298,7 +5311,9 @@ label start:
 #    $herView.data().addItemSet( 'hermione_body' )
 #    $herView.data().addItemSet( 'hermione_start_clothes' )
 
-
+    
+    $ hermi.WrdInit()
+    $ hermi.WrdSetMain()
 
     $ gold = 0
     $ turbo =1
@@ -5509,26 +5524,26 @@ label start:
 #            $ h_xpos=370 #Defines position of the Hermione's full length sprite. (Default 370). (Center: 140)                                                       #HERMIONE
 #            $ h_ypos=0 #Defines position of the Hermione's full length sprite. (Default 370). (Center: 140)                                                       #HERMIONE
 #            jump test
-    nyark "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
-    nyark "Игра получилась объемная, и становится больше с каждым новым обновлением."
-    nyark "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
-    nyark "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
+    dev "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
+    dev "Игра получилась объемная, и становится больше с каждым новым обновлением."
+    dev "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
+    dev "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
     m "Почему \"Авогадро\"?"
-    nyark "..."
-    nyark "... потому что звучит круто?"
+    dev "..."
+    dev "... потому что звучит круто?"
     m "У меня для тебя плохие новости..."
     m "И вообще, игра еще не началась, а ты уже занимаешься самовставками, при том, что работы сделал с гулькин нос."
-    nyark "Но я..."
+    dev "Но я..."
     m "И что с этим красным цветом на твоем нике?"
-    nyark "Красный - цвет силы!"
+    dev "Красный - цвет силы!"
     m "..."
     m "Я ухожу отсюда."
     $ renpy.play('sounds/door.mp3')
-    nyark "..."
-    nyark "Чем плох красненький..?"
-    nyark "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
-    nyark "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
-    nyark "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
+    dev "..."
+    dev "Чем плох красненький..?"
+    dev "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
+    dev "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
+    dev "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
     
     menu:
         "Дай мне чит!":
@@ -5538,8 +5553,8 @@ label start:
             ">Добавлена здоровая куча золота.\n>Слизерин находится в далеком отрыве от всех.\n>Поладить со Снейпом стало гораздо легче."
             
         "Нет, читеры должны гореть в аду!":
-            nyark "..."
-            nyark "Ты - истинный самурай."
+            dev "..."
+            dev "Ты - истинный самурай."
             pass
     menu:         
         "Вы желаете пропустить интро?"

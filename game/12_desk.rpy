@@ -296,7 +296,13 @@ label desk:
             show screen hermione_02 #Hermione stands still.
             show screen bld1
             with d3
-            $ hermi.whoring = 24
+            $ hermi.whoring = 24       
+            $ hermi.WrdAddNew("xxxsmallskirt")
+            $ hermi.WrdDress("xxxsmallskirt")
+            $ hermi.WrdAddNew("skimpyshirt")
+            $ hermi.WrdDress("skimpyshirt")
+            $ hermi.WrdAddNew("badge")
+            $ hermi.WrdDress("badge")       
             jump hermione_approaching
 #            jump hermione_goout            
             
