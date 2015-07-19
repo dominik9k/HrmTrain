@@ -298,8 +298,13 @@ label devel:
     dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
     dev "Дафна : {color=6F6F6F}Zio Dyne{/color}"    
     
+<<<<<<< HEAD
     dev "Список особых благодарностей :"
     dev "{color=0F0F0F}Евгений aka Afar{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+=======
+    dr "Список особых благодарностей :"
+    dr "{color=0F0F0F}Евгений aka Afar{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+>>>>>>> origin/master
     
     $ hx = 370
     $ hy = 0
