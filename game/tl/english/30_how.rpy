@@ -921,7 +921,7 @@ translate english devel_bd29ade8:
 # game/30_how.rpy:424
 translate english devel_b37a2e77:
 
-    # dr "{color=0F0F0F}Евгений aka Afar{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    # dr "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
     dr ""
 
 # game/30_how.rpy:432
