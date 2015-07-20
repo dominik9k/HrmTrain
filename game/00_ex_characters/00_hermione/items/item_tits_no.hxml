@@ -11,9 +11,7 @@
 		<parent>body</parent>
 		<shift></shift>
 		<transforms></transforms>
-		<hidelist>
-                    <item>tits</item>
-                </hidelist>
+		<hidelist></hidelist>
 		<actions></actions>
 	</style>
 </item>

@@ -249,17 +249,17 @@ screen extras:
         
         
 
-        if not persistent.game_complete:
-            textbutton _("{color=#858585}Тайная комната{/color}") action Start("sroom_locked")
-        if persistent.game_complete:
-            textbutton _("Тайная комната") action Start("sroom_main")
+        #if not persistent.game_complete:
+        #    textbutton _("{color=#858585}Тайная комната{/color}") action Start("sroom_locked")
+        #if persistent.game_complete:
+        #    textbutton _("Тайная комната") action Start("sroom_main")
         textbutton _("Об игре") action Start("abouttrainer")
         textbutton _("От разработчиков") action Start("devel")
         if not persistent.game_complete:
             textbutton _("{color=#858585}Галерея{/color}") action Start("gallery_locked")
         if persistent.game_complete:
             textbutton _("Галерея") action Start("gallery")
-        textbutton _("От Акабура") action Start("faq")
+        #textbutton _("От Акабура") action Start("faq")
         
         textbutton _("Назад") action Start("assmenu") # Sent here from "EXTRAS" menu. Basically just jumps to the title screen. 
 

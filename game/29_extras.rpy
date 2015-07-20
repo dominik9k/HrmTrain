@@ -4,7 +4,7 @@ label gallery:
     with flashbb
 
     
-    a1 "Добро пожаловать в галерею игры \"Воспитание Ведьмы\". Здесь вы можете посмотреть некоторые работы."
+    dev "Добро пожаловать в галерею игры \"Воспитание Ведьмы\". Здесь вы можете посмотреть некоторые работы."
     label after_cam:
     menu:
         "- Музыкальная комната -":
@@ -221,12 +221,9 @@ label vol_description:
     show image "03_hp/19_extras/"+str(choose.choice).zfill(2)+".png" with d3
     if commentaries:
         python:
-            if choose.choice <= 30 and _itemCount <= 90:
+            if _itemCount <= 90:
                 for i in range(len(_descrs[choose.choice-1])):
-                    renpy.say(a1,_descrs[choose.choice-1][i])
-            if choose.choice > 30 and _itemCount <= 90 :
-                for i in range(len(_descrs[choose.choice-1])):
-                    renpy.say(dr,_descrs[choose.choice-1][i])
+                    renpy.say(dev,_descrs[choose.choice-1][i])
     show screen ctc
     pause
     hide screen ctc

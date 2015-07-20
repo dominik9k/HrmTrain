@@ -4,8 +4,9 @@ label mail:
     if got_paycheck == True and finished_report >= 1 and letter_from_ficbook_fun == False:
         $ letters -= 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
         $ got_paycheck = False #When TRUE the paycheck is in the mail. Can't do paper work.
-        hide screen owl
-        show screen owl_02
+        if letters <= 0 :
+            hide screen owl
+            show screen owl_02
         ">Вы читаете свои сообщения."
         play sound "sounds/money.mp3"  #Quiet...
 
@@ -36,8 +37,9 @@ label mail:
         $ one_of_ten = renpy.random.randint(1, 6)
         $ letters -= 1 #Adds one letter in waiting list to be read. Displays owl with envelope.
         $ got_paycheck = False #When TRUE the paycheck is in the mail. Can't do paper work.
-        hide screen owl
-        show screen owl_02
+        if letters <= 0 :
+            hide screen owl
+            show screen owl_02
         ">Вы читаете свои сообщения."
         
         
@@ -156,8 +158,9 @@ label mail:
 if day == 1:
     #$ letter_text = "{size=-4}-Для профессора Дамблдора-\n\nЯ пишу Вам, что бы довести до Вашего внимания текущию ситуацию в нашей школе .\n Я боюсь мне будет нужна Ваша помощь, чтобы разобраться в этом.\n\n\n-С уважениям Ваша Гермиона Грейнджер-{/size}"
     $ letter_text = "{size=-7}От: Гермионы Грейнджер\nКому: Профессору Дамблдору\n\n{/size}{size=-4}Я уверена, вы помните причину, по которой я написала вам последнее письмо, сэр.\n\nЯ прошу вас, пожалуйста, услышьте меня на этот раз. Эта несправедливость не может продолжаться...\nТолько не в наши дни и не в нашей школе.\n\nПожалуйста, примите меры.\n\n{size=-3}С уважением,\nГермиона Грейнджер{/size}"    
-    hide screen owl
-    show screen owl_02
+    if letters <= 0 :
+        hide screen owl
+        show screen owl_02
     #$ mail_from_her = False #Comented out because replaced with $ letters += 1
     $ letters -= 1
     label letter01_agagin:
@@ -191,8 +194,9 @@ if letter_from_hermione_02: #Letter from Hermione #02.
     $ letter_from_hermione_02 = False
     #$ letter_text = "{size=-4}-Для профессора Дамблдора-\n\nЯ пишу Вам, что бы довести до Вашего внимания текущию ситуацию в нашей школе.\n Я боюсь мне будет нужна Ваша помощь, чтобы разобраться в этом.\n\n\n-С уважениям Ваша Гермиона Грейнджер--{/size}"
     $ letter_text = "{size=-7}От: Гермионы Грейнджер\nКому: Профессору Дамблдору\n\n{/size}{size=-4}Прошу прощения, что беспокою Вас снова профессор. Я просто хочу убедиться, что Вы отнесётесь к этой проблеме серьезно.\n\nПрошлой ночью еще одна однокурсница призналась мне... Я пообещала держать это в секрете, поэтому не могу вдаваться в подробности.\n\nВсе, что я могу сказать, это то, что вовлечен один из профессоров.\n\nПожалуйста примите меры в ближайшее время.\n\n{size=-3}С уважением,\nГермиона Грейнджер.{/size}"
-    hide screen owl
-    show screen owl_02
+    if letters <= 0 :
+        hide screen owl
+        show screen owl_02
     #$ mail_from_her = False #Comented out because replaced with $ letters += 1
     $ letters -= 1
     label letter02_agagin:
@@ -221,8 +225,9 @@ if work_unlock: # Send a letter that will unlock an ability to write reports
     $ work_unlock = False # Send a letter that will unlock an ability to write reports
     $ letters -= 1
     $ work_unlock2 = True # Unlocks the "Paperwork" button.
-    hide screen owl
-    show screen owl_02
+    if letters <= 0 :
+        hide screen owl
+        show screen owl_02
     $ letter_text = "{size=-7}От: Министерства Магии\nКому: Профессору Альбусу Дамблдору\n\n{/size}{size=-4}Дорогой профессор Дамблдор.\nМы напоминаем Вам, что только при предоставлении нам выполненого отчета, мы можем перечислить оплату на Ваше имя.\n\n{size=-3}С уважением,\nМинистерство Магии.{/size}"
     label letter_work:
     show screen letter
@@ -252,8 +257,9 @@ if work_unlock: # Send a letter that will unlock an ability to write reports
 if total_report >= 10 and letter_from_ficbook_fun == False:
     $ letters -= 1
     $ letter_from_ficbook_fun = True
-    hide screen owl
-    show screen owl_02
+    if letters <= 0 :
+        hide screen owl
+        show screen owl_02
     $ letter_text = "{size=-7}От: Жодана Кроулинг\nКому: Профессору Альбусу Дамблдору\n\n{/size}{size=-4}Дорогой Альбус Дамблдор.\nВ связи с открывшимся в Вас новым даром, Комитет Образования решил удвоить финансирование вашей отчетности.\nЖдем от вас больше захватывающих отчетов, в особенности про потомственного волшебника Педреро.\n\n{size=-3}С уважением,\nваша преданная фанатка и секретарь Комитета Образования,\nЖодана Кроулинг.{/size}"
     label letter_funletter:
     show screen bld1
@@ -382,8 +388,9 @@ $letters=0 # иначе если человек накопит кучу непр
 call screen main_menu_01
 
 label bigletter(__pages): #Письмо родителей Дафны Дамблдору
-    $screens.Hide("owl").Show("owl_02")
     $ letters -= 1
+    if letters <= 0 :
+        $screens.Hide("owl").Show("owl_02")
 
     $__pageIndex=0
     label letterbig_newpage:
@@ -402,8 +409,7 @@ label bigletter(__pages): #Письмо родителей Дафны Дамбл
     $screens.Hide("letterbig", "ctc", d3, "bld1")
     return
 
-label bigtext(__pages): #То же, что и bigletter , но не вычетает единичку из писем
-    $screens.Hide("owl").Show("owl_02")
+label bigtext(__pages): #То же, что и bigletter , но не вычитает единичку из писем
 
     $__pageIndex=0
     label letterbig_newpage:

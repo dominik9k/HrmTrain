@@ -29,17 +29,93 @@ label cupboard:
         "{color=#858585}- Рыться в шкафу -{/color}" if searched and not day == 1:
             call already_did #Message that says that you have searched the cupboard today already.
             jump cupboard
-        "- Ваши вещи -" if not day == 1:
+        "- Вещи -" if not day == 1:
             label possessions:
-                $ choose = RunMenu()
-                python:
-                    for o in hero.Items():
-                            choose.AddItem("- "+o._caption+" ("+str(hero.Items.Count(o.Name))+") -", "menu_cupboard_description" , o.Name)
-                    if  day>4: 
-                        choose.AddItem("Помощь", "cheat_help", "")
-#                    choose.AddItem("- Ничего -", "cupboard", True, "")
-
-                $ choose.Show("cupboard")
+                menu :
+                    "- Ваши вещи -" :
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if not o.GetValue("block") in ["gears_shirt", "gears_skirt", "gears_stockings", "gears_other", "gears_dress"] :
+                                    choose.AddItem("- "+o._caption+" ("+str(hero.Items.Count(o.Name))+") -", "menu_cupboard_description" , o.Name)
+                                                        
+                        $ choose.Show("cupboard")
+                                    
+                    "- Одежда для подарков -"  if  day>4 :
+                        label wrd_clother_cup :
+                            menu:
+                                "- Юбки -":
+                                    $ choose = RunMenu()
+                                    python:
+                                        for o in hero.Items():
+                                            if o.GetValue("block") == "gears_skirt" :
+                                                choose.AddItem("- "+o._caption+" ("+str(hero.Items.Count(o.Name))+") -", "menu_cupboard_description_wrd" , o.Name)
+                                                        
+                                    $ choose.Show("wrd_clother_cup")
+        
+                                "- Верх -": 
+                                    $ choose = RunMenu()
+                                    python:
+                                        for o in hero.Items():
+                                            if o.GetValue("block") == "gears_shirt" :
+                                                choose.AddItem("- "+o._caption+" ("+str(hero.Items.Count(o.Name))+") -", "menu_cupboard_description_wrd" , o.Name)
+                                                        
+                                    $ choose.Show("wrd_clother_cup")       
+        
+                                "- Чулки/Колготки -":
+                                    $ choose = RunMenu()
+                                    python:
+                                        for o in hero.Items():
+                                            if o.GetValue("block") == "gears_stockings" :
+                                                choose.AddItem("- "+o._caption+" ("+str(hero.Items.Count(o.Name))+") -", "menu_cupboard_description_wrd" , o.Name)
+                                                        
+                                    $ choose.Show("wrd_clother_cup")
+        
+                                "- Платья-":
+                                    $ choose = RunMenu()
+                                    python:
+                                        for o in hero.Items():
+                                            if o.GetValue("block") == "gears_dress" :
+                                                choose.AddItem("- "+o._caption+" ("+str(hero.Items.Count(o.Name))+") -", "menu_cupboard_description_wrd" , o.Name)
+                                                        
+                                    $ choose.Show("wrd_clother_cup")
+        
+                                "- Прочее -": 
+                                    $ choose = RunMenu()
+                                    python:
+                                        for o in hero.Items():
+                                            if o.GetValue("block") == "gears_other" :
+                                                choose.AddItem("- "+o._caption+" ("+str(hero.Items.Count(o.Name))+") -", "menu_cupboard_description_wrd" , o.Name)
+                                                        
+                                    $ choose.Show("wrd_clother_cup")  
+                            
+                                "- Ничего -":
+                                    jump possessions
+                    
+                    "- Вещи напрокат -"  if  day>4 :
+                        label wrd_rent_cup :
+                            menu :
+                            
+                                "- Форма веселой школьницы -" if wrd_rent_happy_schoolgirl == 1 :
+                                    jump wrd_rent_cup
+                            
+                                "- Форма игривой школьницы -" if wrd_rent_playful_schoolgirl == 1:
+                                    jump wrd_rent_cup
+                            
+                                "- Форма болельщицы Гриффиндора -" if wrd_rent_cheerleader == 1 :
+                                    jump wrd_rent_cup
+                            
+                                "- Одежда бизнес-леди -" if wrd_rent_business == 1 :
+                                    jump wrd_rent_cup
+                                    
+                                "- Ничего -":
+                                    jump possessions
+                                    
+                    "- Помощь -" if  day>4 :
+                        jump cheat_help
+                        
+                    "- Ничего -":
+                        jump cupboard
 
             label menu_cupboard_description:
                 $item=itsDAHR(choose.choice)
@@ -56,6 +132,15 @@ label cupboard:
                 with d3
                 jump possessions                
 
+            label menu_cupboard_description_wrd:
+                $item=itsDAHR(choose.choice)
+                $ the_gift = item._img
+                show screen gift
+                with d3
+                ">[item._description]"
+                hide screen gift
+                with d3
+                jump wrd_clother_cup 
                    
                 label cheat_help:
                 menu:

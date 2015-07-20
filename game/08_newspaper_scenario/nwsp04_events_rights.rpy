@@ -107,7 +107,7 @@ label nsp_event_rights_1_complete :
         $herView.hideshowQQ( "body_54.png", pos )
         her "Третий... Третий..."
         m "И что же третий ?"
-        her "Третий подошел сзади и положио руку мне на живот."
+        her "Третий подошел сзади и положил руку мне на живот."
         $herView.hideshowQQ( "body_85.png", pos )
         her "Сэр, я больше не могу."
         m "Ну же, еще пару фраз для завершения."
