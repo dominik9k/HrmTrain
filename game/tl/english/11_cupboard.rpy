@@ -174,3 +174,29 @@ translate english strings:
     old "Прохождение"
     new "Walkthrough"
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/11_cupboard.rpy:140
+translate english menu_cupboard_description_wrd_0e8c385f:
+
+    # ">[item._description]"
+    ""
+
+translate english strings:
+
+    # game/11_cupboard.rpy:4
+    old "- Вещи -"
+    new ""
+
+    # game/11_cupboard.rpy:34
+    old "- Одежда для подарков -"
+    new ""
+
+    # game/11_cupboard.rpy:34
+    old "- Вещи напрокат -"
+    new ""
+
+    # game/11_cupboard.rpy:34
+    old "- Помощь -"
+    new ""
+

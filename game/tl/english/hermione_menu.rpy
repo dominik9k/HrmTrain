@@ -1678,3 +1678,47 @@ translate english strings:
     old "- Одежда бизнес-леди -"
     new ""
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/hermione_menu.rpy:211
+translate english wrd_clother_hermi_ba93ebc8:
+
+    # her "О, хорошо! Тогда я пойду на уроки."
+    her ""
+
+# game/hermione_menu.rpy:213
+translate english wrd_clother_hermi_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/hermione_menu.rpy:215
+translate english wrd_clother_hermi_ef2f2f2a:
+
+    # her "*Гм!*..."
+    her ""
+
+# game/hermione_menu.rpy:218
+translate english wrd_clother_hermi_900b60d0:
+
+    # her "О, хорошо! Тогда я пойду спать."
+    her ""
+
+# game/hermione_menu.rpy:220
+translate english wrd_clother_hermi_3574ffb4_1:
+
+    # her "..............................."
+    her ""
+
+# game/hermione_menu.rpy:222
+translate english wrd_clother_hermi_bde091d9:
+
+    # her "Пф!..."
+    her ""
+
+translate english strings:
+
+    # game/hermione_menu.rpy:38
+    old "- Подарить ей одежду -"
+    new ""
+

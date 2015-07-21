@@ -1518,3 +1518,11 @@ translate english strings:
     old "\"Рассказывай или потеряешь свои очки!\""
     new "\"Tell me now, or lose the points!\""
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/01_personal_requests/02_pr_pub_flirt.rpy:139
+translate english new_request_02_b_complete_ae0283e6:
+
+    # m "Расскажите мне."
+    m ""
+
