@@ -682,7 +682,7 @@ translate english new_request_02_b_complete_479cc0fb:
 translate english new_request_02_b_complete_b75e6abc_2:
 
     # m "И?"
-    m ""And?
+    m "And?"
 
 # game/01_personal_requests/02_pr_pub_flirt.rpy:283
 translate english new_request_02_b_complete_a67cbd8b:

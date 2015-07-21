@@ -286,7 +286,7 @@ translate english new_request_08_cc8d03ff:
 translate english new_request_08_beed83fa_2:
 
     # her_head_main "............"
-    her_head_main ""............
+    her_head_main "............"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:174
 translate english new_request_08_387d837a:
