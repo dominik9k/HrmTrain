@@ -4,397 +4,397 @@
 translate english new_request_15_a092f63c:
 
     # m "{size=-4}(Предложить ей показать сиськи однокласснику?){/size}"
-    m ""
+    m "{size=-4}(Tell her to flash her tits to one of her classmates?){/size}"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:20
 translate english new_request_15_d0d2f36c:
 
     # m "Мисс Грейнджер..."
-    m ""
+    m "Miss Granger..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:21
 translate english new_request_15_57b49e9e:
 
     # m "Сегодня мне бы хотелось подарить \"Гриффиндору\" 25 очков."
-    m ""
+    m "I would like to award \"Gryffindor\" with 25 house points today."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:23
 translate english new_request_15_e8e5da52:
 
     # her "Серьезно?"
-    her ""
+    her "Really?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:24
 translate english new_request_15_3afcaba0:
 
     # her "Спасибо, сэр!"
-    her ""
+    her "Thank you, Sir!"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:25
 translate english new_request_15_12d9712f:
 
     # m "Да, но сначала мне нужна твоя помощь..."
-    m ""
+    m "Yes, but first I will require your help with something..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:26
 translate english new_request_15_87e663a0:
 
     # her "Конечно, сэр! Все, что угодно!"
-    her ""
+    her "Of course, Sir! Anything!"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:27
 translate english new_request_15_b97761c6:
 
     # m "Мне нужно, чтобы ты вышла отсюда и показала кому-нибудь свои сиськи..."
-    m ""
+    m "I need you to go out there and show off your tits to people..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:30
 translate english new_request_15_125f65c1:
 
     # her "...?"
-    her ""
+    her "...?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:31
 translate english new_request_15_653b84ed:
 
     # m "Ну, знаешь, оголила грудь перед парнями..."
-    m ""
+    m "You know, flash your breasts to some boys..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:33
 translate english new_request_15_2df28d4d:
 
     # her "?!!"
-    her ""
+    her "?!!"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:36
 translate english new_request_15_ffe14981:
 
     # her "Профессор Дамблдор!"
-    her ""
+    her "Professor Dumbledore!"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:39
 translate english new_request_15_190fabcf:
 
     # her "Это совершенно новый уровень неприемлемости! Даже для вас, сэр!"
-    her ""
+    her "This is a completely new level of inappropriate, even for you, Sir!"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:40
 translate english new_request_15_e98c6cde:
 
     # her "Как вы можете давать такие задания вашей ученице?"
-    her ""
+    her "How can you ask one of your pupils to perform such a task?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:41
 translate english new_request_15_1d0b4585:
 
     # m "Так вот значит, как ты заговорила? Понятно..."
-    m ""
+    m "So that's how you feel then? I see..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:42
 translate english new_request_15_ff1b8fff:
 
     # m "Наверное, я подарю эти очки какому-нибудь другому факультету..."
-    m ""
+    m "I suppose I will be awarding these points to some other house instead ..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:43
 translate english new_request_15_47242a25:
 
     # m "Может быть, \"Слизерину\"?"
-    m ""
+    m "\"Slytherin\" perhaps?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:45
 translate english new_request_15_a1e034c1:
 
     # her "................"
-    her ""
+    her "................"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:46
 translate english new_request_15_5495f852:
 
     # m "Ты ведь знаешь, никакого давления..."
-    m ""
+    m "But, you know, no pressure..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:48
 translate english new_request_15_3c86c265:
 
     # her "Профессор..."
-    her ""
+    her "Professor..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:49
 translate english new_request_15_3f0801cd:
 
     # her "Судьба моего факультета важна для меня, но..."
-    her ""
+    her "The fate of my house is very important to me, but..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:50
 translate english new_request_15_148a52da:
 
     # m "Да ну?"
-    m ""
+    m "Is it really?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:51
 translate english new_request_15_fe3f490a:
 
     # m "Почему тогда я этого не замечаю?"
-    m ""
+    m "Why don't you show it to me then?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:52
 translate english new_request_15_d81bc291:
 
     # m "Действительно, покажите мне, насколько она значима для вас, мисс Грейнджер."
-    m ""
+    m "Yes. Show me how important it is to you, Miss Granger."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:54
 translate english new_request_15_60ba8852:
 
     # her "Но ведь это неприемлемо..."
-    her ""
+    her "But this is inappropriate..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:55
 translate english new_request_15_40c217fc:
 
     # m "А в том ли мы положении, чтобы обсуждать, что приемлемо, а что - нет?"
-    m ""
+    m "Are we really in any position to discuss what is appropriate and what is not at this point?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:57
 translate english new_request_15_33359693:
 
     # her ".................."
-    her ""
+    her ".................."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:58
 translate english new_request_15_8e93d0a5:
 
     # m "Я бы сказал, что поезд давно ушел..."
-    m ""
+    m "I would say that ship has sailed a long time ago..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:60
 translate english new_request_15_eb67a624:
 
     # her ".............."
-    her ""
+    her ".............."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:61
 translate english new_request_15_e4d051e1:
 
     # m "Все, что я прошу тебя сделать - это всего лишь дать какому-нибудь счастливцу взглянуть одним глазком..."
-    m ""
+    m "All I ask you to do is to give some lucky boy a quick peek..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:63
 translate english new_request_15_8370aac5:
 
     # her "Но почему? Почему я должна делать такие вещи?"
-    her ""
+    her "But why? Why must I do things like this, Sir?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:64
 translate english new_request_15_e6bbbb50:
 
     # m "Минута твоего времени за 35 очков..."
-    m ""
+    m "A minute of your time for 25 house points..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:65
 translate english new_request_15_b8931763:
 
     # m "Отличная сделка, ты не находишь?"
-    m ""
+    m "A fair deal, wouldn't you agree?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:66
 translate english new_request_15_f9e2cde0:
 
     # her "Наверное..."
-    her ""
+    her "I suppose..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:67
 translate english new_request_15_c1200793:
 
     # her "Ладно, я посмотрю, что удастся сделать..."
-    her ""
+    her "Well alright, I'll see what I can do..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:71
 translate english new_request_15_ebc5a2d6:
 
     # m "Я думаю, что тебе нужно показывать свои сиськи почаще, девочка."
-    m ""
+    m "I think you need to show off your tits some more, girl."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:73
 translate english new_request_15_d37fb1f8:
 
     # her "В смысле вам, сэр?"
-    her ""
+    her "You mean to you, Sir?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:74
 translate english new_request_15_4df2fc46:
 
     # m "Нет, своим одноклассникам..."
-    m ""
+    m "No, to your classmates..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:76
 translate english new_request_15_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:77
 translate english new_request_15_e1bc0706:
 
     # m "Так что иди и возвращайся вечером с отчетом..."
-    m ""
+    m "Yes, go do that and then report back to me..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:79
 translate english new_request_15_4a1237b6:
 
     # her "Мне заплатят за это?"
-    her ""
+    her "Will I get paid for this?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:80
 translate english new_request_15_db0314d1:
 
     # m "Конечно тебе заплатят за это, глупышка."
-    m ""
+    m "Of course you will get paid for this, girl. Don't be silly."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:81
 translate english new_request_15_7ddf71cc:
 
     # m "Тридцать пять очков. Обычная ставка..."
-    m ""
+    m "35 house points. The usual rate..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:83
 translate english new_request_15_f47820dc:
 
     # her "................."
-    her ""
+    her "................."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:85
 translate english new_request_15_c06ca7d5:
 
     # her "Что ж, ладно... Я посмотрю, что смогу сделать, сэр..."
-    her ""
+    her "Well, alright... I will see what I can do, Sir..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:88
 translate english new_request_15_9cfe16c9:
 
     # m "Мисс Грейнджер. У меня к вам вопрос."
-    m ""
+    m "Miss Granger. I have a question for you."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:90
 translate english new_request_15_7b70888b:
 
     # m "Как вы думаете, зачем женщине грудь?"
-    m ""
+    m "Why do you think women have breasts?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:92
 translate english new_request_15_5b9a93f0:
 
     # her "...что вы имеете в виду, сэр?"
-    her ""
+    her "...what do you mean, Sir?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:93
 translate english new_request_15_b598f5d4:
 
     # m "Хорошо, давайте я перефразирую..."
-    m ""
+    m "Alright, let me rephrase this..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:94
 translate english new_request_15_4ed8e93a:
 
     # m "Назовите основную функцию женских молочных желез"
-    m ""
+    m "What would you say is the most common application for the female mammary glands?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:96
 translate english new_request_15_83f0bbb7_1:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:98
 translate english new_request_15_4a421c2d:
 
     # her "Производство молока?"
-    her ""
+    her "Production of milk?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:99
 translate english new_request_15_71b4211c:
 
     # m "Хорошо. Как еще женщина может использовать свои сиськи?"
-    m ""
+    m "Good. What else do women use their tits for?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:101
 translate english new_request_15_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm.."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:103
 translate english new_request_15_ab16e7e9:
 
     # her "...привлекать мужчин?"
-    her ""
+    her "...to attract men?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:104
 translate english new_request_15_38fb4593:
 
     # m "Да. Давайте сосредоточимся на этом."
-    m ""
+    m "Yes. Let's concentrate on that."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:105
 translate english new_request_15_74d7647d:
 
     # m "Я хочу, чтобы вы вышли отсюда..."
-    m ""
+    m "I need you to go out there..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:106
 translate english new_request_15_3fba99d7:
 
     # m "Нашли какого-нибудь удачливого ублюдка..."
-    m ""
+    m "Find some lucky bastard..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:107
 translate english new_request_15_91876a08:
 
     # m "И показали ему сиськи..."
-    m ""
+    m "And flash him your tits..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:109
 translate english new_request_15_8cf08efc:
 
     # her "{size=-3}(Я знала, к чему идет этот разговор...){/size}"
-    her ""
+    her "{size=-3}(I just knew that this was exactly where this conversation was heading...){/size}"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:110
 translate english new_request_15_0174eb3e:
 
     # m "Что это было, мисс Грейнджер?"
-    m ""
+    m "What was that, Miss Granger?"
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:112
 translate english new_request_15_a1f2c523:
 
     # her "Я сказала, что мне лучше пойти, сэр."
-    her ""
+    her "I said I'd better go then, Sir."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:113
 translate english new_request_15_86a81129:
 
     # her "Мои занятия вот-вот начнутся..."
-    her ""
+    her "My classes are about to start..."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:114
 translate english new_request_15_96bb4166:
 
     # m "Тридцать пять очков будут ждать вас по возвращению, сударыня."
-    m ""
+    m "35 house points will be waiting for you here upon your return, girl."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:116
 translate english new_request_15_eb67a624_1:
 
     # her ".............."
-    her ""
+    her ".............."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:119
 translate english new_request_15_076c1729:
 
     # m "Девочка, мне нужно, чтобы ты вышла отсюда и показала сиськи кому-нибудь из одноклассников."
-    m ""
+    m "Girl I need you to go out there and flash your tits to one of your classmates."
 
 # game/01_personal_requests/15_pr_pub_show_tits.rpy:121
 translate english new_request_15_c41cb552:

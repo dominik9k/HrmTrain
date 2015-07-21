@@ -4,103 +4,103 @@
 translate english menu_reading_book_2_c087b0f3:
 
     # "\"[wtevent._caption]\"" "[wtevent._description]"
-    "\"[wtevent._caption]\"" ""
+    "\"[wtevent._caption]\"" "[wtevent._description]"
 
 # game/12_desk.rpy:24
 translate english menu_reading_book_2_d1f88270:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:28
 translate english menu_reading_book_2_d1f88270_1:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:32
 translate english menu_reading_book_2_d1f88270_2:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:36
 translate english menu_reading_book_2_d1f88270_3:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:40
 translate english menu_reading_book_2_d1f88270_4:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:44
 translate english menu_reading_book_2_d1f88270_5:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:48
 translate english menu_reading_book_2_d1f88270_6:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:52
 translate english menu_reading_book_2_d1f88270_7:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:56
 translate english menu_reading_book_2_d1f88270_8:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:62
 translate english menu_reading_book_2_19578e64:
 
     # m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
-    m ""
+    m "Your skill is too low, you need at least two publications with a printing set of previous level"
 
 # game/12_desk.rpy:67
 translate english menu_reading_book_2_19578e64_1:
 
     # m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
-    m ""
+    m "Your skill is too low, you need at least two publications with a printing set of previous level"
 
 # game/12_desk.rpy:72
 translate english menu_reading_book_2_19578e64_2:
 
     # m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
-    m ""
+    m "Your skill is too low, you need at least two publications with a printing set of previous level"
 
 # game/12_desk.rpy:77
 translate english menu_reading_book_2_19578e64_3:
 
     # m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
-    m ""
+    m "Your skill is too low, you need at least two publications with a printing set of previous level"
 
 # game/12_desk.rpy:82
 translate english menu_reading_book_2_19578e64_4:
 
     # m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
-    m ""
+    m "Your skill is too low, you need at least two publications with a printing set of previous level"
 
 # game/12_desk.rpy:87
 translate english menu_reading_book_2_19578e64_5:
 
     # m "Слишком мало опыта, нужно не менее двух публикаций с типографическим набором предыдущего уровня."
-    m ""
+    m "Your skill is too low, you need at least two publications with a printing set of previous level"
 
 # game/12_desk.rpy:93
 translate english menu_reading_book_2_ccc4097a:
 
     # m "Слишком мало опыта, нужно провести не менее трех фотосессий с фотоаппаратом предыдущего типа."
-    m ""
+    m "Your skill is too low, you need to do at least 3 photo-shoots with a camera of the previous type"
 
 # game/12_desk.rpy:98
 translate english menu_reading_book_2_ccc4097a_1:
@@ -124,67 +124,67 @@ translate english menu_reading_book_2_52cedd12:
 translate english menu_reading_book_2_d1f88270_9:
 
     # m "Эта книга пока слишком сложна для меня."
-    m ""
+    m "This book is still too hard for me."
 
 # game/12_desk.rpy:123
 translate english menu_reading_book_2_b7f2a551:
 
     # m "Есть странные люди, которые приступают к книге со второй ее части. Но я не из таких."
-    m ""
+    m "There are strange people who begin the book with the second part. But I'm not one of those."
 
 # game/12_desk.rpy:135
 translate english reading_book_done_bd2fd170:
 
     # "\"[wtevent._caption]\"" "[wtevent._description]."
-    "\"[wtevent._caption]\"" ""
+    "\"[wtevent._caption]\"" "[wtevent._description]."
 
 # game/12_desk.rpy:141
 translate english reading_book_done_f39d5439:
 
     # m "Я не думаю, что повторное чтение этой книги даст мне хоть что-то."
-    m ""
+    m "I do not think re-reading this book will give me anything."
 
 # game/12_desk.rpy:147
 translate english reading_book_done_8342d991:
 
     # m "Не думаю, что повторное чтение этой книги даст мне хоть что-то. Прочесть ее просто ради удовольствия?"
-    m ""
+    m "I don't think reading this book again will give me any new ideas. Should I just read it for fun though?"
 
 # game/12_desk.rpy:156
 translate english reading_book_done_7eae58c6:
 
     # m "Я уже закончил ее, но решил прочесть еще раз ради удовольствия..."
-    m ""
+    m "I have already finished it, but decided to read again for pleasure..."
 
 # game/12_desk.rpy:160
 translate english reading_book_done_99b69551:
 
     # m "Я уже закончил ее. "
-    m ""
+    m "I've already finished it. "
 
 # game/12_desk.rpy:162
 translate english reading_book_done_0ac19dc5:
 
     # m "Она дала мне новый навык: [wtevent._conclusion]"
-    m ""
+    m "It gave me a new skill: [wtevent._conclusion]"
 
 # game/12_desk.rpy:164
 translate english reading_book_done_16e43b4f:
 
     # m "[wtevent._conclusion]"
-    m ""
+    m "[wtevent._conclusion]"
 
 # game/12_desk.rpy:167
 translate english reading_book_done_e1536852:
 
     # g4 "Я обуздал свой дух!"
-    g4 ""
+    g4 "I have mastered the control over my spirit. Now I shall always complete an additional chapter when doing paperwork."
 
 # game/12_desk.rpy:168
 translate english reading_book_done_6169596f:
 
     # g9 "Мой дух - моя сучка!"
-    g9 ""
+    g9 "My spirit is my bitch"
 
 # game/12_desk.rpy:182
 translate english desk_932809f5:
@@ -304,13 +304,13 @@ translate english desk_ea968a4d:
 translate english desk_8917e311:
 
     # m "Обычный стол..."
-    m ""
+    m "Seems like an ordinary desk..."
 
 # game/12_desk.rpy:244
 translate english desk_58825657:
 
     # m "Хм... это календарь?"
-    m ""
+    m "Hm... a calendar?"
 
 # game/12_desk.rpy:246
 translate english desk_1f55ef50:
@@ -352,19 +352,19 @@ translate english desk_b35ef351:
 translate english desk_f3c7b135:
 
     # m "Я уже завершил шесть отчетов на этой неделе."
-    m ""
+    m "I have already completed six reports this week."
 
 # game/12_desk.rpy:346
 translate english desk_bff9705e:
 
     # m "Сначала мне нужно получить оплату."
-    m ""
+    m "First, I need to get paid."
 
 # game/12_desk.rpy:396
 translate english fiction_books_a06cf37e:
 
     # dahr "Пожалуйста, потерпите чуть-чуть. Сова уже в пути."
-    dahr ""
+    dahr "Please be patient. The owl has been dispatched."
 
 # game/12_desk.rpy:437
 translate english nsp_newspaper_publication_f9407bfe:
@@ -400,43 +400,43 @@ translate english nsp_newspaper_publication_1410c80b:
 translate english reading_book_xx_c2338664:
 
     # ">Вы читаете книгу [wtevent._caption], слушая дождь, барабанящий по крыше вашей башни."
-    ""
+    ">You are reading the book [wtevent._caption], listening to the rain drumming on the roof of your tower."
 
 # game/12_desk.rpy:574
 translate english reading_book_xx_4bbf2a34:
 
     # ">Вы читаете книгу [wtevent._caption]..."
-    ""
+    ">You are reading the book [wtevent._caption]..."
 
 # game/12_desk.rpy:601
 translate english reading_book_xx_ad100186:
 
     # ">Используя изученные вами методы скорочтения, вы рациональнее используете время и продолжаете читать."
-    ""
+    ">Using your speed reading technique, you rationally use your time and continue to read."
 
 # game/12_desk.rpy:610
 translate english reading_book_xx_3e47f69a:
 
     # ">Дождь за окном успокаивает вас, и вы отлично себя чувствуете, читая..."
-    ""
+    ">Rain outside the window calms you and you feel great reading ..."
 
 # game/12_desk.rpy:611
 translate english reading_book_xx_86a8574b:
 
     # ">Вы пытаетесь продолжить читать, но вскоре понимаете, что воздух в комнате слишком влажный."
-    ""
+    ">You are trying to continue to read, but soon realize that the air in the room is too humid."
 
 # game/12_desk.rpy:613
 translate english reading_book_xx_3e47f69a_1:
 
     # ">Дождь за окном успокаивает вас, и вы отлично себя чувствуете, читая..."
-    ""
+    ">Rain outside the window calms you and you feel great reading ..."
 
 # game/12_desk.rpy:618
 translate english reading_book_xx_f3a28ab5:
 
     # ">Осталось еще несколько глав."
-    ""
+    ">There are still some chapters left."
 
 # game/12_desk.rpy:633
 translate english concetrationg_reading_11804091:
@@ -448,175 +448,175 @@ translate english concetrationg_reading_11804091:
 translate english chap_finished_xx_b28e9e25:
 
     # ">Вы закончили \"главу [wtevent._status]\" этой книги."
-    ""
+    ">You've completed \"chapter [wtevent._status]\" of the book."
 
 # game/12_desk.rpy:796
 translate english chapter_check_book_xx_df441831:
 
     # ">Это была последняя глава. Вы закончили эту книгу."
-    ""
+    ">This was the last chapter. You have finished this book."
 
 # game/12_desk.rpy:800
 translate english chapter_check_book_xx_3636e46f:
 
     # g4 "Что за херня! Я ненавижу человека, который это написал!"
-    g4 ""
+    g4 "What kind of garbage! I hate the person who wrote it!"
 
 # game/12_desk.rpy:801
 translate english chapter_check_book_xx_c5566dd8:
 
     # m "Впрочем, все эти изнасилования натолкнули меня на пару идей..."
-    m ""
+    m "However, all the rape led me to a couple of ideas..."
 
 # game/12_desk.rpy:806
 translate english chapter_check_book_xx_18d2d9cb:
 
     # m "Вау! Отличная книга! Это было неплохо!"
-    m ""
+    m "Wow! What a great book! That was intense!"
 
 # game/12_desk.rpy:810
 translate english chapter_check_book_xx_43c92829:
 
     # m "Хм...?"
-    m ""
+    m "Hm...?"
 
 # game/12_desk.rpy:811
 translate english chapter_check_book_xx_9885c24c:
 
     # m "Что это...? Закладка?"
-    m ""
+    m "What is that...? A bookmark?"
 
 # game/12_desk.rpy:816
 translate english chapter_check_book_xx_b76a33be:
 
     # ">Вы нашли ваучер Дахра."
-    ""
+    "You found a DAHR's voucher."
 
 # game/12_desk.rpy:819
 translate english chapter_check_book_xx_3b81d51e:
 
     # m "Хм..."
-    m ""
+    m "Hm..."
 
 # game/12_desk.rpy:825
 translate english chapter_check_book_xx_24db2ffa:
 
-    # m "Неплохо. Я действительно готов заботиться о Ши ..."
-    m ""
+    # m "Неплохо. Я действительно готов заботиться о Шаи ..."
+    m "Not bad. I really grew to care about that Shea girl..."
 
 # game/12_desk.rpy:826
 translate english chapter_check_book_xx_1cf1735e:
 
     # g9 "Ну, о ней и ее анальной девственности..."
-    g9 ""
+    g9 "Well, her and her anal virginity..."
 
 # game/12_desk.rpy:829
 translate english chapter_check_book_xx_1cbd48fc:
 
-    # m "Значит в конце я снова с Ши?"
-    m ""
+    # m "Значит в конце я снова с Шаей?"
+    m "So I ended up with Shea again, huh?"
 
 # game/12_desk.rpy:830
 translate english chapter_check_book_xx_47fcf420:
 
     # m "Хм... Может быть, я должен попробовать и выбирать другие варианты в следующий раз...?"
-    m ""
+    m "Hm... Maybe I should try to make different choices next time...?"
 
 # game/12_desk.rpy:833
 translate english chapter_check_book_xx_a4cc1ab6:
 
     # m "Неплохо, неплохо. Госпожа Стивенс оказалась той еще шлюхой..."
-    m ""
+    m "Not bad, not bad. That Miss Stevens Lady turned out to be one dirty slut..."
 
 # game/12_desk.rpy:836
 translate english chapter_check_book_xx_dafb7ec1:
 
     # m "Значит в конце я снова с госпожой Стивенс?"
-    m ""
+    m "So I ended up with Miss Stevens again?"
 
 # game/12_desk.rpy:837
 translate english chapter_check_book_xx_47fcf420_1:
 
     # m "Хм... Может быть, я должен попробовать и выбирать другие варианты в следующий раз...?"
-    m ""
+    m "Hm... Maybe I should try to make different choices next time?"
 
 # game/12_desk.rpy:840
 translate english chapter_check_book_xx_89a84bae:
 
     # g9 "Славненько! Обожаю хэппи энды!"
-    g9 ""
+    g9 "Sweet! I love happy endings!"
 
 # game/12_desk.rpy:843
 translate english chapter_check_book_xx_fd63f5d5:
 
     # m "Значит, в конце я снова со светленькой девахой?"
-    m ""
+    m "So I ended up with that blond chick again?"
 
 # game/12_desk.rpy:844
 translate english chapter_check_book_xx_2ae8c5f7:
 
     # m "Хм... Может, в следующий раз попробовать выбирать другие варианты...?"
-    m ""
+    m "Hm... Maybe I should try to make different choices next time?"
 
 # game/12_desk.rpy:847
 translate english chapter_check_book_xx_da32c7e8:
 
     # m "Хм ... Конец очень разочаровал..."
-    m ""
+    m "Hm... What an anticlimactic ending..."
 
 # game/12_desk.rpy:848
 translate english chapter_check_book_xx_3f07f53c:
 
     # m "Может, я должен прочитать ее еще раз когда-нибудь..."
-    m ""
+    m "Maybe I should read it again sometime."
 
 # game/12_desk.rpy:865
 translate english chapter_check_book_xx_f3cd4441:
 
     # m "Новый навык: [wtevent._conclusion]"
-    m ""
+    m "New skill: [wtevent._conclusion]"
 
 # game/12_desk.rpy:867
 translate english chapter_check_book_xx_16e43b4f:
 
     # m "[wtevent._conclusion]"
-    m ""
+    m "[wtevent._conclusion]"
 
 # game/12_desk.rpy:958
 translate english paperwork_a3dd1f8c:
 
     # ">Вы делаете отчет."
-    ""
+    ">You do some paperwork."
 
 # game/12_desk.rpy:1037
 translate english report_chapters_check_77d6e591:
 
     # ">Вы закончили отчет."
-    ""
+    ">You've completed a report."
 
 # game/12_desk.rpy:1048
 translate english f_moon_bonus_459be41b:
 
     # ">Полнолуние сделало вас более продуктивным.\n>Вы закончили [report_chapters]-ю главу."
-    ""
+    ">The Full moon makes you feel more productive.\n>You finished [report_chapters] chapters so far."
 
 # game/12_desk.rpy:1056
 translate english finished_working_chapter_3c2cbc90:
 
     # ">Вы закончили [report_chapters]-ю главу."
-    ""
+    ">You finished [report_chapters] chapters so far."
 
 # game/12_desk.rpy:1064
 translate english concentration_label_4bbb61f1:
 
     # ">Во время работы вы идеально сконцентрированы.\n>И заканчиваете дополнительную главу.\n>Вы закончили [report_chapters]-ю главу."
-    ""
+    ">You maintain perfect concentration during your work.\n>And finish another chapter of the report.\n>You finished [report_chapters] chapters so far."
 
 # game/12_desk.rpy:1074
 translate english speedwriting_label_3830f98f:
 
     # ">Вы используете свой навык скорописания.\n>И заканчиваете дополнительную главу.\n>Вы закончили [report_chapters]-ю главу."
-    ""
+    ">You use your speedwriting skills.\n>And finish another chapter of the report.\n>You finished [report_chapters] chapters so far."
 
 # game/12_desk.rpy:1094
 translate english nsp_articles_work_cb75d763:
@@ -658,17 +658,17 @@ translate english nsp_speedwriting_label_17de190e:
 translate english gal_proper_0d1f151b:
 
     # m "Чтение книг не дает мне ничего."
-    m ""
+    m "Reading books out of order won't do me any good."
 
 translate english strings:
 
     # game/12_desk.rpy:18
     old "- Читать книгу -"
-    new ""
+    new "-Read the book-"
 
     # game/12_desk.rpy:148
     old "- Читать книгу снова -"
-    new ""
+    new "-Read the book again-"
 
     # game/12_desk.rpy:177
     old "- Искать приложение к каталогу -"
@@ -684,23 +684,23 @@ translate english strings:
 
     # game/12_desk.rpy:177
     old "- Осмотреть -"
-    new ""
+    new "-Examine the desk-"
 
     # game/12_desk.rpy:177
     old "- Тест 1 -"
-    new ""
+    new "-Test 1-"
 
     # game/12_desk.rpy:177
     old "- Тест 2 -"
-    new ""
+    new "-Test 2-"
 
     # game/12_desk.rpy:177
     old "- Тест 3 -"
-    new ""
+    new "-Test 3-"
 
     # game/12_desk.rpy:177
     old "- Тест 4 -"
-    new ""
+    new "-Test 4-"
 
     # game/12_desk.rpy:177
     old "- Писать статьи для газеты -"
@@ -712,15 +712,15 @@ translate english strings:
 
     # game/12_desk.rpy:177
     old "- Делать бумажную работу -"
-    new ""
+    new "-Do paperwork-"
 
     # game/12_desk.rpy:177
     old "{color=#858585}- Делать бумажную работу -{/color}"
-    new ""
+    new "{color=#858585}-Do paperwork-{/color}"
 
     # game/12_desk.rpy:177
     old "- Книжная коллекция -"
-    new ""
+    new "-Book Collection-"
 
     # game/12_desk.rpy:177
     old "- Продолжить чтение -"
@@ -728,19 +728,19 @@ translate english strings:
 
     # game/12_desk.rpy:177
     old "- Приблуды Дахра -"
-    new ""
+    new "-DAHR's Oddities-"
 
     # game/12_desk.rpy:177
     old "- Передернуть -"
-    new ""
+    new "-Jerk off-"
 
     # game/12_desk.rpy:177
     old "- Дремать -"
-    new ""
+    new "-Take a nap-"
 
     # game/12_desk.rpy:177
     old "- Спать -"
-    new ""
+    new "-Go to sleep-"
 
     # game/12_desk.rpy:177
     old "- Газета -"
@@ -764,11 +764,11 @@ translate english strings:
 
     # game/12_desk.rpy:352
     old "- Обучающие книги -"
-    new ""
+    new "-Educational books-"
 
     # game/12_desk.rpy:352
     old "- Фантастика -"
-    new ""
+    new "-Novels-"
 
     # game/12_desk.rpy:420
     old "- Публикация газеты -"
@@ -800,5 +800,5 @@ translate english strings:
 
     # game/12_desk.rpy:501
     old "-Ничего-"
-    new ""
+    new "-Never mind-"
 

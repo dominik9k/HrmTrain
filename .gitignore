@@ -1,8 +1,8 @@
 *.rpyc
 *.rpy~
 *.pyo
-/Witch Trainer.exe
-/log.txt
+/
+log.txt
 /errors.txt
 /traceback.txt
 /game/bytecode.rpyb

@@ -4,307 +4,307 @@
 translate english new_request_02_c912ffab:
 
     # m "{size=-4}(Я хочу попросить ее показать мне трусики. Просто и понятно.){/size}"
-    m ""
+    m "{size=-4}(I will ask her to show me her panties. Plain and simple.){/size}"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:14
 translate english new_request_02_068e704f:
 
     # her "Так, что же мне нужно сделать?"
-    her ""
+    her "So, what will it be, Sir?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:15
 translate english new_request_02_aff7a5e9:
 
     # m "Ничего такого, на самом деле..."
-    m ""
+    m "Nothing drastic, really..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:16
 translate english new_request_02_5b35b6e1:
 
     # m "Я просто хочу, чтобы ты показала мне свои трусики."
-    m ""
+    m "I just want you to show me your panties."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:24
 translate english new_request_02_17e89fc6:
 
     # her "Мои... трусики?.."
-    her ""
+    her "My... panties...?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:26
 translate english new_request_02_ffe14981:
 
     # her "Профессор Дамблдор!"
-    her ""
+    her "Professor Dumbledore!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:27
 translate english new_request_02_d14c89d8:
 
     # m "Я знаю, знаю, это немного странно..."
-    m ""
+    m "I know, I know, this a little weird..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:29
 translate english new_request_02_325ce13a:
 
     # her " {size=+7}Немного!?{/size}"
-    her ""
+    her "{size=+7}A little !?{/size}"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:30
 translate english new_request_02_39c058ba:
 
     # her "Это абсолютно неуместно!"
-    her ""
+    her "This is completely inappropriate!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:31
 translate english new_request_02_b5b391e5:
 
     # m "Слушай, нам ведь предстоит это пройти, чтобы пойти дальше, верно?"
-    m ""
+    m "Listen, we need to go through this phase before we get to the good stuff, alright?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:33
 translate english new_request_02_a3147d58:
 
     # her "\"Пойти дальше\"? Профессор, я не понимаю..."
-    her ""
+    her "The \"good stuff\"? Professor I don't understand..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:34
 translate english new_request_02_4525f76b:
 
     # m "Что вы не понимаете, мисс Грейнджер?"
-    m ""
+    m "What don't you understand, Miss Granger?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:35
 translate english new_request_02_ad1d9783:
 
     # m "Вам нужны эти очки или нет?"
-    m ""
+    m "Do you need these points or not?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:37
 translate english new_request_02_a02a7039:
 
     # her "Нужны..."
-    her ""
+    her "I do..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:38
 translate english new_request_02_dc4318ed:
 
     # m "Значит, приподнимайте свою юбку..."
-    m ""
+    m "Lift up your skirt then..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:40
 translate english new_request_02_e5b33e82:
 
     # her "............."
-    her ""
+    her "............."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:45
 translate english new_request_02_c2f597b3:
 
     # her "Ох... снова?"
-    her ""
+    her "Oh... again?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:46
 translate english new_request_02_17fffe1f:
 
     # m "Просто сделай это..."
-    m ""
+    m "Just do it..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:48
 translate english new_request_02_33359693:
 
     # her ".................."
-    her ""
+    her ".................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:74
 translate english new_request_02_b86a786a:
 
     # her_head_main "........................"
-    her_head_main ""
+    her_head_main "........................"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:77
 translate english new_request_02_25294ac4:
 
     # her_head_main "....................."
-    her_head_main ""
+    her_head_main "....................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:80
 translate english new_request_02_5896c68d:
 
     # her_head_main ".........................."
-    her_head_main ""
+    her_head_main ".........................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:81
 translate english new_request_02_b4449783:
 
     # g4 "!!?"
-    g4 ""
+    g4 "!!?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:107
 translate english new_request_02_c8f97c7c:
 
     # her "....................."
-    her ""
+    her "....................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:110
 translate english new_request_02_11dd8e34:
 
     # ">Вы внимательно смотрите на лицо Гермионы..."
-    ""
+    ">You study Hermione's face..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:112
 translate english new_request_02_3cd8d94f:
 
     # ">Вы задаетесь вопросом, что сейчас происходит у нее в голове."
-    ""
+    ">You wonder what's going through her mind right now."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:114
 translate english new_request_02_7697268f:
 
     # her "......................."
-    her ""
+    her "......................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:117
 translate english new_request_02_e1c2546c:
 
     # ">Просто женское белье..."
-    ""
+    ">That's a plain girlish underwear..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:120
 translate english new_request_02_7697268f_1:
 
     # her "......................."
-    her ""
+    her "......................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:135
 translate english new_request_02_567ac4aa:
 
     # her "Вот, профессор..."
-    her ""
+    her "Here, Professor..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:139
 translate english new_request_02_c5e2f833:
 
     # her "Это не так..."
-    her ""
+    her "That's not true..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:141
 translate english new_request_02_85d6cc12:
 
     # her "Это сравнительно небольшая плата, если \"Гриффиндор\" получит кубок в этом году."
-    her ""
+    her "But this is a small price to pay if the \"Gryffindors\" keep the cup this year."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:142
 translate english new_request_02_6acb698c:
 
     # her "Я знаю, что все будут счастливы..."
-    her ""
+    her "I know everyone will be so happy..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:146
 translate english new_request_02_2c0a8c31:
 
     # her "Спасибо, профессор..."
-    her ""
+    her "Thank you, Professor..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:149
 translate english new_request_02_6d2b3daf:
 
     # her ".............................."
-    her ""
+    her ".............................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:150
 translate english new_request_02_7cbd06cc:
 
     # her "...........................?"
-    her ""
+    her "...........................?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:152
 translate english new_request_02_2343473c:
 
     # her "................................"
-    her ""
+    her "................................"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:154
 translate english new_request_02_422f4594:
 
     # her "Профессор, пожалуйста... Вы смущаете меня."
-    her ""
+    her "Professor, please... You are embarrassing me."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:173
 translate english new_request_02_740894ae:
 
     # g4 "Где ваши трусики, мисс Грейнджер?"
-    g4 ""
+    g4 "Where are your panties, Miss Granger?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:175
 translate english new_request_02_94d04c41:
 
     # her "Ох, в последнее время я не очень хочу носить их..."
-    her ""
+    her "Oh, lately I just don't feel like wearing them..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:178
 translate english new_request_02_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:180
 translate english new_request_02_874695b2:
 
     # her "Вероятно, это так..."
-    her ""
+    her "I suppose I am..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:181
 translate english new_request_02_5bf37f83:
 
     # her "Могу я получить чуть больше очков за это?"
-    her ""
+    her "Do I get extra points for that?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:184
 translate english new_request_02_f728e787:
 
     # m "Конечно!"
-    m ""
+    m "Absolutely!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:186
 translate english new_request_02_ec257c21:
 
     # m "Десять очков \"Гриффиндору\"!"
-    m ""
+    m "Ten additional points to \"Gryffindor\"!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:188
 translate english new_request_02_35f7e650:
 
     # her "Спасибо вам, сэр!"
-    her ""
+    her "Thank you, Sir!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:192
 translate english new_request_02_6d2b3daf_1:
 
     # her ".............................."
-    her ""
+    her ".............................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:194
 translate english new_request_02_4214cc05:
 
     # her "Не будьте так скупы, профессор."
-    her ""
+    her "Then I don't appreciate you being mean to me, professor."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:199
 translate english new_request_02_b0527846:
 
     # her "Сэр, вы действительно позвали меня сюда из-за этих несчастных 5 очков?"
-    her ""
+    her "Sir, you really summoned me here because of these 5 miserable points?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:200
 translate english new_request_02_45d67bd3:
 
     # her "Мне жалко тратить время на такую услугу. Это для первокурок, сэр!"
-    her ""
+    her "I don't want to waste my time on this favor. This is for freshmen girls, Sir"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:201
 translate english new_request_02_1792c1d5:
 
     # m "Неужели?"
-    m ""
+    m "Really?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:202
 translate english new_request_02_31401245:
@@ -316,61 +316,61 @@ translate english new_request_02_31401245:
 translate english new_request_02_a6738d87:
 
     # her "Может, мы займемся чем-нибудь ....м-м... поинтереснее?"
-    her ""
+    her "Could we do something more entertaining?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:205
 translate english new_request_02_5ea5c493:
 
     # her "В смысле, дающим больше очков?"
-    her ""
+    her "I mean something that gives more points?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:208
 translate english new_request_02_afabec5a:
 
     # m "И чем же вы хотите заняться, мисс Грейнджер?"
-    m ""
+    m "What do you have in mind, Miss Granger?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:210
 translate english new_request_02_0cec4f7b:
 
     # her "Ну, не знаю, сэр. Есть разные варианты!"
-    her ""
+    her "I don't know, Sir. There are so many options."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:214
 translate english new_request_02_48b85b05:
 
     # m "C каких это пор вы стали выбирать себе задания, мисс Грейнджер?"
-    m ""
+    m "Since when you have to choose your own favors?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:215
 translate english new_request_02_0f56e48e:
 
     # m "Кажется, это я здесь решаю, какая услуга оплачивается."
-    m ""
+    m "Last time I checked, I was the one to pay for them."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:216
 translate english new_request_02_a44eec25:
 
     # m "Так вот, сегодня оплачивается показ ваших трусов!"
-    m ""
+    m "Today I'm willing to pay you to show me your panties."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:218
 translate english new_request_02_de93cb63:
 
     # her "Простите, сэр! Конечно."
-    her ""
+    her "Of course, Sir. I'm sorry."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:219
 translate english new_request_02_652f560d:
 
     # m "Итак?"
-    m ""
+    m "Please, continue, Miss Granger."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:220
 translate english new_request_02_124c5214:
 
     # her "Вот, профессор."
-    her ""
+    her "Here, Professor..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:222
 translate english new_request_02_469c408b:
@@ -718,63 +718,63 @@ translate english new_request_02_461e3ab9:
 translate english request_02_done_11acb6b8:
 
     # m "[current_payout] очков \"Гриффиндору\", мисс Грейнджер. Отличная работа."
-    m ""
+    m "[current_payout] points to \"Gryffindor\", Miss Granger. Well done."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:390
 translate english request_02_done_94326ff7:
 
     # her "Это все?"
-    her ""
+    her "Will this be all then?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:391
 translate english request_02_done_107a6902:
 
     # m "Да, можешь идти."
-    m ""
+    m "Yes, you can go now."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:398
 translate english request_02_done_af3908b7:
 
     # her "Еще [current_payout] очков..."
-    her ""
+    her "Another [current_payout] points..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:399
 translate english request_02_done_f4e1b570:
 
     # her "Не могу дождаться, чтобы рассказать ребятам!"
-    her ""
+    her "Can't wait to tell the guys!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:401
 translate english request_02_done_0357985b:
 
     # her "Только я не могу рассказать обо всем, что пришлось сделать для этого..."
-    her ""
+    her "Only that I can't actually tell them about any of this..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:404
 translate english request_02_done_86a81129:
 
     # her "Мои занятия вот-вот начнутся..."
-    her ""
+    her "Well, my classes are about to start..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:406
 translate english request_02_done_57107838:
 
     # her "Уже довольно поздно, сэр... Мне пора..."
-    her ""
+    her "It's getting pretty late, Sir... I should go..."
 
 translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:7
     old "\"(Да, давай попробуем!)\""
-    new ""
+    new "\"(Yes, let's do it!)\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:108
     old "- Смотреть на ее лицо -"
-    new ""
+    new "-Stare at her face-"
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:108
     old "- Смотреть на ее трусики -"
-    new ""
+    new "-Stare at her panties-"
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:136
     old "\"Вы не выглядите смущенной...\""
@@ -782,7 +782,7 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:136
     old "\"Мне нравятся ваши трусики...\""
-    new ""
+    new "\"I like your panties...\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:136
     old "- Продолжать смотреть в ее глаза -"
@@ -790,19 +790,19 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:176
     old "\"Ах ты, маленькая шлюха!\""
-    new ""
+    new "\"You little slut!\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:176
     old "\"Отлично. Пять очков Гриффиндору!\""
-    new ""
+    new "\"Good! 5 points to Gryffindor\!\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:182
     old "\"Конечно!\""
-    new ""
+    new "\"Absolutely!\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:182
     old "\"Категорически нет!\""
-    new ""
+    new "\"Absolutely not!\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:243
     old "\"Хорошо, 20 очков. Показывайте!"
@@ -810,11 +810,11 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:302
     old "\"Вы не слишком смущаетесь, мисс...\""
-    new ""
+    new "\"You don't look too embarrassed...\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:302
     old "- Продолжать смотреть ей в глаза -"
-    new ""
+    new "-Keep looking into her eyes-"
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:325
     old "\"Нет! Хватит на сегодня.\""
