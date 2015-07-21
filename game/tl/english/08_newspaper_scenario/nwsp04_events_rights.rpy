@@ -684,3 +684,11 @@ translate english nsp_event_rights_5_complete_fd25640f:
     # ">текст ивента прав 5-7"
     ""
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/08_newspaper_scenario/nwsp04_events_rights.rpy:110
+translate english nsp_event_rights_1_complete_2b1361e5:
+
+    # her "Третий подошел сзади и положил руку мне на живот."
+    her ""
+

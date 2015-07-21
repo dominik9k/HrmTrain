@@ -114,3 +114,11 @@ translate english strings:
     old "- Особое -"
     new ""
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/09_secret_room/01_secret_room.rpy:15
+translate english sroom_main_085c3f43:
+
+    # dev "Добро пожаловать Тайную Комнату. Здесь вы можете изучить список своих игровых достижений и насладиться некоторыми бонусами."
+    dev ""
+

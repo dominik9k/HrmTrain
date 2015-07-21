@@ -4,115 +4,115 @@
 translate english snape_tutor_1_cf8c4ed0:
 
     # m "... кстати говоря, о девченке Грейнджер..."
-    m ""
+    m "... speaking of Granger girl..."
 
 # game/31_tutor_snape.rpy:26
 translate english snape_tutor_1_879941b1:
 
     # sna2 "..."
-    sna2 ""
+    sna2 "..."
 
 # game/31_tutor_snape.rpy:29
 translate english snape_tutor_1_51e3a694:
 
     # sna2 "А ведь вечер обещал быть приятным..."
-    sna2 ""
+    sna2 "But the evening promised to be a pleasant one..."
 
 # game/31_tutor_snape.rpy:30
 translate english snape_tutor_1_6b02e4f5:
 
     # sna2 "Что она устроила в этот раз?"
-    sna2 ""
+    sna2 "What did she do this time?"
 
 # game/31_tutor_snape.rpy:32
 translate english snape_tutor_1_ec64c1ee:
 
     # m "Боюсь, я не смогу обучать ее."
-    m ""
+    m "I'm afraid I can't teach her."
 
 # game/31_tutor_snape.rpy:35
 translate english snape_tutor_1_9d9cdd5d:
 
     # sna2 "Ха! Теперь-то ты меня понимаешь!"
-    sna2 ""
+    sna2 "Ha! Now you know what I mean!"
 
 # game/31_tutor_snape.rpy:36
 translate english snape_tutor_1_52d70d02:
 
     # sna2 "Держу пари, ты не продержался и десяти минут."
-    sna2 ""
+    sna2 "I bet you didn't last ten minutes."
 
 # game/31_tutor_snape.rpy:39
 translate english snape_tutor_1_5cd8b4cc:
 
     # sna2 "Хотя я могу тебя понять. И даже немного сочувствую..."
-    sna2 ""
+    sna2 "Although I can understand you. And even sympathise a little ..."
 
 # game/31_tutor_snape.rpy:42
 translate english snape_tutor_1_917e8332:
 
     # sna2 "Черт, у нее завтра опять \"защита от темных искусств\"."
-    sna2 ""
+    sna2 "Damn, tomorrow she has \"Defence against Dark Arts\" again."
 
 # game/31_tutor_snape.rpy:45
 translate english snape_tutor_1_0d51e90f:
 
     # sna2 "Налей мне еще."
-    sna2 ""
+    sna2 "Pour me another one."
 
 # game/31_tutor_snape.rpy:47
 translate english snape_tutor_1_7f55ead8:
 
     # m "Я не говорил, что сдаюсь."
-    m ""
+    m "I didn't say I give up."
 
 # game/31_tutor_snape.rpy:50
 translate english snape_tutor_1_43c11697:
 
     # sna2 "Хм?"
-    sna2 ""
+    sna2 "Hm?"
 
 # game/31_tutor_snape.rpy:52
 translate english snape_tutor_1_f8932c67:
 
     # m "Проблема в том, что я ничему не могу ее научить."
-    m ""
+    m "The problem is, I can't teach her anything."
 
 # game/31_tutor_snape.rpy:53
 translate english snape_tutor_1_28e42939:
 
     # m "Знаю, я и так не должен учить ее ничему путному."
-    m ""
+    m "I know, I actually don't need to teach her anything useful."
 
 # game/31_tutor_snape.rpy:54
 translate english snape_tutor_1_01894b92:
 
     # m "Но я по крайней мере должен делать вид, что занимаюсь с ней чем-то полезным."
-    m ""
+    m "But, I need to keep an illusion of doing it."
 
 # game/31_tutor_snape.rpy:55
 translate english snape_tutor_1_8f15f7b8:
 
     # m "Боюсь, что трюк с зябликом дважды не сработает."
-    m ""
+    m "I'm afraid that the trick with Finch will not work twice."
 
 # game/31_tutor_snape.rpy:58
 translate english snape_tutor_1_eccb0ddd:
 
     # sna2 "\"Трюк с зябликом\"?"
-    sna2 ""
+    sna2 "\"The trick with Finch\"?"
 
 # game/31_tutor_snape.rpy:60
 translate english snape_tutor_1_00cb2045:
 
     # m "... ты не хочешь об этом знать, поверь мне."
-    m ""
+    m "... you don't want to know, trust me."
 
 # game/31_tutor_snape.rpy:63
 translate english snape_tutor_1_0943e698:
 
     # sna2 "Хм."
-    sna2 ""
+    sna2 "Hm..."
 
 # game/31_tutor_snape.rpy:66
 translate english snape_tutor_1_fd734685:
@@ -664,5 +664,5 @@ translate english snape_tutor_2_b430aaf8:
 translate english snape_tutor_2_d8a01c51:
 
     # sna "Ну что же, тогда удачи."
-    sna ""
+    sna "Well, good luck."
 

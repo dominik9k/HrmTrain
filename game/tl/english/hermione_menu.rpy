@@ -10,13 +10,13 @@ translate english hermione_main_menu_82d87789:
 translate english hermione_main_menu_834e41dc:
 
     # her "Мне нечего сказать вам..."
-    her ""
+    her "I have nothing to say to you, Sir..."
 
 # game/hermione_menu.rpy:82
 translate english hermione_main_menu_834e41dc_1:
 
     # her "Мне нечего сказать вам..."
-    her ""
+    her "I have nothing to say to you, Sir..."
 
 # game/hermione_menu.rpy:163
 translate english hermione_main_menu_ba93ebc8:
@@ -58,1087 +58,1087 @@ translate english hermione_main_menu_bde091d9:
 translate english chit_chat_hermione_93d85d13:
 
     # her "Может быть, если я буду работать быстрее, я смогу втиснуть пару занятий в мое рассписание..."
-    her ""
+    her "Maybe if I worked harder, I could squeeze a few more classes into my schedule..."
 
 # game/hermione_menu.rpy:219
 translate english chit_chat_hermione_f5422fa9:
 
     # her "В общем-то, мне нравится когда меня зовут \"Всезнайка\"."
-    her ""
+    her "Actually I don't mind it to be called a \"know-it-all\"."
 
 # game/hermione_menu.rpy:220
 translate english chit_chat_hermione_dd26cff5:
 
     # her "Возможно, я даже краснею от этого..."
-    her ""
+    her "I think it's rather flattering..."
 
 # game/hermione_menu.rpy:224
 translate english chit_chat_hermione_324160b9:
 
     # her "Василиск, также известен как король змей."
-    her ""
+    her "The basilisk, also known as the king of serpents."
 
 # game/hermione_menu.rpy:225
 translate english chit_chat_hermione_b092e43d:
 
     # her "Герпо Фол первый осеменил Василиска."
-    her ""
+    her "Herpo the Foul was the first to breed a Basilisk."
 
 # game/hermione_menu.rpy:226
 translate english chit_chat_hermione_e1e56827:
 
     # her "Он сделал это с помощью--"
-    her ""
+    her "He accomplished that by.."
 
 # game/hermione_menu.rpy:228
 translate english chit_chat_hermione_327c85dd:
 
     # her "Ой, извините, профессор, у нас еще один тест завтра..."
-    her ""
+    her "Oh, I'm sorry, professor, we have another test tomorrow..."
 
 # game/hermione_menu.rpy:229
 translate english chit_chat_hermione_485b67f2:
 
     # her "Я просто хочу быть уверенной, что я готова..."
-    her ""
+    her "I Just want to make sure that I'm ready..."
 
 # game/hermione_menu.rpy:233
 translate english chit_chat_hermione_5402dac4:
 
     # her "Если бы мое тело не требовало сна..."
-    her ""
+    her "If my body wouldn't require sleep..."
 
 # game/hermione_menu.rpy:235
 translate english chit_chat_hermione_c04c04ec:
 
     # her "Я могла бы заниматся в два раза больше!?"
-    her ""
+    her "I would be able to spend twice as much time studying!?"
 
 # game/hermione_menu.rpy:237
 translate english chit_chat_hermione_bb4cd328:
 
     # her "Надеюсь, есть заклинание для этого..."
-    her ""
+    her "I wonder if there's a spell for that..."
 
 # game/hermione_menu.rpy:242
 translate english chit_chat_hermione_37da63e0:
 
     # her "До сих пор профессор Трелони не дал мне даже капельки полезных знаний, сэр."
-    her ""
+    her "So far Professor Trelawney hasn't taught me a single piece of any actual knowledge, Sir."
 
 # game/hermione_menu.rpy:247
 translate english chit_chat_hermione_fab4b849:
 
     # her "Если бы только студенты были честными, они бы полюбили ответственность."
-    her ""
+    her "If only more students were honest, responsible and diligent like me."
 
 # game/hermione_menu.rpy:252
 translate english chit_chat_hermione_9d63104e:
 
     # her "Как люди могу быть такими безразличными к мировым проблемам?"
-    her ""
+    her "How can some people be so ignorant to the world's problems?"
 
 # game/hermione_menu.rpy:253
 translate english chit_chat_hermione_6daca7d0:
 
     # her "Лично я считаю, что мы все должны работать вместе, чтобы мир стал лучше."
-    her ""
+    her "Personally, I think that every single one of us should work harder to make our world a better place."
 
 # game/hermione_menu.rpy:258
 translate english chit_chat_hermione_3065921a:
 
     # her "В последнее время дождь льет чаще..."
-    her ""
+    her "It's been raining quite a lot lately..."
 
 # game/hermione_menu.rpy:263
 translate english chit_chat_hermione_11eb35b8:
 
     # her "Очень мало людей знает..."
-    her ""
+    her "Very few people know this..."
 
 # game/hermione_menu.rpy:265
 translate english chit_chat_hermione_8ddf1f52:
 
     # her "...что я очень люблю шоколад."
-    her ""
+    her "...But I really like chocolate."
 
 # game/hermione_menu.rpy:270
 translate english chit_chat_hermione_65200a77:
 
     # her "Извините сэр, но у меня нету времени на разговоры..."
-    her ""
+    her "I am sorry, Sir, but I don't really have time for idle chit chat..."
 
 # game/hermione_menu.rpy:277
 translate english chit_chat_hermione_fa5add36:
 
     # her "Я где то прочитала что полная луна помогает сосредоточится..."
-    her ""
+    her "I read somewhere that a full moon often makes it easier to concentrate at a task at hand..."
 
 # game/hermione_menu.rpy:282
 translate english chit_chat_hermione_a697ac22:
 
     # her "Я обожаю сидеть с книгой у огня, когда льет дождь..."
-    her ""
+    her "I love nothing more than to curl up by a fireplace during a rainstorm with a good book..."
 
 # game/hermione_menu.rpy:287
 translate english chit_chat_hermione_465d7710:
 
     # her "Прошел слух, что профессор Снейп что-то замышляет в школе..."
-    her ""
+    her "A peculiar rumour concerning Professor Snape has been circulating in the school lately..."
 
 # game/hermione_menu.rpy:289
 translate english chit_chat_hermione_48c53c9a:
 
     # her "Хотя, наверное, это пустяки..."
-    her ""
+    her "Well. it's probably trifles..."
 
 # game/hermione_menu.rpy:294
 translate english chit_chat_hermione_594dc7d4:
 
     # her "Несмотря на сомнительность услуг, которые я вам оказывала, сэр..."
-    her ""
+    her "Despite the questionable nature of the favours you have been buying from me lately, Sir..."
 
 # game/hermione_menu.rpy:295
 translate english chit_chat_hermione_659d11ef:
 
     # her "Я благодарна вам за вашу помощь..."
-    her ""
+    her "I am grateful to you for your help..."
 
 # game/hermione_menu.rpy:297
 translate english chit_chat_hermione_77faa347:
 
     # her "Гриффиндор нуждается в этих очках больше, чем когда либо..."
-    her ""
+    her "Gryffindor needs these points now more than ever..."
 
 # game/hermione_menu.rpy:302
 translate english chit_chat_hermione_2ea0f610:
 
     # her "Почему квиддич так популярен среди девочек? Я не понимаю..."
-    her ""
+    her "Why Quidditch is so popular among the girls is simply beyond me..."
 
 # game/hermione_menu.rpy:307
 translate english chit_chat_hermione_9460af4d:
 
     # her "Наше \"Общество Защиты Прав Мужчин\" набирает популярность."
-    her ""
+    her "The \"Men's Rights Movement\" is steadily gaining popularity."
 
 # game/hermione_menu.rpy:308
 translate english chit_chat_hermione_ae4dd5a1:
 
     # her "Это очень важно знать, что вы помогаете развивать наше общество."
-    her ""
+    her "It's very fulfilling to know that we are helping to improve our society."
 
 # game/hermione_menu.rpy:313
 translate english chit_chat_hermione_8a621b84:
 
     # her "Хогвартс имеет внушительную библиотеку..."
-    her ""
+    her "The Hogwarts school library is considered to be quite extensive..."
 
 # game/hermione_menu.rpy:315
 translate english chit_chat_hermione_99c4eabc:
 
     # her "Но я хочу, чтобы она была еще больше..."
-    her ""
+    her "Still, I can't help but wish that it'd be bigger..."
 
 # game/hermione_menu.rpy:320
 translate english chit_chat_hermione_767cef18:
 
     # her "Как один из лучших студентов академии, я должна поддерживать свою репутацию..."
-    her ""
+    her "As one of the top students in this school I have a reputation to keep..."
 
 # game/hermione_menu.rpy:321
 translate english chit_chat_hermione_d5422337:
 
     # her "Люди уважают меня..."
-    her ""
+    her "People look up to me..."
 
 # game/hermione_menu.rpy:323
 translate english chit_chat_hermione_45486cc7:
 
     # her "...так что я очень ценю ваше внимание, сэр."
-    her ""
+    her "...So, your discretion is very appreciated, Sir."
 
 # game/hermione_menu.rpy:328
 translate english chit_chat_hermione_e294870c:
 
     # her "Услуги которые я вам оказала тогда, сэр..."
-    her ""
+    her "That favour I sold you the other day, Sir..."
 
 # game/hermione_menu.rpy:330
 translate english chit_chat_hermione_f92b238a:
 
     # her "......."
-    her ""
+    her "......."
 
 # game/hermione_menu.rpy:332
 translate english chit_chat_hermione_96cf9c6b:
 
     # her "Я пошла на это только для моего факультета."
-    her ""
+    her "I only agreed to it because the needs of my house always come first."
 
 # game/hermione_menu.rpy:334
 translate english chit_chat_hermione_4ebdf147:
 
     # her "Я просто хотела, чтобы вы знали это, сэр..."
-    her ""
+    her "I just wanted you to know that, Sir..."
 
 # game/hermione_menu.rpy:338
 translate english chit_chat_hermione_f39cf766:
 
     # her "Наш \"Осенний бал\" будет через несколько месяцев..."
-    her ""
+    her "The \"Autumn Ball\" is still several months away..."
 
 # game/hermione_menu.rpy:340
 translate english chit_chat_hermione_5ed7cdfe:
 
     # her "Но некоторые девочки уже обсуждают что они наденут на бал..."
-    her ""
+    her "But some girls are already discussing what kind of dress they are going to wear..."
 
 # game/hermione_menu.rpy:347
 translate english chit_chat_hermione_4a042094:
 
     # her "Вы помните, как вы просили мои трусики в первый раз?"
-    her ""
+    her "Do you remember when you asked me to show you my panties for the first time, Sir?"
 
 # game/hermione_menu.rpy:348
 translate english chit_chat_hermione_a5375633:
 
     # her "Я тогда так сильно разозлилась..."
-    her ""
+    her "I was so furious with you then..."
 
 # game/hermione_menu.rpy:350
 translate english chit_chat_hermione_964c123a:
 
     # her "Тепеь я вижу, что я была неправа..."
-    her ""
+    her "Now I see, that I was just being selfish..."
 
 # game/hermione_menu.rpy:351
 translate english chit_chat_hermione_4339449f:
 
     # her "Ведь судьба целого факультета в моих руках..."
-    her ""
+    her "After all, the honour of my house is at stake here..."
 
 # game/hermione_menu.rpy:353
 translate english chit_chat_hermione_2cc91f02:
 
     # her "Все остальное не должно меня волновать!"
-    her ""
+    her "And that shall be my one and only concern!"
 
 # game/hermione_menu.rpy:357
 translate english chit_chat_hermione_a05d175e:
 
     # her "Скорость, с которой Слизерин набирает очки в последнее время просто невозможна."
-    her ""
+    her "The rate at which Slytherin house has been gaining points lately is simply ridiculous."
 
 # game/hermione_menu.rpy:359
 translate english chit_chat_hermione_f04507bd:
 
     # her "Я думаю, за этим стоит профессор Снейп."
-    her ""
+    her "I think Professor Snape might be behind it."
 
 # game/hermione_menu.rpy:361
 translate english chit_chat_hermione_2c69f440:
 
     # her "Вам нужно разобраться в ситуации, сэр."
-    her ""
+    her "You should look into this, Sir."
 
 # game/hermione_menu.rpy:366
 translate english chit_chat_hermione_298bb2dd:
 
     # her "Яйца Эшвендэра, корень розы, лунный камень..."
-    her ""
+    her "Ashwinder eggs, rose thorns, moonstone..."
 
 # game/hermione_menu.rpy:368
 translate english chit_chat_hermione_a1e91d56:
 
     # her "Ах? Я опять размышляла вслух?"
-    her ""
+    her "Huh? Am I thinking out loud again?"
 
 # game/hermione_menu.rpy:370
 translate english chit_chat_hermione_7f1002e2:
 
     # her "Извините..."
-    her ""
+    her "I apologize..."
 
 # game/hermione_menu.rpy:372
 translate english chit_chat_hermione_3f264f02:
 
     # her "Просто скоро снова тест..."
-    her ""
+    her "It's just that I have another Potions test soon..."
 
 # game/hermione_menu.rpy:376
 translate english chit_chat_hermione_9bbacbb2:
 
     # her "Я ненавижу факультет Слизерина всем своим сердцем, сэр."
-    her ""
+    her "I dislike the entire house of Slytherin with all my heart, Sir."
 
 # game/hermione_menu.rpy:380
 translate english chit_chat_hermione_3d0b794b:
 
     # her "Хогвартс стал для меня новым домом в последнее время..."
-    her ""
+    her "Hogwarts has really become a second home to me lately..."
 
 # game/hermione_menu.rpy:382
 translate english chit_chat_hermione_f1b81729:
 
     # her "Я даже почти не скучаю по родителям..."
-    her ""
+    her "I don't even miss my parents nearly as much anymore..."
 
 # game/hermione_menu.rpy:384
 translate english chit_chat_hermione_65bd572c:
 
     # her "Если подумать, я не скучаю по ним совсем..."
-    her ""
+    her "Come to think of it I don't miss them at all..."
 
 # game/hermione_menu.rpy:386
 translate english chit_chat_hermione_65c6447a:
 
     # her "Я - ужасная дочь..."
-    her ""
+    her "I'm an awful daughter..."
 
 # game/hermione_menu.rpy:390
 translate english chit_chat_hermione_a87a0e42:
 
     # her "*Зевок!* Я прочитала о технике, которая помогает в два раза меньше спать..."
-    her ""
+    her "*Yawn!* I read about this technique that supposedly allows you to cut your sleep time in half..."
 
 # game/hermione_menu.rpy:392
 translate english chit_chat_hermione_410751b5:
 
     # her "Но, кажется, она не работает.... *Зевок!*"
-    her ""
+    her "I don't think it's working though.... *Yawn!*"
 
 # game/hermione_menu.rpy:396
 translate english chit_chat_hermione_bc217ed1:
 
     # her "Даже когда я закончу Хогвартс я буду продолжать совершенствоваться."
-    her ""
+    her "Even after I graduate from Hogwarts I plan to keep on working hard."
 
 # game/hermione_menu.rpy:398
 translate english chit_chat_hermione_669eb71e:
 
     # her "Если я отдам себя всю этому миру он станет лучше, я знаю это!"
-    her ""
+    her "If I give it my all I can make this world a better place, I know it!"
 
 # game/hermione_menu.rpy:403
 translate english chit_chat_hermione_01a7403d:
 
     # her "Мне кажется, что этот год будет важнейшим в моей жизни..."
-    her ""
+    her "Somehow I have the feeling that this year will become a pivotal turning point in my life..."
 
 # game/hermione_menu.rpy:408
 translate english chit_chat_hermione_f9d38516:
 
     # her "Некоторые школьные коридоры пыльные и грязные..."
-    her ""
+    her "Some of the less travelled school corridors are not very well lit and rather dusty..."
 
 # game/hermione_menu.rpy:409
 translate english chit_chat_hermione_e1e20e8c:
 
     # her "Пожалуйста позаботьтесь об этом, сэр..."
-    her ""
+    her "Please take care of this, Sir..."
 
 # game/hermione_menu.rpy:414
 translate english chit_chat_hermione_7d82657e:
 
     # her "Я читала об этом. Называется \"Маховик времени\"."
-    her ""
+    her "I've read about this thing called a \"Time-Turner\"."
 
 # game/hermione_menu.rpy:415
 translate english chit_chat_hermione_f2122e15:
 
     # her "Он позволяет владельцу контролировать время..."
-    her ""
+    her "It allows the user to control the flow of time..."
 
 # game/hermione_menu.rpy:417
 translate english chit_chat_hermione_4cece803:
 
     # her "Если бы он был у меня, я бы творила чудеса со своим расписанием..."
-    her ""
+    her "Having a device like that would do wonders for my schedule..."
 
 # game/hermione_menu.rpy:424
 translate english chit_chat_hermione_dc78625e:
 
     # her "Мое \"Общество по Защите Прав Мужчин\" в последнее время теряет популярность..."
-    her ""
+    her "My \"men's Rights Movement\" has been losing its popularity lately..."
 
 # game/hermione_menu.rpy:426
 translate english chit_chat_hermione_f78845c0:
 
     # her "Похоже это никого не волнует!"
-    her ""
+    her "It's as if people don't even care!"
 
 # game/hermione_menu.rpy:430
 translate english chit_chat_hermione_fcfff344:
 
     # her "Спасибо вам за все эти очки, сэр."
-    her ""
+    her "Thank you for buying all those favours from me, Sir."
 
 # game/hermione_menu.rpy:432
 translate english chit_chat_hermione_3a21b2c1:
 
     # her "Некоторые, конечно, достались весьма странным образом, но ..."
-    her ""
+    her "Some of them were borderline inappropriate, sure..."
 
 # game/hermione_menu.rpy:434
 translate english chit_chat_hermione_a6da608a:
 
     # her "Но это не важно, до тех пор, пока это дает \"Гриффиндору\" преимущество в гонке со \"Слизерином\"."
-    her ""
+    her "But I don't mind sacrificing my dignity if it will allow Gryffindor to compete with Slytherin on equal ground."
 
 # game/hermione_menu.rpy:439
 translate english chit_chat_hermione_077dd5a0:
 
     # her "Квиддич это глупо!"
-    her ""
+    her "Quidditch is stupid!"
 
 # game/hermione_menu.rpy:441
 translate english chit_chat_hermione_cf6191a7:
 
     # her "Вот. Я сказала это."
-    her ""
+    her "There. I said it."
 
 # game/hermione_menu.rpy:445
 translate english chit_chat_hermione_2b32164f:
 
     # her "Сэр, есть кое-что, что вы должны знать о профессоре Снейпе..."
-    her ""
+    her "Sir, there is something about Professor Snape that I think you should know..."
 
 # game/hermione_menu.rpy:447
 translate english chit_chat_hermione_f47820dc:
 
     # her "................."
-    her ""
+    her "................."
 
 # game/hermione_menu.rpy:449
 translate english chit_chat_hermione_8185e005:
 
     # her "........................."
-    her ""
+    her "........................."
 
 # game/hermione_menu.rpy:451
 translate english chit_chat_hermione_d7aac37e:
 
     # her "Ух... Ничего..."
-    her ""
+    her "Uhm... Never mind..."
 
 # game/hermione_menu.rpy:456
 translate english chit_chat_hermione_b233554c:
 
     # her "Некоторые из \"Слизеринских\" девок в последнее время среди бела дня продаются за очки..."
-    her ""
+    her "Some of the Slytherin girls sell sexual favours almost openly these days..."
 
 # game/hermione_menu.rpy:458
 translate english chit_chat_hermione_ae680b86:
 
     # her "Вы должны положить этому конец, сэр."
-    her ""
+    her "You need to put an end to such practices, Sir."
 
 # game/hermione_menu.rpy:460
 translate english chit_chat_hermione_d97e7558:
 
     # her "(Я едва поспеваю за ними...)"
-    her ""
+    her "(I can barely keep up...)"
 
 # game/hermione_menu.rpy:464
 translate english chit_chat_hermione_4f9f46ae:
 
     # her "Жизнь устроена очень странно..."
-    her ""
+    her "Life works in mysterious ways..."
 
 # game/hermione_menu.rpy:466
 translate english chit_chat_hermione_27091f98:
 
     # her "Вы согласны, сэр?"
-    her ""
+    her "Wouldn't you agree, Sir?"
 
 # game/hermione_menu.rpy:471
 translate english chit_chat_hermione_2148bcb6:
 
     # her "Слизеринцы..."
-    her ""
+    her "Slytherins..."
 
 # game/hermione_menu.rpy:476
 translate english chit_chat_hermione_564beb0e:
 
     # her "В последнее время я так много времени провела в вашем кабинете..."
-    her ""
+    her "I've been spending so much time in your office lately, Sir..."
 
 # game/hermione_menu.rpy:478
 translate english chit_chat_hermione_6d4a4fb9:
 
     # her "Если я буду неосторожна, некоторые могут заметить и решить, что я стала вашей любовниц..."
-    her ""
+    her "If I'm not careful some people may think that I have become your pet..."
 
 # game/hermione_menu.rpy:480
 translate english chit_chat_hermione_a5157fb3:
 
     # her "Я хотела сказать, любимчиком..."
-    her ""
+    her "I meant to say the teacher's pet..."
 
 # game/hermione_menu.rpy:485
 translate english chit_chat_hermione_d8e1eca9:
 
     # her "Мой любимый цвет?"
-    her ""
+    her "My favourite colours?"
 
 # game/hermione_menu.rpy:487
 translate english chit_chat_hermione_8e3dac86:
 
     # her "Алый и золотой, конечно же!"
-    her ""
+    her "Scarlet and gold of course!"
 
 # game/hermione_menu.rpy:492
 translate english chit_chat_hermione_4a6e5668:
 
     # her "Это странно, что мои лучшие друзья это мальчики?"
-    her ""
+    her "Is it weird that my best friends are boys?"
 
 # game/hermione_menu.rpy:500
 translate english chit_chat_hermione_6dc0a10b:
 
     # her "Сэр, при всем уважении..."
-    her ""
+    her "Sir, with all due respect..."
 
 # game/hermione_menu.rpy:501
 translate english chit_chat_hermione_e22e83f5:
 
     # her "Профессор Снейп распускает руки!"
-    her ""
+    her "Professor Snape's debauchery is getting out of hand!"
 
 # game/hermione_menu.rpy:503
 translate english chit_chat_hermione_974e2ae3:
 
     # her "Вы должны сделать что-то..."
-    her ""
+    her "You must do something, Sir."
 
 # game/hermione_menu.rpy:508
 translate english chit_chat_hermione_95df5a23:
 
     # her "Я готова пойти на все, лишь бы \"Гриффиндор\" лидировал..."
-    her ""
+    her "I am willing to go to great lengths to insure the superiority of my house..."
 
 # game/hermione_menu.rpy:509
 translate english chit_chat_hermione_c39401fd:
 
     # her "Но это не значит, что я с удовольствием отдаюсь вам за очки для факультета."
-    her ""
+    her "But that does not mean that I take pleasure in selling myself out to you in exchange for house points, Sir."
 
 # game/hermione_menu.rpy:511
 translate english chit_chat_hermione_93c32f16:
 
     # her "{size=-4}(Как какая-то ведьма-проститутка...){/size}"
-    her ""
+    her "{size=-4}(Like some sort of prostitute-witch...){/size}"
 
 # game/hermione_menu.rpy:515
 translate english chit_chat_hermione_7026a581:
 
     # her "Что на сегодня, сэр?"
-    her ""
+    her "What will it be today, sir?"
 
 # game/hermione_menu.rpy:519
 translate english chit_chat_hermione_f364fa01:
 
     # her "Раньше я училась лучше, чем сейчас..."
-    her ""
+    her "Lately I have not been studying nearly as much as I used to..."
 
 # game/hermione_menu.rpy:521
 translate english chit_chat_hermione_2c22f368:
 
     # her "Я теряю мотивацию?"
-    her ""
+    her "Am I losing my motivation?"
 
 # game/hermione_menu.rpy:526
 translate english chit_chat_hermione_e7f72abe:
 
     # her "Мой нелюбимый предмет?"
-    her ""
+    her "My least favourite subject?"
 
 # game/hermione_menu.rpy:528
 translate english chit_chat_hermione_af9ae2ca:
 
     # her "Гадание."
-    her ""
+    her "Divination."
 
 # game/hermione_menu.rpy:532
 translate english chit_chat_hermione_9ca26263:
 
     # her "Мой отец сказал: \"Магия это наука, которую мы не можем понять\"."
-    her ""
+    her "My father used to say: \"Magic is just science we don't understand yet\"."
 
 # game/hermione_menu.rpy:534
 translate english chit_chat_hermione_842fa56a:
 
     # her "Он, конечно же, мог ошибаться..."
-    her ""
+    her "He could't be more wrong of course..."
 
 # game/hermione_menu.rpy:539
 translate english chit_chat_hermione_dc940f56:
 
     # her "Несмотря ни на что..."
-    her ""
+    her "Despite everything..."
 
 # game/hermione_menu.rpy:541
 translate english chit_chat_hermione_ce6a42b7:
 
     # her "Я благодарна, что вы позволяете мне получать дополнительные очки..."
-    her ""
+    her "I am thankful that you keep on buying favours from me, Sir..."
 
 # game/hermione_menu.rpy:546
 translate english chit_chat_hermione_93f069aa:
 
     # her "Сегодня довольно холодно, не так ли?"
-    her ""
+    her "It's quite cold outside today, isn't it?"
 
 # game/hermione_menu.rpy:551
 translate english chit_chat_hermione_fbc1e2db:
 
     # her "\"Осенний бал\" совсем скоро..."
-    her ""
+    her "The \"Autumn Ball\" will be soon..."
 
 # game/hermione_menu.rpy:556
 translate english chit_chat_hermione_065758b2:
 
     # her "Люди вряд ли посетят наше \"Общество по Защите Прав Мужчин\" еще когда-либо..."
-    her ""
+    her "People hardly show up for my \"Men's Rights Movement\" meetings at all anymore..."
 
 # game/hermione_menu.rpy:568
 translate english chit_chat_hermione_60e51966:
 
     # her "Хотите, чтобы я показала вам свою грудь?"
-    her ""
+    her "Would you like me to show you my breasts today, Sir?"
 
 # game/hermione_menu.rpy:570
 translate english chit_chat_hermione_b00da344:
 
     # her "Да... Я хочу, чтобы вы использовали меня..."
-    her ""
+    her "Yes... I would willingly expose myself to you, Rrofessor..."
 
 # game/hermione_menu.rpy:572
 translate english chit_chat_hermione_f833f1f9:
 
     # her "Вот настолько я самоотверженна!"
-    her ""
+    her "That's how selfless I am!"
 
 # game/hermione_menu.rpy:576
 translate english chit_chat_hermione_f0aff6d2:
 
     # her "С этим ничего не поделать, но я чувствую себя не очень, когда домовые эльфы стирают за мной вещи..."
-    her ""
+    her "I can't help but feel bad for the house elves who do my laundry..."
 
 # game/hermione_menu.rpy:578
 translate english chit_chat_hermione_43871c60:
 
     # her "То есть, все эти пятна спермы..."
-    her ""
+    her "I mean, all those dreadful semen stains..."
 
 # game/hermione_menu.rpy:583
 translate english chit_chat_hermione_3e555d05:
 
     # her "Не имеет значения, сколько раз вы спросите меня..."
-    her ""
+    her "It doesn't matter how many times you ask me this, Sir..."
 
 # game/hermione_menu.rpy:584
 translate english chit_chat_hermione_7ed5f48d:
 
     # her "Ответ будет один и тот же..."
-    her ""
+    her "The answer shall remain the same..."
 
 # game/hermione_menu.rpy:586
 translate english chit_chat_hermione_c0374b30:
 
     # her "Я жутко возмущена \"Слизеринцами\"!"
-    her ""
+    her "I have nothing but resentment for the \"Slytherins\"!"
 
 # game/hermione_menu.rpy:592
 translate english chit_chat_hermione_b2672c43:
 
     # her "Когда я думаю обо всем, на что мне пришлось пойти в обмен на очки..."
-    her ""
+    her "When I think about all the favours I sold you over these last months, Sir..."
 
 # game/hermione_menu.rpy:594
 translate english chit_chat_hermione_f09b5b0f:
 
     # her "Я чувствую себя немного неловко..."
-    her ""
+    her "Although I do feel a little bit embarrassed..."
 
 # game/hermione_menu.rpy:596
 translate english chit_chat_hermione_563108f3:
 
     # her "Но так же я очень горжусь собой."
-    her ""
+    her "I also feel very proud of myself."
 
 # game/hermione_menu.rpy:600
 translate english chit_chat_hermione_a7a00849:
 
     # her "До сих пор я посвящаю очень много времени обучению..."
-    her ""
+    her "I still dedicate a lot of my time to studying..."
 
 # game/hermione_menu.rpy:601
 translate english chit_chat_hermione_f2c1fc03:
 
     # her "Но не так много, как раньше..."
-    her ""
+    her "But not nearly as much of it as I used to..."
 
 # game/hermione_menu.rpy:603
 translate english chit_chat_hermione_c96b1a99:
 
     # her "Вообще мне теперь не очень-то и нравится учиться..."
-    her ""
+    her "Somehow I just don't enjoy studying at all anymore..."
 
 # game/hermione_menu.rpy:608
 translate english chit_chat_hermione_2a51a58b:
 
     # her "Гриффиндор должен получить кубок в этому году!"
-    her ""
+    her "Gryffindor shall get the house cup this year!"
 
 # game/hermione_menu.rpy:610
 translate english chit_chat_hermione_ce7d2255:
 
     # her "{size=-4}(Даже если это будет стоить мне моей чести...){/size}"
-    her ""
+    her "{size=-4}(Even if it should cost me my dignity...){/size}"
 
 # game/hermione_menu.rpy:616
 translate english chit_chat_hermione_4f63e1e5:
 
     # her "Я ничего не имею против осенней погоды..."
-    her ""
+    her "I don't mind the autumn weather..."
 
 # game/hermione_menu.rpy:618
 translate english chit_chat_hermione_221528b2:
 
     # her "Но мое любимое время года это зима."
-    her ""
+    her "But my favourite season is winter."
 
 # game/hermione_menu.rpy:623
 translate english chit_chat_hermione_3adb3230:
 
     # her "Раньше я смотрела свысока на девушек, которые беспокоятся о своей внешности..."
-    her ""
+    her "I used to look down on girls who spend too much time with worrying about the way they look..."
 
 # game/hermione_menu.rpy:624
 translate english chit_chat_hermione_6f7ed619:
 
     # her "Но я была не права.."
-    her ""
+    her "But I was wrong to do so..."
 
 # game/hermione_menu.rpy:625
 translate english chit_chat_hermione_ef7f3e4d:
 
     # her "Я начала понимать, насколько важно девушке выглядеть симпатичной."
-    her ""
+    her "I am starting to understand how important it really is for a girl to look pretty."
 
 # game/hermione_menu.rpy:627
 translate english chit_chat_hermione_8abd1551:
 
     # her "..............."
-    her ""
+    her "..............."
 
 # game/hermione_menu.rpy:629
 translate english chit_chat_hermione_c3761a3a:
 
     # her "С недавнего времени я на диете..."
-    her ""
+    her "I've been on a diet lately..."
 
 # game/hermione_menu.rpy:635
 translate english chit_chat_hermione_86556438:
 
     # her "Последнее время я чувствую себя довольно уверенно при мальчиках..."
-    her ""
+    her "Lately I've been feeling rather confident around the boys..."
 
 # game/hermione_menu.rpy:637
 translate english chit_chat_hermione_bad5a069:
 
     # her "Я думаю, что должна быть благодарна вам за это."
-    her ""
+    her "I think I have you to thank for that, Sir."
 
 # game/hermione_menu.rpy:641
 translate english chit_chat_hermione_b3ed826a:
 
     # her "Мой любимый предмет?"
-    her ""
+    her "My favourite subject?"
 
 # game/hermione_menu.rpy:643
 translate english chit_chat_hermione_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/hermione_menu.rpy:645
 translate english chit_chat_hermione_c162dc36:
 
     # her "Думаю это \"чары\"..."
-    her ""
+    her "I suppose that would be \"charms\"..."
 
 # game/hermione_menu.rpy:669
 translate english chit_chat_hermione_46dae7a5:
 
     # her "Просто дайте знать, что вы хотите от меня сегодня, сэр."
-    her ""
+    her "Just let me know what will be required of me today, Sir."
 
 # game/hermione_menu.rpy:674
 translate english chit_chat_hermione_ccf43ae0:
 
     # her "Я почти не учусь теперь..."
-    her ""
+    her "I barely study at all anymore..."
 
 # game/hermione_menu.rpy:675
 translate english chit_chat_hermione_70c4bbcb:
 
     # her "Несмотря на это, моя популярность, кажется, растет..."
-    her ""
+    her "Despite that my popularity among the other students seems to be growing..."
 
 # game/hermione_menu.rpy:677
 translate english chit_chat_hermione_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/hermione_menu.rpy:681
 translate english chit_chat_hermione_23aa99a7:
 
     # her "Я бы не отказалась от бутылки сливочного пива ..."
-    her ""
+    her "I wouldn't say \"no\" to a bottle of butterbeer right about now..."
 
 # game/hermione_menu.rpy:686
 translate english chit_chat_hermione_5d708f44:
 
     # her "Что это сэр? У вас еще один подарок для меня?"
-    her ""
+    her "What is it, Sir? Do you have another present for me?"
 
 # game/hermione_menu.rpy:688
 translate english chit_chat_hermione_2625b37b:
 
     # her "Ох... Понятно..."
-    her ""
+    her "Oh... I see..."
 
 # game/hermione_menu.rpy:692
 translate english chit_chat_hermione_864fcb76:
 
     # her "Все в порядке, спасибо, что спросили."
-    her ""
+    her "I am doing well, thank you for asking."
 
 # game/hermione_menu.rpy:696
 translate english chit_chat_hermione_81f2679d:
 
     # her "Я выгляжу толстой?"
-    her ""
+    her "Do I look fat to you, Sir?"
 
 # game/hermione_menu.rpy:698
 translate english chit_chat_hermione_4dbaf576:
 
     # her "Надеюсь, диета сработает..."
-    her ""
+    her "I wonder if the diet is working..."
 
 # game/hermione_menu.rpy:702
 translate english chit_chat_hermione_36acc7db:
 
     # her "Помню я говорила, что книги мои лучшие друзья..."
-    her ""
+    her "I remember that I used to say that books were my friends..."
 
 # game/hermione_menu.rpy:704
 translate english chit_chat_hermione_e7544b01:
 
     # her "Теперь это звучит так неубедительно."
-    her ""
+    her "Now that sounds so lame."
 
 # game/hermione_menu.rpy:709
 translate english chit_chat_hermione_e4bc30d4:
 
     # her "Добавим яйца Эшвиндера..."
-    her ""
+    her "Add ashwinder egg to cauldron..."
 
 # game/hermione_menu.rpy:710
 translate english chit_chat_hermione_2569f818:
 
     # her "Затем подкову и шапку красноголовика..."
-    her ""
+    her "Then add horseradish and heat..."
 
 # game/hermione_menu.rpy:711
 translate english chit_chat_hermione_37ffa74b:
 
     # her "Затем сок морской капусты..."
-    her ""
+    her "Then juice a squill bulb..."
 
 # game/hermione_menu.rpy:713
 translate english chit_chat_hermione_cdd36d3b:
 
     # her "Или сначала тимьян?"
-    her ""
+    her "Or was it a dash of thyme first?"
 
 # game/hermione_menu.rpy:715
 translate english chit_chat_hermione_eb67a624:
 
     # her ".............."
-    her ""
+    her ".............."
 
 # game/hermione_menu.rpy:717
 translate english chit_chat_hermione_9dbbbd75:
 
     # her "Ох, какая разница?"
-    her ""
+    her "Oh, who cares?"
 
 # game/hermione_menu.rpy:722
 translate english chit_chat_hermione_f09dacd6:
 
     # her "Вы думаете, я нанесла достаточно макияжа?"
-    her ""
+    her "Do you think I am wearing enough makeup, Sir?"
 
 # game/hermione_menu.rpy:723
 translate english chit_chat_hermione_ceea1221:
 
     # her "Если его будет слишком много, то это будет выглядеть вульгарно..."
-    her ""
+    her "Wearing too much would look vulgar..."
 
 # game/hermione_menu.rpy:725
 translate english chit_chat_hermione_92aab6d9:
 
     # her "Но и слишком мало тоже плохо..."
-    her ""
+    her "But wearing too little would make me look plain..."
 
 # game/hermione_menu.rpy:727
 translate english chit_chat_hermione_8d6b67f8:
 
     # her "Я не должна выглядеть как простушка!"
-    her ""
+    her "I don't want to look plain!"
 
 # game/hermione_menu.rpy:731
 translate english chit_chat_hermione_e21787f6:
 
     # her "Вы хотите посмотреть на мои сиськи, сэр?"
-    her ""
+    her "Would you like to see my tits today, Sir?"
 
 # game/hermione_menu.rpy:733
 translate english chit_chat_hermione_66a327d2:
 
     # her "25 очков, пожалуйста."
-    her ""
+    her "25 house points, please."
 
 # game/hermione_menu.rpy:741
 translate english chit_chat_hermione_8fb607c7:
 
     # her "У вас есть еще ненужные журналы для взрослых, сэр?"
-    her ""
+    her "Do You have any adult magazines you don't need, Sir?"
 
 # game/hermione_menu.rpy:746
 translate english chit_chat_hermione_5139f545:
 
     # her "Извиняюсь, что беспокою вас..."
-    her ""
+    her "I am sorry to bother you with this, Sir..."
 
 # game/hermione_menu.rpy:747
 translate english chit_chat_hermione_27938a96:
 
     # her "Но не найдется ли у вас несколько презервативов?"
-    her ""
+    her "But do you have any condoms?"
 
 # game/hermione_menu.rpy:749
 translate english chit_chat_hermione_9008dfc4:
 
     # her "Конечно же, это не для меня... Для друзей..."
-    her ""
+    her "This is not for me of course... I'm asking for a friend..."
 
 # game/hermione_menu.rpy:753
 translate english chit_chat_hermione_96f98628:
 
     # her "В последнее время очень холодно..."
-    her ""
+    her "It's been getting so cold lately..."
 
 # game/hermione_menu.rpy:755
 translate english chit_chat_hermione_6e32b92e:
 
     # her "Я надеюсь, что скоро выпадет снег..."
-    her ""
+    her "Я надеюсь, что скоро выпадет снег..."
 
 # game/hermione_menu.rpy:759
 translate english chit_chat_hermione_6dc2b0a8:
 
     # her "Прыгать и кричать 'За Гриффиндор!'"
-    her ""
+    her "Jump and scream for the Gryffindor team!"
 
 # game/hermione_menu.rpy:761
 translate english chit_chat_hermione_2a6f8e66:
 
     # her "Смелые, удалые, красно-золотые!"
-    her ""
+    her "So daring and bold, sporting red and gold!"
 
 # game/hermione_menu.rpy:766
 translate english chit_chat_hermione_8542e36b:
 
     # her "Я надеюсь, что бал пройдет гладко..."
-    her ""
+    her "I hope the ball goes smoothly..."
 
 # game/hermione_menu.rpy:771
 translate english chit_chat_hermione_2ab17e4f:
 
     # her "Интересно, что наденет Джинни на бал..."
-    her ""
+    her "I wonder what Ginny is going to wear for the ball..."
 
 # game/hermione_menu.rpy:775
 translate english chit_chat_hermione_76df3db6:
 
     # her "Учитывая, как теперь все устроено с очками... Вы можете продолжать меня пользовать, сэр..."
-    her ""
+    her "Considering the nature of the favours you keep buying from me, Sir..."
 
 # game/hermione_menu.rpy:777
 translate english chit_chat_hermione_87106ca5:
 
     # her "И кстати, нынче я редко надеваю белье..."
-    her ""
+    her "I seldom bother to put on underwear at all anymore..."
 
 # game/hermione_menu.rpy:781
 translate english chit_chat_hermione_6c4f27ce:
 
     # her "Сэр, хотите вставить свой член мне в рот?"
-    her ""
+    her "Sir, could you put your penis in my mouth?"
 
 # game/hermione_menu.rpy:783
 translate english chit_chat_hermione_8ab98f43:
 
     # her "Сэр, я прошу вас..........."
-    her ""
+    her "Sir, I am begging you..."
 
 # game/hermione_menu.rpy:785
 translate english chit_chat_hermione_b54fdff9:
 
     # her "Отлично! Пятьдесят пять очков, будьте добры!"
-    her ""
+    her "Fifty five points, please!"
 
 # game/hermione_menu.rpy:790
 translate english chit_chat_hermione_7ef83ca8:
 
     # her "Прочитала статью, в которой говорится о положительном влиянии спермы на кожу женщины..."
-    her ""
+    her "I read this one article about the positive effects of semen on a woman's skin..."
 
 # game/hermione_menu.rpy:792
 translate english chit_chat_hermione_c3f70c87:
 
     # her "Интересно, как они это узнают..."
-    her ""
+    her "I wonder where their information is coming from..."
 
 # game/hermione_menu.rpy:794
 translate english chit_chat_hermione_f7dbf6d0:
 
     # her "Журнал проводит какие-то исследования?"
-    her ""
+    her "Did the magazine conduct research of some sort?"
 
 # game/hermione_menu.rpy:799
 translate english chit_chat_hermione_ea3966ef:
 
     # her "Это похоже на..."
-    her ""
+    her "It goes like this..."
 
 # game/hermione_menu.rpy:800
 translate english chit_chat_hermione_bd9f4b9b:
 
     # her "Сначала Гриффиндор, потом Когтевран, потом Пуффендуй..."
-    her ""
+    her "First Gryffindor, then Ravenclaw, then Hufflepuff..."
 
 # game/hermione_menu.rpy:802
 translate english chit_chat_hermione_25154dfa:
 
     # her "И Слизерин не попадает в этот список!"
-    her ""
+    her "And Slytherin is not even on the list!"
 
 # game/hermione_menu.rpy:811
 translate english hermione_bookbuying_0c0aa392:
@@ -1536,15 +1536,15 @@ translate english strings:
 
     # game/hermione_menu.rpy:38
     old "- Обучение -"
-    new ""
+    new "-Tutoring-"
 
     # game/hermione_menu.rpy:38
     old "- Купить \"сексуальный\" рейтинг -"
-    new ""
+    new "-Buy \"sexual\" favours-"
 
     # game/hermione_menu.rpy:38
     old "- Гардероб -"
-    new ""
+    new "-Wardrobe-"
 
     # game/hermione_menu.rpy:194
     old "Спросить насчет учебников"
@@ -1556,7 +1556,7 @@ translate english strings:
 
     # game/hermione_menu.rpy:194
     old "Болтать"
-    new ""
+    new "-Chit chat-"
 
     # game/hermione_menu.rpy:917
     old "- Новые вещи ! -"
@@ -1676,5 +1676,49 @@ translate english strings:
 
     # game/hermione_menu.rpy:1085
     old "- Одежда бизнес-леди -"
+    new ""
+
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/hermione_menu.rpy:211
+translate english wrd_clother_hermi_ba93ebc8:
+
+    # her "О, хорошо! Тогда я пойду на уроки."
+    her ""
+
+# game/hermione_menu.rpy:213
+translate english wrd_clother_hermi_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/hermione_menu.rpy:215
+translate english wrd_clother_hermi_ef2f2f2a:
+
+    # her "*Гм!*..."
+    her ""
+
+# game/hermione_menu.rpy:218
+translate english wrd_clother_hermi_900b60d0:
+
+    # her "О, хорошо! Тогда я пойду спать."
+    her ""
+
+# game/hermione_menu.rpy:220
+translate english wrd_clother_hermi_3574ffb4_1:
+
+    # her "..............................."
+    her ""
+
+# game/hermione_menu.rpy:222
+translate english wrd_clother_hermi_bde091d9:
+
+    # her "Пф!..."
+    her ""
+
+translate english strings:
+
+    # game/hermione_menu.rpy:38
+    old "- Подарить ей одежду -"
     new ""
 

@@ -4,367 +4,367 @@
 translate english howtoplay_59d24d4e:
 
     # l "Привет интернет-извращугам!"
-    l ""
+    l "Hello, pervs of the internet!"
 
 # game/30_how.rpy:20
 translate english howtoplay_009106a5:
 
     # a5 "Следи за языком, сучка!"
-    a5 ""
+    a5 "Watch it, brat!"
 
 # game/30_how.rpy:24
 translate english howtoplay_666f6e51:
 
     # l "Хах...?"
-    l ""
+    l "Huh...?"
 
 # game/30_how.rpy:26
 translate english howtoplay_cef21509:
 
     # a6 "Что я тебе говорил о слове на букву \"и\"?"
-    a6 ""
+    a6 "What did I tell you about using the \"p\" word?"
 
 # game/30_how.rpy:30
 translate english howtoplay_5747f407:
 
     # l "Эм... Использовать его как можно чаще..?"
-    l ""
+    l "Em... Use it as often as possible?"
 
 # game/30_how.rpy:34
 translate english howtoplay_38c624be:
 
     # a7 "{size=+7}Нет!{/size}"
-    a7 ""
+    a7 "{size=+7}Wrong!{/size}"
 
 # game/30_how.rpy:39
 translate english howtoplay_8be61403:
 
     # l "Гх!"
-    l ""
+    l "Ght!"
 
 # game/30_how.rpy:43
 translate english howtoplay_a8553285:
 
     # a7 "{size=+7}Мы не используем его! Никогда!{/size}"
-    a7 ""
+    a7 "{size=+7}We don't use it! Ever!{/size}"
 
 # game/30_how.rpy:47
 translate english howtoplay_99dd8419:
 
     # l "Потому что самый самый большой здесь папочка?"
-    l ""
+    l "Because daddy is the biggest perv there is?"
 
 # game/30_how.rpy:49
 translate english howtoplay_0c16bec4:
 
     # a6 "Гх!"
-    a6 ""
+    a6 "Ght!"
 
 # game/30_how.rpy:50
 translate english howtoplay_227d1f12:
 
     # a6 "Тебе понравилось сниматься в \"Тренер Принцессы\"?"
-    a6 ""
+    a6 "Did you enjoy starring in \"Princess Trainer\"?"
 
 # game/30_how.rpy:54
 translate english howtoplay_8dde85ca:
 
     # l "Лучшее событие в моей жизни!"
-    l ""
+    l "It was the best!"
 
 # game/30_how.rpy:56
 translate english howtoplay_b04841cd:
 
     # a1 "Хочешь попасть в \"Золотое издание\"?"
-    a1 ""
+    a1 "Want to be in the \"Gold Edition\" as well?"
 
 # game/30_how.rpy:60
 translate english howtoplay_f2f5f7c5:
 
     # l "!!!"
-    l ""
+    l "!!!"
 
 # game/30_how.rpy:63
 translate english howtoplay_c931db92:
 
     # l "Дамы и гопода, добро пожаловать в обучающий режим \"Тренера Гермионы\"."
-    l ""
+    l "Ladies and gentlemen, welcome to the \"Hermione Trainer\" tutorial."
 
 # game/30_how.rpy:65
 translate english howtoplay_d2b5fc7a:
 
     # a1 "Умница, девочка."
-    a1 ""
+    a1 "Attagirl."
 
 # game/30_how.rpy:73
 translate english howtoplay_14bd4678:
 
     # l "Хм...?"
-    l ""
+    l "Hm...?"
 
 # game/30_how.rpy:74
 translate english howtoplay_298383c3:
 
     # l "Ты хочешь прослушать обучение снова?"
-    l ""
+    l "You want to hear the tutorial again?"
 
 # game/30_how.rpy:76
 translate english howtoplay_dbc66370:
 
     # l "Хм...."
-    l ""
+    l "Hm...."
 
 # game/30_how.rpy:78
 translate english howtoplay_a3a14bb1:
 
     # l "Ты не смущен?"
-    l ""
+    l "You are not very bright, are you?"
 
 # game/30_how.rpy:80
 translate english howtoplay_7492697c:
 
     # l "Хм..."
-    l ""
+    l "Hm..."
 
 # game/30_how.rpy:83
 translate english howtoplay_b5ae1d03:
 
     # l "*Хихикает!*"
-    l ""
+    l "*Giggle!*"
 
 # game/30_how.rpy:86
 translate english howtoplay_46b12eb1:
 
     # l "Ты хочешь, чтобы я учила тебя топлесс?"
-    l ""
+    l "You want me to give you the tutorial topless?"
 
 # game/30_how.rpy:95
 translate english howtoplay_b83ee881:
 
     # l "Океюшки!"
-    l ""
+    l "Alrighty!"
 
 # game/30_how.rpy:110
 translate english howtoplay_93939895:
 
     # l "Ты скучный..."
-    l ""
+    l "You're boring..."
 
 # game/30_how.rpy:112
 translate english howtoplay_851f54ed:
 
     # l "Ладно, пофиг..."
-    l ""
+    l "Well, whatever..."
 
 # game/30_how.rpy:119
 translate english howtoplay_48730f05:
 
     # l "Вот краткий перечень вещей, которые стоит помнить..."
-    l ""
+    l "Here is a short list of things to keep in mind..."
 
 # game/30_how.rpy:124
 translate english howtoplay_184a7442:
 
     # l "Гермиона захочет продавать сексуальные услуги в обмен на очки факультета, когда Гриффиндор отстает."
-    l ""
+    l "Hermione will only be willing to sell sexual favors in exchange for house points when house of Gryffindor is falling behind."
 
 # game/30_how.rpy:129
 translate english howtoplay_8bdaf106:
 
     # l "Дружба с профессором Снейпом увеличит количество очков, получаемых Слизереном."
-    l ""
+    l "Making friends with Professor Snape will make him trust you more, and will increase the rate at which Slytherin house gets the points."
 
 # game/30_how.rpy:135
 translate english howtoplay_2e505438:
 
     # l "Чтение образовательных книг позволит тебе зарабатывать, но это по желанию."
-    l ""
+    l "Reading educational books makes earning money easier, but is not mandatory."
 
 # game/30_how.rpy:140
 translate english howtoplay_d8eeccc6:
 
     # l "Покупка одной и той же сексуальной услуги может привести к разным последствиям, в зависимости от того, как далеко Гермиона зашла в своих тренировках."
-    l ""
+    l "Buying the same sexual favor again could lead to a different outcome depending on how far along Hermione is in her training."
 
 # game/30_how.rpy:145
 translate english howtoplay_a0aa07dd:
 
     # l "Все услуги разделены на две группы: \"приватные услуги\" и\"публичные услуги\"."
-    l ""
+    l "All favors are organized into two groups: \"Personal favors\" and \"Public favors\"."
 
 # game/30_how.rpy:146
 translate english howtoplay_e847ad0b:
 
     # l "Приватные услуги оказываются в кабинете и не сильно влияют на репутацию Гермионы."
-    l ""
+    l "Personal favors take place in the office and don't affect Hermione's reputation much."
 
 # game/30_how.rpy:147
 translate english howtoplay_3c7d6474:
 
     # l "Публичные услуги оказываются во время уроков за пределами экрана."
-    l ""
+    l "Public favors take place off-screen, during classes."
 
 # game/30_how.rpy:148
 translate english howtoplay_78768d73:
 
     # l "Каждая публичная услуга, не считая последней, имеет девять концовок."
-    l ""
+    l "Every public favor, except for the last one, has nine different outcomes."
 
 # game/30_how.rpy:149
 translate english howtoplay_1e4fa5ad:
 
     # l "Кстати, несмотря на то, что покупка приватных услуг - необходима для тренировки Гермионы, публичные услуги не обязательны."
-    l ""
+    l "Also, buying personal favors is essential for Hermione's training, but public favors are optional."
 
 # game/30_how.rpy:155
 translate english howtoplay_e4b6e180:
 
     # l "Если обращаться с ней плохо, то настроение Гермиона ухудшится, она может обидеться и стать очень неподатливой..."
-    l ""
+    l "Treating Hermione poorly will worsen her mood and could make her very uncooperative..."
 
 # game/30_how.rpy:156
 translate english howtoplay_0a3b6a76:
 
     # l "Она остынет со временем, но ты можешь ускорить процесс, если подаришь ей что-нибудь..."
-    l ""
+    l "She will cool off with time, but you can speed up the process by buying her something nice..."
 
 # game/30_how.rpy:161
 translate english howtoplay_0700b2f7:
 
     # l "Здесь нет временных ограничений. Так что можешь играть в нее столько дней, сколько захочешь."
-    l ""
+    l "And there is no timelimit. So feel free to take as many days to comlete the game as you want."
 
 # game/30_how.rpy:172
 translate english howtoplay_a0fd6f67:
 
     # a1 "Ладно, этого хватит..."
-    a1 ""
+    a1 "Alright, that's enough..."
 
 # game/30_how.rpy:176
 translate english howtoplay_84438caa:
 
     # l "Как я справилась?"
-    l ""
+    l "How did I do?"
 
 # game/30_how.rpy:178
 translate english howtoplay_8262d4ba:
 
     # a1 "Ты отлично поработала. Хорошая девочка."
-    a1 ""
+    a1 "You did well. Good girl."
 
 # game/30_how.rpy:183
 translate english howtoplay_82269e70:
 
     # l "Хе-хе-хе. Лола хорошая девочка!"
-    l ""
+    l "Me-he-he. Lola is a good girl!"
 
 # game/30_how.rpy:187
 translate english howtoplay_bd32c5a2:
 
     # l "А что я получу?"
-    l ""
+    l "What do I get?"
 
 # game/30_how.rpy:189
 translate english howtoplay_10dc6c37:
 
     # a1 "А что ты хочешь?"
-    a1 ""
+    a1 "What you want?"
 
 # game/30_how.rpy:192
 translate english howtoplay_7492697c_1:
 
     # l "Хм..."
-    l ""
+    l "Hm..."
 
 # game/30_how.rpy:195
 translate english howtoplay_9c3c13c2:
 
     # l "Мы можем сделать сцену изнасилования со мной в \"Золотом издании\"?"
-    l ""
+    l "Can we have a rape scene with me in the \"Gold Edition\"?"
 
 # game/30_how.rpy:197
 translate english howtoplay_0b0d380e:
 
     # a6 "Не испытывай мое терпения, девочка."
-    a6 ""
+    a6 "Don't test my patience, girl."
 
 # game/30_how.rpy:202
 translate english howtoplay_14316114:
 
     # l "Извини, папочка."
-    l ""
+    l "Sorry, daddy."
 
 # game/30_how.rpy:205
 translate english howtoplay_1d4601a6:
 
     # a5 "............"
-    a5 ""
+    a5 "............"
 
 # game/30_how.rpy:211
 translate english howtoplay_039435fa:
 
     # a1 "Что здесь происходит?"
-    a1 ""
+    a1 "What is going on here?"
 
 # game/30_how.rpy:215
 translate english howtoplay_1a9a2485:
 
     # l "Упс!"
-    l ""
+    l "Yikes!"
 
 # game/30_how.rpy:217
 translate english howtoplay_0dc3e989:
 
     # a1 "Что я говорил тебе о раздевании перед незнакомцами?"
-    a1 ""
+    a1 "What did I tell you about exposing yourself to complete strangers?"
 
 # game/30_how.rpy:220
 translate english howtoplay_84d442d8:
 
     # l "Это важная часть взросления?"
-    l ""
+    l "It's an important part of growing up?"
 
 # game/30_how.rpy:222
 translate english howtoplay_9733b25a:
 
     # a6 "Нет!"
-    a6 ""
+    a6 "Wrong!"
 
 # game/30_how.rpy:228
 translate english howtoplay_821ad6df:
 
     # l "Папочка, мне так жаль!"
-    l ""
+    l "Daddy, I'm so sorry!"
 
 # game/30_how.rpy:229
 translate english howtoplay_2951afe8:
 
     # l "Этот случайный чувак из интернета заставил меня, я клянусь!"
-    l ""
+    l "That mean random Internet person forced me, I swear!"
 
 # game/30_how.rpy:231
 translate english howtoplay_6ca8595b:
 
     # a1 "Обучение закончено."
-    a1 ""
+    a1 "This tutorial is over."
 
 # game/30_how.rpy:236
 translate english howtoplay_7a2b54dc:
 
     # l "Хе-хе! Ты попался!"
-    l ""
+    l "He-he! You got busted!"
 
 # game/30_how.rpy:239
 translate english howtoplay_885be8c3:
 
     # l "И, это..."
-    l ""
+    l "And that's that..."
 
 # game/30_how.rpy:241
 translate english howtoplay_37e65c5e:
 
     # l "Может быть в следующий раз?"
-    l ""
+    l "Did you get it this time?"
 
 # game/30_how.rpy:251
 translate english abouttrainer_f9420893:
@@ -921,7 +921,7 @@ translate english devel_bd29ade8:
 # game/30_how.rpy:424
 translate english devel_b37a2e77:
 
-    # dr "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    # dr "{color=0F0F0F}Евгений aka Afar{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
     dr ""
 
 # game/30_how.rpy:432
@@ -1055,4 +1055,240 @@ translate english strings:
     # game/30_how.rpy:394
     old "А разве ты не Акабур ?"
     new ""
+
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/30_how.rpy:251
+translate english abouttrainer_770ca530:
+
+    # dev "Итак, сейчас перед вами \"Тренер Ведьм: Русская редакция\"."
+    dev ""
+
+# game/30_how.rpy:252
+translate english abouttrainer_2511b212:
+
+    # dev "Наша дружная команда взяла за основу небольшую, но очень приятную игру от Акабура."
+    dev ""
+
+# game/30_how.rpy:253
+translate english abouttrainer_dd0809a4:
+
+    # dev "И делает на основе ее идей и контента нечто новое."
+    dev ""
+
+# game/30_how.rpy:254
+translate english abouttrainer_b464ab67:
+
+    # dev "Новые ивенты и персонажи, система гардероба и газетное издательство... Все это только у нас."
+    dev ""
+
+# game/30_how.rpy:255
+translate english abouttrainer_b1f96825:
+
+    # dev "Кроме того, мы не считаем проект законченным и постоянно совершенствуем его."
+    dev ""
+
+# game/30_how.rpy:256
+translate english abouttrainer_30fefcb6:
+
+    # dev "А еще, перевели игру на русский язык, чтобы русским людям было приятно играть, и сделали мультиязычную версию."
+    dev ""
+
+# game/30_how.rpy:257
+translate english abouttrainer_9c80e5d8:
+
+    # dev "Помните, что мы делаем это совершенно бесплатно. Для собственного и вашего удовольствия."
+    dev ""
+
+# game/30_how.rpy:258
+translate english abouttrainer_d1443c28:
+
+    # dev "Все пожертвования в фонд развития игры пойдут не на пиво разработчикам, а на различные нужды проекта."
+    dev ""
+
+# game/30_how.rpy:271
+translate english devel_5c091bde:
+
+    # dev "Итак, вы уже обратили внимание, что это не оригинальная игра Акабура..."
+    dev ""
+
+# game/30_how.rpy:274
+translate english devel_0733a614:
+
+    # dev "(facepalm)"
+    dev ""
+
+# game/30_how.rpy:275
+translate english devel_1b8ae4f8:
+
+    # dev "Я так и знал, что нужно давать больше информации общественности..."
+    dev ""
+
+# game/30_how.rpy:278
+translate english devel_d73f02af:
+
+    # dev "..........."
+    dev ""
+
+# game/30_how.rpy:281
+translate english devel_33de5845:
+
+    # dev "В рот мне ноги..."
+    dev ""
+
+# game/30_how.rpy:283
+translate english devel_b92cbe9a:
+
+    # dev "{size=+3}Т.е. вы все по-прежнему считаете, что игру для вас продолжает улучшать Акабур ?{/size}"
+    dev ""
+
+# game/30_how.rpy:284
+translate english devel_a2b51fa9:
+
+    # dev "И это после того, как он сообщил, что считает ее законченной ?"
+    dev ""
+
+# game/30_how.rpy:285
+translate english devel_c6369ff8:
+
+    # dev "После того, как он решил никогда ее не переводить на русский ?"
+    dev ""
+
+# game/30_how.rpy:286
+translate english devel_84d486ea:
+
+    # dev "После того, как я написал всю эту гору кода, не говоря уж об остальной команде разработчиков, переводчиков и художников, месяцами бесплатно трудящихся для вас ?"
+    dev ""
+
+# game/30_how.rpy:287
+translate english devel_abe231fb:
+
+    # dev "{size=+4}Аргх...{/size}"
+    dev ""
+
+# game/30_how.rpy:288
+translate english devel_56f34156:
+
+    # dev "......."
+    dev ""
+
+# game/30_how.rpy:289
+translate english devel_9d9f0e63:
+
+    # dev "Простите, наболело."
+    dev ""
+
+# game/30_how.rpy:291
+translate english devel_d328bf1c:
+
+    # dev "Итак, для вас трудились :"
+    dev ""
+
+# game/30_how.rpy:292
+translate english devel_56d64cac:
+
+    # dev "Главный координатор (встречайте стоя !): {color=4F4F4F}Хан ( Khan ){/color}"
+    dev ""
+
+# game/30_how.rpy:293
+translate english devel_00a807be:
+
+    # dev "Главный разработчик : {color=00FF00}Дрон (Dron){/color}"
+    dev ""
+
+# game/30_how.rpy:294
+translate english devel_70dc2291:
+
+    # dev "Разработка и ивенты Дафны : {color=7789CA}Феликс{/color}"
+    dev ""
+
+# game/30_how.rpy:295
+translate english devel_ca307d79:
+
+    # dev "Поддержка игры (на плаву) : {color=0000FF}Сказочник{/color}"
+    dev ""
+
+# game/30_how.rpy:296
+translate english devel_081a1b4b:
+
+    # dev "Перевод на английский язык : {color=0089BE}Хан и Sezt{/color}"
+    dev ""
+
+# game/30_how.rpy:297
+translate english devel_17cbd3ca:
+
+    # dev "Разработка и обучающие ивенты : {color=FF0000}Nyarkohopter{/color}"
+    dev ""
+
+# game/30_how.rpy:298
+translate english devel_2714e354:
+
+    # dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
+    dev ""
+
+# game/30_how.rpy:299
+translate english devel_e492ec03:
+
+    # dev "Дафна : {color=6F6F6F}Zio Dyne{/color}"
+    dev ""
+
+# game/30_how.rpy:301
+translate english devel_0d7e350e:
+
+    # dr "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    dr ""
+
+# game/30_how.rpy:309
+translate english devel_95789c32:
+
+    # dev "И несравненная Гермиона Грейнджер в роли офисной шл..."
+    dev ""
+
+# game/30_how.rpy:314
+translate english devel_7758cfe4:
+
+    # dev "Прости, в роли секретут..."
+    dev ""
+
+# game/30_how.rpy:321
+translate english devel_14d0b826:
+
+    # dev "Бхм. И наша главная офис-леди - мисс Грейнджер."
+    dev ""
+
+# game/30_how.rpy:329
+translate english devel_e594dfd2:
+
+    # dev "Недотрога..."
+    dev ""
+
+# game/30_how.rpy:330
+translate english devel_41e139b7:
+
+    # dev "Ушла наконец."
+    dev ""
+
+# game/30_how.rpy:332
+translate english devel_1ac08b57:
+
+    # dev "Итак, приятной игры, друзья !"
+    dev ""
+
+# game/30_how.rpy:334
+translate english devel_0e6b5f9f:
+
+    # dev "А если хотите пообщаться с людьми, которые продолжают совершенствование и расширение игры, милости просим."
+    dev ""
+
+# game/30_how.rpy:335
+translate english devel_fb3f35e0:
+
+    # dev "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
+    dev ""
+
+# game/30_how.rpy:345
+translate english forum_d54c28dc:
+
+    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
+    dev ""
 
