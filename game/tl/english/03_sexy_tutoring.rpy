@@ -112,3 +112,11 @@ translate english strings:
     old "- Отмена -"
     new "-Cancel-"
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+translate english strings:
+
+    # game/03_sexy_tutoring.rpy:26
+    old "Положить ее руки на член."
+    new ""
+

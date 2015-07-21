@@ -1056,3 +1056,239 @@ translate english strings:
     old "А разве ты не Акабур ?"
     new ""
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/30_how.rpy:251
+translate english abouttrainer_770ca530:
+
+    # dev "Итак, сейчас перед вами \"Тренер Ведьм: Русская редакция\"."
+    dev ""
+
+# game/30_how.rpy:252
+translate english abouttrainer_2511b212:
+
+    # dev "Наша дружная команда взяла за основу небольшую, но очень приятную игру от Акабура."
+    dev ""
+
+# game/30_how.rpy:253
+translate english abouttrainer_dd0809a4:
+
+    # dev "И делает на основе ее идей и контента нечто новое."
+    dev ""
+
+# game/30_how.rpy:254
+translate english abouttrainer_b464ab67:
+
+    # dev "Новые ивенты и персонажи, система гардероба и газетное издательство... Все это только у нас."
+    dev ""
+
+# game/30_how.rpy:255
+translate english abouttrainer_b1f96825:
+
+    # dev "Кроме того, мы не считаем проект законченным и постоянно совершенствуем его."
+    dev ""
+
+# game/30_how.rpy:256
+translate english abouttrainer_30fefcb6:
+
+    # dev "А еще, перевели игру на русский язык, чтобы русским людям было приятно играть, и сделали мультиязычную версию."
+    dev ""
+
+# game/30_how.rpy:257
+translate english abouttrainer_9c80e5d8:
+
+    # dev "Помните, что мы делаем это совершенно бесплатно. Для собственного и вашего удовольствия."
+    dev ""
+
+# game/30_how.rpy:258
+translate english abouttrainer_d1443c28:
+
+    # dev "Все пожертвования в фонд развития игры пойдут не на пиво разработчикам, а на различные нужды проекта."
+    dev ""
+
+# game/30_how.rpy:271
+translate english devel_5c091bde:
+
+    # dev "Итак, вы уже обратили внимание, что это не оригинальная игра Акабура..."
+    dev ""
+
+# game/30_how.rpy:274
+translate english devel_0733a614:
+
+    # dev "(facepalm)"
+    dev ""
+
+# game/30_how.rpy:275
+translate english devel_1b8ae4f8:
+
+    # dev "Я так и знал, что нужно давать больше информации общественности..."
+    dev ""
+
+# game/30_how.rpy:278
+translate english devel_d73f02af:
+
+    # dev "..........."
+    dev ""
+
+# game/30_how.rpy:281
+translate english devel_33de5845:
+
+    # dev "В рот мне ноги..."
+    dev ""
+
+# game/30_how.rpy:283
+translate english devel_b92cbe9a:
+
+    # dev "{size=+3}Т.е. вы все по-прежнему считаете, что игру для вас продолжает улучшать Акабур ?{/size}"
+    dev ""
+
+# game/30_how.rpy:284
+translate english devel_a2b51fa9:
+
+    # dev "И это после того, как он сообщил, что считает ее законченной ?"
+    dev ""
+
+# game/30_how.rpy:285
+translate english devel_c6369ff8:
+
+    # dev "После того, как он решил никогда ее не переводить на русский ?"
+    dev ""
+
+# game/30_how.rpy:286
+translate english devel_84d486ea:
+
+    # dev "После того, как я написал всю эту гору кода, не говоря уж об остальной команде разработчиков, переводчиков и художников, месяцами бесплатно трудящихся для вас ?"
+    dev ""
+
+# game/30_how.rpy:287
+translate english devel_abe231fb:
+
+    # dev "{size=+4}Аргх...{/size}"
+    dev ""
+
+# game/30_how.rpy:288
+translate english devel_56f34156:
+
+    # dev "......."
+    dev ""
+
+# game/30_how.rpy:289
+translate english devel_9d9f0e63:
+
+    # dev "Простите, наболело."
+    dev ""
+
+# game/30_how.rpy:291
+translate english devel_d328bf1c:
+
+    # dev "Итак, для вас трудились :"
+    dev ""
+
+# game/30_how.rpy:292
+translate english devel_56d64cac:
+
+    # dev "Главный координатор (встречайте стоя !): {color=4F4F4F}Хан ( Khan ){/color}"
+    dev ""
+
+# game/30_how.rpy:293
+translate english devel_00a807be:
+
+    # dev "Главный разработчик : {color=00FF00}Дрон (Dron){/color}"
+    dev ""
+
+# game/30_how.rpy:294
+translate english devel_70dc2291:
+
+    # dev "Разработка и ивенты Дафны : {color=7789CA}Феликс{/color}"
+    dev ""
+
+# game/30_how.rpy:295
+translate english devel_ca307d79:
+
+    # dev "Поддержка игры (на плаву) : {color=0000FF}Сказочник{/color}"
+    dev ""
+
+# game/30_how.rpy:296
+translate english devel_081a1b4b:
+
+    # dev "Перевод на английский язык : {color=0089BE}Хан и Sezt{/color}"
+    dev ""
+
+# game/30_how.rpy:297
+translate english devel_17cbd3ca:
+
+    # dev "Разработка и обучающие ивенты : {color=FF0000}Nyarkohopter{/color}"
+    dev ""
+
+# game/30_how.rpy:298
+translate english devel_2714e354:
+
+    # dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
+    dev ""
+
+# game/30_how.rpy:299
+translate english devel_e492ec03:
+
+    # dev "Дафна : {color=6F6F6F}Zio Dyne{/color}"
+    dev ""
+
+# game/30_how.rpy:301
+translate english devel_0d7e350e:
+
+    # dr "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    dr ""
+
+# game/30_how.rpy:309
+translate english devel_95789c32:
+
+    # dev "И несравненная Гермиона Грейнджер в роли офисной шл..."
+    dev ""
+
+# game/30_how.rpy:314
+translate english devel_7758cfe4:
+
+    # dev "Прости, в роли секретут..."
+    dev ""
+
+# game/30_how.rpy:321
+translate english devel_14d0b826:
+
+    # dev "Бхм. И наша главная офис-леди - мисс Грейнджер."
+    dev ""
+
+# game/30_how.rpy:329
+translate english devel_e594dfd2:
+
+    # dev "Недотрога..."
+    dev ""
+
+# game/30_how.rpy:330
+translate english devel_41e139b7:
+
+    # dev "Ушла наконец."
+    dev ""
+
+# game/30_how.rpy:332
+translate english devel_1ac08b57:
+
+    # dev "Итак, приятной игры, друзья !"
+    dev ""
+
+# game/30_how.rpy:334
+translate english devel_0e6b5f9f:
+
+    # dev "А если хотите пообщаться с людьми, которые продолжают совершенствование и расширение игры, милости просим."
+    dev ""
+
+# game/30_how.rpy:335
+translate english devel_fb3f35e0:
+
+    # dev "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
+    dev ""
+
+# game/30_how.rpy:345
+translate english forum_d54c28dc:
+
+    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
+    dev ""
+

@@ -231,7 +231,7 @@ screen lang_menu :
         label _("Выбор языка")
         textbutton "Русский" action Language(None)
         textbutton "English" action Language("english")
-        textbutton _("Назад") action Start("assmenu")
+        textbutton _("Отмена") action Start("assmenu")
 
 #######################
 # Extras
@@ -261,7 +261,7 @@ screen extras:
             textbutton _("Галерея") action Start("gallery")
         #textbutton _("От Акабура") action Start("faq")
         
-        textbutton _("Назад") action Start("assmenu") # Sent here from "EXTRAS" menu. Basically just jumps to the title screen. 
+        textbutton _("Отмена") action Start("assmenu") # Sent here from "EXTRAS" menu. Basically just jumps to the title screen. 
 
 init -2 python:
     style.gm_nav_button.size_group = "gm_nav"

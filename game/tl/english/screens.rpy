@@ -190,3 +190,23 @@ translate english strings:
     old "Настр."
     new "Prefs"
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+translate english strings:
+
+    # game/screens.rpy:207
+    old "Язык/Language"
+    new "Язык/Language"
+
+    # game/screens.rpy:231
+    old "Выбор языка"
+    new "Choose Language"
+
+# TODO: Translation updated at 2015-07-21 15:58
+
+translate english strings:
+
+    # game/screens.rpy:234
+    old "Отмена"
+    new "Cancel"
+

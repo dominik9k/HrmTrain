@@ -218,3 +218,11 @@ translate english strings:
     old "- Продолжать проигрывать текущию мелодию -"
     new "-Keep the current tune-"
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/29_extras.rpy:7
+translate english gallery_3da8f0a6:
+
+    # dev "Добро пожаловать в галерею игры \"Воспитание Ведьмы\". Здесь вы можете посмотреть некоторые работы."
+    dev ""
+

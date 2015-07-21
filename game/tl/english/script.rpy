@@ -214,3 +214,101 @@ translate english strings:
     old "Вы уверены, что хотите пропустить следующий диалог или выбор?"
     new "Are you sure you want to skip the following dialog box or choice?"
 
+# TODO: Translation updated at 2015-07-21 15:21
+
+# game/script.rpy:5504
+translate english start_95776c2e:
+
+    # "Новая игра +" ">Хотите перенести все золото и имущество из предыдущей игры?" nointeract
+    "Новая игра +" "" nointeract
+
+# game/script.rpy:5527
+translate english start_5defba61:
+
+    # dev "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
+    dev ""
+
+# game/script.rpy:5528
+translate english start_a15b9588:
+
+    # dev "Игра получилась объемная, и становится больше с каждым новым обновлением."
+    dev ""
+
+# game/script.rpy:5529
+translate english start_0b584496:
+
+    # dev "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
+    dev ""
+
+# game/script.rpy:5530
+translate english start_a9ca5c5e:
+
+    # dev "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
+    dev ""
+
+# game/script.rpy:5532
+translate english start_1e58b870:
+
+    # dev "..."
+    dev ""
+
+# game/script.rpy:5533
+translate english start_dea8b0a7:
+
+    # dev "... потому что звучит круто?"
+    dev ""
+
+# game/script.rpy:5536
+translate english start_fc268ce3:
+
+    # dev "Но я..."
+    dev ""
+
+# game/script.rpy:5538
+translate english start_90a06e36:
+
+    # dev "Красный - цвет силы!"
+    dev ""
+
+# game/script.rpy:5542
+translate english start_1e58b870_1:
+
+    # dev "..."
+    dev ""
+
+# game/script.rpy:5543
+translate english start_e6307045:
+
+    # dev "Чем плох красненький..?"
+    dev ""
+
+# game/script.rpy:5544
+translate english start_7dc58368:
+
+    # dev "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
+    dev ""
+
+# game/script.rpy:5545
+translate english start_c0405685:
+
+    # dev "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
+    dev ""
+
+# game/script.rpy:5546
+translate english start_13f0a186:
+
+    # dev "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
+    dev ""
+
+# game/script.rpy:5556
+translate english start_1e58b870_2:
+
+    # dev "..."
+    dev ""
+
+# game/script.rpy:5557
+translate english start_3b110c15:
+
+    # dev "Ты - истинный самурай."
+    dev ""
+
