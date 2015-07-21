@@ -9,3 +9,4 @@ log.txt
 /tmp
 game/the_oddities.rpy~
 *.rpy#
+*.pyo
