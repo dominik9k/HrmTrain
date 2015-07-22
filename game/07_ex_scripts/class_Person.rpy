@@ -16,6 +16,7 @@
             self.wrd_upskirt = False
             self.wrd_downpanties = False
             self.wrd_noshirt = False
+            self.wrd_sperm_dried = False
             
             self.wrd_new = []
             self.wrd_new_block = []
@@ -329,6 +330,7 @@
             self.body.data().addItem( 'item_tits' )
             self.body.data().addItem( 'item_tits_no' )
             self.body.data().addItem( 'item_panties' )
+ 
             i = 0
             for o in self.wrd_wear:
                 if self.wrd_wear_block[i] == "gears_other" :
@@ -347,6 +349,8 @@
                 elif self.wrd_wear_block[i] == "gears_stockings" :
                     self.body.data().addItem("item_" + o)
                 i += 1
+            if self.wrd_sperm_dried :
+                self.body.data().setStyleAll('sperm_dried')
             return self
             
         def WrdSetMain (self) :
@@ -355,6 +359,7 @@
             self.wrd_upskirt = self.wrd_set_upskirt
             self.wrd_downpanties = self.wrd_set_downpanties
             self.wrd_noshirt = self.wrd_set_noshirt
+            self.wrd_sperm_dried = False
             
             self.wrd_wear = self.wrd_set [ : ]
             self.wrd_wear_block = self.wrd_set_block [ : ]
@@ -367,22 +372,15 @@
             if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] :             
                 self.WrdAdd(Item,block,"new")   
                 
-        def WrdSetDressNew (self, Item = None) :
+        def WrdSetUnlock (self, Item = None) :
             block = self.Items.GetBlock(Item)
-            if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] and Item in self.wrd_adm :             
-                self.WrdDelBlock (block)
-                self.WrdAdd(Item, block, "wear")
-                if block == "shirt" :
-                    self.wrd_noshirt = False
-                    self.wrd_upshirt = False
-                elif block == "skirt" :
-                    self.wrd_upskirt = False  
-                self.WrdRem (Item,"new")
-                self.WrdSetMain()
+            if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] :   
+                self.WrdRem(Item,"new")
+                self.WrdAdd(Item,block,"adm")
             
         def WrdDress (self, Item = None) :
             block = self.Items.GetBlock(Item)
-            if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] and Item in self.wrd_adm :             
+            if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] :             
                 self.WrdDelBlock (block)
                 self.WrdAdd(Item, block, "wear")
                 if block == "shirt" :
@@ -390,56 +388,100 @@
                     self.wrd_upshirt = False
                 elif block == "skirt" :
                     self.wrd_upskirt = False  
-                self.WrdRem (Item,"new")
                 self.WrdMain()
                 
         def WrdSetDress (self, Item = None) :
             block = self.Items.GetBlock(Item)
             if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] and Item in self.wrd_adm :             
-                self.WrdDelBlock (block)
-                self.WrdAdd(Item, block, "wear")
+                self.WrdSetDelBlock (block)
+                self.WrdAdd(Item, block, "set")
                 if block == "shirt" :
-                    self.wrd_noshirt = False
-                    self.wrd_upshirt = False
+                    self.set_noshirt = False
+                    self.set_upshirt = False
                 elif block == "skirt" :
-                    self.wrd_upskirt = False  
-                self.WrdRem (Item,"new")
+                    self.set_upskirt = False  
                 self.WrdSetMain()
         
         def WrdUpSkirt (self) :
             self.wrd_upskirt = True
             self.WrdDownShirt() 
-            self.WrdSetMain()
+            self.WrdMain()
             
         def WrdDownSkirt (self) :
             self.wrd_upskirt = False
-            self.WrdSetMain()
+            self.WrdMain()
             
         def WrdUpShirt (self) :
             self.wrd_upshirt = True
             self.WrdDownSkirt() 
-            self.WrdSetMain()
+            self.WrdMain()
             
         def WrdDownShirt (self) :
             self.wrd_upshirt = False
-            self.WrdSetMain()
+            self.WrdMain()
             
         def WrdNoShirt (self) :
             self.wrd_noshirt = True
             self.WrdDelShirt()
-            self.WrdSetMain()
+            self.WrdMain()
             
         def WrdNoSkirt (self) :
             self.WrdDelSkirt()
-            self.WrdSetMain()
+            self.WrdMain()
             
         def WrdNoOther (self) :
             self.WrdDelOther()
-            self.WrdSetMain()
+            self.WrdMain()
         
         def WrdNoStockings (self) :
             self.WrdDelStockings()
+            self.WrdMain()
+            
+        def WrdSetUpSkirt (self) :
+            self.set_upskirt = True
+            self.WrdSetDownShirt() 
             self.WrdSetMain()
+            
+        def WrdSetDownSkirt (self) :
+            self.set_upskirt = False
+            self.WrdSetMain()
+            
+        def WrdSetUpShirt (self) :
+            self.set_upshirt = True
+            self.WrdSetDownSkirt() 
+            self.WrdSetMain()
+            
+        def WrdSetDownShirt (self) :
+            self.set_upshirt = False
+            self.WrdSetMain()
+            
+        def WrdSetNoShirt (self) :
+            self.set_noshirt = True
+            self.WrdSetDelShirt()
+            self.WrdSetMain()
+            
+        def WrdSetNoSkirt (self) :
+            self.WrdSetDelSkirt()
+            self.WrdSetMain()
+            
+        def WrdSetNoOther (self) :
+            self.WrdSetDelOther()
+            self.WrdSetMain()
+        
+        def WrdSetNoStockings (self) :
+            self.WrdSetDelStockings()
+            self.WrdSetMain()
+            
+        def WrdSpermDried (self) :
+            self.wrd_sperm_dried = True
+            self.wrd_upshirt = False
+            self.wrd_upskirt = False
+            self.WrdMain()
+            
+        def WrdNoSpermDried (self) :
+            self.wrd_sperm_dried = False
+            self.WrdMain()
+            
 
 # Задает видимость персоны. 
 # body+ - показывать тело всегда, без плюса только во время реплики, 

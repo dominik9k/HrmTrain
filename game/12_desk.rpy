@@ -297,12 +297,15 @@ label desk:
             show screen bld1
             with d3
             $ hermi.whoring = 24       
-            $ hermi.WrdAddNew("xxxsmallskirt")
-            $ hermi.WrdDress("xxxsmallskirt")
-            $ hermi.WrdAddNew("skimpyshirt")
-            $ hermi.WrdDress("skimpyshirt")
-            $ hermi.WrdAddNew("badge")
-            $ hermi.WrdDress("badge")       
+            #$ hermi.WrdSetAddNew("xxxsmallskirt")
+            #$ hermi.WrdDress("xxxsmallskirt")
+            $ hermi.WrdSetUnlock("skimpyshirt")
+            $ hermi.WrdSetDress("skimpyshirt")
+            #$ hermi.WrdAddNew("badge")
+            #$ hermi.WrdDress("badge")   
+            #$ hermi.WrdSetMain()
+            $ hermi.WrdSpermDried()
+
             jump hermione_approaching
 #            jump hermione_goout            
             

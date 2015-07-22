@@ -11,5 +11,9 @@
 		<hidelist>
 			<item>skirt</item>
 		</hidelist>
+	</style>
+	<style name="sperm_dried">
+		<frame>skirts/shortskirt_sd.png</frame>
+		<folder>clothes</folder>
 	</style>	
 </item>

@@ -36,5 +36,8 @@
 
 		</actions>
 	</style>
-	
+	<style name="sperm_dried">
+		<frame>shirts/shirt_cheerleader_sd.png</frame>
+		<folder>clothes</folder>
+	</style>	
 </item>

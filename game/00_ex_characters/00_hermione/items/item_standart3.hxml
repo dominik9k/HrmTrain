@@ -40,4 +40,8 @@
 		<frame>standart3_lifted.png</frame>
 		<folder>clothes</folder>
 	</style>	
+	<style name="sperm_dried">
+		<frame>shirts/standart3_sd.png</frame>
+		<folder>clothes</folder>
+	</style>
 </item>
