@@ -19,7 +19,9 @@ label menu_dahr_book:
         menu:
             "- Купить книгу за [wtevent._price] галлеонов -":
                 if gold >= wtevent._price:
+                    hide screen points
                     $ gold -= wtevent._price
+                    show screen points
                     $ order_placed = True
                     $ wtevent.IncValue("status",1)
 #                            $ bought_book_01 = True
@@ -117,8 +119,9 @@ label menu_dahr_gift_order:
         else:
             $_price2=item._price*2
             $_price3=item._price*3
-            $_price50=item._price*50
-            $_price68=item._price*68
+            $i_count=itsDAHR.Count(item.Name)
+            $_price_all=item._price*i_count
+            
             if itsDAHR.Count(item.Name)>0:
                 menu:
                     dahr "[item._description]"
@@ -128,10 +131,8 @@ label menu_dahr_gift_order:
                         $itemCount=2
                     "- Купить 3 ([_price3] галеонов) -" if itsDAHR.Count(item.Name)>2:
                         $itemCount=3
-                    "- Купить 50 ([_price50] галеонов) -" if itsDAHR.Count(item.Name)>3 and _block != "scroll" :
-                        $itemCount=50
-                    "- Купить 68 ([_price68] галеонов) -" if itsDAHR.Count(item.Name)>3 and _block == "scroll" :
-                        $itemCount=68
+                    "- Купить оставшиеся - [i_count] ([_price_all] галеонов) -" if i_count>3 and _block == "scroll" :
+                        $itemCount=i_count
                     "- Ничего -":
                         hide screen gift
                         jump the_oddities
@@ -244,14 +245,16 @@ label thx_4_shoping:
     $ days_in_delivery2 = one_of_five  #Generating one number out of three for various porpoises.
     if days_in_delivery2==1:
         $days_in_delivery2+=1 # Назавтра только экспресс
-        $days_in_delivery2+=itemCount-1  # Удлинняется, если несколько предметов
+#        $days_in_delivery2+=itemCount-1  # Удлинняется, если несколько предметов
 
     if gold >= _price*itemCount//2:
         menu:
             dahr "Вы заказали [itemCount] шт. предметов \"[_caption]\". Вы оплатите экспресс-доставку?"
             "Экспресс-доставка (+50%% за срочность)":
                 $days_in_delivery2=1
+                hide screen points
                 $gold -= _price*itemCount//2
+                show screen points
                 dahr "Спасибо за покупку в \"Приблудах Дахра\". Ваш заказ будет доставлен завтра."
             "Обычная доставка":
                 dahr "Спасибо за покупку в \"Приблудах Дахра\". Доставка вашего заказа займет около [days_in_delivery2] дней."
@@ -322,7 +325,9 @@ label wrd_dahr_rent_menu :
                     ">Вы уверены, что хотите взять напрокат на один день форму веселой школьницы за 100 галлеонов ? [add]"
                 
                     "Да" :
+                        hide screen points
                         $ gold -= 100
+                        show screen points
                         ">В шкафу раздался шорох и материализовался комплект веселой школьницы. Вы не уверены, но похоже в кабинете стало меньше пыли."
                         $ wrd_rent_happy_schoolgirl = 1
                         jump wrd_dahr_gears
@@ -346,7 +351,9 @@ label wrd_dahr_rent_menu :
                     "Вы уверены, что хотите взять напрокат на один день форму игривой школьницы за 250 галлеонов ? [add]"
                 
                     "Да" :
+                        hide screen points
                         $ gold -= 250
+                        show screen points
                         ">В шкафу раздался шорох и материализовался комплект игривой школьницы. Вы не уверены, но похоже в кабинете стало меньше пыли."
                         $ wrd_rent_playful_schoolgirl = 1
                         jump wrd_dahr_gears
@@ -370,7 +377,9 @@ label wrd_dahr_rent_menu :
                     "Вы уверены, что хотите взять напрокат на один день форму болельщицы Гриффиндора за 125 галлеонов ? [add]"
                 
                     "Да" :
+                        hide screen points
                         $ gold -= 125
+                        show screen points
                         ">В шкафу раздался шорох и материализовался комплект болельщицы Гриффиндора. Вы не уверены, но похоже в кабинете стало меньше пыли."
                         $ wrd_rent_cheerleader = 1
                         jump wrd_dahr_gears
@@ -394,7 +403,9 @@ label wrd_dahr_rent_menu :
                     "Вы уверены, что хотите взять напрокат на один день одежду бизнес-леди за 200 галлеонов ? [add]"
                 
                     "Да" :
+                        hide screen points
                         $ gold -= 200
+                        show screen points
                         ">В шкафу раздался шорох и материализовался комплект бизнес-леди. Вы не уверены, но похоже в кабинете стало меньше пыли."
                         $ wrd_rent_business = 1
                         jump wrd_dahr_gears

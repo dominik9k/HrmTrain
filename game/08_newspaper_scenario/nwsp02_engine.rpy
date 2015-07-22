@@ -12,7 +12,9 @@ label newsp_letter:
     "Спасибо за сотрудничество !\n\n"
     "{size=-3}С уважением,\nМинистерство Магии.{/size}"])
     
+    hide screen points
     $ gold += nsp_newspaper_cur_money
+    show screen points
     
     $ nsp_newspaper_published = False
     $ nsp_newspaper_published_mail = False
@@ -20,7 +22,9 @@ label newsp_letter:
     
     if (hermi._incomePercent>0):
         $nsp_newspaper_cur_money=nsp_newspaper_cur_money*hermi._incomePercent//100
+        hide screen points
         $gold-=nsp_newspaper_cur_money
+        show screen points
         "> Согласно вашему соглашению с Гермионой [dgold] галеонов ([hermi._incomePercent]%%) перечисляются на ее счет"
     
     if nsp_newspaper_menu == 2:

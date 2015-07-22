@@ -2016,7 +2016,7 @@ label giving_krum:
         
         
      ### S.P.E.W. BADGE ###
-label giving_badge_01: 
+label giving_badge: 
     $herView.hideQ( d5 )
     $ wrd_new_items += 1
     $ pos = POS_140
