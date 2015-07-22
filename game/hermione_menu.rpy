@@ -939,7 +939,9 @@ label hermione_bookbuying:
         $ renpy.play('sounds/door.mp3') #Sound of a door opening.
         hide screen hermione_01_f #Hermione stands still.
         with Dissolve(.3)
+        hide screen points
         $ gold -=3000
+        show screen points
         $ hermione_takes_classes = True
         $ hermione_sleeping = True
         $ teacher_jinn_quest = 5

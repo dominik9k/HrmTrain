@@ -4247,7 +4247,7 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
             persistent.itemSet.update({"xxxsmallskirt": hermi.Items.Count("xxxsmallskirt")})
  
         for o in hero.Items():
-            if o.Name not in {"nets", "badge_01", "ball_dress", "shortskirt", "xshortskirt", "xxshortskirt", "xsmallskirt", "xxsmallskirt", "skirt_cheerleader", "skimpyshirt", "skirt_business", "shirt_cheerleader", "shirt_business", "tights" }:
+            if o.Name not in {"nets", "badge", "ball_dress", "shortskirt", "xshortskirt", "xxshortskirt", "xsmallskirt", "xxsmallskirt", "skirt_cheerleader", "skimpyshirt", "skirt_business", "shirt_cheerleader", "shirt_business", "tights" }:
                 persistent.itemSet.update({o.Name: hero.Items.Count(o.Name)})       
 
 
