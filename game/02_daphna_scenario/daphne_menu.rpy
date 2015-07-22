@@ -145,7 +145,7 @@ label daphne_approaching(isKnocking=False):
 #                else:
 #                    choose = RunMenu()
 #                    for o in daphne.Items():
-#                        if o.Name in {"badge_01", "nets", "miniskirt"}:
+#                        if o.Name in {"badge", "nets", "miniskirt"}:
 #                            choose.AddItem("- "+("Надеть" if o._status==0 else "Снять")+" "+o._caption+" -", 
 #                                "daphne_item_"+("on" if o._status==0 else "off"), True, o.Name)
 

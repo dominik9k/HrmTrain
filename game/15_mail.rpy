@@ -12,7 +12,9 @@ label mail:
 
         $dgold=([40, 70, 90, 110, 150, 200][finished_report-1])*turbo
         $ letter_text = "{size=-7}ОТ:Министерства Магии\nКому: Профессору Дамблдору\n\n\n{/size}{size=-2}Благодарим Вас за отчеты, присланные на этой неделе.\n Ваша оплата:{/size} \n{size=+4}[dgold] галеонов.{/size}\n\n\n{size=-3}-С уважением-{/size}"    
+        hide screen points
         $ gold += dgold
+        show screen points
 
         
         show screen bld1
@@ -28,7 +30,9 @@ label mail:
 
         if (hermi._incomePercent>0):
             $dgold=dgold*hermi._incomePercent//100
+            hide screen points
             $gold-=dgold
+            show screen points
             "> Согласно вашему соглашению с Гермионой [dgold] галеонов ([hermi._incomePercent]%%) перечисляются на ее счет"
         call screen main_menu_01
         
@@ -141,15 +145,17 @@ label mail:
     #    if one_of_ten == 10:
     #        $ letter_text =
             
-        
+        hide screen points
         $ gold += dgold
-            
+        show screen points    
 
         $ finished_report = 0
 
         if (hermi._incomePercent>0):
             $dgold=dgold*hermi._incomePercent//100
+            hide screen points
             $gold-=dgold
+            show screen points
             "> Согласно вашему соглашению с Гермионой [dgold] галеонов ([hermi._incomePercent]%%) перечисляются на ее счет"
         call screen main_menu_01
     

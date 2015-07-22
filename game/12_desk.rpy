@@ -306,17 +306,17 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" if False:
+        "- Тест 3 -" if False :
 
             $ hermi.whoring = 24
             $ cataloug_found = True
             $ persistent.game_complete = True
-            if persistent.endings is None:
-                $ persistent.endings = set()
-            $ persistent.endings.update({1})
-            python :
-                achieve.SetAchievement(const_ACH_WRD_HERMIONA_SHIRT_BUSINESS)
-                achieve.UpdatePersistent()
+            #if persistent.endings is None:
+            #    $ persistent.endings = set()
+            #$ persistent.endings.update({1})
+            #python :
+            #    achieve.SetAchievement(const_ACH_WRD_HERMIONA_SHIRT_BUSINESS)
+            #    achieve.UpdatePersistent()
             call the_oddities
             jump desk
             
