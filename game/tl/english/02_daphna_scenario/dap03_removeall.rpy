@@ -21,32 +21,32 @@ translate english dap_request_03_e6cfadab:
 # game/02_daphna_scenario/dap03_removeall.rpy:119
 translate english dap_request_03_36109640:
 
-    # felix "Жаль прерываться на самом интересном месте?"
-    felix ""
+    # dev "Жаль прерываться на самом интересном месте?"
+    dev ""
 
 # game/02_daphna_scenario/dap03_removeall.rpy:120
 translate english dap_request_03_802b813d:
 
-    # felix "Нам тоже. Но данная сюжетная линия пока дописана только до этой точки..."
-    felix ""
+    # dev "Нам тоже. Но данная сюжетная линия пока дописана только до этой точки..."
+    dev ""
 
 # game/02_daphna_scenario/dap03_removeall.rpy:121
 translate english dap_request_03_1f10307a:
 
-    # felix "{size=-3}(впрочем, вам доступны другие сюжетные линии){/size}"
-    felix ""
+    # dev "{size=-3}(впрочем, вам доступны другие сюжетные линии){/size}"
+    dev ""
 
 # game/02_daphna_scenario/dap03_removeall.rpy:122
 translate english dap_request_03_28406d38:
 
-    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    felix ""
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    dev ""
 
 # game/02_daphna_scenario/dap03_removeall.rpy:123
 translate english dap_request_03_76ed1c6f:
 
-    # felix "Так вы простимулируете нас и продолжение появится быстрее. :)"
-    felix ""
+    # dev "Так вы простимулируете нас и продолжение появится быстрее. :)"
+    dev ""
 
 translate english strings:
 

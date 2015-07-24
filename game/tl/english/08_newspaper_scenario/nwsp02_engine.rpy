@@ -9,20 +9,20 @@ translate english newsp_letter_25546137:
 # game/08_newspaper_scenario/nwsp02_engine.rpy:29
 translate english newsp_letter_fdf27409:
 
-    # dr "Одну минутку..."
-    dr ""
+    # dev "Одну минутку..."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp02_engine.rpy:31
 translate english newsp_letter_e77c4054:
 
-    # dr "Да погоди, не кипятись. Дело в том, что..."
-    dr ""
+    # dev "Да погоди, не кипятись. Дело в том, что..."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp02_engine.rpy:33
 translate english newsp_letter_2b1bb671:
 
-    # dr "О не-е-е-е-е-е-ет... Джинни, я обещаю, что ты не зря учился газетному делу ! Спроси Снейпа, и он подскажет, как заработать больше !"
-    dr ""
+    # dev "О не-е-е-е-е-е-ет... Джинни, я обещаю, что ты не зря учился газетному делу ! Спроси Снейпа, и он подскажет, как заработать больше !"
+    dev ""
 
 # game/08_newspaper_scenario/nwsp02_engine.rpy:198
 translate english nsp_newsp_themes_ab065461:

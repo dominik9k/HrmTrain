@@ -3,8 +3,8 @@
 # game/09_secret_room/01_secret_room.rpy:15
 translate english sroom_main_bc235cf3:
 
-    # dr "Добро пожаловать Тайную Комнату. Здесь вы можете изучить список своих игровых достижений и насладиться некоторыми бонусами."
-    dr ""
+    # dev "Добро пожаловать Тайную Комнату. Здесь вы можете изучить список своих игровых достижений и насладиться некоторыми бонусами."
+    dev ""
 
 # game/09_secret_room/01_secret_room.rpy:30
 translate english sroom_achlist_8c3fd64c:

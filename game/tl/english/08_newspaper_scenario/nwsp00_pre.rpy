@@ -3,8 +3,8 @@
 # game/08_newspaper_scenario/nwsp00_pre.rpy:125
 translate english newsp_pre_snape_dialog2_beb2ef1e:
 
-    # dr "О нет. Очень прошу, придерживайся уже наконец сценария ! А то я, пожалуй, сделаю мод со сменой пола главного героя."
-    dr ""
+    # dev "О нет. Очень прошу, придерживайся уже наконец сценария ! А то я, пожалуй, сделаю мод со сменой пола главного героя."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:150
 translate english nsp_hermione_pre1_e64ab315:
@@ -333,84 +333,84 @@ translate english nsp_hermione_train_8e3e9db9:
 # game/08_newspaper_scenario/nwsp00_pre.rpy:351
 translate english nsp_her_demo_fafc74e7:
 
-    # dr "Приветствую вас, игрок."
-    dr ""
+    # dev "Приветствую вас, игрок."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:352
 translate english nsp_her_demo_9fde2942:
 
-    # dr "К сожалению, в рамках эвентов газеты данное событие дальше не сделано."
-    dr ""
+    # dev "К сожалению, в рамках эвентов газеты данное событие дальше не сделано."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:353
 translate english nsp_her_demo_f314707b:
 
-    # dr "Ждите продолжения в следующих версиях."
-    dr ""
+    # dev "Ждите продолжения в следующих версиях."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:362
 translate english nsp_her_demo2_67081ca6:
 
-    # dr "Вам удалось открыть все эвенты газеты, готовые в данной версии игры."
-    dr ""
+    # dev "Вам удалось открыть все эвенты газеты, готовые в данной версии игры."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:363
 translate english nsp_her_demo2_a4d5b39f:
 
-    # dr "Но не расстраивайтесь, в будущем добавится еще много интересного !"
-    dr ""
+    # dev "Но не расстраивайтесь, в будущем добавится еще много интересного !"
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:364
 translate english nsp_her_demo2_24d1dcb9:
 
-    # dr "А если хотите стимулировать меня и других разработчиков работать быстрее, то :"
-    dr ""
+    # dev "А если хотите стимулировать меня и других разработчиков работать быстрее, то :"
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:365
 translate english nsp_her_demo2_8c3b8398:
 
-    # dr "1) Оставьте отзыв на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
-    dr ""
+    # dev "1) Оставьте отзыв на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:366
 translate english nsp_her_demo2_2d515ca8:
 
-    # dr "2) Принимайте активное участие в обсуждениях на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
-    dr ""
+    # dev "2) Принимайте активное участие в обсуждениях на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:367
 translate english nsp_her_demo2_45053a71:
 
-    # dr "3) Создавайте свой контент для игры."
-    dr ""
+    # dev "3) Создавайте свой контент для игры."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:368
 translate english nsp_her_demo2_e32e2b45:
 
-    # dr "4) ....."
-    dr ""
+    # dev "4) ....."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:369
 translate english nsp_her_demo2_a20c66a5:
 
-    # dr "5) PROFIT"
-    dr ""
+    # dev "5) PROFIT"
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:370
 translate english nsp_her_demo2_17c63a14:
 
-    # dr "P.S. А еще у вас есть беспрецедентная возможность повлиять на дальнейшее развитие игры. "
-    dr ""
+    # dev "P.S. А еще у вас есть беспрецедентная возможность повлиять на дальнейшее развитие игры. "
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:371
 translate english nsp_her_demo2_ceec46da:
 
-    # dr "Для этого нужно принять участие в {a=http://wtrus.ixbb.ru/viewtopic.php?id=74}голосовании{/a}."
-    dr ""
+    # dev "Для этого нужно принять участие в {a=http://wtrus.ixbb.ru/viewtopic.php?id=74}голосовании{/a}."
+    dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:372
 translate english nsp_her_demo2_79745ba4:
 
-    # dr "До новых встреч."
-    dr ""
+    # dev "До новых встреч."
+    dev ""
 

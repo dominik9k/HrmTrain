@@ -369,56 +369,56 @@ translate english howtoplay_37e65c5e:
 # game/30_how.rpy:251
 translate english abouttrainer_f9420893:
 
-    # dr "Итак, сейчас перед вами \"Тренер Ведьм: Русская редакция\"."
-    dr "Alright, what you see before you is \"Witch Trainer: Russian Editon\"."
+    # dev "Итак, сейчас перед вами \"Тренер Ведьм: Русская редакция\"."
+    dev "Alright, what you see before you is \"Witch Trainer: Russian Editon\"."
 
 # game/30_how.rpy:252
 translate english abouttrainer_bc7a80c0:
 
-    # dr "Наща дружная команда взяла за основу небольшую, но очень приятную игру от Акабура."
-    dr "Our team, took as basis the small, but very pleasant game from Akabur."
+    # dev "Наща дружная команда взяла за основу небольшую, но очень приятную игру от Акабура."
+    dev "Our team, took as basis the small, but very pleasant game from Akabur."
 
 # game/30_how.rpy:253
 translate english abouttrainer_3278626e:
 
-    # dr "Сейчас от нее остались главным образом идеи и контент."
-    dr "At the moment all that rest of the main game is ideas and the content."
+    # dev "Сейчас от нее остались главным образом идеи и контент."
+    dev "At the moment all that rest of the main game is ideas and the content."
 
 # game/30_how.rpy:254
 translate english abouttrainer_46c2a06b:
 
-    # dr "Код переписан и улучшен, а самое главное добавлено много нового и улучшено старое."
-    dr "The code was enhanced and rewritten, but the best part of it, there is a lot of new content and improved the old one."
+    # dev "Код переписан и улучшен, а самое главное добавлено много нового и улучшено старое."
+    dev "The code was enhanced and rewritten, but the best part of it, there is a lot of new content and improved the old one."
 
 # game/30_how.rpy:255
 translate english abouttrainer_c72136a4:
 
-    # dr "Добавлены новые персонажи, новые ивенты и предметы. Перечислять можно долго."
-    dr "There are new characters, new items and events. There's to much to list it all."
+    # dev "Добавлены новые персонажи, новые ивенты и предметы. Перечислять можно долго."
+    dev "There are new characters, new items and events. There's to much to list it all."
 
 # game/30_how.rpy:256
 translate english abouttrainer_1ce649a0:
 
-    # dr "Более того, мы, в отличие от Акабура, не считаем проект законченным и постоянно совершенствуем его."
-    dr "Moreover, in caparison with Akabur, we don't consider the project finished and constantly trying to improve it."
+    # dev "Более того, мы, в отличие от Акабура, не считаем проект законченным и постоянно совершенствуем его."
+    dev "Moreover, in caparison with Akabur, we don't consider the project finished and constantly trying to improve it."
 
 # game/30_how.rpy:257
 translate english abouttrainer_f4e383ab:
 
-    # dr "А еще, перевели игру на русский язык, чтобы русским людям было приятно играть."
-    dr "And we did an English/Russian Translation for the game, so everybody can enjoy it."
+    # dev "А еще, перевели игру на русский язык, чтобы русским людям было приятно играть."
+    dev "And we did an English/Russian Translation for the game, so everybody can enjoy it."
 
 # game/30_how.rpy:258
 translate english abouttrainer_f3c34f3c:
 
-    # dr "Мы делаем это совершенно бесплатно."
-    dr "We are doing it completely free of charge."
+    # dev "Мы делаем это совершенно бесплатно."
+    dev "We are doing it completely free of charge."
 
 # game/30_how.rpy:259
 translate english abouttrainer_488c5528:
 
-    # dr "По традиции, сохранены слова Акабура, далее вы можете с ними ознакомиться."
-    dr "By tradition, you can read the original text from Akabur down below."
+    # dev "По традиции, сохранены слова Акабура, далее вы можете с ними ознакомиться."
+    dev "By tradition, you can read the original text from Akabur down below."
 
 # game/30_how.rpy:261
 translate english abouttrainer_7980a438:
@@ -789,146 +789,146 @@ translate english faq2_8fa90e73:
 # game/30_how.rpy:393
 translate english devel_225fabed:
 
-    # dr "Итак, вы уже обратили внимание, что это не оригинальная игра Акабура..."
-    dr "Ok, I bet you noticed already that this is not the original game by Akabur..."
+    # dev "Итак, вы уже обратили внимание, что это не оригинальная игра Акабура..."
+    dev "Ok, I bet you noticed already that this is not the original game by Akabur..."
 
 # game/30_how.rpy:396
 translate english devel_5ca6d87f:
 
-    # dr "(facepalm)"
-    dr "(facepalm)"
+    # dev "(facepalm)"
+    dev "(facepalm)"
 
 # game/30_how.rpy:397
 translate english devel_246e245e:
 
-    # dr "Я так и знал, что нужно давать больше информации общественности..."
-    dr "I knew it, that people need more information..."
+    # dev "Я так и знал, что нужно давать больше информации общественности..."
+    dev "I knew it, that people need more information..."
 
 # game/30_how.rpy:400
 translate english devel_991a19f2:
 
-    # dr "..........."
-    dr "..........."
+    # dev "..........."
+    dev "..........."
 
 # game/30_how.rpy:403
 translate english devel_22a5d37e:
 
-    # dr "В рот мне ноги..."
-    dr "Fuck my brain..."
+    # dev "В рот мне ноги..."
+    dev "Fuck my brain..."
 
 # game/30_how.rpy:405
 translate english devel_16cf924b:
 
-    # dr "{size=+3}Т.е. вы все по-прежнему считаете, что игру для вас продолжает улучшать Акабур ?{/size}"
-    dr "{size=+3}You still think that Akabur continues to improve the game for you?{/size}"
+    # dev "{size=+3}Т.е. вы все по-прежнему считаете, что игру для вас продолжает улучшать Акабур ?{/size}"
+    dev "{size=+3}You still think that Akabur continues to improve the game for you?{/size}"
 
 # game/30_how.rpy:406
 translate english devel_eb85e19d:
 
-    # dr "И это после того, как он сообщил, что считает ее законченной ?"
-    dr "This is after he told everyone, that he considers the game finished."
+    # dev "И это после того, как он сообщил, что считает ее законченной ?"
+    dev "This is after he told everyone, that he considers the game finished."
 
 # game/30_how.rpy:407
 translate english devel_5d3e74f8:
 
-    # dr "После того, как он решил никогда ее не переводить на русский ?"
-    dr "After he decided to not translate it to Russian or any other language?"
+    # dev "После того, как он решил никогда ее не переводить на русский ?"
+    dev "After he decided to not translate it to Russian or any other language?"
 
 # game/30_how.rpy:408
 translate english devel_731692e9:
 
-    # dr "После того, как я написал всю эту гору кода, не говоря уж об остальной команде разработчиков, переводчиков и художников, месяцами бесплатно трудящихся для вас ?"
-    dr "Well, after this coding, without speaking about the rest of the developer team, artists and translators, working for months free of charge for you?"
+    # dev "После того, как я написал всю эту гору кода, не говоря уж об остальной команде разработчиков, переводчиков и художников, месяцами бесплатно трудящихся для вас ?"
+    dev "Well, after this coding, without speaking about the rest of the developer team, artists and translators, working for months free of charge for you?"
 
 # game/30_how.rpy:409
 translate english devel_af71e336:
 
-    # dr "{size=+4}Аргх...{/size}"
-    dr "{size=+4}Argh...{/size}"
+    # dev "{size=+4}Аргх...{/size}"
+    dev "{size=+4}Argh...{/size}"
 
 # game/30_how.rpy:410
 translate english devel_2e066e8a:
 
-    # dr "......."
-    dr "......."
+    # dev "......."
+    dev "......."
 
 # game/30_how.rpy:411
 translate english devel_11908d6f:
 
-    # dr "Простите, наболело."
-    dr "I'm sorry, just "
+    # dev "Простите, наболело."
+    dev "I'm sorry, just "
 
 # game/30_how.rpy:413
 translate english devel_19a66bea:
 
-    # dr "Итак, для вас трудились :"
-    dr "So, I present you the people who made this happen:"
+    # dev "Итак, для вас трудились :"
+    dev "So, I present you the people who made this happen:"
 
 # game/30_how.rpy:414
 translate english devel_35ad767c:
 
-    # dr "Главный координатор (встречайте стоя !): {color=4F4F4F}Хан ( Khan ){/color}"
-    dr "Chief coordinator (standing ovations!): {color=4F4F4F}Khan{/color}"
+    # dev "Главный координатор (встречайте стоя !): {color=4F4F4F}Хан ( Khan ){/color}"
+    dev "Chief coordinator (standing ovations!): {color=4F4F4F}Khan{/color}"
 
 # game/30_how.rpy:415
 translate english devel_828990f0:
 
-    # dr "Главный разработчик : {color=00FF00}Дрон (dron12355){/color}"
-    dr "Chief devoloper: {color=00FF00}dron12355{/color}"
+    # dev "Главный разработчик : {color=00FF00}Дрон (devon12355){/color}"
+    dev "Chief devoloper: {color=00FF00}devon12355{/color}"
 
 # game/30_how.rpy:416
 translate english devel_9f38a03f:
 
-    # dr "Разработка и ивенты Дафны : {color=7789CA}Феликс{/color}"
-    dr "Daphne developer and events : {color=7789CA} {/color}"
+    # dev "Разработка и ивенты Дафны : {color=7789CA}Феликс{/color}"
+    dev "Daphne developer and events : {color=7789CA} {/color}"
 
 # game/30_how.rpy:417
 translate english devel_df185580:
 
-    # dr "Поддержка игры (на плаву) : {color=0000FF}Сказочник{/color}"
-    dr "Game support (afloat): {color=0000FF} {/color}"
+    # dev "Поддержка игры (на плаву) : {color=0000FF}Сказочник{/color}"
+    dev "Game support (afloat): {color=0000FF} {/color}"
 
 # game/30_how.rpy:418
 translate english devel_3cd32fed:
 
-    # dr "Перевод на английский язык : {color=0089BE}Хан и Sezt{/color}"
-    dr "English translation: {color=0089BE}Khan и Sezt{/color}"
+    # dev "Перевод на английский язык : {color=0089BE}Хан и Sezt{/color}"
+    dev "English translation: {color=0089BE}Khan и Sezt{/color}"
 
 # game/30_how.rpy:419
 translate english devel_e596fc64:
 
-    # dr "Разработка и обучающие ивенты : {color=FF0000}Nyarkohopter{/color}"
-    dr "Training devoloper and events: {color=FF0000}Nyarkohopter{/color}"
+    # dev "Разработка и обучающие ивенты : {color=FF0000}Nyarkohopter{/color}"
+    dev "Training devoloper and events: {color=FF0000}Nyarkohopter{/color}"
 
 # game/30_how.rpy:420
 translate english devel_9ff0a49f:
 
-    # dr "Чибики Дафны : {color=2F2F2F}Grending{/color}"
-    dr "Chibis for Daphne: {color=2F2F2F}Grending{/color}"
+    # dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
+    dev "Chibis for Daphne: {color=2F2F2F}Grending{/color}"
 
 # game/30_how.rpy:421
 translate english devel_b8f433be:
 
-    # dr "Дафна : {color=6F6F6F}Zio Dyne{/color}"
-    dr "Daphne: {color=6F6F6F}Zio Dyne{/color}"
+    # dev "Дафна : {color=6F6F6F}Zio Dyne{/color}"
+    dev "Daphne: {color=6F6F6F}Zio Dyne{/color}"
 
 # game/30_how.rpy:423
 translate english devel_bd29ade8:
 
-    # dr "Список особых благодарностей :"
-    dr "Special thanks:"
+    # dev "Список особых благодарностей :"
+    dev "Special thanks:"
 
 # game/30_how.rpy:424
 translate english devel_b37a2e77:
 
-    # dr "{color=0F0F0F}Евгений aka Afar{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
-    dr "{color=0F0F0F}Evgeny aka Afar{/color} - for amazing coding and invaluable contribution to the project!"
+    # dev "{color=0F0F0F}Евгений aka Afar{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    dev "{color=0F0F0F}Evgeny aka Afar{/color} - for amazing coding and invaluable contribution to the project!"
 
 # game/30_how.rpy:432
 translate english devel_924f3274:
 
-    # dr "И несравненная Гермиона Грейнджер в роли офисной шл..."
-    dr "And of course the exceptional Hermione Granger as school whor..."
+    # dev "И несравненная Гермиона Грейнджер в роли офисной шл..."
+    dev "And of course the exceptional Hermione Granger as school whor..."
 
 # game/30_how.rpy:434
 translate english devel_f7a4aa47:
@@ -939,8 +939,8 @@ translate english devel_f7a4aa47:
 # game/30_how.rpy:437
 translate english devel_1c476a00:
 
-    # dr "Прости, в роли секретут..."
-    dr "I'm sorry, as school prost..."
+    # dev "Прости, в роли секретут..."
+    dev "I'm sorry, as school prost..."
 
 # game/30_how.rpy:442
 translate english devel_0312573b:
@@ -951,8 +951,8 @@ translate english devel_0312573b:
 # game/30_how.rpy:444
 translate english devel_3c218069:
 
-    # dr "Бхм. И наша главная офис-леди - мисс Грейнджер."
-    dr "Bah. And our main school girl - Miss Hermione Granger."
+    # dev "Бхм. И наша главная офис-леди - мисс Грейнджер."
+    dev "Bah. And our main school girl - Miss Hermione Granger."
 
 # game/30_how.rpy:449
 translate english devel_b3ef7cc1:
@@ -969,38 +969,38 @@ translate english devel_2f3518dc:
 # game/30_how.rpy:452
 translate english devel_d7d60809:
 
-    # dr "Недотрога..."
-    dr "Sensitive..."
+    # dev "Недотрога..."
+    dev "Sensitive..."
 
 # game/30_how.rpy:453
 translate english devel_8ae58089:
 
-    # dr "Ушла наконец."
-    dr "Finally gone."
+    # dev "Ушла наконец."
+    dev "Finally gone."
 
 # game/30_how.rpy:455
 translate english devel_34a25555:
 
-    # dr "Итак, приятной игры, друзья !"
-    dr "Well, have fun with the game, friends!"
+    # dev "Итак, приятной игры, друзья !"
+    dev "Well, have fun with the game, friends!"
 
 # game/30_how.rpy:457
 translate english devel_cf2f0ac0:
 
-    # dr "А если хотите пообщаться с людьми, которые продолжают совершенствование и расширение игры, милости просим."
-    dr "And if you want to talk to the people that continue to enhance and extend the game, you are most welcome."
+    # dev "А если хотите пообщаться с людьми, которые продолжают совершенствование и расширение игры, милости просим."
+    dev "And if you want to talk to the people that continue to enhance and extend the game, you are most welcome."
 
 # game/30_how.rpy:458
 translate english devel_a43e78bb:
 
-    # dr "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
-    dr "{a=http://wtrus.ixbb.ru}OUR FORUM IS HERE{/a}"
+    # dev "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
+    dev "{a=http://wtrus.ixbb.ru}OUR FORUM IS HERE{/a}"
 
 # game/30_how.rpy:468
 translate english forum_64579cee:
 
-    # dr "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
-    dr "So, this is a modified version of the game, that's made independently (without Akabur's participation) by a team of dedicated developers. Welcome to our {a=http://wtrus.ixbb.ru}FORUM{/a}."
+    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
+    dev "So, this is a modified version of the game, that's made independently (without Akabur's participation) by a team of dedicated developers. Welcome to our {a=http://wtrus.ixbb.ru}FORUM{/a}."
 
 translate english strings:
 
@@ -1193,7 +1193,7 @@ translate english devel_56d64cac:
 # game/30_how.rpy:293
 translate english devel_00a807be:
 
-    # dev "Главный разработчик : {color=00FF00}Дрон (Dron){/color}"
+    # dev "Главный разработчик : {color=00FF00}Дрон (devon){/color}"
     dev ""
 
 # game/30_how.rpy:294
@@ -1235,8 +1235,8 @@ translate english devel_e492ec03:
 # game/30_how.rpy:301
 translate english devel_0d7e350e:
 
-    # dr "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
-    dr ""
+    # dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    dev ""
 
 # game/30_how.rpy:309
 translate english devel_95789c32:

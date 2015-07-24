@@ -51,50 +51,50 @@ translate english dap_request_02_complete_6a4e8453:
 # game/02_daphna_scenario/dap02_showyourself.rpy:243
 translate english dap_request_02_complete_809fedcd:
 
-    # felix "К большому сожалению, данная сюжетная линия пока дописана только до этого момента..."
-    felix ""
+    # dev "К большому сожалению, данная сюжетная линия пока дописана только до этого момента..."
+    dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:244
 translate english dap_request_02_complete_a517a789:
 
-    # felix "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
-    felix ""
+    # dev "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
+    dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:245
 translate english dap_request_02_complete_28406d38:
 
-    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    felix ""
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:246
 translate english dap_request_02_complete_304e7a45:
 
-    # felix "Так вы простимулируете нас, и продолжение появится быстрее. :)"
-    felix ""
+    # dev "Так вы простимулируете нас, и продолжение появится быстрее. :)"
+    dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:259
 translate english dap_request_02_complete_809fedcd_1:
 
-    # felix "К большому сожалению, данная сюжетная линия пока дописана только до этого момента..."
-    felix ""
+    # dev "К большому сожалению, данная сюжетная линия пока дописана только до этого момента..."
+    dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:260
 translate english dap_request_02_complete_a517a789_1:
 
-    # felix "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
-    felix ""
+    # dev "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
+    dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:261
 translate english dap_request_02_complete_28406d38_1:
 
-    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    felix ""
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:262
 translate english dap_request_02_complete_304e7a45_1:
 
-    # felix "Так вы простимулируете нас, и продолжение появится быстрее. :)"
-    felix ""
+    # dev "Так вы простимулируете нас, и продолжение появится быстрее. :)"
+    dev ""
 
 translate english strings:
 
