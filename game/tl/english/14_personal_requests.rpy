@@ -4,7 +4,7 @@
 translate english not_now2_a9cb8d1c:
 
     # ">Публичные услуги недоступны в это время суток."
-    ">Public favours are available only during the daytime."
+    ">Public favours are available during the daytime only."
 
 # game/14_personal_requests.rpy:207
 translate english not_now2_76b35548:
@@ -34,7 +34,7 @@ translate english not_now3_c2555d3e:
 translate english new_request_06_6f5c3ac0:
 
     # m "Я хочу чтобы ты сегодня кое-что сделала в своем классе: покажи трусики одному из своих однокласников."
-    m "I want you to do something in class today. Show your panties to one of your classmates."
+    m "I want you to do something for me during class today: flash your panties to one of your classmates."
 
 # game/14_personal_requests.rpy:360
 translate english new_request_06_5c8cbc4e:
@@ -52,7 +52,7 @@ translate english new_request_06_95f76583:
 translate english new_request_06_80f904c1:
 
     # her "Если только..."
-    her "If only..."
+    her "If I must..."
 
 # game/14_personal_requests.rpy:364
 translate english new_request_06_ff839da1:
@@ -70,7 +70,7 @@ translate english new_request_06_3571074a:
 translate english new_request_06_b0fd3b43:
 
     # "Гермиона согласна. Очень охотно."
-    "Hermione willingly agrees."
+    "Hermione agrees. She is very eager."
 
 # game/14_personal_requests.rpy:371
 translate english new_request_06_26725d20:
@@ -82,7 +82,7 @@ translate english new_request_06_26725d20:
 translate english new_request_06_375f1fcd:
 
     # ">Гермиона с радостью согласна."
-    ">Hermione happily agrees."
+    ">Hermione agrees cheerfully."
 
 # game/14_personal_requests.rpy:375
 translate english new_request_06_ab30f647:
@@ -118,31 +118,31 @@ translate english new_request_05_complete_009d0302:
 translate english new_request_05_complete_0bbd3d3a:
 
     # her "Хм... Я пытался показать свои трусики, чтобы один из моих одноклассников увидел, но вместо этого я думаю, что пять или шесть из них мельком. Так стыдно..."
-    her "Hmm... I tried to show my panties to one of my classmates, but instead five or six of my classmates for a brief moment saw them. I'm so ashamed..."
+    her "Uhm... I tried to flash my panties to one of my classmates but instead I think five or six of them caught a glimpse. So embarrassing..."
 
 # game/14_personal_requests.rpy:397
 translate english new_request_05_complete_aa82d49e:
 
     # her "Я показала свои трусики одному из одноклассников."
-    her "I showed my panties to one of my classmates."
+    her "I managed to flash my panties to one of the classmates."
 
 # game/14_personal_requests.rpy:399
 translate english new_request_05_complete_6eabe74d:
 
     # her "Я долго показывала свои трусики одному из одноклассников ."
-    her "I showed my panties to one of my classmates for an extensively long time."
+    her "I managed to flash my panties to one of the classmates for an extensive period of time."
 
 # game/14_personal_requests.rpy:401
 translate english new_request_05_complete_15a527aa:
 
     # her "Мне удалось показать свои трусики так чтобы один из однокласснников глазел на них."
-    her "I succeeded at showing my panties to one of my classmates to make him starring at them."
+    her "I managed to show my panties to a classmate and made him starring at them."
 
 # game/14_personal_requests.rpy:402
 translate english new_request_05_complete_070dcb57:
 
     # her "Это было супер!"
-    her "It was amazing!"
+    her "It was great!"
 
 # game/14_personal_requests.rpy:404
 translate english new_request_05_complete_2ed36a45:
@@ -160,7 +160,7 @@ translate english new_request_05_complete_6193b6e6:
 translate english new_request_07_06f3de2b:
 
     # m "Я хочу чтобы ты сегодня кое-что сделала в своем классе: покажи трусики одному из своих учителей."
-    m "I want you to do something in class today. Show your panties to one of your teachers."
+    m "I want you to do something for me during class today: flash your panties to one of your teachers."
 
 # game/14_personal_requests.rpy:419
 translate english new_request_07_5c8cbc4e:
@@ -178,7 +178,7 @@ translate english new_request_07_95f76583:
 translate english new_request_07_80f904c1:
 
     # her "Если только..."
-    her "If only..."
+    her "If I must..."
 
 # game/14_personal_requests.rpy:424
 translate english new_request_07_ff839da1:
@@ -196,7 +196,7 @@ translate english new_request_07_3571074a:
 translate english new_request_07_b0fd3b43:
 
     # "Гермиона согласна. Очень охотно."
-    "Hermione willingly agrees."
+    "Hermione reluctantly agrees. She is very eager."
 
 # game/14_personal_requests.rpy:431
 translate english new_request_07_26725d20:
@@ -208,7 +208,7 @@ translate english new_request_07_26725d20:
 translate english new_request_07_375f1fcd:
 
     # ">Гермиона с радостью согласна."
-    ">Hermione happily agrees."
+    ">Hermione agrees cheerfully."
 
 # game/14_personal_requests.rpy:435
 translate english new_request_07_2ed36a45:
@@ -244,31 +244,31 @@ translate english new_request_06_complete_009d0302:
 translate english new_request_06_complete_b76278aa:
 
     # her "Хм... Я пыталась показать свои трусики учителю, чтобы он увидел их, но вместо этого я думаю, что пять или шесть одноклассников из них увидели мельком. Так стыдно..."
-    her "Hmm... I tried to show my panties to a teacher, but instead five or six of my classmates for a brief moment saw them. I'm so ashamed..."
+    her "Em... I tried to flash my panties to a teacher but he wasn't looking, so instead I think five or six of my classmates caught a glimpse. So embarrassing..."
 
 # game/14_personal_requests.rpy:456
 translate english new_request_06_complete_229c2f8b:
 
     # her "Я показала свои трусики одному из учителей."
-    her "I showed my panties to a teacher."
+    her "I managed to flash my panties to a teacher."
 
 # game/14_personal_requests.rpy:458
 translate english new_request_06_complete_5316c0a4:
 
     # her "Я долго показала свои трусики одному из учителей."
-    her "I showed my panties to a teacher for an extensively long time."
+    her "I managed to show my panties to a teacher for an extensive period of time."
 
 # game/14_personal_requests.rpy:460
 translate english new_request_06_complete_5316c0a4_1:
 
     # her "Я долго показала свои трусики одному из учителей."
-    her "I succeeded at showing my panties to a teacher to make him starring at them."
+    her "I managed to show my panties to a teacher and made him starring at them."
 
 # game/14_personal_requests.rpy:461
 translate english new_request_06_complete_070dcb57:
 
     # her "Это было супер!"
-    her "It was amazing!"
+    her "It was great!"
 
 # game/14_personal_requests.rpy:466
 translate english new_request_06_complete_6193b6e6:
@@ -280,13 +280,13 @@ translate english new_request_06_complete_6193b6e6:
 translate english new_request_09_e0d0154b:
 
     # m "{size=-4}(Попросить девочку, показать мне свою киску?){/size}"
-    m "{size=-4}(Ask a girl to show me her pussy?){/size}"
+    m "{size=-4}(Should I ask the girl to show me her pussy?){/size}"
 
 # game/14_personal_requests.rpy:475
 translate english new_request_09_0967accc:
 
     # m "{size=-4}(Попросить девочку, показать мне свою киску еще раз?){/size}"
-    m "{size=-4}(Ask a girl to show me her pussy again?){/size}"
+    m "{size=-4}(Should I ask the girl to show me her pussy again?){/size}"
 
 # game/14_personal_requests.rpy:487
 translate english new_request_09_d0d2f36c:
@@ -298,13 +298,13 @@ translate english new_request_09_d0d2f36c:
 translate english new_request_09_3a1965cf:
 
     # m "Сегодняшняя награда для факультета \"Гриффиндора\" 25 очков."
-    m ""
+    m "I would like to award \"Gryffindor\" with  25 house points today."
 
 # game/14_personal_requests.rpy:492
 translate english new_request_09_7a982dcd:
 
     # her "Правда?"
-    her "Today's award for \"Gryffindor\" is 25 points."
+    her "Really?"
 
 # game/14_personal_requests.rpy:493
 translate english new_request_09_23fb0efe:
@@ -316,7 +316,7 @@ translate english new_request_09_23fb0efe:
 translate english new_request_09_7cff00f8:
 
     # m "Да, но мне потребуется ваша помощь..."
-    m "Yes, but I need your help..."
+    m "Yes, but I will require your help..."
 
 # game/14_personal_requests.rpy:495
 translate english new_request_09_92fc373b:
@@ -328,7 +328,7 @@ translate english new_request_09_92fc373b:
 translate english new_request_09_cdbbb878:
 
     # m "Поднимите юбку..."
-    m "Lift your skirt..."
+    m "I need you to lift your skirt..."
 
 # game/14_personal_requests.rpy:497
 translate english new_request_09_125f65c1:
@@ -340,7 +340,7 @@ translate english new_request_09_125f65c1:
 translate english new_request_09_3b699b15:
 
     # m "Спустите трусики..."
-    m "Pull your panties down..."
+    m "Pull down your panties..."
 
 # game/14_personal_requests.rpy:499
 translate english new_request_09_2df28d4d:
@@ -364,13 +364,13 @@ translate english new_request_09_ffe14981:
 translate english new_request_09_560015e0:
 
     # her "Это совершенно новый уровень неуместным, даже для вас, сэр!"
-    her "This is completely inappropriate, even for you, Sir!"
+    her "This is a completely new level of inappropriate, even for you, Sir!"
 
 # game/14_personal_requests.rpy:505
 translate english new_request_09_720d140c:
 
     # her "Как можно просить такие вещи вашей ученицы?"
-    her "How could you ask me, your student for such a thing?"
+    her "How can you ask such a thing of your pupil?"
 
 # game/14_personal_requests.rpy:506
 translate english new_request_09_cc78f126:
@@ -382,13 +382,13 @@ translate english new_request_09_cc78f126:
 translate english new_request_09_648a7f80:
 
     # m "Тогда я думаю, наградить другие дома..."
-    m "Then I think, I'll reward another house..."
+    m "Then I suppose, I'll award these points to another house..."
 
 # game/14_personal_requests.rpy:508
 translate english new_request_09_46b72c55:
 
     # m "\"Слизерин\" ?"
-    m "\"Slytherin\" may be?"
+    m "\"Slytherin\" perhaps?"
 
 # game/14_personal_requests.rpy:509
 translate english new_request_09_a1e034c1:
@@ -400,7 +400,7 @@ translate english new_request_09_a1e034c1:
 translate english new_request_09_77ac211f:
 
     # m "Но ты знаешь,..."
-    m "But you know, ..."
+    m "But you know, no pressure..."
 
 # game/14_personal_requests.rpy:511
 translate english new_request_09_3c86c265:
@@ -418,31 +418,31 @@ translate english new_request_09_8c7be070:
 translate english new_request_09_1792c1d5:
 
     # m "Неужели?"
-    m "Really?"
+    m "Is it really?"
 
 # game/14_personal_requests.rpy:514
 translate english new_request_09_776fdb90:
 
     # m "Почему тогда ты не покажешь её мне?"
-    m "So, show me?"
+    m "Why don't you show it to me then?"
 
 # game/14_personal_requests.rpy:515
 translate english new_request_09_c675dd30:
 
     # m "Да. Покажите мне, как это для вас важно, Мисс Грейнджер."
-    m "Yes. Show me, how is it important for you, Miss Granger."
+    m "Yes. Show me how exactly it is important for you, Miss Granger."
 
 # game/14_personal_requests.rpy:516
 translate english new_request_09_2263c042:
 
     # her "Но это не просто..."
-    her "But it's not just..."
+    her "But this is so inappropriate..."
 
 # game/14_personal_requests.rpy:517
 translate english new_request_09_faf8cef9:
 
     # m "У нас нет времени обсуждать, что уместно, а что нет, Мисс Грейнджер?"
-    m "We don't have time to discuss what is appropriate and what is not, Miss Granger?"
+    m "Are we still in any position to discuss what is appropriate and what is not, Miss Granger?"
 
 # game/14_personal_requests.rpy:518
 translate english new_request_09_33359693:
@@ -454,7 +454,7 @@ translate english new_request_09_33359693:
 translate english new_request_09_1b93a20a:
 
     # m "Я бы сказал, что корабль уплыл..."
-    m "I'd say that ship has sailed."
+    m "I'd say that ship has sailed a long time ago..."
 
 # game/14_personal_requests.rpy:520
 translate english new_request_09_eb67a624:
@@ -466,13 +466,13 @@ translate english new_request_09_eb67a624:
 translate english new_request_09_e449f04f:
 
     # m "Все, что я хочу сделать, это быстро посмотреть..."
-    m "All I want is a quick look."
+    m "All I want to do is take a quick peek..."
 
 # game/14_personal_requests.rpy:522
 translate english new_request_09_5b5a939a:
 
     # her "Но почему? Почему я должена делать это, сэр?"
-    her "But why? Why should I do it, Sir?"
+    her "But why? Why must I do this, Sir?"
 
 # game/14_personal_requests.rpy:523
 translate english new_request_09_02b777fb:
@@ -484,13 +484,13 @@ translate english new_request_09_02b777fb:
 translate english new_request_09_b2a50ab0:
 
     # m "Очень хорошее сделка, разве вы не согласны?"
-    m "A very good deal, don't you agree?"
+    m "A pretty nice deal, wouldn't you agree?"
 
 # game/14_personal_requests.rpy:525
 translate english new_request_09_a166a4a2:
 
     # her "Я подумаю..."
-    her "I'll think..."
+    her "I suppose..."
 
 # game/14_personal_requests.rpy:527
 translate english new_request_09_a576b683:
@@ -520,13 +520,13 @@ translate english new_request_09_00b77248:
 translate english new_request_09_8c613499:
 
     # her "{size=-5}...так стыдно...{/size}"
-    her "{size=-5}...so ashamed...{/size}"
+    her "{size=-5}...so embarrassing...{/size}"
 
 # game/14_personal_requests.rpy:533
 translate english new_request_09_acd71463:
 
     # m "25 очков, Мисс Грейнджер..."
-    m "25 points, Miss Granger..."
+    m "25 house points, Miss Granger..."
 
 # game/14_personal_requests.rpy:534
 translate english new_request_09_eb67a624_1:
@@ -538,19 +538,19 @@ translate english new_request_09_eb67a624_1:
 translate english new_request_09_31b3fc8d:
 
     # her "*Вздох*... Если только..."
-    her "*Huh*... If only..."
+    her "*Sigh*... If I must..."
 
 # game/14_personal_requests.rpy:538
 translate english new_request_09_eab5a054:
 
     # her "Неужели?"
-    her "What?"
+    her "Really?"
 
 # game/14_personal_requests.rpy:539
 translate english new_request_09_389babaf:
 
     # her "Ну ладно..."
-    her "Fine..."
+    her "Well, alright..."
 
 # game/14_personal_requests.rpy:587
 translate english new_request_09_b434f6f2:
@@ -568,13 +568,13 @@ translate english new_request_09_a302d6ef:
 translate english new_request_09_59bf4bf6:
 
     # ">Гермиона тянет вверх ее юбку и тянет вниз трусики. Она покраснела и выглядит сердитой."
-    ">Hermione lifts up her skirt and pulls down her panties. She blushes and looks angry."
+    ">Hermione lifts up her skirt and pulls down her panties. She is blushing and looks angry."
 
 # game/14_personal_requests.rpy:593
 translate english new_request_09_21c058c7:
 
     # her "...Да, профессор."
-    her "...Yes, Professor."
+    her "...yes, Professor."
 
 # game/14_personal_requests.rpy:594
 translate english new_request_09_91f8bb5b:
@@ -592,7 +592,7 @@ translate english new_request_09_212f3a54:
 translate english new_request_09_92d28a2f:
 
     # ">Гермиона тянет вверх ее юбку и тянет вниз трусики.Она выглядит игривой."
-    ">Hermione lifts up her skirt and pulls down her panties. She looks playful."
+    ">Hermione lifts up her skirt and pulls down her panties. She looks very nonchalant."
 
 # game/14_personal_requests.rpy:601
 translate english new_request_09_cbbc1d9f:
@@ -604,7 +604,7 @@ translate english new_request_09_cbbc1d9f:
 translate english new_request_09_fcd3b9bc:
 
     # ">Гермиона тянет вверх ее юбку и тянет вниз трусики. Они вам улыбается."
-    ">Hermione lifts up her skirt and pulls down her panties. She is smiling at you."
+    ">Hermione lifts up her skirt and pulls down her panties. She is smiling lightly."
 
 # game/14_personal_requests.rpy:604
 translate english new_request_09_2ed36a45:
@@ -628,7 +628,7 @@ translate english new_request_09_1d4c9f45:
 translate english new_request_17_2aeaff0b:
 
     # m "Подойди сюда и дай мне засунуть палец в твою попку."
-    m "Come closer. Let me stick a finger up your butthole."
+    m "Come here and let me stick a finger up your butthole."
 
 # game/14_personal_requests.rpy:640
 translate english new_request_17_9516949d:
@@ -646,7 +646,7 @@ translate english new_request_17_527f67a3:
 translate english new_request_17_21c058c7:
 
     # her "...Да, профессор."
-    her "...Yes, Professor."
+    her "...yes, Professor."
 
 # game/14_personal_requests.rpy:644
 translate english new_request_17_27188585:
@@ -658,19 +658,19 @@ translate english new_request_17_27188585:
 translate english new_request_17_97493477:
 
     # ">Гермиона беззаботно соглашается."
-    ">Hermione willingly agrees."
+    ">Hermione agrees nonchalantly."
 
 # game/14_personal_requests.rpy:648
 translate english new_request_17_124c5214:
 
     # her "Вот, профессор."
-    her "Here, Professor."
+    her "Here you go, Professor."
 
 # game/14_personal_requests.rpy:649
 translate english new_request_17_ce988c04:
 
     # ">Гермиона резво соглашается."
-    ">Hermione happily agrees."
+    ">Hermione agrees eagerly."
 
 # game/14_personal_requests.rpy:651
 translate english new_request_17_3090126c:
@@ -694,7 +694,7 @@ translate english new_request_17_0b6891d5:
 translate english new_request_18_35d0eba8:
 
     # m "Подойди и потрогай мой член."
-    m "Come closer. I want you to stroke my cock."
+    m "Come here and touch my cock a little."
 
 # game/14_personal_requests.rpy:680
 translate english new_request_18_9516949d:
@@ -712,7 +712,7 @@ translate english new_request_18_527f67a3:
 translate english new_request_18_21c058c7:
 
     # her "...Да, профессор."
-    her "...Yes, Professor."
+    her "...yes, Professor."
 
 # game/14_personal_requests.rpy:684
 translate english new_request_18_27188585:
@@ -724,19 +724,19 @@ translate english new_request_18_27188585:
 translate english new_request_18_97493477:
 
     # ">Гермиона беззаботно соглашается."
-    ">Hermione willingly agrees."
+    ">Hermione agrees nonchalantly."
 
 # game/14_personal_requests.rpy:688
 translate english new_request_18_124c5214:
 
     # her "Вот, профессор."
-    her "Here, Professor."
+    her "Here you go, Professor."
 
 # game/14_personal_requests.rpy:689
 translate english new_request_18_ce988c04:
 
     # ">Гермиона резво соглашается."
-    ">Hermione happily agrees."
+    ">Hermione agrees eagerly."
 
 # game/14_personal_requests.rpy:691
 translate english new_request_18_2ed36a45:
@@ -760,7 +760,7 @@ translate english new_request_18_0b6891d5:
 translate english new_request_19_58c94a19:
 
     # m "Иди сюда и потри мой член о свои милые щечки."
-    m "Come closer. I want you to rub my cock against your lovely cheeks."
+    m "Come here and let me rub my cock against your cheeks."
 
 # game/14_personal_requests.rpy:721
 translate english new_request_19_9516949d:
@@ -778,7 +778,7 @@ translate english new_request_19_527f67a3:
 translate english new_request_19_21c058c7:
 
     # her "...Да, профессор."
-    her "...Yes, Professor."
+    her "...yes, Professor."
 
 # game/14_personal_requests.rpy:725
 translate english new_request_19_27188585:
@@ -790,19 +790,19 @@ translate english new_request_19_27188585:
 translate english new_request_19_97493477:
 
     # ">Гермиона беззаботно соглашается."
-    ">Hermione willingly agrees."
+    ">Hermione agrees nonchalantly."
 
 # game/14_personal_requests.rpy:729
 translate english new_request_19_c718981e:
 
     # her "Как скажете, профессор."
-    her "As you wish, Professor."
+    her "Here you go, Professor."
 
 # game/14_personal_requests.rpy:730
 translate english new_request_19_0b143f6d:
 
     # ">Гермиона с нетерпением соглашается."
-    ">Hermione happily agrees."
+    ">Hermione agrees eagerly."
 
 # game/14_personal_requests.rpy:732
 translate english new_request_19_44d74ed4:
@@ -826,7 +826,7 @@ translate english new_request_19_0b6891d5:
 translate english new_request_21_db83cf75:
 
     # m "Подойди сюда и дай подрочить на твои сиськи."
-    m "Come closer. Let me jerk-off on your tits."
+    m "Come here and let me jerk off on your tits."
 
 # game/14_personal_requests.rpy:769
 translate english new_request_21_9516949d:
@@ -844,13 +844,13 @@ translate english new_request_21_527f67a3:
 translate english new_request_21_237b6534:
 
     # ">Вы кончаете на ее голую грудь."
-    ">You cum all over Hermione's bare breasts."
+    ">You cum on her bare tits."
 
 # game/14_personal_requests.rpy:773
 translate english new_request_21_21c058c7:
 
     # her "...Да, профессор."
-    her "...Yes, Professor."
+    her "...yes, Professor."
 
 # game/14_personal_requests.rpy:774
 translate english new_request_21_27188585:
@@ -862,19 +862,19 @@ translate english new_request_21_27188585:
 translate english new_request_21_237b6534_1:
 
     # ">Вы кончаете на ее голую грудь."
-    ">You cum all over Hermione's bare breasts."
+    ">You cum on her bare tits."
 
 # game/14_personal_requests.rpy:777
 translate english new_request_21_97493477:
 
     # ">Гермиона беззаботно соглашается."
-    ">Hermione willingly agrees."
+    ">Hermione agrees nonchalantly."
 
 # game/14_personal_requests.rpy:778
 translate english new_request_21_237b6534_2:
 
     # ">Вы кончаете на ее голую грудь."
-    ">You cum on her bare breasts."
+    ">You cum on her bare tits."
 
 # game/14_personal_requests.rpy:781
 translate english new_request_21_2939f499:
@@ -886,43 +886,43 @@ translate english new_request_21_2939f499:
 translate english new_request_21_514412d1:
 
     # ">Гермиона горячо соглашается."
-    ">Hermione happily agrees."
+    ">Hermione agrees eagerly."
 
 # game/14_personal_requests.rpy:783
 translate english new_request_21_237b6534_3:
 
     # ">Вы кончаете на ее голую грудь."
-    ">You cum all over Hermione's bare breasts."
+    ">You cum on her bare tits."
 
 # game/14_personal_requests.rpy:785
 translate english new_request_21_bc49394c:
 
     # her "Можно дать мне полотенце, чтобы я могла вытереться?"
-    her "Could you give me something to clean myself?"
+    her "Could I have a towel to clean myself up?"
 
 # game/14_personal_requests.rpy:788
 translate english new_request_21_73733ece:
 
     # ">Вы даете Гермионе полотенце и она вытирает вашу сперму."
-    ">You give her a towel and she wipes your cum off."
+    ">You hand Hermione a towel and she wipes your sperm off."
 
 # game/14_personal_requests.rpy:790
 translate english new_request_21_6d15543a:
 
     # m "Просто застегни блузку и иди так."
-    m "Just button up your shirt and go."
+    m "Just button up your shirt and go like this."
 
 # game/14_personal_requests.rpy:793
 translate english new_request_21_a9097a6c:
 
     # her "Что? Я не могу так, пожалуйста дайте полотенце."
-    her "What? I can not leave like that. Please give something to clean myself?"
+    her "What? No, I can't. Please, give me a towel, Professor."
 
 # game/14_personal_requests.rpy:794
 translate english new_request_21_73733ece_1:
 
     # ">Вы даете Гермионе полотенце и она вытирает вашу сперму."
-    ">You give her a towel and she wipes your cum off."
+    ">You hand Hermione a towel and she wipes your sperm off."
 
 # game/14_personal_requests.rpy:797
 translate english new_request_21_56c4836c:
@@ -934,7 +934,7 @@ translate english new_request_21_56c4836c:
 translate english new_request_21_98891b44:
 
     # her "Хорошо, но только если вы дадите мне дополнительные баллы."
-    her "Ok, but only if you give me some extra points."
+    her "Well alright, but only if I get paid extra for this."
 
 # game/14_personal_requests.rpy:801
 translate english new_request_21_d047b121:
@@ -952,7 +952,7 @@ translate english new_request_21_d996b768:
 translate english new_request_21_0526c83a:
 
     # ">Гермиона застегивает свою блузку."
-    ">Hermione buttons her shirt."
+    ">Hermione buttons up her shirt."
 
 # game/14_personal_requests.rpy:805
 translate english new_request_21_2d349424:
@@ -964,7 +964,7 @@ translate english new_request_21_2d349424:
 translate english new_request_21_73733ece_2:
 
     # ">Вы даете Гермионе полотенце и она вытирает вашу сперму."
-    ">You give her a towel and she wipes your cum off."
+    ">You hand Hermione a towel and she wipes your sperm off."
 
 # game/14_personal_requests.rpy:810
 translate english new_request_21_2ed36a45:
@@ -994,19 +994,19 @@ translate english new_request_21_complete_a0e152f7:
 translate english new_request_21_complete_7302430f:
 
     # m "Как прошел твой день?"
-    m "How was your day?"
+    m "How was your day, Miss Granger??"
 
 # game/14_personal_requests.rpy:837
 translate english new_request_21_complete_5d136ea0:
 
     # her "Эм... В классе я сидела и чувствовала как мои сиськи полностью покрыты спермой. Это было так неприятно..."
-    her "Um... I was sitting in class and feeling my breasts completely covered in cum. It was so unpleasant..."
+    her "Ehm... During classes I've been sitting there with my breasts covered in cum under my shirt. So embarrassing..."
 
 # game/14_personal_requests.rpy:839
 translate english new_request_21_complete_6578a540:
 
     # her "В классе я сидела и чувствовала как мои сиськи полностью покрыты спермой. Это просто улет."
-    her "Um... I was sitting in class and feeling my breasts completely covered in cum. It was so amazing..."
+    her "During classes I've been sitting there with my breasts covered in cum under my shirt. I had the best time of my life."
 
 # game/14_personal_requests.rpy:845
 translate english new_request_21_complete_8f7dc8fe:
@@ -1018,7 +1018,7 @@ translate english new_request_21_complete_8f7dc8fe:
 translate english new_request_25_4630d3c3:
 
     # m "Подойди сюда и дай мне кончить на твое лицо."
-    m "Come closer. Let me cum on your face."
+    m "Come here and let me jerk off on your face."
 
 # game/14_personal_requests.rpy:864
 translate english new_request_25_004df0db:
@@ -1036,13 +1036,13 @@ translate english new_request_25_527f67a3:
 translate english new_request_25_0c160c31:
 
     # ">Вы кончаете ей на лицо."
-    ">You cum all over Hermione's face."
+    ">You cum on Hermione's face."
 
 # game/14_personal_requests.rpy:868
 translate english new_request_25_21c058c7:
 
     # her "...Да, профессор."
-    her "...Yes, Professor."
+    her "...yes, Professor."
 
 # game/14_personal_requests.rpy:869
 translate english new_request_25_27188585:
@@ -1054,67 +1054,67 @@ translate english new_request_25_27188585:
 translate english new_request_25_0c160c31_1:
 
     # ">Вы кончаете ей на лицо."
-    ">You cum all over Hermione's face."
+    ">You cum on Hermione's face."
 
 # game/14_personal_requests.rpy:872
 translate english new_request_25_97493477:
 
     # ">Гермиона беззаботно соглашается."
-    ">Hermione willingly agrees."
+    ">Hermione agrees nonchalantly."
 
 # game/14_personal_requests.rpy:873
 translate english new_request_25_0c160c31_2:
 
     # ">Вы кончаете ей на лицо."
-    ">You cum all over Hermione's face."
+    ">You cum on Hermione's face."
 
 # game/14_personal_requests.rpy:876
 translate english new_request_25_9bc6c3a0:
 
     # her "Конечно, дире...хозяин."
-    her "As you wish, Head... Master."
+    her "Of course, Head... Master."
 
 # game/14_personal_requests.rpy:877
 translate english new_request_25_514412d1:
 
     # ">Гермиона горячо соглашается."
-    ">Hermione happily agrees."
+    ">Hermione agrees eagerly."
 
 # game/14_personal_requests.rpy:878
 translate english new_request_25_0c160c31_3:
 
     # ">Вы кончаете ей на лицо."
-    ">You cum all over Hermione's face."
+    ">You cum on Hermione's face."
 
 # game/14_personal_requests.rpy:880
 translate english new_request_25_7952d75c:
 
     # her "Могу я взять полотенце, чтобы вытереться?"
-    her "Could you give me something to clean myself?"
+    her "Could I have a towel to clean myself up?"
 
 # game/14_personal_requests.rpy:883
 translate english new_request_25_cfde0b82:
 
     # ">Вы даете Гермионе полотенце и она стирает с лица вашу сперму."
-    ">You give her a towel and she wipes your cum off."
+    ">You hand Hermione a towel and she wipes your sperm off."
 
 # game/14_personal_requests.rpy:885
 translate english new_request_25_87d1348b:
 
     # m "Иди на уроки с покрытым спермой лицом."
-    m "Go to your classes with your face covered in cum."
+    m "Just go to classes with your face covered in my cum."
 
 # game/14_personal_requests.rpy:888
 translate english new_request_25_b66f2cdd:
 
     # her "Что? Нет, я не могу, пожалуйста дайте мне полотенце!."
-    her "What? I can not leave like that. Please give something to clean myself?"
+    her "What? No, I can't. Please, give me a towel, Professor."
 
 # game/14_personal_requests.rpy:889
 translate english new_request_25_cfde0b82_1:
 
     # ">Вы даете Гермионе полотенце и она стирает с лица вашу сперму."
-    ">You give her a towel and she wipes your cum off."
+    ">You hand Hermione a towel and she wipes your sperm off."
 
 # game/14_personal_requests.rpy:892
 translate english new_request_25_56c4836c:
@@ -1126,7 +1126,7 @@ translate english new_request_25_56c4836c:
 translate english new_request_25_98891b44:
 
     # her "Хорошо, но только если вы дадите мне дополнительные баллы."
-    her "Ok, but only if you give me some extra points."
+    her "Well alright, but only if I get paid extra for this."
 
 # game/14_personal_requests.rpy:896
 translate english new_request_25_d047b121:
@@ -1144,7 +1144,7 @@ translate english new_request_25_d996b768:
 translate english new_request_25_fa53f95b:
 
     # ">Гермиона не трогает свое обкончанное лицо."
-    ">Hermione does not touch her face."
+    ">Hermione doesn't touch her cum covered face."
 
 # game/14_personal_requests.rpy:900
 translate english new_request_25_4b6285d3:
@@ -1156,7 +1156,7 @@ translate english new_request_25_4b6285d3:
 translate english new_request_25_cfde0b82_2:
 
     # ">Вы даете Гермионе полотенце и она стирает с лица вашу сперму."
-    ">You give her a towel and she wipes your cum off."
+    ">You hand Hermione a towel and she wipes your sperm off."
 
 # game/14_personal_requests.rpy:905
 translate english new_request_25_2ed36a45:
@@ -1168,7 +1168,7 @@ translate english new_request_25_2ed36a45:
 translate english new_request_25_c943b75d:
 
     # "Гриффиндор получает 65 очков."
-    ""
+    "Gryffindor get 65 points."
 
 # game/14_personal_requests.rpy:915
 translate english new_request_25_72d827fd:
@@ -1186,13 +1186,13 @@ translate english new_request_25_complete_0dde0d51:
 translate english new_request_25_complete_330bd150:
 
     # m "Как прошел ваш день, Мисс Грейнджер?"
-    m "How was your day?"
+    m "How was your day, Miss Granger?"
 
 # game/14_personal_requests.rpy:931
 translate english new_request_25_complete_6f8059fa:
 
     # her "Эм... Я провела большую часть дня с покрытым спермой лицом. Мне постоянно задавали вопросы."
-    her "Um ... I spent most of my day with my face covered in cum. I was constantly bombarded with questions"
+    her "Ehm... I spent big part of the day with cum on my face. People were asking questions."
 
 # game/14_personal_requests.rpy:936
 translate english new_request_25_complete_6e31699c:
@@ -1204,13 +1204,13 @@ translate english new_request_25_complete_6e31699c:
 translate english new_request_26_48ea7b96:
 
     # m "Я хочу кончить тебе в лицо, до того как ты пойдешь в класс."
-    m "Come closer. I want to cum in your mouth before your go to class."
+    m "Come here I want to cum in your mouth before you go to class."
 
 # game/14_personal_requests.rpy:946
 translate english new_request_26_fcfdb9a5:
 
     # her "О..."
-    her "O..."
+    her "Oh..."
 
 # game/14_personal_requests.rpy:947
 translate english new_request_26_95f76583:
@@ -1240,7 +1240,7 @@ translate english new_request_26_41207fd7:
 translate english new_request_26_bb705668:
 
     # "Гермиона соглашается. По ней видно как она этого хочет."
-    "Hermione agrees. By looking at her, you can tell that she wants it badly."
+    "Hermione agrees. She is very eager."
 
 # game/14_personal_requests.rpy:955
 translate english new_request_26_44668cb2:
@@ -1252,7 +1252,7 @@ translate english new_request_26_44668cb2:
 translate english new_request_26_a861a03a:
 
     # ">Гермиона радостно соглашается."
-    ">Hermione happily agrees."
+    ">Hermione agrees cheerfully."
 
 # game/14_personal_requests.rpy:958
 translate english new_request_26_2ed36a45:
@@ -1282,37 +1282,37 @@ translate english new_request_26_complete_e3f4a782:
 translate english new_request_26_complete_330bd150:
 
     # m "Как прошел ваш день, Мисс Грейнджер?"
-    m "How was your day?"
+    m "How was your day, Miss Granger?"
 
 # game/14_personal_requests.rpy:979
 translate english new_request_26_complete_296027e2:
 
     # her "Эм... Я провела половину урока со спермой во рту"
-    her "Um... I spent half of the class with my mouth full of cum."
+    her "Ehm... I spent half of the first class with your cum in my mouth."
 
 # game/14_personal_requests.rpy:981
 translate english new_request_26_complete_9918f9bb:
 
     # her "Something else about cum. LVL 2"
-    her ""
+    her "Something else about cum. LVL 2"
 
 # game/14_personal_requests.rpy:983
 translate english new_request_26_complete_b0d5289b:
 
     # her "LVL3"
-    her ""
+    her "LVL3"
 
 # game/14_personal_requests.rpy:985
 translate english new_request_26_complete_ed2dca0f:
 
     # her "LVL4"
-    her ""
+    her "LVL4"
 
 # game/14_personal_requests.rpy:986
 translate english new_request_26_complete_fc7e694e:
 
     # her "Это было чудесно!"
-    her "It was amazing."
+    her "It was great!"
 
 # game/14_personal_requests.rpy:991
 translate english new_request_26_complete_8af89745:
@@ -1324,7 +1324,7 @@ translate english new_request_26_complete_8af89745:
 translate english new_request_27_7b2e7dda:
 
     # m "Я хочу, чтобы вы кое-что сделали для меня сегодня: отсосите у двух одноклассников"
-    m "I want you to do something for me today: Blow two classmates during classes."
+    m "I want you to do something for me today: blow two classmates during classes."
 
 # game/14_personal_requests.rpy:1000
 translate english new_request_27_83f0bbb7:
@@ -1360,19 +1360,19 @@ translate english new_request_27_e768d8f8:
 translate english new_request_27_5e2aa0d4:
 
     # "Гермиона согласна. Она жаждет этого."
-    "Hermione agrees. She craves for it."
+    "Hermione agrees. She is very eager."
 
 # game/14_personal_requests.rpy:1009
 translate english new_request_27_67c2654e:
 
     # her "Конечно директор..."
-    her "Of course, Master..."
+    her "Of course, Head... Master..."
 
 # game/14_personal_requests.rpy:1010
 translate english new_request_27_d2981b50:
 
     # ">Гермиона с радостью соглашается."
-    ">Hermione agrees with pleasure."
+    ">Hermione agrees cheerfully."
 
 # game/14_personal_requests.rpy:1012
 translate english new_request_27_2ed36a45:
@@ -1414,25 +1414,25 @@ translate english new_request_27_complete_b11f9e22:
 translate english new_request_27_complete_6d9323ce:
 
     # her "Something else about LVL 2"
-    her ""
+    her "Something else about LVL 2"
 
 # game/14_personal_requests.rpy:1037
 translate english new_request_27_complete_b0d5289b:
 
     # her "LVL3"
-    her ""
+    her "LVL3"
 
 # game/14_personal_requests.rpy:1039
 translate english new_request_27_complete_ed2dca0f:
 
     # her "LVL4"
-    her ""
+    her "LVL4"
 
 # game/14_personal_requests.rpy:1040
 translate english new_request_27_complete_fc7e694e:
 
     # her "Это было чудесно!"
-    her "It was wonderful!"
+    her "It was great!"
 
 # game/14_personal_requests.rpy:1045
 translate english new_request_27_complete_59fc8817:
@@ -1444,7 +1444,7 @@ translate english new_request_27_complete_59fc8817:
 translate english new_request_28_ae225adb:
 
     # m "Я хочу, чтобы ты подрочила своему учителю"
-    m "I want you to give a handjob to a teacher during classes."
+    m "I want you to do something for me during class today: give a handjob to a teacher."
 
 # game/14_personal_requests.rpy:1055
 translate english new_request_28_83f0bbb7:
@@ -1480,7 +1480,7 @@ translate english new_request_28_26725d20:
 translate english new_request_28_3cda9538:
 
     # "Гермиона соглашается. Она жаждет этого."
-    "Hermione agrees. She craves for it."
+    "Hermione agrees. She is very eager."
 
 # game/14_personal_requests.rpy:1064
 translate english new_request_28_67c2654e:
@@ -1492,7 +1492,7 @@ translate english new_request_28_67c2654e:
 translate english new_request_28_d2981b50:
 
     # ">Гермиона с радостью соглашается."
-    ">Hermione agrees with pleasure."
+    ">Hermione agrees cheerfully."
 
 # game/14_personal_requests.rpy:1067
 translate english new_request_28_2ed36a45:
@@ -1528,43 +1528,43 @@ translate english new_request_28_complete_330bd150:
 translate english new_request_28_complete_f11bc9b2:
 
     # her "Em... Lvl.1."
-    her ""
+    her "Em... Lvl.1"
 
 # game/14_personal_requests.rpy:1090
 translate english new_request_28_complete_6d9323ce:
 
     # her "Something else about LVL 2"
-    her ""
+    her "Something else about LVL 2"
 
 # game/14_personal_requests.rpy:1092
 translate english new_request_28_complete_b0d5289b:
 
     # her "LVL3"
-    her ""
+    her "LVL3"
 
 # game/14_personal_requests.rpy:1094
 translate english new_request_28_complete_ed2dca0f:
 
     # her "LVL4"
-    her ""
+    her "LVL4"
 
 # game/14_personal_requests.rpy:1095
 translate english new_request_28_complete_fc7e694e:
 
     # her "Это было чудесно!"
-    her "It was wonderful!"
+    her "It was great!"
 
 # game/14_personal_requests.rpy:1100
 translate english new_request_28_complete_55355500:
 
     # her "Ох, ладно. Я тогда пойду спать."
-    her "Oh, alright, Sir. I will go to bed then, Sir."
+    her "Oh, alright. I will go to bed then."
 
 # game/14_personal_requests.rpy:1117
 translate english new_request_32_d80ae0a9:
 
     # m "Я хочу, чтобы ты надела это."
-    m "I want you to put this on."
+    m "I want you to do something for me during class today: wear this dress."
 
 # game/14_personal_requests.rpy:1119
 translate english new_request_32_83f0bbb7:
@@ -1600,19 +1600,19 @@ translate english new_request_32_26725d20:
 translate english new_request_32_3cda9538:
 
     # "Гермиона соглашается. Она жаждет этого."
-    "Hermione agrees. She craves for it."
+    "Hermione agrees. She is very eager."
 
 # game/14_personal_requests.rpy:1128
 translate english new_request_32_d30cb2db:
 
     # her "Конечно, директор..."
-    her "Of course, Master..."
+    her "Of course, Head... Master..."
 
 # game/14_personal_requests.rpy:1129
 translate english new_request_32_d2981b50:
 
     # ">Гермиона с радостью соглашается."
-    ">Hermione agrees with pleasure."
+    ">Hermione agrees cheerfully."
 
 # game/14_personal_requests.rpy:1131
 translate english new_request_32_d3b46ba8:
@@ -1648,43 +1648,43 @@ translate english new_request_32_complete_330bd150:
 translate english new_request_32_complete_457bd490:
 
     # her "Em... Lvl.1. She tells you how people treated her like a whore today."
-    her "Em... Lvl.1. She tells you that people treated her like a whore today."
+    her "Em... Lvl.1. She tells you how people treated her like a whore today."
 
 # game/14_personal_requests.rpy:1154
 translate english new_request_32_complete_d9739527:
 
     # her "Something else about LVL 2. She tells you how people treated her like a whore today."
-    her ""
+    her "Something else about LVL 2. She tells you how people treated her like a whore today."
 
 # game/14_personal_requests.rpy:1156
 translate english new_request_32_complete_0ca24548:
 
     # her "LVL3. She tells you how people treated her like a whore today."
-    her ""
+    her "LVL3. She tells you how people treated her like a whore today."
 
 # game/14_personal_requests.rpy:1158
 translate english new_request_32_complete_2c4489a8:
 
     # her "LVL4. She tells you how people treated her like a whore today."
-    her ""
+    her "LVL4. She tells you how people treated her like a whore today."
 
 # game/14_personal_requests.rpy:1159
 translate english new_request_32_complete_fc7e694e:
 
     # her "Это было чудесно!"
-    her "It was wonderful!"
+    her "It was great!"
 
 # game/14_personal_requests.rpy:1164
 translate english new_request_32_complete_55355500:
 
     # her "Ох, ладно. Я тогда пойду спать."
-    her "Oh, alright, Sir. I will go to bed then, Sir."
+    her "Oh, alright. I will go to bed then."
 
 # game/14_personal_requests.rpy:1191
 translate english vague_idea_a2007369:
 
     # ">Вам не хватает воображения для такого."
-    ">You luck imagination for this."
+    ">You lack imagination for an idea of this caliber."
 
 translate english strings:
 
@@ -1798,7 +1798,7 @@ translate english strings:
 
     # game/14_personal_requests.rpy:799
     old "- Дать дополнительные баллы -"
-    new "-Give extra points-"
+    new "--Pay her extra-"
 
     # game/14_personal_requests.rpy:799
     old "- Забудь -"

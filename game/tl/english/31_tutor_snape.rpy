@@ -118,79 +118,79 @@ translate english snape_tutor_1_0943e698:
 translate english snape_tutor_1_fd734685:
 
     # sna2 "В общем, ты ведешь к тому, чтобы я стал твоим репетитором?"
-    sna2 ""
+    sna2 "So you want me to be your tutor?"
 
 # game/31_tutor_snape.rpy:68
 translate english snape_tutor_1_0d053780:
 
     # m "Послушай, я сам от этого не в восторге."
-    m ""
+    m "Listen, I'm not happy about it myself."
 
 # game/31_tutor_snape.rpy:69
 translate english snape_tutor_1_e6ba2765:
 
     # m "Но если я буду обучать ее, то это намного упростит нашу с тобой задачу."
-    m ""
+    m "But if I'll tutor her, it will be much easier to achieve our goal."
 
 # game/31_tutor_snape.rpy:72
 translate english snape_tutor_1_ce2025dc:
 
     # sna2 "Да понял я, понял."
-    sna2 ""
+    sna2 "I understand, I really do."
 
 # game/31_tutor_snape.rpy:75
 translate english snape_tutor_1_213c6e17:
 
     # sna2 "Хммм..."
-    sna2 ""
+    sna2 "Hm..."
 
 # game/31_tutor_snape.rpy:78
 translate english snape_tutor_1_34b83b6a:
 
     # sna2 "Однако мы можем пойти другим путем."
-    sna2 ""
+    sna2 "But we can approach it differently."
 
 # game/31_tutor_snape.rpy:80
 translate english snape_tutor_1_6cceb324:
 
     # m "Каким, интересно?"
-    m ""
+    m "What do you have in mind?"
 
 # game/31_tutor_snape.rpy:83
 translate english snape_tutor_1_0af9820d:
 
     # sna2 "Ботанойдное зелье."
-    sna2 ""
+    sna2 "A Nerd Potion!"
 
 # game/31_tutor_snape.rpy:85
 translate english snape_tutor_1_e612037c:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:86
 translate english snape_tutor_1_bd6a3884:
 
     # g4 "Ты назвал меня ботаником?"
-    g4 ""
+    g4 "Did you just call me Nerd?"
 
 # game/31_tutor_snape.rpy:87
 translate english snape_tutor_1_49866be4:
 
     # g4 "ТЫ, МАТЬ ТВОЮ, НАЗВАЛ МЕНЯ БОТАНИКОМ??!"
-    g4 ""
+    g4 "Did you motherfucker, call me NERD?"
 
 # game/31_tutor_snape.rpy:88
 translate english snape_tutor_1_5b2bd5bf:
 
     # g4 "ДА, Я НОСИЛ ОЧКИ, И ПОСТОЯННО СИДЕЛ ЗА КНИГАМИ, НО ЭТО НЕ ПОВОД ЗВАТЬ МЕНЯ \"БОТАНОМ\"!!!"
-    g4 ""
+    g4 "Yes, I was wearing glasses when regularly reading books, but that does not make me a \"NERD\"!!!"
 
 # game/31_tutor_snape.rpy:89
 translate english snape_tutor_1_7cd88261:
 
     # g4 "И ГДЕ ТЕПЕРЬ ТЕ КАЧКИ, ЧТО ТАСКАЛИ МЕНЯ ЗА ПОДВЯЗКИ?! ДЕРЖУ ПАРИ, ВЫЛИЗЫВАЮТ АНУС КАКОЙ-НИБУДЬ ЖИРНОЙ ЖЕНУШКЕ СУЛТАНА!"
-    g4 ""
+    g4 "Where are now all these "
 
 # game/31_tutor_snape.rpy:90
 translate english snape_tutor_1_708922f4:

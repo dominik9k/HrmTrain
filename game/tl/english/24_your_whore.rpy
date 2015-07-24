@@ -58,7 +58,7 @@ translate english your_whore_80adb125_1:
 translate english your_whore_440c3076:
 
     # m "Так... она должна быть где-то здесь..."
-    m "Well, she has got to be here somewhere..."
+    m "Well, she's got to be here somewhere..."
 
 # game/24_your_whore.rpy:55
 translate english your_whore_ebf3e5fe:
@@ -76,7 +76,7 @@ translate english your_whore_6ec2f17b:
 translate english your_whore_a47099e3:
 
     # mal "Чувак, слышал новую сплетню? Гермиона теперь стала брать деньги."
-    mal "Have you heard that rumour about Hermione Granger? That she is taking money now."
+    mal "Have you heard that rumour about Hermione Granger? That she is whoring money now."
 
 # game/24_your_whore.rpy:68
 translate english your_whore_a3a7ba67:
@@ -106,19 +106,19 @@ translate english your_whore_bcec5453:
 translate english your_whore_7a043062:
 
     # fem "Эта баба дрочит члены, отсасывает всем желающим, а теперь устроила из этого бизнес, но вы только о ней и говорите! "
-    fem "That girl jerks off, blows everyone interested and now whoring herself out for money and suddenly all you do is talk about her."
+    fem "That girl jerks off a couple of dicks, gives a few blowjobs and now even whoring out for money and suddenly she is the school's new sensation."
 
 # game/24_your_whore.rpy:73
 translate english your_whore_bb1b18e2:
 
     # mal2 "А знаешь, после того, как она в одиночку добилась победы факультета, она может позволить себе и не такой бизнес!"
-    mal2 "After all the trouble she went through to assure victory for her house, she can allow herself whatever she wants."
+    mal2 "After all the trouble she went through to assure victory for her house, she can allow herself whoring out however she wants."
 
 # game/24_your_whore.rpy:74
 translate english your_whore_c85d82c4:
 
     # mal2 "И кто ее в этом упрекнет? Только не я."
-    mal2 "Who's gonna condemn her? Certainly, not me."
+    mal2 "Who's gonna blame her? Certainly, not me."
 
 # game/24_your_whore.rpy:75
 translate english your_whore_f50bdb50:
@@ -130,7 +130,7 @@ translate english your_whore_f50bdb50:
 translate english your_whore_adab32e8:
 
     # fem "Да вы совсем сдурели! Поклоняетесь дешевой потаскухе!"
-    fem "Did you lose your mind!? Worshipping a cheap whore!?"
+    fem "Did you lose your minds!? Worshipping a cheap whore!?"
 
 # game/24_your_whore.rpy:77
 translate english your_whore_1a1ae41b:
@@ -154,19 +154,19 @@ translate english your_whore_9619d40a:
 translate english your_whore_f65ee366:
 
     # fem "Ой, прости, пожалуйста, я не интересовалась, за сколько она подставляет передок."
-    fem "Oh, please forgive me, I was not looking to know for how much she is whoring herself."
+    fem "Oh, please excuse me, but I'm not interested to know for how much she is whoring out."
 
 # game/24_your_whore.rpy:81
 translate english your_whore_9e79d252:
 
     # mal "А что так? Боишься, что за тебя и половины не дадут?"
-    mal "Is that so? Worrying for you nobody will give even a half?"
+    mal "Is that so? Worrying that nobody will give even a half of what she makes, for you?"
 
 # game/24_your_whore.rpy:82
 translate english your_whore_2f735726:
 
     # fem "Да пошел ты! {size=-2}(*Дуется*){/size}"
-    fem "Fuck you! {size=-2}(*pouting*){/size}"
+    fem "Fuck you! {size=-2}(*Pouting*){/size}"
 
 # game/24_your_whore.rpy:83
 translate english your_whore_1a308272:
@@ -178,7 +178,7 @@ translate english your_whore_1a308272:
 translate english your_whore_f5df169b:
 
     # mal2 "Если приносишь очки Гриффиндору, то можешь..."
-    mal2 "If you get some points for Gryffindor, you can..."
+    mal2 "If you get some house points for Gryffindor, you can..."
 
 # game/24_your_whore.rpy:85
 translate english your_whore_93ff739e:
@@ -214,7 +214,7 @@ translate english your_whore_b253e49a:
 translate english your_whore_18a8f6ce:
 
     # mal2 "А когда узнаешь, сколько она берет за ночь - вообще с ума сойдешь."
-    mal2 "When you'll get to know how much she takes for a night, you'll lose your mind."
+    mal2 "When you'll find out how much she takes for a night, you'll lose your mind."
 
 # game/24_your_whore.rpy:91
 translate english your_whore_938a0466:
@@ -250,7 +250,7 @@ translate english your_whore_48a98cc7:
 translate english your_whore_96ba7594:
 
     # fem "{size=-2}(вслед) {/size}Спасибо, что сообщил!"
-    fem "{size=-2}(at his back){/size}Thanks for the announcement!"
+    fem "{size=-2}(at his back){/size}Thanks for the disclosure!"
 
 # game/24_your_whore.rpy:97
 translate english your_whore_9dcef394_1:
@@ -280,19 +280,19 @@ translate english your_whore_7910be5b:
 translate english your_whore_e8ab8060:
 
     # fem "Не то, чтобы мне было сильно интересно, просто..."
-    fem "Not to say that I'm interested, but..."
+    fem "I'm not really interested, but..."
 
 # game/24_your_whore.rpy:102
 translate english your_whore_6ae5a18d:
 
     # fem "Забавно узнать... {size=-2}(ядовито){/size} почем нынче 'Мисс Популярность'."
-    fem "Amusing to know...  {size=-2}(venomously){/size} the price for 'Miss Popularity'."
+    fem "It's amusing to know...  {size=-2}(venomously){/size} the price for 'Miss Popularity'."
 
 # game/24_your_whore.rpy:103
 translate english your_whore_6159539a:
 
     # mal2 "Я слышал про 3 тысячи."
-    mal2 "The rumour is 3 thousand."
+    mal2 "The rumour is 3 thousands."
 
 # game/24_your_whore.rpy:104
 translate english your_whore_9c89f28b:
@@ -304,7 +304,7 @@ translate english your_whore_9c89f28b:
 translate english your_whore_b7de2ed8:
 
     # mal2 "Ну, твои предки вдвоем за месяц, а она одна за ночь. И желающих хватает."
-    mal2 "Well, I don't know about your parents, but she earns it in one night. And there is a lot interest."
+    mal2 "Well, I don't know about your parents, but she earns it in one night. And a lot of people are interested."
 
 # game/24_your_whore.rpy:106
 translate english your_whore_ac815a3a:
@@ -316,7 +316,7 @@ translate english your_whore_ac815a3a:
 translate english your_whore_42a6830d:
 
     # fem "Я могу понять 500 монет, ну тысяча, если девушка очень, ну очень хороша..."
-    fem "I can understand 500 coins, may be a thousand, if the girl is very beautiful."
+    fem "I can understand 500 coins, may be a thousand, if the girl is really beautiful."
 
 # game/24_your_whore.rpy:108
 translate english your_whore_bc00d847:
@@ -334,7 +334,7 @@ translate english your_whore_6114736f_1:
 translate english your_whore_8362b2dd:
 
     # mal2 "У меня есть тысяча... И я считаю, что ты очень хороша."
-    mal2 "I have a thousand coins... I think you are you are very beautiful."
+    mal2 "I have a thousand coins... I think you are you are beautiful."
 
 # game/24_your_whore.rpy:111
 translate english your_whore_36d51199:
@@ -346,7 +346,7 @@ translate english your_whore_36d51199:
 translate english your_whore_b57f3458:
 
     # mal2 "Я считаю, что ты так хороша, что готов отдать тебе деньги прямо сейчас и встретиться с тобой после бала."
-    mal2 "I think that you are beautiful and ready to give you a thousand coins right now and meet you after the Ball."
+    mal2 "I think that you are beautiful and I'm ready to give you a thousand coins right now and meet you after the Ball."
 
 # game/24_your_whore.rpy:113
 translate english your_whore_d0774a48:
@@ -364,85 +364,85 @@ translate english your_whore_4328c8f1:
 translate english your_whore_99874a7d:
 
     # fem "{size=-2}(*вздыхает*) {/size} Ну почему вы, парни, такие неотесанные?"
-    fem "{size=-2}(*sighs*){/size} Why are you boys so crude?"
+    fem "{size=-2}(*sighs*){/size} Why you boys are so crude?"
 
 # game/24_your_whore.rpy:116
 translate english your_whore_a2c24d03:
 
     # fem "Может, я и так согласилась бы, обставь ты все романтично и красиво!"
-    fem ""
+    fem "Maybe I'd agree if you'd seek a romantic approach."
 
 # game/24_your_whore.rpy:117
 translate english your_whore_647ca0ed:
 
     # fem "А ты сразу пытаешься купить меня, как какую-нибудь Гермиону!"
-    fem ""
+    fem "But no, instead you try to buy me, like some Hermione."
 
 # game/24_your_whore.rpy:118
 translate english your_whore_bb9c86a8:
 
     # mal2 "Ну, тогда давай просто... {size=-2}(*собирается убрать купюры*){/size}"
-    mal2 ""
+    mal2 "Ok, let's try the romantic approach... {size=-2}(*trying to hide the money*){/size}"
 
 # game/24_your_whore.rpy:119
 translate english your_whore_e9089633:
 
     # fem "Нет-нет {size=-2} (*выхватывает деньги*) {/size}... "
-    fem ""
+    fem "No-no... {size=-2}(*grabs the money*){/size}"
 
 # game/24_your_whore.rpy:120
 translate english your_whore_1daaba2e:
 
     # fem "В смысле, я, конечно, и так пойду с тобой, просто потому, что ты - классный парень."
-    fem ""
+    fem "I mean, I'll definitely go with you because I think are a cool guy."
 
 # game/24_your_whore.rpy:121
 translate english your_whore_97254c04:
 
     # fem "А деньги... ну просто, куплю что-нибудь на них. Это же подарок мне, так?"
-    fem ""
+    fem "As for the money... I'll just use them to buy something for myself. It's a gift, isn't it?"
 
 # game/24_your_whore.rpy:122
 translate english your_whore_d09ad67c:
 
     # mal2 "Конечно. {size=-2} (*довольно улыбается*) {/size}Тогда жду тебя у выхода после бала."
-    mal2 ""
+    mal2 "Well, sure. {size=-2}(*satisfyingly smiling*){/size} I'll meet you at the entrance after the Ball ends."
 
 # game/24_your_whore.rpy:123
 translate english your_whore_14869530:
 
     # "> Студент шлепает студентку по заднице и уходит."
-    ""
+    ">The guy gives her butt a slap and leaves."
 
 # game/24_your_whore.rpy:124
 translate english your_whore_65936b06:
 
     # fem "Пф!......"
-    fem ""
+    fem "Pf!......"
 
 # game/24_your_whore.rpy:125
 translate english your_whore_1f673cdb:
 
     # fem "..........."
-    fem ""
+    fem "..........."
 
 # game/24_your_whore.rpy:126
 translate english your_whore_ea4f28b8:
 
     # fem "...3 тысячи за ночь, с ума сойти..."
-    fem ""
+    fem "...3 thousands coins for a night, mind blowing..."
 
 # game/24_your_whore.rpy:127
 translate english your_whore_ed62739c:
 
     # fem "Ну и проститутка!..."
-    fem ""
+    fem "What a whore!..."
 
 # game/24_your_whore.rpy:128
 translate english your_whore_737a5b93:
 
     # fem "Ох, парни, почему вы в упор не замечаете нормальных девчонок?!"
-    fem ""
+    fem "Oh, boys, why don't you look for normals girls, even if they are all around you."
 
 # game/24_your_whore.rpy:133
 translate english your_whore_c34682e8:
@@ -520,7 +520,7 @@ translate english your_whore_5924ae6d:
 translate english your_whore_69dd1447:
 
     # mal "Ты не должна ревновать ее..."
-    mal "You should not be jealous of her--"
+    mal "You should not be jealous of her..."
 
 # game/24_your_whore.rpy:146
 translate english your_whore_bebe526e:
@@ -904,7 +904,7 @@ translate english your_whore_07eaf8ef:
 translate english your_whore_770b5014:
 
     # m "Слушай меня, девочка! Я совсем не тот, кем ты меня считаешь."
-    m "Listen to me, girl! I am not who you think--"
+    m "Listen to me, girl! I am not who you think..."
 
 # game/24_your_whore.rpy:300
 translate english your_whore_e2d33a71:
@@ -922,7 +922,7 @@ translate english your_whore_752880a9:
 translate english your_whore_755a411a:
 
     # g4 "Гхмм!!!"
-    g4 "Gh--!!!"
+    g4 "Ghmm!!!"
 
 # game/24_your_whore.rpy:307
 translate english your_whore_36d10c97:
@@ -1024,7 +1024,7 @@ translate english your_whore_11dc0f81:
 translate english your_whore_89978a01:
 
     # her "*Чавк--"
-    her "*Slurp--"
+    her "*Slurp*"
 
 # game/24_your_whore.rpy:348
 translate english your_whore_45671236:
@@ -1060,7 +1060,7 @@ translate english your_whore_7fe6f695:
 translate english your_whore_b4853dc0:
 
     # her "*Глоть*"
-    her "*Gulp--"
+    her "*Gulp*"
 
 # game/24_your_whore.rpy:360
 translate english your_whore_041d5d66_1:
@@ -1120,7 +1120,7 @@ translate english your_whore_374b52d9_1:
 translate english your_whore_bd4788e1:
 
     # her "*Чавк*"
-    her "*Slurp--"
+    her "*Slurp*"
 
 # game/24_your_whore.rpy:376
 translate english your_whore_452409de:
@@ -1144,7 +1144,7 @@ translate english your_whore_bb50a297:
 translate english your_whore_bd4788e1_1:
 
     # her "*Чавк*"
-    her "*Slurp--"
+    her "*Slurp*"
 
 # game/24_your_whore.rpy:386
 translate english your_whore_20d13908:
@@ -1846,13 +1846,13 @@ translate english your_whore_c547a08e:
 translate english your_whore_f66f6924:
 
     # g4 "{size=+5}Вот оно...{/size}"
-    g4 "{size=+5}Here it com--{/size}"
+    g4 "{size=+5}Here it com...{/size}"
 
 # game/24_your_whore.rpy:641
 translate english your_whore_750eb4ee:
 
     # her "*Чавк!*.........................."
-    her "*Slurp--.........................."
+    her "*Slurp!*.........................."
 
 # game/24_your_whore.rpy:642
 translate english your_whore_fde792f9:
@@ -4534,7 +4534,7 @@ translate english tttest_29331d6c:
 translate english tttest_78fd3019:
 
     # her "Мальчики, ну, расчехляйтесь... скорее, мамочка устала ждать!.."
-    her "Boys, do not slow down..., mommy is tired waiting!.."
+    her "Boys, do not slow down... faster, mommy is tired waiting!.."
 
 # game/24_your_whore.rpy:1973
 translate english tttest_11d50fdd:
@@ -4570,91 +4570,91 @@ translate english tttest_a5cf2aec:
 translate english tttest_7faa8d9f:
 
     # sly1 "Твою мать, эта сука на все способна! И что... Что теперь, сэр?"
-    sly1 "Damn, this bitch is ready for everything! And what... What now, Sir?"
+    sly1 "Damn, this bitch is crazy! And what... What now, Sir?"
 
 # game/24_your_whore.rpy:1982
 translate english tttest_94f2bbcf:
 
     # m "Послушай, это уже за гранью, Гермиона."
-    m "That's already too much, Miss Hermione"
+    m "That's already too far, Miss Granger."
 
 # game/24_your_whore.rpy:1983
 translate english tttest_fee730c3:
 
     # her "Профессор, вас же здесь нет? Или вы внезапно появились?"
-    her "Professor, you are not here? Or you suddenly appeared?"
+    her "Professor, you said you are not here. Why the sudden reappearance?"
 
 # game/24_your_whore.rpy:1984
 translate english tttest_f57c3c7d:
 
     # her "Эти мальчики мне не нравятся. Но я отсосу у них, если мне заплатят."
-    her ""
+    her "I don't like this boys, Sir, but I'll suck them off if I'm going to get paid."
 
 # game/24_your_whore.rpy:1985
 translate english tttest_9bade00f:
 
     # m "Заплатят?! Ты хочешь еще очки факультету?"
-    m ""
+    m "Get paid? Do you mean more house points?"
 
 # game/24_your_whore.rpy:1986
 translate english tttest_f063f7bb:
 
     # her "{size=-2}(*хихикает*) {/size}Я хочу, чтобы они отдали мне свои бумажники со всем, что там есть. "
-    her ""
+    her "{size=-2}(*Giggles*){/size} I want them to give me their wallets with all its content."
 
 # game/24_your_whore.rpy:1987
 translate english tttest_8f497f5d:
 
     # her "А иначе им придется просто стоять и поддрачивать, глядя, как вы меня трахаете."
-    her ""
+    her "Otherwise, they just will have to stand there jerking off watching you fucking me."
 
 # game/24_your_whore.rpy:1988
 translate english tttest_dd9a4049:
 
     # sly1 "Ха, забирай, дешевка! У меня там сроду не было больше 10 монет. {size=-2}(*бросает бумажник*){/size}"
-    sly1 ""
+    sly1 "Ha, take it, cheap whore! It never contained more then 10 coins my entire life. {size=-2}(*throwing the wallet*){/size}"
 
 # game/24_your_whore.rpy:1989
 translate english tttest_3804ad52:
 
     # sly2 "Тебе хорошо, у меня там чек с деньгами на все каникулы!"
-    sly2 ""
+    sly2 "Lucky you, I have a check with money on it for my entire vacation."
 
 # game/24_your_whore.rpy:1990
 translate english tttest_a6991875:
 
     # sly2 "А я как раз накопил на новую модель метлы... На хрен такое!"
-    sly2 ""
+    sly2 "And I saved up money for a new broom... Fuck this!"
 
 # game/24_your_whore.rpy:1991
 translate english tttest_aa2a3644:
 
     # her "{size=-2}(*хихикает*) {/size}Ахх... Не ссорьтесь, сладкие. Но... ах! или вы все, или никто из вас."
-    her ""
+    her "{size=-2}(*Giggles*){/size} Ah... Stop arguing sweethearts. So... ah!... all of you, or none of you."
 
 # game/24_your_whore.rpy:1992
 translate english tttest_f5445bad:
 
     # sly1 "Парни вы что, не понимаете?! Такой шанс выпадает раз в жизни! А что деньги - мусор!"
-    sly1 ""
+    sly1 "Boys what don't you understand?! An opportunity like this is once in a lifetime! But what is money - garbage!"
 
 # game/24_your_whore.rpy:1993
 translate english tttest_8b7a23ed:
 
     # sly2 "Я тебе это повторю, когда ты придешь ко мне побираться. {size=-2}(*бросает бумажник*){/size}"
-    sly2 ""
+    sly2 "I will remind you about this, when you'll come begging for some money. {size=-2}(*throwing the wallet*){/size}"
 
 # game/24_your_whore.rpy:1994
 translate english tttest_4baa52a8:
 
     # "> Все бросают бумажники"
-    ""
+    "> Everyone throws their wallets at Hermione."
 
 # game/24_your_whore.rpy:1995
 translate english tttest_70e6bf4c:
 
     # her "{size=-2}(*хихикает*) {/size}Ну вот, видите, мальчики, у вас даже юбочка не помялась. Кто первый?"
-    her ""
+    her "{size=-2}(*Giggles*){/size} See, wasn't so hard to make a choice. Who's first."
 
 # game/24_your_whore.rpy:2007
 translate english tttest_9b5b0187:
@@ -4798,25 +4798,25 @@ translate english tttest_3769b2fd:
 translate english tttest_dfb49c25:
 
     # her "Этот мальчик - скорострел, сэр. Боюсь, он разочаровывает девушек. "
-    her ""
+    her "This boy already is already cumming, Sir. I fear, he will disappoint girls."
 
 # game/24_your_whore.rpy:2065
 translate english tttest_d63b077d:
 
     # her "Сэр, прошу, порекомендуйте ему какое-нибудь лечение, вас он послушает."
-    her ""
+    her "Sir, I think you should recommend him some treatment, I'm sure he'll listen to you."
 
 # game/24_your_whore.rpy:2066
 translate english tttest_50b030d1:
 
     # sly1 "{size=-2}(*задохнувшись*) {/size}Заткнись, долбаная тварь!!!! Сука, я тебя сейчас убью! Я тебя!..."
-    sly1 ""
+    sly1 "{size=-2}(*out of breath*){/size} Shut up, cunt!!! I'll kill you, bitch! I'll ...!"
 
 # game/24_your_whore.rpy:2067
 translate english tttest_cd15b118:
 
     # her "Я слышала, что иногда это лечится, сэр. Правда."
-    her ""
+    her "I read somewhere that there is a treatment from this, Sir. Really."
 
 # game/24_your_whore.rpy:2069
 translate english tttest_c9f8b795:
@@ -5266,7 +5266,7 @@ translate english tttest_67cebf1f:
 translate english tttest_a83c285e:
 
     # g4 "И это!!!"
-    g4 ""
+    g4 "And this!!!"
 
 # game/24_your_whore.rpy:2263
 translate english tttest_9b8f84ec:
@@ -8248,7 +8248,7 @@ translate english test_c33debe0:
 translate english test_00ce1713:
 
     # m "Прощай, моя шлю--......"
-    m "Good bye my who--......"
+    m "Good bye my who......"
 
 # game/24_your_whore.rpy:3653
 translate english test_c43cb424:
@@ -8664,7 +8664,7 @@ translate english last_letter_ed61ce9f:
 translate english last_letter_5e5eec90:
 
     # dum2 "Мисс Грейнджер, вам следует следить за своим языком!"
-    dum2 "Miss Granger, would you mind to watch your tongue when--"
+    dum2 "Miss Granger, would you mind to watch your tongue when..."
 
 # game/24_your_whore.rpy:4178
 translate english last_letter_cc21fd70:
@@ -8712,7 +8712,7 @@ translate english last_letter_e78c0f64:
 translate english last_letter_1c01c02e:
 
     # centered "{size=+7}{color=#cbcbcb}-{{Спасибо за игру!}-{/color}{/size}\n\n {size=+1}{color=#cbcbcb}-АКАБУР 2014-{/color}{/size}"
-    centered ""
+    centered "{size=+7}{color=#cbcbcb}-\{Thank you for playing!\}-{/color}{/size}\n\n {size=+1}{color=#cbcbcb}-AKABUR 2014-{/color}{/size}"
 
 translate english strings:
 

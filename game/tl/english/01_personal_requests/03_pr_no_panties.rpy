@@ -262,13 +262,13 @@ translate english new_request_03_e5b33e82:
 translate english new_request_03_b146c81c:
 
     # her "Эмм..."
-    her ""
+    her "Emm..."
 
 # game/01_personal_requests/03_pr_no_panties.rpy:106
 translate english new_request_03_3839039d:
 
     # her " Это несколько неожиданно, сэр, но..."
-    her ""
+    her "It's a little bit unexpected, Sir, but..."
 
 # game/01_personal_requests/03_pr_no_panties.rpy:108
 translate english new_request_03_85dd01b9:
@@ -460,7 +460,7 @@ translate english new_request_03_complete_df11b074:
 translate english new_request_03_complete_c43e5499:
 
     # translators "Напоминание.\nОЗМП - Общество по Защите Мужских Прав."
-    translators ""
+    translators "Reminder.\nMRM - Men's Rights Movement."
 
 # game/01_personal_requests/03_pr_no_panties.rpy:238
 translate english new_request_03_complete_4781adc5:

@@ -64,7 +64,7 @@ translate english date_02_82af2770:
 translate english locked_06402ebf:
 
     # "Не хватает распутства."
-    "Not enough lustfulness."
+    "Not enough whoring."
 
 translate english strings:
 

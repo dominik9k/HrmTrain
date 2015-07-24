@@ -52,7 +52,7 @@ translate english phoenix_860be2f5:
 translate english phoenix_55119ade:
 
     # a1 "С этого момента вы можете продолжать кормить и гладить птицу, но я просто хочу, чтобы вы знали, что это не даст вам ничего."
-    a1 "From now on you will be able to continue to feed and pet the bird but I just want you to know that it will not lead to anything."
+    a1 "From now on you will be able to continue to feed and pet the bird, but I just want you to know that it will not lead to anything."
 
 # game/04_phoenix.rpy:16
 translate english phoenix_ca801256:

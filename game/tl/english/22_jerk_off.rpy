@@ -4,19 +4,19 @@
 translate english jerk_off_dcbc0fa0:
 
     # m "Хм...кем же мы займемся сегодня?"
-    m "Hmm... About whom shall I think today?"
+    m "Hm... Who shall be my target?"
 
 # game/22_jerk_off.rpy:9
 translate english jerk_off_46d5b06e:
 
     # m "Да, принцесса... Эта грязная шлюха!"
-    m "Yes, Princess... Show me how much do you like to be a dirty slut!"
+    m "Yes, the princess... That dirty slut!"
 
 # game/22_jerk_off.rpy:18
 translate english jerk_off_cc1c5b2e:
 
     # m "Куда бы кончить?"
-    m "Where should I cum?"
+    m "How should I finish this thing?"
 
 # game/22_jerk_off.rpy:28
 translate english how_to_finish_d1af647f:
@@ -28,7 +28,7 @@ translate english how_to_finish_d1af647f:
 translate english how_to_finish_51b4c3de:
 
     # ">Вы решили вздрочнуть, вспоминая былые времена..."
-    ">You decide to jerk-off by remembering events from your past..."
+    ">You decide to spend some time by jerking off..."
 
 # game/22_jerk_off.rpy:43
 translate english how_to_finish_5d5d5fd4:
@@ -76,13 +76,13 @@ translate english finish_cum_d170a9a0:
 translate english finish_cum_70fb242a:
 
     # g4 "О да! Вау... Давненько такого не было."
-    g4 "Oh Yes! Wow... It's been a while since I did that."
+    g4 "Oh yes! Wow... It's been a while since I did this."
 
 # game/22_jerk_off.rpy:66
 translate english finish_cum_f0f01fc3:
 
     # ">Вы обильно кончаете на стол."
-    ">You cum all over the desk."
+    ">You cum on the desk."
 
 # game/22_jerk_off.rpy:67
 translate english finish_cum_ee0e3f8c:
@@ -94,7 +94,7 @@ translate english finish_cum_ee0e3f8c:
 translate english finish_cum_4d4f2160:
 
     # ">Вы кончили на пол."
-    ">You cum all over the floor."
+    ">You cum on the floor."
 
 # game/22_jerk_off.rpy:72
 translate english finish_cum_c6e9ca5c:
@@ -112,7 +112,7 @@ translate english finish_cum_b20081a6:
 translate english finish_cum_67e7d5d5:
 
     # g7 "Да уж, было время. Интересно, получится ли вернуть старые добрые времена?"
-    g7 "Yeah, that was great! I wonder if things will ever be the same?"
+    g7 "This was a pretty sweet jerk-off session..."
 
 # game/22_jerk_off.rpy:76
 translate english finish_cum_0e91fa34:
@@ -136,11 +136,11 @@ translate english strings:
 
     # game/22_jerk_off.rpy:7
     old "- Принцесса Жасмин -"
-    new "-Princess Jasmine-"
+    new "-\"Princess Jasmine\"-"
 
     # game/22_jerk_off.rpy:7
     old "- Лара Крофт -"
-    new "-Lara Croft-"
+    new "-\"Lara Croft\"-"
 
     # game/22_jerk_off.rpy:7
     old "- Передумал -"
@@ -148,15 +148,15 @@ translate english strings:
 
     # game/22_jerk_off.rpy:20
     old "- На пол -"
-    new "-On the floor-"
+    new "-On the floor!-"
 
     # game/22_jerk_off.rpy:20
     old "- На стол -"
-    new "-On the desk-"
+    new "-On the desk!-"
 
     # game/22_jerk_off.rpy:20
     old "{color=#858585}- (ЗАБЛОКИРОВАННО) -{/color}"
-    new "{color=#858585}-(LOCKED)-{/color}"
+    new "{color=#858585}...(LOCKED)...{/color}"
 
     # game/22_jerk_off.rpy:20
     old "- Трусики Гермионы -"

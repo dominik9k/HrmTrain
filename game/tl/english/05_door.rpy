@@ -142,7 +142,7 @@ translate english request_01_4c54b9bb:
 translate english request_02_d6feb47b:
 
     # "Сильно краснея и неохотно Гермиона поднимает юбку и показывает вам свои трусики."
-    "Hermione reluctantly lifts her skirt and shows you her panties. She is blushing a lot."
+    "Hermione reluctantly lifts her skirt and shows you her panties. She blushes a lot."
 
 # game/05_door.rpy:166
 translate english request_02_48fd2e82:
@@ -724,7 +724,7 @@ translate english request_25_c943b75d:
 translate english request_26_9016265b:
 
     # "Гермиона сидит с открытым ртом, пока вы дрочите и кончаете в него. Вы запретили ей глотать, до того, как она попадет в класс."
-    "Hermione sits still with her mouth wide open while you jerk off and fill it with cum. You forbid her to swallow until she gets to class."
+    "Hermione sits still with her mouth wide open while you jerk off and fill it with cum. You forbid her to swallow it until she gets to class."
 
 # game/05_door.rpy:665
 translate english request_26_9aba96b6:
@@ -940,7 +940,7 @@ translate english too_much_b17cbcea:
 translate english too_much_fee7f0a8:
 
     # her "Как вы можете просить меня о таком!?"
-    her "How could you ask me for such a thing!?"
+    her "How could you ask for such a thing!?"
 
 # game/05_door.rpy:841
 translate english too_much_10ab6e34:

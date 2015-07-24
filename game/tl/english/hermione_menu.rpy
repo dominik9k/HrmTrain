@@ -4,7 +4,7 @@
 translate english hermione_main_menu_82d87789:
 
     # ">Журналистские задания недоступны в это время суток."
-    ""
+    ">Newspaper tasks are unavailable at this time of the day."
 
 # game/hermione_menu.rpy:73
 translate english hermione_main_menu_834e41dc:
@@ -22,37 +22,37 @@ translate english hermione_main_menu_834e41dc_1:
 translate english hermione_main_menu_ba93ebc8:
 
     # her "О, хорошо! Тогда я пойду на уроки."
-    her ""
+    her "Oh, alright. I will go to classes then."
 
 # game/hermione_menu.rpy:165
 translate english hermione_main_menu_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/hermione_menu.rpy:167
 translate english hermione_main_menu_ef2f2f2a:
 
     # her "*Гм!*..."
-    her ""
+    her "*Hm!*..."
 
 # game/hermione_menu.rpy:170
 translate english hermione_main_menu_900b60d0:
 
     # her "О, хорошо! Тогда я пойду спать."
-    her ""
+    her "Oh, alright. I will go to bed then."
 
 # game/hermione_menu.rpy:172
 translate english hermione_main_menu_3574ffb4_1:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/hermione_menu.rpy:174
 translate english hermione_main_menu_bde091d9:
 
     # her "Пф!..."
-    her ""
+    her "Pf!..."
 
 # game/hermione_menu.rpy:214
 translate english chit_chat_hermione_93d85d13:
@@ -88,7 +88,7 @@ translate english chit_chat_hermione_b092e43d:
 translate english chit_chat_hermione_e1e56827:
 
     # her "Он сделал это с помощью--"
-    her "He accomplished that by.."
+    her "He accomplished that by..."
 
 # game/hermione_menu.rpy:228
 translate english chit_chat_hermione_327c85dd:
@@ -1144,395 +1144,395 @@ translate english chit_chat_hermione_25154dfa:
 translate english hermione_bookbuying_0c0aa392:
 
     # m "Мисс Грейнджер."
-    m ""
+    m "Miss Granger."
 
 # game/hermione_menu.rpy:812
 translate english hermione_bookbuying_03d362da:
 
     # m "Могу ли я купить ваши учебники?"
-    m ""
+    m "Can I buy your textbooks?"
 
 # game/hermione_menu.rpy:814
 translate english hermione_bookbuying_a749c8fd:
 
     # her "Простите?"
-    her ""
+    her "Excuse me, Professor?"
 
 # game/hermione_menu.rpy:815
 translate english hermione_bookbuying_45172621:
 
     # m "Мне нужны ваши учебники."
-    m ""
+    m "I need your textbook."
 
 # game/hermione_menu.rpy:817
 translate english hermione_bookbuying_d610a4f1:
 
     # her "Но зачем вам, Альбусу Дамблдору, учебники простой ученицы?"
-    her ""
+    her "But why do you, Albus Dumbledore, need my textbooks?"
 
 # game/hermione_menu.rpy:818
 translate english hermione_bookbuying_545fbe39:
 
     # m "Хм, понимаешь..."
-    m ""
+    m "Hm, you see..."
 
 # game/hermione_menu.rpy:819
 translate english hermione_bookbuying_60827747:
 
     # m "Я проводил сложные магические исследования."
-    m ""
+    m "I was conducted very complex magical research."
 
 # game/hermione_menu.rpy:820
 translate english hermione_bookbuying_8bbc8c48:
 
     # m "Но совсем недавно они зашли в тупик."
-    m ""
+    m "And I hit a wall."
 
 # game/hermione_menu.rpy:821
 translate english hermione_bookbuying_9b35a52f:
 
     # m "И я решил прибегнуть к последнему средству."
-    m ""
+    m "As a matter of last resort."
 
 # game/hermione_menu.rpy:822
 translate english hermione_bookbuying_24c7d4d0:
 
     # m "Я говорил с зябликом."
-    m ""
+    m "I talked to Finch."
 
 # game/hermione_menu.rpy:824
 translate english hermione_bookbuying_26269f17:
 
     # her "Что?!"
-    her ""
+    her "What?!"
 
 # game/hermione_menu.rpy:825
 translate english hermione_bookbuying_15403141:
 
     # m "Да, с {i}тем самым{/i}."
-    m ""
+    m "Yep, with {i}that one{/i}."
 
 # game/hermione_menu.rpy:826
 translate english hermione_bookbuying_99ec5d3c:
 
     # m "Он поведал, что мне стоит вернуться к самым истокам."
-    m ""
+    m "He told me, to go back to basics."
 
 # game/hermione_menu.rpy:827
 translate english hermione_bookbuying_59e27225:
 
     # m "Что истина лежит в начале пути, и тому подобную хрень."
-    m ""
+    m "That the truth lies in the beginning of the road, and same old crap."
 
 # game/hermione_menu.rpy:829
 translate english hermione_bookbuying_cc21fd70:
 
     # her "..."
-    her ""
+    her "..."
 
 # game/hermione_menu.rpy:830
 translate english hermione_bookbuying_77d5a38c:
 
     # m "Поэтому я хочу еще раз повторить весь материал, с самого начала."
-    m ""
+    m "That's why I'm going to redo all the material from the beginning."
 
 # game/hermione_menu.rpy:831
 translate english hermione_bookbuying_531e9bf0:
 
     # m "Так что... Не одолжите ли свои книги?"
-    m ""
+    m "So... Could you lend me your textbooks?"
 
 # game/hermione_menu.rpy:833
 translate english hermione_bookbuying_3c86c265:
 
     # her "Профессор..."
-    her ""
+    her "Professor..."
 
 # game/hermione_menu.rpy:835
 translate english hermione_bookbuying_d9d584fe:
 
     # her "Конечно, я бы с радостью пожертвовала свои книги во благо науки!"
-    her ""
+    her "Of course, I'll gladly offer my textbooks to benefit the Science!"
 
 # game/hermione_menu.rpy:837
 translate english hermione_bookbuying_98f50f43:
 
     # her "Но вы же сами понимаете, что мне сейчас нужно заниматься, как никогда."
-    her ""
+    her "But you know very well, that now I need to study, even harder then before."
 
 # game/hermione_menu.rpy:839
 translate english hermione_bookbuying_f83d8364:
 
     # her "Почему бы вам не заказать их на азазоне?"
-    her ""
+    her "Why don't you order the textbooks form Azazon?"
 
 # game/hermione_menu.rpy:840
 translate english hermione_bookbuying_92ee0f65:
 
     # m "Где, прости?"
-    m ""
+    m "I'm sorry, from where?"
 
 # game/hermione_menu.rpy:841
 translate english hermione_bookbuying_98bbd870:
 
     # her "На азазоне. Неужели вы ни разу не слышали о сово-магазине azazon.mag?"
-    her ""
+    her "From Azazon. You never heard of an owl-shop azazon.mag?"
 
 # game/hermione_menu.rpy:842
 translate english hermione_bookbuying_3e59e46b:
 
     # her "Крупнейшем магическом магазине с доставкой по всему миру?"
-    her ""
+    her "The biggest magical shop with shipment all over the world?"
 
 # game/hermione_menu.rpy:843
 translate english hermione_bookbuying_96bc4d20:
 
     # m "Звучит... Знакомо. Даже слишком знакомо."
-    m ""
+    m "Sounds... Familiar. Way to familiar."
 
 # game/hermione_menu.rpy:844
 translate english hermione_bookbuying_ab57f88b:
 
     # m "Знаешь, я не слишком разбираюсь во всем этом, не могла бы ты сделать заказ за меня?"
-    m ""
+    m "You know, I'm not very good at this. Could you please make the order for me?"
 
 # game/hermione_menu.rpy:846
 translate english hermione_bookbuying_a9d9243a:
 
     # her "Конечно. Какие именно книги вас интересуют?"
-    her ""
+    her "Of course, Professor. Which textbooks exactly do you need? "
 
 # game/hermione_menu.rpy:847
 translate english hermione_bookbuying_77fdbfec:
 
     # m "Все книги по всем предметам, которые преподают в этой школе."
-    m ""
+    m "All the textbooks related to all subjects of this school."
 
 # game/hermione_menu.rpy:849
 translate english hermione_bookbuying_ae3e4f79:
 
     # her "Что же, думаю это будет стоить тысячи три, не меньше..."
-    her ""
+    her "Well, I think it will cost no less then 3 thousand coins..."
 
 # game/hermione_menu.rpy:850
 translate english hermione_bookbuying_e612037c:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/hermione_menu.rpy:851
 translate english hermione_bookbuying_d0dfa7a8:
 
     # g4 "{size=-4}Дорого же мне обходится твое \"обучение\", маленькая стерва...{/size}"
-    g4 ""
+    g4 "{size=-4}This \"tutoring\" of yours, it costs me much, you little witch...{/size}"
 
 # game/hermione_menu.rpy:852
 translate english hermione_bookbuying_a420e942:
 
     # g4 "{size=-4}Черт, быть может мне все же остановиться на роуте, где я просто делаю из тебя шлюху, продающую свой зад за очки?{/size}"
-    g4 ""
+    g4 "{size=-4}Fuck, maybe stick with the easiest road, where I make a whore out of you, for selling you house points?{/size}"
 
 # game/hermione_menu.rpy:853
 translate english hermione_bookbuying_ffe1dfda:
 
     # g9 "Эх, выборы-выборы..."
-    g9 ""
+    g9 "Ah, choices-choices..."
 
 # game/hermione_menu.rpy:855
 translate english hermione_bookbuying_2233964a:
 
     # her "Вы что-то сказали?"
-    her ""
+    her "Did you say something, Professor?"
 
 # game/hermione_menu.rpy:856
 translate english hermione_bookbuying_915428fb:
 
     # m "Нет-нет, я просто размышлял над выбором... Школьной политики."
-    m ""
+    m "No, no, I was just thinking about the choices I have... For school policies."
 
 # game/hermione_menu.rpy:858
 translate english hermione_bookbuying_295f679f:
 
     # her "Так вы все-таки решили подумать над моими предложениями..?"
-    her ""
+    her "So did you think about my offer..?"
 
 # game/hermione_menu.rpy:860
 translate english hermione_bookbuying_f794e0ee:
 
     # her "Я думала, что вы забыли..."
-    her ""
+    her "I fought, you forgot..."
 
 # game/hermione_menu.rpy:861
 translate english hermione_bookbuying_804dd80d:
 
     # m "Я ничего не забываю, девочка."
-    m ""
+    m "I don't forget anything, girl."
 
 # game/hermione_menu.rpy:863
 translate english hermione_bookbuying_cc21fd70_1:
 
     # her "..."
-    her ""
+    her "..."
 
 # game/hermione_menu.rpy:864
 translate english hermione_bookbuying_a7e872c7:
 
     # m "Кто знает, быть может со следующим обновлением..."
-    m ""
+    m "Who knows, may be with the next update..."
 
 # game/hermione_menu.rpy:866
 translate english hermione_bookbuying_c1b0c18f:
 
     # her "Что?"
-    her ""
+    her "What?"
 
 # game/hermione_menu.rpy:867
 translate english hermione_bookbuying_0f078189:
 
     # m "Кхм, не важно."
-    m ""
+    m "Khm, never mind."
 
 # game/hermione_menu.rpy:868
 translate english hermione_bookbuying_4fd39922:
 
     # m "В общем, спасибо за помощь. Я сообщу вам, когда у меня появится нужная сумма."
-    m ""
+    m "Well, thank you for your help. I'll tell you when I'll have the required amount."
 
 # game/hermione_menu.rpy:870
 translate english hermione_bookbuying_deeb1878:
 
     # her "Всегда рада помочь."
-    her ""
+    her "I'm always glad to help."
 
 # game/hermione_menu.rpy:875
 translate english hermione_bookbuying_0f0496c0:
 
     # m "Я по поводу покупки учебников, мисс Грейнджер."
-    m ""
+    m "About the textbooks, Miss Granger."
 
 # game/hermione_menu.rpy:876
 translate english hermione_bookbuying_2333836a:
 
     # m "У меня есть нужная сумма."
-    m ""
+    m "I have the required amount."
 
 # game/hermione_menu.rpy:878
 translate english hermione_bookbuying_488406bd:
 
     # her "Хорошо, тогда я немедленно пойду и закажу все необходимое."
-    her ""
+    her "Alright, then I go and order them immediately."
 
 # game/hermione_menu.rpy:898
 translate english hermione_bookbuying_f721e84a:
 
     # m "...."
-    m ""
+    m "...."
 
 # game/hermione_menu.rpy:899
 translate english hermione_bookbuying_e612037c_1:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/hermione_menu.rpy:900
 translate english hermione_bookbuying_ae5d861b:
 
     # m "Интересно, сколько шлюх можно было купить на эти деньги?"
-    m ""
+    m "Interesting, how many whores I could have bought with this amount of money."
 
 # game/hermione_menu.rpy:901
 translate english hermione_bookbuying_e612037c_2:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/hermione_menu.rpy:902
 translate english hermione_bookbuying_9f045ee9:
 
     # m "Надо передернуть."
-    m ""
+    m "I need to jerk off."
 
 # game/hermione_menu.rpy:911
 translate english hermione_bookbuying_35a96962:
 
     # m "{size=-4}(Нужно больше золота!){/size}"
-    m ""
+    m "{size=-4}(Not enough gold!){/size}"
 
 # game/hermione_menu.rpy:912
 translate english hermione_bookbuying_e1bd31fc:
 
     # m "(У меня такое ощущение, что где-то я уже слышал эту фразу...)"
-    m ""
+    m "(I have a feeling, that I heard this phrase before..."
 
 # game/hermione_menu.rpy:1090
 translate english wrd_hermi_rent_menu_e86766d9:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "I'm sorry, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1109
 translate english wrd_hermi_rent_menu_e2c1dd50:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 # game/hermione_menu.rpy:1122
 translate english wrd_hermi_rent_menu_e86766d9_1:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "I'm sorry, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1141
 translate english wrd_hermi_rent_menu_e2c1dd50_1:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 # game/hermione_menu.rpy:1154
 translate english wrd_hermi_rent_menu_e86766d9_2:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "I'm sorry, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1173
 translate english wrd_hermi_rent_menu_e2c1dd50_2:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 # game/hermione_menu.rpy:1186
 translate english wrd_hermi_rent_menu_e86766d9_3:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "I'm sorry, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1206
 translate english wrd_hermi_rent_menu_e2c1dd50_3:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 translate english strings:
 
     # game/hermione_menu.rpy:38
     old "- Тренировка с Хрустальным шаром -"
-    new ""
+    new "-Training with the Crystal Ball-"
 
     # game/hermione_menu.rpy:38
     old "- Поговорить о работе для редакции -"
-    new ""
+    new "-Talk about Edition Work-"
 
     # game/hermione_menu.rpy:38
     old "{color=#858585}- Дать журналистское задание -{/color}"
-    new ""
+    new "{color=#858585}- Дать журналистское задание -{/color}"
 
     # game/hermione_menu.rpy:38
     old "- Дать журналистское задание -"
-    new ""
+    new "-Give a journalism task-"
 
     # game/hermione_menu.rpy:38
     old "- Впечатления от газеты -"
-    new ""
+    new "-Impressions about the newspaper-"
 
     # game/hermione_menu.rpy:38
     old "- Обучение -"
@@ -1548,11 +1548,11 @@ translate english strings:
 
     # game/hermione_menu.rpy:194
     old "Спросить насчет учебников"
-    new ""
+    new "Ask about textbooks"
 
     # game/hermione_menu.rpy:194
     old "Купить учебники"
-    new ""
+    new "Buy the textbooks."
 
     # game/hermione_menu.rpy:194
     old "Болтать"
@@ -1560,125 +1560,123 @@ translate english strings:
 
     # game/hermione_menu.rpy:917
     old "- Новые вещи ! -"
-    new ""
+    new "-New items!-"
 
     # game/hermione_menu.rpy:917
     old "- Верх -"
-    new ""
+    new "-Up-"
 
     # game/hermione_menu.rpy:917
     old "- Чулки/Колготки -"
-    new ""
+    new "-Stockings-"
 
     # game/hermione_menu.rpy:917
     old "- Примерка вещей напрокат -"
-    new ""
+    new "-Try on the rented clothes-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть значок \"А.В.Н.Э.\" -"
-    new ""
+    new "-Put the badge \"S.P.E.W.\" on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть ажурные чулки -"
-    new ""
+    new "-Put the fishnets on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть колготки -"
-    new ""
+    new "-Put the stockings on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть укороченную школьную юбку -"
-    new ""
+    new "-Put the short skirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть сильно укороченную школьную юбку -"
-    new ""
+    new "-Put the super-short skirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть короткую школьную юбку -"
-    new ""
+    new "-Put the very short skirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть школьную мини-юбку -"
-    new ""
+    new "-Put the miniskirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть укороченную школьную мини-юбку -"
-    new ""
+    new "-Put the short miniskirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть супер-короткую школьную мини-юбку -"
-    new ""
+    new "-Put the super-short miniskirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть юбку болельщицы Гриффиндора -"
-    new ""
+    new "-Put the Gryffindor's cheerleader skirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть миниюбку бизнес-леди -"
-    new ""
+    new "-Put the business lady miniskirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть школьную рубашку без жилетки -"
-    new ""
+    new "-Put the school shirt without vest on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть школьную рубашку без жилетки и галстука -"
-    new ""
+    new "-Put the school shirt without vest and tie on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть школьную рубашку и расстегнуть верхние пуговицы -"
-    new ""
+    new "-Put the school shirt with unbutton top buttons on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть школьную рубашку, застегнутую на одну пуговицу -"
-    new ""
+    new "-Put the school shirt clasped on one button on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть школьную рубашку мини-топик -"
-    new ""
+    new "-Put the school crop top on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть кофту болельщицы Гриффиндора -"
-    new ""
+    new "-Put the Gryffindor's cheerleader T shirt on-"
 
     # game/hermione_menu.rpy:920
     old "- Надеть белую рубашку в деловом стиле -"
-    new ""
+    new "-Put the white business lady shirt on-"
 
     # game/hermione_menu.rpy:981
     old "- Надеть длинную школьную юбку -"
-    new ""
+    new "-Put the long school skirt on-"
 
     # game/hermione_menu.rpy:1014
     old "- Надеть школьную рубашку с жилеткой -"
-    new ""
+    new "-Put the school shirt with vest on-"
 
     # game/hermione_menu.rpy:1045
     old "- Снять чулки/колготки -"
-    new ""
+    new "-Take the stockings off-"
 
     # game/hermione_menu.rpy:1063
     old "- Снять значки -"
-    new ""
+    new "-Take the badge off-"
 
     # game/hermione_menu.rpy:1085
     old "- Форма веселой школьницы -"
-    new ""
+    new "-Cheerful Schoolgirl's Uniform-"
 
     # game/hermione_menu.rpy:1085
     old "- Форма игривой школьницы -"
-    new ""
+    new "-Playful Schoolgirl's Uniform-"
 
     # game/hermione_menu.rpy:1085
     old "- Форма болельщицы Гриффиндора -"
-    new ""
+    new "-Gryffindor's Cheerleader Uniform-"
 
     # game/hermione_menu.rpy:1085
     old "- Одежда бизнес-леди -"
-    new ""
-
-# TODO: Translation updated at 2015-07-21 15:21
+    new "-Business Lady Outfit-"
 
 # game/hermione_menu.rpy:211
 translate english wrd_clother_hermi_ba93ebc8:

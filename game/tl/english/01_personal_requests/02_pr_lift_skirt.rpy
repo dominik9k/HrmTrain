@@ -310,7 +310,7 @@ translate english new_request_02_1792c1d5:
 translate english new_request_02_31401245:
 
     # her "\"Показать трусики за 5 очков\". Просто смешно!"
-    her ""
+    her "\"To show my panties for 5 points\". That's ridiculous!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:204
 translate english new_request_02_a6738d87:
@@ -376,343 +376,343 @@ translate english new_request_02_124c5214:
 translate english new_request_02_469c408b:
 
     # "> Гермиона достает из кармана трусики и показывает их вам."
-    ""
+    ">Hermione pulls her panties out of her pocket and show them to you..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:223
 translate english new_request_02_fb910e69:
 
     # g4 "Что это за?!.."
-    g4 ""
+    g4 "What the fuck?.."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:224
 translate english new_request_02_469acbfc:
 
     # her "Мои трусики, сэр. Показываю их вам, как вы просили."
-    her ""
+    her "My panties, Sir. I'm showing them to you, as you asked."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:225
 translate english new_request_02_b5175bc4:
 
     # m "Вы прикидываетесь, мисс?"
-    m ""
+    m "What is this, Miss Granger?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:227
 translate english new_request_02_7522015b:
 
     # her "Сэр?"
-    her ""
+    her "Sir?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:228
 translate english new_request_02_7d832aac:
 
     # m "Я рассчитываю увидеть нижнее белье, которое {size=+4}НА ВАС!{/size}"
-    m ""
+    m "I expect to see the underwear, that is {size=+4}ON YOU{/size}."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:230
 translate english new_request_02_9361dd1a:
 
     # her "А-а! Так его нет, сэр. Я сегодня хожу без трусов."
-    her ""
+    her "Ah! I don't have it, Sir. Today I'm without panties."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:231
 translate english new_request_02_35d619b3:
 
     # m "Ну так и покажите мне это!"
-    m ""
+    m "So show me that!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:233
 translate english new_request_02_0a58a469:
 
     # her "При всем уважении, сэр, это получается почти стриптиз. А значит, стоит гораздо больше, чем пять очков!"
-    her ""
+    her "With all due respect, Sir, that's already stripping. So it costs more then 5 house points!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:235
 translate english new_request_02_bbe24f23:
 
     # her "Так, посчитаем..."
-    her ""
+    her "So, let's see..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:236
 translate english new_request_02_b42a392d:
 
     # her "Парни хотят увидеть киску девчонки гораздо больше, чем все остальное..."
-    her ""
+    her "Boys want to see the girl's pussy more then everything else..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:237
 translate english new_request_02_99d507e8:
 
     # her "Пусть киска - 2/3 от всего стриптиза..."
-    her ""
+    her "Let's suppose the pussy is 2/3 of everything else..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:239
 translate english new_request_02_6ae045bd:
 
     # her "2/3 от 35 очков это... 23 и 3 в периоде, сэр."
-    her ""
+    her "2/3 of 35 points is... 23,3 Sir."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:240
 translate english new_request_02_c5e4bb37:
 
     # her "Только из уважения к вам округляем в меньшую сторону."
-    her ""
+    her "Only out of respect I'll round it up for you in the opposite direction."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:242
 translate english new_request_02_4cf25f11:
 
     # her "Получается 20 очков! Вот, это будет справедливо."
-    her ""
+    her "The end result is 20 points. Now that's fair."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:245
 translate english new_request_02_d1be1e26:
 
     # m "Вы свободны, мисс Грейнджер!"
-    m ""
+    m "You are dismissed, Miss Granger!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:247
 translate english new_request_02_0cd95389:
 
     # her "Как скажете, сэр. В таком случае, я хотела бы получить свою оплату."
-    her ""
+    her "As you wish, Sir. In that case, I'd like to get paid."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:250
 translate english new_request_02_ffb48cde:
 
     # m "Ладно, я заплачу вам 20 очков. Показывайте!"
-    m ""
+    m "Alright, I'll pay you 20 points. Show it to me!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:252
 translate english new_request_02_c5b073e0:
 
     # her "25 очков, сэр."
-    her ""
+    her "25 house points, Sir."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:253
 translate english new_request_02_4087c66b:
 
     # g4 "?!"
-    g4 ""
+    g4 "?!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:254
 translate english new_request_02_477491b8:
 
     # her "20 за киску и 5 за трусики, которые я уже показала, сэр. Всего 25."
-    her ""
+    her "20 points for my pussy, 5 for my panties, that I already showed you, Sir. The total of 25 house points."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:255
 translate english new_request_02_474fdd10:
 
     # m "Мисс Грейнджер, вы торгуетесь, как на рынке, вы потеряли всякий стыд!"
-    m ""
+    m "Miss Granger, you are bargaining like on a market, don't you have any shame?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:257
 translate english new_request_02_65f1f571:
 
     # her "Не потеряла, сэр. Вы же видите, как я краснею."
-    her ""
+    her "I do, Sir. Don't you see that I'm blushing."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:258
 translate english new_request_02_2794d238:
 
     # m "Действительно... Кхм!"
-    m ""
+    m "Indeed... Khm!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:259
 translate english new_request_02_4da26b57:
 
     # m "Ну и чего вы ждете? За 25 очков я хочу увидеть что-то особенное."
-    m ""
+    m "What are you waiting for? For 25 house points, I want to see something special."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:300
 translate english new_request_02_fc5831d3:
 
     # her "Это достаточно особенное, сэр? Я как раз сегодня подбрилась."
-    her ""
+    her "Is this special enough, Sir? I just shaved it today."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:301
 translate english new_request_02_0dad313b:
 
     # m "Завораживающие подробности."
-    m ""
+    m "Fascinating details."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:305
 translate english new_request_02_abe06a0f:
 
     # m "Вы не слишком смущены, мисс Грейнджер."
-    m ""
+    m "Aren't you ashamed, Miss Granger?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:306
 translate english new_request_02_82fd2a37:
 
     # her "Ну, если мой директор хочет получше меня рассмотреть, должна ли я возражать?..."
-    her ""
+    her "If the Headmaster wants to get a better look, I don't mind..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:308
 translate english new_request_02_11881d9e:
 
     # her "Тем более, что Гиффиндор получит еще [current_payout] очков."
-    her ""
+    her "And Gryffindor will get more [current_payout] house points."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:311
 translate english new_request_02_6d2b3daf_2:
 
     # her ".............................."
-    her ""
+    her ".............................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:312
 translate english new_request_02_7cbd06cc_1:
 
     # her "...........................?"
-    her ""
+    her "...........................?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:314
 translate english new_request_02_2343473c_1:
 
     # her "................................"
-    her ""
+    her "................................"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:316
 translate english new_request_02_008b1dda:
 
     # her "Сэр, мне пора идти. У меня сейчас зельеварение, а профессор Снейп очень строг к опаздывающим..."
-    her ""
+    her "Sir, I need to go. I have the Potions class, and Professor Snape is very harsh with people who are late..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:317
 translate english new_request_02_8bbae9c6:
 
     # her "...если они из Гриффиндора."
-    her ""
+    her "...if they are from Gryffindor."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:318
 translate english new_request_02_bf47449e:
 
     # m "Хорошо, мисс Грейнджер."
-    m ""
+    m "Alright, Miss Granger."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:322
 translate english new_request_02_8557629c:
 
     # "> Гермиона нахально смотрит вам в глаза, и вы чувствуете, что начинаете возбуждаться."
-    ""
+    ">Hermione gives you an impudent look, you fell, that you are getting aroused."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:323
 translate english new_request_02_9063d0d9:
 
     # "> Девушка, как бы невзначай, облизывает губы."
-    ""
+    "> The girl as if unintentionally, licks her lips."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:324
 translate english new_request_02_a4e599f3:
 
     # her "Сэр, уже скоро уроки. Может, я вас по-быстрому подою и уйду заниматься?"
-    her ""
+    her "Sir, my classes are going to start soon. Maybe, I'll give you a quick milking and go?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:328
 translate english new_request_02_f5d91818:
 
     # m "Достаточно, мисс Грейнджер."
-    m ""
+    m "Enough, Miss Granger."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:331
 translate english new_request_02_27189d29:
 
     # g4 "Что ты сделаешь?!"
-    g4 ""
+    g4 "What are you going to do?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:332
 translate english new_request_02_5ff1d0c8:
 
     # her "Подою вас. Только не говорите, что не знаете, как девчонки называют {size=+4}ЭТО{/size}."
-    her ""
+    her "Milk you, Sir. Please, don't tell me that you don't know how girls call {size=+4}IT{/size}."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:333
 translate english new_request_02_16d2ce06:
 
     # m "Я знаю, как они называют. Но откуда это знаете {size=+4}ВЫ{/size}, мисс Грейнждер?!"
-    m ""
+    m "I know how they call it. But I'm more interested to know how do {size=+4}you{/size}know about this, Miss Granger?!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:334
 translate english new_request_02_3320c9ac:
 
     # m "Вы ведь не интересуетесь {size=+4}ТАКИМИ{/size} вещами?"
-    m ""
+    m "That you are not interested in {size=+4}that kind{/size} of things, aren't you?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:336
 translate english new_request_02_44252be0:
 
     # her "Ну, сэр, поскольку вы уже просили меня об этой услуге, мне пришлось подготовиться и провести небольшое исследование."
-    her ""
+    her "But, Sir, you already asked me once for this kind of favor, so I decided to be prepared and did some research."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:337
 translate english new_request_02_92a821ba:
 
     # m "Научное, разумеется?"
-    m ""
+    m "A scientific research, I presume?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:338
 translate english new_request_02_877ee221:
 
     # her "Разумеется, сэр. И теперь я знаю много подходящих выражений: играть в руку, дурака валять, трясти мошной..."
-    her ""
+    her "Of course, Sir. Now I know more then enough expressions: play the hand, drug the fool, shake the nuts..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:339
 translate english new_request_02_44829ac3:
 
     # m "Мисс Грейнджер, избавьте меня от ваших лингвистических упражнений."
-    m ""
+    m "Miss Granger, spare me from you linguistic activities."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:341
 translate english new_request_02_1d770280:
 
     # her "Конечно, сэр... "
-    her ""
+    her "Of course, Sir..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:343
 translate english new_request_02_49671b05:
 
     # her "Так мы будем сегодня драконить тузика или как?"
-    her ""
+    her "So are we going to tame the Dragon today, or what?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:347
 translate english new_request_02_e69637a5:
 
     # m "Мисс Грейнджер, подите прочь с этим вашим Тузиком!"
-    m ""
+    m "Miss Granger, get out and take your Dragon with!"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:348
 translate english new_request_02_a3c57113:
 
     # her "Не могу с тузиком, сэр, потому что..."
-    her ""
+    her "I can't take the Dragon, Sir, because it's..."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:349
 translate english new_request_02_dab65029:
 
     # m "Неважно, мисс Грейнджер, просто достаточно на сегодня."
-    m ""
+    m "It doesn't matter, Miss Granger, we are done for today."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:350
 translate english new_request_02_6d2b3daf_3:
 
     # her ".............................."
-    her ""
+    her ".............................."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:353
 translate english new_request_02_15ef3757:
 
     # m "Хорошо, мисс Грейнджер, приступайте. Надеюсь, ваши ручки так же искусны, как ваш язык."
-    m ""
+    m "Alright, Miss Granger, you can begin. I hope, your hands are as skilful, as your tongue."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:355
 translate english new_request_02_0668a1f4:
 
     # her "Да, сэр. Плюс 45 очков?"
-    her ""
+    her "Yes, Sir. 45 house points?"
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:356
 translate english new_request_02_461e3ab9:
 
     # m "Да, девочка, да. Плюс 45."
-    m ""
+    m "Yes, girl, yes. 45 points."
 
 # game/01_personal_requests/02_pr_lift_skirt.rpy:373
 translate english request_02_done_11acb6b8:
@@ -778,7 +778,7 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:136
     old "\"Вы не выглядите смущенной...\""
-    new ""
+    new "\"You don't look ashamed...\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:136
     old "\"Мне нравятся ваши трусики...\""
@@ -786,7 +786,7 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:136
     old "- Продолжать смотреть в ее глаза -"
-    new ""
+    new "-Keep looking in her eyes-"
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:176
     old "\"Ах ты, маленькая шлюха!\""
@@ -806,7 +806,7 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:243
     old "\"Хорошо, 20 очков. Показывайте!"
-    new ""
+    new "\"Alright, 20 points. Show it to me!"
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:302
     old "\"Вы не слишком смущаетесь, мисс...\""
@@ -818,17 +818,17 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:325
     old "\"Нет! Хватит на сегодня.\""
-    new ""
+    new "\"No! We are done for today.\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:325
     old "\"Что ты сделаешь?!...\""
-    new ""
+    new "\"What are you going to do?!...\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:344
     old "\"Нет!...\""
-    new ""
+    new "\"No!...\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:344
     old "Хорошо, мисс Грейнджер..."
-    new ""
+    new "Allrigh, Miss Granger..."
 

@@ -22,7 +22,7 @@ translate english giving_xxxsmallskirt_decbe83c:
 translate english giving_xxxsmallskirt_8181aede:
 
     # ">Вы дали супер-короткую школьную мини-юбку Гермионе..."
-    ">You give the school miniskirt to Hermione..."
+    ">You give the School Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:44
 translate english giving_xxxsmallskirt_8665009a:
@@ -2476,19 +2476,19 @@ translate english giving_nets_7998a875:
 translate english giving_tights_f8151627:
 
     # her "Колготки ?"
-    her ""
+    her "Fishnet stockings?"
 
 # game/28_gifts.rpy:2092
 translate english giving_tights_cf194032:
 
     # ">Вы даете Гермионе колготки..."
-    ""
+    ">You give the stockings to Hermione..."
 
 # game/28_gifts.rpy:2098
 translate english giving_tights_7998a875:
 
     # her "Спасибо, сэр."
-    her ""
+    her "Thank you, Sir."
 
 # game/28_gifts.rpy:2122
 translate english no_change_309bf66a:
@@ -2500,367 +2500,367 @@ translate english no_change_309bf66a:
 translate english upset_d8ae9af4:
 
     # ">Настроение Гермионы ухудшилось...\n>Гермиона {size=+5}злится{/size} на вас..."
-    ">The Hermione's mood improved...\n>Hermione is {size=+5}upset{/size} with you..."
+    ">Hermione's mood worsened...\n>Hermione is {size=+5}upset{/size} with you..."
 
 # game/28_gifts.rpy:2141
 translate english giving_shortskirt_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2146
 translate english giving_shortskirt_a0680f19:
 
     # ">Вы дали укороченную школьную юбку Гермионе..."
-    ""
+    ">You give the School Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:2152
 translate english giving_shortskirt_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2154
 translate english giving_shortskirt_52a22b5e:
 
     # her "Юбка?"
-    her ""
+    her "A skirt?"
 
 # game/28_gifts.rpy:2156
 translate english giving_shortskirt_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2157
 translate english giving_shortskirt_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2177
 translate english giving_xshortskirt_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2182
 translate english giving_xshortskirt_736b5db3:
 
     # ">Вы дали сильно укороченную школьную юбку Гермионе..."
-    ""
+    ">You give the Very Short Version of School Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:2188
 translate english giving_xshortskirt_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2190
 translate english giving_xshortskirt_52a22b5e:
 
     # her "Юбка?"
-    her ""
+    her "A skirt?"
 
 # game/28_gifts.rpy:2192
 translate english giving_xshortskirt_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2193
 translate english giving_xshortskirt_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2213
 translate english giving_xxshortskirt_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2218
 translate english giving_xxshortskirt_33de0456:
 
     # ">Вы дали короткую школьную юбку Гермионе..."
-    ""
+    ">You give the School Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:2224
 translate english giving_xxshortskirt_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2226
 translate english giving_xxshortskirt_52a22b5e:
 
     # her "Юбка?"
-    her ""
+    her "A skirt?"
 
 # game/28_gifts.rpy:2228
 translate english giving_xxshortskirt_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2229
 translate english giving_xxshortskirt_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2249
 translate english giving_xsmallskirt_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2254
 translate english giving_xsmallskirt_77095078:
 
     # ">Вы дали школьную мини-юбку Гермионе..."
-    ""
+    ">You give the School Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:2260
 translate english giving_xsmallskirt_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2262
 translate english giving_xsmallskirt_52a22b5e:
 
     # her "Юбка?"
-    her ""
+    her "A skirt?"
 
 # game/28_gifts.rpy:2264
 translate english giving_xsmallskirt_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2265
 translate english giving_xsmallskirt_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2285
 translate english giving_xxsmallskirt_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2290
 translate english giving_xxsmallskirt_03100d43:
 
     # ">Вы дали укороченную школьную мини-юбку Гермионе..."
-    ""
+    ">You give the Very Short Version of School Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:2296
 translate english giving_xxsmallskirt_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2298
 translate english giving_xxsmallskirt_52a22b5e:
 
     # her "Юбка?"
-    her ""
+    her "A skirt?"
 
 # game/28_gifts.rpy:2300
 translate english giving_xxsmallskirt_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2301
 translate english giving_xxsmallskirt_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2321
 translate english giving_skirt_cheerleader_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2326
 translate english giving_skirt_cheerleader_2137c624:
 
     # ">Вы дали юбку болельщицы Гриффиндора Гермионе..."
-    ""
+    ">You give the Gryffindor's Cheerleader Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:2332
 translate english giving_skirt_cheerleader_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2334
 translate english giving_skirt_cheerleader_52a22b5e:
 
     # her "Юбка?"
-    her ""
+    her "A skirt?"
 
 # game/28_gifts.rpy:2336
 translate english giving_skirt_cheerleader_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2337
 translate english giving_skirt_cheerleader_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2357
 translate english giving_skirt_business_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2362
 translate english giving_skirt_business_da3875e1:
 
     # ">Вы дали миниюбку бизнес-леди Гермионе..."
-    ""
+    ">You give the Business Lady Miniskirt to Hermione..."
 
 # game/28_gifts.rpy:2368
 translate english giving_skirt_business_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2370
 translate english giving_skirt_business_52a22b5e:
 
     # her "Юбка?"
-    her ""
+    her "A skirt?"
 
 # game/28_gifts.rpy:2372
 translate english giving_skirt_business_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2373
 translate english giving_skirt_business_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2393
 translate english giving_skimpyshirt_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2398
 translate english giving_skimpyshirt_b46a2882:
 
     # ">Вы дали школьную рубашку-минитопик Гермионе..."
-    ""
+    ">You give the School Crop Top to Hermione..."
 
 # game/28_gifts.rpy:2404
 translate english giving_skimpyshirt_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2406
 translate english giving_skimpyshirt_8ca35635:
 
     # her "Рубашка ? У нее какой-то странный размер."
-    her ""
+    her "A Crop Top? It's a strange size."
 
 # game/28_gifts.rpy:2408
 translate english giving_skimpyshirt_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2409
 translate english giving_skimpyshirt_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2428
 translate english giving_shirt_business_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2433
 translate english giving_shirt_business_8478bb63:
 
     # ">Вы дали белую рубашку в деловом стиле Гермионе..."
-    ""
+    ">You give the Business Lady Shirt to Hermione..."
 
 # game/28_gifts.rpy:2439
 translate english giving_shirt_business_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2441
 translate english giving_shirt_business_30c7bb50:
 
     # her "Рубашка ?"
-    her ""
+    her "A shirt?"
 
 # game/28_gifts.rpy:2443
 translate english giving_shirt_business_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2444
 translate english giving_shirt_business_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2463
 translate english giving_shirt_cheerleader_decbe83c:
 
     # m "Вот... Это тебе..."
-    m ""
+    m "Here... This is for you..."
 
 # game/28_gifts.rpy:2468
 translate english giving_shirt_cheerleader_f9159133:
 
     # ">Вы дали кофту болельщицы Гриффиндора Гермионе..."
-    ""
+    ">You give the Gryffindor's Cheerleader T Shirt to Hermione..."
 
 # game/28_gifts.rpy:2474
 translate english giving_shirt_cheerleader_8665009a:
 
     # her "Хм...? Что это?"
-    her ""
+    her "Hm...? What is this?"
 
 # game/28_gifts.rpy:2476
 translate english giving_shirt_cheerleader_9efe0144:
 
     # her "Кофта ?"
-    her ""
+    her "A T shirt?"
 
 # game/28_gifts.rpy:2478
 translate english giving_shirt_cheerleader_3895e281:
 
     # her "Спасибо, профессор."
-    her ""
+    her "Thank you, Professor."
 
 # game/28_gifts.rpy:2479
 translate english giving_shirt_cheerleader_be366356:
 
     # m "Не стоит благодарности."
-    m ""
+    m "Don't mention it."
 
 # game/28_gifts.rpy:2498
 translate english wrd_badge_01_first_dress_212f3a54:
@@ -2878,1483 +2878,1483 @@ translate english wrd_badge_01_first_dress_0ae9bcd0:
 translate english wrd_nets_first_dress_4fb6e6c7:
 
     # her "Ажурные чулки...?"
-    her ""
+    her "Fishnet stockings...?"
 
 # game/28_gifts.rpy:2511
 translate english wrd_nets_first_dress_161834d1:
 
     # her "Вы, должно быть, не серьезно, сэр!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:2512
 translate english wrd_nets_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2516
 translate english wrd_nets_first_dress_bf86880d:
 
     # her "С радостью..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:2521
 translate english wrd_nets_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:2522
 translate english wrd_nets_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:2524
 translate english wrd_nets_first_dress_7eb8c0ea:
 
     # her "Ну, хорошо..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:2531
 translate english wrd_nets_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2533
 translate english wrd_nets_first_dress_e0101b5e:
 
     # her "Я не из таких девушек, сэр..."
-    her ""
+    her "I am not that kind of girl, Sir..."
 
 # game/28_gifts.rpy:2534
 translate english wrd_nets_first_dress_430a7b68:
 
     # her "Попытайте удачу с одной из \"Слизеринских\" шлюх..."
-    her ""
+    her "You may have better luck with someone from \"Slytherin\"..."
 
 # game/28_gifts.rpy:2535
 translate english wrd_nets_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2539
 translate english wrd_nets_first_dress_49a2997b:
 
     # her "Сэр, это врядли соответствует форме студента Хогвартса."
-    her ""
+    her "Sir this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:2541
 translate english wrd_nets_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:2550
 translate english wrd_nets_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2552
 translate english wrd_nets_first_dress_24b32299:
 
     # her "Ну, раз так..."
-    her ""
+    her "Well, in that case..."
 
 # game/28_gifts.rpy:2554
 translate english wrd_nets_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:2557
 translate english wrd_nets_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:2563
 translate english wrd_nets_first_dress_4e1af4bd_1:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2565
 translate english wrd_nets_first_dress_8cc1fab0:
 
     # her "Ажурные чулки?"
-    her ""
+    her "Fishnet stockings?"
 
 # game/28_gifts.rpy:2567
 translate english wrd_nets_first_dress_c6775539:
 
     # her "Я не уверена насчет этого, сэр..."
-    her ""
+    her "I don't know about this, Sir..."
 
 # game/28_gifts.rpy:2568
 translate english wrd_nets_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2572
 translate english wrd_nets_first_dress_8b2df82f:
 
     # her "Ладно, Ладно..."
-    her ""
+    her "Alright, alright..."
 
 # game/28_gifts.rpy:2576
 translate english wrd_nets_first_dress_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2578
 translate english wrd_nets_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:2581
 translate english wrd_nets_first_dress_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/28_gifts.rpy:2589
 translate english wrd_nets_first_dress_2bc0dc22:
 
     # her "Если вы настаиваете, сэр..."
-    her ""
+    her "If you insist, Sir..."
 
 # game/28_gifts.rpy:2601
 translate english wrd_tights_first_dress_fa5cb0c1:
 
     # her "Колготки, сэр ?"
-    her ""
+    her "Stockings, Sir?"
 
 # game/28_gifts.rpy:2602
 translate english wrd_tights_first_dress_98815e65:
 
     # her "Это довольно неожиданно."
-    her ""
+    her "It's quite unexpected."
 
 # game/28_gifts.rpy:2604
 translate english wrd_tights_first_dress_05d038a4:
 
     # her "(Интересно, в чем тут подвох ?)"
-    her ""
+    her "(Interesting, what's the catch?)"
 
 # game/28_gifts.rpy:2606
 translate english wrd_tights_first_dress_d7fcc054:
 
     # her "Мне кажется, что они не относятся к обычной форме ученицы..."
-    her ""
+    her "I don't think they have anything to do with the ordinary school uniform..."
 
 # game/28_gifts.rpy:2607
 translate english wrd_tights_first_dress_f4e1f0d6:
 
     # her "С другой стороны, тут нет ничего плохого."
-    her ""
+    her "But, I don't see anything bad in this."
 
 # game/28_gifts.rpy:2618
 translate english wrd_shortskirt_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:2619
 translate english wrd_shortskirt_first_dress_c4ec459f:
 
     # her "Это короткая юбка?!"
-    her ""
+    her "A skirt this short?!"
 
 # game/28_gifts.rpy:2621
 translate english wrd_shortskirt_first_dress_4cb9de81:
 
     # her "...Она едва прикрывает мои прелести."
-    her ""
+    her "...It barely covers anything, Sir."
 
 # game/28_gifts.rpy:2622
 translate english wrd_shortskirt_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2626
 translate english wrd_shortskirt_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:2633
 translate english wrd_shortskirt_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:2634
 translate english wrd_shortskirt_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:2636
 translate english wrd_shortskirt_first_dress_a3ff6b1b:
 
     # her "Ну, ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:2645
 translate english wrd_shortskirt_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2647
 translate english wrd_shortskirt_first_dress_9da90daa:
 
     # her "Но она очень короткая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:2648
 translate english wrd_shortskirt_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2652
 translate english wrd_shortskirt_first_dress_d91fb921:
 
     # her "Сэр, врядли это соответствует форме учеников Хогвартса."
-    her ""
+    her "Sir this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:2654
 translate english wrd_shortskirt_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:2663
 translate english wrd_shortskirt_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2665
 translate english wrd_shortskirt_first_dress_34a7918f:
 
     # her "Ну, в таком случае..."
-    her ""
+    her "Well, in that case..."
 
 # game/28_gifts.rpy:2667
 translate english wrd_shortskirt_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:2670
 translate english wrd_shortskirt_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:2676
 translate english wrd_shortskirt_first_dress_4e1af4bd_1:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2678
 translate english wrd_shortskirt_first_dress_9da90daa_1:
 
     # her "Но она очень короткая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:2679
 translate english wrd_shortskirt_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2683
 translate english wrd_shortskirt_first_dress_75dd550d:
 
     # her "Ладно, ладно..."
-    her ""
+    her "Alright, alright..."
 
 # game/28_gifts.rpy:2687
 translate english wrd_shortskirt_first_dress_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2689
 translate english wrd_shortskirt_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:2692
 translate english wrd_shortskirt_first_dress_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/28_gifts.rpy:2699
 translate english wrd_shortskirt_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:2711
 translate english wrd_xshortskirt_first_dress_09128c71:
 
     # her "Вы издеваетесь, сэр?!"
-    her ""
+    her "Are you kidding me, Sir?!"
 
 # game/28_gifts.rpy:2712
 translate english wrd_xshortskirt_first_dress_2ad9ce7d:
 
     # her "Я не стану показываться на людях в таком виде!"
-    her ""
+    her "I won't wear this in public."
 
 # game/28_gifts.rpy:2713
 translate english wrd_xshortskirt_first_dress_cd1e35ae:
 
     # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
-    m ""
+    m "(I think I'd have a better luck with a longer skirt.)"
 
 # game/28_gifts.rpy:2714
 translate english wrd_xshortskirt_first_dress_90bb0d57:
 
     # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
-    m ""
+    m "Before you get angry, I want you to consider, that it was just a joke."
 
 # game/28_gifts.rpy:2716
 translate english wrd_xshortskirt_first_dress_2ebc120b:
 
     # her "Лучше бы это и вправду была шутка, профессор!"
-    her ""
+    her "It better be a joke, Professor!"
 
 # game/28_gifts.rpy:2723
 translate english wrd_xshortskirt_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:2724
 translate english wrd_xshortskirt_first_dress_280ac50b:
 
     # her "Эта юбка еще короче прежней?!"
-    her ""
+    her "A skirt this short?!"
 
 # game/28_gifts.rpy:2726
 translate english wrd_xshortskirt_first_dress_4cb9de81:
 
     # her "...Она едва прикрывает мои прелести."
-    her ""
+    her "...It barely covers anything, Sir."
 
 # game/28_gifts.rpy:2727
 translate english wrd_xshortskirt_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2731
 translate english wrd_xshortskirt_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:2738
 translate english wrd_xshortskirt_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:2739
 translate english wrd_xshortskirt_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:2741
 translate english wrd_xshortskirt_first_dress_a3ff6b1b:
 
     # her "Ну, ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:2750
 translate english wrd_xshortskirt_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2752
 translate english wrd_xshortskirt_first_dress_2b2a0ac6:
 
     # her "Но она еще короче..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:2753
 translate english wrd_xshortskirt_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2757
 translate english wrd_xshortskirt_first_dress_d91fb921:
 
     # her "Сэр, врядли это соответствует форме учеников Хогвартса."
-    her ""
+    her "Sir this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:2759
 translate english wrd_xshortskirt_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:2768
 translate english wrd_xshortskirt_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2770
 translate english wrd_xshortskirt_first_dress_34a7918f:
 
     # her "Ну, в таком случае..."
-    her ""
+    her "Well, in this case..."
 
 # game/28_gifts.rpy:2772
 translate english wrd_xshortskirt_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:2775
 translate english wrd_xshortskirt_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:2781
 translate english wrd_xshortskirt_first_dress_4e1af4bd_1:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2783
 translate english wrd_xshortskirt_first_dress_9da90daa:
 
     # her "Но она очень короткая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:2784
 translate english wrd_xshortskirt_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2788
 translate english wrd_xshortskirt_first_dress_75dd550d:
 
     # her "Ладно, ладно..."
-    her ""
+    her "Alright, alright..."
 
 # game/28_gifts.rpy:2792
 translate english wrd_xshortskirt_first_dress_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2794
 translate english wrd_xshortskirt_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:2797
 translate english wrd_xshortskirt_first_dress_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/28_gifts.rpy:2804
 translate english wrd_xshortskirt_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:2817
 translate english wrd_xxshortskirt_first_dress_09128c71:
 
     # her "Вы издеваетесь, сэр?!"
-    her ""
+    her "Are you kidding me, Sir?!"
 
 # game/28_gifts.rpy:2818
 translate english wrd_xxshortskirt_first_dress_2ad9ce7d:
 
     # her "Я не стану показываться на людях в таком виде!"
-    her ""
+    her "I won't wear this in public."
 
 # game/28_gifts.rpy:2819
 translate english wrd_xxshortskirt_first_dress_cd1e35ae:
 
     # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
-    m ""
+    m "(I think I'd have a better luck with a longer skirt.)"
 
 # game/28_gifts.rpy:2820
 translate english wrd_xxshortskirt_first_dress_90bb0d57:
 
     # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
-    m ""
+    m "Before you get angry, I just want to say that it was a joke."
 
 # game/28_gifts.rpy:2822
 translate english wrd_xxshortskirt_first_dress_2ebc120b:
 
     # her "Лучше бы это и вправду была шутка, профессор!"
-    her ""
+    her "Better this be a real joke, Professor!"
 
 # game/28_gifts.rpy:2829
 translate english wrd_xxshortskirt_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:2830
 translate english wrd_xxshortskirt_first_dress_280ac50b:
 
     # her "Эта юбка еще короче прежней?!"
-    her ""
+    her "A skirt this short?!"
 
 # game/28_gifts.rpy:2832
 translate english wrd_xxshortskirt_first_dress_4cb9de81:
 
     # her "...Она едва прикрывает мои прелести."
-    her ""
+    her "...It barely covers anything, Sir."
 
 # game/28_gifts.rpy:2833
 translate english wrd_xxshortskirt_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2837
 translate english wrd_xxshortskirt_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:2844
 translate english wrd_xxshortskirt_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:2845
 translate english wrd_xxshortskirt_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:2847
 translate english wrd_xxshortskirt_first_dress_a3ff6b1b:
 
     # her "Ну, ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:2856
 translate english wrd_xxshortskirt_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2858
 translate english wrd_xxshortskirt_first_dress_2b2a0ac6:
 
     # her "Но она еще короче..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:2859
 translate english wrd_xxshortskirt_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2863
 translate english wrd_xxshortskirt_first_dress_d91fb921:
 
     # her "Сэр, врядли это соответствует форме учеников Хогвартса."
-    her ""
+    her "Sir this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:2865
 translate english wrd_xxshortskirt_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:2874
 translate english wrd_xxshortskirt_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2876
 translate english wrd_xxshortskirt_first_dress_34a7918f:
 
     # her "Ну, в таком случае..."
-    her ""
+    her "Well, in this case..."
 
 # game/28_gifts.rpy:2878
 translate english wrd_xxshortskirt_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:2881
 translate english wrd_xxshortskirt_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:2887
 translate english wrd_xxshortskirt_first_dress_4e1af4bd_1:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:2889
 translate english wrd_xxshortskirt_first_dress_9da90daa:
 
     # her "Но она очень короткая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:2890
 translate english wrd_xxshortskirt_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2894
 translate english wrd_xxshortskirt_first_dress_75dd550d:
 
     # her "Ладно, ладно..."
-    her ""
+    her "Alright, alright..."
 
 # game/28_gifts.rpy:2898
 translate english wrd_xxshortskirt_first_dress_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:2900
 translate english wrd_xxshortskirt_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:2903
 translate english wrd_xxshortskirt_first_dress_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/28_gifts.rpy:2910
 translate english wrd_xxshortskirt_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:2924
 translate english wrd_xsmallskirt_first_dress_09128c71:
 
     # her "Вы издеваетесь, сэр?!"
-    her ""
+    her "Are you kidding me, Sir?!"
 
 # game/28_gifts.rpy:2925
 translate english wrd_xsmallskirt_first_dress_2ad9ce7d:
 
     # her "Я не стану показываться на людях в таком виде!"
-    her ""
+    her "I won't wear this in public."
 
 # game/28_gifts.rpy:2926
 translate english wrd_xsmallskirt_first_dress_cd1e35ae:
 
     # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
-    m ""
+    m "(I think I'd have a better luck with a longer skirt.)"
 
 # game/28_gifts.rpy:2927
 translate english wrd_xsmallskirt_first_dress_90bb0d57:
 
     # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
-    m ""
+    m "Before you get angry, I just want to say that it was a joke."
 
 # game/28_gifts.rpy:2929
 translate english wrd_xsmallskirt_first_dress_2ebc120b:
 
     # her "Лучше бы это и вправду была шутка, профессор!"
-    her ""
+    her "Better this be a real joke, Professor!"
 
 # game/28_gifts.rpy:2937
 translate english wrd_xsmallskirt_first_dress_e7097a6d:
 
     # her "Сэр, как вы можете просить меня ходить по школе в этой жалкой тряпочке ?!"
-    her ""
+    her "Sir, how can you possibly ask me to show myself in this pathetic rag at school."
 
 # game/28_gifts.rpy:2938
 translate english wrd_xsmallskirt_first_dress_4463260c:
 
     # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
-    her ""
+    her "Maybe next time, I should go to class naked?!"
 
 # game/28_gifts.rpy:2939
 translate english wrd_xsmallskirt_first_dress_60fab287:
 
     # m "(Мне нравится ход ее мыслей.)"
-    m ""
+    m "(I like the course of her thoughts.)"
 
 # game/28_gifts.rpy:2941
 translate english wrd_xsmallskirt_first_dress_4cb9de81:
 
     # her "...Она едва прикрывает мои прелести."
-    her ""
+    her "...It barely covers anything, Sir."
 
 # game/28_gifts.rpy:2942
 translate english wrd_xsmallskirt_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2946
 translate english wrd_xsmallskirt_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:2955
 translate english wrd_xsmallskirt_first_dress_c8526f36:
 
     # her "{size=+3}Засуньте себе свои очки в ...{/size}"
-    her ""
+    her "{size=+3}Shove your points up in your...{/size}"
 
 # game/28_gifts.rpy:2957
 translate english wrd_xsmallskirt_first_dress_01c078e2:
 
     # her "Простите, сэр."
-    her ""
+    her "I'm sorry, Sir."
 
 # game/28_gifts.rpy:2958
 translate english wrd_xsmallskirt_first_dress_757d845f:
 
     # her "Я хочу сказать, что отказываюсь !"
-    her ""
+    her "I mean, I refuse!"
 
 # game/28_gifts.rpy:2966
 translate english wrd_xsmallskirt_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:2967
 translate english wrd_xsmallskirt_first_dress_522aa50f:
 
     # her "Эта мини-юбка совсем коротенькая!"
-    her ""
+    her "A skirt this short?!"
 
 # game/28_gifts.rpy:2969
 translate english wrd_xsmallskirt_first_dress_d6ea1606:
 
     # her "Из под нее всем будут видны мои трусики !"
-    her ""
+    her "...Everyone will be able to see my panties, Sir!"
 
 # game/28_gifts.rpy:2970
 translate english wrd_xsmallskirt_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:2974
 translate english wrd_xsmallskirt_first_dress_eebdf957_1:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:2980
 translate english wrd_xsmallskirt_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:2981
 translate english wrd_xsmallskirt_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:2982
 translate english wrd_xsmallskirt_first_dress_5eb1bcfa:
 
     # her "Этого мало, сэр !"
-    her ""
+    her "That's not enough, Sir!"
 
 # game/28_gifts.rpy:2987
 translate english wrd_xsmallskirt_first_dress_eebdf957_2:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:2994
 translate english wrd_xsmallskirt_first_dress_331265d4:
 
     # her "Ох... ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:2995
 translate english wrd_xsmallskirt_first_dress_97b46dae:
 
     # her "Чувствую, что я еще пожалею об этом..."
-    her ""
+    her "I have a feeling, that I'll regret about this..."
 
 # game/28_gifts.rpy:2996
 translate english wrd_xsmallskirt_first_dress_d0a8b112:
 
     # her "(Нужно будет поменьше наклоняться.)"
-    her ""
+    her "(Will need to bend less)"
 
 # game/28_gifts.rpy:3006
 translate english wrd_xsmallskirt_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3008
 translate english wrd_xsmallskirt_first_dress_bbe6bb90:
 
     # her "Но она совсем коротенькая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:3009
 translate english wrd_xsmallskirt_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3013
 translate english wrd_xsmallskirt_first_dress_d91fb921:
 
     # her "Сэр, врядли это соответствует форме учеников Хогвартса."
-    her ""
+    her "Sir this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3015
 translate english wrd_xsmallskirt_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:3024
 translate english wrd_xsmallskirt_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3026
 translate english wrd_xsmallskirt_first_dress_34a7918f:
 
     # her "Ну, в таком случае..."
-    her ""
+    her "Well, in this case..."
 
 # game/28_gifts.rpy:3028
 translate english wrd_xsmallskirt_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:3031
 translate english wrd_xsmallskirt_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:3037
 translate english wrd_xsmallskirt_first_dress_4e1af4bd_1:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3039
 translate english wrd_xsmallskirt_first_dress_bbe6bb90_1:
 
     # her "Но она совсем коротенькая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:3040
 translate english wrd_xsmallskirt_first_dress_9e56b4f0_3:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3044
 translate english wrd_xsmallskirt_first_dress_75dd550d:
 
     # her "Ладно, ладно..."
-    her ""
+    her "Alright, alright..."
 
 # game/28_gifts.rpy:3048
 translate english wrd_xsmallskirt_first_dress_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3050
 translate english wrd_xsmallskirt_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:3053
 translate english wrd_xsmallskirt_first_dress_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/28_gifts.rpy:3060
 translate english wrd_xsmallskirt_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3073
 translate english wrd_xxsmallskirt_first_dress_09128c71:
 
     # her "Вы издеваетесь, сэр?!"
-    her ""
+    her "Are you kidding me, Sir?!"
 
 # game/28_gifts.rpy:3074
 translate english wrd_xxsmallskirt_first_dress_da662501:
 
     # her "Да это и юбкой-то назвать нельзя!"
-    her ""
+    her "Do you call this a skirt?"
 
 # game/28_gifts.rpy:3075
 translate english wrd_xxsmallskirt_first_dress_2ad9ce7d:
 
     # her "Я не стану показываться на людях в таком виде!"
-    her ""
+    her "I won't wear this in public."
 
 # game/28_gifts.rpy:3076
 translate english wrd_xxsmallskirt_first_dress_cd1e35ae:
 
     # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
-    m ""
+    m "(I think I'd have a better luck with a longer skirt.)"
 
 # game/28_gifts.rpy:3077
 translate english wrd_xxsmallskirt_first_dress_90bb0d57:
 
     # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
-    m ""
+    m "Before you get angry, I just want to say that it was a joke."
 
 # game/28_gifts.rpy:3079
 translate english wrd_xxsmallskirt_first_dress_2ebc120b:
 
     # her "Лучше бы это и вправду была шутка, профессор!"
-    her ""
+    her "Better this be a real joke, Professor!"
 
 # game/28_gifts.rpy:3087
 translate english wrd_xxsmallskirt_first_dress_e7097a6d:
 
     # her "Сэр, как вы можете просить меня ходить по школе в этой жалкой тряпочке ?!"
-    her ""
+    her "Sir, how can you possibly ask me to show myself in this pathetic rag at school."
 
 # game/28_gifts.rpy:3088
 translate english wrd_xxsmallskirt_first_dress_4463260c:
 
     # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
-    her ""
+    her "Maybe next time, I should go to class naked?!"
 
 # game/28_gifts.rpy:3089
 translate english wrd_xxsmallskirt_first_dress_60fab287:
 
     # m "(Мне нравится ход ее мыслей.)"
-    m ""
+    m "(I like the course of her thoughts.)"
 
 # game/28_gifts.rpy:3091
 translate english wrd_xxsmallskirt_first_dress_157be84b:
 
     # her "Это абсолютно неприемлимо !"
-    her ""
+    her "It's completely inappropriate!"
 
 # game/28_gifts.rpy:3098
 translate english wrd_xxsmallskirt_first_dress_e7097a6d_1:
 
     # her "Сэр, как вы можете просить меня ходить по школе в этой жалкой тряпочке ?!"
-    her ""
+    her "Sir, how can you ask me to show myself in this pathetic rag at school."
 
 # game/28_gifts.rpy:3099
 translate english wrd_xxsmallskirt_first_dress_4463260c_1:
 
     # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
-    her ""
+    her "Maybe next time, I should go to class naked?!"
 
 # game/28_gifts.rpy:3100
 translate english wrd_xxsmallskirt_first_dress_60fab287_1:
 
     # m "(Мне нравится ход ее мыслей.)"
-    m ""
+    m "(I like the course of her thoughts.)"
 
 # game/28_gifts.rpy:3102
 translate english wrd_xxsmallskirt_first_dress_053f71ea:
 
     # her "Это исключено !"
-    her ""
+    her "It's out of the question!"
 
 # game/28_gifts.rpy:3103
 translate english wrd_xxsmallskirt_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3107
 translate english wrd_xxsmallskirt_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly...."
 
 # game/28_gifts.rpy:3114
 translate english wrd_xxsmallskirt_first_dress_c8526f36:
 
     # her "{size=+3}Засуньте себе свои очки в ...{/size}"
-    her ""
+    her "{size=+3}Shove your points up in your...{/size}"
 
 # game/28_gifts.rpy:3116
 translate english wrd_xxsmallskirt_first_dress_01c078e2:
 
     # her "Простите, сэр."
-    her ""
+    her "I'm sorry, Sir."
 
 # game/28_gifts.rpy:3117
 translate english wrd_xxsmallskirt_first_dress_9c9eeb17:
 
     # her "Я хочу сказать, что категорически отказываюсь !"
-    her ""
+    her "I mean, I refuse!"
 
 # game/28_gifts.rpy:3125
 translate english wrd_xxsmallskirt_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:3126
 translate english wrd_xxsmallskirt_first_dress_c4205a9a:
 
     # her "Эта мини-юбка совсем крошечная!"
-    her ""
+    her "This miniskirt is so tiny?!"
 
 # game/28_gifts.rpy:3128
 translate english wrd_xxsmallskirt_first_dress_0ee482c6:
 
     # her "Из под нее мои трусики будут видны из другого конца коридора!"
-    her ""
+    her "Everyone will be able to see my panties from another end of the hall, Sir!"
 
 # game/28_gifts.rpy:3129
 translate english wrd_xxsmallskirt_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3133
 translate english wrd_xxsmallskirt_first_dress_eebdf957_1:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3139
 translate english wrd_xxsmallskirt_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:3140
 translate english wrd_xxsmallskirt_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:3141
 translate english wrd_xxsmallskirt_first_dress_5eb1bcfa:
 
     # her "Этого мало, сэр !"
-    her ""
+    her "That's not enough, Sir!"
 
 # game/28_gifts.rpy:3146
 translate english wrd_xxsmallskirt_first_dress_eebdf957_2:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3153
 translate english wrd_xxsmallskirt_first_dress_331265d4:
 
     # her "Ох... ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:3154
 translate english wrd_xxsmallskirt_first_dress_9ef5e186:
 
     # her "Уверена, что я еще пожалею об этом..."
-    her ""
+    her "I have a feeling, that I'll regret about this..."
 
 # game/28_gifts.rpy:3155
 translate english wrd_xxsmallskirt_first_dress_a0a02420:
 
     # her "(Ох... Что же я делаю...)"
-    her ""
+    her "(Oh... What I'm doing...)"
 
 # game/28_gifts.rpy:3165
 translate english wrd_xxsmallskirt_first_dress_b15cd32d:
 
     # her "Как... ?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3167
 translate english wrd_xxsmallskirt_first_dress_71bc45b3:
 
     # her "Но она короткая-прекороткая..."
-    her ""
+    her "But it's so short, very short..."
 
 # game/28_gifts.rpy:3168
 translate english wrd_xxsmallskirt_first_dress_41f21e24:
 
     # her "Я хочу сказать, у всего же должен быть предел !"
-    her ""
+    her "I mean, everything has a limit!"
 
 # game/28_gifts.rpy:3169
 translate english wrd_xxsmallskirt_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3173
 translate english wrd_xxsmallskirt_first_dress_c138427b:
 
     # her "Сэр, это однозначно не соответствует форме учеников Хогвартса."
-    her ""
+    her "Sir, this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3175
 translate english wrd_xxsmallskirt_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:3184
 translate english wrd_xxsmallskirt_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3186
 translate english wrd_xxsmallskirt_first_dress_34a7918f:
 
     # her "Ну, в таком случае..."
-    her ""
+    her "Well, in this case..."
 
 # game/28_gifts.rpy:3188
 translate english wrd_xxsmallskirt_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:3191
 translate english wrd_xxsmallskirt_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:3197
 translate english wrd_xxsmallskirt_first_dress_d9e2707b:
 
     # her "Но она же..."
-    her ""
+    her "But, it's..."
 
 # game/28_gifts.rpy:3199
 translate english wrd_xxsmallskirt_first_dress_1c5eb92f:
 
     # her "Но она совсем, совсем коротенькая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:3200
 translate english wrd_xxsmallskirt_first_dress_9e56b4f0_3:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3204
 translate english wrd_xxsmallskirt_first_dress_87ec771c:
 
     # her "Как скажете, сэр"
-    her ""
+    her "As you wish, Sit."
 
 # game/28_gifts.rpy:3208
 translate english wrd_xxsmallskirt_first_dress_50d7b6bd:
 
     # her "Ох-хо-хо"
-    her ""
+    her "Oh-ho-ho."
 
 # game/28_gifts.rpy:3210
 translate english wrd_xxsmallskirt_first_dress_f2789bb7:
 
     # her "Да, сэр."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3213
 translate english wrd_xxsmallskirt_first_dress_bd068102:
 
     # her "Да, сэр"
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3226
 translate english wrd_xxxsmallskirt_first_dress_09128c71:
 
     # her "Вы издеваетесь, сэр?!"
-    her ""
+    her "Are you kidding me, Sir?!"
 
 # game/28_gifts.rpy:3227
 translate english wrd_xxxsmallskirt_first_dress_da662501:
 
     # her "Да это и юбкой-то назвать нельзя!"
-    her ""
+    her "Do you call this a skirt?"
 
 # game/28_gifts.rpy:3228
 translate english wrd_xxxsmallskirt_first_dress_2ad9ce7d:
 
     # her "Я не стану показываться на людях в таком виде!"
-    her ""
+    her "I won't wear this in public."
 
 # game/28_gifts.rpy:3229
 translate english wrd_xxxsmallskirt_first_dress_cd1e35ae:
 
     # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
-    m ""
+    m "(I think I'd have a better luck with a longer skirt.)"
 
 # game/28_gifts.rpy:3230
 translate english wrd_xxxsmallskirt_first_dress_90bb0d57:
 
     # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
-    m ""
+    m "Before you get angry, I just want to say that it was a joke."
 
 # game/28_gifts.rpy:3232
 translate english wrd_xxxsmallskirt_first_dress_2ebc120b:
 
     # her "Лучше бы это и вправду была шутка, профессор!"
-    her ""
+    her "Better this be a real joke, Professor!"
 
 # game/28_gifts.rpy:3239
 translate english wrd_xxxsmallskirt_first_dress_6601748a:
 
     # her "Сэр, как вы можете просить меня ходить по школе в этом клочке материи ?!"
-    her ""
+    her "Sir, you can't possibly be serious asking me to show myself in this pathetic rag at school."
 
 # game/28_gifts.rpy:3240
 translate english wrd_xxxsmallskirt_first_dress_4463260c:
 
     # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
-    her ""
+    her "Maybe next time, I should go to class naked?!"
 
 # game/28_gifts.rpy:3241
 translate english wrd_xxxsmallskirt_first_dress_60fab287:
 
     # m "(Мне нравится ход ее мыслей.)"
-    m ""
+    m "(I like the course of her thoughts.)"
 
 # game/28_gifts.rpy:3243
 translate english wrd_xxxsmallskirt_first_dress_3a0d8b83:
 
     # her "Да им даже с доски не сотрешь !"
-    her ""
+    her "It's not even enough to wipe the blackboard with it."
 
 # game/28_gifts.rpy:3244
 translate english wrd_xxxsmallskirt_first_dress_b4ba3edc:
 
     # her "Нет, это невозможно !"
-    her ""
+    her "No, it's impossible!"
 
 # game/28_gifts.rpy:3251
 translate english wrd_xxxsmallskirt_first_dress_6601748a_1:
 
     # her "Сэр, как вы можете просить меня ходить по школе в этом клочке материи ?!"
-    her ""
+    her "Sir, how can you ask me to show myself in this pathetic rag at school."
 
 # game/28_gifts.rpy:3252
 translate english wrd_xxxsmallskirt_first_dress_4463260c_1:
 
     # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
-    her ""
+    her "Maybe next time, I should go to class naked?!"
 
 # game/28_gifts.rpy:3253
 translate english wrd_xxxsmallskirt_first_dress_60fab287_1:
 
     # m "(Мне нравится ход ее мыслей.)"
-    m ""
+    m "(I like the course of her thoughts.)"
 
 # game/28_gifts.rpy:3255
 translate english wrd_xxxsmallskirt_first_dress_053f71ea:
 
     # her "Это исключено !"
-    her ""
+    her "It's out of the question!"
 
 # game/28_gifts.rpy:3256
 translate english wrd_xxxsmallskirt_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3260
 translate english wrd_xxxsmallskirt_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly...."
 
 # game/28_gifts.rpy:3269
 translate english wrd_xxxsmallskirt_first_dress_c8526f36:
 
     # her "{size=+3}Засуньте себе свои очки в ...{/size}"
-    her ""
+    her "{size=+3}Shove your points up in your...{/size}"
 
 # game/28_gifts.rpy:3271
 translate english wrd_xxxsmallskirt_first_dress_01c078e2:
 
     # her "Простите, сэр."
-    her ""
+    her "I'm sorry, Sir."
 
 # game/28_gifts.rpy:3272
 translate english wrd_xxxsmallskirt_first_dress_9c9eeb17:
 
     # her "Я хочу сказать, что категорически отказываюсь !"
-    her ""
+    her "I mean, I refuse!"
 
 # game/28_gifts.rpy:3280
 translate english wrd_xxxsmallskirt_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:3281
 translate english wrd_xxxsmallskirt_first_dress_f4fd0b07:
 
     # her "Эта юбка микроскопическая!"
-    her ""
+    her "This miniskirt is minuscule!"
 
 # game/28_gifts.rpy:3283
 translate english wrd_xxxsmallskirt_first_dress_9a27565d:
 
     # her "Из под нее мои трусики будут видны из другого здания!"
-    her ""
+    her "Everyone will be able to see my panties from another building, Sir!"
 
 # game/28_gifts.rpy:3284
 translate english wrd_xxxsmallskirt_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3288
 translate english wrd_xxxsmallskirt_first_dress_eebdf957_1:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3294
 translate english wrd_xxxsmallskirt_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:3295
 translate english wrd_xxxsmallskirt_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:3296
 translate english wrd_xxxsmallskirt_first_dress_5eb1bcfa:
 
     # her "Этого мало, сэр !"
-    her ""
+    her "That's not enough, Sir!"
 
 # game/28_gifts.rpy:3301
 translate english wrd_xxxsmallskirt_first_dress_eebdf957_2:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3308
 translate english wrd_xxxsmallskirt_first_dress_331265d4:
 
     # her "Ох... ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:3309
 translate english wrd_xxxsmallskirt_first_dress_9ef5e186:
 
     # her "Уверена, что я еще пожалею об этом..."
-    her ""
+    her "I have a feeling, that I'll regret about this..."
 
 # game/28_gifts.rpy:3310
 translate english wrd_xxxsmallskirt_first_dress_db80da42:
 
     # her "(Не могу поверить, что я на это иду...)"
-    her ""
+    her "(I can believe, that I agreed to do it...)"
 
 # game/28_gifts.rpy:3320
 translate english wrd_xxxsmallskirt_first_dress_b15cd32d:
 
     # her "Как... ?"
-    her ""
+    her "How...?"
 
 # game/28_gifts.rpy:3322
 translate english wrd_xxxsmallskirt_first_dress_64d6beb7:
 
     # her "Но она микроскопическая"
-    her ""
+    her "It's minuscule!"
 
 # game/28_gifts.rpy:3323
 translate english wrd_xxxsmallskirt_first_dress_41f21e24:
 
     # her "Я хочу сказать, у всего же должен быть предел !"
-    her ""
+    her "I mean, everything has a limit!"
 
 # game/28_gifts.rpy:3324
 translate english wrd_xxxsmallskirt_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3328
 translate english wrd_xxxsmallskirt_first_dress_e1ca6602:
 
     # her "Сэр, это немыслимо для Хогвартса!"
-    her ""
+    her "Sir, very appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3330
 translate english wrd_xxxsmallskirt_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:3338
 translate english wrd_xxxsmallskirt_first_dress_d7ddee45:
 
     # her "Мммммм"
-    her ""
+    her "Mmmmmm."
 
 # game/28_gifts.rpy:3340
 translate english wrd_xxxsmallskirt_first_dress_97291d66:
 
     # her "Мне трудно решиться..."
-    her ""
+    her "I have a hard time to decide..."
 
 # game/28_gifts.rpy:3344
 translate english wrd_xxxsmallskirt_first_dress_eebdf957_3:
@@ -4366,967 +4366,967 @@ translate english wrd_xxxsmallskirt_first_dress_eebdf957_3:
 translate english wrd_xxxsmallskirt_first_dress_331265d4_1:
 
     # her "Ох... ладно..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3352
 translate english wrd_xxxsmallskirt_first_dress_f8156e15:
 
     # her "Постараюсь смириться."
-    her ""
+    her "I'll try to reconcile with myself."
 
 # game/28_gifts.rpy:3353
 translate english wrd_xxxsmallskirt_first_dress_db80da42_1:
 
     # her "(Не могу поверить, что я на это иду...)"
-    her ""
+    her "(I cannot believe, that I'm actually doing it...)"
 
 # game/28_gifts.rpy:3358
 translate english wrd_xxxsmallskirt_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:3370
 translate english wrd_skirt_cheerleader_first_dress_7f2b4206:
 
     # her "Сэр, я не болельщица, не люблю болельщиц и не вижу смысла одеваться как одна из них !"
-    her ""
+    her "Sir, I am not a cheerleader, I don't like cheerleaders and I don't see the point to dress like one of them!"
 
 # game/28_gifts.rpy:3371
 translate english wrd_skirt_cheerleader_first_dress_d8c6da42:
 
     # her "Поэтому мой окончательный ответ - нет."
-    her ""
+    her "So, my definitive answer is - NO."
 
 # game/28_gifts.rpy:3372
 translate english wrd_skirt_cheerleader_first_dress_03897214:
 
     # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
-    m ""
+    m "(I think she needs more training to be more open to the idea.)"
 
 # game/28_gifts.rpy:3373
 translate english wrd_skirt_cheerleader_first_dress_1049d57d:
 
     # m "Хорошо, не буду настаивать."
-    m ""
+    m "Alright, I won't insist."
 
 # game/28_gifts.rpy:3380
 translate english wrd_skirt_cheerleader_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:3381
 translate english wrd_skirt_cheerleader_first_dress_3af0f8b2:
 
     # her "Эта юбка слишком короткая?!"
-    her ""
+    her "A skirt this short?!"
 
 # game/28_gifts.rpy:3383
 translate english wrd_skirt_cheerleader_first_dress_4cb9de81:
 
     # her "...Она едва прикрывает мои прелести."
-    her ""
+    her "...It barely covers anything, Sir."
 
 # game/28_gifts.rpy:3384
 translate english wrd_skirt_cheerleader_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3388
 translate english wrd_skirt_cheerleader_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3395
 translate english wrd_skirt_cheerleader_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:3396
 translate english wrd_skirt_cheerleader_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:3398
 translate english wrd_skirt_cheerleader_first_dress_a3ff6b1b:
 
     # her "Ну, ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:3407
 translate english wrd_skirt_cheerleader_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3409
 translate english wrd_skirt_cheerleader_first_dress_e4d38255:
 
     # her "Но она слишком короткая !"
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:3410
 translate english wrd_skirt_cheerleader_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3414
 translate english wrd_skirt_cheerleader_first_dress_d91fb921:
 
     # her "Сэр, врядли это соответствует форме учеников Хогвартса."
-    her ""
+    her "Sir, this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3416
 translate english wrd_skirt_cheerleader_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:3425
 translate english wrd_skirt_cheerleader_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3427
 translate english wrd_skirt_cheerleader_first_dress_34a7918f:
 
     # her "Ну, в таком случае..."
-    her ""
+    her "Well, in this case..."
 
 # game/28_gifts.rpy:3429
 translate english wrd_skirt_cheerleader_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:3432
 translate english wrd_skirt_cheerleader_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:3438
 translate english wrd_skirt_cheerleader_first_dress_4e1af4bd_1:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3440
 translate english wrd_skirt_cheerleader_first_dress_4a81fcda:
 
     # her "Но она короткая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:3441
 translate english wrd_skirt_cheerleader_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3445
 translate english wrd_skirt_cheerleader_first_dress_75dd550d:
 
     # her "Ладно, ладно..."
-    her ""
+    her "Alright, alright..."
 
 # game/28_gifts.rpy:3449
 translate english wrd_skirt_cheerleader_first_dress_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3451
 translate english wrd_skirt_cheerleader_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:3454
 translate english wrd_skirt_cheerleader_first_dress_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/28_gifts.rpy:3461
 translate english wrd_skirt_cheerleader_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3473
 translate english wrd_skirt_business_first_dress_35971828:
 
     # her "Сэр, я не магл, кто бы что ни говорил. Зачем давать лишний повод ?"
-    her ""
+    her "Sir, I'm not a muggle, whoever tells otherwise. Why give them the unnecessary reason to call me that?"
 
 # game/28_gifts.rpy:3474
 translate english wrd_skirt_business_first_dress_d8c6da42:
 
     # her "Поэтому мой окончательный ответ - нет."
-    her ""
+    her "My final answer is - NO."
 
 # game/28_gifts.rpy:3475
 translate english wrd_skirt_business_first_dress_03897214:
 
     # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
-    m ""
+    m "(I think I'd have a better luck with a longer skirt.)"
 
 # game/28_gifts.rpy:3476
 translate english wrd_skirt_business_first_dress_1049d57d:
 
     # m "Хорошо, не буду настаивать."
-    m ""
+    m "Alright, I won't insist."
 
 # game/28_gifts.rpy:3483
 translate english wrd_skirt_business_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:3484
 translate english wrd_skirt_business_first_dress_752222ae:
 
     # her "Эта юбка недопустимо коротка !"
-    her ""
+    her "A skirt this short?!"
 
 # game/28_gifts.rpy:3486
 translate english wrd_skirt_business_first_dress_4cb9de81:
 
     # her "...Она едва прикрывает мои прелести."
-    her ""
+    her "...It barely covers anything, Sir."
 
 # game/28_gifts.rpy:3487
 translate english wrd_skirt_business_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3491
 translate english wrd_skirt_business_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3498
 translate english wrd_skirt_business_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:3499
 translate english wrd_skirt_business_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:3501
 translate english wrd_skirt_business_first_dress_a3ff6b1b:
 
     # her "Ну, ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:3510
 translate english wrd_skirt_business_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3512
 translate english wrd_skirt_business_first_dress_9da90daa:
 
     # her "Но она очень короткая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:3513
 translate english wrd_skirt_business_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3517
 translate english wrd_skirt_business_first_dress_d91fb921:
 
     # her "Сэр, врядли это соответствует форме учеников Хогвартса."
-    her ""
+    her "Sir, this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3519
 translate english wrd_skirt_business_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:3528
 translate english wrd_skirt_business_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3530
 translate english wrd_skirt_business_first_dress_34a7918f:
 
     # her "Ну, в таком случае..."
-    her ""
+    her "Well, in this case..."
 
 # game/28_gifts.rpy:3532
 translate english wrd_skirt_business_first_dress_c2a39edf:
 
     # her "Пока это приносит пользу моему факультету..."
-    her ""
+    her "As long as it benefits my house..."
 
 # game/28_gifts.rpy:3535
 translate english wrd_skirt_business_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:3541
 translate english wrd_skirt_business_first_dress_4e1af4bd_1:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3543
 translate english wrd_skirt_business_first_dress_9da90daa_1:
 
     # her "Но она очень короткая..."
-    her ""
+    her "But it's so short..."
 
 # game/28_gifts.rpy:3544
 translate english wrd_skirt_business_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3548
 translate english wrd_skirt_business_first_dress_75dd550d:
 
     # her "Ладно, ладно..."
-    her ""
+    her "Alright, alright..."
 
 # game/28_gifts.rpy:3552
 translate english wrd_skirt_business_first_dress_7fd9e75a_1:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3554
 translate english wrd_skirt_business_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:3557
 translate english wrd_skirt_business_first_dress_83f0bbb7:
 
     # her "Ох..."
-    her ""
+    her "Oh..."
 
 # game/28_gifts.rpy:3564
 translate english wrd_skirt_business_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3577
 translate english wrd_standart02_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3579
 translate english wrd_standart02_first_dress_8cae29f0:
 
     # her "Но это не соответствует форме Хогвартса."
-    her ""
+    her "Sir, this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3580
 translate english wrd_standart02_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3585
 translate english wrd_standart02_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3587
 translate english wrd_standart02_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:3590
 translate english wrd_standart02_first_dress_47db9141:
 
     # her "Как скажете."
-    her ""
+    her "As you wish, Sir."
 
 # game/28_gifts.rpy:3597
 translate english wrd_standart02_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3609
 translate english wrd_standart03_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3611
 translate english wrd_standart03_first_dress_8cae29f0:
 
     # her "Но это не соответствует форме Хогвартса."
-    her ""
+    her "Sir, this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3612
 translate english wrd_standart03_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3617
 translate english wrd_standart03_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3619
 translate english wrd_standart03_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:3622
 translate english wrd_standart03_first_dress_47db9141:
 
     # her "Как скажете."
-    her ""
+    her "As you wish, Sir."
 
 # game/28_gifts.rpy:3629
 translate english wrd_standart03_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3640
 translate english wrd_standart04_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3642
 translate english wrd_standart04_first_dress_2db911e3:
 
     # her "Но это не соответствует правилам Хогвартса."
-    her ""
+    her "Sir, this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3643
 translate english wrd_standart04_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3648
 translate english wrd_standart04_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3650
 translate english wrd_standart04_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:3653
 translate english wrd_standart04_first_dress_47db9141:
 
     # her "Как скажете."
-    her ""
+    her "As you wish, Sir."
 
 # game/28_gifts.rpy:3660
 translate english wrd_standart04_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3671
 translate english wrd_standart05_first_dress_c34c2519:
 
     # her "Сэр ?"
-    her ""
+    her "Sir?"
 
 # game/28_gifts.rpy:3673
 translate english wrd_standart05_first_dress_b3fff80b:
 
     # her "Вы же это не серьезно ? Ведь все-таки тут школа."
-    her ""
+    her "You cannot be serious, Sir! This is a school after all."
 
 # game/28_gifts.rpy:3674
 translate english wrd_standart05_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3679
 translate english wrd_standart05_first_dress_d1549d88:
 
     # her "О, сэр."
-    her ""
+    her "Oh, Sir."
 
 # game/28_gifts.rpy:3681
 translate english wrd_standart05_first_dress_c85ca67d:
 
     # her "Ладно, я постараюсь к этому привыкнуть."
-    her ""
+    her "I'll try to get used to it."
 
 # game/28_gifts.rpy:3684
 translate english wrd_standart05_first_dress_47db9141:
 
     # her "Как скажете."
-    her ""
+    her "As you wish, Sir."
 
 # game/28_gifts.rpy:3691
 translate english wrd_standart05_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3702
 translate english wrd_skimpyshirt_first_dress_7c22cc9a:
 
     # her "Вы шутите, сэр?!"
-    her ""
+    her "Are you kidding me, Sir?!"
 
 # game/28_gifts.rpy:3703
 translate english wrd_skimpyshirt_first_dress_48efd8b6:
 
     # her "Да это не рубашка, а сплошной разврат."
-    her ""
+    her "It's a shirt, it's a depravity."
 
 # game/28_gifts.rpy:3704
 translate english wrd_skimpyshirt_first_dress_2ad9ce7d:
 
     # her "Я не стану показываться на людях в таком виде!"
-    her ""
+    her "I won't wear this in public."
 
 # game/28_gifts.rpy:3705
 translate english wrd_skimpyshirt_first_dress_839ce513:
 
     # m "(Похоже, для начала нужно будет предложить ей менее оьткровенные варианты.)"
-    m ""
+    m "(I think I'd have a better luck with a less revealing shirt.)"
 
 # game/28_gifts.rpy:3706
 translate english wrd_skimpyshirt_first_dress_90bb0d57:
 
     # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
-    m ""
+    m "Before you get angry, I want you to consider, that it was just a joke."
 
 # game/28_gifts.rpy:3708
 translate english wrd_skimpyshirt_first_dress_2ebc120b:
 
     # her "Лучше бы это и вправду была шутка, профессор!"
-    her ""
+    her "It better be a joke, Professor!"
 
 # game/28_gifts.rpy:3715
 translate english wrd_skimpyshirt_first_dress_9d979851:
 
     # her "Сэр, как вы можете просить меня ходить по школе в этой тряпочке ?!"
-    her ""
+    her "How can you ask me to show my self in this pathetic rag at school?!"
 
 # game/28_gifts.rpy:3716
 translate english wrd_skimpyshirt_first_dress_4463260c:
 
     # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
-    her ""
+    her "Maybe next time, I should go to class naked?!"
 
 # game/28_gifts.rpy:3717
 translate english wrd_skimpyshirt_first_dress_60fab287:
 
     # m "(Мне нравится ход ее мыслей.)"
-    m ""
+    m "(I like the course of her thoughts.)"
 
 # game/28_gifts.rpy:3719
 translate english wrd_skimpyshirt_first_dress_aeb028eb:
 
     # her "Да ей даже с доски не сотрешь !"
-    her ""
+    her "It's not even enough to wipe the blackboard with it."
 
 # game/28_gifts.rpy:3720
 translate english wrd_skimpyshirt_first_dress_b4ba3edc:
 
     # her "Нет, это невозможно !"
-    her ""
+    her "No, it's impossible!"
 
 # game/28_gifts.rpy:3727
 translate english wrd_skimpyshirt_first_dress_9d979851_1:
 
     # her "Сэр, как вы можете просить меня ходить по школе в этой тряпочке ?!"
-    her ""
+    her "Sir, how can you ask me to show myself in this pathetic rag at school."
 
 # game/28_gifts.rpy:3728
 translate english wrd_skimpyshirt_first_dress_4463260c_1:
 
     # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
-    her ""
+    her "Maybe next time, I should go to class naked?!"
 
 # game/28_gifts.rpy:3729
 translate english wrd_skimpyshirt_first_dress_60fab287_1:
 
     # m "(Мне нравится ход ее мыслей.)"
-    m ""
+    m "(I like the course of her thoughts.)"
 
 # game/28_gifts.rpy:3731
 translate english wrd_skimpyshirt_first_dress_053f71ea:
 
     # her "Это исключено !"
-    her ""
+    her "It's out of the question!"
 
 # game/28_gifts.rpy:3732
 translate english wrd_skimpyshirt_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3736
 translate english wrd_skimpyshirt_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly...."
 
 # game/28_gifts.rpy:3745
 translate english wrd_skimpyshirt_first_dress_c8526f36:
 
     # her "{size=+3}Засуньте себе свои очки в ...{/size}"
-    her ""
+    her "{size=+3}Shove your points up in your...{/size}"
 
 # game/28_gifts.rpy:3747
 translate english wrd_skimpyshirt_first_dress_01c078e2:
 
     # her "Простите, сэр."
-    her ""
+    her "I'm sorry, Sir."
 
 # game/28_gifts.rpy:3748
 translate english wrd_skimpyshirt_first_dress_9c9eeb17:
 
     # her "Я хочу сказать, что категорически отказываюсь !"
-    her ""
+    her "I mean, I refuse!"
 
 # game/28_gifts.rpy:3756
 translate english wrd_skimpyshirt_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:3757
 translate english wrd_skimpyshirt_first_dress_0fbb57a4:
 
     # her "Эта рубашка слишком откровенная!"
-    her ""
+    her "This shirt is too revealing!"
 
 # game/28_gifts.rpy:3759
 translate english wrd_skimpyshirt_first_dress_f358a24d:
 
     # her "Мои буф... мою грудь будет видно всем !"
-    her ""
+    her "My boo... my breasts will be visible to all!"
 
 # game/28_gifts.rpy:3760
 translate english wrd_skimpyshirt_first_dress_9e56b4f0_1:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3764
 translate english wrd_skimpyshirt_first_dress_eebdf957_1:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3770
 translate english wrd_skimpyshirt_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:3771
 translate english wrd_skimpyshirt_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:3772
 translate english wrd_skimpyshirt_first_dress_5eb1bcfa:
 
     # her "Этого мало, сэр !"
-    her ""
+    her "That's not enough, Sir!"
 
 # game/28_gifts.rpy:3777
 translate english wrd_skimpyshirt_first_dress_eebdf957_2:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3784
 translate english wrd_skimpyshirt_first_dress_331265d4:
 
     # her "Ох... ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:3785
 translate english wrd_skimpyshirt_first_dress_9ef5e186:
 
     # her "Уверена, что я еще пожалею об этом..."
-    her ""
+    her "I have a feeling, that I'll regret about this..."
 
 # game/28_gifts.rpy:3786
 translate english wrd_skimpyshirt_first_dress_db80da42:
 
     # her "(Не могу поверить, что я на это иду...)"
-    her ""
+    her "(I cannot believe, that I agreed to do this...)"
 
 # game/28_gifts.rpy:3796
 translate english wrd_skimpyshirt_first_dress_ec98fd11:
 
     # her "Эта рубашка такая открытая... ?"
-    her ""
+    her "This shirt is so revealing..."
 
 # game/28_gifts.rpy:3798
 translate english wrd_skimpyshirt_first_dress_edaaf531:
 
     # her "И совсем маленькая!"
-    her ""
+    her "And it's so tiny!"
 
 # game/28_gifts.rpy:3799
 translate english wrd_skimpyshirt_first_dress_6f2a5b95:
 
     # her "Сэр, вы уверены, что мне нужно это делать ?"
-    her ""
+    her "Sir, are you sure I need to do this?"
 
 # game/28_gifts.rpy:3800
 translate english wrd_skimpyshirt_first_dress_a7fea8c8:
 
     # her "Мне кажется, это плохая идея..."
-    her ""
+    her "I think, it's a bad idea..."
 
 # game/28_gifts.rpy:3801
 translate english wrd_skimpyshirt_first_dress_9e56b4f0_2:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3805
 translate english wrd_skimpyshirt_first_dress_998e1336:
 
     # her "Сэр, заставлять меня делать это недопустимо!"
-    her ""
+    her "Sir, forcing me to do it is unacceptable!"
 
 # game/28_gifts.rpy:3807
 translate english wrd_skimpyshirt_first_dress_c5a21c51:
 
     # her "Я отказываюсь!"
-    her ""
+    her "I refuse!"
 
 # game/28_gifts.rpy:3815
 translate english wrd_skimpyshirt_first_dress_d7ddee45:
 
     # her "Мммммм"
-    her ""
+    her "Mmmmmm"
 
 # game/28_gifts.rpy:3817
 translate english wrd_skimpyshirt_first_dress_97291d66:
 
     # her "Мне трудно решиться..."
-    her ""
+    her "I have a hard time to decide..."
 
 # game/28_gifts.rpy:3821
 translate english wrd_skimpyshirt_first_dress_eebdf957_3:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3828
 translate english wrd_skimpyshirt_first_dress_331265d4_1:
 
     # her "Ох... ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:3829
 translate english wrd_skimpyshirt_first_dress_f8156e15:
 
     # her "Постараюсь смириться."
-    her ""
+    her "I'll try to get used to it."
 
 # game/28_gifts.rpy:3830
 translate english wrd_skimpyshirt_first_dress_db80da42_1:
 
     # her "(Не могу поверить, что я на это иду...)"
-    her ""
+    her "(I cannot believe, that I agreed to do this...)"
 
 # game/28_gifts.rpy:3835
 translate english wrd_skimpyshirt_first_dress_8d3b4493:
 
     # her "Ладно..."
-    her ""
+    her "Alright..."
 
 # game/28_gifts.rpy:3841
 translate english wrd_skimpyshirt_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 # game/28_gifts.rpy:3853
 translate english wrd_shirt_cheerleader_first_dress_7f2b4206:
 
     # her "Сэр, я не болельщица, не люблю болельщиц и не вижу смысла одеваться как одна из них !"
-    her ""
+    her "Sir, I am not a cheerleader, I don't like cheerleaders and I don't see the point to dress like one of them!"
 
 # game/28_gifts.rpy:3854
 translate english wrd_shirt_cheerleader_first_dress_d8c6da42:
 
     # her "Поэтому мой окончательный ответ - нет."
-    her ""
+    her "So, my definitive answer is - NO."
 
 # game/28_gifts.rpy:3855
 translate english wrd_shirt_cheerleader_first_dress_03897214:
 
     # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
-    m ""
+    m "(I think she needs more training to be more open to the idea.)"
 
 # game/28_gifts.rpy:3856
 translate english wrd_shirt_cheerleader_first_dress_1049d57d:
 
     # m "Хорошо, не буду настаивать."
-    m ""
+    m "Alright, I won't insist."
 
 # game/28_gifts.rpy:3863
 translate english wrd_shirt_cheerleader_first_dress_7a30267d:
 
     # her "Вы же не всерьез, сэр?!"
-    her ""
+    her "You cannot be serious, Sir!"
 
 # game/28_gifts.rpy:3864
 translate english wrd_shirt_cheerleader_first_dress_d638c949:
 
     # her "Эта кофта слишком открытая !"
-    her ""
+    her "This T Shirt is too revealing?!"
 
 # game/28_gifts.rpy:3866
 translate english wrd_shirt_cheerleader_first_dress_fd929dcf:
 
     # her "...Она не полностью прикрывает мои буф... мою... мой бюст !"
-    her ""
+    her "...It barely covers my boo... my breasts, Sir."
 
 # game/28_gifts.rpy:3867
 translate english wrd_shirt_cheerleader_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3871
 translate english wrd_shirt_cheerleader_first_dress_eebdf957:
 
     # her "С удовольствием..."
-    her ""
+    her "Gladly..."
 
 # game/28_gifts.rpy:3878
 translate english wrd_shirt_cheerleader_first_dress_f5a4a724:
 
     # her "........................"
-    her ""
+    her "........................"
 
 # game/28_gifts.rpy:3879
 translate english wrd_shirt_cheerleader_first_dress_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/28_gifts.rpy:3881
 translate english wrd_shirt_cheerleader_first_dress_a3ff6b1b:
 
     # her "Ну, ладно..."
-    her ""
+    her "Well, alright..."
 
 # game/28_gifts.rpy:3887
 translate english wrd_shirt_cheerleader_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Yes, Sir..."
 
 # game/28_gifts.rpy:3900
 translate english wrd_shirt_business_first_dress_35971828:
 
     # her "Сэр, я не магл, кто бы что ни говорил. Зачем давать лишний повод ?"
-    her ""
+    her "Sir, I'm not a muggle, whoever tells otherwise. Why give them the unnecessary reason to call me that?"
 
 # game/28_gifts.rpy:3901
 translate english wrd_shirt_business_first_dress_d8c6da42:
 
     # her "Поэтому мой окончательный ответ - нет."
-    her ""
+    her "My final answer is - NO."
 
 # game/28_gifts.rpy:3902
 translate english wrd_shirt_business_first_dress_03897214:
 
     # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
-    m ""
+    m "(I think she needs more training to be more open to the idea.)"
 
 # game/28_gifts.rpy:3903
 translate english wrd_shirt_business_first_dress_1049d57d:
 
     # m "Хорошо, не буду настаивать."
-    m ""
+    m "Alright, I won't insist."
 
 # game/28_gifts.rpy:3910
 translate english wrd_shirt_business_first_dress_4e1af4bd:
 
     # her "Хм...?"
-    her ""
+    her "Hm...?"
 
 # game/28_gifts.rpy:3912
 translate english wrd_shirt_business_first_dress_2db911e3:
 
     # her "Но это не соответствует правилам Хогвартса."
-    her ""
+    her "Sir, this is hardly the appropriate attire for a Hogwarts student."
 
 # game/28_gifts.rpy:3913
 translate english wrd_shirt_business_first_dress_9e56b4f0:
 
     # m "..." nointeract
-    m "" nointeract
+    m "..." nointeract
 
 # game/28_gifts.rpy:3918
 translate english wrd_shirt_business_first_dress_7fd9e75a:
 
     # her "Хм..."
-    her ""
+    her "Hm..."
 
 # game/28_gifts.rpy:3920
 translate english wrd_shirt_business_first_dress_689381ec:
 
     # her "Ладно, я не против."
-    her ""
+    her "Alright. I don't mind then."
 
 # game/28_gifts.rpy:3923
 translate english wrd_shirt_business_first_dress_47db9141:
 
     # her "Как скажете."
-    her ""
+    her "As you wish, Sir."
 
 # game/28_gifts.rpy:3930
 translate english wrd_shirt_business_first_dress_c805e20d:
 
     # her "Слушаюсь, сэр..."
-    her ""
+    her "Of course, Sir..."
 
 translate english strings:
 
@@ -5340,81 +5340,81 @@ translate english strings:
 
     # game/28_gifts.rpy:69
     old "\"Ладно. Забудь.\""
-    new ""
+    new "\"Fine. Forget it.\""
 
     # game/28_gifts.rpy:69
     old "\"Я дам тебе 15 очков.\""
-    new ""
+    new "\"I will give you 15 points.\""
 
     # game/28_gifts.rpy:95
     old "\"Просто надень её!\""
-    new ""
+    new "\"Just put it on!\""
 
     # game/28_gifts.rpy:126
     old "\"Просто надень ее!\""
-    new ""
+    new "\"Just put it on!\""
 
     # game/28_gifts.rpy:126
     old "\"Ладно. Забудь\""
-    new ""
+    new "\"Fine. Forget it.\""
 
     # game/28_gifts.rpy:278
     old "\"Просто надень это!\""
-    new ""
+    new "\"Just put it on!\""
 
     # game/28_gifts.rpy:311
     old "\"Просто надень их!\""
-    new ""
+    new "\"Just put it on!\""
 
     # game/28_gifts.rpy:564
     old "\"Возьми эти духи в подарок\""
-    new ""
+    new "\"Take this perfume as a gift.\""
 
     # game/28_gifts.rpy:564
     old "\"Я рад, что тебе понравилось\""
-    new ""
+    new "\"I'm glad you like it.\""
 
     # game/28_gifts.rpy:2727
     old "\"Я дам тебе 20 очков.\""
-    new ""
+    new "\"I will give you 20 points.\""
 
     # game/28_gifts.rpy:2833
     old "\"Я дам тебе 25 очков.\""
-    new ""
+    new "\"I will give you 25 points.\""
 
     # game/28_gifts.rpy:2942
     old "\"Я дам тебе 35 очков.\""
-    new ""
+    new "\"I will give you 35 points.\""
 
     # game/28_gifts.rpy:2984
     old "\"45 очков ?\""
-    new ""
+    new "\"45 points?\""
 
     # game/28_gifts.rpy:3103
     old "\"Я дам тебе 50 очков.\""
-    new ""
+    new "\"I will give you 50 points.\""
 
     # game/28_gifts.rpy:3143
     old "\"70 очков ?\""
-    new ""
+    new "\"70 points?\""
 
     # game/28_gifts.rpy:3256
     old "\"Я дам тебе 80 очков.\""
-    new ""
+    new "\"I will give you 80 points.\""
 
     # game/28_gifts.rpy:3298
     old "\"100 очков ?\""
-    new ""
+    new "\"100 points?\""
 
     # game/28_gifts.rpy:3580
     old "\"Я дам тебе 10 очков.\""
-    new ""
+    new "\"I will give you 10 points.\""
 
     # game/28_gifts.rpy:3732
     old "\"Я дам тебе 40 очков.\""
-    new ""
+    new "\"I will give you 40 points.\""
 
     # game/28_gifts.rpy:3774
     old "\"50 очков ?\""
-    new ""
+    new "\"50 points?\""
 
