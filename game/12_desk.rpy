@@ -299,13 +299,20 @@ label desk:
             $ hermi.whoring = 24       
             #$ hermi.WrdSetAddNew("xxxsmallskirt")
             #$ hermi.WrdDress("xxxsmallskirt")
-            $ hermi.WrdSetUnlock("skimpyshirt")
-            $ hermi.WrdSetDress("skimpyshirt")
+            #$ hermi.WrdSetUnlock("skimpyshirt")
+            #$ hermi.WrdSetDress("skimpyshirt")
             #$ hermi.WrdAddNew("badge")
             #$ hermi.WrdDress("badge")   
             #$ hermi.WrdSetMain()
-            $ hermi.WrdSpermDried()
+            #$ hermi.WrdSpermDried()
+            
+            #$ hermi.WrdMenuRun ("new")
+            
+            #$ hermi.WrdSetUnlock(hermi.wrd_choose)
+            #$ hermi.WrdSetDress(hermi.wrd_choose)
 
+            #$ hermi.WrdMenuMainRun ()            
+            
             jump hermione_approaching
 #            jump hermione_goout            
             

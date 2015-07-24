@@ -35,6 +35,7 @@ label hermione_approaching:
 
     label hermione_main_menu:
     $ pos = POS_410
+    $herView.hideshowQQ( "body_01.png", pos )
     menu:
 ### DR'S NEWSPAPER ooo ###
 
@@ -181,7 +182,29 @@ label hermione_approaching:
         "- Гардероб -" if dress_code and this.Has("her_wants_buy"):
             if hermi.liking>=0:
             
-                jump wrd_menu
+                $ hermi.WrdMenuMainRun ()
+                jump hermione_main_menu
+
+            else:
+                python:
+                    for t in [
+                    (-2, "Мне очень жаль, профессор, может быть в другой раз..."),
+                    (-9, "Что не так с моей одеждой?"),
+                    (-19, "Нет, спасибо...."),
+                    (-29, "Я так не думаю..."),
+                    (-39, "Нет!"),
+                    (-100, "Я никогда не позволю вам снова решать, что мне носить!")
+                    ]:
+                        (_val, _text)=t
+                        if hermi.liking>=_val:
+                            renpy.say(her, _text)
+                            break
+                jump hermione_main_menu
+                
+        "- Примерка -" : #if dress_code and this.Has("her_wants_buy"):
+            if hermi.liking>=0:
+            
+                jump wrd_hermiona_menu_rent
 
             else:
                 python:
@@ -1265,4 +1288,96 @@ label wrd_hermi_rent_menu :
             jump wrd_menu
 
             
-            
+label wrd_hermiona_menu_rent :
+
+    menu:
+        "- Форма веселой школьницы -" if wrd_rent_happy_schoolgirl == 1 :
+        
+           if hermi.whoring < 3 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("standart3")
+               $hermi.WrdDress ("shortskirt")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_hermiona_menu_rent
+           
+        
+        "- Форма игривой школьницы -" if wrd_rent_playful_schoolgirl == 1:
+        
+           if hermi.whoring < 12 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("standart5")
+               $hermi.WrdDress ("xxshortskirt")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_hermiona_menu_rent
+
+        
+        "- Форма болельщицы Гриффиндора -" if wrd_rent_cheerleader == 1 :
+        
+           if hermi.whoring < 6 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("skirt_cheerleader")
+               $hermi.WrdDress ("shirt_cheerleader")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_hermiona_menu_rent
+
+        
+        "- Одежда бизнес-леди -" if wrd_rent_business == 1 :
+        
+           if hermi.whoring < 9 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("skirt_business")
+               $hermi.WrdDress ("shirt_business")
+               $hermi.WrdDress ("tights")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+
+               jump wrd_hermiona_menu_rent
+        
+        "- Ничего -" :
+            jump hermione_main_menu    

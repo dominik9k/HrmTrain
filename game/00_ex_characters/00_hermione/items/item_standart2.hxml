@@ -37,7 +37,7 @@
 		</actions>
 	</style>
 	<style name="with_lifted_skirt">
-		<frame>standart2_lifted.png</frame>
+		<frame>shirts/standart2_lifted.png</frame>
 		<folder>clothes</folder>
 	</style>	
 	<style name="sperm_dried">
