@@ -1486,7 +1486,7 @@ translate english request_01_done_6ec2f17b:
 translate english request_01_done_9cdb43e1:
 
     # m "\"Угадай дырку\", надо же..."
-    m ""\"Guess the Hole\", who'd thought..."
+    m "\"Guess the Hole\", who'd thought..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:573
 translate english request_01_done_34979324:

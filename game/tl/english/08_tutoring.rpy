@@ -172,13 +172,13 @@ translate english tutoring_97a04692:
 translate english tutoring_03c2e3b9:
 
     # m "{size=-4}(Так, соберись, Джинни...){/size}"
-    m "{size=-4}(OK, pull yourself together, Ginny...){/size}""
+    m "{size=-4}(OK, pull yourself together, Ginny...){/size}"
 
 # game/08_tutoring.rpy:96
 translate english tutoring_387791d6:
 
     # m "Кхм... Стоит учесть, что мы говорим не о простых мунтикорах, а именно пердуанских..."
-    m "Ahem... It's worth noting that we are not talking about simple Muntikorah, but namely Perduanskih...""
+    m "Ahem... It's worth noting that we are not talking about simple Muntikorah, but namely Perduanskih..."
 
 # game/08_tutoring.rpy:99
 translate english tutoring_9870f7de:

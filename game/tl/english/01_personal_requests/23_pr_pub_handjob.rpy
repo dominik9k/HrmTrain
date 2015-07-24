@@ -730,7 +730,7 @@ translate english new_request_23_complete_4f5aafab:
 translate english new_request_23_complete_834a09f6_2:
 
     # m "Мисс Грейнджер, как все прошло?"
-    m "Miss Granger, how did it go?""
+    m "Miss Granger, how did it go?"
 
 # game/01_personal_requests/23_pr_pub_handjob.rpy:304
 translate english new_request_23_complete_790af1b6:

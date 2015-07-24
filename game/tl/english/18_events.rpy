@@ -682,7 +682,7 @@ translate english no_wait_2_d69d27fa:
 translate english no_wait_2_7e538e34:
 
     # sna_head_main "Пока вы отказываетесь сотрудничать, вы будете под стражей!"
-    sna_head_main Since you refuse to cooperate, I'll be taking you into custody by force!""
+    sna_head_main "Since you refuse to cooperate, I'll be taking you into custody by force!"
 
 # game/18_events.rpy:579
 translate english no_wait_2_d9e8ace4:
