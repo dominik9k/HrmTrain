@@ -297,8 +297,8 @@ label devel:
     dev "Разработка и обучающие ивенты : {color=FF0000}Nyarkohopter{/color}"
     dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
     dev "Дафна : {color=6F6F6F}Zio Dyne{/color}"    
-    dr "Список особых благодарностей :"
-    dr "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    dev "Список особых благодарностей :"
+    dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
     
     $ hx = 370
     $ hy = 0
