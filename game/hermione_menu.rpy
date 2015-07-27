@@ -11,7 +11,9 @@ label hermione_approaching:
     show screen hermione_02 #Hermione stands still.
     show screen bld1
     with d3
-
+ 
+    $hermi.WrdSetMain()
+    
     python:
         for t in [
             (0, "body_01.png", her, "Да, профессор?"),
