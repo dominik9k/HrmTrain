@@ -64,7 +64,7 @@ translate english nsp_theme_magls_26fce30b:
 translate english nsp_theme_magls_c54b2793:
 
     # her "Многие \"чистокровки\" убеждены, что маглы похожи на животных. А маглорожденные - на животных, одевших одежды волшебников."
-    her "Most of the \"pure-bloods\" are convinced that muggles are animals. Muggle-born - wearing the wizards' clothes.""
+    her "Most of the \"pure-bloods\" are convinced that muggles are animals. Muggle-born - wearing the wizards' clothes."
 
 # game/08_newspaper_scenario/nwsp05_events_magls.rpy:19
 translate english nsp_theme_magls_1d6d46b9:
