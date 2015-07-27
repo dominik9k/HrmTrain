@@ -904,7 +904,7 @@ translate english no_smacking_tits_bd031225:
 translate english no_smacking_tits_b117e56d:
 
     # her "...тогда я собираюсь уйти."
-    her "...then I think I should leave."
+    her "...then I think, I should leave."
 
 # game/01_personal_requests/12_pr_play_tits.rpy:466
 translate english no_smacking_tits_d3ef388c:

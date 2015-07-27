@@ -724,7 +724,7 @@ translate english blowjob_jumping_74f84d43:
 translate english blowjob_jumping_875505e2:
 
     # m "Но я хочу посмотреть, как много знаешь ты!"
-    m "But I want to see how much you know."
+    m "But I want to see how much do you know."
 
 # game/01_personal_requests/22_pr_blowjob.rpy:323
 translate english blowjob_jumping_6c538110:

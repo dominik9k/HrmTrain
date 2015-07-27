@@ -5332,11 +5332,11 @@ translate english strings:
 
     # game/28_gifts.rpy:11
     old "\"Да, вполне...\""
-    new ""
+    new "\"Yes, totally...\""
 
     # game/28_gifts.rpy:11
     old "\"Нет, не готов...\""
-    new ""
+    new "\"No, I'm not ready...\""
 
     # game/28_gifts.rpy:69
     old "\"Ладно. Забудь.\""

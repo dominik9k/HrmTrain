@@ -4,47 +4,47 @@
 translate english daphne_main_menu_requests_f286c28d:
 
     # dev "Жаль прерываться на самом интересном месте?"
-    dev ""
+    dev "Feel sad to be interrupted at the most interesting moment?"
 
 # game/02_daphna_scenario/daphne_menu.rpy:87
 translate english daphne_main_menu_requests_2fb9c11a:
 
     # dev "Нам тоже. Но данная сюжетная линия пока дописана только до этой точки..."
-    dev ""
+    dev "We, too. Unfortunately, this plot ends here..."
 
 # game/02_daphna_scenario/daphne_menu.rpy:88
 translate english daphne_main_menu_requests_669df0d7:
 
     # dev "{size=-3}(впрочем, вам доступны другие сюжетные линии){/size}"
-    dev ""
+    dev "{size=-3}(However, you still have access to other plots.){/size}"
 
 # game/02_daphna_scenario/daphne_menu.rpy:89
 translate english daphne_main_menu_requests_a93d6d17:
 
     # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev ""
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}"
 
 # game/02_daphna_scenario/daphne_menu.rpy:90
 translate english daphne_main_menu_requests_cfb51d03:
 
     # dev "Так вы простимулируете нас и продолжение появится быстрее. :)"
-    dev ""
+    dev "This way you'll stimulate us to realise updates faster. :)"
 
 translate english strings:
 
     # game/02_daphna_scenario/daphne_menu.rpy:45
     old "- Поговорить -"
-    new ""
+    new "-Have a conversation-"
 
     # game/02_daphna_scenario/daphne_menu.rpy:45
     old "- Тренировка -"
-    new ""
+    new "-Training-"
 
     # game/02_daphna_scenario/daphne_menu.rpy:45
     old "- Дать ей подарок -"
-    new ""
+    new "-Give her a gift-"
 
     # game/02_daphna_scenario/daphne_menu.rpy:45
     old "- Попросить уйти -"
-    new ""
+    new "-Ask her to leave-"
 

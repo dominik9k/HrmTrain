@@ -1520,7 +1520,7 @@ translate english strings:
 
     # game/hermione_menu.rpy:38
     old "- Поговорить о работе для редакции -"
-    new "-Talk about Edition Work-"
+    new "-Talk about Editorial Work-"
 
     # game/hermione_menu.rpy:38
     old "{color=#858585}- Дать журналистское задание -{/color}"
