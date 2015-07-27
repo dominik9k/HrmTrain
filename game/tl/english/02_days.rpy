@@ -10,7 +10,7 @@ translate english day_01_2425c9e2:
 translate english day_01_20adc6f8:
 
     # her "Здравствуйте, профессор. Вы хотели видеть меня?"
-    her "Hello, professor. Did you want to see me?"
+    her "Hello, Professor. Did you want to see me?"
 
 # game/02_days.rpy:4
 translate english day_01_108087cb:

@@ -16,7 +16,7 @@ translate english event_00_176d15d5:
 translate english event_03_1b3f8056:
 
     # m "{size=-3}(Снова этот задумчивый парень...){/size}"
-    m ""
+    m "{size=-3}(That broody guy again...){/size}"
 
 # game/18_events.rpy:141
 translate english event_03_6e20c7be:
@@ -4588,7 +4588,7 @@ translate english event_16_e612037c:
 translate english event_16_d2485cec:
 
     # m "Есть ли смысл в жизни?"
-    m "Is there a point in your life?"
+    m "Is there a point in life?"
 
 # game/18_events.rpy:2916
 translate english event_16_e612037c_1:
@@ -4600,7 +4600,7 @@ translate english event_16_e612037c_1:
 translate english event_16_00fb68b5:
 
     # g4 "Кто делает порноигры, в которых протагонисты успевают отвлекаться на подобную хрень?"
-    g4 "Who does porn games in which the protagonists have time to be distracted by such crap?"
+    g4 "Who creates porn games in which the protagonists have time to be distracted by such crap?"
 
 # game/18_events.rpy:2925
 translate english event_16_b1a40022:
@@ -4630,7 +4630,7 @@ translate english event_16_b0d0d407:
 translate english event_16_f70cb14e:
 
     # g4 "Цифра 29 тоже стильно выглядит!"
-    g4 "Number 29 looks stylish too."
+    g4 "Number 29 looks stylish, too."
 
 # game/18_events.rpy:2931
 translate english event_16_e0daf3ed:
@@ -4672,7 +4672,7 @@ translate english event_16_8f8caf73:
 translate english event_16_6f8f7fdc:
 
     # her "Лежат за дверью. Их так много, что Гарри и Рону потребовалось полтора часа, чтобы перенести их все из башни Гриффиндора."
-    her "Lying behind your door. There are so many of them, that took Harry and Ron an hour and a half to move them all from Gryffindor' tower."
+    her "Lying behind the door. There are so many of them, that took Harry and Ron an hour and a half to move them all from Gryffindor's tower."
 
 # game/18_events.rpy:2940
 translate english event_16_3f3a2be2:
@@ -4690,7 +4690,7 @@ translate english event_16_c0ec249c:
 translate english event_16_4cbd4112:
 
     # her "Боюсь, что Гарри и Рон уже ушли, да и эта комната слишком мала."
-    her "I'm afraid that Harry and Ron have already left and this room is too small to accommodate them here."
+    her "I'm afraid that Harry and Ron have already left and this room is too small to accommodate them all here."
 
 # game/18_events.rpy:2944
 translate english event_16_bee38f05:
@@ -4702,7 +4702,7 @@ translate english event_16_bee38f05:
 translate english event_16_7b440d1f:
 
     # her "438, не считая брошюр Гарри Томпсона по приручению кракенов."
-    her "438 and that's not including the Harry Thompson' Brochures for taming Krakens."
+    her "438 and that's not including the Harry Thompson's Brochures for taming Krakens."
 
 # game/18_events.rpy:2946
 translate english event_16_0711e342:
@@ -4738,13 +4738,13 @@ translate english event_16_a20cefa7:
 translate english event_16_21faf15d:
 
     # her "Как это я не подумала о том, что у такого волшебника как вы есть волшебный шкаф?"
-    her "How foolish of me, not to think that such great wizard can have a magical cupboard?"
+    her "How foolish of me, to overlook that a great wizard like yourself can have a magical cupboard?"
 
 # game/18_events.rpy:2956
 translate english event_16_7dc1fd9d:
 
     # g9 "Ну, это скорее волшебный винный погреб. Хотя в него отлично влезает и прочее барахло."
-    g9 "Well, it's more like a magical wine cupboard. Although it can store other stuff too."
+    g9 "Well, it's more like a magical cupboard for wine. Although it can store other stuff, too."
 
 # game/18_events.rpy:2958
 translate english event_16_cc21fd70:
@@ -4756,13 +4756,13 @@ translate english event_16_cc21fd70:
 translate english event_16_1acda35a:
 
     # m "Так или иначе, большое спасибо, вы оказали мне и науке большую услугу!"
-    m "Anyway, thank you very much! You have rendered me and The Science a big service today!"
+    m "Anyway, thank you very much! You have rendered me and the Science a big service today!"
 
 # game/18_events.rpy:2960
 translate english event_16_e354f772:
 
     # m "А теперь, если позволите, то мне нужно начать исследования."
-    m "And now, if you please allow me, I need to begin my research."
+    m "And now, if you please excuse me, I need to begin my research."
 
 # game/18_events.rpy:2962
 translate english event_16_7987e2a0:
@@ -4774,13 +4774,13 @@ translate english event_16_7987e2a0:
 translate english event_16_0052aeb8:
 
     # her "Да и Гарри с Роном очень старались..."
-    her "And Harry and Ron did their best..."
+    her "And Harry and Ron did their best, too..."
 
 # game/18_events.rpy:2965
 translate english event_16_7d0c5a48:
 
     # m "... и?"
-    m "... and?"
+    m "... so?"
 
 # game/18_events.rpy:2967
 translate english event_16_b9adc61a:
@@ -4816,7 +4816,7 @@ translate english event_16_5a420fbe:
 translate english event_16_9edf6b7b:
 
     # her "Я потратила два часа своей жизни, работая грузчиком и получила за это пять очков?!"
-    her "I spent two hours of my life working as a loader to receive only 5 points?!"
+    her "I spent two hours of my life working as a loader to be given only 5 points?!"
 
 # game/18_events.rpy:2979
 translate english event_16_0a05b3eb:
@@ -4828,7 +4828,7 @@ translate english event_16_0a05b3eb:
 translate english event_16_8b6aac94:
 
     # m "Тебе хватит тех десяти тысяч, что я вбухал в этот квест."
-    m "You have enough of those ten thousands that I had invested in this quest."
+    m "You have enough of those ten thousands coins that I have invested in this quest."
 
 # game/18_events.rpy:2997
 translate english event_16_7a9621c9:
@@ -4888,7 +4888,7 @@ translate english event_16_3921ac51:
 translate english event_16_5e694b26:
 
     # her "Нет... Конечно нет!"
-    her "No... Of course not!"
+    her "No... Of course, not!"
 
 # game/18_events.rpy:3029
 translate english event_16_735a59e0:
@@ -4900,7 +4900,7 @@ translate english event_16_735a59e0:
 translate english event_16_81a07e26:
 
     # her "Если вам что-нибудь понадобится, только позовите, Гриффиндор всегда готов помочь!"
-    her "If you ever need something, just say the word. Gryffindor is always ready to help!"
+    her "If you ever need anything, just say the word. Gryffindor is always ready to help!"
 
 # game/18_events.rpy:3033
 translate english event_16_39993c7c_1:
@@ -4912,7 +4912,7 @@ translate english event_16_39993c7c_1:
 translate english event_16_12c9fdda:
 
     # m "Десять тысяч монеток и сто очков факультета..."
-    m "Ten thousand coins and 100 points..."
+    m "Ten thousand coins and 100 house points..."
 
 # game/18_events.rpy:3051
 translate english event_16_1657bc9a:
@@ -4942,7 +4942,7 @@ translate english event_16_c38b32e3:
 translate english event_16_9525eb58:
 
     # m "Ведь вы делали это во благо науки, а не из корыстных побуждений, ведь так?"
-    m "After all, you did it to benefit the science and for some selfish motives, right?"
+    m "After all, you did it to benefit the Science and not for some selfish motive, didn't you?"
 
 # game/18_events.rpy:3059
 translate english event_16_b1977101:
@@ -4966,7 +4966,7 @@ translate english event_16_39abe2e3:
 translate english event_16_2058d930:
 
     # m "Вы абсолютно правы. Но, судя по вашим словам, я ошибался. Ошибался в вас. Можете забирать свои очки и выметаться из моего кабинета."
-    m "You are absolutely right. Judging by your own words, I was wrong. I was wrong about you. You can pick up your glasses and get out of my office."
+    m "You are absolutely right. But, judging by your own words, I was wrong. I was wrong about you. You can take your points and get out of my office."
 
 # game/18_events.rpy:3065
 translate english event_16_cc21fd70_1:
@@ -4996,13 +4996,13 @@ translate english event_16_624a4297:
 translate english event_16_427bee7d:
 
     # her "Вы... Вы абсолютно правы..."
-    her "You... You are absolutely right..."
+    her "You... You are right..."
 
 # game/18_events.rpy:3073
 translate english event_16_4f50b080:
 
     # her "В погоне за победой, мы начали забывать о кое-чем важном."
-    her "In pursuit of victory, we forgot about something important."
+    her "In pursuit of victory for my house, I forgot about something important."
 
 # game/18_events.rpy:3075
 translate english event_16_80003ea8:
@@ -5026,7 +5026,7 @@ translate english event_16_b50a92fd:
 translate english event_16_2ae4611f:
 
     # m "Впрочем, какая разница? Моя работа - превращать недоступных девушек в шлюх, а не беспокоиться об их чувствах."
-    m "However, what's the difference? My job is to turn girls into sluts, but not to worry about their feelings."
+    m "I don't see the difference? My job is to turn girls into sluts, but not to worry about their feelings."
 
 # game/18_events.rpy:3096
 translate english event_16_3f231ed7:
@@ -5038,19 +5038,19 @@ translate english event_16_3f231ed7:
 translate english event_16_1f52c4e0:
 
     # m "Хм... Интересно, как работает система вызова людей в эту комнату?"
-    m "Hmm... Interesting, how does the system work to summon people to this room?"
+    m "Hmm... Interesting, how does this system work that summons people to this room?"
 
 # game/18_events.rpy:3098
 translate english event_16_4fa443eb:
 
     # m "Вроде бы я ничего не делаю, а они..."
-    m "It seems I'm not doing anything, but they are"
+    m "It seems like I'm not doing anything, but they are..."
 
 # game/18_events.rpy:3118
 translate english event_16_aaa48f25:
 
     # sna "Ты звал, Джинни?"
-    sna "You called for me, Ginie?"
+    sna "You called for me, Genie?"
 
 # game/18_events.rpy:3119
 translate english event_16_e612037c_2:
@@ -5062,7 +5062,7 @@ translate english event_16_e612037c_2:
 translate english event_16_b8f0b21e:
 
     # m "Как ты это делаешь?"
-    m "How are you doing this?"
+    m "How do you do this?"
 
 # game/18_events.rpy:3126
 translate english event_16_2fd64ec0:
@@ -5074,7 +5074,7 @@ translate english event_16_2fd64ec0:
 translate english event_16_4cf1dbd8:
 
     # m "Как ты появляешься в этой комнате, стоит мне лишь об этом подумать?"
-    m "How come that you show up in this room, when I'm only in the process to think about it?"
+    m "How come that you show up, when I'm only in the process to think about it?"
 
 # game/18_events.rpy:3128
 translate english event_16_e188d7e9:
@@ -5248,7 +5248,7 @@ translate english event_16_8ccc6286:
 translate english event_16_dc3cf0f1:
 
     # "Мистический голос" "И забудь про секретаршу. По крайней мере пока."
-    "Mystical voice" "And forget about The Secretary. At least for now."
+    "Mystical voice" "And forget about the Secretary. At least for now."
 
 # game/18_events.rpy:3164
 translate english event_16_8f8117d9:
@@ -5260,7 +5260,7 @@ translate english event_16_8f8117d9:
 translate english event_16_b9b0941b:
 
     # "Мистический голос" "Будешь спорить - твоей секретаршей станет хозяйка борделя из Аграбы."
-    "Mystical voice" "If you will continue to argue - your Secretary will become the owner of Agraba' brothel."
+    "Mystical voice" "If you will continue to argue - your Secretary will become the owner of Agraba's brothel."
 
 # game/18_events.rpy:3166
 translate english event_16_4e2dc79e:
@@ -5284,13 +5284,13 @@ translate english event_16_3391ce0c:
 translate english event_16_6996c6d7:
 
     # g4 "*вздох* И как можно работать в таких условиях?"
-    g4 "*Oh* And how to work in such conditions?"
+    g4 "*Oh* And how one works in such conditions?"
 
 # game/18_events.rpy:3176
 translate english event_16_81515843:
 
     # sna "Ты что-то сказал, Джинни?"
-    sna "Did you say something Ginie?"
+    sna "Did you say something Genie?"
 
 # game/18_events.rpy:3177
 translate english event_16_074e688e:
@@ -5302,7 +5302,7 @@ translate english event_16_074e688e:
 translate english event_16_688a5eb4:
 
     # sna "\"Зелье\", Джинни."
-    sna "The \"Potion\", Ginie."
+    sna "The \"Potion\", Genie."
 
 # game/18_events.rpy:3190
 translate english event_16_ad402c01:
@@ -5314,7 +5314,7 @@ translate english event_16_ad402c01:
 translate english event_16_153b9592:
 
     # sna "Ты довольно удачно подгадал момент."
-    sna "You quite successfully chose the right moment."
+    sna "You quite successfully chose the right moment to ask about it."
 
 # game/18_events.rpy:3192
 translate english event_16_d14cc8a8:
@@ -5332,7 +5332,7 @@ translate english event_16_5827863f:
 translate english event_16_d81ddfeb:
 
     # sna "Конечно, можешь приступать. Вот твое ботанойдное зелье, а мне пора... Почистить котлы... Ботанчик."
-    sna "Of course, you can begin. Here's your Nerd Potion and I should go clean some kettles... Nerd."
+    sna "Of course, you can begin. Here's your Nerd Potion and I need to go to clean some kettles... Nerd."
 
 # game/18_events.rpy:3214
 translate english event_16_6e4017ad:
@@ -5386,7 +5386,7 @@ translate english event_16_22b4eee0:
 translate english event_16_603bb8b2:
 
     # m "Хм... Я ничего не чувствую."
-    m "Hmm... I don't feel nothing."
+    m "Hmm... I don't feel anything."
 
 # game/18_events.rpy:3225
 translate english event_16_8290d014:
@@ -5398,7 +5398,7 @@ translate english event_16_8290d014:
 translate english event_16_030fcc9e:
 
     # m "Да еще и эти шуточки с названием..."
-    m "And all this jokes about the potion' name..."
+    m "And all this jokes about the potion's name..."
 
 # game/18_events.rpy:3227
 translate english event_16_c0695bec:
@@ -5488,7 +5488,7 @@ translate english event_16_31272e22:
 translate english event_16_7da352e8:
 
     # m "{size=-4}Как у тебя дела, друг?{/size}"
-    m "{size=-4}What's up?{/size}"
+    m "{size=-4}What's up, friend?{/size}"
 
 # game/18_events.rpy:3252
 translate english event_16_d5e892a2:
@@ -5500,7 +5500,7 @@ translate english event_16_d5e892a2:
 translate english event_16_cb98131c:
 
     # sna2 "Комната выглядит как будто по ней прошло стадо минотавров в брачный период."
-    sna2 "The room looks like a group of Minotaurs passed through in time of mating season."
+    sna2 "The room looks like a group of Minotaurs passed through it in the period of mating season."
 
 # game/18_events.rpy:3260
 translate english event_16_f9d45e6b:
@@ -5530,7 +5530,7 @@ translate english event_16_574beff5:
 translate english event_16_25423612:
 
     # sna2 "Хотя, забудь. Я определенно не хочу об этом знать."
-    sna2 "Actually, forget it. I do not want to know."
+    sna2 "Actually, forget it. I don't want to know."
 
 # game/18_events.rpy:3274
 translate english event_16_d9e217e7:
@@ -5572,19 +5572,19 @@ translate english event_16_e612037c_6:
 translate english event_16_18d94b22:
 
     # m "У меня складывается ощущение, что сюжет развивается в неверном направлении."
-    m "I get the feeling that the story' plot is going in the wrong direction."
+    m "I get the feeling that the story's plot is going in the wrong direction."
 
 # game/18_events.rpy:3289
 translate english event_16_d9747f51:
 
     # m "Ладно, надо тут прибраться..."
-    m "Okay, gotta clean up the mess."
+    m "Okay, gotta clean up the room."
 
 # game/18_events.rpy:3290
 translate english event_16_00179b16:
 
     # "Квест выполнен! Джинни получает +50 к интеллекту и возможность обучать Гермиону! (в будущих обновлениях, конечно)"
-    "Quest completed! Ginie gets +50 Intelligence and the ability to tutor Hermione! (in future updates, of course)"
+    "Quest completed! Genie gets +50 Intelligence and the ability to tutor Hermione! (in future updates, of course)"
 
 # game/18_events.rpy:3291
 translate english event_16_f54c5d8b:
@@ -5626,13 +5626,13 @@ translate english event_16_d3b8a594:
 translate english event_16_2e70f2d6:
 
     # "{size=+4}GIGA-GINNIE-BREEEEKAAAAAR!!!!!{/size}"
-    "{size=+4}GIGA-GINIE-BREEEEKAAAAAR!!!!!{/size}"
+    "{size=+4}GIGA-GENIE-BREEEEKAAAAAR!!!!!{/size}"
 
 # game/18_events.rpy:3301
 translate english event_16_b30e7ba8:
 
     # "{size=+4}Спустя ночь, полную учебы и пафосных выкриков.{/size}"
-    "After a full night of study and pitiful screams."
+    "After a full night of studding and pitiful screams."
 
 # game/18_events.rpy:3305
 translate english event_16_91a98870:
@@ -5674,7 +5674,7 @@ translate english event_16_879941b1_1:
 translate english event_16_853467fa:
 
     # sna2 "Счастливого дня, Джинни."
-    sna2 "Good day, Ginie."
+    sna2 "Good day, Genie."
 
 # game/18_events.rpy:3318
 translate english event_16_a9662c9e:
@@ -5710,7 +5710,7 @@ translate english event_16_9c6f1a6a:
 translate english event_16_00179b16_1:
 
     # "Квест выполнен! Джинни получает +50 к интеллекту и возможность обучать Гермиону! (в будущих обновлениях, конечно)"
-    "Quest completed! Genie gets +50 Intelligence and the ability to tutor Hermione!"
+    "Quest completed! Genie gets +50 Intelligence and the ability to tutor Hermione! (in future updates, of course)"
 
 # game/18_events.rpy:3324
 translate english event_16_063eb820:
@@ -5728,7 +5728,7 @@ translate english event_16_3d1328fe:
 translate english bad_reports_3472dd80:
 
     # sna "Добрый вечер, Джинни."
-    sna "Good evening, Ginie."
+    sna "Good evening, Genie."
 
 # game/18_events.rpy:3351
 translate english bad_reports_bc426bfe:
@@ -5764,7 +5764,7 @@ translate english bad_reports_e612037c:
 translate english bad_reports_d8c9dadb:
 
     # m "А действительно, что я там пишу..?"
-    m "Come to think about it, what I'm actually writing in this reports?"
+    m "Come to think about it, what I'm actually writing in these reports?"
 
 # game/18_events.rpy:3362
 translate english bad_reports_012e4b76:
@@ -5776,7 +5776,7 @@ translate english bad_reports_012e4b76:
 translate english bad_reports_edb9acf6:
 
     # m "Если честно, я просто беру в руку перо и отключаюсь на полдня."
-    m "Frankly, I just take the quill in my hand and fade out for half a day."
+    m "Frankly, I just take the quill in my hand and daze out for half a day."
 
 # game/18_events.rpy:3364
 translate english bad_reports_e582063a:
@@ -5794,7 +5794,7 @@ translate english bad_reports_445aefda:
 translate english bad_reports_ca64113d:
 
     # sna "Тебе никогда не было интересно, что ты пишешь, находясь в бессознательном состоянии и отправляешь парням, которые могут упечь нас с тобой за решетку?"
-    sna "Did you ever been curious, about what are you writing being unconscious, or what do you send to people that could easily lock us behind bars?"
+    sna "Did you ever been curious, about what are you writing being unconscious, or what are you sending to people that could easily lock us behind bars?"
 
 # game/18_events.rpy:3372
 translate english bad_reports_e612037c_1:
@@ -5986,19 +5986,19 @@ translate english report_to_minister_c66d10a2:
 translate english report_to_minister_981dcd5f:
 
     # m "Никогда не доверяй человеку с именем \"Педреро\"."
-    m "Never trust a person with the name \"Pedrero\"."
+    m "Never trust a person with a name \"Pedrero\"."
 
 # game/18_events.rpy:3487
 translate english report_to_minister_5694682d:
 
     # sna "\"Он увидел свет, сочащийся из почивальни Дона Хуанито.\""
-    sna "\"He saw a light, emited from the bedroom of Don Juanito.\""
+    sna "\"He saw a light, emitted from the bedroom of Don Juanito.\""
 
 # game/18_events.rpy:3488
 translate english report_to_minister_ee794c69:
 
     # sna "\"Он приоткрыл дверь, и увидел мощный торс своего господина, выглядещего еще более прекрасно при свете свечи.\""
-    sna "\"He slightly opened the door and saw the powerful torso of his master, looking even more beautiful lighted by the flame of a candle.\""
+    sna "\"He slightly opened the door and saw the powerful torso of his master, looking even more beautiful lighted by the flames of candles.\""
 
 # game/18_events.rpy:3489
 translate english report_to_minister_fa3a280f:
@@ -6052,7 +6052,7 @@ translate english report_to_minister_e612037c_1:
 translate english report_to_minister_9bb8e0c0:
 
     # sna "Ты перпутал листки и дал мне наброски своей книги?"
-    sna "Did you mix up the report with pages from your book?"
+    sna "Did you mix up the report with the pages from your book?"
 
 # game/18_events.rpy:3504
 translate english report_to_minister_7b463c0d:
@@ -6094,7 +6094,7 @@ translate english report_to_minister_a6439b17:
 translate english report_to_minister_0d6b4d23:
 
     # sna "{size=+5}Это я должен спрашивать!{/size}"
-    sna "{size=+5}It's me who should ask the questions.{/size}"
+    sna "{size=+5}It is me who should ask the questions.{/size}"
 
 # game/18_events.rpy:3521
 translate english report_to_minister_fcaf7793:
@@ -6130,7 +6130,7 @@ translate english report_to_minister_d26c1fc1:
 translate english report_to_minister_f1721cce:
 
     # sna "Не думаю, что мы можем тут что-нибудь сделать."
-    sna "I don't think that we can do something."
+    sna "I don't think that we can do anything."
 
 # game/18_events.rpy:3542
 translate english report_to_minister_f44e1bae:

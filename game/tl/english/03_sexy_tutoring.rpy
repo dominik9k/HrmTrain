@@ -64,7 +64,7 @@ translate english date_02_82af2770:
 translate english locked_06402ebf:
 
     # "Не хватает распутства."
-    "Not enough lustfulness."
+    "Not enough whoring."
 
 translate english strings:
 
@@ -118,5 +118,5 @@ translate english strings:
 
     # game/03_sexy_tutoring.rpy:26
     old "Положить ее руки на член."
-    new ""
+    new "Put her hand on your crotch."
 

@@ -16,7 +16,7 @@ translate english tutoring_a01f758e:
 translate english tutoring_12a42b18:
 
     # her "Еще раз спасибо за то, что делаете это для меня, сэр."
-    her "Thank you again for what you are doing for me, Sir."
+    her "Again, thank you for doing this for me, Sir."
 
 # game/08_tutoring.rpy:47
 translate english tutoring_de6bc905:
@@ -28,19 +28,19 @@ translate english tutoring_de6bc905:
 translate english tutoring_599dcafd:
 
     # her "Я хочу сказать, что очень ценю вашу заботу."
-    her "I want to say that I appreciate your concern."
+    her "I want to say, that I appreciate your concern."
 
 # game/08_tutoring.rpy:49
 translate english tutoring_ee331691:
 
     # m "Не стоит благодарности, мисс Грейнджер. Следить за успеваемостью учеников - одна из главных обязанностей директора."
-    m "No problem at all, Miss Granger. To watch over the student's performance is one of the main duty of Headmaster."
+    m "Don't mention it, Miss Granger. To watch over student's performance is one of the main duty of the Headmaster."
 
 # game/08_tutoring.rpy:50
 translate english tutoring_daa08855:
 
     # g9 "{size=-4}(Кроме того, я собираюсь залезть к тебе в трусики, когда мы закончим.){/size}"
-    g9 "{size=-4}(Besides, I am going to get in to your panties when we finish.){/size}"
+    g9 "{size=-4}(Besides, I am going to get in to your panties when we are done.){/size}"
 
 # game/08_tutoring.rpy:57
 translate english tutoring_98a5626d:
@@ -58,7 +58,7 @@ translate english tutoring_a60fb29a:
 translate english tutoring_b7d03a92:
 
     # her "Я ни на секунду не сомневалась в этом."
-    her "Even for a second I never doubted it."
+    her "I have never doubted even for a single second."
 
 # game/08_tutoring.rpy:62
 translate english tutoring_33c76510:
@@ -100,13 +100,13 @@ translate english tutoring_f8412769:
 translate english tutoring_2414fde4:
 
     # her "Есть кое-что, в чем я сомневаюсь, и это не дает мне покоя."
-    her "There is something I'm uncertain of and it haunts me."
+    her "There is something I have doubts about and it haunts me."
 
 # game/08_tutoring.rpy:76
 translate english tutoring_da272682:
 
     # g9 "И что же это? Не стесняйся, можешь спросить у самого великого волшебника в мире!"
-    g9 "And what is it? Don't be shy, you can ask the greatest wizard in the world!"
+    g9 "What is it? Don't be shy, you can ask the greatest wizard in the world!"
 
 # game/08_tutoring.rpy:79
 translate english tutoring_cc21fd70_1:
@@ -118,7 +118,7 @@ translate english tutoring_cc21fd70_1:
 translate english tutoring_921c1b88:
 
     # her "Хорошо..."
-    her "Ok..."
+    her "Well..."
 
 # game/08_tutoring.rpy:85
 translate english tutoring_32d39567:
@@ -130,13 +130,13 @@ translate english tutoring_32d39567:
 translate english tutoring_f46a0048:
 
     # her "Ведь в таком случае идеально должно подходить \"гэйли секундум\", но в издании \"Эксцилиус прохороса\" 1831 утверждается обратное..."
-    her "After all, in this case \"Gailey Sekundum\" should fit ideally, but in the publication \"Ekstsilius Prohorosa \" from 1831 is stated otherwise ..."
+    her "After all, in this case \"Gailey Sekundum\" should fit ideally, but the publication \"Ekstsilius Prohorosa \" from 1831 is stating the opposite ..."
 
 # game/08_tutoring.rpy:89
 translate english tutoring_7571e2c8:
 
     # her "Не могли бы вы сказать, в чем моя ошибка?"
-    her "Could you tell me where am I mistaken?"
+    her "Could you tell me what I'm missing?"
 
 # game/08_tutoring.rpy:90
 translate english tutoring_68f7e006:
@@ -178,7 +178,7 @@ translate english tutoring_03c2e3b9:
 translate english tutoring_387791d6:
 
     # m "Кхм... Стоит учесть, что мы говорим не о простых мунтикорах, а именно пердуанских..."
-    m "Ahem... It's worth noting that we are not talking about simple Muntikorah, namely Perduanskih..."
+    m "Ahem... It's worth noting that we are not talking about simple Muntikorah, but namely Perduanskih..."
 
 # game/08_tutoring.rpy:99
 translate english tutoring_9870f7de:
@@ -202,7 +202,7 @@ translate english tutoring_0bf11aac_1:
 translate english tutoring_176f60cc:
 
     # her "Перуанские мантикоры - мантикоры, живущие в районе Перу, размах крыльев достигает..."
-    her "Peruvian Manticores - Manticores are living in the area of Peru, wingspan..."
+    her "Peruvian Manticores - Manticores live in the Coastal Region of Peru, wingspan..."
 
 # game/08_tutoring.rpy:107
 translate english tutoring_2e95d7f9:
@@ -280,13 +280,13 @@ translate english tutoring_30b1facb:
 translate english tutoring_c700af70:
 
     # her "Эм... Впервые их подробно изучил член Мальбуржской ассоциации магов - Истафар Ариус..."
-    her "Um ... the first time a detailed study of their member association Malburzhskoy Magicians - Istafar Arius..."
+    her "Uhm ... the first time a detailed study of them was performed by one of the member of Malburzhskoy Association of Magicians - Istafar Arius..."
 
 # game/08_tutoring.rpy:126
 translate english tutoring_1e3aa374:
 
     # her "Я что-то сказала не так..?"
-    her "I said something wrong..?"
+    her "Did I say something wrong..?"
 
 # game/08_tutoring.rpy:128
 translate english tutoring_b39479c9:
@@ -304,7 +304,7 @@ translate english tutoring_db27c818:
 translate english tutoring_63025701:
 
     # m "Ах, да... Вопрос..."
-    m "Ah, yes ... Question..."
+    m "Ah, yes ... The question..."
 
 # game/08_tutoring.rpy:133
 translate english tutoring_a7425374:
@@ -370,7 +370,7 @@ translate english tutoring_a3677f16:
 translate english tutoring_17bb311f:
 
     # m "Я знаю. Это была еще одна проверка. Сосредоточьтесь на зяблике и на том существе."
-    m "I know. It was another test. Focus on the Finch and that creature."
+    m "I know. It was just another test. Focus on the Finch and that creature."
 
 # game/08_tutoring.rpy:158
 translate english tutoring_ac8564dd:
@@ -394,7 +394,7 @@ translate english tutoring_cc21fd70_3:
 translate english tutoring_cc126aa8:
 
     # m "Они занимают весь ваш разум..."
-    m "They take up all your mind..."
+    m "That occupy your mind..."
 
 # game/08_tutoring.rpy:164
 translate english tutoring_cc21fd70_4:
@@ -424,7 +424,7 @@ translate english tutoring_0934201f:
 translate english tutoring_ffd63168:
 
     # m "Это и есть ответ на ваш вопрос, мисс Грейнджер."
-    m "This is the answer to your question, Miss Granger."
+    m "This is it, the answer to your question, Miss Granger."
 
 # game/08_tutoring.rpy:179
 translate english tutoring_c38b32e3_1:
@@ -472,7 +472,7 @@ translate english tutoring_cc21fd70_6:
 translate english tutoring_36a8aad2:
 
     # her "{size=-4}(И что это было..?){/size}"
-    her "{size=-4}(What a hell..?){/size}"
+    her "{size=-4}(What the hell was that..?){/size}"
 
 # game/08_tutoring.rpy:199
 translate english tutoring_e1bb4c01:
@@ -490,19 +490,19 @@ translate english tutoring_9ff767c6_1:
 translate english tutoring_d8f8850c:
 
     # g4 "Разрывает ее тушу на мелкие кусочки и начинает пожирать ее внутренности!"
-    g4 "Lacerates its body into small pieces and starts to devour its insides!"
+    g4 "Lacerates its body into small pieces and begins to devour its insides!"
 
 # game/08_tutoring.rpy:204
 translate english tutoring_5ca6848d:
 
     # g4 "Глаза мантикоры смотрят на маленькую птичку с выражением отчаяния, ужаса и немой мольбы."
-    g4 "Manticore's eyes are staring at the small bird with a look of despair, fear and silent prayer."
+    g4 "Manticore's is watching the small bird in silent prayer with fear and despair."
 
 # game/08_tutoring.rpy:205
 translate english tutoring_b942e44c:
 
     # g4 "Но маленькое чудовище просто продолжает пожирать ее внутренности, издавая отвратительные чавкающие звуки..."
-    g4 "But the little monster just continues to devour her insides, making disgusting sucking sounds ..."
+    g4 "The little monster continues to devour her insides, making disgusting sucking sounds ..."
 
 # game/08_tutoring.rpy:206
 translate english tutoring_dc27178a:
@@ -520,7 +520,7 @@ translate english tutoring_ffe14981:
 translate english tutoring_a8ed0223:
 
     # her "Что это за..."
-    her "What a..."
+    her "What is this..."
 
 # game/08_tutoring.rpy:211
 translate english tutoring_279badb1:
@@ -532,7 +532,7 @@ translate english tutoring_279badb1:
 translate english tutoring_e3b1b5b4:
 
     # m "А теперь оставьте меня."
-    m "Now leave me."
+    m "Now, leave me."
 
 # game/08_tutoring.rpy:213
 translate english tutoring_02d052f0:
@@ -562,7 +562,7 @@ translate english tutoring_cc21fd70_7:
 translate english tutoring_6a6f5602:
 
     # g9 "А мне пора приступать к \"чистке труб\"."
-    g9 "And I've got to start \"cleaning the pipes\"."
+    g9 "It's time for me to \"clean the pipe\"."
 
 # game/08_tutoring.rpy:225
 translate english tutoring_3086f8ef:
@@ -610,13 +610,13 @@ translate english tutoring_486eae91:
 translate english tutoring_41f759f0:
 
     # her "Я чувствую что с моей грудью... Что-то происходит..."
-    her "I feel that my chest... Something's going on..."
+    her "I feel that my chest... Something is not right..."
 
 # game/08_tutoring.rpy:240
 translate english tutoring_4cd676da:
 
     # m "Ах, это... Это часть медитации. Космическая энергия течет в ваше сердце, чтобы дать ответ на интересующий вас вопрос."
-    m "Oh, it's... It's part of meditation. Cosmic energy flows into your heart to give you an answer to your question."
+    m "Oh, it's... It's part of the meditation. The cosmic energy flows into your heart to give you the answer to your question."
 
 # game/08_tutoring.rpy:241
 translate english tutoring_b1041d8d:
@@ -628,13 +628,13 @@ translate english tutoring_b1041d8d:
 translate english tutoring_55f5814a:
 
     # her "*Ах!* Космическая энергия? Это что-то... *Ах!* Из индийской магии?"
-    her "*Ah!* Cosmic energy? That's something... * Ah!* From Indian magic?"
+    her "*Ah!* The cosmic energy? That's something... * Ah!* from Indian Magic?"
 
 # game/08_tutoring.rpy:245
 translate english tutoring_5b04ef75:
 
     # m "Точно. А вы очень начитанны, мисс. А теперь сосредоточтесь на космической энергии..."
-    m "Certainly. And you are very widely read, Miss. Now focus on the cosmic energy..."
+    m "Precisely. You are very knowledgeable, Miss Granger. Now focus on that cosmic energy..."
 
 # game/08_tutoring.rpy:248
 translate english tutoring_6a001364:
@@ -664,7 +664,7 @@ translate english tutoring_41dfb897:
 translate english tutoring_e3d63e8d:
 
     # m "{size=-4}(Думаю, не стоит вываливать на нее слишком много в самом начале тренировок...){/size}"
-    m "{size=-4}(I don't think it is necessary to take it further in the beginning of the training ...){/size}"
+    m "{size=-4}(I don't think it's necessary to take it further so early in the training ...){/size}"
 
 # game/08_tutoring.rpy:253
 translate english tutoring_ad1bf6cb:
@@ -694,31 +694,31 @@ translate english tutoring_9211b32d:
 translate english tutoring_1bec81a1:
 
     # her "У меня было ощущение, что кто-то трогал мою грудь..."
-    her "I had a feeling that someone touched my breasts..."
+    her "I had a feeling, that someone touched my breasts..."
 
 # game/08_tutoring.rpy:262
 translate english tutoring_306d30f1:
 
     # her "И больше ничего."
-    her "And more than anything."
+    her "And nothing more."
 
 # game/08_tutoring.rpy:263
 translate english tutoring_ad2a5f06:
 
     # m "Вам понравилось?"
-    m "You liked it?"
+    m "Did you like it?"
 
 # game/08_tutoring.rpy:266
 translate english tutoring_fef35770:
 
     # her "Профессор?! Да как вы..."
-    her "Professor ?!..."
+    her "Professor?! How dare you..."
 
 # game/08_tutoring.rpy:267
 translate english tutoring_a7676573:
 
     # m "Делиться ощущениями от медитации - важная часть тренировки."
-    m "To share your feelings during a meditation it is an important part of the training."
+    m "To share your feelings during the meditation it is an important part of the training."
 
 # game/08_tutoring.rpy:270
 translate english tutoring_cc21fd70_10:
@@ -736,7 +736,7 @@ translate english tutoring_3718e3d1:
 translate english tutoring_0198a1be:
 
     # her "Но ответа я так и не получила."
-    her "But I never received an answer."
+    her "But I never received the answer."
 
 # game/08_tutoring.rpy:273
 translate english tutoring_21b107d8:
@@ -766,7 +766,7 @@ translate english tutoring_f3a4fab8:
 translate english tutoring_073f19fe:
 
     # her "До свидания."
-    her "Bye now."
+    her "Goodbye, Professor."
 
 # game/08_tutoring.rpy:280
 translate english tutoring_7ba24662:
@@ -778,7 +778,7 @@ translate english tutoring_7ba24662:
 translate english tutoring_4661af2d:
 
     # g9 "Что ж, пора приступать к \"чистке труб\"."
-    g9 "Well, it's time to start \"cleaning the pipes\"."
+    g9 "Well, it's time for me to \"clean the pipe\"."
 
 # game/08_tutoring.rpy:287
 translate english tutoring_23c557f6:
@@ -808,13 +808,13 @@ translate english tutoring_e612037c_6:
 translate english tutoring_c47bb70a:
 
     # m "Вряд ли я смогу обучать ее, сам ничего толком не зная об этом мире..."
-    m "It is unlikely that I will be able to train her, I don't really know anything about this world..."
+    m "It's unlikely that I will be able to train her, I don't really know anything about this world..."
 
 # game/08_tutoring.rpy:295
 translate english tutoring_2a251d37:
 
     # m "Думаю, мне стоит поговорить об этом со Снейпом."
-    m "I think I should talk about it with Snape."
+    m "I should talk about it with Snape."
 
 # game/08_tutoring.rpy:307
 translate english tutoring_c132c941:
@@ -916,11 +916,11 @@ translate english strings:
 
     # game/08_tutoring.rpy:168
     old "Эта хрень сжирает зяблика!"
-    new "The Thing devours the Finch"
+    new "The Thing devours Finch"
 
     # game/08_tutoring.rpy:168
     old "Зяблик сжирает эту хрень!"
-    new "The Finch devours the Thing."
+    new "The Finch devours Thing."
 
     # game/08_tutoring.rpy:168
     old "Схватить ее за грудь!"

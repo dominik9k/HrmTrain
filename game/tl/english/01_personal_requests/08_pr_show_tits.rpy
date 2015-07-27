@@ -352,391 +352,391 @@ translate english new_request_08_42052a4f:
 translate english new_request_08_a1532c5c:
 
     # her "Сэр, мы оба знаем, что вам интереснее не просто смотреть, а делать кое-что еще..."
-    her ""
+    her "Sir, we both know that you are not that interested in watching, but doing something else..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:235
 translate english new_request_08_417367af:
 
     # m "Может быть это {size=+4}ВАМ{/size} интересно, мисс Грейнджер, чтобы я делал кое-что еще?"
-    m ""
+    m "Maybe that's {size=+4}YOU{/size} who is interested, Miss Granger, for me to do something else?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:237
 translate english new_request_08_311b4ad6:
 
     # her "Сэр, не будем играть в игры. Мне нужны очки для факультета, вам нужны сексуальные услуги."
-    her ""
+    her "Sir, let's not play games. I need house points, you need sexual favors."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:238
 translate english new_request_08_7c77bfae:
 
-    # her "Я не получаю от этого никакого удовольствия, но если это нужно вам, то готова пойти на большее, чтобы заработать."
-    her ""
+    # her "Я не получаю от этого никакого удовольствия, но если это нужно вам, то я готова пойти на большее, чтобы заработать."
+    her "I don't get any satisfaction by doing this, but if you need it, I willing to do more, to get paid."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:239
 translate english new_request_08_78daaa8a:
 
     # m "Вы теперь подрабатываете этим, мисс Грейнджер?"
-    m ""
+    m "Did this became your day job, Miss Granger?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:241
 translate english new_request_08_88212dc2:
 
     # her "Что?.. {size=+4}СЭР!{/size} Я говорю о том, чтобы заработать очки!"
-    her ""
+    her "What?.. {size=+4}Sir!{/size} I'm talking about getting paid with house!"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:242
 translate english new_request_08_cc18951b:
 
     # m "Ох, простите, а я было подумал..."
-    m ""
+    m "Oh, I'm sorry, I thought for a moment..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:244
 translate english new_request_08_71beda22:
 
     # her "Вы подумали неправильно! Я никогда не опущусь до такого!"
-    her ""
+    her "You thought wrong! I will never fall that low!"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:245
 translate english new_request_08_130d0a77:
 
     # m "Ну хорошо, мисс, если речь идет о том, чтобы заработать побольше очков..."
-    m ""
+    m "Alright, Miss Granger, if you are talking about getting more house points..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:247
 translate english new_request_08_e05867c1:
 
     # her "Только об этом и идет, сэр!"
-    her ""
+    her "Only about house points, Sir!"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:248
 translate english new_request_08_e6709181:
 
     # m "Тогда давайте займемся вашей попкой."
-    m ""
+    m "Then let's have some fun with your butt."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:251
 translate english new_request_08_a8d28c93:
 
     # her "Попкой, сэр? В смысле, вы потрогаете..."
-    her ""
+    her "My butt, Sir? Do you mean you want to touch..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:252
 translate english new_request_08_33ff94a2:
 
     # m "В смысле, я потрогаю ее своим членом..."
-    m ""
+    m "I mean to touch it with my cock..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:254
 translate english new_request_08_4c6aa5c0:
 
     # her "Но, сэр! Что вы такое... Я не имела в виду..."
-    her ""
+    her "But, Sir! What are you... I thought..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:255
 translate english new_request_08_07a81cab:
 
     # m "Не имели в виду? А за что, по-вашему, я должен давать вам больше очков? За рождественскую песенку?"
-    m ""
+    m "What did you think? Why should I give you more points? For a Christmas Song?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:257
 translate english new_request_08_77daac9d:
 
     # her "Но я не готова, это слишком!"
-    her ""
+    her "But I'm not ready for something like this, it's just too much"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:258
 translate english new_request_08_7f193ea0:
 
     # m "Зачем же тогда вы мне морочите голову, мисс, рассказывая, что хотите заработать побольше очков?"
-    m ""
+    m "Why then are you wasting my time, Miss Granger, telling me that you want to earn more points?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:260
 translate english new_request_08_4641c443:
 
     # her "Я хочу, сэр, но не такой ценой!"
-    her ""
+    her "I want, Sir, but not like this!"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:261
 translate english new_request_08_2ef60fa2:
 
     # m "То есть, вы теперь указываете мне, девушка, за что вам платить?"
-    m ""
+    m "So now you are telling me, girl, which favors should I buy?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:262
 translate english new_request_08_c9529dca:
 
     # m "Вы знаете, мисс, я неравнодушен к Гриффиндору..."
-    m ""
+    m "You know, Miss Granger, I do sympathize with Gryffindor, I really do..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:263
 translate english new_request_08_af264542:
 
     # m "Но из-за ваших капризов начинаю серьезно подумывать, не ошибся ли я в вас?"
-    m ""
+    m "But because of your whims, I begin to question myself, if I misjudge you?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:264
 translate english new_request_08_177dec5d:
 
     # m "Может, мне позвать кого-нибудь из слизеринок? Наверняка, они более преданы факультету."
-    m ""
+    m "Maybe I should summon someone from Slytherin? They are certainly more loyal to their house."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:265
 translate english new_request_08_7c6a3681:
 
     # m "Да! Отличная идея. Мисс Грейнджер, будьте любезны, пригласите профессоры Снейпа."
-    m ""
+    m "Yes! That's a very good idea, Miss Granger, could you be so kind, to go look for Professor Snape."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:266
 translate english new_request_08_333c90a4:
 
     # m "Наверняка он порекомендует мне {size=+4}ДОСТОЙНУЮ{/size} кандидатку."
-    m ""
+    m "He definitely will recommend a {size=+4}WORHTY{/size} candidate."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:268
 translate english new_request_08_3daa5fa5:
 
     # her "Профессор, пожалуйста..."
-    her ""
+    her "Professor, please..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:269
 translate english new_request_08_1af8d59b:
 
     # m "Что такое, мисс Грейнджер? Вы и этого не в состоянии сделать?"
-    m ""
+    m "What it is, Miss Granger? You are not even capable to do something as simple as this?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:271
 translate english new_request_08_08ffcb41:
 
     # her "Профессор, я ошиблась... я была неправа... пожалуйста, простите меня."
-    her ""
+    her "Professor, I was wrong... I was foolish... please, forgive me."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:272
 translate english new_request_08_4d69127f:
 
     # m "И что будет завтра?"
-    m ""
+    m "And what about tomorrow?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:273
 translate english new_request_08_7c5b0b9a:
 
     # m "Вам опять будет мало очков?"
-    m ""
+    m "You will again ask for more points?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:274
 translate english new_request_08_350c07b7:
 
     # her "Нет, сэр, я поняла."
-    her ""
+    her "No, Sir, I realized."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:276
 translate english new_request_08_de7c20b3:
 
     # her "Если вы хотите посмотреть на мои сиськи, значит я должна показать вам сиськи и не торговаться из-за очков."
-    her ""
+    her "If you want to see my tits, I need to show them to you and not bargain about points."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:277
 translate english new_request_08_2dea377c:
 
     # m "..............................."
-    m ""
+    m "..............................."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:278
 translate english new_request_08_598514ae:
 
     # her "............................."
-    her ""
+    her "............................."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:281
 translate english new_request_08_5c26cf38:
 
     # m "Похоже, вы не понимаете, мисс Грейнждер, что я подбираю вам посильные задания."
-    m ""
+    m "Seems, you don't understand, Miss Granger, that I choose for you more beneficial favors."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:282
 translate english new_request_08_597d8ea7:
 
     # m "Вы должны быть благодарны."
-    m ""
+    m "You need to be grateful."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:284
 translate english new_request_08_fccb9750:
 
     # her "Я благодарна, сэр, правда."
-    her ""
+    her "I am grateful, Sir, really."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:285
 translate english new_request_08_7b407e99:
 
     # m "И в благодарность вы сегодня показываете свои сиськи бесплатно. Не так ли?"
-    m ""
+    m "So as a token of gratitude today you are going to show me your for free. Aren't you?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:287
 translate english new_request_08_2a74e77f:
 
     # her "Эмм... Д-да, сэр."
-    her ""
+    her "Emm... Ye-yes, Sir."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:291
 translate english new_request_08_cfb48c36:
 
     # m "Вы понимаете, мисс, что провинились и должны быть наказаны?"
-    m ""
+    m "You do understand, Miss Granger, that you are guilty and need to be punished?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:292
 translate english new_request_08_2b11c8d1:
 
     # her "На-наверное..."
-    her ""
+    her "I think so..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:293
 translate english new_request_08_b788a7cb:
 
     # m "То есть, вы не уверены?"
-    m ""
+    m "So, you are not sure?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:295
 translate english new_request_08_89a8319d:
 
     # her "Нет, я уверена... видимо."
-    her ""
+    her "No, I am sure... Probably."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:296
 translate english new_request_08_ef73394d:
 
     # m "Я не стану мучать вас сложными наказаниями, вы просто отсосете у меня. Это вы любите..."
-    m ""
+    m "I won't punish you hard, you are just going to give me a blowjob. You love it..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:298
 translate english new_request_08_a904ef81:
 
     # her "Ничего подобного..."
-    her ""
+    her "Not at all..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:299
 translate english new_request_08_0e43a83d:
 
     # m "Мне послышалось?.. Или стоит выбрать наказание серьезнее?"
-    m ""
+    m "Did I hear something?.. Should I choose a more severe punishment?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:301
 translate english new_request_08_16f428f4:
 
     # her "Эмм... Хорошо, сэр. Да, я люблю."
-    her ""
+    her "Emm... Alright, Sir. Yes, I love it."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:302
 translate english new_request_08_78163cd7:
 
     # m "Скажите полностью, будьте добры!"
-    m ""
+    m "Could you be so kind, to say the full sentence."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:304
 translate english new_request_08_d255974d:
 
     # her "Я люблю... отсасывать, сэр."
-    her ""
+    her "I love... sucking cock, Sir."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:305
 translate english new_request_08_20fa68b5:
 
     # m "Замечательно. Но чтобы наказание не превратилось для вас в сплошное удовольствие, в этот раз я не стану платить вам."
-    m ""
+    m "Wonderful. To not make you punishment a continuous stream of pleasure, this time you are not getting paid."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:306
 translate english new_request_08_f2789bb7:
 
     # her "Да, сэр."
-    her ""
+    her "Yes, Sir."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:307
 translate english new_request_08_a0b7dc26:
 
     # m "А наоборот, вы заплатите мне за доставленное удовольствие - я вычту стоимость услуги из очков Гриффиндора."
-    m ""
+    m "On the contrary, you are going to pay me for the delivered pleasure - I'll subtract the cost of favor from the Gryffindor house points."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:309
 translate english new_request_08_5b0d4cf7:
 
     # her "Но, сэр!"
-    her ""
+    her "But, Sir!"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:310
 translate english new_request_08_857edc02:
 
     # m "Вы считаете это несправедливым, юная леди?"
-    m ""
+    m "Do you think it's unfair, young lady?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:312
 translate english new_request_08_5dc84248:
 
     # her "....................................."
-    her ""
+    her "....................................."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:313
 translate english new_request_08_fa33c5d3:
 
     # m "Я не слышу!"
-    m ""
+    m "I don't hear you!"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:315
 translate english new_request_08_461125b1:
 
     # her "Ну, если вы так говорите..."
-    her ""
+    her "If you say so..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:316
 translate english new_request_08_90260adf:
 
     # m "Отлично! Тогда доставьте себе удовольствие."
-    m ""
+    m "Great! You can begin to give yourself the pleasure."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:317
 translate english new_request_08_0df5d259:
 
     # her "Вы имеете в виду, я должна?..."
-    her ""
+    her "Do you mean I need to...?"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:318
 translate english new_request_08_aec0abb3:
 
     # g9 "Должны-должны, мисс. Получите удовольствие, отсасывая у меня."
-    g9 ""
+    g9 "You do, Miss Granger. Give yourself the pleasure of sucking my cock."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:322
 translate english new_request_08_7998a875:
 
     # her "Спасибо, сэр."
-    her ""
+    her "Thank you, Sir."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:325
 translate english new_request_08_121a03c1:
 
     # m "Впрочем, я передумал, мисс Грейнджер."
-    m ""
+    m "Actually, I've changed my mind, Miss Granger."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:326
 translate english new_request_08_0d5b26e0:
 
     # m "Сегодня мы ограничимся просмотром ваших сисек!"
-    m ""
+    m "Today we'll limit ourself to the pleasant sight of your tits."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:329
 translate english new_request_08_a1e034c1:
 
     # her "................"
-    her ""
+    her "................"
 
 # game/01_personal_requests/08_pr_show_tits.rpy:330
 translate english new_request_08_ba5c885c:
 
     # m "Приступим."
-    m ""
+    m "Let's do it."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:332
 translate english new_request_08_e54b1356:
 
     # m "Ну что ж..."
-    m ""
+    m "Well..."
 
 # game/01_personal_requests/08_pr_show_tits.rpy:348
 translate english new_request_08_3b81d51e_2:

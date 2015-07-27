@@ -22,13 +22,13 @@ translate english intro_800b6c73:
 translate english gallery_locked_a2f30ad1:
 
     # ">Пройдите игру, чтобы разблокировать галлерею."
-    ">Beat the game to unlock the gallery."
+    ">Beat the game to unlock the Gallery."
 
 # game/29_extras.rpy:1643
 translate english sroom_locked_4b7d9c7c:
 
     # "{size=+5}Ты не наследник Слизерина ! МУХАХАХА{/size}"
-    ""
+    "{size=+5}You are not the Slytherin's successor! MUHAHAHA!{/size}"
 
 # game/29_extras.rpy:1644
 translate english sroom_locked_24124967:
@@ -224,5 +224,5 @@ translate english strings:
 translate english gallery_3da8f0a6:
 
     # dev "Добро пожаловать в галерею игры \"Воспитание Ведьмы\". Здесь вы можете посмотреть некоторые работы."
-    dev ""
+    dev "Welcome to the \"Witch Trainer\" gallery. Here you can have a look at some of the production artwork."
 

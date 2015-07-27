@@ -22,7 +22,7 @@ translate english cupboard_eba7dd68:
 translate english cupboard_4e31fb5c:
 
     # m "Может порыться в нем чуть позже..."
-    m "Maybe I should rummage through this a bit later anyway."
+    m "Maybe I should rummage through this one later..."
 
 # game/11_cupboard.rpy:49
 translate english menu_cupboard_description_0e8c385f:
@@ -52,13 +52,13 @@ translate english menu_cupboard_description_31b40d49:
 translate english cheat_help_277efec1:
 
     # "ТУРБО-режим включен. Теперь ваши действия будут приносить вам вдвое больше денег и очков факультету Слизерина.\n Шанс на прочтение дополнительной главы вдвое больше."
-    "TURBO-mode is enabled. From now on your actions will bring you twice as much money and points to the house of Slytherin.\n. The chance to read an additional book chapter is doubled."
+    "TURBO-mode is enabled. From now on your actions will bring you twice the amount of coins and house points to Slytherin.\n. The chance to read an additional book chapter is doubled."
 
 # game/11_cupboard.rpy:67
 translate english cheat_help_78475b8e:
 
     # "ТУРБО-режим выключен. Теперь ваши действия будут приносить вам обычное количество денег и очков факультету Слизерина.\n Шанс на прочтение дополнительной главы стандартный."
-    "TURBO-mode is disabled. From now on your actions will bring you the usual amount of money and points to the house of Slytherin.\n. The chance to read an additional book chapter is normal."
+    "TURBO-mode is disabled. From now on your actions will bring you the usual amount of coins and house points to Slytherin.\n. The chance to read an additional book chapter is normal."
 
 # game/11_cupboard.rpy:76
 translate english cheat_help_03b65cc2:
@@ -94,13 +94,13 @@ translate english rummaging_63c659bf:
 translate english rummaging_54077c21:
 
     # ">Вы нашли каталог \"Приблуды Дахра\"... \n>Теперь вы можете использовать каталог для заказа товаров с помощью совы."
-    ">You found the \"Dahr's Oddities\" catalog...\n>Now you can use the catalog to order goods via owl's post."
+    ">You found the \"Dahr's Oddities\" catalog...\n>Now you can use the catalog to order goods via owl post."
 
 # game/11_cupboard.rpy:256
 translate english rummaging_a72b62f0:
 
     # ">...Вы не нашли ничего ценного."
-    ">...You found nothing of value."
+    ">...You find nothing of value."
 
 # game/11_cupboard.rpy:282
 translate english already_did_5dfb7506:
@@ -156,7 +156,7 @@ translate english strings:
 
     # game/11_cupboard.rpy:61
     old "ЧИТ: +100 очков Слизерину"
-    new "CHEAT: +100 points to Slytherin"
+    new "CHEAT: +100 house points to Slytherin"
 
     # game/11_cupboard.rpy:61
     old "ЧИТ: Гермиона не злится на вас"
@@ -180,23 +180,23 @@ translate english strings:
 translate english menu_cupboard_description_wrd_0e8c385f:
 
     # ">[item._description]"
-    ""
+    ">[item._description]"
 
 translate english strings:
 
     # game/11_cupboard.rpy:4
     old "- Вещи -"
-    new ""
+    new "-Items-"
 
     # game/11_cupboard.rpy:34
     old "- Одежда для подарков -"
-    new ""
+    new "-Clothes as a Gift"
 
     # game/11_cupboard.rpy:34
     old "- Вещи напрокат -"
-    new ""
+    new "-Rented Clothes"
 
     # game/11_cupboard.rpy:34
     old "- Помощь -"
-    new ""
+    new "-Help-"
 
