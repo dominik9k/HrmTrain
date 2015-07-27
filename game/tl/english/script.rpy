@@ -4,7 +4,7 @@
 translate english start_31c485b7:
 
     # u"Новая игра +" ">Хотите перенести все золото и имущество из предыдущей игры?" nointeract
-    u"New Game +" ">Would you like to move all your gold and possessions from your previous playthrough into this one?" nointeract
+    u"New Game +" ">Would you like to move all your gold and items from your previous playthrough into this one?" nointeract
 
 # game/script.rpy:5493
 translate english start_18432091:
@@ -15,26 +15,26 @@ translate english start_18432091:
 # game/script.rpy:5512
 translate english start_b12c5d15:
 
-    # nyark "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
-    nyark "Hello everyone and welcome to the new version of \"Witch Trainer\"!"
+    # dev "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
+    dev "Hello everyone and welcome to the new version of \"Witch Trainer\"!"
 
 # game/script.rpy:5513
 translate english start_d07a2dec:
 
-    # nyark "Игра получилась объемная, и становится больше с каждым новым обновлением."
-    nyark "The game turned out quite big and it's getting only bigger with each update."
+    # dev "Игра получилась объемная, и становится больше с каждым новым обновлением."
+    dev "The game turned out quite big and it's getting only bigger with each update."
 
 # game/script.rpy:5514
 translate english start_ae6f755a:
 
-    # nyark "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
-    nyark "Replaying every time the game to the point where you reach the new content can be annoying."
+    # dev "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
+    dev "Replaying every time the game to the point where you reach the new content can be annoying."
 
 # game/script.rpy:5515
 translate english start_05d21adb:
 
-    # nyark "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
-    nyark "Do you want to activate the \"Avogadro Mode\", to get a lot of coins, points and ease your overall game experience?"
+    # dev "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
+    dev "Do you want to activate the \"Avogadro Mode\", to get a lot of coins, points and ease your overall game experience?"
 
 # game/script.rpy:5516
 translate english start_2e6fb1c2:
@@ -45,14 +45,14 @@ translate english start_2e6fb1c2:
 # game/script.rpy:5517
 translate english start_79577a04:
 
-    # nyark "..."
-    nyark "..."
+    # dev "..."
+    dev "..."
 
 # game/script.rpy:5518
 translate english start_a47016ec:
 
-    # nyark "... потому что звучит круто?"
-    nyark "... it sounds cool?"
+    # dev "... потому что звучит круто?"
+    dev "... it sounds cool?"
 
 # game/script.rpy:5519
 translate english start_21c0a79d:
@@ -69,8 +69,8 @@ translate english start_e0040ea0:
 # game/script.rpy:5521
 translate english start_7f46aa9f:
 
-    # nyark "Но я..."
-    nyark "But I..."
+    # dev "Но я..."
+    dev "But I..."
 
 # game/script.rpy:5522
 translate english start_dcab8870:
@@ -81,8 +81,8 @@ translate english start_dcab8870:
 # game/script.rpy:5523
 translate english start_df8b942e:
 
-    # nyark "Красный - цвет силы!"
-    nyark "Red - the colour of power!"
+    # dev "Красный - цвет силы!"
+    dev "Red - the colour of power!"
 
 # game/script.rpy:5524
 translate english start_e612037c:
@@ -99,32 +99,32 @@ translate english start_7b68f41d:
 # game/script.rpy:5527
 translate english start_79577a04_1:
 
-    # nyark "..."
-    nyark "..."
+    # dev "..."
+    dev "..."
 
 # game/script.rpy:5528
 translate english start_53b479e1:
 
-    # nyark "Чем плох красненький..?"
-    nyark "What's wrong with the red colour?"
+    # dev "Чем плох красненький..?"
+    dev "What's wrong with the red colour?"
 
 # game/script.rpy:5529
 translate english start_02d1596d:
 
-    # nyark "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
-    nyark "*sigh* Well, if you want I can ease your game experience."
+    # dev "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
+    dev "*sigh* Well, if you want I can ease your game experience."
 
 # game/script.rpy:5530
 translate english start_2544dbe9:
 
-    # nyark "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
-    nyark "Do you want to use the hack or enjoy the full power of the Grind?"
+    # dev "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
+    dev "Do you want to use the hack or enjoy the full power of the Grind?"
 
 # game/script.rpy:5531
 translate english start_c0a90e0c:
 
-    # nyark "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
-    nyark "Warning! Probability of bugs and some discrepancy in the story' plot"
+    # dev "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
+    dev "Warning! Probability of bugs and some discrepancy in the story' plot"
 
 # game/script.rpy:5538
 translate english start_b4ec968b:
@@ -135,14 +135,14 @@ translate english start_b4ec968b:
 # game/script.rpy:5541
 translate english start_79577a04_2:
 
-    # nyark "..."
-    nyark "..."
+    # dev "..."
+    dev "..."
 
 # game/script.rpy:5542
 translate english start_738b5fff:
 
-    # nyark "Ты - истинный самурай."
-    nyark "You are a true Samurai."
+    # dev "Ты - истинный самурай."
+    dev "You are a true Samurai."
 
 translate english strings:
 
@@ -220,95 +220,95 @@ translate english strings:
 translate english start_95776c2e:
 
     # "Новая игра +" ">Хотите перенести все золото и имущество из предыдущей игры?" nointeract
-    "Новая игра +" "" nointeract
+    "New Game +" ">Would you like to move all your gold and items from your previous playthrough into this one?" nointeract
 
 # game/script.rpy:5527
 translate english start_5defba61:
 
     # dev "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
-    dev ""
+    dev "Hello everyone and welcome to the new version of \"Witch Trainer\"!"
 
 # game/script.rpy:5528
 translate english start_a15b9588:
 
     # dev "Игра получилась объемная, и становится больше с каждым новым обновлением."
-    dev ""
+    dev "The game turned out to be quite big and with each update it's getting only bigger."
 
 # game/script.rpy:5529
 translate english start_0b584496:
 
     # dev "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
-    dev ""
+    dev "Replaying the game every time to the point where you could reach the new content sometimes can be very annoying."
 
 # game/script.rpy:5530
 translate english start_a9ca5c5e:
 
     # dev "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
-    dev ""
+    dev "Do you want to activate the \"Avogadro Mode\", to get a lot of coins, points and ease your overall game experience?"
 
 # game/script.rpy:5532
 translate english start_1e58b870:
 
     # dev "..."
-    dev ""
+    dev "..."
 
 # game/script.rpy:5533
 translate english start_dea8b0a7:
 
     # dev "... потому что звучит круто?"
-    dev ""
+    dev "... maybe because it sounds cool?"
 
 # game/script.rpy:5536
 translate english start_fc268ce3:
 
     # dev "Но я..."
-    dev ""
+    dev "But I..."
 
 # game/script.rpy:5538
 translate english start_90a06e36:
 
     # dev "Красный - цвет силы!"
-    dev ""
+    dev "Red - the colour of Power!"
 
 # game/script.rpy:5542
 translate english start_1e58b870_1:
 
     # dev "..."
-    dev ""
+    dev "..."
 
 # game/script.rpy:5543
 translate english start_e6307045:
 
     # dev "Чем плох красненький..?"
-    dev ""
+    dev "What's wrong with the red colour?"
 
 # game/script.rpy:5544
 translate english start_7dc58368:
 
     # dev "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
-    dev ""
+    dev "*sigh* Well, if you want I can ease a little your overall game experience."
 
 # game/script.rpy:5545
 translate english start_c0405685:
 
     # dev "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
-    dev ""
+    dev "Do you want to use the hack or enjoy the full power of the Grind?"
 
 # game/script.rpy:5546
 translate english start_13f0a186:
 
     # dev "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
-    dev ""
+    dev "Warning! - there is a small probability of finding bugs and some discrepancies in the story's plot."
 
 # game/script.rpy:5556
 translate english start_1e58b870_2:
 
     # dev "..."
-    dev ""
+    dev "..."
 
 # game/script.rpy:5557
 translate english start_3b110c15:
 
     # dev "Ты - истинный самурай."
-    dev ""
+    dev "You are a true Samurai."
 

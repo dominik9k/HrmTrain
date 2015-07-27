@@ -16,7 +16,7 @@ translate english summon_snape_5e8fbe8e:
 translate english snape_dates_ce1605c6:
 
     # ">Вы проводите вечер, болтая с профессором Снейпом.\n>Ваши отношения с ним улучшились."
-    ""
+    ">You spend the evening hanging out with Professor Snape.\n>Your relationship with him has improved."
 
 # game/09_summon_snape.rpy:209
 translate english special_date_with_snape_8aeb11a2:
@@ -46,7 +46,7 @@ translate english special_date_with_snape_a5738d22:
 translate english special_date_with_snape_2385dcf7:
 
     # sna_head_main "Эта девка..."
-    sna_head_main "\"Yeah! That bitch!\""
+    sna_head_main "That girl..."
 
 # game/09_summon_snape.rpy:221
 translate english special_date_with_snape_789b5dd0:
@@ -394,7 +394,7 @@ translate english special_date_with_snape_fe73441e:
 translate english special_date_with_snape_b55de14d:
 
     # m "Что-то насчет \"гриффиндорских\" очков... и..."
-    m "Something about some \"greefeendo\" points... and..."
+    m "Something about some \"Greefeendo\" points... and..."
 
 # game/09_summon_snape.rpy:311
 translate english special_date_with_snape_8f97f429:
@@ -478,7 +478,7 @@ translate english special_date_with_snape_02_216bed6a:
 translate english special_date_with_snape_02_ce0c9637:
 
     # m "Меня зовут не-"
-    m "My name is not--"
+    m "My name is not..."
 
 # game/09_summon_snape.rpy:346
 translate english special_date_with_snape_02_3d5872a7:
@@ -592,7 +592,7 @@ translate english special_date_with_snape_02_d193f59f:
 translate english special_date_with_snape_02_14395e9b:
 
     # m "Как бы я ни наслаждался убийством девочки..."
-    m "As much I would \"enjoy\" murdering a teenage girl..."
+    m "As much as I would \"enjoy\" murdering a teenage girl..."
 
 # game/09_summon_snape.rpy:375
 translate english special_date_with_snape_02_9f1cee19:
@@ -826,7 +826,7 @@ translate english fuck_off_090331ef:
 translate english fuck_off_bacf70c4:
 
     # sna_head_main "Ха... Дамблдор никогда не позволит-"
-    sna_head_main "Nah... Dumbledore would never allow--"
+    sna_head_main "Nah... Dumbledore would never allow..."
 
 # game/09_summon_snape.rpy:445
 translate english fuck_off_0f862c69:
@@ -982,7 +982,7 @@ translate english fuck_off_4cee7b8a:
 translate english fuck_off_1d561756:
 
     # m "Я тоже так думаю."
-    m "I think so too."
+    m "I think so, too."
 
 # game/09_summon_snape.rpy:503
 translate english fuck_off_e4a474fd:
@@ -1090,7 +1090,7 @@ translate english fuck_off_48856953:
 translate english fuck_off_74cf1925:
 
     # ">Вы проводите остаток вечера в компании Снейпа, запивая ваши заботы."
-    ">You spend rest of the evening in Snape's company drinking your worries away."
+    ">You spend the rest of the evening in Snape's company drinking your worries away."
 
 # game/09_summon_snape.rpy:661
 translate english wine_first_af929d17:
@@ -1156,7 +1156,7 @@ translate english not_today_80536b2f:
 translate english not_today_4ff7c398:
 
     # sna "К сожалению, у меня есть другие дела сегодня ночью..."
-    sna "Sorry, I have other business to attend to tonight..."
+    sna "Sorry, I have other business to attend tonight..."
 
 # game/09_summon_snape.rpy:805
 translate english not_today_9c33ae5d:
@@ -1168,7 +1168,7 @@ translate english strings:
 
     # game/09_summon_snape.rpy:30
     old "Купить зелье на букву \"Б\""
-    new "Buy a \"B\" potion"
+    new "Buy a \"N\" potion"
 
     # game/09_summon_snape.rpy:30
     old "- Поговорить о газете -"

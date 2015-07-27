@@ -118,373 +118,373 @@ translate english snape_tutor_1_0943e698:
 translate english snape_tutor_1_fd734685:
 
     # sna2 "В общем, ты ведешь к тому, чтобы я стал твоим репетитором?"
-    sna2 ""
+    sna2 "So you want me to be your tutor?"
 
 # game/31_tutor_snape.rpy:68
 translate english snape_tutor_1_0d053780:
 
     # m "Послушай, я сам от этого не в восторге."
-    m ""
+    m "Listen, I'm not happy about it myself."
 
 # game/31_tutor_snape.rpy:69
 translate english snape_tutor_1_e6ba2765:
 
     # m "Но если я буду обучать ее, то это намного упростит нашу с тобой задачу."
-    m ""
+    m "But if I'll tutor her, it will be much easier to achieve our goal."
 
 # game/31_tutor_snape.rpy:72
 translate english snape_tutor_1_ce2025dc:
 
     # sna2 "Да понял я, понял."
-    sna2 ""
+    sna2 "I understand, I really do."
 
 # game/31_tutor_snape.rpy:75
 translate english snape_tutor_1_213c6e17:
 
     # sna2 "Хммм..."
-    sna2 ""
+    sna2 "Hm..."
 
 # game/31_tutor_snape.rpy:78
 translate english snape_tutor_1_34b83b6a:
 
     # sna2 "Однако мы можем пойти другим путем."
-    sna2 ""
+    sna2 "But we can approach it differently."
 
 # game/31_tutor_snape.rpy:80
 translate english snape_tutor_1_6cceb324:
 
     # m "Каким, интересно?"
-    m ""
+    m "What do you have in mind?"
 
 # game/31_tutor_snape.rpy:83
 translate english snape_tutor_1_0af9820d:
 
     # sna2 "Ботанойдное зелье."
-    sna2 ""
+    sna2 "A Nerd Potion!"
 
 # game/31_tutor_snape.rpy:85
 translate english snape_tutor_1_e612037c:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:86
 translate english snape_tutor_1_bd6a3884:
 
     # g4 "Ты назвал меня ботаником?"
-    g4 ""
+    g4 "Did you just call me Nerd?"
 
 # game/31_tutor_snape.rpy:87
 translate english snape_tutor_1_49866be4:
 
     # g4 "ТЫ, МАТЬ ТВОЮ, НАЗВАЛ МЕНЯ БОТАНИКОМ??!"
-    g4 ""
+    g4 "Did you motherfucker, call me NERD?"
 
 # game/31_tutor_snape.rpy:88
 translate english snape_tutor_1_5b2bd5bf:
 
     # g4 "ДА, Я НОСИЛ ОЧКИ, И ПОСТОЯННО СИДЕЛ ЗА КНИГАМИ, НО ЭТО НЕ ПОВОД ЗВАТЬ МЕНЯ \"БОТАНОМ\"!!!"
-    g4 ""
+    g4 "Yes, I was wearing glasses and regularly was reading books, but that does not make me a \"NERD\"!!!"
 
 # game/31_tutor_snape.rpy:89
 translate english snape_tutor_1_7cd88261:
 
     # g4 "И ГДЕ ТЕПЕРЬ ТЕ КАЧКИ, ЧТО ТАСКАЛИ МЕНЯ ЗА ПОДВЯЗКИ?! ДЕРЖУ ПАРИ, ВЫЛИЗЫВАЮТ АНУС КАКОЙ-НИБУДЬ ЖИРНОЙ ЖЕНУШКЕ СУЛТАНА!"
-    g4 ""
+    g4 "And where are now all those pumped up bullies? I bet, somewhere licking the anus to the fat sultan's wife!"
 
 # game/31_tutor_snape.rpy:90
 translate english snape_tutor_1_708922f4:
 
     # g4 "А ТО И САМОМУ СУЛТАНУ!"
-    g4 ""
+    g4 "Or maybe to the sultan himself!"
 
 # game/31_tutor_snape.rpy:91
 translate english snape_tutor_1_2d0d17a3:
 
     # g4 "А Я В ЭТО ВРЕМЯ ПЕРДОЛЮ ВО ВСЕ ДЫРЫ ЧЕРТОВУ ПРИНЦЕССУ АГРАБЫ!!!"
-    g4 ""
+    g4 "And me at the moment I drill the fucking princess of Agraba!!!"
 
 # game/31_tutor_snape.rpy:92
 translate english snape_tutor_1_d3d603ed:
 
     # g4 "И КТО ТЕПЕРЬ ИЗ НАС НЕУДАЧНИК, А??!"
-    g4 ""
+    g4 "Who's now the loser?"
 
 # game/31_tutor_snape.rpy:95
 translate english snape_tutor_1_879941b1_1:
 
     # sna2 "..."
-    sna2 ""
+    sna2 "..."
 
 # game/31_tutor_snape.rpy:97
 translate english snape_tutor_1_e612037c_1:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:100
 translate english snape_tutor_1_879941b1_2:
 
     # sna2 "..."
-    sna2 ""
+    sna2 "..."
 
 # game/31_tutor_snape.rpy:102
 translate english snape_tutor_1_facfa3db:
 
     # m ".. ты сказал {i}запретное слово{/i}?"
-    m ""
+    m "... you just said the {i}forbidden word{/i}?"
 
 # game/31_tutor_snape.rpy:105
 translate english snape_tutor_1_ad2d67aa:
 
     # sna2 "\"Запретное слово\"?"
-    sna2 ""
+    sna2 "\"Forbidden word\"?"
 
 # game/31_tutor_snape.rpy:107
 translate english snape_tutor_1_835f238d:
 
     # m "Да, на букву \"б\"."
-    m ""
+    m "Yes, the one with \"N\"."
 
 # game/31_tutor_snape.rpy:110
 translate english snape_tutor_1_50ee9b36:
 
     # sna2 "А, ты про..."
-    sna2 ""
+    sna2 "Ah, you are about..."
 
 # game/31_tutor_snape.rpy:112
 translate english snape_tutor_1_1f88bb1e:
 
     # g4 "ЗАТКНИСЬ!!!"
-    g4 ""
+    g4 "SHUT UP!!!"
 
 # game/31_tutor_snape.rpy:113
 translate english snape_tutor_1_5895ad46:
 
     # m "Есть шрамы, которые не заживают даже спустя девять тысяч лет."
-    m ""
+    m "There are scars, that din not heal even after thousands of years."
 
 # game/31_tutor_snape.rpy:114
 translate english snape_tutor_1_eb128ae0:
 
     # m "Просто не упоминай {i}это{/i} слово вслух, и мы поладим, договорились?"
-    m ""
+    m "Just don't mention {i}that{/i} word out loud, and we'll be good, ok?"
 
 # game/31_tutor_snape.rpy:117
 translate english snape_tutor_1_e3651329:
 
     # sna2 "Знаешь, а звучит забавно."
-    sna2 ""
+    sna2 "You know, it's sounds silly."
 
 # game/31_tutor_snape.rpy:119
 translate english snape_tutor_1_d0c977b2:
 
     # g4 "Убью."
-    g4 ""
+    g4 "I'll kill you."
 
 # game/31_tutor_snape.rpy:122
 translate english snape_tutor_1_6ac75c13:
 
     # sna2 "Ладно-ладно, не серчай. Не говорить слово на букву \"б\", ясно."
-    sna2 ""
+    sna2 "Fine, fine, whatever. Do not speak out load the word with \"N\", got it."
 
 # game/31_tutor_snape.rpy:124
 translate english snape_tutor_1_a1497814:
 
     # m "Вот и славно. Так о чем мы там говорили?"
-    m ""
+    m "Ok, good. So what we were talking about?"
 
 # game/31_tutor_snape.rpy:127
 translate english snape_tutor_1_ddf7bb44:
 
     # sna2 "В общем, есть... зелье, которое может тебе помочь."
-    sna2 ""
+    sna2 "There is a... potion, that could be of help to you."
 
 # game/31_tutor_snape.rpy:130
 translate english snape_tutor_1_e4ccc622:
 
     # sna2 "Просто выпей его - и сможешь выучить всю школьную программу за ночь"
-    sna2 ""
+    sna2 "Just drink it - you'll be able to learn the whole school program in one night."
 
 # game/31_tutor_snape.rpy:132
 translate english snape_tutor_1_e3ee70d0:
 
     # g9 "Звучит читерски."
-    g9 ""
+    g9 "Sounds like cheating."
 
 # game/31_tutor_snape.rpy:133
 translate english snape_tutor_1_db50da7d:
 
     # m "Какой вообще смысл во всей этой школе, если все можно выучить буквально за ночь?"
-    m ""
+    m "What is the point of this school if you can learn everything in one night?"
 
 # game/31_tutor_snape.rpy:136
 translate english snape_tutor_1_71c345c8:
 
     # sna2 "Ну, во-первых, большинство ингредиентов очень редки и на них нужна чертова куча денег."
-    sna2 ""
+    sna2 "First of all, the ingredients for this potion a very rare and very expensive."
 
 # game/31_tutor_snape.rpy:139
 translate english snape_tutor_1_9962a42d:
 
     # sna2 "Во-вторых, процесс варки чертовски сложен."
-    sna2 ""
+    sna2 "Second, the process of mixing the potion is very hard."
 
 # game/31_tutor_snape.rpy:140
 translate english snape_tutor_1_f1e241fa:
 
     # sna2 "Ну, и в третьих, сам рецепт известен далеко не каждому."
-    sna2 ""
+    sna2 "And third, the recipe is known only to a few people."
 
 # game/31_tutor_snape.rpy:142
 translate english snape_tutor_1_b97f787f:
 
     # sna2 "Посуди сам - если все узнают об этом рецепте, то никому не будут нужны школы, а это море потерянных денег."
-    sna2 ""
+    sna2 "Just think about it, if everybody there would know about the recipe, nobody will need schools, and that's a lot of money to loose."
 
 # game/31_tutor_snape.rpy:144
 translate english snape_tutor_1_02efce6f:
 
     # sna2 "В сущности, почти вся экономика магов держится на волшебных школах."
-    sna2 ""
+    sna2 "In general, all our wizards' economy is based on our schools."
 
 # game/31_tutor_snape.rpy:146
 translate english snape_tutor_1_baa4844f:
 
     # m "Ладно-ладно, я понял. Большие шишки не хотят, чтобы это зелье стало популярным."
-    m ""
+    m "Alright, alright, I got it. Big bosses don't want the potion to become popular."
 
 # game/31_tutor_snape.rpy:149
 translate english snape_tutor_1_25cd7e35:
 
     # sna2 "Именно."
-    sna2 ""
+    sna2 "Exactly."
 
 # game/31_tutor_snape.rpy:151
 translate english snape_tutor_1_30156f31:
 
     # m "Так все что мне нужно, так это купить ингредиенты, так?"
-    m ""
+    m "So all I need to do is buy some ingredients, right?"
 
 # game/31_tutor_snape.rpy:154
 translate english snape_tutor_1_de41c522:
 
     # sna2 "Точно."
-    sna2 ""
+    sna2 "Right."
 
 # game/31_tutor_snape.rpy:156
 translate english snape_tutor_1_09d9073d:
 
     # m "Прелесть. Как будто в этой игре было мало гринда."
-    m ""
+    m "Magnificent. Like this game has not enough of Grind already."
 
 # game/31_tutor_snape.rpy:157
 translate english snape_tutor_1_8f767b69:
 
     # m "И во сколько мне обойдется эта радость?"
-    m ""
+    m "And how much for the pleasure?"
 
 # game/31_tutor_snape.rpy:160
 translate english snape_tutor_1_5244b2ba:
 
     # sna2 "Ну... Некоторые из ингредиентов запрещены, так что мне прийдется привлечь свои каналы..."
-    sna2 ""
+    sna2 "Well... Some of ingredients are forbidden, so I'll need to go via my own channels..."
 
 # game/31_tutor_snape.rpy:162
 translate english snape_tutor_1_1298e56f:
 
     # sna2 "Так что, думаю, тысяч десять."
-    sna2 ""
+    sna2 "I think about 10000 coins."
 
 # game/31_tutor_snape.rpy:164
 translate english snape_tutor_1_e612037c_2:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:165
 translate english snape_tutor_1_e012e209:
 
     # m "Ты накинул себе пару тысяч, да?"
-    m ""
+    m "You did throw in there a few thousand for yourself, didn't you?"
 
 # game/31_tutor_snape.rpy:168
 translate english snape_tutor_1_6345fec0:
 
     # sna "Да как ты мог такое подумать?!"
-    sna ""
+    sna "How dare you think such things about me?!"
 
 # game/31_tutor_snape.rpy:171
 translate english snape_tutor_1_14525368:
 
     # sna2 "Мы же друзья..."
-    sna2 ""
+    sna2 "We are friends..."
 
 # game/31_tutor_snape.rpy:173
 translate english snape_tutor_1_e612037c_3:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:176
 translate english snape_tutor_1_879941b1_3:
 
     # sna2 "..."
-    sna2 ""
+    sna2 "..."
 
 # game/31_tutor_snape.rpy:178
 translate english snape_tutor_1_e612037c_4:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:181
 translate english snape_tutor_1_fc461d74:
 
     # sna2 "Ладно, восемь тысяч."
-    sna2 ""
+    sna2 "Ok, 8000 coins."
 
 # game/31_tutor_snape.rpy:183
 translate english snape_tutor_1_e612037c_5:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:186
 translate english snape_tutor_1_90818839:
 
     # sna2 "Послушай, больше я скинуть никак не могу."
-    sna2 ""
+    sna2 "I can't do better then this."
 
 # game/31_tutor_snape.rpy:188
 translate english snape_tutor_1_e612037c_6:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:191
 translate english snape_tutor_1_69a26cd4:
 
     # sna "..."
-    sna ""
+    sna "..."
 
 # game/31_tutor_snape.rpy:193
 translate english snape_tutor_1_e612037c_7:
 
     # m "..."
-    m ""
+    m "..."
 
 # game/31_tutor_snape.rpy:196
 translate english snape_tutor_1_2ec498be:
 
     # sna2 "Семь тысяч. Мое последнее слово."
-    sna2 ""
+    sna2 "7000 coins. It's my last word."
 
 # game/31_tutor_snape.rpy:198
 translate english snape_tutor_1_ebcb27bf:
 
     # g9 "Шикарно! Договорились."
-    g9 ""
+    g9 "Wonderful! That settles it."
 
 # game/31_tutor_snape.rpy:199
 translate english snape_tutor_1_b8e7f764:

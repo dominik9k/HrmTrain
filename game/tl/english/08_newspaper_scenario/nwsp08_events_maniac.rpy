@@ -4,283 +4,283 @@
 translate english nsp_theme_maniac_f7dd7e22:
 
     # g7 "(Пора браться за этого урода. Нужно, чтобы Гермиона для начала выследила маньяка, а там будет видно. Ведь это может быть и розыгрыш.)"
-    g7 ""
+    g7 "(It's time do something about this freak. First of all she needs to track the maniac down. For all I know, that could be just a prank.)"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:5
 translate english nsp_theme_maniac_9e6f857d:
 
     # g6 "У меня ужасные новости."
-    g6 ""
+    g6 "I have dreadful news."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:7
 translate english nsp_theme_maniac_0480640c:
 
     # her "О нет. Только не это. Опять."
-    her ""
+    her "Oh no. Not this again."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:8
 translate english nsp_theme_maniac_c920c33a:
 
     # m "Опять ? Так ты уже знаешь ? То есть это уже случалось ?"
-    m ""
+    m "Again? You already know? Did it happen before?"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:9
 translate english nsp_theme_maniac_69767e9f:
 
     # m "Я хочу сказать, конечно я в курсе всего, просто хочу тебя проверить."
-    m ""
+    m "I mean, of course, I'm aware of everything, but I want to see how much do you know."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:11
 translate english nsp_theme_maniac_c64a3ce8:
 
     # her "Но сэр, как вы можете не помнить ? Конечно это случалось. Это просто ужасно."
-    her ""
+    her "How can you not remember, Sir? Of course it did happen before. It's horrible."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:12
 translate english nsp_theme_maniac_fb3b28d5:
 
     # her "Наверное мне нужно больше трудиться, чтобы такие вещи были невозможны."
-    her ""
+    her "I think I need to work even more harder, so things like this will never happen."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:13
 translate english nsp_theme_maniac_6d7764b5:
 
     # m "(Кто-то из нас двоих сошел с ума. Главное, чтобы это оказался не я.)"
-    m ""
+    m "(One of us definitely lost his mind. It better be not me.)"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:14
 translate english nsp_theme_maniac_281d38d1:
 
     # g5 "Ты хочешь сказать, что уже ловила сексуальных маньяков раньше ?"
-    g5 ""
+    g5 "Do you want to say, that you caught sexual maniacs before?"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:16
 translate english nsp_theme_maniac_d9a4f20a:
 
     # her "Разве вы не знали сэр ? Вы же сами посылали меня на репортажи, чтобы у нашей газеты был выше рей..."
-    her ""
+    her "You didn't know, Sir? But you sent me yourself for doing reports to get for our newspaper higher ratings..."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:18
 translate english nsp_theme_maniac_17a4714e:
 
-    # her "{size=+5}Иик !{/size}"
-    her ""
+    # her "{size=+5}Yaks!{/size}"
+    her "{size=+5}{/size}"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:19
 translate english nsp_theme_maniac_0558ed64:
 
     # her "{size=+4}Сексуальный маньяк ???{/size}"
-    her ""
+    her "{size=+4}Sexual maniac???{/size}"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:20
 translate english nsp_theme_maniac_b101fb6c:
 
     # her "Так речь не о падении рейтинга газеты в соревновании ?"
-    her ""
+    her "So it's not about newspaper loosing rating in competition?"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:22
 translate english nsp_theme_maniac_ae5ad9b5:
 
     # her "{size=+4}Сексуальный маньяк ?{/size}"
-    her ""
+    her "{size=+4}Sexual maniac?{/size}"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:23
 translate english nsp_theme_maniac_020f4e73:
 
     # "> Гермиона в шоке."
-    ""
+    ">Hermione is in shoke."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:24
 translate english nsp_theme_maniac_030eb260:
 
     # m "(Рукалицо)"
-    m ""
+    m "(facepalm)"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:25
 translate english nsp_theme_maniac_359b6e88:
 
     # m "Хорошо, что все прояснилось. Да в школе возникла проблема."
-    m ""
+    m "It's good that everything now is clear. Yes, we have a problem in our school."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:27
 translate english nsp_theme_maniac_ae5ad9b5_1:
 
     # her "{size=+4}Сексуальный маньяк ?{/size}"
-    her ""
+    her "{size=+4}Sexual maniac?{/size}"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:28
 translate english nsp_theme_maniac_e46b1150:
 
     # m "Да, и у меня есть для тебя небольшая работа в связи с этим."
-    m ""
+    m "Yes, and I have some work for you regarding this situation."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:29
 translate english nsp_theme_maniac_ae5ad9b5_2:
 
     # her "{size=+4}Сексуальный маньяк ?{/size}"
-    her ""
+    her "{size=+4}Sexual maniac?{/size}"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:30
 translate english nsp_theme_maniac_74d19e4d:
 
     # m "(Похоже у нее заело пластинку.)"
-    m ""
+    m "(Apparently she is stuck in the loop, like a broken record.)"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:31
 translate english nsp_theme_maniac_e75e3ab6:
 
     # m "Послушай, ты же не хочешь, чтобы кто-нибудь пострадал. Мы должны остановить его."
-    m ""
+    m "Listen, you do not want to see anyone hurt, don't you? We need to stop him."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:33
 translate english nsp_theme_maniac_d6af7dbf:
 
     # her "Остановить. Мы. То есть вы и я ?"
-    her ""
+    her "We. Stop. You mean you and me?"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:34
 translate english nsp_theme_maniac_caf22ac4:
 
     # m "(Наконец.)"
-    m ""
+    m "(Finally)"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:36
 translate english nsp_theme_maniac_c946474e:
 
     # her "{size=+4}Сексуального маньяка ?{/size}"
-    her ""
+    her "{size=+4}Sexual maniac?{/size}"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:37
 translate english nsp_theme_maniac_2bdaa188:
 
     # m "(О нет.)"
-    m ""
+    m "(Oh no.)"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:38
 translate english nsp_theme_maniac_bbc3b4c4:
 
     # m "Послушай, больше рассчитывать не на кого. Но у меня есть план. Если ему следовать, ты будешь в безопасности."
-    m ""
+    m "Listen, I cannot count on anyone else. But I have a plan. If you follow it, you'll be alright."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:40
 translate english nsp_theme_maniac_f291764e:
 
     # her "{size=+4}Сексуальный ма...{/size} Да. Я поняла, сэр. Хорошо."
-    her ""
+    her "{size=+4}Sexual ma...???{/size} Yes. I understand, Sir. Alright."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:41
 translate english nsp_theme_maniac_53ade6fd:
 
     # her "(Чувствую, я об этом сильно пожалею.)"
-    her ""
+    her "(I have a feeling, that I'll regret about this.)"
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:49
 translate english nsp_event_maniac_1_e7aadcf9:
 
     # ">текст преивента маньяка 1-1"
-    ""
+    ">Text for mania pre-event 1-1."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:51
 translate english nsp_event_maniac_1_65156a90:
 
     # ">текст преивента маньяка 1-2"
-    ""
+    ">Text for mania pre-event 1-2."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:53
 translate english nsp_event_maniac_1_fbab0d17:
 
     # ">текст преивента маньяка 1-3"
-    ""
+    ">Text for mania pre-event 1-3."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:55
 translate english nsp_event_maniac_1_d754bec7:
 
     # ">текст преивента маньяка 1-4"
-    ""
+    ">Text for mania pre-event 1-4."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:74
 translate english nsp_event_maniac_1_complete_9587ca56:
 
     # ">текст ивента маньяка 1-1"
-    ""
+    ">Text for mania event 1-1."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:91
 translate english nsp_event_maniac_1_complete_41454457:
 
     # ">текст ивента маньяка 1-2"
-    ""
+    ">Text for mania event 1-2."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:108
 translate english nsp_event_maniac_1_complete_cb3605b1:
 
     # ">текст ивента маньяка 1-3"
-    ""
+    ">Text for mania event 1-3."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:125
 translate english nsp_event_maniac_1_complete_4bbc4255:
 
     # ">текст ивента маньяка 1-4"
-    ""
+    ">Text for mania event 1-4."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:151
 translate english nsp_event_maniac_2_3f586392:
 
     # ">текст преивента маньяка 2-1"
-    ""
+    ">Text for mania pre-event 2-1."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:154
 translate english nsp_event_maniac_2_b048167b:
 
     # ">текст преивента маньяка 2-2"
-    ""
+    ">Text for mania pre-event 2-2."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:157
 translate english nsp_event_maniac_2_98602684:
 
     # ">текст преивента маньяка 2-3"
-    ""
+    ">Text for mania pre-event 2-3."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:160
 translate english nsp_event_maniac_2_c4589547:
 
     # ">текст преивента маньяка 2-4"
-    ""
+    ">Text for mania pre-event 2-4."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:180
 translate english nsp_event_maniac_2_complete_80860f17:
 
     # ">текст ивента маньяка 2-1"
-    ""
+    ">Text for mania event 2-1."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:197
 translate english nsp_event_maniac_2_complete_deb09d79:
 
     # ">текст ивента маньяка 2-2"
-    ""
+    ">Text for mania event 2-2."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:214
 translate english nsp_event_maniac_2_complete_f48dfd5a:
 
     # ">текст ивента маньяка 2-3"
-    ""
+    ">Text for mania event 2-3."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:231
 translate english nsp_event_maniac_2_complete_f1c68f13:
 
     # ">текст ивента маньяка 2-4"
-    ""
+    ">Text for mania event 2-4."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:257
 translate english nsp_event_maniac_3_bf8fd3db:
 
     # ">текст преивента маньяка 3-1"
-    ""
+    ">Text for mania pre-event 3-1."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:259
 translate english nsp_event_maniac_3_10f29cd7:
 
     # ">текст преивента маньяка 3-2"
-    ""
+    ">Text for mania pre-event 3-2."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:261
 translate english nsp_event_maniac_3_163e427e:
@@ -292,41 +292,41 @@ translate english nsp_event_maniac_3_163e427e:
 translate english nsp_event_maniac_3_720e0f82:
 
     # ">текст преивента маньяка 3-4"
-    ""
+    ">Text for mania pre-event 3-4."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:265
 translate english nsp_event_maniac_3_71e0c868:
 
     # ">текст преивента маньяка 3-5"
-    ""
+    ">Text for mania pre-event 3-5."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:284
 translate english nsp_event_maniac_3_complete_9824bb8c:
 
     # ">текст ивента маньяка 3-1"
-    ""
+    ">Text for mania event 3-1."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:301
 translate english nsp_event_maniac_3_complete_0cff78b1:
 
     # ">текст ивента маньяка 3-2"
-    ""
+    ">Text for mania event 3-2."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:320
 translate english nsp_event_maniac_3_complete_439cf96a:
 
     # ">текст ивента маньяка 3-3"
-    ""
+    ">Text for mania event 3-3."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:339
 translate english nsp_event_maniac_3_complete_481868ba:
 
     # ">текст ивента маньяка 3-4"
-    ""
+    ">Text for mania event 3-4."
 
 # game/08_newspaper_scenario/nwsp08_events_maniac.rpy:356
 translate english nsp_event_maniac_3_complete_4b138d1a:
 
     # ">текст ивента маньяка 3-5"
-    ""
+    ">Text for mania event 3-5."
 

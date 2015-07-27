@@ -24,9 +24,9 @@ translate english strings:
 
     # game/16_inventory.rpy:5
     old "- Читать книгу # 1 -"
-    new "-Read the book # 1-"
+    new "-Read book # 1-"
 
     # game/16_inventory.rpy:5
     old "- Читать книгу # 1 (Завершить) -"
-    new "-Read the book # 1 (Finished)-"
+    new "-Read book # 1 (Finished)-"
 

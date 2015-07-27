@@ -1524,5 +1524,5 @@ translate english strings:
 translate english new_request_02_b_complete_ae0283e6:
 
     # m "Расскажите мне."
-    m ""
+    m "Tell me more"
 

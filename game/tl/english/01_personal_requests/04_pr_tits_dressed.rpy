@@ -520,409 +520,409 @@ translate english new_request_04_5d1df12d:
 translate english new_request_04_9c740926:
 
     # m "Хорошо. Оголяйтесь, мисс!"
-    m ""
+    m "Alright. Get naked, Miss Granger!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:237
 translate english new_request_04_bd03f6bc:
 
     # her "Пфф! Сэр, вам обязательно \nбыть таким вульгарным?"
-    her ""
+    her "Pff! Sir, do you really need \nto be so vulgar?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:239
 translate english new_request_04_9cfaff69:
 
     # m "Вы будете меня поучать, мисс Грейнджер, или, все-таки, зарабатывать очки?"
-    m ""
+    m "Will you continue to lecture me, Miss Granger, or begin to earn your points?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:241
 translate english new_request_04_7697268f:
 
     # her "......................."
-    her ""
+    her "......................."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:243
 translate english new_request_04_652f560d:
 
     # m "Итак?"
-    m ""
+    m "So?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:254
 translate english new_request_04_a74e729f:
 
     # "> Гермиона задирает блузку и рубашку."
-    ""
+    ">Hermione lifts up her blouse and shirt."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:278
 translate english new_request_04_0fd3a26f:
 
     # m "На сегодня все, девочка."
-    m ""
+    m "This will do for today, girl."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:279
 translate english new_request_04_b2f53a32:
 
     # m "Впрочем, если ты готова лечь и раздвинуть ножки..."
-    m ""
+    m "Otherwise, if you are ready to lay down and spread your legs..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:282
 translate english new_request_04_03176d6e:
 
     # her "Аргх! Сэр... как вы можете!... Я!..."
-    her ""
+    her "Argh! Sir... how can you!... I'm!..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:283
 translate english new_request_04_76c89883:
 
     # m "Тише, дорогая, тише. Я просто пошутил."
-    m ""
+    m "You don't need to get angry. It was just a joke."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:286
 translate english new_request_04_a9395e99:
 
     # her "Я... я согласна, профессор."
-    her ""
+    her "I... I will comply, Professor."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:287
 translate english new_request_04_e5814cb9:
 
     # g9 "Я и не сомневался, что ты будешь только ЗА."
-    g9 ""
+    g9 "I never doubted that you will."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:289
 translate english new_request_04_5cd9bc7d:
 
     # her "Не просто так, профессор, это за очки для факультета, для гордого \"Гриффиндора\"!"
-    her ""
+    her "I'm doing it only to earn more points for the proud house of \"Gryffindor\"!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:290
 translate english new_request_04_b13408cf:
 
     # m "Да-да, старая песня."
-    m ""
+    m "Yeh, yeh, same old song."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:292
 translate english new_request_04_03176d6e_1:
 
     # her "Аргх! Сэр... как вы можете!... Я!..."
-    her ""
+    her "Argh! Sir... how can you!... I!..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:293
 translate english new_request_04_d940127f:
 
     # m "Ладно-ладно, мисс Грейнджер, я пошутил насчет раздвинутых ножек. Никто на вас не покушается."
-    m ""
+    m "Alrigth, alright, Miss Granger, I was joking, about you spreading your legs. Nobody is trying to assault you."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:297
 translate english new_request_04_da78fdf9:
 
     # her "Гррх!... Заплатите мне и я пойду!"
-    her ""
+    her "Grrh!... Pay me and I'll go!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:303
 translate english new_request_04_ee007265:
 
     # her "Эти ваши шутки, профессор..."
-    her ""
+    her "Those jokes of yours, Professor..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:305
 translate english new_request_04_2343473c:
 
     # her "................................"
-    her ""
+    her "................................"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:307
 translate english new_request_04_2343473c_1:
 
     # her "................................"
-    her ""
+    her "................................"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:308
 translate english new_request_04_f198b09e:
 
     # m "Что?"
-    m ""
+    m "What?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:310
 translate english new_request_04_326020bb:
 
     # her "Я тут подумала, что, может быть..."
-    her ""
+    her "I was thinking, why not..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:311
 translate english new_request_04_f8b2e36a:
 
     # m "Да?"
-    m ""
+    m "Yes?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:313
 translate english new_request_04_d2d76929:
 
     # her "Может быть, и могла бы..."
-    her ""
+    her "May be, I could..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:314
 translate english new_request_04_9aa0678b:
 
     # m "Могла бы что?"
-    m ""
+    m "Could what?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:317
 translate english new_request_04_11b9a65a:
 
     # her "Ну как вы и сказали, раздвинуть... Если это будет как следует оплачиваться, конечно!"
-    her ""
+    her "As you said, spread my... If I'll get a worthy compensation, of course!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:318
 translate english new_request_04_b2a142b0:
 
     # g9 "Разумеется, будет. Конечно!"
-    g9 ""
+    g9 "Of course, you will!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:321
 translate english new_request_04_a637467a:
 
     # her "Ну как вы и сказали, раздвинуть... бесплатно."
-    her ""
+    her "As you said, spread my... for free."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:323
 translate english new_request_04_97224a6d:
 
     # her "Не подумайте ничего такого, просто, вы это {size=+4}ТАК{/size} здорово делаете..."
-    her ""
+    her "Don't you even try to think of anything of that sort, you just make it {size=+4}SO{/size} enjoyable..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:324
 translate english new_request_04_b8f04abc:
 
     # g9 "Ну вот, наконец-то ты берешься за ум, девочка!"
-    g9 ""
+    g9 "There you go, finally trying to be reasonable, girl!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:326
 translate english new_request_04_5d797b3e:
 
     # g9 "Ну тогда иди сюда, снимай трусы..."
-    g9 ""
+    g9 "Then come here, and remove your panties..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:328
 translate english new_request_04_659902af:
 
     # her "Тише, профессор, тише, не надо так возбуждаться!.. Я тоже {size=+4}ПОШУТИЛА{/size}!"
-    her ""
+    her "Slow down, Professor, don't be so excited!.. I am {size=+4}JOKING{/size}, too!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:329
 translate english new_request_04_01125bce:
 
     # g4 "...................."
-    g4 ""
+    g4 "...................."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:330
 translate english new_request_04_cdff7ee6:
 
     # g4 "Ах ты, мелкая мерзавка!"
-    g4 ""
+    g4 "Ah, you little brat!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:332
 translate english new_request_04_fda49363:
 
     # her "Мы квиты, сэр! А теперь я хочу получить свои очки."
-    her ""
+    her "I just returned the favor, Sir. Now I want to get paid."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:335
 translate english new_request_04_22374358:
 
     # m "Вон отсюда! Очков не будет!"
-    m ""
+    m "Get out! No points for you!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:337
 translate english new_request_04_713dbf29:
 
     # her2 "Поскольку вы не держите свое слово, сэр, вероятно, я не смогу больше приходить к вам."
-    her2 ""
+    her2 "For the reason that you are not able to keep your word, Sir, I'll probably will never come back to you again."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:341
 translate english new_request_04_d6cb27ae:
 
     # m "Что ж, мисс Грейнджер, получайте свои очки."
-    m ""
+    m "Fine, Miss Granger, you can have your points."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:342
 translate english new_request_04_437571d9:
 
     # m "Но в следующий раз за такие шутки очки у вас будут вычитаться, а не добавляться."
-    m ""
+    m "But next time for a joke like that, the points will be extracted, not given."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:343
 translate english new_request_04_99348d0f:
 
     # m "Я доступно излагаю?"
-    m ""
+    m "Am I being clear?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:345
 translate english new_request_04_44575ced:
 
     # her "Вполне, сэр."
-    her ""
+    her "Quite clear, Sir."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:346
 translate english new_request_04_0c99ca0a:
 
     # her2 "Но если так, профессор, то мне придется молчать, как рыба об лед. Я буду бояться лишнее слово сказать."
-    her2 ""
+    her2 "But if so, Professor, that means I'll need to keep my mouth shut, from fear to say anything unwanted."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:347
 translate english new_request_04_10896d1d:
 
     # m "Это только к лучшему, мисс Грейнджер."
-    m ""
+    m "It's only for the better, Miss Granger."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:349
 translate english new_request_04_cbb4cda1:
 
     # her2 "Как же я буду отчитываться вам, профессор?.. Но, конечно, я сделаю, как вы говорите."
-    her2 ""
+    her2 "How I'm going to report to you, Professor?.. But of course, I'll do as you wish."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:350
 translate english new_request_04_e9722179:
 
     # "> Гермиона обрачивается уходить."
-    ""
+    ">Hermione turns around to leave."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:351
 translate english new_request_04_9b4601a2:
 
     # m "Ладно, мисс Грейнджер, на этот раз я вас прощаю. Но предупреждаю - попридержите свой язычок!"
-    m ""
+    m "Alright, Miss Granger, this time I forgive you. But I'm warning you - to hold your tongue."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:353
 translate english new_request_04_8cc74d64:
 
     # her "Конечно, профессор!"
-    her ""
+    her "Of course, Professor!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:378
 translate english new_request_04_finish_64490494:
 
     # ">Вы отпускаете грудь Гермионы..."
-    ""
+    ">You let go of Hermione's breasts..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:379
 translate english new_request_04_finish_ebae5afe:
 
     # m "На этом все."
-    m ""
+    m "This will do for now."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:381
 translate english new_request_04_finish_3f2e3fc9:
 
     # her_head_main "................"
-    her_head_main ""
+    her_head_main "................"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:389
 translate english new_request_04_finish_b1ecd875:
 
     # m "\"Гриффиндор\" получает [current_payout] очков!"
-    m ""
+    m "The \"Gryffindor\" house gets [current_payout] points!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:403
 translate english new_request_04_finish_b2b84d11:
 
     # her "Постойте, сэр!"
-    her ""
+    her "Wait a minute, Sir!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:404
 translate english new_request_04_finish_62c2afaf:
 
     # her "Почему 35 очков? 15 и 35 в сумме дают 50!"
-    her ""
+    her "Why 35 points? 15 and 35 in sum is 50 house points!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:405
 translate english new_request_04_finish_48d8923a:
 
     # m "Нет, мисс Грейнджер. 35 это и в сумме 35!"
-    m ""
+    m "No, Miss Granger. 35 points are 35 points."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:407
 translate english new_request_04_finish_7338084b:
 
     # her "Сэр, при всем уважении! Пощупать через форму всегда стоило 15 очков, а просто так - 35!"
-    her ""
+    her "Sir, with all due respect! To touch my breasts with my uniform on is 15 points, without 35 points!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:408
 translate english new_request_04_finish_20c71b1d:
 
     # her "Не пытайтесь меня обсчитать!"
-    her ""
+    her "Don't you dare to trick me, girl!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:409
 translate english new_request_04_finish_823245ee:
 
     # m "Мисс Грейнджер, я пошел вам навстречу, разрешил демонстрировать сиськи..."
-    m ""
+    m "Miss Granger, I did you a favor and let you show me your tits..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:410
 translate english new_request_04_finish_e8b199ef:
 
     # m "...и дал 35 очков вместо обещанных 15-ти. И теперь выcлушиваю от вас претензии!"
-    m ""
+    m "... and for that I gave you 35 points instead of 15. And now I'm going to listen to you complaining."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:411
 translate english new_request_04_finish_947014cd:
 
     # m "Не зря говорят, добрые дела не остаются безнаказанными..."
-    m ""
+    m "As the saying goes, good deeds don not remain unpunished..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:412
 translate english new_request_04_finish_dab81919:
 
     # her "Добрые дела, сэр?! Мы договаривались, что..."
-    her ""
+    her "Good deeds, Sir? We had a deal, that..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:413
 translate english new_request_04_finish_eb82ef5d:
 
     # m "Договаривались? Мы что, договаривались, что вы продаете мне две услуги за раз?"
-    m ""
+    m "A deal? Did we agree that you can sell me two favors at once?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:415
 translate english new_request_04_finish_4333b978:
 
     # her "Нет, но..."
-    her ""
+    her "No, but..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:416
 translate english new_request_04_finish_166645e1:
 
     # m "Если бы вы заранее обсудили это со мной..."
-    m ""
+    m "If you would have discussed this with me in advance... "
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:417
 translate english new_request_04_finish_e000af8f:
 
     # her "Я хотела, но..."
-    her ""
+    her "I would have, Sir, but..."
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:418
 translate english new_request_04_finish_06536713:
 
     # m "Что \"но\"? Вам так понравилось, что вы забыли обо всем на свете?"
-    m ""
+    m "\"But\" what? Did you enjoy yourself that much, that your forget about everything else?"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:420
 translate english new_request_04_finish_f246782b:
 
     # her "Нет! Совсем нет!"
-    her ""
+    her "No! Not at all!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:421
 translate english new_request_04_finish_7e73aed6:
 
     # m "Как бы там ни было, мисс Грейнджер, решение окончательное. 35 очков и ни очком больше!"
-    m ""
+    m "Whatever, Miss Granger, but my decision is final. 35 house points and not a single point more!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:423
 translate english new_request_04_finish_2eab480c:
 
     # her "Это нечестно, сэр!"
-    her ""
+    her "It's so unfair, Sir!"
 
 # game/01_personal_requests/04_pr_tits_dressed.rpy:427
 translate english new_request_04_finish_33359693:

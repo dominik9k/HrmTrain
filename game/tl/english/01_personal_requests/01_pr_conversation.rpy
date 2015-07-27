@@ -838,7 +838,7 @@ translate english new_request_01_3e0dcccc:
 translate english new_request_01_a779ddf7:
 
     # her "Ну, профессор, вы просили рассказать, я рассказала. Если бы вы попросили другую услугу..."
-    her "Sir, you asked me to tell you something, so I did. If you would considered another favor..."
+    her "Sir, you asked me to tell you something, so I did. If you would consider another favor..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:320
 translate english new_request_01_667f46f2:
@@ -850,7 +850,7 @@ translate english new_request_01_667f46f2:
 translate english new_request_01_718ac606:
 
     # her "Ну, на пять очков, я уверена, что достаточно."
-    her "Well, for 5 points, I think I told enough."
+    her "Well, for 5 points, I think I told you enough."
 
 # game/01_personal_requests/01_pr_conversation.rpy:324
 translate english new_request_01_4ae69858:
@@ -862,205 +862,205 @@ translate english new_request_01_4ae69858:
 translate english new_request_01_03955f75:
 
     # her "Сэр, войдите и в мое положение. Я готова рассказать вам кое-что о развратных девицах..."
-    her ""
+    her "Sir, please understand my position. I'm ready to tell you all about those perversive girls..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:328
 translate english new_request_01_c9a9121a:
 
     # her "И чтобы вы себя трогали..."
-    her ""
+    her "And so you can touch yourself..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:330
 translate english new_request_01_de3c1ed5:
 
     # her "И могу даже говорить до тех пор, пока вы бурно не кончите."
-    her ""
+    her "And talk about it till the moment you would cum hard."
 
 # game/01_personal_requests/01_pr_conversation.rpy:331
 translate english new_request_01_5d4325ac:
 
     # m "Но?..."
-    m ""
+    m "But...?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:333
 translate english new_request_01_c930b791:
 
     # her "Но все это должно достойно оплачиваться!"
-    her ""
+    her "But for all of this I need a worthy reward."
 
 # game/01_personal_requests/01_pr_conversation.rpy:334
 translate english new_request_01_ac8f3d09:
 
     # m "А вы становитесь корыстны, мисс Грейнджер."
-    m ""
+    m "You are getting greedy, Miss Granger."
 
 # game/01_personal_requests/01_pr_conversation.rpy:335
 translate english new_request_01_849c6814:
 
     # her "Ничуть, сэр. Я просто знаю себе цену. И дополнительные 15 очков за рассказ о развратных девках - вполне справедливая плата."
-    her ""
+    her "Not at all, Sir. I just now my price. For 15 extra house points, I'll tell you everything you want to know about those perversive girls."
 
 # game/01_personal_requests/01_pr_conversation.rpy:338
 translate english new_request_01_d1be1e26:
 
     # m "Вы свободны, мисс Грейнджер!"
-    m ""
+    m "You are dismissed, Miss Granger!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:339
 translate english new_request_01_0cd95389:
 
     # her "Как скажете, сэр. В таком случае, я хотела бы получить свою оплату."
-    her ""
+    her "As you wish, Sir. In that case, I'd like to get paid."
 
 # game/01_personal_requests/01_pr_conversation.rpy:342
 translate english new_request_01_b99adbaa:
 
     # m "Ладно, я заплачу тебе. Рассказывай!"
-    m ""
+    m "Fine, I'll pay you. Start talking!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:344
 translate english new_request_01_8c9d4ae1:
 
     # her "Да, сэр. И вы можете приступать к дрочке."
-    her ""
+    her "Of course, Sir. You can start jerking off."
 
 # game/01_personal_requests/01_pr_conversation.rpy:345
 translate english new_request_01_f006ac49:
 
     # m "Черт бы тебя подрал, девчонка! Я сам решу, когда и что мне делать."
-    m ""
+    m "Know your place, girl. I can decide for myself, when and what I will do."
 
 # game/01_personal_requests/01_pr_conversation.rpy:347
 translate english new_request_01_f584ff1d:
 
     # her "Простите, профессор."
-    her ""
+    her "I'm sorry, Professor."
 
 # game/01_personal_requests/01_pr_conversation.rpy:348
 translate english new_request_01_d5230b4b:
 
     # her "Ну, я слышала, как две девочки разговаривали в спальне, как они берут в рот у парней."
-    her ""
+    her "Once I've heard two girls sharing their stories about how they like taking boys cocks in their mouths."
 
 # game/01_personal_requests/01_pr_conversation.rpy:350
 translate english new_request_01_f3020844:
 
     # her "Конечно же, они не из Гриффиндора, сэр!"
-    her ""
+    her "Of course, those girls are not from Gryffindor, Sir."
 
 # game/01_personal_requests/01_pr_conversation.rpy:351
 translate english new_request_01_f2ec1d33:
 
     # m "Разумеется. Гриффиндорские девчонки ничего не берут в рот."
-    m ""
+    m "Of course, not. Gryffindor girls don't take anything in their mouths."
 
 # game/01_personal_requests/01_pr_conversation.rpy:353
 translate english new_request_01_f16d7c1f:
 
     # her "Все так и есть, сэр. Мы слишком горды для этого и..."
-    her ""
+    her "That's right, Sir. We are too proud for something like that."
 
 # game/01_personal_requests/01_pr_conversation.rpy:354
 translate english new_request_01_f693ac77:
 
     # m "Мисс Грейнджер!"
-    m ""
+    m "Miss Granger!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:356
 translate english new_request_01_7522015b:
 
     # her "Сэр?"
-    her ""
+    her "Sir?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:357
 translate english new_request_01_7bb2a4c9:
 
     # m "Это так вы зарабатываете 15 очков?"
-    m ""
+    m "Is that how you try to earn your 15 house points?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:358
 translate english new_request_01_4d98392c:
 
     # her "Простите, сэр!.. Ну вот, одна из них, блондинка, рассказывала, что ее парень кончает так много, что у нее даже льется из носа."
-    her ""
+    her "I'm sorry, Sir. ... So, one of the girls, with blonde hair, was telling how her boyfriend cums so much that her nose spurt with semen."
 
 # game/01_personal_requests/01_pr_conversation.rpy:360
 translate english new_request_01_337d1ab5:
 
     # her "Ну, если по правде, сэр, она просто бахвалилась перед брюнеткой."
-    her ""
+    her "To be honest, Sir, she was just praising her boyfriend before the brunette."
 
 # game/01_personal_requests/01_pr_conversation.rpy:361
 translate english new_request_01_a022cd2e:
 
     # her "Там не так уж много спермы, просто она специально напрягалась, чтобы сперма попала в нос."
-    her ""
+    her "There is not that much of sperm to begin with, she was doing it on propose, so the sperm could rich her nose."
 
 # game/01_personal_requests/01_pr_conversation.rpy:362
 translate english new_request_01_3a392768:
 
     # m "Откуда вы это знаете, мисс Грейнджер?"
-    m ""
+    m "Hod do you know about this, Miss Granger?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:363
 translate english new_request_01_29e44e78:
 
     # m "Вы тоже принимали в этом участие?"
-    m ""
+    m "Did you take part in that?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:365
 translate english new_request_01_5972e8f9:
 
     # her "Нет, сэр, я не занимаюсь таким! Просто я знаю... У меня свои источники."
-    her ""
+    her "No, Sir, I don't engage in things like that! I know it because... I have my sources."
 
 # game/01_personal_requests/01_pr_conversation.rpy:366
 translate english new_request_01_ff0f8455:
 
     # m "Источники спермы? Хе-хе."
-    m ""
+    m "Sperm sources? He-he."
 
 # game/01_personal_requests/01_pr_conversation.rpy:368
 translate english new_request_01_5a65ac71:
 
     # her "Аргх! Если вы еще что-нибудь такое скажете, сэр, я просто уйду."
-    her ""
+    her "Argh! If you are going to be rude with me again, Sir, I'll just leave."
 
 # game/01_personal_requests/01_pr_conversation.rpy:369
 translate english new_request_01_2ac3faa6:
 
     # m "Мисс Грейнджер! Вы обещали мне рассказать нечто особенное, но пока я ничего такого не слышал."
-    m ""
+    m "Miss Granger! You promised to tell me something unique, but so far nothing."
 
 # game/01_personal_requests/01_pr_conversation.rpy:370
 translate english new_request_01_5dbb774c:
 
     # m "Еще немного, я окончательно разочаруюсь в вас, и вы вообще не получите очков."
-    m ""
+    m "Just a bit more, and I'll be completely disappointed in you and you won't get anything."
 
 # game/01_personal_requests/01_pr_conversation.rpy:372
 translate english new_request_01_e26c9c9c:
 
     # her "Просто не сбивайте меня, сэр. Хорошо?"
-    her ""
+    her "Just don't interrupt me, Sir. Ok?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:374
 translate english new_request_01_a0d5b606:
 
     # her "Ну вот... Одна девочка призналась мне, что ей нравится ходить без белья."
-    her ""
+    her "So... One girl made a confession to me, that she likes walking without underwear."
 
 # game/01_personal_requests/01_pr_conversation.rpy:375
 translate english new_request_01_d8ba4da7:
 
     # her "Когда она идет по лестнице, и парни смотрят снизу ей под юбку, она чувствует... она возбуждается, сэр."
-    her ""
+    her "When she climbs the stairs and boys look under her skirt, she feels... she gets aroused, Sir."
 
 # game/01_personal_requests/01_pr_conversation.rpy:376
 translate english new_request_01_2c481d0a:
 
     # m "{size=-4}(О-о, это уже лучше...){/size}"
-    m ""
+    m "{size=-4}(Oh, that's much better...){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:382
 translate english new_request_01_fb69c05a_2:
@@ -1072,373 +1072,373 @@ translate english new_request_01_fb69c05a_2:
 translate english new_request_01_dab78346:
 
     # her "Есть еще одна девчонка..."
-    her ""
+    her "There is one more girl..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:394
 translate english new_request_01_3a92888a:
 
     # her "Когда она была в Хогсмеде, она делала кое-что с карликом..."
-    her ""
+    her "When she was at Hogsmeade, she did something with a dwarf..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:395
 translate english new_request_01_4acdeaac_1:
 
     # m "{size=-4}(Ну и шлюха... ах... Да...){/size}"
-    m ""
+    m "{size=-4}(What a whore... ah... Yes...){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:396
 translate english new_request_01_1d94bfb4:
 
     # her "И еще две девушки..."
-    her ""
+    her "And two more girls..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:398
 translate english new_request_01_369f27a5:
 
     # her "Они мастурбировали друг дружку на перемене. И парни на это смотрели. Это просто отвратительно, профессор!"
-    her ""
+    her "They were masturbating to each other at break. And the boys were watching them doing it. That's disgusting, Professor."
 
 # game/01_personal_requests/01_pr_conversation.rpy:399
 translate english new_request_01_704aee9e:
 
     # m "{size=-4}(О, д-да-а... Наверняка это было зрелище!){/size}"
-    m ""
+    m "{size=-4}(Oh, Y-ye-yeh... I bet it was a good show!){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:401
 translate english new_request_01_e78b4c8d:
 
     # her "И потом та девчонка. Говорят, она ходит, засунув морковку в свою за... Ну, вы понимаете меня."
-    her ""
+    her "And there is another girl. The rumour is, she walks around with a carrot up in her as...  I think you get the picture."
 
 # game/01_personal_requests/01_pr_conversation.rpy:402
 translate english new_request_01_b94f140c:
 
     # her "Вроде как, она так разрабатывает... чтобы в нее было легче входить..."
-    her ""
+    her "Seems like she is trying to loosen it... so she can be penetrated more easily..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:403
 translate english new_request_01_162fbfea:
 
     # m "{size=-4}(Да... вот ведь шлюха... прилежная шлюха... Продолжай!){/size}"
-    m ""
+    m "{size=-4}(Yes... what a whore... industrious one... Go on!){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:405
 translate english new_request_01_5d660ca5:
 
     # her "И другая девочка, она дрочила сразу двоим..."
-    her ""
+    her "And another girl, she was jerking off the cocks of two boys at the same time."
 
 # game/01_personal_requests/01_pr_conversation.rpy:406
 translate english new_request_01_bc9645bb_1:
 
     # m "{size=-4}(Да! Да!){/size}"
-    m ""
+    m "{size=-4}(Yes! Yes!){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:408
 translate english new_request_01_3d1684be:
 
     # her "А потом опустилась на колени и взяла в рот у третьего..."
-    her ""
+    her "Then she got on her knees and took the cock of the third boy in her mouth."
 
 # game/01_personal_requests/01_pr_conversation.rpy:409
 translate english new_request_01_2ae59c39:
 
     # m "{size=-4}(Ох, шлюх-ха, я сейчас... уже...){/size}"
-    m ""
+    m "{size=-4}(Oh, who-re, I'll... almost...){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:411
 translate english new_request_01_2b4ac2ca:
 
     # her "На этом все, профессор."
-    her ""
+    her "That's all I have to tell, Professor."
 
 # game/01_personal_requests/01_pr_conversation.rpy:412
 translate english new_request_01_29bbc7dc_1:
 
     # g4 "Что?!"
-    g4 ""
+    g4 "What?!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:414
 translate english new_request_01_831c23f0:
 
     # her "Вы мне платите 15 баллов за рассказ. Но кончить стоит еще столько же."
-    her ""
+    her "You pay me 15 house points for the story. But the price for ejaculation it's 15 points more."
 
 # game/01_personal_requests/01_pr_conversation.rpy:415
 translate english new_request_01_f228b50e:
 
     # g4 "Мелкая дрянь!"
-    g4 ""
+    g4 "You little cunt!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:422
 translate english new_request_01_17833b2c:
 
     # m "Ничего не получишь!"
-    m ""
+    m "You'll get nothing!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:423
 translate english new_request_01_76b024ab:
 
     # m "Ни одного балла!"
-    m ""
+    m "Not a single point!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:425
 translate english new_request_01_4d795b24:
 
     # her "Очень хорошо, профессор! В таком случае не ждите, что я и дальше буду удовлетворять ваши прихоти!"
-    her ""
+    her "Very good, Professor! In that case, don't expect me to fulfil any of your whims in near future!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:429
 translate english new_request_01_9fb10c9e:
 
     # m "Аргх! Ну что ж, все... Хватит."
-    m ""
+    m "Argh! Well, alright... That's enough."
 
 # game/01_personal_requests/01_pr_conversation.rpy:435
 translate english new_request_01_a24a1bdb:
 
     # her "Как скажете, сэр. Я готова получить свои [current_payout] очков."
-    her ""
+    her "As you say, Sir. I'm ready to get my [current_payout] house points."
 
 # game/01_personal_requests/01_pr_conversation.rpy:438
 translate english new_request_01_54b31159:
 
     # m "Не останавливайся, я дам тебе очки! Продолжай!"
-    m ""
+    m "Don't stop, I'll give you your points. Continue!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:440
 translate english new_request_01_027f5dca:
 
     # her "Да, сэр. Эти шлюхи, сэр, они каждый день сосут у пары парней и просят кончать им на лицо."
-    her ""
+    her "Yes, sir. Those whores, Sir, they suck the cocks of boys every day and beg them to cum on their faces."
 
 # game/01_personal_requests/01_pr_conversation.rpy:441
 translate english new_request_01_98a35503:
 
     # her "И ходят с лицом, измазанным спермой. Они говорят, что это хорошо влияет на кожу."
-    her ""
+    her "Then walk around with their faces covered in semen."
 
 # game/01_personal_requests/01_pr_conversation.rpy:442
 translate english new_request_01_f27eaec5:
 
     # m "{size=-4}(Да, давай,.. продолжай!){/size}"
-    m ""
+    m "{size=-4}(Yes, Go.. on!){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:443
 translate english new_request_01_926c0c80:
 
     # her "И слизеринские девки пообещали парням из квиддишной команды, что будут неделю будить их минетом, если те выиграют."
-    her ""
+    her "The Slytherin harlots promised to the boys from the Quidditch team, that they will be waking them up with blowjobs for entire week, if the boys are gonna win the game."
 
 # game/01_personal_requests/01_pr_conversation.rpy:444
 translate english new_request_01_be091e9b:
 
     # her "И еще, сэр, рассказывали, как одна девушка дрочила одному преподавателю..."
-    her ""
+    her "And more, Sir, rumour is, one girl was giving a handjob to a teacher..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:445
 translate english new_request_01_dfbf2c05:
 
     # her "А потом тут же пошла дрочить другому..."
-    her ""
+    her "Then right after that she went directly to another one..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:446
 translate english new_request_01_f1cff4bc:
 
     # m "{size=-4}(О, да-а-а,.. эти шлюхи!){/size}"
-    m ""
+    m "{size=-4}(Oh, ye-e-h,.. those whores!){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:448
 translate english new_request_01_1fbba597:
 
     # her "И потом, я слышала, появилась новая игра. Она называется \"Угадай дырку\"."
-    her ""
+    her "After that, I heard there is a new game. It's called \"Guess the Hole\"."
 
 # game/01_personal_requests/01_pr_conversation.rpy:449
 translate english new_request_01_809832a2:
 
     # m "{size=-4}(Угадай... ах-х... да....){/size}"
-    m ""
+    m "{size=-4}(Guess... ha-ha... yeh....){/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:451
 translate english new_request_01_bae51549:
 
     # her "В деревянной перегородке делают дырки ниже пояса, где несколько девчонок выставляют свои..."
-    her ""
+    her "In a wooden wall, holes are made just under the belt, where a few girls are showing their..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:452
 translate english new_request_01_334a3392:
 
     # her "Прелести, сэр. И если парень угадал, кто это..."
-    her ""
+    her "Goody, Sir. And if the boy will guess correctly, who's..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:453
 translate english new_request_01_01aedbff:
 
     # m "{size=-4}(О, да... да... я уже... УЖЕ!){/size}{size=+2}*АРГХ!*{/size}"
-    m ""
+    m "{size=-4}(Oh, yes... yes... I'm... ALMOST!){/size}{size=+2}*ARGH!*{/size}"
 
 # game/01_personal_requests/01_pr_conversation.rpy:463
 translate english new_request_01_ec0aa67a_1:
 
     # g4 "Аргх! ДА!"
-    g4 ""
+    g4 "Argh! YES!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:476
 translate english new_request_01_34474aa8:
 
     # her "О-о, вы так мощно кончаете, профессор! Вам понравилось?"
-    her ""
+    her "Oh, you ejaculate so hard, Professor! Did you like it?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:479
 translate english new_request_01_bd6f45f3:
 
     # g4 "Ах, дерьмо, это так... Это невероятно охренительно!.."
-    g4 ""
+    g4 "Ah, crap, it's so... It's so incredibly awesome!.."
 
 # game/01_personal_requests/01_pr_conversation.rpy:484
 translate english new_request_01_8010f67a:
 
     # her "Я рада профессор, что вы кончаете. И все же, могу я получить свои очки? Всего [current_payout] очков."
-    her ""
+    her "I'm happy, Professor, that you are cumming. Can I have my points, please? [current_payout] house points, please."
 
 # game/01_personal_requests/01_pr_conversation.rpy:485
 translate english new_request_01_cc980f4b:
 
     # m "Ох-х... Уффф... Да, можешь,.. но..."
-    m ""
+    m "Oh... Ufff... Yes, you can,... but..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:486
 translate english new_request_01_9431ef37:
 
     # m "...что там с игрой \"Угадай дырку\"? Ты так и не дорассказала."
-    m ""
+    m "...what about that game \"Guess the Hole\"? You didn't finish."
 
 # game/01_personal_requests/01_pr_conversation.rpy:488
 translate english new_request_01_ca21757e:
 
     # her "Вы же и так кончили, сэр. Но если вы хотите узнать..."
-    her ""
+    her "You did already cum, Sir. But if you insist, to know the rest..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:489
 translate english new_request_01_bfd28d87:
 
     # m "Что?! Ты опять вымогаешь очки?"
-    m ""
+    m "What?! Again trying to extort some points?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:490
 translate english new_request_01_0da2bfac:
 
     # her "Всего 15 очков, сэр."
-    her ""
+    her "Only 15 house points, Sir."
 
 # game/01_personal_requests/01_pr_conversation.rpy:491
 translate english new_request_01_3b81496e:
 
     # m "Ты зарываешься, девчонка!"
-    m ""
+    m "You are going too far, girl!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:493
 translate english new_request_01_551dd48a:
 
     # her "Простите, сэр, тогда я просто получу свои [current_payout] очков и пойду."
-    her ""
+    her "I'm sorry, Sir, then I'd like to get paid my [current_payout] points and I'll leave."
 
 # game/01_personal_requests/01_pr_conversation.rpy:496
 translate english new_request_01_dd53823b:
 
     # m "Иди прочь. И помни, со мной шантаж не пройдет!"
-    m ""
+    m "Get out! And remember, extorting doesn't work on me!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:498
 translate english new_request_01_045917a3:
 
     # her "Да, сэр..."
-    her ""
+    her "Yes, Sir..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:501
 translate english new_request_01_bb272d61:
 
     # m "Хорошо, но помни, это в последний раз!"
-    m ""
+    m "Alright, but remember, this is for the last time!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:503
 translate english new_request_01_6e57f2ea:
 
     # her "Конечно, я все понимаю."
-    her ""
+    her "Of course, Professor, I understand."
 
 # game/01_personal_requests/01_pr_conversation.rpy:505
 translate english new_request_01_c97da1e6:
 
     # her "В общем, если парень угадывает, чья это..."
-    her ""
+    her "Well, if the boy will guess correctly, who's..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:506
 translate english new_request_01_d8172df0:
 
     # her "Гхм... в общем, угадывает чье это, то девчонка должна дать ему так, как он захочет."
-    her ""
+    her "Ghm... well, guess who's goody is it, the boy can do the girl however he wants."
 
 # game/01_personal_requests/01_pr_conversation.rpy:507
 translate english new_request_01_b17d51c9:
 
     # her "А если не угадывает, то он становится общим на целую ночь."
-    her ""
+    her "And if he fails, he becomes the girls' toy for the entire night."
 
 # game/01_personal_requests/01_pr_conversation.rpy:508
 translate english new_request_01_d33ea1a8:
 
     # m "Общим?"
-    m ""
+    m "Their toy?"
 
 # game/01_personal_requests/01_pr_conversation.rpy:509
 translate english new_request_01_c634a5ab:
 
     # her "Да, сэр. Девчонки забирают его в свою спальню, и он должен делать для них все."
-    her ""
+    her "Yes, Sir. The girls take him with them to their bedroom and he has to do whatever they ask of him."
 
 # game/01_personal_requests/01_pr_conversation.rpy:510
 translate english new_request_01_50a61f27:
 
     # m "?!..."
-    m ""
+    m "?!..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:512
 translate english new_request_01_9bb0728b:
 
     # her "{size=+4}АБСОЛЮТНО{/size} все, что каждая из них скажет, сэр!"
-    her ""
+    her "{size=+4}EVERYTHING{/size} each of them will ask for, Sir!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:513
 translate english new_request_01_d992d562:
 
     # m "Вот дерьмо!"
-    m ""
+    m "Crap!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:514
 translate english new_request_01_9567611f:
 
     # her "Профессор, по-моему у вас опять встает. Если вы хотите, продолжить, то всего 15 оч..."
-    her ""
+    her "Professor, I think you are getting a hard on, again. If you want me to continue, just 15 poin..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:515
 translate english new_request_01_0d654c19:
 
     # m "Нет!!! На сегодня достаточно!"
-    m ""
+    m "NO!!! That's enough for today!"
 
 # game/01_personal_requests/01_pr_conversation.rpy:517
 translate english new_request_01_26725d20:
 
     # her "Конечно, профессор."
-    her ""
+    her "Of course, Professor."
 
 # game/01_personal_requests/01_pr_conversation.rpy:518
 translate english new_request_01_041d5d66:
 
     # her "...................."
-    her ""
+    her "...................."
 
 # game/01_personal_requests/01_pr_conversation.rpy:533
 translate english new_request_01_11acb6b8:
@@ -1468,7 +1468,7 @@ translate english new_request_01_d0dc0447:
 translate english new_request_01_1ac26659:
 
     # her "Еще [current_payout] очков... Ребята будут счастливы."
-    her "Another [current_payout] points... The guys will be so happy."
+    her "Another [current_payout] house points... The guys will be so happy."
 
 # game/01_personal_requests/01_pr_conversation.rpy:546
 translate english new_request_01_3895e281:
@@ -1480,19 +1480,19 @@ translate english new_request_01_3895e281:
 translate english request_01_done_6ec2f17b:
 
     # m "................................."
-    m ""
+    m "................................."
 
 # game/01_personal_requests/01_pr_conversation.rpy:572
 translate english request_01_done_9cdb43e1:
 
     # m "\"Угадай дырку\", надо же..."
-    m ""
+    m "\"Guess the Hole\", who'd thought..."
 
 # game/01_personal_requests/01_pr_conversation.rpy:573
 translate english request_01_done_34979324:
 
     # m "Чего только не придумают эти шлюхи!"
-    m ""
+    m "Things they come up, those whores!"
 
 translate english strings:
 
@@ -1522,37 +1522,37 @@ translate english strings:
 
     # game/01_personal_requests/01_pr_conversation.rpy:270
     old "\"И чем же вы хотите заняться?\""
-    new ""
+    new "\"What do you have in mind, Miss Granger?\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:270
     old "\"C каких это пор вы стали выбирать себе задания, мисс Грейнджер?"
-    new ""
+    new "\"Since when you have to choose your own favors, Miss Granger?\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:336
     old "\"Нет!\""
-    new ""
+    new "\"No!\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:336
     old "\"Хорошо, еще 15 очков. Рассказывай!"
-    new ""
+    new "\"Fine! 15 house points, start talking.\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:416
     old "\"Ничего не получишь!\""
-    new ""
+    new "\"You'll get nothing!\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:416
     old "\"Ладно. На этом все...\""
-    new ""
+    new "\"Alrith. That's enough....\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:416
     old "\"Продолжай, будут тебе очки!\""
-    new ""
+    new "\"Continue, you'll get your points!\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:494
     old "\"Иди прочь!\""
-    new ""
+    new "\"Get out!\""
 
     # game/01_personal_requests/01_pr_conversation.rpy:494
     old "\"Ладно. +15 очков, рассказывай. Но это в последний раз!\""
-    new ""
+    new "\"Fine! 15 house points, start talking. This is for the last time!\""
 

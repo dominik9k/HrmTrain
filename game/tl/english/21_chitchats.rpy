@@ -4,13 +4,13 @@
 translate english snape_chitchat_36b6f918:
 
     # sna "Ты действительно думаешь что сделаешь это?"
-    sna "Do You really think you can do this?"
+    sna "Do you really think you can do this?"
 
 # game/21_chitchats.rpy:21
 translate english snape_chitchat_285caccd:
 
     # sna "Ты действительно думаешь, что сломаешь девчонку?"
-    sna "Do You think you can break the girl?"
+    sna "Do you think you can break the girl?"
 
 # game/21_chitchats.rpy:29
 translate english snape_chitchat_4a2ddfa6:
