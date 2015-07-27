@@ -1520,7 +1520,7 @@ translate english strings:
 
     # game/hermione_menu.rpy:38
     old "- Поговорить о работе для редакции -"
-    new "-Talk about Editorial Work-"
+    new "-Talk about Edition Work-"
 
     # game/hermione_menu.rpy:38
     old "{color=#858585}- Дать журналистское задание -{/color}"
@@ -1682,41 +1682,41 @@ translate english strings:
 translate english wrd_clother_hermi_ba93ebc8:
 
     # her "О, хорошо! Тогда я пойду на уроки."
-    her ""
+    her "Oh, alright. I will go to classes then."
 
 # game/hermione_menu.rpy:213
 translate english wrd_clother_hermi_3574ffb4:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/hermione_menu.rpy:215
 translate english wrd_clother_hermi_ef2f2f2a:
 
     # her "*Гм!*..."
-    her ""
+    her "*Hm!*..."
 
 # game/hermione_menu.rpy:218
 translate english wrd_clother_hermi_900b60d0:
 
     # her "О, хорошо! Тогда я пойду спать."
-    her ""
+    her "Oh, alright. I will go to bed then."
 
 # game/hermione_menu.rpy:220
 translate english wrd_clother_hermi_3574ffb4_1:
 
     # her "..............................."
-    her ""
+    her "..............................."
 
 # game/hermione_menu.rpy:222
 translate english wrd_clother_hermi_bde091d9:
 
     # her "Пф!..."
-    her ""
+    her "Pf!..."
 
 translate english strings:
 
     # game/hermione_menu.rpy:38
     old "- Подарить ей одежду -"
-    new ""
+    new "-Give her clothes as a gift-"
 

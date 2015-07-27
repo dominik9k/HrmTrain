@@ -118,5 +118,5 @@ translate english strings:
 
     # game/03_sexy_tutoring.rpy:26
     old "Положить ее руки на член."
-    new ""
+    new "Put her hand on your crotch."
 

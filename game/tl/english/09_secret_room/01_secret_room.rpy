@@ -4,7 +4,7 @@
 translate english sroom_main_bc235cf3:
 
     # dev "Добро пожаловать Тайную Комнату. Здесь вы можете изучить список своих игровых достижений и насладиться некоторыми бонусами."
-    dev "Welcome to the Chamber of Secrets. Here you can learn about your achievements and a few pleasant bonuses."
+    dev "Welcome to the Chamber of Secrets. Here you can learn about your achievements and a enjouy some bonuses."
 
 # game/09_secret_room/01_secret_room.rpy:30
 translate english sroom_achlist_8c3fd64c:
@@ -120,5 +120,4 @@ translate english strings:
 translate english sroom_main_085c3f43:
 
     # dev "Добро пожаловать Тайную Комнату. Здесь вы можете изучить список своих игровых достижений и насладиться некоторыми бонусами."
-    dev ""
-
+    dev "Welcome to the Chamber of Secrets. Here you can learn about your achievements and a enjouy some bonuses."

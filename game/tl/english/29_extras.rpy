@@ -224,5 +224,5 @@ translate english strings:
 translate english gallery_3da8f0a6:
 
     # dev "Добро пожаловать в галерею игры \"Воспитание Ведьмы\". Здесь вы можете посмотреть некоторые работы."
-    dev ""
+    dev "Welcome to the \"Witch Trainer\" gallery. Here you can have a look at some of the production artwork."
 

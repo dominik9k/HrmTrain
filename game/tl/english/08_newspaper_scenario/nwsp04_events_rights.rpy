@@ -310,7 +310,7 @@ translate english nsp_event_rights_1_complete_0089802b:
 translate english nsp_event_rights_1_complete_a489f437:
 
     # her "Третий подошел сзади и положио руку мне на живот."
-    her "Came from behind and put his hands around my belly."
+    her "Came from behind and put his hand on my belly."
 
 # game/08_newspaper_scenario/nwsp04_events_rights.rpy:112
 translate english nsp_event_rights_1_complete_9a21dadc:
@@ -682,7 +682,7 @@ translate english nsp_event_rights_5_complete_53f7fbac:
 translate english nsp_event_rights_5_complete_fd25640f:
 
     # ">текст ивента прав 5-7"
-    "Text for rights event 5-7."
+    ">Text for rights event 5-7."
 
 # TODO: Translation updated at 2015-07-21 15:21
 
@@ -690,5 +690,5 @@ translate english nsp_event_rights_5_complete_fd25640f:
 translate english nsp_event_rights_1_complete_2b1361e5:
 
     # her "Третий подошел сзади и положил руку мне на живот."
-    her ""
+    her "Came from behind and put his hand on my belly."
 

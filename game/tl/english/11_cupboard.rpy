@@ -180,23 +180,23 @@ translate english strings:
 translate english menu_cupboard_description_wrd_0e8c385f:
 
     # ">[item._description]"
-    ""
+    ">[item._description]"
 
 translate english strings:
 
     # game/11_cupboard.rpy:4
     old "- Вещи -"
-    new ""
+    new "-Items-"
 
     # game/11_cupboard.rpy:34
     old "- Одежда для подарков -"
-    new ""
+    new "-Clothes as a Gift"
 
     # game/11_cupboard.rpy:34
     old "- Вещи напрокат -"
-    new ""
+    new "-Rented Clothes"
 
     # game/11_cupboard.rpy:34
     old "- Помощь -"
-    new ""
+    new "-Help-"
 
