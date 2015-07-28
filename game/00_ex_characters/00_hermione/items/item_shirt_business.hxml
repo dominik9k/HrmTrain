@@ -44,5 +44,9 @@
 	<style name="with_lifted_skirt">
 		<frame>shirt_business_B_lifted.png</frame>
 		<folder>clothes</folder>
+	</style>
+	<style name="sperm_dried">
+		<frame>shirts/shirt_business_B_sd.png</frame>
+		<folder>clothes</folder>
 	</style>	
 </item>

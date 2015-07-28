@@ -143,6 +143,7 @@ label new_request_24_complete:  # <=============================================
     
     $ pos = POS_370
     $ herView.data().saveState()
+    $ hermi.WrdSetMain ()
 
     if hermi.whoring >= 18 and hermi.whoring <= 20: # LEVEL 07                    
         if one_out_of_three == 1: ### EVENT (A)
@@ -260,7 +261,8 @@ label new_request_24_complete:  # <=============================================
             #$herView.data().addItemKey( 'sperm', CharacterExItem( herView.mMiscFolder, "sperm_05.png", G_Z_FACE + 2 ) )
             $herView.data().addItem( 'item_sperm', '05' )
             #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 3 ) )
-            $herView.data().addItem( 'item_sperm_dried' )
+            #$herView.data().addItem( 'item_sperm_dried' )
+            $ hermi.WrdSpermDried ()
 
             show screen blktone
             with d3
@@ -432,6 +434,7 @@ label new_request_24_complete:  # <=============================================
 
 
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
 
 #    $ public_whore_ending = True #Activates "Public Whore" ending.
     $ end.SetEndingValue(const_ENDING_PUBLIC_WHORE,2)

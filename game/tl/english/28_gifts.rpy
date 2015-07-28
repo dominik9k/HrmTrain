@@ -5418,3 +5418,2627 @@ translate english strings:
     old "\"50 очков ?\""
     new "\"50 points?\""
 
+# TODO: Translation updated at 2015-07-28 10:13
+
+# game/28_gifts.rpy:39
+translate english giving_xxxsmallskirt_5c23711d:
+
+    # ">Вы дали нано-юбку Гермионе..."
+    ""
+
+# game/28_gifts.rpy:2029
+translate english giving_badge_82a639c7:
+
+    # her "Значок?"
+    her ""
+
+# game/28_gifts.rpy:2034
+translate english giving_badge_67196016:
+
+    # ">Вы даете значок Гермионе...\n>Значок \"А.В.Н.Э.\" был добавлен в гардероб Гермионы."
+    ""
+
+# game/28_gifts.rpy:2040
+translate english giving_badge_7998a875:
+
+    # her "Спасибо, сэр."
+    her ""
+
+# game/28_gifts.rpy:2151
+translate english giving_shortskirt_b1b7bd63:
+
+    # ">Вы дали среднюю школьную юбку Гермионе..."
+    ""
+
+# game/28_gifts.rpy:2188
+translate english giving_xshortskirt_33de0456:
+
+    # ">Вы дали короткую школьную юбку Гермионе..."
+    ""
+
+# game/28_gifts.rpy:2225
+translate english giving_xxshortskirt_e8ead394:
+
+    # ">Вы дали игривую школьную юбку Гермионе..."
+    ""
+
+# game/28_gifts.rpy:2299
+translate english giving_xxsmallskirt_43b12069:
+
+    # ">Вы дали школьную микро-юбку Гермионе..."
+    ""
+
+# game/28_gifts.rpy:4270
+translate english wrd_first_badge_212f3a54:
+
+    # her "Конечно, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4271
+translate english wrd_first_badge_0ae9bcd0:
+
+    # ""
+    ""
+
+# game/28_gifts.rpy:4285
+translate english wrd_first_nets_4fb6e6c7:
+
+    # her "Ажурные чулки...?"
+    her ""
+
+# game/28_gifts.rpy:4287
+translate english wrd_first_nets_161834d1:
+
+    # her "Вы, должно быть, не серьезно, сэр!"
+    her ""
+
+# game/28_gifts.rpy:4288
+translate english wrd_first_nets_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4292
+translate english wrd_first_nets_bf86880d:
+
+    # her "С радостью..."
+    her ""
+
+# game/28_gifts.rpy:4297
+translate english wrd_first_nets_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:4298
+translate english wrd_first_nets_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:4300
+translate english wrd_first_nets_7eb8c0ea:
+
+    # her "Ну, хорошо..."
+    her ""
+
+# game/28_gifts.rpy:4307
+translate english wrd_first_nets_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4309
+translate english wrd_first_nets_e0101b5e:
+
+    # her "Я не из таких девушек, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4310
+translate english wrd_first_nets_430a7b68:
+
+    # her "Попытайте удачу с одной из \"Слизеринских\" шлюх..."
+    her ""
+
+# game/28_gifts.rpy:4311
+translate english wrd_first_nets_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4315
+translate english wrd_first_nets_49a2997b:
+
+    # her "Сэр, это врядли соответствует форме студента Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:4317
+translate english wrd_first_nets_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:4326
+translate english wrd_first_nets_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4328
+translate english wrd_first_nets_24b32299:
+
+    # her "Ну, раз так..."
+    her ""
+
+# game/28_gifts.rpy:4330
+translate english wrd_first_nets_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:4333
+translate english wrd_first_nets_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:4339
+translate english wrd_first_nets_4e1af4bd_1:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4341
+translate english wrd_first_nets_8cc1fab0:
+
+    # her "Ажурные чулки?"
+    her ""
+
+# game/28_gifts.rpy:4343
+translate english wrd_first_nets_c6775539:
+
+    # her "Я не уверена насчет этого, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4344
+translate english wrd_first_nets_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4348
+translate english wrd_first_nets_8b2df82f:
+
+    # her "Ладно, Ладно..."
+    her ""
+
+# game/28_gifts.rpy:4352
+translate english wrd_first_nets_7fd9e75a_1:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4354
+translate english wrd_first_nets_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:4357
+translate english wrd_first_nets_83f0bbb7:
+
+    # her "Ох..."
+    her ""
+
+# game/28_gifts.rpy:4365
+translate english wrd_first_nets_2bc0dc22:
+
+    # her "Если вы настаиваете, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4379
+translate english wrd_first_tights_fa5cb0c1:
+
+    # her "Колготки, сэр ?"
+    her ""
+
+# game/28_gifts.rpy:4380
+translate english wrd_first_tights_98815e65:
+
+    # her "Это довольно неожиданно."
+    her ""
+
+# game/28_gifts.rpy:4382
+translate english wrd_first_tights_05d038a4:
+
+    # her "(Интересно, в чем тут подвох ?)"
+    her ""
+
+# game/28_gifts.rpy:4384
+translate english wrd_first_tights_d7fcc054:
+
+    # her "Мне кажется, что они не относятся к обычной форме ученицы..."
+    her ""
+
+# game/28_gifts.rpy:4385
+translate english wrd_first_tights_f4e1f0d6:
+
+    # her "С другой стороны, тут нет ничего плохого."
+    her ""
+
+# game/28_gifts.rpy:4398
+translate english wrd_first_shortskirt_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4399
+translate english wrd_first_shortskirt_c4ec459f:
+
+    # her "Это короткая юбка?!"
+    her ""
+
+# game/28_gifts.rpy:4401
+translate english wrd_first_shortskirt_4cb9de81:
+
+    # her "...Она едва прикрывает мои прелести."
+    her ""
+
+# game/28_gifts.rpy:4402
+translate english wrd_first_shortskirt_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4406
+translate english wrd_first_shortskirt_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4413
+translate english wrd_first_shortskirt_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:4414
+translate english wrd_first_shortskirt_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:4416
+translate english wrd_first_shortskirt_a3ff6b1b:
+
+    # her "Ну, ладно..."
+    her ""
+
+# game/28_gifts.rpy:4425
+translate english wrd_first_shortskirt_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4427
+translate english wrd_first_shortskirt_9da90daa:
+
+    # her "Но она очень короткая..."
+    her ""
+
+# game/28_gifts.rpy:4428
+translate english wrd_first_shortskirt_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4432
+translate english wrd_first_shortskirt_d91fb921:
+
+    # her "Сэр, врядли это соответствует форме учеников Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:4434
+translate english wrd_first_shortskirt_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:4443
+translate english wrd_first_shortskirt_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4445
+translate english wrd_first_shortskirt_34a7918f:
+
+    # her "Ну, в таком случае..."
+    her ""
+
+# game/28_gifts.rpy:4447
+translate english wrd_first_shortskirt_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:4450
+translate english wrd_first_shortskirt_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:4456
+translate english wrd_first_shortskirt_4e1af4bd_1:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4458
+translate english wrd_first_shortskirt_9da90daa_1:
+
+    # her "Но она очень короткая..."
+    her ""
+
+# game/28_gifts.rpy:4459
+translate english wrd_first_shortskirt_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4463
+translate english wrd_first_shortskirt_75dd550d:
+
+    # her "Ладно, ладно..."
+    her ""
+
+# game/28_gifts.rpy:4467
+translate english wrd_first_shortskirt_7fd9e75a_1:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4469
+translate english wrd_first_shortskirt_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:4472
+translate english wrd_first_shortskirt_83f0bbb7:
+
+    # her "Ох..."
+    her ""
+
+# game/28_gifts.rpy:4479
+translate english wrd_first_shortskirt_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4493
+translate english wrd_first_xshortskirt_09128c71:
+
+    # her "Вы издеваетесь, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4494
+translate english wrd_first_xshortskirt_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:4495
+translate english wrd_first_xshortskirt_cd1e35ae:
+
+    # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
+    m ""
+
+# game/28_gifts.rpy:4496
+translate english wrd_first_xshortskirt_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:4498
+translate english wrd_first_xshortskirt_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:4505
+translate english wrd_first_xshortskirt_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4506
+translate english wrd_first_xshortskirt_280ac50b:
+
+    # her "Эта юбка еще короче прежней?!"
+    her ""
+
+# game/28_gifts.rpy:4508
+translate english wrd_first_xshortskirt_4cb9de81:
+
+    # her "...Она едва прикрывает мои прелести."
+    her ""
+
+# game/28_gifts.rpy:4509
+translate english wrd_first_xshortskirt_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4513
+translate english wrd_first_xshortskirt_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4520
+translate english wrd_first_xshortskirt_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:4521
+translate english wrd_first_xshortskirt_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:4523
+translate english wrd_first_xshortskirt_a3ff6b1b:
+
+    # her "Ну, ладно..."
+    her ""
+
+# game/28_gifts.rpy:4532
+translate english wrd_first_xshortskirt_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4534
+translate english wrd_first_xshortskirt_2b2a0ac6:
+
+    # her "Но она еще короче..."
+    her ""
+
+# game/28_gifts.rpy:4535
+translate english wrd_first_xshortskirt_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4539
+translate english wrd_first_xshortskirt_d91fb921:
+
+    # her "Сэр, врядли это соответствует форме учеников Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:4541
+translate english wrd_first_xshortskirt_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:4550
+translate english wrd_first_xshortskirt_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4552
+translate english wrd_first_xshortskirt_34a7918f:
+
+    # her "Ну, в таком случае..."
+    her ""
+
+# game/28_gifts.rpy:4554
+translate english wrd_first_xshortskirt_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:4557
+translate english wrd_first_xshortskirt_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:4563
+translate english wrd_first_xshortskirt_4e1af4bd_1:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4565
+translate english wrd_first_xshortskirt_9da90daa:
+
+    # her "Но она очень короткая..."
+    her ""
+
+# game/28_gifts.rpy:4566
+translate english wrd_first_xshortskirt_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4570
+translate english wrd_first_xshortskirt_75dd550d:
+
+    # her "Ладно, ладно..."
+    her ""
+
+# game/28_gifts.rpy:4574
+translate english wrd_first_xshortskirt_7fd9e75a_1:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4576
+translate english wrd_first_xshortskirt_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:4579
+translate english wrd_first_xshortskirt_83f0bbb7:
+
+    # her "Ох..."
+    her ""
+
+# game/28_gifts.rpy:4586
+translate english wrd_first_xshortskirt_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4601
+translate english wrd_first_xxshortskirt_09128c71:
+
+    # her "Вы издеваетесь, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4602
+translate english wrd_first_xxshortskirt_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:4603
+translate english wrd_first_xxshortskirt_cd1e35ae:
+
+    # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
+    m ""
+
+# game/28_gifts.rpy:4604
+translate english wrd_first_xxshortskirt_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:4606
+translate english wrd_first_xxshortskirt_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:4613
+translate english wrd_first_xxshortskirt_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4614
+translate english wrd_first_xxshortskirt_280ac50b:
+
+    # her "Эта юбка еще короче прежней?!"
+    her ""
+
+# game/28_gifts.rpy:4616
+translate english wrd_first_xxshortskirt_4cb9de81:
+
+    # her "...Она едва прикрывает мои прелести."
+    her ""
+
+# game/28_gifts.rpy:4617
+translate english wrd_first_xxshortskirt_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4621
+translate english wrd_first_xxshortskirt_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4628
+translate english wrd_first_xxshortskirt_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:4629
+translate english wrd_first_xxshortskirt_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:4631
+translate english wrd_first_xxshortskirt_a3ff6b1b:
+
+    # her "Ну, ладно..."
+    her ""
+
+# game/28_gifts.rpy:4640
+translate english wrd_first_xxshortskirt_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4642
+translate english wrd_first_xxshortskirt_2b2a0ac6:
+
+    # her "Но она еще короче..."
+    her ""
+
+# game/28_gifts.rpy:4643
+translate english wrd_first_xxshortskirt_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4647
+translate english wrd_first_xxshortskirt_d91fb921:
+
+    # her "Сэр, врядли это соответствует форме учеников Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:4649
+translate english wrd_first_xxshortskirt_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:4658
+translate english wrd_first_xxshortskirt_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4660
+translate english wrd_first_xxshortskirt_34a7918f:
+
+    # her "Ну, в таком случае..."
+    her ""
+
+# game/28_gifts.rpy:4662
+translate english wrd_first_xxshortskirt_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:4665
+translate english wrd_first_xxshortskirt_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:4671
+translate english wrd_first_xxshortskirt_4e1af4bd_1:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4673
+translate english wrd_first_xxshortskirt_9da90daa:
+
+    # her "Но она очень короткая..."
+    her ""
+
+# game/28_gifts.rpy:4674
+translate english wrd_first_xxshortskirt_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4678
+translate english wrd_first_xxshortskirt_75dd550d:
+
+    # her "Ладно, ладно..."
+    her ""
+
+# game/28_gifts.rpy:4682
+translate english wrd_first_xxshortskirt_7fd9e75a_1:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4684
+translate english wrd_first_xxshortskirt_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:4687
+translate english wrd_first_xxshortskirt_83f0bbb7:
+
+    # her "Ох..."
+    her ""
+
+# game/28_gifts.rpy:4694
+translate english wrd_first_xxshortskirt_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4709
+translate english wrd_first_xsmallskirt_09128c71:
+
+    # her "Вы издеваетесь, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4710
+translate english wrd_first_xsmallskirt_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:4711
+translate english wrd_first_xsmallskirt_cd1e35ae:
+
+    # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
+    m ""
+
+# game/28_gifts.rpy:4712
+translate english wrd_first_xsmallskirt_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:4714
+translate english wrd_first_xsmallskirt_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:4722
+translate english wrd_first_xsmallskirt_e7097a6d:
+
+    # her "Сэр, как вы можете просить меня ходить по школе в этой жалкой тряпочке ?!"
+    her ""
+
+# game/28_gifts.rpy:4723
+translate english wrd_first_xsmallskirt_4463260c:
+
+    # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+    her ""
+
+# game/28_gifts.rpy:4724
+translate english wrd_first_xsmallskirt_60fab287:
+
+    # m "(Мне нравится ход ее мыслей.)"
+    m ""
+
+# game/28_gifts.rpy:4726
+translate english wrd_first_xsmallskirt_4cb9de81:
+
+    # her "...Она едва прикрывает мои прелести."
+    her ""
+
+# game/28_gifts.rpy:4727
+translate english wrd_first_xsmallskirt_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4731
+translate english wrd_first_xsmallskirt_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4740
+translate english wrd_first_xsmallskirt_c8526f36:
+
+    # her "{size=+3}Засуньте себе свои очки в ...{/size}"
+    her ""
+
+# game/28_gifts.rpy:4742
+translate english wrd_first_xsmallskirt_01c078e2:
+
+    # her "Простите, сэр."
+    her ""
+
+# game/28_gifts.rpy:4743
+translate english wrd_first_xsmallskirt_757d845f:
+
+    # her "Я хочу сказать, что отказываюсь !"
+    her ""
+
+# game/28_gifts.rpy:4751
+translate english wrd_first_xsmallskirt_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4752
+translate english wrd_first_xsmallskirt_522aa50f:
+
+    # her "Эта мини-юбка совсем коротенькая!"
+    her ""
+
+# game/28_gifts.rpy:4754
+translate english wrd_first_xsmallskirt_d6ea1606:
+
+    # her "Из под нее всем будут видны мои трусики !"
+    her ""
+
+# game/28_gifts.rpy:4755
+translate english wrd_first_xsmallskirt_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4759
+translate english wrd_first_xsmallskirt_eebdf957_1:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4765
+translate english wrd_first_xsmallskirt_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:4766
+translate english wrd_first_xsmallskirt_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:4767
+translate english wrd_first_xsmallskirt_5eb1bcfa:
+
+    # her "Этого мало, сэр !"
+    her ""
+
+# game/28_gifts.rpy:4772
+translate english wrd_first_xsmallskirt_eebdf957_2:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4779
+translate english wrd_first_xsmallskirt_331265d4:
+
+    # her "Ох... ладно..."
+    her ""
+
+# game/28_gifts.rpy:4780
+translate english wrd_first_xsmallskirt_97b46dae:
+
+    # her "Чувствую, что я еще пожалею об этом..."
+    her ""
+
+# game/28_gifts.rpy:4781
+translate english wrd_first_xsmallskirt_d0a8b112:
+
+    # her "(Нужно будет поменьше наклоняться.)"
+    her ""
+
+# game/28_gifts.rpy:4791
+translate english wrd_first_xsmallskirt_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4793
+translate english wrd_first_xsmallskirt_bbe6bb90:
+
+    # her "Но она совсем коротенькая..."
+    her ""
+
+# game/28_gifts.rpy:4794
+translate english wrd_first_xsmallskirt_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4798
+translate english wrd_first_xsmallskirt_d91fb921:
+
+    # her "Сэр, врядли это соответствует форме учеников Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:4800
+translate english wrd_first_xsmallskirt_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:4809
+translate english wrd_first_xsmallskirt_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4811
+translate english wrd_first_xsmallskirt_34a7918f:
+
+    # her "Ну, в таком случае..."
+    her ""
+
+# game/28_gifts.rpy:4813
+translate english wrd_first_xsmallskirt_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:4816
+translate english wrd_first_xsmallskirt_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:4822
+translate english wrd_first_xsmallskirt_4e1af4bd_1:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:4824
+translate english wrd_first_xsmallskirt_bbe6bb90_1:
+
+    # her "Но она совсем коротенькая..."
+    her ""
+
+# game/28_gifts.rpy:4825
+translate english wrd_first_xsmallskirt_9e56b4f0_3:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4829
+translate english wrd_first_xsmallskirt_75dd550d:
+
+    # her "Ладно, ладно..."
+    her ""
+
+# game/28_gifts.rpy:4833
+translate english wrd_first_xsmallskirt_7fd9e75a_1:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4835
+translate english wrd_first_xsmallskirt_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:4838
+translate english wrd_first_xsmallskirt_83f0bbb7:
+
+    # her "Ох..."
+    her ""
+
+# game/28_gifts.rpy:4845
+translate english wrd_first_xsmallskirt_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:4859
+translate english wrd_first_xxsmallskirt_09128c71:
+
+    # her "Вы издеваетесь, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4860
+translate english wrd_first_xxsmallskirt_da662501:
+
+    # her "Да это и юбкой-то назвать нельзя!"
+    her ""
+
+# game/28_gifts.rpy:4861
+translate english wrd_first_xxsmallskirt_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:4862
+translate english wrd_first_xxsmallskirt_cd1e35ae:
+
+    # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
+    m ""
+
+# game/28_gifts.rpy:4863
+translate english wrd_first_xxsmallskirt_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:4865
+translate english wrd_first_xxsmallskirt_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:4873
+translate english wrd_first_xxsmallskirt_e7097a6d:
+
+    # her "Сэр, как вы можете просить меня ходить по школе в этой жалкой тряпочке ?!"
+    her ""
+
+# game/28_gifts.rpy:4874
+translate english wrd_first_xxsmallskirt_4463260c:
+
+    # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+    her ""
+
+# game/28_gifts.rpy:4875
+translate english wrd_first_xxsmallskirt_60fab287:
+
+    # m "(Мне нравится ход ее мыслей.)"
+    m ""
+
+# game/28_gifts.rpy:4877
+translate english wrd_first_xxsmallskirt_157be84b:
+
+    # her "Это абсолютно неприемлимо !"
+    her ""
+
+# game/28_gifts.rpy:4884
+translate english wrd_first_xxsmallskirt_e7097a6d_1:
+
+    # her "Сэр, как вы можете просить меня ходить по школе в этой жалкой тряпочке ?!"
+    her ""
+
+# game/28_gifts.rpy:4885
+translate english wrd_first_xxsmallskirt_4463260c_1:
+
+    # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+    her ""
+
+# game/28_gifts.rpy:4886
+translate english wrd_first_xxsmallskirt_60fab287_1:
+
+    # m "(Мне нравится ход ее мыслей.)"
+    m ""
+
+# game/28_gifts.rpy:4888
+translate english wrd_first_xxsmallskirt_053f71ea:
+
+    # her "Это исключено !"
+    her ""
+
+# game/28_gifts.rpy:4889
+translate english wrd_first_xxsmallskirt_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4893
+translate english wrd_first_xxsmallskirt_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4900
+translate english wrd_first_xxsmallskirt_c8526f36:
+
+    # her "{size=+3}Засуньте себе свои очки в ...{/size}"
+    her ""
+
+# game/28_gifts.rpy:4902
+translate english wrd_first_xxsmallskirt_01c078e2:
+
+    # her "Простите, сэр."
+    her ""
+
+# game/28_gifts.rpy:4903
+translate english wrd_first_xxsmallskirt_9c9eeb17:
+
+    # her "Я хочу сказать, что категорически отказываюсь !"
+    her ""
+
+# game/28_gifts.rpy:4911
+translate english wrd_first_xxsmallskirt_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:4912
+translate english wrd_first_xxsmallskirt_c4205a9a:
+
+    # her "Эта мини-юбка совсем крошечная!"
+    her ""
+
+# game/28_gifts.rpy:4914
+translate english wrd_first_xxsmallskirt_0ee482c6:
+
+    # her "Из под нее мои трусики будут видны из другого конца коридора!"
+    her ""
+
+# game/28_gifts.rpy:4915
+translate english wrd_first_xxsmallskirt_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4919
+translate english wrd_first_xxsmallskirt_eebdf957_1:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4925
+translate english wrd_first_xxsmallskirt_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:4926
+translate english wrd_first_xxsmallskirt_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:4927
+translate english wrd_first_xxsmallskirt_5eb1bcfa:
+
+    # her "Этого мало, сэр !"
+    her ""
+
+# game/28_gifts.rpy:4932
+translate english wrd_first_xxsmallskirt_eebdf957_2:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:4939
+translate english wrd_first_xxsmallskirt_331265d4:
+
+    # her "Ох... ладно..."
+    her ""
+
+# game/28_gifts.rpy:4940
+translate english wrd_first_xxsmallskirt_9ef5e186:
+
+    # her "Уверена, что я еще пожалею об этом..."
+    her ""
+
+# game/28_gifts.rpy:4941
+translate english wrd_first_xxsmallskirt_a0a02420:
+
+    # her "(Ох... Что же я делаю...)"
+    her ""
+
+# game/28_gifts.rpy:4951
+translate english wrd_first_xxsmallskirt_b15cd32d:
+
+    # her "Как... ?"
+    her ""
+
+# game/28_gifts.rpy:4953
+translate english wrd_first_xxsmallskirt_71bc45b3:
+
+    # her "Но она короткая-прекороткая..."
+    her ""
+
+# game/28_gifts.rpy:4954
+translate english wrd_first_xxsmallskirt_41f21e24:
+
+    # her "Я хочу сказать, у всего же должен быть предел !"
+    her ""
+
+# game/28_gifts.rpy:4955
+translate english wrd_first_xxsmallskirt_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4959
+translate english wrd_first_xxsmallskirt_c138427b:
+
+    # her "Сэр, это однозначно не соответствует форме учеников Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:4961
+translate english wrd_first_xxsmallskirt_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:4970
+translate english wrd_first_xxsmallskirt_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:4972
+translate english wrd_first_xxsmallskirt_34a7918f:
+
+    # her "Ну, в таком случае..."
+    her ""
+
+# game/28_gifts.rpy:4974
+translate english wrd_first_xxsmallskirt_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:4977
+translate english wrd_first_xxsmallskirt_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:4983
+translate english wrd_first_xxsmallskirt_d9e2707b:
+
+    # her "Но она же..."
+    her ""
+
+# game/28_gifts.rpy:4985
+translate english wrd_first_xxsmallskirt_1c5eb92f:
+
+    # her "Но она совсем, совсем коротенькая..."
+    her ""
+
+# game/28_gifts.rpy:4986
+translate english wrd_first_xxsmallskirt_9e56b4f0_3:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:4990
+translate english wrd_first_xxsmallskirt_87ec771c:
+
+    # her "Как скажете, сэр"
+    her ""
+
+# game/28_gifts.rpy:4994
+translate english wrd_first_xxsmallskirt_50d7b6bd:
+
+    # her "Ох-хо-хо"
+    her ""
+
+# game/28_gifts.rpy:4996
+translate english wrd_first_xxsmallskirt_f2789bb7:
+
+    # her "Да, сэр."
+    her ""
+
+# game/28_gifts.rpy:4999
+translate english wrd_first_xxsmallskirt_bd068102:
+
+    # her "Да, сэр"
+    her ""
+
+# game/28_gifts.rpy:5013
+translate english wrd_first_xxxsmallskirt_09128c71:
+
+    # her "Вы издеваетесь, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5014
+translate english wrd_first_xxxsmallskirt_da662501:
+
+    # her "Да это и юбкой-то назвать нельзя!"
+    her ""
+
+# game/28_gifts.rpy:5015
+translate english wrd_first_xxxsmallskirt_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:5016
+translate english wrd_first_xxxsmallskirt_cd1e35ae:
+
+    # m "(Похоже, для начала нужно будет предложить юбку подлиннее.)"
+    m ""
+
+# game/28_gifts.rpy:5017
+translate english wrd_first_xxxsmallskirt_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:5019
+translate english wrd_first_xxxsmallskirt_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:5026
+translate english wrd_first_xxxsmallskirt_6601748a:
+
+    # her "Сэр, как вы можете просить меня ходить по школе в этом клочке материи ?!"
+    her ""
+
+# game/28_gifts.rpy:5027
+translate english wrd_first_xxxsmallskirt_4463260c:
+
+    # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+    her ""
+
+# game/28_gifts.rpy:5028
+translate english wrd_first_xxxsmallskirt_60fab287:
+
+    # m "(Мне нравится ход ее мыслей.)"
+    m ""
+
+# game/28_gifts.rpy:5030
+translate english wrd_first_xxxsmallskirt_3a0d8b83:
+
+    # her "Да им даже с доски не сотрешь !"
+    her ""
+
+# game/28_gifts.rpy:5031
+translate english wrd_first_xxxsmallskirt_b4ba3edc:
+
+    # her "Нет, это невозможно !"
+    her ""
+
+# game/28_gifts.rpy:5038
+translate english wrd_first_xxxsmallskirt_6601748a_1:
+
+    # her "Сэр, как вы можете просить меня ходить по школе в этом клочке материи ?!"
+    her ""
+
+# game/28_gifts.rpy:5039
+translate english wrd_first_xxxsmallskirt_4463260c_1:
+
+    # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+    her ""
+
+# game/28_gifts.rpy:5040
+translate english wrd_first_xxxsmallskirt_60fab287_1:
+
+    # m "(Мне нравится ход ее мыслей.)"
+    m ""
+
+# game/28_gifts.rpy:5042
+translate english wrd_first_xxxsmallskirt_053f71ea:
+
+    # her "Это исключено !"
+    her ""
+
+# game/28_gifts.rpy:5043
+translate english wrd_first_xxxsmallskirt_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5047
+translate english wrd_first_xxxsmallskirt_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5056
+translate english wrd_first_xxxsmallskirt_c8526f36:
+
+    # her "{size=+3}Засуньте себе свои очки в ...{/size}"
+    her ""
+
+# game/28_gifts.rpy:5058
+translate english wrd_first_xxxsmallskirt_01c078e2:
+
+    # her "Простите, сэр."
+    her ""
+
+# game/28_gifts.rpy:5059
+translate english wrd_first_xxxsmallskirt_9c9eeb17:
+
+    # her "Я хочу сказать, что категорически отказываюсь !"
+    her ""
+
+# game/28_gifts.rpy:5067
+translate english wrd_first_xxxsmallskirt_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5068
+translate english wrd_first_xxxsmallskirt_f4fd0b07:
+
+    # her "Эта юбка микроскопическая!"
+    her ""
+
+# game/28_gifts.rpy:5070
+translate english wrd_first_xxxsmallskirt_9a27565d:
+
+    # her "Из под нее мои трусики будут видны из другого здания!"
+    her ""
+
+# game/28_gifts.rpy:5071
+translate english wrd_first_xxxsmallskirt_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5075
+translate english wrd_first_xxxsmallskirt_eebdf957_1:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5081
+translate english wrd_first_xxxsmallskirt_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:5082
+translate english wrd_first_xxxsmallskirt_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:5083
+translate english wrd_first_xxxsmallskirt_5eb1bcfa:
+
+    # her "Этого мало, сэр !"
+    her ""
+
+# game/28_gifts.rpy:5088
+translate english wrd_first_xxxsmallskirt_eebdf957_2:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5095
+translate english wrd_first_xxxsmallskirt_331265d4:
+
+    # her "Ох... ладно..."
+    her ""
+
+# game/28_gifts.rpy:5096
+translate english wrd_first_xxxsmallskirt_9ef5e186:
+
+    # her "Уверена, что я еще пожалею об этом..."
+    her ""
+
+# game/28_gifts.rpy:5097
+translate english wrd_first_xxxsmallskirt_db80da42:
+
+    # her "(Не могу поверить, что я на это иду...)"
+    her ""
+
+# game/28_gifts.rpy:5107
+translate english wrd_first_xxxsmallskirt_b15cd32d:
+
+    # her "Как... ?"
+    her ""
+
+# game/28_gifts.rpy:5109
+translate english wrd_first_xxxsmallskirt_64d6beb7:
+
+    # her "Но она микроскопическая"
+    her ""
+
+# game/28_gifts.rpy:5110
+translate english wrd_first_xxxsmallskirt_41f21e24:
+
+    # her "Я хочу сказать, у всего же должен быть предел !"
+    her ""
+
+# game/28_gifts.rpy:5111
+translate english wrd_first_xxxsmallskirt_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5115
+translate english wrd_first_xxxsmallskirt_e1ca6602:
+
+    # her "Сэр, это немыслимо для Хогвартса!"
+    her ""
+
+# game/28_gifts.rpy:5117
+translate english wrd_first_xxxsmallskirt_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:5125
+translate english wrd_first_xxxsmallskirt_d7ddee45:
+
+    # her "Мммммм"
+    her ""
+
+# game/28_gifts.rpy:5127
+translate english wrd_first_xxxsmallskirt_97291d66:
+
+    # her "Мне трудно решиться..."
+    her ""
+
+# game/28_gifts.rpy:5131
+translate english wrd_first_xxxsmallskirt_eebdf957_3:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5138
+translate english wrd_first_xxxsmallskirt_331265d4_1:
+
+    # her "Ох... ладно..."
+    her ""
+
+# game/28_gifts.rpy:5139
+translate english wrd_first_xxxsmallskirt_f8156e15:
+
+    # her "Постараюсь смириться."
+    her ""
+
+# game/28_gifts.rpy:5140
+translate english wrd_first_xxxsmallskirt_db80da42_1:
+
+    # her "(Не могу поверить, что я на это иду...)"
+    her ""
+
+# game/28_gifts.rpy:5145
+translate english wrd_first_xxxsmallskirt_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:5159
+translate english wrd_first_skirt_cheerleader_7f2b4206:
+
+    # her "Сэр, я не болельщица, не люблю болельщиц и не вижу смысла одеваться как одна из них !"
+    her ""
+
+# game/28_gifts.rpy:5160
+translate english wrd_first_skirt_cheerleader_d8c6da42:
+
+    # her "Поэтому мой окончательный ответ - нет."
+    her ""
+
+# game/28_gifts.rpy:5161
+translate english wrd_first_skirt_cheerleader_03897214:
+
+    # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
+    m ""
+
+# game/28_gifts.rpy:5162
+translate english wrd_first_skirt_cheerleader_1049d57d:
+
+    # m "Хорошо, не буду настаивать."
+    m ""
+
+# game/28_gifts.rpy:5169
+translate english wrd_first_skirt_cheerleader_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5170
+translate english wrd_first_skirt_cheerleader_3af0f8b2:
+
+    # her "Эта юбка слишком короткая?!"
+    her ""
+
+# game/28_gifts.rpy:5172
+translate english wrd_first_skirt_cheerleader_4cb9de81:
+
+    # her "...Она едва прикрывает мои прелести."
+    her ""
+
+# game/28_gifts.rpy:5173
+translate english wrd_first_skirt_cheerleader_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5177
+translate english wrd_first_skirt_cheerleader_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5184
+translate english wrd_first_skirt_cheerleader_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:5185
+translate english wrd_first_skirt_cheerleader_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:5187
+translate english wrd_first_skirt_cheerleader_a3ff6b1b:
+
+    # her "Ну, ладно..."
+    her ""
+
+# game/28_gifts.rpy:5196
+translate english wrd_first_skirt_cheerleader_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5198
+translate english wrd_first_skirt_cheerleader_e4d38255:
+
+    # her "Но она слишком короткая !"
+    her ""
+
+# game/28_gifts.rpy:5199
+translate english wrd_first_skirt_cheerleader_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5203
+translate english wrd_first_skirt_cheerleader_d91fb921:
+
+    # her "Сэр, врядли это соответствует форме учеников Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:5205
+translate english wrd_first_skirt_cheerleader_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:5214
+translate english wrd_first_skirt_cheerleader_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5216
+translate english wrd_first_skirt_cheerleader_34a7918f:
+
+    # her "Ну, в таком случае..."
+    her ""
+
+# game/28_gifts.rpy:5218
+translate english wrd_first_skirt_cheerleader_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:5221
+translate english wrd_first_skirt_cheerleader_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:5227
+translate english wrd_first_skirt_cheerleader_4e1af4bd_1:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5229
+translate english wrd_first_skirt_cheerleader_4a81fcda:
+
+    # her "Но она короткая..."
+    her ""
+
+# game/28_gifts.rpy:5230
+translate english wrd_first_skirt_cheerleader_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5234
+translate english wrd_first_skirt_cheerleader_75dd550d:
+
+    # her "Ладно, ладно..."
+    her ""
+
+# game/28_gifts.rpy:5238
+translate english wrd_first_skirt_cheerleader_7fd9e75a_1:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5240
+translate english wrd_first_skirt_cheerleader_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:5243
+translate english wrd_first_skirt_cheerleader_83f0bbb7:
+
+    # her "Ох..."
+    her ""
+
+# game/28_gifts.rpy:5250
+translate english wrd_first_skirt_cheerleader_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5264
+translate english wrd_first_skirt_business_35971828:
+
+    # her "Сэр, я не магл, кто бы что ни говорил. Зачем давать лишний повод ?"
+    her ""
+
+# game/28_gifts.rpy:5265
+translate english wrd_first_skirt_business_d8c6da42:
+
+    # her "Поэтому мой окончательный ответ - нет."
+    her ""
+
+# game/28_gifts.rpy:5266
+translate english wrd_first_skirt_business_03897214:
+
+    # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
+    m ""
+
+# game/28_gifts.rpy:5267
+translate english wrd_first_skirt_business_1049d57d:
+
+    # m "Хорошо, не буду настаивать."
+    m ""
+
+# game/28_gifts.rpy:5274
+translate english wrd_first_skirt_business_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5275
+translate english wrd_first_skirt_business_752222ae:
+
+    # her "Эта юбка недопустимо коротка !"
+    her ""
+
+# game/28_gifts.rpy:5277
+translate english wrd_first_skirt_business_4cb9de81:
+
+    # her "...Она едва прикрывает мои прелести."
+    her ""
+
+# game/28_gifts.rpy:5278
+translate english wrd_first_skirt_business_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5282
+translate english wrd_first_skirt_business_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5289
+translate english wrd_first_skirt_business_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:5290
+translate english wrd_first_skirt_business_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:5292
+translate english wrd_first_skirt_business_a3ff6b1b:
+
+    # her "Ну, ладно..."
+    her ""
+
+# game/28_gifts.rpy:5301
+translate english wrd_first_skirt_business_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5303
+translate english wrd_first_skirt_business_9da90daa:
+
+    # her "Но она очень короткая..."
+    her ""
+
+# game/28_gifts.rpy:5304
+translate english wrd_first_skirt_business_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5308
+translate english wrd_first_skirt_business_d91fb921:
+
+    # her "Сэр, врядли это соответствует форме учеников Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:5310
+translate english wrd_first_skirt_business_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:5319
+translate english wrd_first_skirt_business_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5321
+translate english wrd_first_skirt_business_34a7918f:
+
+    # her "Ну, в таком случае..."
+    her ""
+
+# game/28_gifts.rpy:5323
+translate english wrd_first_skirt_business_c2a39edf:
+
+    # her "Пока это приносит пользу моему факультету..."
+    her ""
+
+# game/28_gifts.rpy:5326
+translate english wrd_first_skirt_business_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:5332
+translate english wrd_first_skirt_business_4e1af4bd_1:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5334
+translate english wrd_first_skirt_business_9da90daa_1:
+
+    # her "Но она очень короткая..."
+    her ""
+
+# game/28_gifts.rpy:5335
+translate english wrd_first_skirt_business_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5339
+translate english wrd_first_skirt_business_75dd550d:
+
+    # her "Ладно, ладно..."
+    her ""
+
+# game/28_gifts.rpy:5343
+translate english wrd_first_skirt_business_7fd9e75a_1:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5345
+translate english wrd_first_skirt_business_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:5348
+translate english wrd_first_skirt_business_83f0bbb7:
+
+    # her "Ох..."
+    her ""
+
+# game/28_gifts.rpy:5355
+translate english wrd_first_skirt_business_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5369
+translate english wrd_first_standart2_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5371
+translate english wrd_first_standart2_8cae29f0:
+
+    # her "Но это не соответствует форме Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:5372
+translate english wrd_first_standart2_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5377
+translate english wrd_first_standart2_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5379
+translate english wrd_first_standart2_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:5382
+translate english wrd_first_standart2_47db9141:
+
+    # her "Как скажете."
+    her ""
+
+# game/28_gifts.rpy:5389
+translate english wrd_first_standart2_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5405
+translate english wrd_first_standart3_7c22cc9a:
+
+    # her "Вы шутите, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5406
+translate english wrd_first_standart3_48efd8b6:
+
+    # her "Да это не рубашка, а сплошной разврат."
+    her ""
+
+# game/28_gifts.rpy:5407
+translate english wrd_first_standart3_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:5408
+translate english wrd_first_standart3_839ce513:
+
+    # m "(Похоже, для начала нужно будет предложить ей менее оьткровенные варианты.)"
+    m ""
+
+# game/28_gifts.rpy:5409
+translate english wrd_first_standart3_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:5411
+translate english wrd_first_standart3_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:5418
+translate english wrd_first_standart3_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5420
+translate english wrd_first_standart3_8cae29f0:
+
+    # her "Но это не соответствует форме Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:5421
+translate english wrd_first_standart3_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5426
+translate english wrd_first_standart3_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5428
+translate english wrd_first_standart3_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:5431
+translate english wrd_first_standart3_47db9141:
+
+    # her "Как скажете."
+    her ""
+
+# game/28_gifts.rpy:5438
+translate english wrd_first_standart3_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5453
+translate english wrd_first_standart4_7c22cc9a:
+
+    # her "Вы шутите, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5454
+translate english wrd_first_standart4_48efd8b6:
+
+    # her "Да это не рубашка, а сплошной разврат."
+    her ""
+
+# game/28_gifts.rpy:5455
+translate english wrd_first_standart4_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:5456
+translate english wrd_first_standart4_839ce513:
+
+    # m "(Похоже, для начала нужно будет предложить ей менее оьткровенные варианты.)"
+    m ""
+
+# game/28_gifts.rpy:5457
+translate english wrd_first_standart4_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:5459
+translate english wrd_first_standart4_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:5466
+translate english wrd_first_standart4_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5468
+translate english wrd_first_standart4_2db911e3:
+
+    # her "Но это не соответствует правилам Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:5469
+translate english wrd_first_standart4_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5474
+translate english wrd_first_standart4_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5476
+translate english wrd_first_standart4_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:5479
+translate english wrd_first_standart4_47db9141:
+
+    # her "Как скажете."
+    her ""
+
+# game/28_gifts.rpy:5486
+translate english wrd_first_standart4_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5501
+translate english wrd_first_standart5_7c22cc9a:
+
+    # her "Вы шутите, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5502
+translate english wrd_first_standart5_48efd8b6:
+
+    # her "Да это не рубашка, а сплошной разврат."
+    her ""
+
+# game/28_gifts.rpy:5503
+translate english wrd_first_standart5_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:5504
+translate english wrd_first_standart5_839ce513:
+
+    # m "(Похоже, для начала нужно будет предложить ей менее оьткровенные варианты.)"
+    m ""
+
+# game/28_gifts.rpy:5505
+translate english wrd_first_standart5_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:5507
+translate english wrd_first_standart5_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:5514
+translate english wrd_first_standart5_c34c2519:
+
+    # her "Сэр ?"
+    her ""
+
+# game/28_gifts.rpy:5516
+translate english wrd_first_standart5_b3fff80b:
+
+    # her "Вы же это не серьезно ? Ведь все-таки тут школа."
+    her ""
+
+# game/28_gifts.rpy:5517
+translate english wrd_first_standart5_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5522
+translate english wrd_first_standart5_d1549d88:
+
+    # her "О, сэр."
+    her ""
+
+# game/28_gifts.rpy:5524
+translate english wrd_first_standart5_c85ca67d:
+
+    # her "Ладно, я постараюсь к этому привыкнуть."
+    her ""
+
+# game/28_gifts.rpy:5527
+translate english wrd_first_standart5_47db9141:
+
+    # her "Как скажете."
+    her ""
+
+# game/28_gifts.rpy:5534
+translate english wrd_first_standart5_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5548
+translate english wrd_first_skimpyshirt_7c22cc9a:
+
+    # her "Вы шутите, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5549
+translate english wrd_first_skimpyshirt_48efd8b6:
+
+    # her "Да это не рубашка, а сплошной разврат."
+    her ""
+
+# game/28_gifts.rpy:5550
+translate english wrd_first_skimpyshirt_2ad9ce7d:
+
+    # her "Я не стану показываться на людях в таком виде!"
+    her ""
+
+# game/28_gifts.rpy:5551
+translate english wrd_first_skimpyshirt_839ce513:
+
+    # m "(Похоже, для начала нужно будет предложить ей менее оьткровенные варианты.)"
+    m ""
+
+# game/28_gifts.rpy:5552
+translate english wrd_first_skimpyshirt_90bb0d57:
+
+    # m "Прежде, чем ты продолжишь, хочу заметить, что я просто пошутил."
+    m ""
+
+# game/28_gifts.rpy:5554
+translate english wrd_first_skimpyshirt_2ebc120b:
+
+    # her "Лучше бы это и вправду была шутка, профессор!"
+    her ""
+
+# game/28_gifts.rpy:5561
+translate english wrd_first_skimpyshirt_9d979851:
+
+    # her "Сэр, как вы можете просить меня ходить по школе в этой тряпочке ?!"
+    her ""
+
+# game/28_gifts.rpy:5562
+translate english wrd_first_skimpyshirt_4463260c:
+
+    # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+    her ""
+
+# game/28_gifts.rpy:5563
+translate english wrd_first_skimpyshirt_60fab287:
+
+    # m "(Мне нравится ход ее мыслей.)"
+    m ""
+
+# game/28_gifts.rpy:5565
+translate english wrd_first_skimpyshirt_aeb028eb:
+
+    # her "Да ей даже с доски не сотрешь !"
+    her ""
+
+# game/28_gifts.rpy:5566
+translate english wrd_first_skimpyshirt_b4ba3edc:
+
+    # her "Нет, это невозможно !"
+    her ""
+
+# game/28_gifts.rpy:5573
+translate english wrd_first_skimpyshirt_9d979851_1:
+
+    # her "Сэр, как вы можете просить меня ходить по школе в этой тряпочке ?!"
+    her ""
+
+# game/28_gifts.rpy:5574
+translate english wrd_first_skimpyshirt_4463260c_1:
+
+    # her "Может быть в следующий раз я должна буду пойти на урок голой ?!"
+    her ""
+
+# game/28_gifts.rpy:5575
+translate english wrd_first_skimpyshirt_60fab287_1:
+
+    # m "(Мне нравится ход ее мыслей.)"
+    m ""
+
+# game/28_gifts.rpy:5577
+translate english wrd_first_skimpyshirt_053f71ea:
+
+    # her "Это исключено !"
+    her ""
+
+# game/28_gifts.rpy:5578
+translate english wrd_first_skimpyshirt_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5582
+translate english wrd_first_skimpyshirt_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5591
+translate english wrd_first_skimpyshirt_c8526f36:
+
+    # her "{size=+3}Засуньте себе свои очки в ...{/size}"
+    her ""
+
+# game/28_gifts.rpy:5593
+translate english wrd_first_skimpyshirt_01c078e2:
+
+    # her "Простите, сэр."
+    her ""
+
+# game/28_gifts.rpy:5594
+translate english wrd_first_skimpyshirt_9c9eeb17:
+
+    # her "Я хочу сказать, что категорически отказываюсь !"
+    her ""
+
+# game/28_gifts.rpy:5602
+translate english wrd_first_skimpyshirt_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5603
+translate english wrd_first_skimpyshirt_0fbb57a4:
+
+    # her "Эта рубашка слишком откровенная!"
+    her ""
+
+# game/28_gifts.rpy:5605
+translate english wrd_first_skimpyshirt_f358a24d:
+
+    # her "Мои буф... мою грудь будет видно всем !"
+    her ""
+
+# game/28_gifts.rpy:5606
+translate english wrd_first_skimpyshirt_9e56b4f0_1:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5610
+translate english wrd_first_skimpyshirt_eebdf957_1:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5616
+translate english wrd_first_skimpyshirt_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:5617
+translate english wrd_first_skimpyshirt_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:5618
+translate english wrd_first_skimpyshirt_5eb1bcfa:
+
+    # her "Этого мало, сэр !"
+    her ""
+
+# game/28_gifts.rpy:5623
+translate english wrd_first_skimpyshirt_eebdf957_2:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5630
+translate english wrd_first_skimpyshirt_331265d4:
+
+    # her "Ох... ладно..."
+    her ""
+
+# game/28_gifts.rpy:5631
+translate english wrd_first_skimpyshirt_9ef5e186:
+
+    # her "Уверена, что я еще пожалею об этом..."
+    her ""
+
+# game/28_gifts.rpy:5632
+translate english wrd_first_skimpyshirt_db80da42:
+
+    # her "(Не могу поверить, что я на это иду...)"
+    her ""
+
+# game/28_gifts.rpy:5642
+translate english wrd_first_skimpyshirt_ec98fd11:
+
+    # her "Эта рубашка такая открытая... ?"
+    her ""
+
+# game/28_gifts.rpy:5644
+translate english wrd_first_skimpyshirt_edaaf531:
+
+    # her "И совсем маленькая!"
+    her ""
+
+# game/28_gifts.rpy:5645
+translate english wrd_first_skimpyshirt_6f2a5b95:
+
+    # her "Сэр, вы уверены, что мне нужно это делать ?"
+    her ""
+
+# game/28_gifts.rpy:5646
+translate english wrd_first_skimpyshirt_a7fea8c8:
+
+    # her "Мне кажется, это плохая идея..."
+    her ""
+
+# game/28_gifts.rpy:5647
+translate english wrd_first_skimpyshirt_9e56b4f0_2:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5651
+translate english wrd_first_skimpyshirt_998e1336:
+
+    # her "Сэр, заставлять меня делать это недопустимо!"
+    her ""
+
+# game/28_gifts.rpy:5653
+translate english wrd_first_skimpyshirt_c5a21c51:
+
+    # her "Я отказываюсь!"
+    her ""
+
+# game/28_gifts.rpy:5661
+translate english wrd_first_skimpyshirt_d7ddee45:
+
+    # her "Мммммм"
+    her ""
+
+# game/28_gifts.rpy:5663
+translate english wrd_first_skimpyshirt_97291d66:
+
+    # her "Мне трудно решиться..."
+    her ""
+
+# game/28_gifts.rpy:5667
+translate english wrd_first_skimpyshirt_eebdf957_3:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5674
+translate english wrd_first_skimpyshirt_331265d4_1:
+
+    # her "Ох... ладно..."
+    her ""
+
+# game/28_gifts.rpy:5675
+translate english wrd_first_skimpyshirt_f8156e15:
+
+    # her "Постараюсь смириться."
+    her ""
+
+# game/28_gifts.rpy:5676
+translate english wrd_first_skimpyshirt_db80da42_1:
+
+    # her "(Не могу поверить, что я на это иду...)"
+    her ""
+
+# game/28_gifts.rpy:5681
+translate english wrd_first_skimpyshirt_8d3b4493:
+
+    # her "Ладно..."
+    her ""
+
+# game/28_gifts.rpy:5687
+translate english wrd_first_skimpyshirt_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5701
+translate english wrd_first_shirt_cheerleader_7f2b4206:
+
+    # her "Сэр, я не болельщица, не люблю болельщиц и не вижу смысла одеваться как одна из них !"
+    her ""
+
+# game/28_gifts.rpy:5702
+translate english wrd_first_shirt_cheerleader_d8c6da42:
+
+    # her "Поэтому мой окончательный ответ - нет."
+    her ""
+
+# game/28_gifts.rpy:5703
+translate english wrd_first_shirt_cheerleader_03897214:
+
+    # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
+    m ""
+
+# game/28_gifts.rpy:5704
+translate english wrd_first_shirt_cheerleader_1049d57d:
+
+    # m "Хорошо, не буду настаивать."
+    m ""
+
+# game/28_gifts.rpy:5711
+translate english wrd_first_shirt_cheerleader_7a30267d:
+
+    # her "Вы же не всерьез, сэр?!"
+    her ""
+
+# game/28_gifts.rpy:5712
+translate english wrd_first_shirt_cheerleader_d638c949:
+
+    # her "Эта кофта слишком открытая !"
+    her ""
+
+# game/28_gifts.rpy:5714
+translate english wrd_first_shirt_cheerleader_fd929dcf:
+
+    # her "...Она не полностью прикрывает мои буф... мою... мой бюст !"
+    her ""
+
+# game/28_gifts.rpy:5715
+translate english wrd_first_shirt_cheerleader_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5719
+translate english wrd_first_shirt_cheerleader_eebdf957:
+
+    # her "С удовольствием..."
+    her ""
+
+# game/28_gifts.rpy:5726
+translate english wrd_first_shirt_cheerleader_f5a4a724:
+
+    # her "........................"
+    her ""
+
+# game/28_gifts.rpy:5727
+translate english wrd_first_shirt_cheerleader_3574ffb4:
+
+    # her "..............................."
+    her ""
+
+# game/28_gifts.rpy:5729
+translate english wrd_first_shirt_cheerleader_a3ff6b1b:
+
+    # her "Ну, ладно..."
+    her ""
+
+# game/28_gifts.rpy:5735
+translate english wrd_first_shirt_cheerleader_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+
+# game/28_gifts.rpy:5750
+translate english wrd_first_shirt_business_35971828:
+
+    # her "Сэр, я не магл, кто бы что ни говорил. Зачем давать лишний повод ?"
+    her ""
+
+# game/28_gifts.rpy:5751
+translate english wrd_first_shirt_business_d8c6da42:
+
+    # her "Поэтому мой окончательный ответ - нет."
+    her ""
+
+# game/28_gifts.rpy:5752
+translate english wrd_first_shirt_business_03897214:
+
+    # m "(Похоже, для начала нужно будет приучить ее воспринимать себя по-другому.)"
+    m ""
+
+# game/28_gifts.rpy:5753
+translate english wrd_first_shirt_business_1049d57d:
+
+    # m "Хорошо, не буду настаивать."
+    m ""
+
+# game/28_gifts.rpy:5760
+translate english wrd_first_shirt_business_4e1af4bd:
+
+    # her "Хм...?"
+    her ""
+
+# game/28_gifts.rpy:5762
+translate english wrd_first_shirt_business_2db911e3:
+
+    # her "Но это не соответствует правилам Хогвартса."
+    her ""
+
+# game/28_gifts.rpy:5763
+translate english wrd_first_shirt_business_9e56b4f0:
+
+    # m "..." nointeract
+    m "" nointeract
+
+# game/28_gifts.rpy:5768
+translate english wrd_first_shirt_business_7fd9e75a:
+
+    # her "Хм..."
+    her ""
+
+# game/28_gifts.rpy:5770
+translate english wrd_first_shirt_business_689381ec:
+
+    # her "Ладно, я не против."
+    her ""
+
+# game/28_gifts.rpy:5773
+translate english wrd_first_shirt_business_47db9141:
+
+    # her "Как скажете."
+    her ""
+
+# game/28_gifts.rpy:5780
+translate english wrd_first_shirt_business_c805e20d:
+
+    # her "Слушаюсь, сэр..."
+    her ""
+

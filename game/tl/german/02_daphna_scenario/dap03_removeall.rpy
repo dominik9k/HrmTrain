@@ -74,3 +74,35 @@ translate german strings:
     old "\"Хорошо, можете быть свободны...\""
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:10
+
+# game/02_daphna_scenario/dap03_removeall.rpy:119
+translate german dap_request_03_b7293433:
+
+    # dev "Жаль прерываться на самом интересном месте?"
+    dev ""
+
+# game/02_daphna_scenario/dap03_removeall.rpy:120
+translate german dap_request_03_ecf290b5:
+
+    # dev "Нам тоже. Но данная сюжетная линия пока дописана только до этой точки..."
+    dev ""
+
+# game/02_daphna_scenario/dap03_removeall.rpy:121
+translate german dap_request_03_8180a9fd:
+
+    # dev "{size=-3}(впрочем, вам доступны другие сюжетные линии){/size}"
+    dev ""
+
+# game/02_daphna_scenario/dap03_removeall.rpy:122
+translate german dap_request_03_d1c87a5f:
+
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    dev ""
+
+# game/02_daphna_scenario/dap03_removeall.rpy:123
+translate german dap_request_03_db8f717a:
+
+    # dev "Так вы простимулируете нас и продолжение появится быстрее. :)"
+    dev ""
+

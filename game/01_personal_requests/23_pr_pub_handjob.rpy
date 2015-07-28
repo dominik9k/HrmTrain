@@ -173,6 +173,7 @@ label new_request_23_complete: # <==============================================
 
     $ pos = POS_370
     $ herView.data().saveState()
+    $ hermi.WrdSetMain ()
 
     if hermi.whoring >= 15 and hermi.whoring <= 17: # LEVEL 06                    
         if one_out_of_three == 1: ### EVENT (A)
@@ -296,7 +297,8 @@ label new_request_23_complete: # <==============================================
             #$herView.data().addItemKey( 'sperm', CharacterExItem( herView.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
             $herView.data().addItem( 'item_sperm', '05' )
             #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 2 ) )
-            $herView.data().addItem( 'item_sperm_dried' )
+            #$herView.data().addItem( 'item_sperm_dried' )
+            $ hermi.WrdSpermDried ()
             play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
             show screen blktone
             with d3
@@ -584,7 +586,8 @@ label new_request_23_complete: # <==============================================
                 #$herView.data().addItemKey( 'sperm', CharacterExItem( herView.mMiscFolder, "sperm_05.png", G_Z_FACE + 1 ) )
                 $herView.data().addItem( 'item_sperm', '05' )
                 #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 2 ) )
-                $herView.data().addItem( 'item_sperm_dried' )
+                #$herView.data().addItem( 'item_sperm_dried' )
+                $ hermi.WrdSpermDried ()
 
                 show screen blktone
                 with d3
@@ -753,6 +756,7 @@ label new_request_23_complete: # <==============================================
  
 
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
     
     $ request_23_points += 1 
     $ request_23 = False 

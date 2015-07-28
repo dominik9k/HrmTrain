@@ -35,5 +35,9 @@
 			</action>
 
 		</actions>
+	</style>
+	<style name="sperm_dried">
+		<frame>shirts/skimpyshirt_sd.png</frame>
+		<folder>clothes</folder>
 	</style>	
 </item>

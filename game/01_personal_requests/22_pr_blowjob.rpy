@@ -19,6 +19,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
  
     $ pos = POS_140
     $ herView.data().saveState()
+    $ hermi.WrdSetMain ()
 
     if IsFirstRun(): # FIRST EVENT <============================================================== EVENT 01
 #    if request_22_points == 0: # FIRST EVENT <============================================================== EVENT 01
@@ -1234,6 +1235,7 @@ label new_request_22: #LV.6 (Whoring = 15 - 17)
     with Dissolve(.3)
 
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
     
     call music_block
     

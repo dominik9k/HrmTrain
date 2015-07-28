@@ -13,4 +13,8 @@
 		<frame>skirt_short.png</frame>
 		<folder>clothes</folder>
 	</style>
+	<style name="sperm_dried">
+		<frame>skirt_normal_sd.png</frame>
+		<folder>clothes</folder>
+	</style>
 </item>

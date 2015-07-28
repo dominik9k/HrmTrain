@@ -652,3 +652,11 @@ translate italian strings:
     old "А разве ты не Акабур ?"
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:00
+
+# game/30_how.rpy:301
+translate italian devel_06d7322a:
+
+    # dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    dev ""
+
