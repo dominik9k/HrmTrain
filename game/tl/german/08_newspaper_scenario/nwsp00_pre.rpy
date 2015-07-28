@@ -414,3 +414,89 @@ translate german nsp_her_demo2_79745ba4:
     # dr "До новых встреч."
     dr ""
 
+# TODO: Translation updated at 2015-07-28 17:34
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:351
+translate german nsp_her_demo_0160aab3:
+
+    # dev "Приветствую вас, игрок."
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:352
+translate german nsp_her_demo_9664ab74:
+
+    # dev "К сожалению, в рамках эвентов газеты данное событие дальше не сделано."
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:353
+translate german nsp_her_demo_ffb8ba11:
+
+    # dev "Ждите продолжения в следующих версиях."
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:362
+translate german nsp_her_demo2_4a932b20:
+
+    # dev "Вам удалось открыть все эвенты газеты, готовые в данной версии игры."
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:363
+translate german nsp_her_demo2_7a4148bf:
+
+    # dev "Но не расстраивайтесь, в будущем добавится еще много интересного !"
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:364
+translate german nsp_her_demo2_dc019a16:
+
+    # dev "А если хотите стимулировать меня и других разработчиков работать быстрее, то :"
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:365
+translate german nsp_her_demo2_42d8e002:
+
+    # dev "1) Оставьте отзыв на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:366
+translate german nsp_her_demo2_87f8a545:
+
+    # dev "2) Принимайте активное участие в обсуждениях на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:367
+translate german nsp_her_demo2_96615adc:
+
+    # dev "3) Создавайте свой контент для игры."
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:368
+translate german nsp_her_demo2_a20f54e0:
+
+    # dev "4) ....."
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:369
+translate german nsp_her_demo2_664b765f:
+
+    # dev "5) PROFIT"
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:370
+translate german nsp_her_demo2_21a52b82:
+
+    # dev "P.S. А еще у вас есть беспрецедентная возможность повлиять на дальнейшее развитие игры. "
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:371
+translate german nsp_her_demo2_6abe84ce:
+
+    # dev "Для этого нужно принять участие в {a=http://wtrus.ixbb.ru/viewtopic.php?id=74}голосовании{/a}."
+    dev ""
+
+# game/08_newspaper_scenario/nwsp00_pre.rpy:372
+translate german nsp_her_demo2_f56570d7:
+
+    # dev "До новых встреч."
+    dev ""
+
