@@ -1658,3 +1658,59 @@ translate italian strings:
     old "- Снять значки -"
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:00
+
+# game/hermione_menu.rpy:1300
+translate italian wrd_hermiona_menu_rent_e86766d9:
+
+    # "Извините, сэр, но этот наряд слишком нескромный."
+    ""
+
+# game/hermione_menu.rpy:1309
+translate italian wrd_hermiona_menu_rent_e2c1dd50:
+
+    # "Надеюсь, вам понравилось, сэр."
+    ""
+
+# game/hermione_menu.rpy:1322
+translate italian wrd_hermiona_menu_rent_e86766d9_1:
+
+    # "Извините, сэр, но этот наряд слишком нескромный."
+    ""
+
+# game/hermione_menu.rpy:1331
+translate italian wrd_hermiona_menu_rent_e2c1dd50_1:
+
+    # "Надеюсь, вам понравилось, сэр."
+    ""
+
+# game/hermione_menu.rpy:1344
+translate italian wrd_hermiona_menu_rent_e86766d9_2:
+
+    # "Извините, сэр, но этот наряд слишком нескромный."
+    ""
+
+# game/hermione_menu.rpy:1353
+translate italian wrd_hermiona_menu_rent_e2c1dd50_2:
+
+    # "Надеюсь, вам понравилось, сэр."
+    ""
+
+# game/hermione_menu.rpy:1366
+translate italian wrd_hermiona_menu_rent_e86766d9_3:
+
+    # "Извините, сэр, но этот наряд слишком нескромный."
+    ""
+
+# game/hermione_menu.rpy:1376
+translate italian wrd_hermiona_menu_rent_e2c1dd50_3:
+
+    # "Надеюсь, вам понравилось, сэр."
+    ""
+
+translate italian strings:
+
+    # game/hermione_menu.rpy:41
+    old "- Примерка -"
+    new ""
+

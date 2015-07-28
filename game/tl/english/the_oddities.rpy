@@ -318,3 +318,11 @@ translate english strings:
     old "Вы уверены, что хотите взять напрокат на один день одежду бизнес-леди за 200 галлеонов ? [add]"
     new "Are you sure you want to rent for a day the Business Lady Outfit for 200 galleons? [add]"
 
+# TODO: Translation updated at 2015-07-28 10:13
+
+translate english strings:
+
+    # game/the_oddities.rpy:126
+    old "- Купить оставшиеся - [i_count] ([_price_all] галеонов) -"
+    new ""
+

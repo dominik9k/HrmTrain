@@ -1292,3 +1292,17 @@ translate english forum_d54c28dc:
     # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
     dev "So, what you see before you is a modified version of the game, that's being made independently (without Akabur's participation) by a team of dedicated developers. Welcome to our {a=http://wtrus.ixbb.ru}FORUM{/a}."
 
+# TODO: Translation updated at 2015-07-28 10:13
+
+# game/30_how.rpy:300
+translate english devel_04769f66:
+
+    # dev "Список особых благодарностей :"
+    dev ""
+
+# game/30_how.rpy:301
+translate english devel_06d7322a:
+
+    # dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
+    dev ""
+

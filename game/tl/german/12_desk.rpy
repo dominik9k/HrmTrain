@@ -798,3 +798,11 @@ translate german strings:
     old "-Ничего-"
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:10
+
+translate german strings:
+
+    # game/12_desk.rpy:177
+    old "- Тест 5 -"
+    new ""
+

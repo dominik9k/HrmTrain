@@ -190,3 +190,11 @@ translate german strings:
     old "Настр."
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:10
+
+translate german strings:
+
+    # game/screens.rpy:234
+    old "Отмена"
+    new ""
+
