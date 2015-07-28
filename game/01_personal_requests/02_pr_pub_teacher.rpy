@@ -340,8 +340,9 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
                                     with d5
                                     $herView.data().saveState()
                                     # add pose with lifted skirt and authograph
-                                    call wrd_dress_undress_skirts
-                                    $herView.data().addItem( 'item_pose_lifted_skirt' )
+                                    #call wrd_dress_undress_skirts
+                                    $ hermi.WrdUpSkirt()
+                                    #$herView.data().addItem( 'item_pose_lifted_skirt' )
                                     $herView.data().addItem( 'item_autograph' )
                                     
                                     $herView.showQ( "body_51.png", pos )
@@ -362,6 +363,7 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
                                     
                                     # load before pose
                                     $herView.data().loadState()
+                                    $ hermi.WrdSetMain ()
                                     
                                     $herView.showQ( "body_47.png", pos, fade )
                                     pause

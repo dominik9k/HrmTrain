@@ -16,6 +16,7 @@ label want_to_rule:
     with Dissolve(.3)
     
     $herView.data().saveState()
+    $ hermi.WrdSetMain ()
     $herView.hideQQ()
     $ pos = POS_140
     $herView.showQQ( "body_15.png", pos )
@@ -206,10 +207,11 @@ label want_to_rule:
                     $herView.hideQQ()
 
                     #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
-                    call wrd_dress_undress_shirts
-                    $herView.data().addItem( 'item_tits' )
-                    $herView.data().addItem( 'item_pose_show_tits' )
-
+                    #call wrd_dress_undress_shirts
+                    #$herView.data().addItem( 'item_tits' )
+                    #$herView.data().addItem( 'item_pose_show_tits' )
+                    $ hermi.WrdUpShirt ()
+                    
                     $herView.showQQ( "body_82.png", pos )
                     show screen ctc
                     pause
@@ -229,6 +231,7 @@ label want_to_rule:
                     pause.7
 
                     $herView.data().loadState()
+                    $ hermi.WrdSetMain ()
 
                 elif d_flag_02: # SHOW ME PUSSY
                     play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
@@ -250,12 +253,13 @@ label want_to_rule:
                     with d3
             
 
-                    $herView.data().hideItemKey('skirt')
-                    call wrd_dress_undress_skirts
+                    #$herView.data().hideItemKey('skirt')
+                    #call wrd_dress_undress_skirts
                     #$herView.data().hideItemKey('panties')                    
                     #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
-                    $herView.data().addItem( 'item_pose_lifted_skirt' )
+                    #$herView.data().addItem( 'item_pose_lifted_skirt' )
                     #$herView.data().addItemKey( 'panties_shifted', CharacterExItem( herView.mClothesFolder, 'panties_shifted.png', G_Z_PANTIES ) )
+                    $ hermi.WrdNoSkirt ()
                     $herView.data().setStyleKey( 'panties', 'shifted' )
             
                     $herView.hideQQ()
@@ -293,6 +297,7 @@ label want_to_rule:
                     pause.7
 
                     $herView.data().loadState()
+                    $ hermi.WrdSetMain ()
                 
                 elif d_flag_03: # STRIP NAKED
                     play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
@@ -353,10 +358,13 @@ label want_to_rule:
                     
                     
                     $herView.hideQ()
-                    call wrd_dress_undress
-                    $herView.data().addItem('item_tits')
-                    $herView.data().hideItemKey('dress')
-                    $herView.data().hideItemKey('skirt')
+                    #call wrd_dress_undress
+                    #$herView.data().addItem('item_tits')
+                    #$herView.data().hideItemKey('dress')
+                    #$herView.data().hideItemKey('skirt')
+
+                    $ hermi.WrdNoShirt ()
+                    $ hermi.WrdNoSkirt ()
                     $herView.data().hideItemKey('panties')
                     
                     $ hermione_chibi_xpos = 310 # Default 360
@@ -462,6 +470,7 @@ label want_to_rule:
                     hide screen ctc
                     
                     $herView.data().loadState()
+                    $ hermi.WrdSetMain ()
                     #$herView.data().addItemKey( 'tears', CharacterExItem( herView.mMiscFolder, "tears_03.png", G_Z_FACE + 1 ) )
                     $herView.data().addItem( 'item_tears', '03' )
 
@@ -522,6 +531,7 @@ label want_to_rule:
     $ days_without_an_event = 0
 
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
     
     call music_block
     

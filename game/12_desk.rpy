@@ -337,6 +337,22 @@ label desk:
             call daphne_main_menu
             jump desk
             
+        "- Тест 5 -" if False :
+        
+            $ menu_x = 0.2 #Menu is moved to the left side.
+            $ pos = POS_410
+                
+            $ renpy.play('sounds/door.mp3') #Sound of a door opening.
+            $ hermione_chibi_xpos = 400 #Near the desk.
+            $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
+            show screen hermione_02 #Hermione stands still.
+            show screen bld1
+            with d3
+            $ hermi.whoring = 24                 
+            
+            jump new_request_02
+#            jump hermione_goout 
+            
 ### DR'S NEWSPAPER ooo ###
 
         "- Писать статьи для газеты -" if nsp_newspaper_articles < 8 and nsp_newspaper_menu > 0 and nsp_newspaper_ready == False and nsp_newspaper_published == False:
@@ -513,7 +529,7 @@ label desk:
 
  #===TG MODS START===
 
-        "-Исследовать календарь-" if desk_examined and not day == 1:
+        "-Исследовать календарь-" if desk_examined and not day == 1 and False :
             menu:
                 # This is when playing an old game, and the above event didn't happen (since the mod wasn't installed,
                 # and the desk is now set to (forever) examined.)

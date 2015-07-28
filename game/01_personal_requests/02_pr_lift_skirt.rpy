@@ -82,13 +82,14 @@ label new_request_02: #SHOW ME YOUR Трусики
 
         
         
-    $herView.data().saveState()
+    #$herView.data().saveState()
     # save previous state and add pose
     # add pose with lifted skirt
     if hermi.whoring<13:
-        #$herView.data().saveState()
-        call wrd_dress_undress_skirts
-        $herView.data().addItem( 'item_pose_lifted_skirt' )
+        $herView.data().saveState()
+        #call wrd_dress_undress_skirts
+        $ hermi.WrdUpSkirt()
+        #$herView.data().addItem( 'item_pose_lifted_skirt' )
         $ pos = POS_120
     
     if hermi.whoring >= 0 and hermi.whoring <= 2: #LEVEL 01   <============================= Fist event.
@@ -272,10 +273,11 @@ label new_request_02: #SHOW ME YOUR Трусики
                         hide screen bld1
 
                                             
-                        $herView.data().delPanties()
 #                        $herView.data().saveState()
-                        call wrd_dress_undress_skirts
-                        $herView.data().addItem( 'item_pose_lifted_skirt' )
+#                        call wrd_dress_undress_skirts
+#                        $herView.data().addItem( 'item_pose_lifted_skirt' )
+                        $ hermi.WrdUpSkirt()
+                        $herView.data().delPanties()
                         $ pos = POS_120
 
 #                        her "test"
@@ -363,6 +365,7 @@ label new_request_02: #SHOW ME YOUR Трусики
                                                       
                                                     # load state before doing mess
                                                     $herView.data().loadState()
+                                                    $ hermi.WrdSetMain ()
 
                                                     jump new_request_16_jerkonly
 
@@ -379,7 +382,9 @@ label new_request_02: #SHOW ME YOUR Трусики
     $herView.hideQQ()
       
     # load state before doing mess
+    
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
 
     show screen hermione_02 #Hermione stands still.
     $herView.showQ( "body_31.png", pos )
@@ -408,6 +413,7 @@ label new_request_02: #SHOW ME YOUR Трусики
     label new_request_16_jerkonly_to_02:
         hide screen hermione_02 #Hermione stands still.
         $herView.data().loadState()
+        $ hermi.WrdSetMain ()
 
     
     $herView.hideQQ()
