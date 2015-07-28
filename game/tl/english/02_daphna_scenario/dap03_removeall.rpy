@@ -80,29 +80,29 @@ translate english strings:
 translate english dap_request_03_b7293433:
 
     # dev "Жаль прерываться на самом интересном месте?"
-    dev ""
+    dev "Feel bad to be interrupted at the most interesting moment?"
 
 # game/02_daphna_scenario/dap03_removeall.rpy:120
 translate english dap_request_03_ecf290b5:
 
     # dev "Нам тоже. Но данная сюжетная линия пока дописана только до этой точки..."
-    dev ""
+    dev "We, too. Unfortunately, this plot ends here..."
 
 # game/02_daphna_scenario/dap03_removeall.rpy:121
 translate english dap_request_03_8180a9fd:
 
     # dev "{size=-3}(впрочем, вам доступны другие сюжетные линии){/size}"
-    dev ""
+    dev "{size=-3}(However, you still have access to other plots.){/size}"
 
 # game/02_daphna_scenario/dap03_removeall.rpy:122
 translate english dap_request_03_d1c87a5f:
 
     # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev ""
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}."
 
 # game/02_daphna_scenario/dap03_removeall.rpy:123
 translate english dap_request_03_db8f717a:
 
     # dev "Так вы простимулируете нас и продолжение появится быстрее. :)"
-    dev ""
+    dev "This way you'll stimulate us to realise updates faster. :)"
 

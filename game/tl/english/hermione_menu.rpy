@@ -1468,7 +1468,7 @@ translate english hermione_bookbuying_e1bd31fc:
 translate english wrd_hermi_rent_menu_e86766d9:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    "I'm sorry, Sir, but this outfit it's too revealing."
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1109
 translate english wrd_hermi_rent_menu_e2c1dd50:
@@ -1480,7 +1480,7 @@ translate english wrd_hermi_rent_menu_e2c1dd50:
 translate english wrd_hermi_rent_menu_e86766d9_1:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    "I'm sorry, Sir, but this outfit it's too revealing."
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1141
 translate english wrd_hermi_rent_menu_e2c1dd50_1:
@@ -1492,7 +1492,7 @@ translate english wrd_hermi_rent_menu_e2c1dd50_1:
 translate english wrd_hermi_rent_menu_e86766d9_2:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    "I'm sorry, Sir, but this outfit it's too revealing."
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1173
 translate english wrd_hermi_rent_menu_e2c1dd50_2:
@@ -1504,7 +1504,7 @@ translate english wrd_hermi_rent_menu_e2c1dd50_2:
 translate english wrd_hermi_rent_menu_e86766d9_3:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    "I'm sorry, Sir, but this outfit it's too revealing."
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1206
 translate english wrd_hermi_rent_menu_e2c1dd50_3:
@@ -1726,53 +1726,53 @@ translate english strings:
 translate english wrd_hermiona_menu_rent_e86766d9:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1309
 translate english wrd_hermiona_menu_rent_e2c1dd50:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 # game/hermione_menu.rpy:1322
 translate english wrd_hermiona_menu_rent_e86766d9_1:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1331
 translate english wrd_hermiona_menu_rent_e2c1dd50_1:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 # game/hermione_menu.rpy:1344
 translate english wrd_hermiona_menu_rent_e86766d9_2:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1353
 translate english wrd_hermiona_menu_rent_e2c1dd50_2:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 # game/hermione_menu.rpy:1366
 translate english wrd_hermiona_menu_rent_e86766d9_3:
 
     # "Извините, сэр, но этот наряд слишком нескромный."
-    ""
+    "Excuse me, Sir, but this outfit it's too revealing."
 
 # game/hermione_menu.rpy:1376
 translate english wrd_hermiona_menu_rent_e2c1dd50_3:
 
     # "Надеюсь, вам понравилось, сэр."
-    ""
+    "I hope, you liked it, Sir."
 
 translate english strings:
 
     # game/hermione_menu.rpy:41
     old "- Примерка -"
-    new ""
+    new "-Dressing room-"
 

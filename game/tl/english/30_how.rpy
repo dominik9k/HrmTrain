@@ -868,13 +868,13 @@ translate english devel_19a66bea:
 translate english devel_35ad767c:
 
     # dev "Главный координатор (встречайте стоя !): {color=4F4F4F}Хан ( Khan ){/color}"
-    dev "Chief coordinator (standing ovations!): {color=4F4F4F}Khan{/color}"
+    dev "Chief coordinator (standing ovations!) : {color=4F4F4F}Khan{/color}"
 
 # game/30_how.rpy:415
 translate english devel_828990f0:
 
     # dev "Главный разработчик : {color=00FF00}Дрон (devon12355){/color}"
-    dev "Chief devoloper: {color=00FF00}devon12355{/color}"
+    dev "Chief devoloper : {color=00FF00}devon12355{/color}"
 
 # game/30_how.rpy:416
 translate english devel_9f38a03f:
@@ -886,37 +886,37 @@ translate english devel_9f38a03f:
 translate english devel_df185580:
 
     # dev "Поддержка игры (на плаву) : {color=0000FF}Сказочник{/color}"
-    dev "Game support (afloat): {color=0000FF} {/color}"
+    dev "Game support (afloat): {color=0000FF} Skazochnik {/color}"
 
 # game/30_how.rpy:418
 translate english devel_3cd32fed:
 
-    # dev "Перевод на английский язык : {color=0089BE}Хан и Sezt{/color}"
-    dev "English translation: {color=0089BE}Khan и Sezt{/color}"
+    # dev "Перевод на английский язык : {color=0089BE}Sleepless{/color}"
+    dev "English translation: {color=0089BE}Sleepless{/color}"
 
 # game/30_how.rpy:419
 translate english devel_e596fc64:
 
     # dev "Разработка и обучающие ивенты : {color=FF0000}Nyarkohopter{/color}"
-    dev "Training devoloper and events: {color=FF0000}Nyarkohopter{/color}"
+    dev "Training devoloper and events : {color=FF0000}Nyarkohopter{/color}"
 
 # game/30_how.rpy:420
 translate english devel_9ff0a49f:
 
     # dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
-    dev "Chibis for Daphne: {color=2F2F2F}Grending{/color}"
+    dev "Chibis for Daphne : {color=2F2F2F}Grending{/color}"
 
 # game/30_how.rpy:421
 translate english devel_b8f433be:
 
     # dev "Дафна : {color=6F6F6F}Zio Dyne{/color}"
-    dev "Daphne: {color=6F6F6F}Zio Dyne{/color}"
+    dev "Daphne : {color=6F6F6F}Zio Dyne{/color}"
 
 # game/30_how.rpy:423
 translate english devel_bd29ade8:
 
     # dev "Список особых благодарностей :"
-    dev "Special thanks:"
+    dev "Special thanks :"
 
 # game/30_how.rpy:424
 translate english devel_b37a2e77:
@@ -1298,11 +1298,11 @@ translate english forum_d54c28dc:
 translate english devel_04769f66:
 
     # dev "Список особых благодарностей :"
-    dev ""
+    dev "Special thanks :"
 
 # game/30_how.rpy:301
 translate english devel_06d7322a:
 
     # dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
-    dev ""
-
+    dev "{color=0F0F0F}Eskelsama{/color} - for amazing coding and invaluable contribution to the project!"
+	

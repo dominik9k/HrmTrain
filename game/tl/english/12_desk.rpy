@@ -768,7 +768,7 @@ translate english strings:
 
     # game/12_desk.rpy:352
     old "- Фантастика -"
-    new "-Fictional books-"
+    new "-Fiction books-"
 
     # game/12_desk.rpy:420
     old "- Публикация газеты -"
@@ -808,5 +808,5 @@ translate english strings:
 
     # game/12_desk.rpy:177
     old "- Тест 5 -"
-    new ""
+    new "-Test 5-"
 
