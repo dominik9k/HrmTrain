@@ -20,6 +20,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
     $ current_payout = 35 #Because will have option to pay extra.
 
     $ herView.data().saveState()
+    $ hermi.WrdSetMain ()
     #$ herView.data().addItemKey( 'sweat', CharacterExItemSweat( herView.mMiscFolder, "sweat.png", G_Z_POSE - 1 ) )
     $ herView.data().addItem( 'item_misc_sweat_97to99' )
 
@@ -441,8 +442,9 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
         with d5
         ">Ее рубашка внезапно спадает на пол."
         g4 "{size=-4}(Когда она успела??!){/size}"
-        call wrd_dress_undress
-        $herView.data().addItem( 'item_tits' )
+        #call wrd_dress_undress
+        #$herView.data().addItem( 'item_tits' )
+        $ hermi.WrdNoShirt ()
         hide screen blktone8
         with d3
         hide screen bld1
@@ -1165,8 +1167,9 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                     hide screen bld1
                     with d3
                     pause
-                    call wrd_dress_undress
-                    $herView.data().addItem( 'item_tits' )
+                    #call wrd_dress_undress
+                    #$herView.data().addItem( 'item_tits' )
+                    $ hermi.WrdNoShirt ()
                     show screen no_shirt_no_skirt_dance
                     with d3
                     pause
@@ -1592,7 +1595,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                         $herView.data().delTransform()
                                         $herView.data().delItem( 'item_sperm' )
                                         #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-                                        $herView.data().addItem( 'item_sperm_dried' )
+                                        #$herView.data().addItem( 'item_sperm_dried' )
+                                        $ hermi.WrdSpermDried ()
                                         $herView.hideQQ()
                                         $ pos = POS_140
                                         call req11_dress
@@ -2079,8 +2083,9 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                     show screen ctc
                     pause
                     show screen no_shirt_no_skirt_dance
-                    call wrd_dress_undress
-                    $herView.data().addItem( 'item_tits' )
+                    #call wrd_dress_undress
+                    #$herView.data().addItem( 'item_tits' )
+                    $ hermi.WrdNoShirt ()
                     with d3
                     pause
                     hide screen ctc
@@ -2362,7 +2367,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     pause.5
                                                     
                                                     #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-                                                    $herView.data().addItem( 'item_sperm_dried' )
+                                                    #$herView.data().addItem( 'item_sperm_dried' )
+                                                    $ hermi.WrdSpermDried ()
                                                     jump done_with_dancing
                                                 "\"Десять дополнительных очков.\"":
                                                     $ current_payout = 45
@@ -2385,7 +2391,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     pause.5
                                                     
                                                     #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-                                                    $herView.data().addItem( 'item_sperm_dried' )
+                                                    #$herView.data().addItem( 'item_sperm_dried' )
+                                                    $ hermi.WrdSpermDried ()
                                                     jump done_with_dancing
                                                 "\"Вы получите 25 дополнительных очков.\"":
                                                     $ current_payout = 60
@@ -2405,7 +2412,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     pause.5
                                                     
                                                     #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-                                                    $herView.data().addItem( 'item_sperm_dried' )
+                                                    #$herView.data().addItem( 'item_sperm_dried' )
+                                                    $ hermi.WrdSpermDried ()
                                                     jump done_with_dancing
                                                 "\"Вы получаете 50 дополнительных очков.\"":
                                                     $ current_payout = 85
@@ -2436,7 +2444,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                     pause.5
                                                     
                                                     #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-                                                    $herView.data().addItem( 'item_sperm_dried' )
+                                                    #$herView.data().addItem( 'item_sperm_dried' )
+                                                    $ hermi.WrdSpermDried ()
                                                     jump done_with_dancing
                                                 "\"Ты ни черта не получишь!\"":
                                                     stop music fadeout 1.0
@@ -2458,7 +2467,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
                                                             pause.5
                                                             
                                                             #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-                                                            $herView.data().addItem( 'item_sperm_dried' )
+                                                            #$herView.data().addItem( 'item_sperm_dried' )
+                                                            $ hermi.WrdSpermDried ()
                                                             jump done_with_dancing
                                                         "\"Нет, ее тоже не получишь!\"":
                                                             play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
@@ -2648,7 +2658,8 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
     label done_with_dancing:
     call req11_dress
     $herView.data().delItem( 'item_sperm' )
-    call wrd_dress_change_silent
+    #call wrd_dress_change_silent
+    $ hermi.WrdSetMain ()
     
     $ gryffindor += current_payout #35
     
@@ -2702,6 +2713,7 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
     with Dissolve(.3)
 
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
     call music_block
 
     $wtevent.Finalize()    
@@ -2717,18 +2729,22 @@ label new_request_11: #LV.4 (Whoring = 9 - 11)
 
 label restore_state_could_not_flirt:
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
     jump could_not_flirt
 
 label req11_undress:
-    call wrd_dress_undress
-    $herView.data().addItem( 'item_tits' )
-    $herView.data().hideItemKey( 'dress' )
-    $herView.data().hideItemKey( 'skirt' )
+    #call wrd_dress_undress
+    #$herView.data().addItem( 'item_tits' )
+    #$herView.data().hideItemKey( 'dress' )
+    #$herView.data().hideItemKey( 'skirt' )
+    $ hermi.WrdNoShirt ()
+    $ hermi.WrdNoSkirt ()
     $herView.data().hideItemKey( 'panties' )
     return
     
 label req11_dress:
-    $herView.data().showItemKey( 'dress' )
-    $herView.data().showItemKey( 'skirt' )
+    #$herView.data().showItemKey( 'dress' )
+    #$herView.data().showItemKey( 'skirt' )
+    $ hermi.WrdSetMain ()
     $herView.data().showItemKey( 'panties' )
     return

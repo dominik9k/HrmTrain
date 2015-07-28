@@ -114,3 +114,53 @@ translate italian strings:
     old "- Она может больше -"
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:00
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:243
+translate italian dap_request_02_complete_74d3dc33:
+
+    # dev "К большому сожалению, данная сюжетная линия пока дописана только до этого момента..."
+    dev ""
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:244
+translate italian dap_request_02_complete_6569410c:
+
+    # dev "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
+    dev ""
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:245
+translate italian dap_request_02_complete_d1c87a5f:
+
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    dev ""
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:246
+translate italian dap_request_02_complete_a68e1bc3:
+
+    # dev "Так вы простимулируете нас, и продолжение появится быстрее. :)"
+    dev ""
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:259
+translate italian dap_request_02_complete_74d3dc33_1:
+
+    # dev "К большому сожалению, данная сюжетная линия пока дописана только до этого момента..."
+    dev ""
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:260
+translate italian dap_request_02_complete_6569410c_1:
+
+    # dev "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
+    dev ""
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:261
+translate italian dap_request_02_complete_d1c87a5f_1:
+
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    dev ""
+
+# game/02_daphna_scenario/dap02_showyourself.rpy:262
+translate italian dap_request_02_complete_a68e1bc3_1:
+
+    # dev "Так вы простимулируете нас, и продолжение появится быстрее. :)"
+    dev ""
+

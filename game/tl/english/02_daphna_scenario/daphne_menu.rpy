@@ -48,3 +48,35 @@ translate english strings:
     old "- Попросить уйти -"
     new "-Ask her to leave-"
 
+# TODO: Translation updated at 2015-07-28 10:13
+
+# game/02_daphna_scenario/daphne_menu.rpy:86
+translate english daphne_main_menu_requests_b7293433:
+
+    # dev "Жаль прерываться на самом интересном месте?"
+    dev ""
+
+# game/02_daphna_scenario/daphne_menu.rpy:87
+translate english daphne_main_menu_requests_ecf290b5:
+
+    # dev "Нам тоже. Но данная сюжетная линия пока дописана только до этой точки..."
+    dev ""
+
+# game/02_daphna_scenario/daphne_menu.rpy:88
+translate english daphne_main_menu_requests_8180a9fd:
+
+    # dev "{size=-3}(впрочем, вам доступны другие сюжетные линии){/size}"
+    dev ""
+
+# game/02_daphna_scenario/daphne_menu.rpy:89
+translate english daphne_main_menu_requests_d1c87a5f:
+
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    dev ""
+
+# game/02_daphna_scenario/daphne_menu.rpy:90
+translate english daphne_main_menu_requests_db8f717a:
+
+    # dev "Так вы простимулируете нас и продолжение появится быстрее. :)"
+    dev ""
+

@@ -190,3 +190,11 @@ translate italian strings:
     old "Настр."
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:00
+
+translate italian strings:
+
+    # game/screens.rpy:234
+    old "Отмена"
+    new ""
+

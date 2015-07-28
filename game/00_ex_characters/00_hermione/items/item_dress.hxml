@@ -58,4 +58,8 @@
 		<frame>dress_lifted_skirt.png</frame>
 		<folder>clothes</folder>
 	</style>	
+	<style name="sperm_dried">
+		<frame>dress_normal_sd.png</frame>
+		<folder>clothes</folder>
+	</style>
 </item>

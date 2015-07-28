@@ -4155,10 +4155,11 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
 
         # show tits!
         #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
-        call wrd_dress_undress_shirts
-        $ herView.data().addItem( 'item_tits' )
-        $herView.data().addItem( 'item_pose_show_tits' )
-
+        #call wrd_dress_undress_shirts
+        #$ herView.data().addItem( 'item_tits' )
+        #$herView.data().addItem( 'item_pose_show_tits' )
+        $ hermi.WrdNoShirt ()
+        
         $herView.showQ( "body_81.png", pos )
         with d5                                                                                                                                                                                                                       #HERMIONE
         show screen ctc
@@ -4176,11 +4177,13 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         $herView.hideQQ()
 
         # Pussy!
-        $herView.data().hideItemKey( 'panties' )
         #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
-        call wrd_dress_change_silent
-        call wrd_dress_undress_skirts
-        $herView.data().addItem( 'item_pose_lifted_skirt' )
+        #call wrd_dress_change_silent
+        #call wrd_dress_undress_skirts
+        #$herView.data().addItem( 'item_pose_lifted_skirt' )
+        $ hermi.WrdSetMain ()
+        $ hermi.WrdUpSkirt ()
+        $herView.data().hideItemKey( 'panties' )
         $herView.showQQ( "body_61.png", pos )
         show screen ctc
         pause
@@ -4193,9 +4196,10 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         her "Я готова на все ради очков, сэр!"
         $herView.hideQ()
         with d5      
-        $herView.data().delPose()
+        #$herView.data().delPose()
+        $ hermi.WrdSetMain ()
         $herView.data().showItemKey( 'panties' )                                                                                                                                                                                                               #HERMIONE
-        call wrd_dress_change_silent
+        #call wrd_dress_change_silent
         $herView.showQ( "body_86.png", pos )
         with d5                                                                                                                                                                                                                       #HERMIONE
         with hpunch

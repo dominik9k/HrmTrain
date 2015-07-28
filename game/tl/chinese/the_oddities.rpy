@@ -314,3 +314,11 @@ translate chinese strings:
     old "Вы уверены, что хотите взять напрокат на один день одежду бизнес-леди за 200 галлеонов ? [add]"
     new ""
 
+# TODO: Translation updated at 2015-07-28 10:17
+
+translate chinese strings:
+
+    # game/the_oddities.rpy:126
+    old "- Купить оставшиеся - [i_count] ([_price_all] галеонов) -"
+    new ""
+

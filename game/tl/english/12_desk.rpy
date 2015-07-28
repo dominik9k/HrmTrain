@@ -802,3 +802,11 @@ translate english strings:
     old "-Ничего-"
     new "-Never mind-"
 
+# TODO: Translation updated at 2015-07-28 10:13
+
+translate english strings:
+
+    # game/12_desk.rpy:177
+    old "- Тест 5 -"
+    new ""
+
