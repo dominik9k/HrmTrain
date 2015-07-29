@@ -70,13 +70,13 @@ translate english menu_dahr_scroll_order_3c1554ed_1:
 translate english menu_dahr_scroll_order_f9394218:
 
     # ">Извините, товар закончился"
-    ">We are sorry, this item has ended."
+    ">We are sorry, the item is out of stock."
 
 # game/the_oddities.rpy:164
 translate english the_oddities_6393684f:
 
     # dahr "Добро пожаловать в \"каталог Приблуд Дахра\". Ваши предпочтения не покажутся нам странными!" nointeract
-    dahr "Welcome to \"Dahr's Oddities\". Your preferences will not be strange to us!" nointeract
+    dahr "Welcome to \"Dahr's Oddities\". Your taste is never too odd for us!" nointeract
 
 # game/the_oddities.rpy:227
 translate english do_have_book_342751d2:
@@ -118,7 +118,7 @@ translate english no_gold_e160bee7:
 translate english out_d1661710:
 
     # dahr "Этот товар закончился на складе"
-    dahr "This item is currently out of stock."
+    dahr "This item is out of stock"
 
 # game/the_oddities.rpy:326
 translate english wrd_dahr_rent_menu_320a40fc:
@@ -240,7 +240,7 @@ translate english strings:
 
     # game/the_oddities.rpy:164
     old "- Для Вашего Хрустального шара -"
-    new "-For your Crystal Ball-"
+    new "-For Crystal Ball-"
 
     # game/the_oddities.rpy:164
     old "- Образовательные книги -"
@@ -324,5 +324,5 @@ translate english strings:
 
     # game/the_oddities.rpy:126
     old "- Купить оставшиеся - [i_count] ([_price_all] галеонов) -"
-    new ""
+    new "-Buy the rest of - [i_count] for ([_price_all] coins)-"
 
