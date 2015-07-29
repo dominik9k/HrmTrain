@@ -1305,4 +1305,4 @@ translate english devel_06d7322a:
 
     # dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
     dev "{color=0F0F0F}Eskelsama{/color} - for amazing coding and invaluable contribution to the project!"
-	
+

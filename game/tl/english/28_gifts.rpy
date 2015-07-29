@@ -8041,4 +8041,4 @@ translate english wrd_first_shirt_business_c805e20d:
 
     # her "Слушаюсь, сэр..."
     her "Of course, Sir..."
-	
+
