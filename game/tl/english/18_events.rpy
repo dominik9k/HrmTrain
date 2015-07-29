@@ -6261,8 +6261,8 @@ translate english strings:
     new "\"Tall broody guy?\""
 
     # game/18_events.rpy:410
-    old "- {{Использовать магию для получения правильного ответа} -"
-    new "-\{Use magic to get the right answer\}-"
+    old "- {Использовать магию для получения правильного ответа} -"
+    new "- {Use magic to get the right answer} -"
 
     # game/18_events.rpy:523
     old "\"Я тебе не враг.\""
