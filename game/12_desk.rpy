@@ -529,7 +529,7 @@ label desk:
 
  #===TG MODS START===
 
-        "-Исследовать календарь-" if desk_examined and not day == 1 and False :
+        "-Исследовать календарь-" if False and desk_examined and not day == 1 and False :
             menu:
                 # This is when playing an old game, and the above event didn't happen (since the mod wasn't installed,
                 # and the desk is now set to (forever) examined.)

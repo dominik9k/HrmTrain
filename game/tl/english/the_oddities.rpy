@@ -216,19 +216,19 @@ translate english strings:
 
     # game/the_oddities.rpy:123
     old "- Купить 2 ([_price2] галеонов) -"
-    new "-Buy 2 for ([item._price] galleons)-"
+    new "-Buy 2 for ([_price2] galleons)-"
 
     # game/the_oddities.rpy:123
     old "- Купить 3 ([_price3] галеонов) -"
-    new "-Buy 3 for ([item._price] galleons)-"
+    new "-Buy 3 for ([_price3] galleons)-"
 
     # game/the_oddities.rpy:123
     old "- Купить 50 ([_price50] галеонов) -"
-    new "-Buy 50 for ([item._price] galleons)-"
+    new "-Buy 50 for ([_price50] galleons)-"
 
     # game/the_oddities.rpy:123
     old "- Купить 68 ([_price68] галеонов) -"
-    new "-Buy 68 for ([item._price] galleons)-"
+    new "-Buy 68 for ([_price68] galleons)-"
 
     # game/the_oddities.rpy:164
     old "- Для редакций: Образовательные книги -"
