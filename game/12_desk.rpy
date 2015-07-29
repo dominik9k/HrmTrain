@@ -316,7 +316,7 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" :
+        "- Тест 3 -" if False :
 
             $ hermi.whoring = 24
             $ cataloug_found = True
