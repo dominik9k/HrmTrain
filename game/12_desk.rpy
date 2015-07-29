@@ -316,7 +316,7 @@ label desk:
             jump hermione_approaching
 #            jump hermione_goout            
             
-        "- Тест 3 -" if False :
+        "- Тест 3 -" :
 
             $ hermi.whoring = 24
             $ cataloug_found = True
@@ -529,7 +529,7 @@ label desk:
 
  #===TG MODS START===
 
-        "-Исследовать календарь-" if desk_examined and not day == 1 and False :
+        "-Исследовать календарь-" if False and desk_examined and not day == 1 and False :
             menu:
                 # This is when playing an old game, and the above event didn't happen (since the mod wasn't installed,
                 # and the desk is now set to (forever) examined.)
