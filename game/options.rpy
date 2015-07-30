@@ -25,12 +25,15 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"Воспитание Ведьмы v.1.4 (русская редакция)"
+    if _preferences.language == "english" :
+        config.window_title = u"Witch Trainer v.1.5 (Russian Edition)"
+    else :
+        config.window_title = u"Воспитание Ведьмы v.1.5 (Русская редакция)"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "Witch Trainer"
-    config.version = "1.4.1"
+    config.version = "1.5"
 
     #########################################
     # Themes

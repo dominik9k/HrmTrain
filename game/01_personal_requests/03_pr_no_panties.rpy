@@ -12,7 +12,7 @@ label new_request_03: #(Whoring = 3 - 5)
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
     $herView.showQQ( None, pos )
     #show screen hermione_main
@@ -162,7 +162,7 @@ label new_request_03: #(Whoring = 3 - 5)
     else:
         play music "music/Music for Manatees.mp3" fadein 1 fadeout 1 # NIGHT MUSIC
     ### END OF BLOCK ###
-    $event.Finalize()
+    $wtevent.Finalize()
     jump day_main_menu
     
     
@@ -338,7 +338,7 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
     else:
         $SetHearts(4, this.new_request_03)
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
     return 
     
     
@@ -510,8 +510,10 @@ label panties_soaked_in_cum:
             $herView.hideQQ()
             
             $herView.data().saveState()
+            $ hermi.WrdUpSkirt()
+            #call wrd_dress_undress_skirts
             #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
-            $herView.data().addItem( 'item_pose_lifted_skirt' )
+            #$herView.data().addItem( 'item_pose_lifted_skirt' )
             #$herView.data().addItemKey( 'panties_cum', CharacterExItem( herView.mMiscFolder, 'panties_sperm.png', G_Z_PANTIES + 1, 'panties' ) )
             $herView.data().addItem( 'item_panties_sperm' )
             
@@ -524,6 +526,7 @@ label panties_soaked_in_cum:
                     her "Я так и думала, профессор."
                     $herView.hideQQ()
                     $herView.data().loadState()
+                    $ hermi.WrdSetMain ()
                     $herView.showQQ( "body_52.png", pos )
                     her "Тогда я пойду?"
                     m "Хм, да-да, мисс Грейнджер..."
@@ -536,6 +539,7 @@ label panties_soaked_in_cum:
                     $hermi.liking -= 15
                     $herView.hideQQ()
                     $herView.data().loadState()
+                    $ hermi.WrdSetMain ()
                     $herView.showQQ( "body_51.png", pos )
                     her "Хм!"
                     $herView.hideshowQQ( "body_191.png", pos )

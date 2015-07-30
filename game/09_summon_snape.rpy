@@ -44,13 +44,17 @@ label summon_snape:
             
 ### DR'S NEWSPAPER ooo ###
 
-        "Поговорить о газете" if nsp_pre_letter == 2 and nsp_pre_snape < 5:
+        "- Поговорить о газете -" if nsp_pre_letter == 2 and nsp_pre_snape < 5:
             $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
             jump newsp_pre_snape_dialog
             
-        "Поговорить о газете" if nsp_newspaper_menu == 3:
+        "- Поговорить о газете -" if nsp_newspaper_menu == 3:
             $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
             jump newsp_pre_snape_dialog2
+            
+        "- Впечатления о газете -" if nsp_newspaper_menu >= 5 :
+            $ menu_x = 0.5 #Menu is moved to the left side. (Default menu_x = 0.5)
+            jump nsp_snape_dialog_stat
 
 ###
 
@@ -63,7 +67,7 @@ label summon_snape:
                 call not_today #Snape says: "I am busy tonight."
 #            elif snape_friendship >= 39 and whoring <= 5: # Whoring level <= 2. Makes sure you don't proceed after Date #6 until reached Whoring lvl 3.
 #                call not_today #Snape says: "I am busy tonight."
-            elif snape_friendship >= 88 and hermi.whoring <= 14: # hermi.whoring level <= 5. Makes sure you don't proceed after Date #12 until reached Whoring lvl 6.
+            elif snape_friendship >= 99 and snape_events >= 15:
                 call not_today #Snape says: "I am busy tonight."
             else:
                 pass
@@ -142,40 +146,40 @@ label snape_dates:  ### HANGING WITH SNAPE ###
     elif snape_friendship >= 19 and snape_events == 2: #LEVEL 03
         call date_with_snape_03
         
-    elif snape_friendship >= 27 and snape_events == 3: #LEVEL 04
+    elif snape_friendship >= 26 and snape_events == 3: #LEVEL 04
         call date_with_snape_04
         
-    elif snape_friendship >= 34 and snape_events == 4: #LEVEL 05
+    elif snape_friendship >= 33 and snape_events == 4: #LEVEL 05
         call date_with_snape_05
         
-    elif snape_friendship >= 41 and snape_events == 5: #LEVEL 06. Can't proceed after this until whoring >= Lv 3.
+    elif snape_friendship >= 40 and snape_events == 5: #LEVEL 06. Can't proceed after this until whoring >= Lv 3.
         call date_with_snape_06
         
-    elif snape_friendship >= 48 and snape_events == 6: #LEVEL 07
+    elif snape_friendship >= 47 and snape_events == 6: #LEVEL 07
         call date_with_snape_07
          
-    elif snape_friendship >= 55 and snape_events == 7: #LEVEL 08
+    elif snape_friendship >= 54 and snape_events == 7: #LEVEL 08
         call date_with_snape_08
         
-    elif snape_friendship >= 62 and snape_events == 8: #LEVEL 09
+    elif snape_friendship >= 61 and snape_events == 8: #LEVEL 09
         call date_with_snape_09
         
-    elif snape_friendship >= 69 and snape_events == 9: #EVENT 10
+    elif snape_friendship >= 68 and snape_events == 9: #EVENT 10
         call date_with_snape_10
         
-    elif snape_friendship >= 76 and snape_events == 10: #EVENT 10
+    elif snape_friendship >= 75 and snape_events == 10: #EVENT 10
         call date_with_snape_11
         
-    elif snape_friendship >= 83 and snape_events == 11: #EVENT 11
+    elif snape_friendship >= 82 and snape_events == 11: #EVENT 11
         call date_with_snape_12
          
-    elif snape_friendship >= 88 and snape_events == 12: #EVENT 12. If whoring level > 5.
+    elif snape_friendship >= 89 and snape_events == 12: #EVENT 12. If whoring level > 5.
         call date_with_snape_13
         
-    elif snape_friendship >= 93 and snape_events == 13: #EVENT 13
+    elif snape_friendship >= 96 and snape_events == 13: #EVENT 13
         call date_with_snape_14
         
-    elif snape_friendship >= 98 and snape_events == 14: #EVENT 14
+    elif snape_friendship >= 99 and snape_events == 14: #EVENT 14
         call date_with_snape_15
         
     else:

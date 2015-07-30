@@ -1522,14 +1522,14 @@ label event_09: #Second visit from Hermione. Says she sent a letter to the Mines
                 "\"Конечно нет! Я занят! Возвращайся позже!\"":
                     her "Но..."
                     her "Хорошо... Тогда я зайду к вам завтра..."
-                    $event.NotFinished()
+                    $wtevent.NotFinished()
                     return 
                 "\"Конечно. Входи.\"":
                     pass
         "\"Я занят. Приходи позже.\"":
             her "Но..."
             her "Ладно, хорошо..."
-            $event.NotFinished()
+            $wtevent.NotFinished()
             return 
         "\"Да, входи.\"":
             pass
@@ -2478,14 +2478,14 @@ label event_15: # Hermione comes and asks to buy a favour from her.
                 "\"Категорически нет! Я занят! Возвращайся позднее!\"":
                     her "Но..."
                     her "Ладно... Тогда я вернусь позднее..."
-                    $event.NotFinished()
+                    $wtevent.NotFinished()
                     return 
                 "\"Конечно, входи.\"":
                     pass
         "\"Я занят. Приходи позже.\"":
             her "Но..."
             her "Ну, ладно..."
-            $event.NotFinished()
+            $wtevent.NotFinished()
             return
         "\"Да, входи.\"":
             pass
@@ -2899,6 +2899,12 @@ label event_15: # Hermione comes and asks to buy a favour from her.
     $ days_without_an_event = 0 #Resets the counter. This counts how many days have passed since this event happened.
     $ event15_happened = True #Turns TRUE after event_15
     $this.event_15.Finalize()
+    
+    if daytime:
+        $ hermione_takes_classes = True
+    else:
+        $ hermione_sleeping = True
+    
     return
 
 
@@ -3424,7 +3430,8 @@ label bad_reports:
     m "Так, посмотрим..."
     m "А! Вот, пара страниц, которые я забыл отправить."
     sna "Что ж, валяй."
-    $ letter_text = "{size=-4}Аграба!.. Торговец, торжествуя,\nНа ослике обновляет путь;\nЕго глаза, барыш почуя,\nБоятся лишний раз моргнуть;\nПески великие вздымая,\nБежит принцесская удалая;\nА за нею по пятам - \nДжинн, Джафар и Бхагаватам.{/size}"
+    $ letter_text = "{size=-4}Аграба!.. Торговец, \nТоржествуя,\nУж ослика торопит в путь;\nЕго глаза, барыш почуя,\nБоятся лишний раз моргнуть;\nПески великие вздымая,\nБежит принцесса удалая;\nНо вот, за нею по пятам - \nИ Джинн, Джафар, Бхагаватам!\n... Они её в углу поймали...{/size}"
+
     label report_to_minister:
         show screen letter
         show screen ctc

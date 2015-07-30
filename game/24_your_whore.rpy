@@ -3724,22 +3724,22 @@ label test:
     $ dermo = "ch_sna defend"
     
     show screen credits_chibi
-    centered "{cps=20}{size=+5}{color=#ea91b0}-Тренер Ведьмы 1.4 (русская редакция)-{/color}{/size}\n\n\n\
+    centered "{cps=20}{size=+5}{color=#ea91b0}-Воспитание Ведьмы 1.5 (русская редакция)-{/color}{/size}\n\n\n\
     {color=#e5e297}-\{Перевод Witch Trainer\}-{/color}\n\
     {color=#fff}\
     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15155170}Discordnk90{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=8041771}maniac4a{/a}, \n\
     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=4472572}Rio-Violente{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=16957111}MrFrost1991{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=18304384}babaylolxz{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15281703}Borzsama{/a},\n\
-     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=11908608}sn0rk95{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=3}Khan{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\n\
+     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=11908608}sn0rk95{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=3}Khan{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\n\     
     {color=#cbcbcb}Если кого-то забыли - простите ;){/color} \
     \n\n\
     {color=#e5e297}-\{Программирование:\}-{/color}\n\
     {color=#fff}\
-    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
+    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=68}Eskelsama{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Dron{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
     \
     \n\n\
     {color=#e5e297}-\{Тексты, сценарии:\}-{/color}\n\
     {color=#fff}\
-    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}\n\
+    {a=http://wtrus.ixbb.ru/profile.php?id=4}Nyarkohotep{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Skazochnik{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Dron{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=299 }The Felix{/a}\n\
     \n\n\
     {color=#e5e297}-\{Техническая поддержка (форум):\}-{/color}\n\
     {color=#fff}\
@@ -3747,7 +3747,7 @@ label test:
     \n\n\
     {color=#e5e297}-\{Арты:\}-{/color}\n\
     {color=#fff}\
-    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}\n\
+    Oh Zar, Zio, {a=http://wtrus.ixbb.ru/profile.php?id=83}Grendidg{/a}, {a=http://wtrus.ixbb.ru/profile.php?id=2}Dron{/a}\n\
     \n\n\
     {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\
@@ -3755,24 +3755,14 @@ label test:
     \n\n\
     {size=-5}{color=#e5e297}-\{Тестирование:\}-{/color}\n\
     {color=#fff}\
-    BAPK, suhi, Bananamantana, Melem, Димитрий, Kril' {/color}{/size}\n\
+    Vitamin05, Тохрин, Suhi, Lrm, Sora015, Bananamantana, Ignes, Appo, BAPK, Kril', Xeron, Vadim, Melem, Димитрий {/color}{/size}\n\ 
     \n\n\
     {size=-7}{color=#e5e297}-\{На ранних этапах игры участие также принимали:\}-{/color}\n\
     {color=#fff}\
     appo, Dimon_Tools, illidan, darg55, Fuhrick, Y-ART, Zilot{/color}{/size}\n\
-    \n\n\n\
-    "
-
-    centered "{cps=20}{size=+5}{color=#ea91b0}-Witch Trainer-{/color}{/size}\n\n\
-    {color=#e5e297}-\{Сценарист и продюссер\}-{/color}\n{size=+5}{color=#cbcbcb}AKABUR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Главный программист\}-{/color}\n {size=+5}{color=#cbcbcb}AKABUR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Арты\}-{/color}\n   {size=+5}{color=#cbcbcb}AKABUR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Дополнительные арты\}-{/color}\n   {size=+5}{color=#cbcbcb}DAHR{/color}{/size}\n\n\
-    {color=#e5e297}-\{Тексты\}-{/color}\n   {size=+5}{color=#cbcbcb}LYK.D9{/color}{/size}\n\n\
-    {color=#e5e297}-\{Технический менеджер\}-{/color}\n   {size=+5}{color=#cbcbcb}XALJIO{/color}{/size}\n\n\
-    {color=#e5e297}-\{Тестеры\}-{/color}\n   {size=+5}{color=#cbcbcb}XALJIO\nLYK.D9\nDAHR\nAKABUR{/color}{/size}\n\n{/cps}"
-    
-    
+    \n\n\
+    Игра разрабатывается с использованием идеи и артов Акабура и Дахра.\n\
+    "    
     
     nvl clear
 
@@ -3813,6 +3803,9 @@ label test:
     {color=#e5e297}\"Hitman\" {/color}{color=#cbcbcb}by  Kevin MacLeod.{/color}\n\
     {color=#e5e297}\"Music for Manatees\" {/color}{color=#cbcbcb}by  Kevin MacLeod.{/color}\n\
     {color=#e5e297}\"Plaint\" {/color}{color=#cbcbcb}by  Kevin MacLeod.{/color}\n\
+    {color=#e5e297}\"Supergirl\" {/color}{color=#cbcbcb}by  Reamonn.{/color}\n\
+    {color=#e5e297}\"Lullaby\" {/color}{color=#cbcbcb}by  Cure.{/color}\n\
+    {color=#e5e297}\"Symphony\" {/color}{color=#cbcbcb}by  Bitter Sweet.{/color}\n\
     {color=#e5e297}\"Under-the-Radar\" {/color}{color=#cbcbcb}by  PhobyAk.{/color}{/cps}"
  
     
@@ -4036,7 +4029,6 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         
     
     else: # PERSONAL WHORE ENDING 
-
         $ renpy.play('sounds/door.mp3') #Sound of a door opening.
         
         $ walk_xpos=610 #Animation of walking chibi. (From)
@@ -4094,7 +4086,6 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         $herViewHead.hideQ()
         pause.1
         
-        
         $ letter_text = "{size=-7}Кому: Гермионе Грейнджер\n\n{/size}{size=-4}Дорогая [word_01]. \nЯ не тот, кто вы думаете... Даже не человек, если честно. В течение нескольких месяцев я выдавал себя за профессор Дамблдора. Но теперь мне нужно вернуться [word_02]. К тому времени, как ты получишь письмо, я буду уже далеко. Мы больше никогда не встретимся, но я буду лелеять воспоминания об этом времени в вашем мире.\n\nПрощай, моя маленькая [word_03]. {size=-3}\n\n-[word_04]-{/size}"
 
         label last_letter:
@@ -4117,7 +4108,6 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
      
         show screen bld1
         with d3
-
         # add shock screen!
         #$herViewHead.data().addPose( CharacterExItem( herViewHead.mPoseFolder, 'hermione_bw_final_shock.png', G_Z_FACE + 1 ) )
         $herViewHead.data().addItem( 'item_pose_final_shock' )
@@ -4165,8 +4155,11 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
 
         # show tits!
         #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
-        $herView.data().addItem( 'item_pose_show_tits' )
-
+        #call wrd_dress_undress_shirts
+        #$ herView.data().addItem( 'item_tits' )
+        #$herView.data().addItem( 'item_pose_show_tits' )
+        $ hermi.WrdNoShirt ()
+        
         $herView.showQ( "body_81.png", pos )
         with d5                                                                                                                                                                                                                       #HERMIONE
         show screen ctc
@@ -4184,9 +4177,13 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         $herView.hideQQ()
 
         # Pussy!
-        $herView.data().hideItemKey( 'panties' )
         #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
-        $herView.data().addItem( 'item_pose_lifted_skirt' )
+        #call wrd_dress_change_silent
+        #call wrd_dress_undress_skirts
+        #$herView.data().addItem( 'item_pose_lifted_skirt' )
+        $ hermi.WrdSetMain ()
+        $ hermi.WrdUpSkirt ()
+        $herView.data().hideItemKey( 'panties' )
         $herView.showQQ( "body_61.png", pos )
         show screen ctc
         pause
@@ -4199,8 +4196,10 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
         her "Я готова на все ради очков, сэр!"
         $herView.hideQ()
         with d5      
-        $herView.data().delPose()
+        #$herView.data().delPose()
+        $ hermi.WrdSetMain ()
         $herView.data().showItemKey( 'panties' )                                                                                                                                                                                                               #HERMIONE
+        #call wrd_dress_change_silent
         $herView.showQ( "body_86.png", pos )
         with d5                                                                                                                                                                                                                       #HERMIONE
         with hpunch
@@ -4243,19 +4242,17 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
     $ persistent.gold = persistent.gold + gold
 
 #label test2:
-#    $hermi.Items.AddItem("miniskirt")
+#    $hermi.Items.AddItem("xxxsmallskirt")
 #    $hero.Items.AddItem("wine",2)
     python:
         persistent.itemSet=dict() 
 
-        if hermi.Items.Any("miniskirt"):
-            persistent.itemSet.update({"miniskirt": hermi.Items.Count("miniskirt")})
+        if hermi.Items.Any("xxxsmallskirt"):
+            persistent.itemSet.update({"xxxsmallskirt": hermi.Items.Count("xxxsmallskirt")})
  
         for o in hero.Items():
-            if o.Name not in {"nets", "badge_01", "ball_dress"}:
+            if o.Name not in {"nets", "badge", "ball_dress", "shortskirt", "xshortskirt", "xxshortskirt", "xsmallskirt", "xxsmallskirt", "skirt_cheerleader", "skimpyshirt", "skirt_business", "shirt_cheerleader", "shirt_business", "tights" }:
                 persistent.itemSet.update({o.Name: hero.Items.Count(o.Name)})       
-
-
 
 
 

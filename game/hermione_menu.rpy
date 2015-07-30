@@ -7,10 +7,13 @@ label hermione_approaching:
                 
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     $ hermione_chibi_xpos = 400 #Near the desk.
+    $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
     show screen hermione_02 #Hermione stands still.
     show screen bld1
     with d3
-
+ 
+    $hermi.WrdSetMain()
+    
     python:
         for t in [
             (0, "body_01.png", her, "Да, профессор?"),
@@ -33,15 +36,45 @@ label hermione_approaching:
 
 
     label hermione_main_menu:
+    $ pos = POS_410
+    $herView.hideshowQQ( "body_01.png", pos )
     menu:
 ### DR'S NEWSPAPER ooo ###
 
-        "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4:
-            dr "Вот и закончилось демо моего блока ивентов. Я понимаю, что вы хотели бы продолжения, и оно будет. Чуть позже."
-            dr "А пока что можно оставить отзыв на форуме, чтобы я работал над ошибками и мог учесть пожелания игроков."
-            dr "Спасибо за внимание."
-            dr "P.S. На всякий случай напомню, что уже в демо вы можете заниматься газетным делом для заработка денег. После соответствующих улучшений доход повысится."
+        "- Тренировка с Хрустальным шаром -" if nsp_newspaper_menu >= 15 and nsp_genie_sphere_sapphire_level >= 1 :
+            jump nsp_hermione_train
+
+        "- Поговорить о работе для редакции -" if nsp_newspaper_menu == 4 or nsp_newspaper_menu == 5 :
+            jump nsp_hermione_pre1
+
+        "{color=#858585}- Дать журналистское задание -{/color}" if nsp_newspaper_menu >= 6 and not daytime :
+            ">Журналистские задания недоступны в это время суток."
             jump hermione_main_menu
+             
+        "- Дать журналистское задание -" if nsp_newspaper_menu >= 6 and daytime :
+            if hermi.liking>=0:
+                jump nsp_newsp_themes
+            python:
+                for t in [
+                (-2, "Мне жаль, профессор, может быть в другой раз..."),
+                (-9, "Мне не хочется сегодня...\nМожет быть через пару дней..."),
+                (-19, "Нет, спасибо...."),
+                (-29, "После того, что вы сделали?\nЯ так не думаю..."),
+                (-39, "Вы серьезно!?"),
+                (-100, "Это какая-то ваша пошлая шутка?!\nПосле того, что вы сделали, я не хочу повторять это!")
+                ]:
+                    (_val, _text)=t
+                    if hermi.liking>=_val:
+                        renpy.say(her, _text)
+                        break
+            jump hermione_main_menu
+            
+        "- Впечатления от газеты -" if nsp_newspaper_menu >= 6 :
+            if hermi.liking >= -7:
+                jump nsp_hermione_dialog_status
+            else:
+                her "Мне нечего сказать вам..."    
+                jump hermione_main_menu            
 
 ###
         "- Поговорить -" if not chitchated_with_her:
@@ -53,7 +86,7 @@ label hermione_approaching:
                 jump hermione_main_menu
 
         "- Обучение -" if not daytime and not tut_happened and hermi.whoring <= 12:
-            if hermi.liking==0:
+            if hermi.liking>=0:
                 jump tutoring
             python:
                 for t in [
@@ -68,7 +101,7 @@ label hermione_approaching:
             jump hermione_main_menu
 
         "- Купить \"сексуальный\" рейтинг -" if this.Has("her_wants_buy"):#buying_favors_from_hermione_unlocked:
-                if hermi.liking==0:
+                if hermi.liking>=0:
                     jump new_personal_request
                 python:
                     for t in [
@@ -87,45 +120,94 @@ label hermione_approaching:
        
         
         
-        "- Дать ей подарок -" if not gifted:
+        "- Дать ей подарок -" : #if not gifted: Отключено ограничение на число подарков в день.
             $ choose = RunMenu()
             python:
                 for o in hero.Items():
-                    if not o.Name in {"wine", "scroll"}:
+                    if not o.Name in {"wine", "scroll"} and not o.GetValue("block") in ["gears_shirt", "gears_skirt", "gears_stockings", "gears_other", "gears_dress"] :
                         choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
 
             $ choose.Show("hermione_main_menu")
 
-
-                    
-        
-
-            
-        "- Гардероб -" if dress_code and this.Has("her_wants_buy"):
-            if hermi.liking==0:
+        "- Подарить ей одежду -" :
+            label wrd_clother_hermi :
                 menu:
-                    
-                    "- Надеть значок -" if (herView.data().getItemKey( G_N_BADGE )==None) and  hermi.Items.Any("badge_01"): #not ba_01 and badge_01 == 7:
-                        jump badge_put
-                    
-                    "- Снять значок -" if (herView.data().getItemKey( G_N_BADGE )!=None) and  hermi.Items.Any("badge_01"): #ba_01 and badge_01 == 7:
-                        jump badge_take
-                    
-                    "- Надеть колготки -" if (herView.data().getItemKey( G_N_NETS )==None) and  hermi.Items.Any("nets"): #not ne_01 and nets == 7: # Не перевел
-                        jump nets_put
-                    
-                    "- Снять колготки -" if (herView.data().getItemKey( G_N_NETS )!=None) and  hermi.Items.Any("nets"): #ne_01 and nets == 7:
-                        jump nets_take
-                    
-                    "- Надеть мини-юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'default' ) and hermi.Items.Any("miniskirt"): #not legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.:
-                        jump mini_on #28_gifts.rpy
+                    "- Юбки -":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_skirt" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
 
-                    "- Надеть длинную юбку -" if herView.data().checkItemKeyStyle( G_N_SKIRT, 'short' ) and hermi.Items.Any("miniskirt"): #legs_02 and gave_miniskirt: #Turns True when Hermione has the miniskirt.
-                        jump mini_off #28_gifts.rpy
-                
+                        $ choose.Show("wrd_clother_hermi")
+        
+                    "- Верх -":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_shirt" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
 
+                        $ choose.Show("wrd_clother_hermi")  
+        
+                    "- Чулки/Колготки -":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_stockings" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
+
+                        $ choose.Show("wrd_clother_hermi")
+        
+                    "- Платья-":
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_dress" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
+
+                        $ choose.Show("wrd_clother_hermi")
+        
+                    "- Прочее -": 
+                        $ choose = RunMenu()
+                        python:
+                            for o in hero.Items():
+                                if o.GetValue("block") == "gears_other" :
+                                    choose.AddItem("- "+o._caption+" -", "menu_gifts_actions" , o.Name)
+
+                        $ choose.Show("wrd_clother_hermi")
+                            
                     "- Ничего -":
-                        jump hermione_main_menu
+                        jump hermione_main_menu                    
+        
+     
+        "- Гардероб -" if dress_code and this.Has("her_wants_buy"):
+            if hermi.liking>=0:
+            
+                $ hermi.WrdMenuMainRun ()
+                jump hermione_main_menu
+
+            else:
+                python:
+                    for t in [
+                    (-2, "Мне очень жаль, профессор, может быть в другой раз..."),
+                    (-9, "Что не так с моей одеждой?"),
+                    (-19, "Нет, спасибо...."),
+                    (-29, "Я так не думаю..."),
+                    (-39, "Нет!"),
+                    (-100, "Я никогда не позволю вам снова решать, что мне носить!")
+                    ]:
+                        (_val, _text)=t
+                        if hermi.liking>=_val:
+                            renpy.say(her, _text)
+                            break
+                jump hermione_main_menu
+                
+        "- Примерка -" : #if dress_code and this.Has("her_wants_buy"):
+            if hermi.liking>=0:
+            
+                jump wrd_hermiona_menu_rent
+
             else:
                 python:
                     for t in [
@@ -882,7 +964,9 @@ label hermione_bookbuying:
         $ renpy.play('sounds/door.mp3') #Sound of a door opening.
         hide screen hermione_01_f #Hermione stands still.
         with Dissolve(.3)
+        hide screen points
         $ gold -=3000
+        show screen points
         $ hermione_takes_classes = True
         $ hermione_sleeping = True
         $ teacher_jinn_quest = 5
@@ -902,3 +986,400 @@ label hermione_bookbuying:
         m "{size=-4}(Нужно больше золота!){/size}"
         m "(У меня такое ощущение, что где-то я уже слышал эту фразу...)"
         jump hermione_main_menu
+
+
+label wrd_menu :
+    menu:
+    
+        "- Новые вещи ! -" if wrd_new_items > 0 or (wrd_standart02 == 0 and hermi.whoring >= 3) or (wrd_standart02 >= 1 and wrd_standart03 == 0 and hermi.whoring >= 6) or (wrd_standart03 >= 1 and wrd_standart04 == 0 and hermi.whoring >= 9) or (wrd_standart04 >= 1 and wrd_standart05 == 0 and hermi.whoring >= 15) :
+            menu :
+                
+                "- Надеть значок \"А.В.Н.Э.\" -" if hermi.Items.Any("badge") and wrd_badge_01 == 0 :
+                    jump wrd_badge_01_first_dress
+            
+                "- Надеть ажурные чулки -" if hermi.Items.Any("nets") and wrd_nets == 0 :
+                    jump wrd_nets_first_dress
+            
+                "- Надеть колготки -" if hermi.Items.Any("tights") and wrd_tights == 0 :
+                    jump wrd_tights_first_dress
+                    
+                "- Надеть укороченную школьную юбку -" if hermi.Items.Any("shortskirt") and wrd_shortskirt == 0 :
+                    jump wrd_shortskirt_first_dress
+            
+                "- Надеть сильно укороченную школьную юбку -" if hermi.Items.Any("xshortskirt") and wrd_xshortskirt == 0 :
+                    jump wrd_xshortskirt_first_dress
+            
+                "- Надеть короткую школьную юбку -" if hermi.Items.Any("xxshortskirt") and wrd_xxshortskirt == 0 :
+                    jump wrd_xxshortskirt_first_dress
+            
+                "- Надеть школьную мини-юбку -" if hermi.Items.Any("xsmallskirt") and wrd_xsmallskirt == 0 :
+                    jump wrd_xsmallskirt_first_dress
+            
+                "- Надеть укороченную школьную мини-юбку -" if hermi.Items.Any("xxsmallskirt") and wrd_xxsmallskirt == 0 :
+                    jump wrd_xxsmallskirt_first_dress
+            
+                "- Надеть супер-короткую школьную мини-юбку -" if hermi.Items.Any("xxxsmallskirt") and wrd_xxxsmallskirt == 0 :
+                    jump wrd_xxxsmallskirt_first_dress
+                    
+                "- Надеть юбку болельщицы Гриффиндора -" if hermi.Items.Any("skirt_cheerleader") and wrd_skirt_cheerleader == 0 :
+                    jump wrd_skirt_cheerleader_first_dress
+                    
+                "- Надеть миниюбку бизнес-леди -" if hermi.Items.Any("skirt_business") and wrd_skirt_business == 0 :
+                    jump wrd_skirt_business_first_dress
+                    
+                "- Надеть школьную рубашку без жилетки -" if wrd_standart02 == 0 and hermi.whoring >= 3 :
+                    jump wrd_standart02_first_dress
+                    
+                "- Надеть школьную рубашку без жилетки и галстука -" if wrd_standart02 >= 1 and wrd_standart03 == 0 and hermi.whoring >= 6 :
+                    jump wrd_standart03_first_dress
+                    
+                "- Надеть школьную рубашку и расстегнуть верхние пуговицы -" if wrd_standart03 >= 1 and wrd_standart04 == 0 and hermi.whoring >= 9 :
+                    jump wrd_standart04_first_dress
+                    
+                "- Надеть школьную рубашку, застегнутую на одну пуговицу -" if wrd_standart04 >= 1 and wrd_standart05 == 0 and hermi.whoring >= 15 :
+                    jump wrd_standart05_first_dress
+            
+                "- Надеть школьную рубашку мини-топик -" if hermi.Items.Any("skimpyshirt") and wrd_skimpyshirt == 0 :
+                    jump wrd_skimpyshirt_first_dress
+                    
+                "- Надеть кофту болельщицы Гриффиндора -" if hermi.Items.Any("shirt_cheerleader") and wrd_shirt_cheerleader == 0 :
+                    jump wrd_shirt_cheerleader_first_dress
+                    
+                "- Надеть белую рубашку в деловом стиле -" if hermi.Items.Any("shirt_business") and wrd_shirt_business == 0 :
+                    jump wrd_shirt_business_first_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+                    
+    
+        "- Юбки -":
+            menu:
+
+                "- Надеть длинную школьную юбку -" :
+                    jump wrd_skirt_dress
+            
+                "- Надеть укороченную школьную юбку -" if wrd_shortskirt >= 1 :
+                    jump wrd_shortskirt_dress
+            
+                "- Надеть сильно укороченную школьную юбку -" if wrd_xshortskirt >= 1 :
+                    jump wrd_xshortskirt_dress
+            
+                "- Надеть короткую школьную юбку -" if wrd_xxshortskirt >= 1 :
+                    jump wrd_xxshortskirt_dress
+            
+                "- Надеть школьную мини-юбку -" if wrd_xsmallskirt >= 1 :
+                    jump wrd_xsmallskirt_dress
+            
+                "- Надеть укороченную школьную мини-юбку -" if wrd_xxsmallskirt >= 1 :
+                    jump wrd_xxsmallskirt_dress
+            
+                "- Надеть супер-короткую школьную мини-юбку -" if wrd_xxxsmallskirt >= 1 :
+                    jump wrd_xxxsmallskirt_dress
+                    
+                "- Надеть юбку болельщицы Гриффиндора -" if wrd_skirt_cheerleader >= 1 :
+                    jump wrd_skirt_cheerleader_dress
+                    
+                "- Надеть миниюбку бизнес-леди -" if wrd_skirt_business >= 1 :
+                    jump wrd_skirt_business_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+        
+        "- Верх -":
+            menu:
+
+                "- Надеть школьную рубашку с жилеткой -" :
+                    jump wrd_standart01_dress
+
+                "- Надеть школьную рубашку без жилетки -" if wrd_standart02 >= 1 :
+                    jump wrd_standart02_dress
+                    
+                "- Надеть школьную рубашку без жилетки и галстука -" if wrd_standart03 >= 1 :
+                    jump wrd_standart03_dress
+                    
+                "- Надеть школьную рубашку и расстегнуть верхние пуговицы -" if wrd_standart04 >= 1 :
+                    jump wrd_standart04_dress
+                    
+                "- Надеть школьную рубашку, застегнутую на одну пуговицу -" if wrd_standart05 >= 1 :
+                    jump wrd_standart05_dress
+            
+                "- Надеть школьную рубашку мини-топик -" if wrd_skimpyshirt >= 1 :
+                    jump wrd_skimpyshirt_dress
+                    
+                "- Надеть кофту болельщицы Гриффиндора -" if wrd_shirt_cheerleader >= 1 :
+                    jump wrd_shirt_cheerleader_dress
+                    
+                "- Надеть белую рубашку в деловом стиле -" if wrd_shirt_business >= 1 :
+                    jump wrd_shirt_business_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+        
+        
+        "- Чулки/Колготки -":
+            menu:
+            
+                "- Снять чулки/колготки -" :
+                    jump wrd_nonets_dress
+            
+                "- Надеть ажурные чулки -" if wrd_nets >= 1 :
+                    jump wrd_nets_dress
+                    
+                "- Надеть колготки -" if wrd_tights >= 1 :
+                    jump wrd_tights_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+        
+#        "- Платья-":
+
+        
+        "- Прочее -":
+            menu:
+            
+                "- Снять значки -" :
+                    jump wrd_nobadge_dress
+            
+                "- Надеть значок \"А.В.Н.Э.\" -" if wrd_badge_01 >= 1 :
+                    jump wrd_badge_01_dress
+            
+                "- Ничего -":
+                    jump wrd_menu
+                
+                    
+        "- Примерка вещей напрокат -" :
+            jump wrd_hermi_rent_menu
+            
+
+        "- Ничего -":
+            jump hermione_main_menu
+        
+
+label wrd_hermi_rent_menu :
+
+    menu:
+        "- Форма веселой школьницы -" if wrd_rent_happy_schoolgirl == 1 :
+        
+           if hermi.whoring < 3 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_skirts_skirt02_short' )
+               $ herView.data().addItem( 'item_shirts_standard03_untucked' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_menu
+           
+        
+        "- Форма игривой школьницы -" if wrd_rent_playful_schoolgirl == 1:
+        
+           if hermi.whoring < 12 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_skirts_skirt04_xxshort' )
+               $ herView.data().addItem( 'item_shirts_standard05_untucked_unbuttoned_double' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_menu
+
+        
+        "- Форма болельщицы Гриффиндора -" if wrd_rent_cheerleader == 1 :
+        
+           if hermi.whoring < 6 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_skirts_cheerleader_gryffindor' )
+               $ herView.data().addItem( 'item_shirts_cheerleader_gryffindor' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_menu
+
+        
+        "- Одежда бизнес-леди -" if wrd_rent_business == 1 :
+        
+           if hermi.whoring < 9 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_menu
+           else :
+               $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
+    
+               call wrd_dress_undress
+    
+               $ herView.data().addItem( 'item_tits_no' )
+               $ herView.data().addItem( 'item_stockings_tights' )
+               $ herView.data().addItem( 'item_skirts_skirt_business' )
+               $ herView.data().addItem( 'item_shirts_blouse_business' )
+
+               $herView.hideshowQQ( "body_01.png", pos )
+    
+               pause.5
+               $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
+               $screens.Show("ctc").Pause().Hide("ctc")
+               pause 1
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               call wrd_dress_change
+
+               $herView.hideshowQQ( "body_01.png", pos )
+
+               jump wrd_menu
+        
+        "- Ничего -" :
+            jump wrd_menu
+
+            
+label wrd_hermiona_menu_rent :
+
+    menu:
+        "- Форма веселой школьницы -" if wrd_rent_happy_schoolgirl == 1 :
+        
+           if hermi.whoring < 3 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("standart3")
+               $hermi.WrdDress ("shortskirt")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_hermiona_menu_rent
+           
+        
+        "- Форма игривой школьницы -" if wrd_rent_playful_schoolgirl == 1:
+        
+           if hermi.whoring < 12 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("standart5")
+               $hermi.WrdDress ("xxshortskirt")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_hermiona_menu_rent
+
+        
+        "- Форма болельщицы Гриффиндора -" if wrd_rent_cheerleader == 1 :
+        
+           if hermi.whoring < 6 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("skirt_cheerleader")
+               $hermi.WrdDress ("shirt_cheerleader")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+               
+               jump wrd_hermiona_menu_rent
+
+        
+        "- Одежда бизнес-леди -" if wrd_rent_business == 1 :
+        
+           if hermi.whoring < 9 :
+               $herView.hideshowQQ( "body_31.png", pos )
+               "Извините, сэр, но этот наряд слишком нескромный."
+               $herView.hideshowQQ( "body_01.png", pos )
+               jump wrd_hermiona_menu_rent
+           else :
+           
+               $hermi.WrdDress ("skirt_business")
+               $hermi.WrdDress ("shirt_business")
+               $hermi.WrdDress ("tights")
+               $hermi.WrdMainBL()
+               
+               "Надеюсь, вам понравилось, сэр."
+    
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+
+               jump wrd_hermiona_menu_rent
+        
+        "- Ничего -" :
+            jump hermione_main_menu    

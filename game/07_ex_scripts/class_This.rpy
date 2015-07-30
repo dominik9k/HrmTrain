@@ -24,8 +24,8 @@ init -992 python:
                 this.Name=sName
 # Если уже активирована глобальная переменная event, ей присваивается новое значение, если, конечно, это ивент 
             e=self.GetCall(self.Name)
-            if hasattr(renpy.store,"event") and (e!=None): 
-                renpy.store.event=e
+            if hasattr(renpy.store,"wtevent") and (e!=None): 
+                renpy.store.wtevent=e
             return e
 
 #        def GetObjectByName(Name):
@@ -63,7 +63,7 @@ init -992 python:
         for s in reversed(labelHistory[0:len(labelHistory)-2]): 
             if s==actualLabel:
                 break
-            if not this.GetCall(s) in [None, renpy.store.event.Name]: # Если результат - ивент, отличный от заданного
+            if not this.GetCall(s) in [None, renpy.store.wtevent.Name]: # Если результат - ивент, отличный от заданного
                 return False
         return True
 
@@ -105,7 +105,7 @@ init -992 python:
 
     def SetHearts(heartCount, _event=None): # Установить количество сердечек текущему ивенту
         if _event==None:
-            _event=event
+            _event=wtevent
         return _event.SetValue("heartCount",heartCount)
 
     def IsFirstRun(): # Это первый запуск текущего ивента?
@@ -115,10 +115,10 @@ init -992 python:
         return IsRunNumberOrMore(2)
 
     def IsRunNumber(num): # Это запуск номер num
-        return event._finishCount==num-1
+        return wtevent._finishCount==num-1
 
     def IsRunNumberOrMore(num): # Это запуск номер num или последующий?
-        return event._finishCount>=num-1
+        return wtevent._finishCount>=num-1
 
     def Say(formatstring):
         if ":>" in formatstring:

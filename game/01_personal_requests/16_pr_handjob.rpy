@@ -15,12 +15,13 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
     
     $ pos = POS_140
     $herView.data().saveState()
+    $ hermi.WrdSetMain ()
 
     $ current_payout = 45 #Used when haggling about price of th favor.  
 #    if request_16_points == 0: # FIRST EVENT <============================================================== EVENT 01
@@ -498,7 +499,8 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
                 pause 
                         
                 #$herViewHead.data().addItem( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
-                $herViewHead.data().addItem( 'item_sperm_dried' )
+                #$herViewHead.data().addItem( 'item_sperm_dried' )
+                $ hermi.WrdSpermDried ()
                 $ posHead = gMakePos( 390, 300 )
                 $herViewHead.showQ( "body_119.png", posHead )
                 her2 "......................."
@@ -638,7 +640,8 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
                 with d3
                         
                 #$herViewHead.data().addItem( 'sperm_after', CharacterExItem( herViewHead.mMiscFolder, "sperm_00_after.png", G_Z_FACE + 1 ) )
-                $herViewHead.data().addItem( 'item_sperm_dried' )
+                #$herViewHead.data().addItem( 'item_sperm_dried' )
+                $ hermi.WrdSpermDried ()
                 $ posHead = gMakePos( 390, 300 )
                 $herViewHead.showQ( "body_119.png", posHead )
                 her2 "......................."
@@ -1435,7 +1438,7 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
     with d3
     her "Спасибо, сэр..."
 
-    if event.Name=="new_request_02": 
+    if wtevent.Name=="new_request_02": 
         jump new_request_16_jerkonly_to_02
 
     $herViewHead.data().delItem( 'item_sperm' )
@@ -1476,10 +1479,11 @@ label new_request_16: #LV.5 (Whoring = 12 - 14)
     with Dissolve(.3)
 
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
 
     call music_block
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     if daytime:
         $ hermione_takes_classes = True

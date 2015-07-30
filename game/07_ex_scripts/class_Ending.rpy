@@ -3,6 +3,7 @@
     define const_ENDING_PUBLIC_WHORE = 2
     define const_ENDING_YOUR_WHORE = 1
     define const_ENDING_STRONG_GIRL = 3
+    #define const_ENDING_CELEBRITY = 4
 
     return
 

@@ -203,6 +203,8 @@ screen main_menu:
         textbutton _("Загрузить") action ShowMenu("load")
         textbutton _("Настройки") action ShowMenu("preferences")
         textbutton _("Экстра") action ShowMenu("extras")
+        textbutton _("Форум") action Start("forum")
+        textbutton _("Язык/Language") action ShowMenu("lang_menu")
         textbutton _("Выход") action Quit(confirm=True)
 
 init -2:
@@ -212,6 +214,24 @@ init -2:
         size_group "mm"
 
 
+#######################
+# Language
+
+screen lang_menu :
+    window:
+        style "gm_root"
+    frame:
+        style_group "gm_nav"
+        xalign .98
+        yalign .98
+
+        
+        has vbox
+        
+        label _("Выбор языка")
+        textbutton "Русский" action Language(None)
+        textbutton "English" action Language("english")
+        textbutton _("Отмена") action Start("assmenu")
 
 #######################
 # Extras
@@ -228,24 +248,23 @@ screen extras:
 
         
         
-        
+
+        #if not persistent.game_complete:
+        #    textbutton _("{color=#858585}Тайная комната{/color}") action Start("sroom_locked")
+        #if persistent.game_complete:
+        #    textbutton _("Тайная комната") action Start("sroom_main")
         textbutton _("Об игре") action Start("abouttrainer")
-        textbutton _("F.A.Q.") action Start("faq")
+        textbutton _("От разработчиков") action Start("devel")
         if not persistent.game_complete:
             textbutton _("{color=#858585}Галерея{/color}") action Start("gallery_locked")
         if persistent.game_complete:
             textbutton _("Галерея") action Start("gallery")
-        textbutton _("Назад") action Start("assmenu") # Sent here from "EXTRAS" menu. Basically just jumps to the title screen. 
+        #textbutton _("От Акабура") action Start("faq")
+        
+        textbutton _("Отмена") action Start("assmenu") # Sent here from "EXTRAS" menu. Basically just jumps to the title screen. 
 
 init -2 python:
     style.gm_nav_button.size_group = "gm_nav"
-
-
-
-
-
-
-
 
 
 

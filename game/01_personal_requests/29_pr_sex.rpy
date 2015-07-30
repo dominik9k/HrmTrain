@@ -14,13 +14,14 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
             
     
     $ pos = POS_140
     $ posHead = gMakePos( 390, 340 )
     $herView.data().saveState()
+    $ hermi.WrdSetMain ()
 
     if IsFirstRun(): # FIRST EVENT <============================================================== EVENT 01
 #    if request_29_points == 0: # FIRST EVENT <============================================================== EVENT 01
@@ -535,7 +536,7 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
         $herViewHead.showQ( "body_132.png", posHead )
         her "Это из-за вас, сэр...{image=textheart.png}"
         $herViewHead.showQ( "body_134.png", posHead )
-        her2 "Вы долбите моё маленькую киску своим гигантским членом...{image=textheart.png}"
+        her2 "Вы долбите мою маленькую киску своим гигантским членом...{image=textheart.png}"
         $herViewHead.hideQ()
         g4 "Аааа, шлюха!"
         $herViewHead.showQ( "body_134.png", posHead )
@@ -986,11 +987,12 @@ label new_request_29: #LV.7 (Whoring = 18 - 20)
     with Dissolve(.3)
 
     $herView.data().loadState()
+    $ hermi.WrdSetMain ()
 
     #call music_block 
     
-    $event.Finalize()    
-    $SetHearts(GetStage(event._finishCount,1,3,1))
+    $wtevent.Finalize()    
+    $SetHearts(GetStage(wtevent._finishCount,1,3,1))
     if daytime:
         jump night_start
     else:

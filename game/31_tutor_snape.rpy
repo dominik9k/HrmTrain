@@ -225,7 +225,9 @@ label snape_tutor_2:
     #вступление пределать бы
     g9 "Вот золотишко за учебники."
     $ renpy.play('sounds/money.mp3')
+    hide screen points
     $gold -=7000
+    show screen points
     "Вы отдали Снейпу 7000 галеонов."
     hide screen snape_main                                                                                                                   #SNAPE
     with d3
@@ -288,6 +290,7 @@ label snape_tutor_2:
     m "В общем, я постараюсь что-нибудь придумать."
     "Квест обновлен: нужно достать учебники"
     sna "Ну что же, тогда удачи."
+    $screens.Hide("snape_main")
     $ teacher_jinn_quest = 3
     $ snape_busy = True
     hide screen snape_02 #Snape stands still.

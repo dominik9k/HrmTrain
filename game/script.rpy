@@ -22,7 +22,7 @@ init:
     python:
         global this
         this=This()
-        global event
+        global wtevent
         global screens
         screens=ScreenCollection()
         global choose
@@ -79,22 +79,59 @@ init:
             "\"Леди Спид Стик-2000\", элегантный способ передвижения для страстных ведьм. Торговой маркой гарантируется полное удовлетворение от эффекта. Закажите одну штуку для вашей ведьмы, и она больше не будет использовать ее скучную старую метлу!", "cupboard", None ),
         ("sexdoll", "Секс-кукла \"Джуанна\"", 0, "03_hp/18_store/23.png", 
             "Секс-кукла \"Джуанна\"... Очень реалистичная. Выглядит почти как настоящий человек под каким-то заклинанием.", "cupboard", None ),
+        ("shortskirt", "Школьная средняя юбка (40 см)", 700, "03_hp/18_store/07.png", 
+            "Школьная средняя юбка. Знаметно улучшает оценки.", "gears_skirt", None ),
+        ("xshortskirt", "Школьная короткая юбка (35 см)", 1000, "03_hp/18_store/07.png", 
+            "Школьная короткая юбка. Значительно улучшает оценки.", "gears_skirt", None ),
+        ("xxshortskirt", "Школьная игривая юбка (30 см)", 1500, "03_hp/18_store/07.png", 
+            "Школьная игривая юбка. Для игр и игрищ. Сильно улучшаяет оценки.", "gears_skirt", None ),
+        ("xsmallskirt", "Школьная мини-юбка (25 см)", 3000, "03_hp/18_store/07.png", 
+            "Школьная мини-юбка. Резко улучшает оценки. Повышает рейтинг игры до 12+.", "gears_skirt", None ),
+        ("xxsmallskirt", "Школьная микро-юбка (20 см)", 5000, "03_hp/18_store/07.png", 
+            "Школьная микро-юбка. Фантастически улучшает оценки. Повышает рейтинг игры до 16+.", "gears_skirt", None ),
+        ("xxxsmallskirt", "Школьная нано-юбка (10 см)", 0, "03_hp/18_store/07.png", 
+            "Школьная нано-юбка. Заставляет всех забыть про оценки. В том числе и учителей. Повышает рейтинг игры до 35+.", "gears_skirt", None ),
+        ("skirt_cheerleader", "Юбка болельщицы Гриффиндора", 1500, "03_hp/18_store/07.png", 
+            "Юбка болельщицы Гриффиндора. Настоящая. Остерегайтесь подделок.", "gears_skirt", None ),
+        ("skirt_business", "Миниюбка бизнес-леди", 3000, "03_hp/18_store/07.png", 
+            "Миниюбка бизнес-леди. Чем меньше прикрыты ноги, тем выгоднее условия контракта.", "gears_skirt", None ),
+        ("skimpyshirt", "Школьная рубашка-минитопик", 5000, "03_hp/18_store/07.png", 
+            "Школьная рубашка-минитопик. Будит в окружающих зверя. Если точнее - мартовского кота.", "gears_shirt", None ),
+        ("shirt_cheerleader", "Кофта болельщицы Гриффиндора", 1000, "03_hp/18_store/07.png", 
+            "Кофта болельщицы Гриффиндора. Стимулирует игроков сильнее играть, а болельщиков сильнее болеть.", "gears_shirt", None ), 
+        ("shirt_business", "Белая рубашка в деловом стиле", 1000, "03_hp/18_store/07.png", 
+            "Белая рубашка в деловом стиле. Цвет непорочности для порочных.", "gears_shirt", None ), 
         ("ball_dress", "Бальное платье", 1500, "03_hp/18_store/01.png", 
-            "Роскошное вечернее платье для особых случаев", "gears", None ),
-        ("badge_01", "Значок \"А.В.Н.Э.\"", 100, "03_hp/18_store/29.png", 
-            "Значок \"А.В.Н.Э.\". Симулируй заботу...", "gears", None ),
+            "Роскошное вечернее платье для особых случаев", "gears_dress", None ),
+        ("badge", "Значок \"А.В.Н.Э.\"", 100, "03_hp/18_store/29.png", 
+            "Значок \"А.В.Н.Э.\". Симулируй заботу...", "gears_other", None ),
         ("nets", "Ажурные чулки", 700, "03_hp/18_store/30.png", 
-            "Ажурные чулки. Вопреки распространенному мнению, они не были изобретены рыбаком.", "gears", None ),
-        ("miniskirt", "Школьная мини-юбка", 0, "03_hp/18_store/07.png", 
-            "Школьная мини-юбка. Резко улучшает оценки.", "gears", None ),
+            "Ажурные чулки. Вопреки распространенному мнению, они не были изобретены рыбаком.", "gears_stockings", None ),
+        ("tights", "Колготки", 300, "03_hp/18_store/30.png", 
+            "Колготки. Не кантовать.", "gears_stockings", None ),
         ("wine", "Вино Дамблдора", 0, "03_hp/18_store/27.png", 
             "Бутылка из тайника профессора Дамблдора...", "cupboard", None ),
         ("potions", "Неизвестное зелье", 0, "03_hp/18_store/32.png", 
             "Какое-то зелье...", "cupboard", None ),
+        ("dress", "Школьная рубашка с жилеткой", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка с жилеткой", "gears_shirt", None ),
+        ("standart2", "Школьная рубашка без жилетки", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка без жилетки", "gears_shirt", None ),
+        ("standart3", "Школьная рубашка без жилетки и галстука", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка без жилетки и галстука", "gears_shirt", None ),
+        ("standart4", "Школьная рубашка, расстегнутая сверху", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка, расстегнутая сверху", "gears_shirt", None ),
+        ("standart5", "Школьная рубашка, расстегнутая сверху и снизу", 0, "03_hp/18_store/01.png", 
+            "Школьная рубашка, расстегнутая сверху и снизу", "gears_shirt", None ),
+        ("panties", "Скромные белые трусики", 0, "03_hp/18_store/01.png", 
+            "Скромные белые трусики", "gears_panties", None ),
+        ("skirt", "Школьная длинная юбка (50см)", 0, "03_hp/18_store/01.png", 
+            "Школьная длинная юбка.", "gears_skirt", None ),
         ("scroll", "Священный свиток", 30, "03_hp/18_store/31.png", 
-            "Священный свиток содержит тайные знания...", "scroll", None) # {"pic":"03_hp/19_extras/xx.png"} )
+            "Священный свиток содержит тайные знания...", "scroll", None), # {"pic":"03_hp/19_extras/xx.png"} )
 
         ]
+
 
 # Заполнение массива предметов
         itemList=[]
@@ -113,7 +150,7 @@ init:
 
 # Инициализация коллекций предметов
         global itsDAHR
-        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":45}))
+        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":68, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
 
         global itsOWL
         itsOWL=RegEntry(ItemCollection("OWL"))
@@ -131,7 +168,7 @@ init:
                 constVals={"pos_door": gMakePos( 410, 0 ), "pos_doorleft": gMakePos( 370, 0 )}))        
         SetArrayValue("chibihermione", "door", [610,250])
         SetArrayValue("chibihermione", "center", [400,250])
-
+        
         global daphne
         daphne=RegEntry(Person("daphne", "Дафна", CharacterExData( WTXmlLinker.getLinkerKey_daphne()), 
             defVals={"pos": POS_140, "pos2": gMakePos( 340, 420 ), 
@@ -208,6 +245,38 @@ init:
 
 # КОНЕЦ ГЛАВНОГО СЦЕНАРИЯ
 
+### DR'S NEWSPAPER ooo ###
+
+        tu=["rights_1","rights_2","rights_3","rights_4","rights_5","magls_1","magls_2","magls_3","magls_4","magls_5","kviddich_1","kviddich_2","kviddich_3","kviddich_4","kviddich_5","kviddich_6"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+#        tu=["sex_1","sex_2","sex_3","sex_4","sex_5","maniac_1","maniac_2","maniac_3","nude_1","nude_2","nude_3","nude_4","nude_5"]
+#        for s in tu:
+#            s="nsp_event_"+s
+#            this.AddEvent(s) 
+#            s+="_complete" 
+#            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+        tu=["forest_1"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"DAY"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+            
+        tu=["forest_2","studio_1","studio_2","studio_3","studio_4","studio_5","studio_6"]
+        for s in tu:
+            s="nsp_event_"+s
+            this.AddEvent(s) 
+            s+="_complete"
+            this.Where({"NIGHT"}, s).AddStep(s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
+
+###
+
 # ВЕТКА ДАФНЫ
 # Ветка включается при вызове Снейпа ночью после того, как отработает ивент со Cнейпом, где он хвалится как трахает студенток
         this.Where({"SNAPE"},"daphne").AddStep("daphne_pre_01",        ready = lambda e: snape_events >= 6) 
@@ -218,13 +287,19 @@ init:
         this.Where({"MAIL"},"daphne_pre_06").AddStep("daphne_pre_06", ready = lambda e: e.prevInList.IsAgo(2)) 
         this.Where({"HERMICHAT"},"daphne").AddStep("daphne_pre_07",   ready = lambda e: e._start2+2<=day)
 # Будет стартовать через день, пока не завершится daphne_pre_finish
-        this.Where({"DAY"},"daphne").AddStep("daphne_pre_finish",     ready = lambda e: (e.prev.prevInList.IsFinished() and e.prev.IsAgo(2) and e._start2+3<=day), done=lambda e: e._finishCount>=4, constVals={"members":{"daphne"}}) 
-
+        this.Where({"DAY"},"daphne").AddStep("daphne_pre_finish",     ready = lambda e: (e.prev.prevInList.IsFinished() and e.prev.IsAgo(2) and e._start2+2<=day), done=lambda e: e._finishCount>=4, constVals={"members":{"daphne"}}) 
 
         this.AddEvent("daphne_approaching", constVals={"members":{"daphne"}}) # Это просто для счетчика вызывалась ли Дафна сегодня (ну и для отладки может помочь)
 
 # Поскольку точка "DAPHENTER" предваряет вызов меню и ивентов ниже, никаких дополнительных условий в ивентах меню не требуется
         this.Where({"DAPHENTER"},"dap_interlude_02").AddStep("dap_interlude_02", ready=lambda e: this.dap_request_02._finishCount>=1,constVals={"members":{"daphne"}})
+
+        li={"03":["\"Популярность\"","#(Пора занять её чем-то новым...)"]}
+        for s in li:
+            __s="dap_request_"+s
+            this.AddEvent(__s+"::"+li[s][0], points={"daphne_public"}, constVals={"eventPlan":li[s][1], "members":{"daphne"}})
+            __s+="_complete"
+            this.Where({"NIGHT"}, __s).AddStep(__s,  done = lambda e: e._finishCount>=e.prevInList._finishCount) 
 
         li={"02":["\"Покажись!\"","#(Становится жарковато. Предложу ей что-нибудь снять...)"]}
         for s in li:
@@ -291,7 +366,7 @@ init:
             lam=lambda e:e._status>=e._units
             if "book_07" in _sFullName: # У Вайфу морочливая обработка оставляю первоначальную на исходных флажках
                 lam = lambda e: dear_waifu_completed_once
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10 if _block=="books_edu" else 20} )
@@ -300,7 +375,7 @@ init:
 # Товары для газеты
 
         tu=[("nsp_newsp_book_pre::\"Самоучитель газетного дела\"",           100, "08_newspaper_scenario/books/prebook.png", "Эта книга описывает элементарные основы оформления и публикации газеты.",
-                "теперь я могу издавать собственную газету."),
+                "Теперь я могу издавать собственную газету."),
                 ]
 
         for t in tu:
@@ -308,7 +383,7 @@ init:
             _block="books_newsp"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
@@ -356,7 +431,7 @@ init:
             _block="books_newsp"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
@@ -385,10 +460,49 @@ init:
             _block="books_newsp2"
 
             lam=lambda e:e._status>=e._units
-            event=this.AddEvent(_sFullName,  
+            wtevent=this.AddEvent(_sFullName,  
                 ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
                 defVals={"status": -2},
                 constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 3} )
+                
+        tu=[("nsp_newsp_book_photo1::Фотоаппарат \"Гелиофотус 2\"",          250, "08_newspaper_scenario/photo/photo1.png", "Старинный фотоаппарат, способный делать вяло движущиеся черно-белые фотографии.",
+                "Благодаря прочитанному руководству вы можете использовать \"Гелиофотус 2\"."),
+                
+            ("nsp_newsp_book_photo2::Фотоаппарат \"Обскура Магика 60\"",           500, "08_newspaper_scenario/photo/photo2.png", "Невзрачный фотоаппарат, содержащий в качестве основного элемента волшебную серебрянную пластину. Позволяет делать цветные фотографии средней активности.",
+                "Благодаря прочитанному руководству вы можете использовать \"Обскура Магика 60\"."),
+                
+            ("nsp_newsp_book_photo3::Фотоаппарат \"Паномагик а777\"",           1000, "08_newspaper_scenario/photo/photo3.png", "Обработанный пылью фей фотоаппарат, напоминающий магловский ультразум. Способен делать активные 3д-фотографии.",
+                "Благодаря прочитанному руководству вы можете использовать \"Паномагик а777\"."),
+                
+            ("nsp_newsp_book_photo4::Фотоаппарат \"Моменто Мемориус 2000\"",           2500, "08_newspaper_scenario/photo/photo4.png", "Мощнейший фотоаппарат, слабо светящийся в темноте. Сделанные им фото по-настоящему живут и способны даже выглядывать из кадра.",
+                "Благодаря прочитанному руководству вы можете использовать \"Моменто Мемориус 2000\"."),
+
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp2"
+
+            lam=lambda e:e._status>=e._units
+            wtevent=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 2} )
+                
+        tu=[("nsp_newsp_book_video::Книга \"Я и мой шар\"",         5000, "08_newspaper_scenario/sphere/Book_sphere.png", "Книга о секретах использования полученного в хрустальном шаре изображения для газеты.",
+                "Благодаря прочитанной книге вы можете помещать в газету видеоролики, показанные хрустальным шаром."),
+
+                ]
+
+        for t in tu:
+            (_sFullName, _price, _img, _description, _conclusion)=t
+            _block="books_newsp2"
+
+            lam=lambda e:e._status>=e._units
+            wtevent=this.AddEvent(_sFullName,  
+                ready= lambda e: GetStoreValue(e.Name, "status")>=0, done=lam , 
+                defVals={"status": -2},
+                constVals={"img": _img, "description":_description, "block":_block, "price":_price, "conclusion":_conclusion, "units": 10} )
 
 ####### 
 
@@ -458,7 +572,7 @@ init:
     $ layout.SLOW_SKIP = _("Вы уверены, что хотите начать пропуск текста?")
     $ layout.FAST_SKIP_UNSEEN = _("Вы уверены, что хотите пропустить следующий выбор?")
     $ layout.FAST_SKIP_SEEN = _("Вы уверены, что хотите пропустить следующий диалог или выбор?")
-    # $ config.language = 'russian'
+    #$ config.language = 'russian'
     
     # $ config.keymap['hide_windows'].remove('mouseup_2')
     # $ config.keymap['hide_windows'].remove('h')
@@ -466,6 +580,11 @@ init:
     
 #define m = Character(None, window_left_padding=200, image="mage", color="#402313", ctc="ctc3", ctc_position="fixed")
 
+###### Felix Locking ######
+
+    $ felixblock = False
+
+####################
 
 label splashscreen:
     $ renpy.pause(0)
@@ -3918,6 +4037,58 @@ image heart:
     "ani01/h02.png"
     pause.1
     repeat
+    
+### DR'S Newspaper ooo ###
+
+image nsp_cheerleader_dance1_ani:
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_02.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_03.png"
+    pause.5    
+    "03_hp/08_animation_02/nsp01_cheerleader_04.png"
+    pause.5    
+    repeat   
+    
+image nsp_cheerleader_dance2_ani:
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_02.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_03.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_04.png"
+    pause.3    
+    "03_hp/08_animation_02/nsp01_cheerleader_01.png"
+    pause.5  
+    "03_hp/08_animation_02/nsp01_cheerleader_05.png"
+    pause.5  
+    repeat 
+    
+image nsp_hermiona_panic_ani:
+    "03_hp/animation/h_run_01.png"
+    pause.07
+    "03_hp/animation/h_run_02.png"
+    pause.07
+    "03_hp/animation/h_run_03.png"
+    pause.07
+    "03_hp/animation/h_run_04.png"
+    pause.07
+    "03_hp/animation/h_run_05.png"
+    pause.07
+    "03_hp/animation/h_run_01f.png"
+    pause.07
+    "03_hp/animation/h_run_02f.png"
+    pause.07
+    "03_hp/animation/h_run_03f.png"
+    pause.07
+    "03_hp/animation/h_run_04f.png"
+    pause.07
+    "03_hp/animation/h_run_05f.png"
+    pause.07
+    repeat
+    
 ##########################SEX################
 
 
@@ -4921,6 +5092,7 @@ define g8 = Character(None, window_left_padding=200, image="mage8", color="#4023
 define g9 = Character(None, window_left_padding=200, image="mage9", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g10 = Character(None, window_left_padding=200, image="mage10", color="#402313", ctc="ctc3", ctc_position="fixed")
 define g11 = Character(None, window_left_padding=200, image="mage11", color="#402313", ctc="ctc3", ctc_position="fixed")
+define a = Character(None, window_left_padding=220, image="aka", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a1 = Character(None, window_left_padding=220, image="aka1", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a2 = Character(None, window_left_padding=220, image="aka2", color="#402313", ctc="ctc3", ctc_position="fixed")
 define a3 = Character(None, window_left_padding=220, image="aka3", color="#402313", ctc="ctc3", ctc_position="fixed")
@@ -5000,10 +5172,14 @@ init-2:
     
     ###HARRY POTTER CHARACTERS###
     $ translators = Character('Переводчик', color="#0089BE", show_two_window=True, ctc="ctc3", ctc_position="fixed")
-    $ skaz = Character('Сказочник', color="#0000FF")
-    $ nyark = Character ('Nyarkohotep', color="FF0000")
+    #$ skaz = Character('Сказочник', color="#0000FF")
+    #$ nyark = Character ('Nyarkohotep', color="FF0000")
     ### DR'S CODE ooo ###
-    $ dr = Character('Дрон', color="#00FF00")
+    #$ dr = Character('Дрон', color="#00FF00")
+    $ ach = Character('Достижение', color = "#888888")
+    $ dev = Character('??????', color = "#0000FF")
+    ###
+    #$ felix = Character('Феликс', color="#7789CA")
     ###
     $ her = Character('Гермиона', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ her2 = Character('Гермиона', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
@@ -5092,14 +5268,16 @@ label start:
 
     # Ending class initialization
     call Ending_constants
+    call Achievement_constants
     python:
         global end
+        global achieve
     $ end = Ending ()
+    $ achieve = Achievement()
 
     # Создание elog должно стоять перед вызовами GetValue, так что лучше его сделать сразу после метки start
     call start_elog
     call after_load
-
 
     call main_ex_CharacterExItem_constants
     python:
@@ -5133,7 +5311,9 @@ label start:
 #    $herView.data().addItemSet( 'hermione_body' )
 #    $herView.data().addItemSet( 'hermione_start_clothes' )
 
-
+    
+    $ hermi.WrdInit()
+    $ hermi.WrdSetMain()
 
     $ gold = 0
     $ turbo =1
@@ -5148,7 +5328,7 @@ label start:
     $ no_blinking = False #When True - blinking animation is not displayed. 
     $ sperm_on_tits = False #Sperm on tits when Hermione pulls her shirt up.
     $ aftersperm = False #Shows cum stains on Hermione's uniform.
-    $ legs_02 = False # Turns TRUE when miniskirt is activated.
+    $ legs_02 = False # Turns TRUE when xxxsmallskirt is activated.
     $ h_tears = False #Displays a layer with tears.
      
     $ current_payout = 0 #Used when haggling about price of th favor.
@@ -5304,13 +5484,13 @@ label start:
     
     
    
-    ### MINISKIRT ###
+    ### XXXSMALLSKIRT ###
 #    $ bought_skirt_already = False # Turns TRUE after you redeem the voucher and get the mini skirt.
-#    $ bought_miniskirt = False #Affects 15_mail.rpy
-#    $ have_miniskirt = False # Turns TRUE when you have the skirt in your possession.
-#    $ gave_miniskirt = False #Turns True when Hermione has the miniskirt.
+#    $ bought_xxxsmallskirt = False #Affects 15_mail.rpy
+#    $ have_xxxsmallskirt = False # Turns TRUE when you have the skirt in your possession.
+#    $ gave_xxxsmallskirt = False #Turns True when Hermione has the xxxsmallskirt.
     
-    $ dress_code = False # Turns TRUE when you gift the miniskirt. Unlocks the "dress code" button.
+    $ dress_code = False # Turns TRUE when you gift the xxxsmallskirt. Unlocks the "dress code" button.
     
     show image "blackfade.png"
 
@@ -5344,26 +5524,26 @@ label start:
 #            $ h_xpos=370 #Defines position of the Hermione's full length sprite. (Default 370). (Center: 140)                                                       #HERMIONE
 #            $ h_ypos=0 #Defines position of the Hermione's full length sprite. (Default 370). (Center: 140)                                                       #HERMIONE
 #            jump test
-    nyark "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
-    nyark "Игра получилась объемная, и становится больше с каждым новым обновлением."
-    nyark "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
-    nyark "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
-    m "Почему \"Авогадро\"?"
-    nyark "..."
-    nyark "... потому что звучит круто?"
-    m "У меня для тебя плохие новости..."
-    m "И вообще, игра еще не началась, а ты уже занимаешься самовставками, при том, что работы сделал с гулькин нос."
-    nyark "Но я..."
-    m "И что с этим красным цветом на твоем нике?"
-    nyark "Красный - цвет силы!"
-    m "..."
-    m "Я ухожу отсюда."
-    $ renpy.play('sounds/door.mp3')
-    nyark "..."
-    nyark "Чем плох красненький..?"
-    nyark "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
-    nyark "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
-    nyark "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
+#    dev "Всем привет, и с новой версией \"Тренера Ведьмы\"!"
+#    dev "Игра получилась объемная, и становится больше с каждым новым обновлением."
+#    dev "И поэтому проходить ее каждый раз, чтобы добраться до нового контента может быть очень утомительным."
+#    dev "Вы хотите включить \"Режим Авогадро\", чтобы получить кучу золота, очков Слизерина и послабления в некоторых других областях?"
+#    m "Почему \"Авогадро\"?"
+#    dev "..."
+#    dev "... потому что звучит круто?"
+#    m "У меня для тебя плохие новости..."
+#    m "И вообще, игра еще не началась, а ты уже занимаешься самовставками, при том, что работы сделал с гулькин нос."
+#    dev "Но я..."
+#    m "И что с этим красным цветом на твоем нике?"
+#    dev "Красный - цвет силы!"
+#    m "..."
+#    m "Я ухожу отсюда."
+#    $ renpy.play('sounds/door.mp3')
+#    dev "..."
+#    dev "Чем плох красненький..?"
+#    dev "*вздох* В общем, если надо, я могу намного облегчить ваше прохождение."
+#    dev "Вы хотите воспользоваться этим эксплоитом, или в полной мере насладиться Гриндом?"
+#    dev "Предупреждаю - возможны баги и несоответствия с сюжетом игры."
     
     menu:
         "Дай мне чит!":
@@ -5373,8 +5553,8 @@ label start:
             ">Добавлена здоровая куча золота.\n>Слизерин находится в далеком отрыве от всех.\n>Поладить со Снейпом стало гораздо легче."
             
         "Нет, читеры должны гореть в аду!":
-            nyark "..."
-            nyark "Ты - истинный самурай."
+#            dev "..."
+            dev "Ты - истинный самурай."
             pass
     menu:         
         "Вы желаете пропустить интро?"

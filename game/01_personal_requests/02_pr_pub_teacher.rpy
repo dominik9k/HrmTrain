@@ -11,7 +11,7 @@ label new_request_02_c:
         "\"(Да, давай попробуем!)\"":
             pass
         "\"(Не сейчас)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
 
     m "Мисс Грейнджер, я хочу, чтобы вы флиртовали с учителем."
@@ -62,7 +62,7 @@ label new_request_02_c:
 
     $ hermione_takes_classes = True
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     jump day_main_menu
 
@@ -340,9 +340,9 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
                                     with d5
                                     $herView.data().saveState()
                                     # add pose with lifted skirt and authograph
-                                    #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
-                                    $herView.data().addItem( 'item_pose_lifted_skirt' )
-                                    #$herView.data().addItemKey( 'autograph', CharacterExItem( herView.mMiscFolder, 'autograph.png', G_Z_LEGS + 1 ) )
+                                    #call wrd_dress_undress_skirts
+                                    $ hermi.WrdUpSkirt()
+                                    #$herView.data().addItem( 'item_pose_lifted_skirt' )
                                     $herView.data().addItem( 'item_autograph' )
                                     
                                     $herView.showQ( "body_51.png", pos )
@@ -363,6 +363,7 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
                                     
                                     # load before pose
                                     $herView.data().loadState()
+                                    $ hermi.WrdSetMain ()
                                     
                                     $herView.showQ( "body_47.png", pos, fade )
                                     pause
@@ -639,7 +640,7 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
     $ request_02_c_points += 1 #Leveling up the event.
 #    $ request_02_c = False 
     $ hermione_sleeping = True
-    $event.Finalize()    
+    $wtevent.Finalize()    
     return    
     
 label could_not_flirt_02: #Sent here when chose "Задание провалено! Ты не получишь очки!"

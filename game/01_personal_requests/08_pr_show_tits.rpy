@@ -16,7 +16,7 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             with d3
             pass
         "\"(Не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
     
     if hermi.whoring <=5:
@@ -154,7 +154,10 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
         #$ only_upper = True #No lower body displayed. 
         
         # add tits pose!
-        call addTitsPose
+        #call wrd_dress_undress_shirts
+        #$ herView.data().addItem( 'item_tits' )
+        #call addTitsPose
+        $ hermi.WrdUpShirt ()
     
         $herView.showQQ( "body_81.png", pos )
         pause
@@ -209,7 +212,10 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             $herView.hideQQ()
             
             # add tits pose!
-            call addTitsPose
+            #call wrd_dress_undress_shirts
+            #$ herView.data().addItem( 'item_tits' )
+            #call addTitsPose
+            $ hermi.WrdUpShirt()
 
             $herView.showQQ( "body_81.png", pos )
             #$ only_upper = True #No lower body displayed. 
@@ -367,7 +373,10 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             
 
             # add tits pose!
-            call addTitsPose
+            #call wrd_dress_undress_shirts
+            #$ herView.data().addItem( 'item_tits' )
+            #call addTitsPose
+            $ hermi.WrdUpShirt()
             
             $herView.showQQ( "body_84.png", pos )
             #$ only_upper = True #No lower body displayed. 
@@ -984,8 +993,9 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                         call delSperm
                         
                         #here we remove pose and add aftersperm effect
-                        call addAfterSperm
-
+                        #call addAfterSperm
+                        $ hermi.WrdSpermDried ()
+                        
                         $herView.showQ( "body_45.png", pos )
                         pause
                         her "Ну, это следует сделать сейчас..."
@@ -1053,8 +1063,9 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
 
                         
                         # remove pose and add aftersperm
-                        call addAfterSperm
-
+                        #call addAfterSperm
+                        $ hermi.WrdSpermDried()
+                        
                         $herView.showQ( "body_45.png", pos )
                         pause
                         her "Ну, это следует сделать сейчас..."
@@ -1089,8 +1100,10 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
     with Dissolve(1)
     
     # remove pose here, because sometimes we need to keep added items even here ( like sperm )
-    $herView.data().delPose()
-
+    #$herView.data().delPose()
+    $herView.data().loadState()
+    $ hermi.WrdSetMain()
+    
     $ pos = POS_370
     $herView.showQQ( "body_29.png", pos )
     her ".................."
@@ -1163,8 +1176,9 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
 
     # load from pose with tits and that sperm!
     $herView.data().loadState()
+    $ hermi.WrdSetMain()
     
-    $event.Finalize()    
+    $wtevent.Finalize()    
     jump finish_daytime_event
 
 
@@ -1190,11 +1204,26 @@ label addAfterSperm:
     # del pose and add aftersperm
     $herView.data().delPose()
     #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-    $herView.data().addItem( 'item_sperm_dried' )
+    call wrd_dress_change_silent
+    if wrd_skimpyshirt == 1 :
+        $herView.data().addItem( 'item_sperm_dried_up_mini' )
+    elif wrd_shirt_cheerleader == 1 :
+        pass
+    else :
+        $herView.data().addItem( 'item_sperm_dried_up' )
+        
+    if wrd_xxsmallskirt == 1 :
+        $herView.data().addItem( 'item_sperm_dried_down_mini' )
+    elif wrd_xxxsmallskirt == 1 or wrd_skirt_cheerleader == 1:
+        pass
+    else :
+        $herView.data().addItem( 'item_sperm_dried_down' )
+
     return
     
 label loadState_and_could_not_flirt:
     $herView.data().loadState()
+    $ hermi.WrdSetMain()
     jump could_not_flirt
 #    jump finish_daytime_event
 

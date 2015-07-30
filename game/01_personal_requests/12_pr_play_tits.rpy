@@ -14,7 +14,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
             with d3
             pass
         "\"(Нет, не сейчас.)\"":
-            $event.NotFinished()
+            $wtevent.NotFinished()
             jump new_personal_request
     
     if hermi.whoring <=8:
@@ -22,6 +22,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
 
     $ pos = POS_140
     $ herView.data().saveState()
+    $ hermi.WrdSetMain ()
         
     if IsFirstRun() and hermi.whoring <= 14: # LEVEL 05 (one level higher then level at which it unlocks - 04) # FIRST TIME.
 #    if request_12_points == 0 and whoring <= 14: # LEVEL 05 (one level higher then level at which it unlocks - 04) # FIRST TIME.
@@ -61,7 +62,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
             her "Сэр?"
             m "Я бы хотел поиграть немного с вашей грудью..."
             $herView.hideshowQQ( "body_79.png", pos )
-            her "Сэр... Лучше бы вы не делали мне таких предложения..."
+            her "Сэр... Лучше бы вы не делали мне таких предложений..."
             m "А что? Тяжело отказаться?"
             her "Ничего подобного, сэр."
             m "Я дам тебе 35 очков за это..."
@@ -111,7 +112,10 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     $herView.hideQQ()
     #$ only_upper = True #No lower body displayed. 
     #$herView.data().addPose( CharacterExItemPoseShowTits( herView.mPoseFolder, 'pose_dress_up.png', G_Z_POSE ) )
-    $herView.data().addItem( 'item_pose_show_tits' )
+    #call wrd_dress_undress_shirts
+    #$ herView.data().addItem( 'item_tits' )
+    #$herView.data().addItem( 'item_pose_show_tits' )
+    $ hermi.WrdUpShirt ()
     $herView.showQQ( "body_82.png", pos )
     pause
     her "...................................."
@@ -126,7 +130,9 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
             label no_smacking_tits:
                 pass
             $herView.hideQQ()
-            $herView.data().delPose()
+            #$herView.data().delPose()
+            $ hermi.WrdSetMain ()
+            $ hermi.WrdNoShirt ()
             show screen blkfade
             with d5
             hide screen hermione_04 #Stands with tits out.
@@ -423,6 +429,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
 
                 # restore state before leaving
                 $herView.data().loadState()
+                $ hermi.WrdSetMain ()
                 jump could_not_flirt #Sent here when choose "Favor failed! No points for you!" (Hermione is leaving without getting any points).
                 
                     
@@ -576,6 +583,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
                 jump no_smacking_tits #Jumps to usual tits molesting scene.
 
     
+    call wrd_dress_change_silent
     hide screen h_c_u
     hide screen g_c_u
     hide screen g_c_c_u # Genie's sperm. Universal.
@@ -590,7 +598,7 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     pause.1
     hide screen blkfade
     with d3
-    if event.Name=="new_request_04":
+    if wtevent.Name=="new_request_04":
         jump new_request_04_finish
 
     $ gryffindor += current_payout #35
@@ -636,9 +644,10 @@ label new_request_12: #LV.4 (Whoring = 9 - 11)
     with Dissolve(.3)
 
     $ herView.data().loadState()
+    $ hermi.WrdSetMain ()
     call music_block
 
-    $event.Finalize()    
+    $wtevent.Finalize()    
 
     if daytime:
         $ hermione_takes_classes = True

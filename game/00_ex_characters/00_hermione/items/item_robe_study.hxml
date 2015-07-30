@@ -10,5 +10,44 @@
 		<zorder>dress+1</zorder>
 		<parent>body</parent>
 		<hidelist>skirt</hidelist>
+		<actions>
+
+			<action event="selfAdded">
+				<body>
+					<block></block>
+				</body>
+				<result type="removeItem">
+					<item>item_tits</item>
+				</result>
+			</action>
+
+			<action event="selfAdded">
+				<body>
+					<block></block>
+				</body>
+				<result type="removeItem">
+					<item>item_tits_no</item>
+				</result>
+			</action>
+
+			<action event="selfRemoved">
+				<body>
+					<block></block>
+				</body>
+				<result type="addItem">
+					<item>item_tits</item>
+				</result>
+			</action>
+
+			<action event="selfRemoved">
+				<body>
+					<block></block>
+				</body>
+				<result type="addItem">
+					<item>item_tits_no</item>
+				</result>
+			</action>
+
+		</actions>
 	</style>
 </item>
