@@ -203,9 +203,8 @@ init:
         this                    .AddStep("event_12",                 ready = lambda e: e.prev.IsAgo(2))
         this                    .AddStep("event_13",                 ready = lambda e: e.prev.IsAgo(2))
         this.Where({"DAY"})     .AddStep("event_14:her_summon")
-        this.Where({"NIGHT"})   .AddStep("event_15:her_wants_buy",   ready = lambda e: e.prev.IsAgo(3))
-        this.Where({"CHITCHAT"}).AddStep("chitchat_event_01",        ready = lambda e: event14_happened and not chitchat_event_01_happened)
-        
+        this.Where({"CHITCHAT"}).AddStep("chitchat_event_01",        ready = lambda e: e.prev.IsAgo(2))
+        this.Where({"NIGHT"})   .AddStep("event_15:her_wants_buy",   ready = lambda e: e.prev.IsAgo(7))
 
 
         li={"01":"\"Поговори со мной\"", "02": "\"Отличные трусики!\"", "04":"\"Полапать грудь!\"", "05":"Полапать попку!", "08":"\"Покажи их мне!\"", 
