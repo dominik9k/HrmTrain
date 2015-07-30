@@ -1998,7 +1998,7 @@ label event_11: #Third visit, after second special date with Snape. Hermione com
             her "С другими студентами. Но не со мной, сэр!"
             $herView.hideshowQQ( "body_13.png", pos )
             her "Я никогда..."
-        "\"(Прекращай, Снейп!)\"":
+        "\"(Так держать, Снейп!)\"":
             $herView.hideshowQQ( "body_03.png", pos )
             her "Простите?"
             m "Что?"
