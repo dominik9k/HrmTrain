@@ -993,14 +993,14 @@ translate english devel_cf2f0ac0:
 # game/30_how.rpy:458
 translate english devel_a43e78bb:
 
-    # dev "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
-    dev "{a=http://wtrus.ixbb.ru}OUR FORUM IS HERE{/a}"
+    # dev "{a=http://skazgames.com/forum/}НАШ ФОРУМ ТУТ{/a}"
+    dev "{a=http://skazgames.com/forum/}OUR FORUM IS HERE{/a}"
 
 # game/30_how.rpy:468
 translate english forum_64579cee:
 
-    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
-    dev "So, what you see before you is a modified version of the game, that's being made independently (without Akabur's participation) by a team of dedicated developers. Welcome to our {a=http://wtrus.ixbb.ru}FORUM{/a}."
+    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://skazgames.com/forum/}НАШ ФОРУМ{/a}."
+    dev "So, what you see before you is a modified version of the game, that's being made independently (without Akabur's participation) by a team of dedicated developers. Welcome to our {a=http://skazgames.com/forum/}FORUM{/a}."
 
 translate english strings:
 
@@ -1283,14 +1283,14 @@ translate english devel_0e6b5f9f:
 # game/30_how.rpy:335
 translate english devel_fb3f35e0:
 
-    # dev "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
-    dev "{a=http://wtrus.ixbb.ru}Our forum is HERE{/a}"
+    # dev "{a=http://skazgames.com/forum/}НАШ ФОРУМ ТУТ{/a}"
+    dev "{a=http://skazgames.com/forum/}Our forum is HERE{/a}"
 
 # game/30_how.rpy:345
 translate english forum_d54c28dc:
 
-    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
-    dev "So, what you see before you is a modified version of the game, that's being made independently (without Akabur's participation) by a team of dedicated developers. Welcome to our {a=http://wtrus.ixbb.ru}FORUM{/a}."
+    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://skazgames.com/forum/}НАШ ФОРУМ{/a}."
+    dev "So, what you see before you is a modified version of the game, that's being made independently (without Akabur's participation) by a team of dedicated developers. Welcome to our {a=http://skazgames.com/forum/}FORUM{/a}."
 
 # TODO: Translation updated at 2015-07-28 10:13
 

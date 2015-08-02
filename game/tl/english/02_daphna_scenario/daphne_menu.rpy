@@ -21,8 +21,8 @@ translate english daphne_main_menu_requests_669df0d7:
 # game/02_daphna_scenario/daphne_menu.rpy:89
 translate english daphne_main_menu_requests_a93d6d17:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}"
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}"
 
 # game/02_daphna_scenario/daphne_menu.rpy:90
 translate english daphne_main_menu_requests_cfb51d03:
@@ -71,7 +71,7 @@ translate english daphne_main_menu_requests_8180a9fd:
 # game/02_daphna_scenario/daphne_menu.rpy:89
 translate english daphne_main_menu_requests_d1c87a5f:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
     dev ""
 
 # game/02_daphna_scenario/daphne_menu.rpy:90

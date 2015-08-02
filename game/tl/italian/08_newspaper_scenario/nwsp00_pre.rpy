@@ -369,13 +369,13 @@ translate italian nsp_her_demo2_24d1dcb9:
 # game/08_newspaper_scenario/nwsp00_pre.rpy:365
 translate italian nsp_her_demo2_8c3b8398:
 
-    # dr "1) Оставьте отзыв на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    # dr "1) Оставьте отзыв на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
     dr ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:366
 translate italian nsp_her_demo2_2d515ca8:
 
-    # dr "2) Принимайте активное участие в обсуждениях на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    # dr "2) Принимайте активное участие в обсуждениях на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
     dr ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:367
@@ -455,13 +455,13 @@ translate italian nsp_her_demo2_dc019a16:
 # game/08_newspaper_scenario/nwsp00_pre.rpy:365
 translate italian nsp_her_demo2_42d8e002:
 
-    # dev "1) Оставьте отзыв на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    # dev "1) Оставьте отзыв на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
     dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:366
 translate italian nsp_her_demo2_87f8a545:
 
-    # dev "2) Принимайте активное участие в обсуждениях на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    # dev "2) Принимайте активное участие в обсуждениях на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
     dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:367
