@@ -621,13 +621,13 @@ translate italian devel_0e6b5f9f:
 # game/30_how.rpy:336
 translate italian devel_fb3f35e0:
 
-    # dev "{a=http://wtrus.ixbb.ru}НАШ ФОРУМ ТУТ{/a}"
+    # dev "{a=http://skazgames.com/forum/}НАШ ФОРУМ ТУТ{/a}"
     dev ""
 
 # game/30_how.rpy:346
 translate italian forum_d54c28dc:
 
-    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://wtrus.ixbb.ru}НАШ ФОРУМ{/a}."
+    # dev "Итак, перед вами модификация игры, которая развивается независимой (от Акабура) командой разработчиков. Добро пожаловать на {a=http://skazgames.com/forum/}НАШ ФОРУМ{/a}."
     dev ""
 
 translate italian strings:

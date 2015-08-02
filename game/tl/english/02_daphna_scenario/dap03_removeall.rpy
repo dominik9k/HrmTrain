@@ -39,8 +39,8 @@ translate english dap_request_03_1f10307a:
 # game/02_daphna_scenario/dap03_removeall.rpy:122
 translate english dap_request_03_28406d38:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}."
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}."
 
 # game/02_daphna_scenario/dap03_removeall.rpy:123
 translate english dap_request_03_76ed1c6f:
@@ -97,8 +97,8 @@ translate english dap_request_03_8180a9fd:
 # game/02_daphna_scenario/dap03_removeall.rpy:122
 translate english dap_request_03_d1c87a5f:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}."
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}."
 
 # game/02_daphna_scenario/dap03_removeall.rpy:123
 translate english dap_request_03_db8f717a:

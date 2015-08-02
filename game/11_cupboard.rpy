@@ -174,7 +174,7 @@ label cupboard:
                         $gold+=100
                         show screen points
                     "Прохождение":
-                        "Прохождение и ответы на частые вопросы можно найти {a=http://wtrus.ixbb.ru/viewtopic.php?id=3}ЗДЕСЬ{/a}. "
+                        "Прохождение и ответы на частые вопросы можно найти {a=http://skazgames.com/forum/viewtopic.php?f=2&t=30}ЗДЕСЬ{/a}. "
 
                     "- Ничего -":
                         jump cupboard

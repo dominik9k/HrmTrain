@@ -81,7 +81,7 @@ translate german cheat_help_ed10f1a5:
 # game/11_cupboard.rpy:177
 translate german cheat_help_74874caf:
 
-    # "Прохождение и ответы на частые вопросы можно найти {a=http://wtrus.ixbb.ru/viewtopic.php?id=3}ЗДЕСЬ{/a}. "
+    # "Прохождение и ответы на частые вопросы можно найти {a=http://skazgames.com/forum/viewtopic.php?f=2&t=30}ЗДЕСЬ{/a}. "
     ""
 
 # game/11_cupboard.rpy:262

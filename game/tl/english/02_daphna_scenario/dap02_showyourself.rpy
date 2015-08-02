@@ -63,8 +63,8 @@ translate english dap_request_02_complete_a517a789:
 # game/02_daphna_scenario/dap02_showyourself.rpy:245
 translate english dap_request_02_complete_28406d38:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}."
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}."
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:246
 translate english dap_request_02_complete_304e7a45:
@@ -87,8 +87,8 @@ translate english dap_request_02_complete_a517a789_1:
 # game/02_daphna_scenario/dap02_showyourself.rpy:261
 translate english dap_request_02_complete_28406d38_1:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}"
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}"
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:262
 translate english dap_request_02_complete_304e7a45_1:
@@ -131,8 +131,8 @@ translate english dap_request_02_complete_6569410c:
 # game/02_daphna_scenario/dap02_showyourself.rpy:245
 translate english dap_request_02_complete_d1c87a5f:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}"
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}"
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:246
 translate english dap_request_02_complete_a68e1bc3:
@@ -155,8 +155,8 @@ translate english dap_request_02_complete_6569410c_1:
 # game/02_daphna_scenario/dap02_showyourself.rpy:261
 translate english dap_request_02_complete_d1c87a5f_1:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
-    dev "Please leave your questions, thanks and feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}"
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
+    dev "Please leave your questions, thanks and feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}"
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:262
 translate english dap_request_02_complete_a68e1bc3_1:
