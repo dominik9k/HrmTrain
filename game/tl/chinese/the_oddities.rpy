@@ -45,7 +45,7 @@ translate chinese menu_dahr_scroll_order_603de748:
 # game/the_oddities.rpy:95
 translate chinese menu_dahr_scroll_order_0fe51793:
 
-    # translators "{size=14}Более подробно {a=http://wtrus.ixbb.ru/viewtopic.php?id=3#p4}здесь{/a}{/size}."
+    # translators "{size=14}Более подробно {a=http://skazgames.com/forum/viewtopic.php?f=2&t=30#p4}здесь{/a}{/size}."
     translators ""
 
 # game/the_oddities.rpy:98

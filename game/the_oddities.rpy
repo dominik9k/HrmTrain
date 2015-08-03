@@ -94,7 +94,7 @@ label menu_dahr_gift_order:
                     menu:
                         "- Глянуть подсказку -":
                             translators "{size=14}Подсказка от переводчика:\nНайти его можно {b}правильно{/b} прочитав книгу {b}[book07]{/b}{/size}."
-                            translators "{size=14}Более подробно {a=http://wtrus.ixbb.ru/viewtopic.php?id=3#p4}здесь{/a}{/size}."
+                            translators "{size=14}Более подробно {a=http://skazgames.com/forum/viewtopic.php?f=2&t=30#p4}здесь{/a}{/size}."
                         
                         "- Не нужно -":
                             translators "Как угодно."

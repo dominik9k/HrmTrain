@@ -39,7 +39,7 @@ translate chinese dap_request_03_1f10307a:
 # game/02_daphna_scenario/dap03_removeall.rpy:122
 translate chinese dap_request_03_28406d38:
 
-    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
     felix ""
 
 # game/02_daphna_scenario/dap03_removeall.rpy:123
@@ -97,7 +97,7 @@ translate chinese dap_request_03_8180a9fd:
 # game/02_daphna_scenario/dap03_removeall.rpy:122
 translate chinese dap_request_03_d1c87a5f:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
     dev ""
 
 # game/02_daphna_scenario/dap03_removeall.rpy:123

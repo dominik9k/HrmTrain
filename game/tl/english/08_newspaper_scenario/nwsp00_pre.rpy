@@ -369,14 +369,14 @@ translate english nsp_her_demo2_24d1dcb9:
 # game/08_newspaper_scenario/nwsp00_pre.rpy:365
 translate english nsp_her_demo2_8c3b8398:
 
-    # dev "1) Оставьте отзыв на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
-    dev "1) Leave your feedbacks on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}."
+    # dev "1) Оставьте отзыв на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
+    dev "1) Leave your feedbacks on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}."
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:366
 translate english nsp_her_demo2_2d515ca8:
 
-    # dev "2) Принимайте активное участие в обсуждениях на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
-    dev "2) Actively participate in discussions on our {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}Forum{/a}."
+    # dev "2) Принимайте активное участие в обсуждениях на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
+    dev "2) Actively participate in discussions on our {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}Forum{/a}."
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:367
 translate english nsp_her_demo2_45053a71:
@@ -405,8 +405,8 @@ translate english nsp_her_demo2_17c63a14:
 # game/08_newspaper_scenario/nwsp00_pre.rpy:371
 translate english nsp_her_demo2_ceec46da:
 
-    # dev "Для этого нужно принять участие в {a=http://wtrus.ixbb.ru/viewtopic.php?id=74}голосовании{/a}."
-    dev "All you need to do is participate in this {a=http://wtrus.ixbb.ru/viewtopic.php?id=74}poll{/a}."
+    # dev "Для этого нужно принять участие в {a=http://skazgames.com/forum/}голосовании{/a}."
+    dev "All you need to do is participate in this {a=http://skazgames.com/forum/}poll{/a}."
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:372
 translate english nsp_her_demo2_79745ba4:
@@ -455,13 +455,13 @@ translate english nsp_her_demo2_dc019a16:
 # game/08_newspaper_scenario/nwsp00_pre.rpy:365
 translate english nsp_her_demo2_42d8e002:
 
-    # dev "1) Оставьте отзыв на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    # dev "1) Оставьте отзыв на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
     dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:366
 translate english nsp_her_demo2_87f8a545:
 
-    # dev "2) Принимайте активное участие в обсуждениях на {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}"
+    # dev "2) Принимайте активное участие в обсуждениях на {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}"
     dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:367
@@ -491,7 +491,7 @@ translate english nsp_her_demo2_21a52b82:
 # game/08_newspaper_scenario/nwsp00_pre.rpy:371
 translate english nsp_her_demo2_6abe84ce:
 
-    # dev "Для этого нужно принять участие в {a=http://wtrus.ixbb.ru/viewtopic.php?id=74}голосовании{/a}."
+    # dev "Для этого нужно принять участие в {a=http://skazgames.com/forum/}голосовании{/a}."
     dev ""
 
 # game/08_newspaper_scenario/nwsp00_pre.rpy:372

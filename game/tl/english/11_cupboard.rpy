@@ -75,8 +75,8 @@ translate english cheat_help_ed10f1a5:
 # game/11_cupboard.rpy:92
 translate english cheat_help_74874caf:
 
-    # "Прохождение и ответы на частые вопросы можно найти {a=http://wtrus.ixbb.ru/viewtopic.php?id=3}ЗДЕСЬ{/a}. "
-    "Walkthrough and FAQ can be found {a=http://wtrus.ixbb.ru/viewtopic.php?id=3}HERE{/a}."
+    # "Прохождение и ответы на частые вопросы можно найти {a=http://skazgames.com/forum/viewtopic.php?f=2&t=30}ЗДЕСЬ{/a}. "
+    "Walkthrough and FAQ can be found {a=http://skazgames.com/forum/viewtopic.php?f=2&t=30}HERE{/a}."
 
 # game/11_cupboard.rpy:177
 translate english rummaging_51f77866:

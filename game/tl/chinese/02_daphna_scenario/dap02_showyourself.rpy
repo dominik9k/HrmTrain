@@ -63,7 +63,7 @@ translate chinese dap_request_02_complete_a517a789:
 # game/02_daphna_scenario/dap02_showyourself.rpy:245
 translate chinese dap_request_02_complete_28406d38:
 
-    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
     felix ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:246
@@ -87,7 +87,7 @@ translate chinese dap_request_02_complete_a517a789_1:
 # game/02_daphna_scenario/dap02_showyourself.rpy:261
 translate chinese dap_request_02_complete_28406d38_1:
 
-    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    # felix "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
     felix ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:262
@@ -131,7 +131,7 @@ translate chinese dap_request_02_complete_6569410c:
 # game/02_daphna_scenario/dap02_showyourself.rpy:245
 translate chinese dap_request_02_complete_d1c87a5f:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
     dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:246
@@ -155,7 +155,7 @@ translate chinese dap_request_02_complete_6569410c_1:
 # game/02_daphna_scenario/dap02_showyourself.rpy:261
 translate chinese dap_request_02_complete_d1c87a5f_1:
 
-    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://wtrus.ixbb.ru/viewtopic.php?id=9}ФОРУМЕ{/a}."
+    # dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
     dev ""
 
 # game/02_daphna_scenario/dap02_showyourself.rpy:262

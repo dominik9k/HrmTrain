@@ -112,7 +112,7 @@ translate english nsp_event_forest_1_48149eb8:
 translate english nsp_event_forest_1_dd1c0cee:
 
     # her "Неужели что-то {size=+4}настолько{/size} обескураживающее ?"
-    her "Something {size=+4so{/size} discouraging?"
+    her "Something {size=+4}so{/size} discouraging?"
 
 # game/08_newspaper_scenario/nwsp10_events_forest.rpy:42
 translate english nsp_event_forest_1_723d385f:
