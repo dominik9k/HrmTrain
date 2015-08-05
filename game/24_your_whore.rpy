@@ -3761,7 +3761,7 @@ label test:
     {color=#fff}\
     appo, Dimon_Tools, illidan, darg55, Fuhrick, Y-ART, Zilot{/color}{/size}\n\
     \n\n\
-    Игра разрабатывается с использованием идеи и артов Акабура и Дахра.\n\
+    Игра разрабатывается с использованием идеи и артов Акабура и Дахра и поддержке Xaljio.\n\
     "
 
     nvl clear
@@ -4229,7 +4229,7 @@ Kenneth Aguilar, alt, David McClellan, Leo H Wilkin, Thorn, TheDudeAbides, Alexa
 
     $ renpy.play('sounds/win2.mp3')   #Not loud.
     centered "{size=+7}{color=#cbcbcb}-\{Спасибо за игру!\}-{/color}{/size}\n\n\
-              {size=+1}{color=#cbcbcb}-АКАБУР 2014-{/color}{/size}"
+              {size=+1}{color=#cbcbcb}-2014-{/color}{/size}"
 
     pause 2
 
