@@ -8711,8 +8711,8 @@ translate chinese last_letter_e78c0f64:
 # game/24_your_whore.rpy:4237
 translate chinese last_letter_1c01c02e:
 
-    # centered "{size=+7}{color=#cbcbcb}-{{Спасибо за игру!}-{/color}{/size}\n\n {size=+1}{color=#cbcbcb}-АКАБУР 2014-{/color}{/size}"
-    centered "{size=+7}{color=#cbcbcb}-\{Thank you for playing!\}-{/color}{/size}\n\n {size=+1}{color=#cbcbcb}-AKABUR 2014-{/color}{/size}"
+    # centered "{size=+7}{color=#cbcbcb}-{{Спасибо за игру!}-{/color}{/size}\n\n {size=+1}{color=#cbcbcb}-2014-{/color}{/size}"
+    centered "{size=+7}{color=#cbcbcb}-\{Thank you for playing!\}-{/color}{/size}\n\n {size=+1}{color=#cbcbcb}-2014-{/color}{/size}"
 
 translate chinese strings:
 
