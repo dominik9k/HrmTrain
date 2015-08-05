@@ -78,6 +78,12 @@
                     return o.GetValue("block")
             return ""
             
+        def SetBlock(self, sName, sBlock): # на вход имя вещи  , блок
+            for o in itemList: # Item по имени
+                if o.Name==sName:
+                    return o.SetValue("block", sBlock)
+            return ""
+            
         def GetCaption(self, sName): # на вход имя вещи  
             for o in itemList: # Item по имени
                 if o.Name==sName:
