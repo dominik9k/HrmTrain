@@ -160,22 +160,24 @@
             return
                 
         def WrdAdd (self, Name = None, Block = None, Type = "new") :
+        
             if Name != None and Block in ["gears_shirt","gears_skirt","gears_other","gears_stockings"] :
-                if Type == "new" and not Name in self.Wrd_new():
+                if Type == "new" and self.Wrd_new.Count(Name) <= 0 :
                     self.Wrd_new.AddItem(Name)
                     self.Wrd_new.SetBlock(Name,Block)
-                elif Type == "adm" and not Name in self.Wrd_adm() :
+                elif Type == "adm" and self.Wrd_adm.Count(Name) <= 0 :
                     self.Wrd_adm.AddItem(Name)
                     self.Wrd_adm.SetBlock(Name,Block)
-                elif Type == "wear" and not Name in self.Wrd_wear() :
+                elif Type == "wear" and self.Wrd_wear.Count(Name) <= 0 :
                     self.Wrd_wear.AddItem(Name)
                     self.Wrd_wear.SetBlock(Name,Block)
-                elif Type == "set" and not Name in self.Wrd_set() :
+                elif Type == "set" and self.Wrd_set.Count(Name) <= 0 :
                     self.Wrd_set.AddItem(Name)
                     self.Wrd_set.SetBlock(Name,Block)
                     
                 if self.Items.Count(Name) < 1:
                     self.Items.AddItem (Name,1)
+                    self.Items.SetBlock (Name,Block)
                     
         def WrdRem (self, Name = None, Type = "new") :
             block = self.Items.GetBlock(Name)
@@ -312,6 +314,10 @@
 
             if self.wrd_sperm_dried :
                 self.body.data().setStyleAll('sperm_dried')
+                
+            if self.wrd_upskirt :
+                self.body.data().setStyleAll('with_lifted_skirt')
+            
             return self
             
         def WrdSetMain (self) :
@@ -383,7 +389,8 @@
                 
         def WrdSetDress (self, Item = None) :
             block = self.Items.GetBlock(Item)
-            if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] and Item in self.wrd_adm : 
+
+            if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] and self.Wrd_adm.Count(Item) > 0 : 
                 self.WrdSetDelBlock (block)
                 self.WrdAdd(Item, block, "set")
                 if block == "shirt" :
@@ -391,6 +398,7 @@
                     self.set_upshirt = False
                 elif block == "skirt" :
                     self.set_upskirt = False  
+
                 self.WrdSetMain()
         
         def WrdUpSkirt (self) :
@@ -480,7 +488,7 @@
 
             self.Wrd_adm_tmp.Clear()
             for i in self.Wrd_adm() :
-                if self.Wrd_adm.GetValue("block") == self.wrd_block :
+                if i.GetValue("block") == self.wrd_block :
                     self.Wrd_adm_tmp.AddItem(i.Name)
             
             renpy.call_screen(Person.wrd_menu_screen)
@@ -781,7 +789,7 @@ screen person_wrd_menu:
             
                 for i in Person.current.Wrd_new() :
                     button:
-                        action [Function(Person.current.WrdSetChoice, iName=i), Return()] 
+                        action [Function(Person.current.WrdSetChoice, iName=i.Name), Return()] 
                         style "menu_choice_button"
 
                         text Person.current.Items.GetCaption(i.Name) style "menu_choice"
@@ -789,13 +797,13 @@ screen person_wrd_menu:
             else :
                 for i in Person.current.Wrd_adm_tmp() :
                     button:
-                        action [Function(Person.current.WrdSetChoice, iName=i), Return()] 
+                        action [Function(Person.current.WrdSetChoice, iName=i.Name), Return()] 
                         style "menu_choice_button"
                             
                         if i in Person.current.Wrd_wear() :
-                            text "{color=222277}" + Person.current.Items.GetCaption(i) + "{/color}" style "menu_choice"
+                            text "{color=222277}" + Person.current.Items.GetCaption(i.Name) + "{/color}" style "menu_choice"
                         else :
-                            text Person.current.Items.GetCaption(i) style "menu_choice"
+                            text Person.current.Items.GetCaption(i.Name) style "menu_choice"
                         
             button:
                 action [Function (Person.current.WrdSetBlock, iBlock = "main"), Return ()] 
