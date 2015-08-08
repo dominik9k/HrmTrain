@@ -215,26 +215,26 @@
                 
         def WrdDelShirt (self) :   
             for o in self.Wrd_wear() :
-                if o.GetValue("block") == "gears_shirt" :
+                if self.Items.GetBlock(o.Name) == "gears_shirt" :
                     self.Wrd_wear.AddItem(o.Name,-1)
 
             self.wrd_upshirt = False
         
         def WrdDelSkirt (self) :   
             for o in self.Wrd_wear() :
-                if o.GetValue("block") == "gears_skirt" :
+                if self.Items.GetBlock(o.Name) == "gears_skirt" :
                     self.Wrd_wear.AddItem(o.Name,-1)
                     
             self.wrd_upskirt = False
         
         def WrdDelOther (self) :   
             for o in self.Wrd_wear() :
-                if o.GetValue("block") == "gears_other" :
+                if self.Items.GetBlock(o.Name) == "gears_other" :
                     self.Wrd_wear.AddItem(o.Name,-1)                
         
         def WrdDelStockings (self) :   
             for o in self.Wrd_wear() :
-                if o.GetValue("block") == "gears_stockings" :
+                if self.Items.GetBlock(o.Name) == "gears_stockings" :
                     self.Wrd_wear.AddItem(o.Name,-1)                      
                     
         def WrdDelBlock (self, Block = None) :
@@ -249,26 +249,26 @@
                 
         def WrdSetDelShirt (self) :   
             for o in self.Wrd_set() :
-                if o.GetValue("block") == "gears_shirt" :
+                if self.Items.GetBlock(o.Name) == "gears_shirt" :
                     self.Wrd_set.AddItem(o.Name,-1)
 
             self.wrd_set_upshirt = False
         
         def WrdSetDelSkirt (self) :   
             for o in self.Wrd_set() :
-                if o.GetValue("block") == "gears_skirt" :
+                if self.Items.GetBlock(o.Name) == "gears_skirt" :
                     self.Wrd_set.AddItem(o.Name,-1)
                     
             self.wrd_set_upskirt = False
         
         def WrdSetDelOther (self) :   
             for o in self.Wrd_set() :
-                if o.GetValue("block") == "gears_other" :
+                if self.Items.GetBlock(o.Name) == "gears_other" :
                     self.Wrd_set.AddItem(o.Name,-1)                
         
         def WrdSetDelStockings (self) :   
             for o in self.Wrd_set() :
-                if o.GetValue("block") == "gears_stockings" :
+                if self.Items.GetBlock(o.Name) == "gears_stockings" :
                     self.Wrd_set.AddItem(o.Name,-1)                      
                     
         def WrdSetDelBlock (self, Block = None) :
@@ -283,7 +283,7 @@
 
                 
         def WrdIsAdm (self, Name = None) :
-            if Name != None and Name in self.Wrd_adm() :
+            if Name != None and self.Wrd_adm.Count(Name) > 0 :
                 return True
             
             return False
@@ -296,20 +296,20 @@
             self.body.data().addItem( 'item_panties' )
  
             for o in self.Wrd_wear():
-                if o.GetValue("block") == "gears_other" :
+                if self.Items.GetBlock(o.Name) == "gears_other" :
                     if self.wrd_upshirt == False and self.wrd_noshirt == False :
                         self.body.data().addItem("item_" + o.Name)
-                elif o.GetValue("block") == "gears_shirt" :
+                elif self.Items.GetBlock(o.Name) == "gears_shirt" :
                     if self.wrd_upshirt == True :
                         self.body.data().addItem("item_pose_up_" + o.Name)
                     else :
                         self.body.data().addItem("item_" + o.Name)
-                elif o.GetValue("block") == "gears_skirt" :
+                elif self.Items.GetBlock(o.Name) == "gears_skirt" :
                     if self.wrd_upskirt == True :
                         self.body.data().addItem("item_pose_lifted_" + o.Name)
                     else :
                         self.body.data().addItem("item_" + o.Name)
-                elif o.GetValue("block") == "gears_stockings" :
+                elif self.Items.GetBlock(o.Name) == "gears_stockings" :
                     self.body.data().addItem("item_" + o.Name)
 
             if self.wrd_sperm_dried :
@@ -331,7 +331,7 @@
             self.Wrd_wear.Clear()
             for i in self.Wrd_set() :
                 self.Wrd_wear.AddItem(i.Name,1)
-                self.Wrd_wear.SetBlock(i.Name,i.GetValue("block"))
+                self.Wrd_wear.SetBlock(i.Name,self.Items.GetBlock(i.Name))
 
             self.WrdMain()
             return self
@@ -370,6 +370,10 @@
                 self.WrdAdd(Item,block,"new")   
                 
         def WrdSetUnlock (self, Item = None) :
+                            
+            if self.Items.Count(Item) < 1:
+                self.Items.AddItem (Item,1)
+                    
             block = self.Items.GetBlock(Item)
             if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] :   
                 self.WrdRem(Item,"new")
@@ -388,18 +392,27 @@
                 self.WrdMain()
                 
         def WrdSetDress (self, Item = None) :
-            block = self.Items.GetBlock(Item)
+        
+            if Item == "delstockings" :
+                self.WrdSetDelStockings ()
+            
+            elif Item == "delother" :
+                self.WrdSetDelOther ()
+                
+            else :
+        
+                block = self.Items.GetBlock(Item)
 
-            if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] and self.Wrd_adm.Count(Item) > 0 : 
-                self.WrdSetDelBlock (block)
-                self.WrdAdd(Item, block, "set")
-                if block == "shirt" :
-                    self.set_noshirt = False
-                    self.set_upshirt = False
-                elif block == "skirt" :
-                    self.set_upskirt = False  
+                if Item != None and block in ["gears_shirt","gears_skirt","gears_stockings","gears_other"] and self.Wrd_adm.Count(Item) > 0 : 
+                    self.WrdSetDelBlock (block)
+                    self.WrdAdd(Item, block, "set")
+                    if block == "shirt" :
+                        self.set_noshirt = False
+                        self.set_upshirt = False
+                    elif block == "skirt" :
+                        self.set_upskirt = False  
 
-                self.WrdSetMain()
+            self.WrdSetMain()
         
         def WrdUpSkirt (self) :
             self.wrd_upskirt = True
@@ -488,7 +501,7 @@
 
             self.Wrd_adm_tmp.Clear()
             for i in self.Wrd_adm() :
-                if i.GetValue("block") == self.wrd_block :
+                if self.Items.GetBlock(i.Name) == self.wrd_block :
                     self.Wrd_adm_tmp.AddItem(i.Name)
             
             renpy.call_screen(Person.wrd_menu_screen)
@@ -795,6 +808,21 @@ screen person_wrd_menu:
                         text Person.current.Items.GetCaption(i.Name) style "menu_choice"
                         
             else :
+            
+                if Person.current.wrd_block == "gears_stockings" :
+                    button:
+                        action [Function(Person.current.WrdSetChoice, iName="delstockings"), Return()] 
+                        style "menu_choice_button"
+                            
+                        text "Снять чулки/колготки" style "menu_choice"
+                
+                elif Person.current.wrd_block == "gears_other" :
+                    button:
+                        action [Function(Person.current.WrdSetChoice, iName="delother"), Return()] 
+                        style "menu_choice_button"
+                            
+                        text "Снять значек" style "menu_choice"
+                        
                 for i in Person.current.Wrd_adm_tmp() :
                     button:
                         action [Function(Person.current.WrdSetChoice, iName=i.Name), Return()] 
