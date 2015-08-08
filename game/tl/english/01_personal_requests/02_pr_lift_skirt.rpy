@@ -794,7 +794,7 @@ translate english strings:
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:176
     old "\"Отлично. Пять очков Гриффиндору!\""
-    new "\"Good! 5 points to Gryffindor\!\""
+    new "\"Good! 5 points to Gryffindor!\""
 
     # game/01_personal_requests/02_pr_lift_skirt.rpy:182
     old "\"Конечно!\""

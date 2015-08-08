@@ -544,7 +544,7 @@ translate english connection_of_rapes_16c16da3:
 translate english connection_of_rapes_ca54d487:
 
     # ">Гермиона пытается вырваться..."
-    ">Hermione tries to pull away from you..."
+    ">Hermione tries to push away from you..."
 
 # game/01_personal_requests/05_pr_butt_dressed.rpy:305
 translate english connection_of_rapes_4f75912c:
@@ -580,7 +580,7 @@ translate english connection_of_rapes_023a1993:
 translate english connection_of_rapes_ca54d487_1:
 
     # ">Гермиона пытается вырваться..."
-    ">Hermione tries to pull away from you..."
+    ">Hermione tries to push away from you..."
 
 # game/01_personal_requests/05_pr_butt_dressed.rpy:319
 translate english connection_of_rapes_db6c8b53:
@@ -1612,7 +1612,7 @@ translate english screams_of_pleasure_607748be:
 translate english screams_of_pleasure_c6fb486b:
 
     # ">Гермиона отталкивает вас..."
-    ">Hermione pulls away from you..."
+    ">Hermione push away from you..."
 
 # game/01_personal_requests/05_pr_butt_dressed.rpy:818
 translate english screams_of_pleasure_5bfbace7:
