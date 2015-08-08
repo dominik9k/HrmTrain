@@ -1,6 +1,7 @@
 label lrm_stats_00:
-    menu:
-        "- Исследовать -" if not hat_examined:
+#    menu:
+#        "- Исследовать -" if not hat_examined:
+    if not hat_examined:
             $ hat_examined = True
             show screen chair_02 #Empty chair near the desk.
             hide screen genie
@@ -20,10 +21,11 @@ label lrm_stats_00:
             
             
             
-        "- Посмотреть статистику -" if not day == 1:
+#        "- Посмотреть статистику -" if not day == 1:
+    if not day == 1:
             jump lrm_stats
-        "- Ничего -":
-            jump day_main_menu
+#        "- Ничего -":
+#            jump day_main_menu
 
 label lrm_stats:
     $ hat_examined = True

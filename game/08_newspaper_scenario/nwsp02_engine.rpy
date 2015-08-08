@@ -4,17 +4,19 @@
 
 label newsp_letter:
 
-    call bigletter(["{size=-7}От: Министерства Магии\nКому: Профессору Альбусу Дамблдору\n\n{/size}"
-    "{size=-4}Дорогой профессор Дамблдор.\n\nМы хотим сообщить Вам, что Комитет по Прессе изучил "
-    "реакцию ваших читателей в школе и постановил следующее:\n\n"
-    "В соответствии с популярностью последнего выпуска газеты выплатить редакции "
-    "[nsp_newspaper_cur_money] галлеонов.\n\n"
-    "Спасибо за сотрудничество !\n\n"
-    "{size=-3}С уважением,\nМинистерство Магии.{/size}"])
+    $ letter_text = "{size=-7}От: Министерства Магии\nКому: Профессору Альбусу Дамблдору\n\n{/size}{size=-4}Дорогой профессор Дамблдор.\n\nМы хотим сообщить Вам, что Комитет по Прессе изучил реакцию ваших читателей в школе и постановил следующее:\n\nВ соответствии с популярностью последнего выпуска газеты выплатить редакции [nsp_newspaper_cur_money] галлеонов.\n\n Спасибо за сотрудничество !\n\n{size=-3}С уважением,\nМинистерство Магии.{/size}"        
     
     hide screen points
     $ gold += nsp_newspaper_cur_money
     show screen points
+    
+    show screen bld1
+    show screen letter
+    show screen ctc
+    pause
+    hide screen letter
+    hide screen bld1
+    hide screen ctc
     
     $ nsp_newspaper_published = False
     $ nsp_newspaper_published_mail = False
