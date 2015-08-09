@@ -2046,7 +2046,36 @@ label giving_badge:
     jump hermione_main_menu                    
             
         
-        
+label giving_hair_set : 
+    $herView.hideQ( d5 )
+    $ wrd_new_items += 1
+    $ pos = POS_140
+
+    $ hermi.liking += 30
+    $hermi.Items.Receive(hero.Items,item.Name) #     
+    $hermi.WrdSetAddNew("badge")
+    $herView.showQ( "body_01.png", pos, d5 )
+    her "Ведьмодница ? Я ?"
+    $herView.hideQQ()
+    $ the_gift = "03_hp/18_store/07.png" 
+    show screen gift
+    with d3
+    ">Вы даете Гермионе набор для волос. Теперь в гардеробе доступны различные прически."
+    hide screen gift
+
+    $ dress_code = True
+
+    $herView.showQQ( "body_06.png", pos )
+    her "Спасибо, сэр."
+    call happy
+
+
+    $ pos = POS_370
+    $herView.showQQ( None, pos )
+    $hermi.WrdHairUnlock()
+    jump hermione_main_menu    
+    
+    
         
     ### Ажурные чулки ###
 label giving_nets: 
