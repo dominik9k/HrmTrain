@@ -3747,7 +3747,7 @@ label test:
     \n\n\
     {color=#e5e297}-\{Арты:\}-{/color}\n\
     {color=#fff}\
-    Oh Zar, Zio, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=85}Grendidg{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=52}Dron{/a}\n\
+    Oh Zar, Zio, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=85}Grendidg{/a} | {a=https://vk.com/grendidg}Grendidg VK{/a} | {a=http://virink.com/GRENDIDG}Grendidg Virink{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=52}Dron{/a}\n\
     \n\n\
     {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\

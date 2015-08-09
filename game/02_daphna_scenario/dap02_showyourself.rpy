@@ -260,6 +260,7 @@ label dap_request_02_complete:
         dev "{size=-3}(Но, вам остаются доступны другие сюжетные линии){/size}"
         dev "Оставьте ваши вопросы, благодарности и пожелания на нашем {a=http://skazgames.com/forum/viewtopic.php?f=2&t=27}ФОРУМЕ{/a}."
         dev "Так вы простимулируете нас, и продолжение появится быстрее. :)"
+        dev "Чуть не забыл : пока идет разработка игры можете поиграть в игру {a=http://skazgames.com/forum/viewforum.php?f=4}Сказочника{/a}"
         call daphne_main_menu_requests
 
     return
