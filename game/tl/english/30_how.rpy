@@ -904,7 +904,7 @@ translate english devel_e596fc64:
 translate english devel_9ff0a49f:
 
     # dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
-    dev "Chibis for Daphne : {color=2F2F2F}Grending{/color}"
+    dev "Chibis for Daphne : {color=2F2F2F}Grending{/color} --> {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=85}Grendidg Forum{/a} | {a=https://vk.com/grendidg}Grendidg VK{/a} | {a=http://virink.com/GRENDIDG}Grendidg Virink{/a}"
 
 # game/30_how.rpy:421
 translate english devel_b8f433be:
@@ -1305,4 +1305,3 @@ translate english devel_06d7322a:
 
     # dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
     dev "{color=0F0F0F}Eskelsama{/color} - for amazing coding and invaluable contribution to the project!"
-
