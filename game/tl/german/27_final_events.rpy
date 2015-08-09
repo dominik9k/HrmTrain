@@ -2301,7 +2301,7 @@ translate german stupid_kent_2f3aacec:
 # game/27_final_events.rpy:1673
 translate german stupid_kent_d99a3a1e:
 
-    # centered "{cps=20}{size=+5}{color=#ea91b0}-Hermione Trainer-{/color}{/size}\n\n {size=+5}{color=#e5e297}-Продюсер-{/color}{/size}\n{color=#cbcbcb}AKABUR{/color}\n\n {size=+5}{color=#e5e297}-Программист-{/color}{/size}\n {color=#cbcbcb}AKABUR{/color}\n\n {size=+5}{color=#e5e297}-Сценарист-{/color}{/size}\n {color=#cbcbcb}AKABUR{/color}\n\n {size=+5}{color=#e5e297}-Художник-{/color}{/size}\n {color=#cbcbcb}AKABUR{/color}\n\n {size=+5}{color=#e5e297}-Второй художник-{/color}{/size}\n {color=#cbcbcb}DAHR{/color}\n\n {size=+5}{color=#e5e297}-Звуковые эффекты-{/color}{/size}\n {color=#cbcbcb}http://www.freesound.org/{/color}\n\n"
+    # centered "{cps=20}{size=+5}{color=#ea91b0}-Hermione Trainer-{/color}{/size}\n\n 
     centered ""
 
 # game/27_final_events.rpy:1689
@@ -2475,4 +2475,3 @@ translate german strings:
     # game/27_final_events.rpy:1521
     old "\"Странник\""
     new ""
-
