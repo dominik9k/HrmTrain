@@ -1,20 +1,20 @@
 label want_to_rule:
-    
+
 #    $ event_chairman_happened = True #Turns True after an event where Hermione comes and says that she wants to be in the Autumn Ball committee.
-   
+
     $ walk_xpos=520 #Animation of walking chibi. (From)
     $ walk_xpos2=400 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-    show screen hermione_walk_01 
+    show screen hermione_walk_01
     with d4
-    pause 1.7 
+    pause 1.7
     $ hermione_chibi_xpos = 400 #Near the desk.
     show screen hermione_02 #Hermione stands still.
     pause.5
     show screen bld1
     with Dissolve(.3)
-    
+
     $herView.data().saveState()
     $ hermi.WrdSetMain ()
     $herView.hideQQ()
@@ -60,14 +60,14 @@ label want_to_rule:
             $herView.hideQQ()
             $herView.showQQ( "body_07.png", pos )
             her "Условие, сэр?"
-            
+
             $ d_flag_04 = False
             label no_sleeping_with_professor:
                 pass
             $ d_flag_01 = False
             $ d_flag_02 = False
             $ d_flag_03 = False
-            menu:  
+            menu:
                 m "..."
                 "\"Сначала покажи мне сиськи.\"":
                     $ hermi.liking -= 9
@@ -116,18 +116,18 @@ label want_to_rule:
                     $herView.showQQ( "body_141.png", pos )
                     her "{size=-5}(Хотелось бы...){/size}"
                     jump no_sleeping_with_professor
-    
-                    
-                    
-                    
-       
+
+
+
+
+
                 "\"Неважно. Должность твоя.\"":
                     $herView.hideQQ()
-                    show screen blkfade 
+                    show screen blkfade
                     with d5
                     pause.7
                     pass
-    
+
 
             if d_flag_01 or d_flag_02 or d_flag_03:
                 $herView.hideQQ()
@@ -184,7 +184,7 @@ label want_to_rule:
                 $herView.showQQ( "body_128.png", pos )
                 her "Подождите секунду, пожалуйста..."
                 $herView.hideQ()
-                with d5   
+                with d5
                 m "............"
                 if d_flag_01: # SHOW ME TITS
                     play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
@@ -202,7 +202,7 @@ label want_to_rule:
                     pause
                     show screen bld1
                     with d3
-                    
+
 
                     $herView.hideQQ()
 
@@ -211,7 +211,7 @@ label want_to_rule:
                     #$herView.data().addItem( 'item_tits' )
                     #$herView.data().addItem( 'item_pose_show_tits' )
                     $ hermi.WrdUpShirt ()
-                    
+
                     $herView.showQQ( "body_82.png", pos )
                     show screen ctc
                     pause
@@ -224,9 +224,9 @@ label want_to_rule:
                     show screen ctc
                     pause
                     hide screen ctc
-                    $herView.hideQ()                  
-                    with d5   
-                    show screen blkfade 
+                    $herView.hideQ()
+                    with d5
+                    show screen blkfade
                     with d5
                     pause.7
 
@@ -235,8 +235,8 @@ label want_to_rule:
 
                 elif d_flag_02: # SHOW ME PUSSY
                     play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
-                    
-                    
+
+
                     hide screen blkfade
                     with d3
                     hide screen bld1
@@ -251,24 +251,24 @@ label want_to_rule:
                     pause
                     show screen bld1
                     with d3
-            
+
 
                     #$herView.data().hideItemKey('skirt')
                     #call wrd_dress_undress_skirts
-                    #$herView.data().hideItemKey('panties')                    
+                    #$herView.data().hideItemKey('panties')
                     #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
                     #$herView.data().addItem( 'item_pose_lifted_skirt' )
                     #$herView.data().addItemKey( 'panties_shifted', CharacterExItem( herView.mClothesFolder, 'panties_shifted.png', G_Z_PANTIES ) )
                     $ hermi.WrdNoSkirt ()
                     $herView.data().setStyleKey( 'panties', 'shifted' )
-            
+
                     $herView.hideQQ()
                     $herView.showQQ( "body_60.png", pos )
-                    
+
                     show screen ctc
                     pause
                     hide screen ctc
-                    
+
                     her ".............................."
                     with hpunch
                     g4 "Что вы делаете?!"
@@ -292,13 +292,13 @@ label want_to_rule:
                     pause
                     hide screen ctc
                     $herView.hideQQ()
-                    show screen blkfade 
+                    show screen blkfade
                     with d5
                     pause.7
 
                     $herView.data().loadState()
                     $ hermi.WrdSetMain ()
-                
+
                 elif d_flag_03: # STRIP NAKED
                     play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
                     # (Hermione locks the door).
@@ -306,26 +306,26 @@ label want_to_rule:
                     with d3
                     pause.3
                     #Walks to the door
-                    
+
                     $ walk_xpos=400 #Animation of walking chibi. (From) 400 = desk.
                     $ walk_xpos2=650 #Coordinates of it's movement. (To) 610 = door.
                     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
-                    show screen hermione_walk_01_f 
+                    show screen hermione_walk_01_f
                     pause 2
-                    hide screen hermione_walk_01_f 
+                    hide screen hermione_walk_01_f
                     $ hermione_chibi_xpos = 650 # Position of the chibi (Near the door).
                     $ h_c_u_pic = im.Flip("03_hp/animation/h_walk_01.png", horizontal=True)
                     show screen h_c_u
                     pause.5
-                   
+
                     $ tt_xpos=670
                     $ tt_ypos=200
-                    show screen thought 
+                    show screen thought
                     with Dissolve(.3)
                     pause.5
                     hide screen thought
                     pause.5
-                   
+
                     $ h_c_u_pic = im.Flip("03_hp/animation/h_walk_03.png", horizontal=True)
                     $ renpy.play('sounds/09_lock.wav') #Sound of a door opening.
                     pause.4
@@ -338,7 +338,7 @@ label want_to_rule:
                     $ walk_xpos=650 #Animation of walking chibi. (From)
                     $ walk_xpos2=400 #Coordinates of it's movement. (To)
                     $ hermione_speed = 03.0 #The speed of moving the walking animation across the screen.
-                    show screen hermione_walk_01 
+                    show screen hermione_walk_01
                     pause 3
                     $ hermione_chibi_xpos = 400 #Near the desk.
                     show screen hermione_02 #Hermione stands still.
@@ -355,8 +355,8 @@ label want_to_rule:
                     m ".........................."
                     ">Гермиона медленно раздевается..."
                     ">Жилетка, рубашка, юбка и наконец... трусики."
-                    
-                    
+
+
                     $herView.hideQ()
                     #call wrd_dress_undress
                     #$herView.data().addItem('item_tits')
@@ -366,19 +366,19 @@ label want_to_rule:
                     $ hermi.WrdNoShirt ()
                     $ hermi.WrdNoSkirt ()
                     $herView.data().hideItemKey('panties')
-                    
+
                     $ hermione_chibi_xpos = 310 # Default 360
                     #$ hermione_chibi_ypos = 210
-                    $  h_c_u_pic = "03_hp/08_animation_02/01.png" #Hermione naked. 
-                    show screen h_c_u 
-                    
+                    $  h_c_u_pic = "03_hp/08_animation_02/01.png" #Hermione naked.
+                    show screen h_c_u
+
                     hide screen blkfade
                     with d7
                     show screen ctc
                     pause
                     hide screen ctc
-                    
-                    
+
+
                     #add h_c_u_pic at Position(xpos=hermione_chibi_xpos, ypos=hermione_chibi_ypos)
                     g9 "Шик-а-а-арно!"
                     $herView.hideQQ()
@@ -388,10 +388,10 @@ label want_to_rule:
                     hide screen ctc
                     her "*Всхлип!*"
                     m "Хах?"
-                    
+
                     #$herView.data().addItemKey( 'tears', CharacterExItem( herView.mMiscFolder, "tears_01.png", G_Z_FACE + 1 ) )
                     $herView.data().addItem( 'item_tears', '01' )
-                    
+
                     $herView.hideQQ()
                     $herView.showQQ( "body_107.png", pos )
                     her "Ох, пожалуйста, не обращайте внимания, сэр."
@@ -420,7 +420,7 @@ label want_to_rule:
                     $herView.hideQQ()
                     $herView.showQQ( "body_191.png", pos )
                     her "Сэр, я умоляю вас!"
-                    m "Немного смахивает на приказ-"       
+                    m "Немного смахивает на приказ-"
                     $herView.hideQQ()
                     $herView.showQQ( "body_192.png", pos )
                     her "Мне нужно это!"
@@ -458,37 +458,37 @@ label want_to_rule:
                     $herView.hideQQ()
                     $herView.showQQ( "body_103.png", pos )
                     her "Как пожелаете, сэр..."
-                    
+
                     show screen ctc
-                    pause 
+                    pause
                     hide screen ctc
-                    
+
                     $herView.hideQQ()
-                    
+
                     show screen ctc
-                    pause 
+                    pause
                     hide screen ctc
-                    
+
                     $herView.data().loadState()
                     $ hermi.WrdSetMain ()
                     #$herView.data().addItemKey( 'tears', CharacterExItem( herView.mMiscFolder, "tears_03.png", G_Z_FACE + 1 ) )
                     $herView.data().addItem( 'item_tears', '03' )
 
-                    show screen blkfade 
+                    show screen blkfade
                     with d5
                     pause.7
-                
-                    
-                    
-    play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.             
-                    
+
+
+
+    play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
+
     $ hermione_chibi_xpos = 360 # Default 360
     show screen hermione_02 #Hermione stands still.
     hide screen blkfade
     with d5
-       
+
     show screen ctc
-    pause 
+    pause
     hide screen ctc
     show screen bld1
     with d3
@@ -502,7 +502,7 @@ label want_to_rule:
     her "Ну, я, пожалуй, пойду. У меня теперь столько дел!"
     m "Конечно, мисс Грейнджер. Удачи."
     $herView.hideQQ()
-    
+
     hide screen bld1
 
 
@@ -513,9 +513,9 @@ label want_to_rule:
     $ walk_xpos2=610 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
     pause.2
-    show screen hermione_walk_01_f 
+    show screen hermione_walk_01_f
     pause 2
-    hide screen hermione_walk_01_f 
+    hide screen hermione_walk_01_f
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     with Dissolve(.3)
 
@@ -532,24 +532,24 @@ label want_to_rule:
 
     $herView.data().loadState()
     $ hermi.WrdSetMain ()
-    
+
     call music_block
-    
+
     $this.want_to_rule.Finalize()
     return
-    
+
 #==========================
-    
+
 label against_the_rule:
     play music "music/Dark Fog.mp3" fadein 1 fadeout 1 # SNAPE'S THEME
 #    $ snape_against_chairman_hap = True # Turns TRUE after Snape comes and complains that appointing Hermione in the Autumn Ball committee was a mistake.
     $ days_without_an_event = 0
-    
+
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     $ snapes_speed = 02.0 #The speed of moving the walking animation across the screen.
     $ walk_xpos=470 #Animation of walking chibi. (From)
     $ walk_xpos2=360 #Coordinates of it's movement. (To)
-    show screen snape_walk_01 
+    show screen snape_walk_01
     with d3
     pause 1.5
     show screen snape_02 #Snape stands still.
@@ -560,12 +560,12 @@ label against_the_rule:
     $ s_sprite = "03_hp/10_snape_main/snape_01.png"
     show screen snape_main
     with Dissolve(.3)
-    
-    
-                
+
+
+
     sna "Ты, мать твою, псих?!"
     m "Знаешь, я порой думаю, что да..."
-    
+
     hide screen snape_main                                                                                                                   #SNAPE
     with d3                                                                                                                                                  #SNAPE
     $ tt_xpos=120 #Defines position of the Snape's full length sprite. Right - 300                      #SNAPE
@@ -622,11 +622,11 @@ label against_the_rule:
     sna "Чертова ведьма..."
     sna "Теперь эта девка будет использовать старост или призраков для того, чтобы следить за мной..."
     m "Кстати..."
-    hide screen snape_main                         
-    with d3                                        
+    hide screen snape_main
+    with d3
     $ s_sprite = "03_hp/10_snape_main/snape_01.png"
-    show screen snape_main                         
-    with d3                                        
+    show screen snape_main
+    with d3
     sna "Что?"
     m "Я должен буду показаться там?"
     hide screen snape_main                                                                                                                   #SNAPE
@@ -650,18 +650,18 @@ label against_the_rule:
     sna "Хм... Возможно, мне придется быть ведущим..."
     m "............"
     sna ".................."
-    hide screen snape_main                         
-    with d3                                        
+    hide screen snape_main
+    with d3
     $ s_sprite = "03_hp/10_snape_main/snape_03.png"
-    show screen snape_main                         
-    with d3                                        
+    show screen snape_main
+    with d3
     sna "Да! Я сделаю это!"
     sna "И в лучшем виде!"
-    hide screen snape_main                         
-    with d3                                        
+    hide screen snape_main
+    with d3
     $ s_sprite = "03_hp/10_snape_main/snape_04.png"
-    show screen snape_main                         
-    with d3                                        
+    show screen snape_main
+    with d3
     sna "Да, я покажу ей!"
     m "................"
     hide screen snape_main                                                                                                                   #SNAPE
@@ -750,25 +750,25 @@ label against_the_rule:
     hide screen chair
     hide screen desk
     show screen desk
-    
+
     hide screen snape_02 #Snape stands still.
     hide screen bld1
     hide screen snape_main
     with d3
 
-    
+
     hide screen blkfade
     with d3
     $ fire_in_fireplace = True
-    
+
     show screen bld1
     with d3
     "Профессор Снейп проводит день в твоих палатах, заливая горе вином."
-    
+
     if not sfmax:# Turns TRUE when friendship with Snape been maxed out.
         ">Ваши с ним отношения улучшились."
         $ snape_friendship +=1
-   
+
     show screen blkfade
     with d3
     hide screen with_snape_animated
@@ -778,26 +778,26 @@ label against_the_rule:
     show screen chair
     show screen desk
     hide screen desk
-    
+
     hide screen bld1
 
     stop bg_sounds #Stops playing the fire SFX.
 
     $this.against_the_rule.Finalize()
-   
+
     jump night_start
-         
+
 #    hide screen snape_main
 #    hide screen bld1
 #    with d3
-    
+
 #    $ walk_xpos=360 #Animation of walking chibi. (From desk) 360
 #    $ walk_xpos2=610 #Coordinates of it's movement. (To the door) 610
-    
+
 #    $ snapes_speed = 03.0 #The speed of moving the walking animation across the screen.
-#    show screen snape_walk_01_f 
+#    show screen snape_walk_01_f
 #    pause 3
-#    hide screen snape_walk_01_f 
+#    hide screen snape_walk_01_f
 #    show screen snape_01_f #Snape stands still. (Mirrored).
 #    pause.2
 #    who2 "................."
@@ -814,28 +814,28 @@ label against_the_rule:
 #    $ renpy.play('sounds/door.mp3') #Sound of a door opening.
 
 #    return
-    
+
 #============================
 
 label crying_about_dress:
-    
+
 #    $ have_no_dress_hap = True #Turns TRUE after Hermione comes and cries about having no proper dress for the Ball.
     $ days_without_an_event = 0
-    
+
     $ walk_xpos=520 #Animation of walking chibi. (From)
     $ walk_xpos2=400 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-    show screen hermione_walk_01 
+    show screen hermione_walk_01
     with d4
-    pause 1.7 
+    pause 1.7
     $ hermione_chibi_xpos = 400 #Near the desk.
     show screen hermione_02 #Hermione stands still.
     pause.5
     show screen bld1
     with Dissolve(.3)
-    
-    
+
+
     $herView.hideQQ()
     $ pos = POS_140
     $herView.showQQ( "body_22.png", pos )
@@ -874,15 +874,15 @@ label crying_about_dress:
     her "Я думаю, мне лучше уйти...*всхлип*"
     m "Что ж, не смею вас более задерживать, мисс Грейнджер...."
     # Walks to the door.
-    
- 
-    
 
-    
-    
+
+
+
+
+
     hide screen bld1
     $herView.hideQ()
-    hide screen blktone 
+    hide screen blktone
     hide screen hermione_02
     hide screen ctc
     with d3
@@ -890,15 +890,15 @@ label crying_about_dress:
     $ walk_xpos=400 #Animation of walking chibi. (From)
     $ walk_xpos2=610 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
-    show screen hermione_walk_01_f 
+    show screen hermione_walk_01_f
     pause 2
-    hide screen hermione_walk_01_f 
-    
+    hide screen hermione_walk_01_f
+
 
     $ hermione_chibi_xpos = 610 # Stands near the door.
     show screen hermione_01_f #Hermione stands still.
     pause.3
-    $ posHead = gMakePos( 390, 340 )    
+    $ posHead = gMakePos( 390, 340 )
     show screen bld1
     with d3
     $herViewHead.showQ( "body_145.png", posHead )
@@ -906,51 +906,51 @@ label crying_about_dress:
     $herViewHead.hideQ()
     hide screen hermione_01_f #Hermione stands still.
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-    
-   
-    
+
+
+
     pause.5
     m "Хм... Я не помню, чтобы видел ее в таком отчаянии..."
     m "И это несмотря на все, что было..."
     m "Судя по всему, для нее продавать себя за очки значительно меньшая проблема, чем не иметь приличного бального платья..."
     m ".............."
     m "Бабы..."
-       
+
     hide screen bld1
     with d3
-    
+
     $ hermione_takes_classes = True
-    
+
     call music_block
 
-    $this.crying_about_dress.Finalize()    
-    
-    return 
-    
+    $this.crying_about_dress.Finalize()
+
+    return
+
 #===========================
 label sorry_about_hesterics:
 #    $ sorry_for_hesterics = True # Turns TRUE after Hermione comes and apologizes for the day (event) before.
     $ days_without_an_event = 0
-    
+
 #    $ have_no_dress_hap = True #Turns TRUE after Hermione comes and cries about having no proper dress for the Ball.
     $ days_without_an_event = 0
-    
+
     $ walk_xpos=520 #Animation of walking chibi. (From)
     $ walk_xpos2=400 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
-    show screen hermione_walk_01 
+    show screen hermione_walk_01
     with d4
-    pause 1.7 
+    pause 1.7
     $ hermione_chibi_xpos = 400 #Near the desk.
     show screen hermione_02 #Hermione stands still.
     pause.5
     show screen bld1
     with Dissolve(.3)
-    
-    
+
+
     play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
-    
+
     m "Мисс Грейнджер?"
     $herView.hideQQ()
     $ pos = POS_140
@@ -984,7 +984,7 @@ label sorry_about_hesterics:
     $herView.data().addItem( 'item_tears', '01' )
     $herView.showQQ( "body_11.png", pos )
     her "Я так старалась... и..."
-    
+
     $herView.hideQQ()
     $herView.data().delItem( 'item_tears' )
     $herView.showQQ( "body_139.png", pos )
@@ -994,7 +994,7 @@ label sorry_about_hesterics:
     $herView.hideshowQQ( "body_145.png", pos )
     her "Простите, сэр!"
     $herView.hideQQ()
-    
+
     $ walk_xpos=370 #Animation of walking chibi. (From) 300
     $ walk_xpos2=750 #Coordinates of it's movement. (To) 610
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen. 0.02
@@ -1009,22 +1009,22 @@ label sorry_about_hesterics:
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
 
     pause.5
-    
+
     show screen bld1
     with d3
-    
+
     m "......................................."
     m "Хм..."
     $ hermione_takes_classes = True
     hide screen bld1
     with d3
-    
+
     call music_block
     $this.sorry_about_hesterics.Finalize()
 
     return
-    
-    
+
+
 #=========================
 label giving_thre_dress:
 #    $ gave_the_dress = True #Turns True when Hermione has the dress.
@@ -1032,8 +1032,8 @@ label giving_thre_dress:
     $ days_without_an_event = 0
     $herView.hideQ()
     with d5
-    
-    
+
+
     $ hermi.liking = 0
     stop music fadeout 1.0
     m "Вот... Это тебе..."
@@ -1097,11 +1097,11 @@ label giving_thre_dress:
     $herView.hideshowQQ( "body_145.png", pos )
     her "Конечно... Извините, сэр!"
     $herView.hideQQ()
-    
-    
-    
 
-    
+
+
+
+
     $ hermione_chibi_xpos = 400 #Near the desk.
     $ hermione_chibi_ypos = 250 #Default: 250
     show screen hermione_02 #Hermione stands still.
@@ -1116,16 +1116,16 @@ label giving_thre_dress:
 
     hide screen bld1
     $herView.hideQ()
-    hide screen blktone 
+    hide screen blktone
     hide screen ctc
     with Dissolve(.3)
-    
+
     $ walk_xpos=400 #Animation of walking chibi. (From)
     $ walk_xpos2=610 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
-    show screen hermione_walk_01_f 
+    show screen hermione_walk_01_f
     pause 2
-    hide screen hermione_walk_01_f 
+    hide screen hermione_walk_01_f
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     with Dissolve(.3)
     pause.8
@@ -1137,8 +1137,8 @@ label giving_thre_dress:
     with d3
 
     call music_block
-    
-    
+
+
     $this.giving_thre_dress.Finalize()
 
     if daytime:
@@ -1146,24 +1146,24 @@ label giving_thre_dress:
         jump night_main_menu
     else:
         $ hermione_sleeping = True
-        jump day_main_menu            
-    
-    
-    
+        jump day_main_menu
+
+
+
 ###======================================================================
-    
-    
+
+
 label good_bye_snape:
 
     $ days_without_an_event = 0
-    
+
     play music "music/Dark Fog.mp3" fadein 1 fadeout 1 # SNAPE'S THEME
-    
+
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     $ snapes_speed = 02.0 #The speed of moving the walking animation across the screen.
     $ walk_xpos=470 #Animation of walking chibi. (From)
     $ walk_xpos2=360 #Coordinates of it's movement. (To) 360
-    show screen snape_walk_01 
+    show screen snape_walk_01
     #with d3
     pause 1.5
     show screen snape_02 #Snape stands still.
@@ -1174,7 +1174,7 @@ label good_bye_snape:
     $ s_sprite = "03_hp/10_snape_main/snape_01.png"
     show screen snape_main
     with Dissolve(.1)
-    
+
 
     sna "Джинни..."
     m "Северус?"
@@ -1252,10 +1252,10 @@ label good_bye_snape:
     show screen snape_main                                                                                                                  #SNAPE
     with d3                                                                                                                                                   #SNAPE
     sna "Пока все будут поглощены этим чертовым \"Осенним балом\", ты сможешь прокрасться незамеченным..."
-    
+
     hide screen snape_main                                                                                                                  #SNAPE
     with d3                                                                                                                                                   #SNAPE
-    
+
     show screen blkfade
     with d5
     hide screen genie
@@ -1277,7 +1277,7 @@ label good_bye_snape:
     $sna_head_state = 17
     sna_head_main "Похоже на то..."
     hide screen s_head2
-    hide screen blkfade 
+    hide screen blkfade
     with d3
     pause.5
 
@@ -1314,7 +1314,7 @@ label good_bye_snape:
     $ s_sprite = "03_hp/10_snape_main/snape_06.png"
     sna "Я, пожалуй, пойду..."
     #Goes to the door, stops and turns around.
-    
+
     hide screen s_head2
     show screen blkfade
     with d5
@@ -1325,36 +1325,36 @@ label good_bye_snape:
 
     pause.5
     # SNAPE LEAVES
-    
+
     hide screen ctc
-    
+
     hide screen bld1
     with d3
     $ walk_xpos=360 #Animation of walking chibi. (From desk)
     $ walk_xpos2=610 #Coordinates of it's movement. (To the door)
     $ snapes_speed = 03.0 #The speed of moving the walking animation across the screen.
-    show screen snape_walk_01_f 
-    hide screen blkfade 
+    show screen snape_walk_01_f
+    hide screen blkfade
     with d3
     pause 3
-    
-    hide screen snape_walk_01_f 
+
+    hide screen snape_walk_01_f
 
 
     show screen snape_01_f #Snape stands still near the door. (Mirrored).
     pause.5
     show screen snape_01#Snape stands still.
-    
-    
-    
-    
-    
+
+
+
+
+
     show screen ctc
     pause
     hide screen ctc
     show screen bld1
     with d5
-    
+
     show screen s_head2
     $ s_sprite = "03_hp/10_snape_main/snape_01.png"
     sna "Хотя, еще кое-что..."
@@ -1410,7 +1410,7 @@ label good_bye_snape:
     hide screen bld1
     with d3
     pause.3
-    
+
     stop music fadeout 1.0
 
     show screen snape_01_f#Snape stands still.
@@ -1419,14 +1419,14 @@ label good_bye_snape:
     hide screen snape_01#Snape stands still.
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     hide screen snape_01_f#Snape stands still.
-    
+
     pause 1
     show screen ctc
     pause
     hide screen ctc
-    
-    
-    
+
+
+
     m "............................"
     m "Вот и все, да...?"
     play music "music/Despair_by_erenik.mp3" fadein 1 fadeout 1 # SAD THEME.
@@ -1446,7 +1446,7 @@ label good_bye_snape:
         m "Я не люблю долгих прощаний..."
         m "Хм..."
         m "Думаю, я мог бы оставить ей записку..."
-        
+
         m "Посмотрим..."
         show screen bld1
         with d3
@@ -1461,7 +1461,7 @@ label good_bye_snape:
         menu:
             m "Дорогая..."
             "\"Мисс Грейнджер\"":
-                 $ word_01 = "мисс Грейнджер" 
+                 $ word_01 = "мисс Грейнджер"
             "\"Грязная шлюха\"":
                 $ word_01 = "грязная шлюха"
             "\"Потаскуха\"":
@@ -1560,7 +1560,7 @@ label good_bye_snape:
     hide screen bld1
     with d3
     m "Что ж, теперь мне пора..."
-    
+
     show screen blkfade
     with d5
 
@@ -1575,23 +1575,23 @@ label good_bye_snape:
     pause.5
     hide screen blkfade
     with d5
-    
-    
-    
-    m "........."
-        
-    
 
-    
+
+
+    m "........."
+
+
+
+
 
     $ walk_xpos=270 #Animation of walking chibi. (From desk)
     $ walk_xpos2=610 #Coordinates of it's movement. (To the door)
     $ snapes_speed = 03.0 #The speed of moving the walking animation across the screen.
     hide screen g_c_u
     show screen genie_walk
-    hide screen blkfade 
+    hide screen blkfade
     pause 3
-    
+
     hide screen genie_walk
 
 
@@ -1600,7 +1600,7 @@ label good_bye_snape:
     pause 1
     m "...................."
     m "Аграба... я иду..."
-    
+
     show screen ctc
     pause
     hide screen ctc
@@ -1615,80 +1615,75 @@ label good_bye_snape:
     show screen blkfade
     with d7
     pause 1
-    
+
     stop music fadeout 1.0
-    
+
     centered "{size=+7}{color=#cbcbcb}За пределами Хогвартса{/color}{/size}"
 
     play music "sounds/night.mp3" fadein 1 fadeout 1 #NIGHT SOUNDS.
-    
+
     $ end_u_1_pic =  "03_hp/17_ending/171.png" #<---- SCREEN
     show screen end_u_1                                           #<---- SCREEN
     pause.3
-    hide screen blkfade 
+    hide screen blkfade
     with d7
-    
+
     show screen ctc
     pause
     hide screen ctc
-    
 
-    
+
+
     m "Северус был прав..."
     pause.5
     $ renpy.play('sounds/steps_grass.mp3') # SOUNDS OF STEPS IN THE GRASS.
     $ end_u_3_pic =  "03_hp/17_ending/172.png" #<---- SCREEN
     show screen end_u_3                                           #<---- SCREEN
     with d7                                                                       #<---- SCREEN
-    
-    
-    
+
+
+
     m "Чем дальше я от школьных земель..."
     m "Тем могущественнее становлюсь..."
-    
+
     $ end_u_4_pic =  "03_hp/17_ending/173.png" #<---- SCREEN
     show screen end_u_4                                           #<---- SCREEN
     with d7                                                                       #<---- SCREEN
     pause.5
-    
+
     m "Думаю, что я отошел достаточно далеко..."
     m "Пришла пора отменить заклинание и вернуться домой..."
     m ".........."
     m "...................."
     m "Аграба, вот и я..."
-    if not persistent.game_complete: # FIRST PLAYTHOURGH. 
+    if not persistent.game_complete: # FIRST PLAYTHOURGH.
         show screen ctc
         pause
         hide screen ctc
-        
-        show screen blkfade 
+
+        show screen blkfade
         with d9
         pause .5
-        
+
         play music "music/Plaint.mp3" fadein 1 fadeout 1 #SAD CREDITS MUSIC.
-        
+
         centered "{size=+7}{color=#cbcbcb}Поздравляем с завершением игры!{/color}{/size}\n\n\
                   {size=+5}{color=#cbcbcb}Это концовка \"00\" из \"03\".{/color}{/size}"
-        
+
         centered "{size=+7}{color=#cbcbcb}Спасибо за ваше то, что играли!{/color}{/size}\n\n\
                   {size=+5}{color=#cbcbcb}AKABUR 2014{/color}{/size}"
-        
-        
-        #play music "music/Real Talk by Brix.MP3" fadein 1 fadeout 1 
-        #play music "music/03_2_Voicemail Freestyle Mike Wiebe.mp3" fadein 3 fadeout 1  
+
+
+        #play music "music/Real Talk by Brix.MP3" fadein 1 fadeout 1
+        #play music "music/03_2_Voicemail Freestyle Mike Wiebe.mp3" fadein 3 fadeout 1
         #scene image "08_ending/e05.png" with Dissolve(2)
         # show akaani with d5
 
-        
-        centered "{cps=20}{size=+5}{color=#ea91b0}-Hermione Trainer-{/color}{/size}\n\n\
-        {size=+5}{color=#e5e297}-Продюсер-{/color}{/size}\n{color=#cbcbcb}AKABUR{/color}\n\n\
-        {size=+5}{color=#e5e297}-Программист-{/color}{/size}\n     {color=#cbcbcb}AKABUR{/color}\n\n\
-        {size=+5}{color=#e5e297}-Сценарист-{/color}{/size}\n     {color=#cbcbcb}AKABUR{/color}\n\n\
-        {size=+5}{color=#e5e297}-Художник-{/color}{/size}\n     {color=#cbcbcb}AKABUR{/color}\n\n\
-        {size=+5}{color=#e5e297}-Второй художник-{/color}{/size}\n     {color=#cbcbcb}DAHR{/color}\n\n\
-        {size=+5}{color=#e5e297}-Звуковые эффекты-{/color}{/size}\n    {color=#cbcbcb}http://www.freesound.org/{/color}\n\n"
-    #    {size=+5}{color=#e5e297}-МУЗЫКА-{/color}{/size}\n\n
 
+        centered "{cps=20}{size=+5}{color=#ea91b0}-Hermione Trainer-{/color}{/size}\n\n\
+
+    #    {size=+5}{color=#e5e297}-МУЗЫКА-{/color}{/size}\n\n
+    #
     #    {color=#e5e297}(From \"NEWGROUNDS\")\n
     #    {color=#e5e297}\"Eastern Journey\" {/color}{color=#cbcbcb}by Pike270.{/color}\n
     #    {color=#e5e297}\"Grape Soda Is Fucking Raw\"{/color} {color=#cbcbcb}by jrayteam6.{/color}\n
@@ -1698,7 +1693,7 @@ label good_bye_snape:
     #    {color=#e5e297}\"Sleep Walking\" {/color}{color=#cbcbcb}by hektikmusic.{/color}{/cps}"
         nvl clear
     #    hide akaani
-        
+
         $ renpy.play('sounds/scratch.wav')
         stop music
         with hpunch
@@ -1706,32 +1701,32 @@ label good_bye_snape:
         centered "{size=+7}{color=#cbcbcb}ЧТО?!{/color}{/size}"
         g4 "Я сказал, что я все еще здесь, вашу мать!"
         centered "{size=+7}{color=#cbcbcb}Ох... :({/color}{/size}"
-        
-        
-        
+
+
+
         hide screen end_u_4                                           #<---- SCREEN
         with d1
-        hide screen blkfade 
+        hide screen blkfade
         with d9
         play music "sounds/night.mp3" fadein 1 fadeout 1 #NIGHT SOUNDS.
-        
+
     m "....................."
     if persistent.game_complete:
         m "Нет, я не могу просто взять и уйти!"
     else:
         m "Нет, я не могу просто взять и уйти!"
-    
+
     m "Я должен увидеть девочку в последний раз..."
-    
+
     show screen ctc
     pause
     hide screen ctc
-    
+
     show screen blkfade
     with d7
-    
+
     stop music fadeout 1.0
-    
+
     if not persistent.game_complete: # FIRST PLAY THROUGH.
         centered "{size=+7}{color=#cbcbcb}Хорошо, черт с тобой..{/color}{/size}"
     play music "music/11 Neville's Waltz.mp3" fadein 1 fadeout 1 # BALL THEME.
@@ -1739,60 +1734,49 @@ label good_bye_snape:
 
     hide screen end_u_4                                           #<---- SCREEN
     jump your_whore
-    
+
     $this.good_bye_snape.Finalize()
-    
+
     return
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 transform custom_walk_02(x,x2): #Same custom walk but for Hermione.
     xpos x #координата X, из которой облако начинает движение
     ypos 250 #высота, на котором плывет облако
     linear hermione_speed xpos x2 # linear — скорость движения. Чем больше значение , тем медленнее. xpos — координата x, куда облако движется
 
-transform custom_walk(x,x2): #Метод ATL для задания движения облаков. Более продвинутый и современный, чем move. Про его возможности читать здесь: http://www.renpy.org/wiki/atl 
+transform custom_walk(x,x2): #Метод ATL для задания движения облаков. Более продвинутый и современный, чем move. Про его возможности читать здесь: http://www.renpy.org/wiki/atl
     xpos x #координата X, из которой облако начинает движение
     ypos 210 #высота, на котором плывет облако
     linear snapes_speed xpos x2 # linear — скорость движения. Чем больше значение , тем медленнее. xpos — координата x, куда облако движется
-    
-transform genie_walk(x,x2): #Метод ATL для задания движения облаков. Более продвинутый и современный, чем move. Про его возможности читать здесь: http://www.renpy.org/wiki/atl 
+
+transform genie_walk(x,x2): #Метод ATL для задания движения облаков. Более продвинутый и современный, чем move. Про его возможности читать здесь: http://www.renpy.org/wiki/atl
     xpos x #координата X, из которой облако начинает движение
     ypos 260 #высота, на котором плывет облако
     linear snapes_speed xpos x2 # linear — скорость движения. Чем больше значение , тем медленнее. xpos — координата x, куда облако движется
-    
-    
-
-
-
-
-
-
-
-
-

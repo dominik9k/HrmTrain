@@ -516,12 +516,6 @@ translate english faq2_b7849af1:
     # a1 "Самый простой способов написать мне (akaburfake2@yahoo.com) и дать мне знать, что тебе понравилась игра."
     a1 "The easiest way would be to contact me (akaburfake2@yahoo.com) and let me know that you enjoyed the game."
 
-# game/30_how.rpy:290
-translate english faq2_05bf67e5:
-
-    # a1 "Также ты можешь поддержать меня лично на {a=http://www.patreon.com/akabur}www.patreon.com/akabur{/a}"
-    a1 "You could also support me personally at {a=http://www.patreon.com/akabur}www.patreon.com/akabur{/a}"
-
 # game/30_how.rpy:291
 translate english faq2_722f56af:
 
@@ -545,12 +539,6 @@ translate english faq2_c164d665:
 
     # a1 "Ну, перейти по этой ссылке: {a=http://akabur.hentaiunited.com}akabur.hentaiunited.com{/a} и подписаться. Или посетить мой сайт: {a=http://akabur.com}akabur.com{/a}."
     a1 "Well, follow this link: {a=http://akabur.hentaiunited.com}akabur.hentaiunited.com{/a} and subscribe. Or visit my site: {a=http://akabur.com}akabur.com{/a}."
-
-# game/30_how.rpy:316
-translate english faq2_305d689c:
-
-    # a1 "Еще, конечно есть Patreon {a=http://www.patreon.com/akabur}www.patreon.com/akabur{/a}.\nи {a=https://twitter.com/AKABUR}мой twitter{/a}."
-    a1 "There is also Patreon of course {a=http://www.patreon.com/akabur}www.patreon.com/akabur{/a}.\nAnd {a=https://twitter.com/AKABUR}my twitter{/a}."
 
 # game/30_how.rpy:319
 translate english faq2_42b4207e:
@@ -611,24 +599,6 @@ translate english faq2_46f2af4a:
 
     # a1 "Мой друг и коллега Dahr обеспечил меня благородно (и бесплатно) разными художествами (помимо всего прочего)."
     a1 "My friend and colleague Dahr provided me graciously (and free of charge) with a lot sorts of additional art (among other things)."
-
-# game/30_how.rpy:333
-translate english faq2_15a8a54b:
-
-    # a1 "Не бойтись кинуть парню монетки или две на {a=http://www.patreon.com/DAHR}www.patreon.com/DAHR{/a}"
-    a1 "Feel free to throw a coin or two the man's way at {a=http://www.patreon.com/DAHR}www.patreon.com/DAHR{/a}"
-
-# game/30_how.rpy:334
-translate english faq2_dcfc8d09:
-
-    # a1 "Xaljio всегда был рядом, когда у меня были проблемы с коддингом. (частенько). Посетите его страничку - {a=http://www.patreon.com/xaljio}www.patreon.com/xaljio{/a}"
-    a1 "Xaljio was always there for me whenever I needed help with coding. (quite often). Fell free to visit his page at {a=http://www.patreon.com/xaljio}www.patreon.com/xaljio{/a}"
-
-# game/30_how.rpy:335
-translate english faq2_d10f66f4:
-
-    # a1 "И, конечно, сообщества на patreon и hentaiunited. Парни, вы шикарны."
-    a1 "And of course patreon and hentaiunited community. You guys are awesome."
 
 # game/30_how.rpy:336
 translate english faq2_3de1696c:
@@ -904,7 +874,7 @@ translate english devel_e596fc64:
 translate english devel_9ff0a49f:
 
     # dev "Чибики Дафны : {color=2F2F2F}Grending{/color}"
-    dev "Chibis for Daphne : {color=2F2F2F}Grending{/color}"
+    dev "Chibis for Daphne : {color=2F2F2F}Grending{/color} --> {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=85}Grendidg Forum{/a} | {a=https://vk.com/grendidg}Grendidg VK{/a} | {a=http://virink.com/GRENDIDG}Grendidg Virink{/a}"
 
 # game/30_how.rpy:421
 translate english devel_b8f433be:
@@ -1305,4 +1275,3 @@ translate english devel_06d7322a:
 
     # dev "{color=0F0F0F}Eskelsama{/color} - за великолепный кодинг и неоценимый вклад в развитие проекта !"
     dev "{color=0F0F0F}Eskelsama{/color} - for amazing coding and invaluable contribution to the project!"
-

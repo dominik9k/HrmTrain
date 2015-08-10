@@ -1269,14 +1269,8 @@ translate chinese new_request_02_c_complete_42e68fe7:
 # game/01_personal_requests/02_pr_pub_teacher.rpy:492
 translate chinese new_request_02_c_complete_d799b6f7:
 
-    # g4 "{size=-5}(Во имя великих песков пустыни! Акабур, тебе следует сдерживать себя!){/size}"
+    # g4 "{size=-5}(Во имя великих песков пустыни! Что они со мной сделали!){/size}"
     g4 ""
-
-# game/01_personal_requests/02_pr_pub_teacher.rpy:493
-translate chinese new_request_02_c_complete_db0fe584:
-
-    # a5 "{size=-5}(Нужно было сначала послушать девочку. Блин...){/size}"
-    a5 ""
 
 # game/01_personal_requests/02_pr_pub_teacher.rpy:495
 translate chinese new_request_02_c_complete_38f05ef7:
@@ -1295,24 +1289,6 @@ translate chinese new_request_02_c_complete_369404cb:
 
     # her ".....??!"
     her ""
-
-# game/01_personal_requests/02_pr_pub_teacher.rpy:500
-translate chinese new_request_02_c_complete_e585e7b3:
-
-    # a6 "{size=-5}(Придерживайся сценария, придурок!){/size}"
-    a6 ""
-
-# game/01_personal_requests/02_pr_pub_teacher.rpy:501
-translate chinese new_request_02_c_complete_f0a580d9:
-
-    # g4 "Да, очень раздражительный дух ... Раздражительный и немой!"
-    g4 ""
-
-# game/01_personal_requests/02_pr_pub_teacher.rpy:502
-translate chinese new_request_02_c_complete_58688732:
-
-    # a6 "{size=-5}(Ты......!){/size}"
-    a6 ""
 
 # game/01_personal_requests/02_pr_pub_teacher.rpy:504
 translate chinese new_request_02_c_complete_605a0d83:

@@ -3,56 +3,56 @@
 # game/04_phoenix.rpy:7
 translate english phoenix_ee8fdf63:
 
-    # a1 "Хорошо, давайте проясним кое-что..."
-    a1 "Alright, let's clear something up..."
+    # dev "Хорошо, давайте проясним кое-что..."
+    dev "Alright, let's clear something up..."
 
 # game/04_phoenix.rpy:8
 translate english phoenix_4cefe445:
 
-    # a1 "Взаимодействие с этой птицей не даст вам буквально ничего."
-    a1 "Interacting with this bird does literally nothing."
+    # dev "Взаимодействие с этой птицей не даст вам буквально ничего."
+    dev "Interacting with this bird does literally nothing."
 
 # game/04_phoenix.rpy:9
 translate english phoenix_57080bac:
 
-    # a1 "Есть счетчик, который запускает это событие после того, как вы сделали что-то определенное количество раз, и все."
-    a1 "There is a counter that starts this event after a certain amount of interactions, but that's it"
+    # dev "Есть счетчик, который запускает это событие после того, как вы сделали что-то определенное количество раз, и все."
+    dev "There is a counter that starts this event after a certain amount of interactions, but that's it"
 
 # game/04_phoenix.rpy:10
 translate english phoenix_56b6f67a:
 
-    # a1 "На первый взгляд у меня есть весьма амбициозные планы на этого ублюдка..."
-    a1 "I did have some rather ambitious plans for this foul bastard at first."
+    # dev "На первый взгляд у меня есть весьма амбициозные планы на этого ублюдка..."
+    dev "I did have some rather ambitious plans for this foul bastard at first."
 
 # game/04_phoenix.rpy:11
 translate english phoenix_c6db1d67:
 
-    # a1 "Что-то вроде покупки еды для него, ласки и в конечном итоге получаения от всего этого какого-то вознаграждения..."
-    a1 "Something about buying food for it, petting it and eventually getting a nice reward..."
+    # dev "Что-то вроде покупки еды для него, ласки и в конечном итоге получаения от всего этого какого-то вознаграждения..."
+    dev "Something about buying food for it, petting it and eventually getting a nice reward..."
 
 # game/04_phoenix.rpy:12
 translate english phoenix_6f958e08:
 
-    # a1 "Все это было вырезано как и другие \"штуки\"..."
-    a1 "The whole thing got cut along with a ton of other things..."
+    # dev "Все это было вырезано как и другие \"штуки\"..."
+    dev "The whole thing got cut along with a ton of other things..."
 
 # game/04_phoenix.rpy:13
 translate english phoenix_c3f4291f:
 
-    # a1 "Вообще я хотел убрать эту птицу, но не смог заставить себя это сделать..."
-    a1 "Normally I would take out the bird altogether, but I couldn't bring myself to do it..."
+    # dev "Вообще я хотел убрать эту птицу, но не смог заставить себя это сделать..."
+    dev "Normally I would take out the bird altogether, but I couldn't bring myself to do it..."
 
 # game/04_phoenix.rpy:14
 translate english phoenix_860be2f5:
 
-    # a1 "После того, как я провел столько времени анимируя это чертово падающее перо..."
-    a1 "Not after I spent so much time with animating that damn falling feather..."
+    # dev "После того, как я провел столько времени анимируя это чертово падающее перо..."
+    dev "Not after I spent so much time with animating that damn falling feather..."
 
 # game/04_phoenix.rpy:15
 translate english phoenix_55119ade:
 
-    # a1 "С этого момента вы можете продолжать кормить и гладить птицу, но я просто хочу, чтобы вы знали, что это не даст вам ничего."
-    a1 "From now on you will be able to continue to feed and pet the bird, but I just want you to know that it will not lead to anything."
+    # dev "С этого момента вы можете продолжать кормить и гладить птицу, но я просто хочу, чтобы вы знали, что это не даст вам ничего."
+    dev "From now on you will be able to continue to feed and pet the bird, but I just want you to know that it will not lead to anything."
 
 # game/04_phoenix.rpy:16
 translate english phoenix_ca801256:
