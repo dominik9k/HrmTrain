@@ -653,7 +653,9 @@ screen gift(__par=the_gift):
     add "03_hp/18_store/00.png" 
     add __par
     
-
+screen pic_event(__par=pic_for_event):
+    zorder 5
+    add __par
 
 
 

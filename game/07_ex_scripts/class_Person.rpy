@@ -206,6 +206,9 @@
             self.WrdAdd("hair_basic","gears_hair","adm")
             self.WrdAdd("hair_basic","gears_hair","wear")
             self.WrdAdd("hair_basic","gears_hair","set")
+            self.WrdAdd("panties","gears_panties","adm")
+            self.WrdAdd("panties","gears_panties","wear")
+            self.WrdAdd("panties","gears_panties","set")            
             
             if self.Name == "hermione" :
                 self.WrdAdd("standart2","gears_shirt","new")
@@ -317,13 +320,18 @@
                 return True
             
             return False
+            
+        def WrdIsWear (self, Name = None) :
+            if Name != None and self.Wrd_wear.Count(Name) > 0 :
+                return True
+            
+            return False
                 
         def WrdMain (self) :
             self.data.mItems.clear() # Удалить все итемы
             self.body.data().addItemSet( self.Name+'_body' )
             self.body.data().addItem( 'item_tits' )
             self.body.data().addItem( 'item_tits_no' )
-            self.body.data().addItem( 'item_panties' )
  
             for o in self.Wrd_wear():
                 if self.Items.GetBlock(o.Name) == "gears_other" :
@@ -342,6 +350,8 @@
                 elif self.Items.GetBlock(o.Name) == "gears_stockings" :
                     self.body.data().addItem("item_" + o.Name)
                 elif self.Items.GetBlock(o.Name) == "gears_hair" :
+                    self.body.data().addItem("item_" + o.Name)
+                elif self.Items.GetBlock(o.Name) == "gears_panties" and self.whoring < 12:
                     self.body.data().addItem("item_" + o.Name)
 
             if self.wrd_sperm_dried :

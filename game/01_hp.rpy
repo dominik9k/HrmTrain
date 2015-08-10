@@ -364,6 +364,8 @@ $ wrd_rent_playful_schoolgirl = 0
 $ wrd_rent_cheerleader = 0
 $ wrd_rent_business = 0
 
+$ wrd_nopanties_dialog = False
+
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
 $ letter_from_ficbook_fun = False

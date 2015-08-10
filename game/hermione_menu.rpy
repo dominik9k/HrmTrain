@@ -14,6 +14,16 @@ label hermione_approaching:
  
     $hermi.WrdSetMain()
     
+    if wrd_nopanties_dialog == False and hermi.whoring >= 12 and (hermi.WrdIsWear("xxsmallskirt") or hermi.WrdIsWear("xxxsmallskirt")):
+        m "Гермиона !!! Вау !"
+        m "Ты не боишься так ходить по школе ?"
+        
+        $herView.hideshowQQ( "body_56.png", pos )
+        her "..........."
+        her "Я использую маскирующие чары, сэр."
+    
+        $ wrd_nopanties_dialog = True
+    
     python:
         for t in [
             (0, "body_01.png", her, "Да, профессор?"),
