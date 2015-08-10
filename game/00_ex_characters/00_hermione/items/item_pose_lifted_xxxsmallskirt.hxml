@@ -4,7 +4,7 @@
 	<key>pose</key>
 
 	<style name="default">
-		<frame>pose_skirt_up.png</frame>
+		<frame>pose_lifted_xxxsmallskirt.png</frame>
 		<folder>pose</folder>
 		<visible>1</visible>
 		<zorder>pose</zorder>
