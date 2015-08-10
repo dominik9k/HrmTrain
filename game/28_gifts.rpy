@@ -2053,7 +2053,6 @@ label giving_hair_set :
 
     $ hermi.liking += 30
     $hermi.Items.Receive(hero.Items,item.Name) #     
-    $hermi.WrdSetAddNew("badge")
     $herView.showQ( "body_01.png", pos, d5 )
     her "Ведьмодница ? Я ?"
     $herView.hideQQ()

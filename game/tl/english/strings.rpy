@@ -1,1019 +1,2099 @@
-﻿# TODO: Translation updated at 2015-07-31 21:58
+﻿# TODO: Translation updated at 2015-07-30 09:00
 
 translate english strings:
 
-    old "- Чупа-чупс (6) -"
-    new "- Чупа-чупс (6) -"
+    old "1"
+    new "1"
 
-    old "- Шоколад (5) -"
-    new "- Шоколад (5) -"
+    old "2"
+    new "2"
 
-    old "- Плюшевая сова (6) -"
-    new "- Плюшевая сова (6) -"
+    old "3"
+    new "3"
 
-    old "- Сливочное пиво (6) -"
-    new "- Сливочное пиво (6) -"
+    old "4"
+    new "4"
 
-    old "- Обучающий журнал (9) -"
-    new "- Обучающий журнал (9) -"
+    old "5"
+    new "5"
 
-    old "- Женский журнал (17) -"
-    new "- Женский журнал (17) -"
+    old "6"
+    new "6"
 
-    old "- Журнал для взрослых (6) -"
-    new "- Журнал для взрослых (6) -"
+    old "7"
+    new "7"
 
-    old "- Упаковка презервативов (3) -"
-    new "- Упаковка презервативов (3) -"
+    old "8"
+    new "8"
 
-    old "- Духи (5) -"
-    new "- Духи (5) -"
+    old "[file_name]. [file_time!t]\n[save_name!t]"
+    new "[file_name]. [file_time!t]\n[save_name!t]"
 
-    old "- Вибратор (3) -"
-    new "- Вибратор (3) -"
+    old "Jul 29, 11:25"
+    new "Jul 29, 11:25"
 
-    old "- Банка лубриканта (8) -"
-    new "- Банка лубриканта (8) -"
+    old ""
+    new ""
 
-    old "- Кляп и наручники (6) -"
-    new "- Кляп и наручники (6) -"
+    old "Jul 29, 11:31"
+    new "Jul 29, 11:31"
 
-    old "- Анальная пробка (3) -"
-    new "- Анальная пробка (3) -"
+    old "Jul 29, 12:46"
+    new "Jul 29, 12:46"
 
-    old "- Вино Дамблдора (4) -"
-    new "- Вино Дамблдора (4) -"
+    old "Jul 29, 12:49"
+    new "Jul 29, 12:49"
 
-    old "- Священный свиток (68) -"
-    new "- Священный свиток (68) -"
+    old "Jul 29, 20:51"
+    new "Jul 29, 20:51"
 
-    old "{size=-3}ИНФОРМАЦИЯ о ГАЗЕТЕ{/size}\n\n{size=-4} Итоговое качество газеты :\n[nsp_newspaper_qual] ([nsp_newspaper_qual_text]) {/size}\n{size=-4} Качество печати газеты:\n[nsp_genie_typographic] ([nsp_genie_typographic_text]){/size}\n{size=-4} Качество статей газеты:\n[nsp_genie_writer] ([nsp_genie_writer_text]){/size}\n{size=-4} Качество украшений газеты:\n[nsp_genie_photocamera] ([nsp_genie_photocamera_text]){/size}\n{size=-4} Бонусный контент:\n[nsp_newspaper_bonus_text]{/size}\n{size=-4} Качество бонусного контента:\n[nsp_newspaper_bonus_point]{/size}\n{size=-4} Прошлая награда:\n[nsp_newspaper_last_money] {/size}\n"
-    new "{size=-3}ИНФОРМАЦИЯ о ГАЗЕТЕ{/size}\n\n{size=-4} Итоговое качество газеты :\n[nsp_newspaper_qual] ([nsp_newspaper_qual_text]) {/size}\n{size=-4} Качество печати газеты:\n[nsp_genie_typographic] ([nsp_genie_typographic_text]){/size}\n{size=-4} Качество статей газеты:\n[nsp_genie_writer] ([nsp_genie_writer_text]){/size}\n{size=-4} Качество украшений газеты:\n[nsp_genie_photocamera] ([nsp_genie_photocamera_text]){/size}\n{size=-4} Бонусный контент:\n[nsp_newspaper_bonus_text]{/size}\n{size=-4} Качество бонусного контента:\n[nsp_newspaper_bonus_point]{/size}\n{size=-4} Прошлая награда:\n[nsp_newspaper_last_money] {/size}\n"
+    old "Jul 29, 19:58"
+    new "Jul 29, 19:58"
 
-# TODO: Translation updated at 2015-08-01 12:18
+    old "Jul 29, 19:59"
+    new "Jul 29, 19:59"
+
+    old "Русский"
+    new "Русский"
+
+    old "English"
+    new "English"
+
+    old "[[who]"
+    new "[[who]"
+
+    old "New Game +"
+    new "New Game +"
+
+    old "[[what]"
+    new "[[what]"
+
+    old "Menu Prediction"
+    new "Menu Prediction"
+
+    old "..................?"
+    new "..................?"
+
+    old "{size=-5}[slytherin]{/size}"
+    new "{size=-5}[slytherin]{/size}"
+
+    old "{size=-5}[gryffindor]{/size}"
+    new "{size=-5}[gryffindor]{/size}"
+
+    old "{size=-5}[hufflepuff]{/size}"
+    new "{size=-5}[hufflepuff]{/size}"
+
+    old "{size=-5}[ravenclaw]{/size}"
+    new "{size=-5}[ravenclaw]{/size}"
+
+    old "{size=-4}Sep [cal_day]{/size}"
+    new "{size=-4}Sep [cal_day]{/size}"
+
+    old "{size=-4}[gold]{/size}"
+    new "{size=-4}[gold]{/size}"
+
+    old "Ваше высочество?"
+    new "Your majesty?"
+
+    old "......................................................."
+    new "......................................................."
+
+    old "Я сделал это снова?"
+    new "I did it again, didn't I?"
+
+    old "Телепортировал себя непонятно куда..."
+    new "Teleported myself to who knows where..."
+
+    old "Что с этими ингредиентами?"
+    new "What's with those ingredients?"
+
+    old "Похоже, они мощнее, чем я думал."
+    new "They seem to be way more potent that I thought."
+
+    old "Ну, не важно что это за место, дел у меня тут нет..."
+    new "Well, whatever this place is I have no business here..."
+
+    old "Лучше обернуть заклинание вспять, иначе принцесса будет снова злиться на меня..."
+    new "Better undo the spell and return to the shop before the princess gets angry with me again..."
+
+    old "....................."
+    new "....................."
+
+    old "Хотя..."
+    new "Although..."
+
+    old "Есть в этом месте что-то странное... это..."
+    new "There is something odd about this place... it's..."
+
+    old "Оно наполненно...."
+    new "It's almost brimming with...."
+
+    old "{size=+5}МАГИЕЙ?!{/size}"
+    new "{size=+5}MAGIC?!{/size}"
+
+    old "Да... магия, я чувствую. Такая мощная и в то же время..."
+    new "Yes... magic, I can feel it. So powerful and yet somehow..."
+
+    old "...чужая."
+    new "....alien."
+
+    old "Интересно..."
+    new "Interesting..."
+
+    old "Думаю, нужно здесь осмотреться..."
+    new "I think, I'll stick around for a little bit..."
+
+    old "И если я прочел это правильно.....\n\nIt's........... \"September 14, Thursday\"?"
+    new "If I'm reading this correctly.....\n\nIt's........... \"September 14, Thursday\"?"
+
+    old "Что? Сова?"
+    new "What? An owl?"
+
+    old "{size=-7}От: Гермионы Грейнджер\nКому: Профессору Дамблдору\n\n{/size}{size=-4}Я уверена, вы помните причину, по которой я написала вам последнее письмо, сэр.\n\nЯ прошу вас, пожалуйста, услышьте меня на этот раз. Эта несправедливость не может продолжаться...\nТолько не в наши дни и не в нашей школе.\n\nПожалуйста, примите меры.\n\n{size=-3}С уважением,\nГермиона Грейнджер{/size}"
+    new "{size=-7}From: Hermione Granger\nTo: Professor Dumbledore\n\n{/size}{size=-4}I am sure that you remember the reason why I'm writing you this letter from my last one, sir.\n\nI beg of you, please hear my plea this time. This injustice simply cannot go on...\nNot in this day and age, not in our school.\n\nPlease take action.\n\n{size=-3}With deepest respect,\nHermione Granger.{/size}"
+
+    old "{size=-3}(Туземная форма жизни!?){/size}"
+    new "{size=-3}(An indigenous life form!?){/size}"
+
+    old "{size=-3}(Выглядит, как человек...){/size}"
+    new "{size=-3}(Looks human enough...){/size}"
+
+    old "{size=-3}(Может быть, если я буду вести себя тихо, оно уйдет...?){/size}"
+    new "{size=-3}(Maybe if I just act cool he'll leave...?){/size}"
+
+    old "???"
+    new "???"
+
+    old "Альбус... есть минута?"
+    new "Albus... Do you have a moment?"
+
+    old "{size=-3}(\"Альбус\"? Это, должно быть, мое имя, или это так люди этого мира приветствуют друг друга?){/size}"
+    new "{size=-3}(\"Albus\"? Is that supposed to be my name or is that's just how the humans of this world greet one another?){/size}"
+
+    old "Jul 30, 09:00"
+    new "Jul 30, 09:00"# TODO: Translation updated at 2015-07-30 09:20
 
 translate english strings:
 
-    old "Гермиона"
-    new "Гермиона"
+    old "Jul 30, 09:19"
+    new "Jul 30, 09:19"
 
-# TODO: Translation updated at 2015-08-01 13:42
+    old "Но ведь не постоянно?"
+    new "Well, aren't you always, Albus?"
+
+    old "У меня есть важный разговор к вам..."
+    new "I have something important I need to discuss with you..."
+
+    old "Я думаю, нам стоит пересмотреть условия приема и отчисления."
+    new "I think we need to revise our admittance policy."
+
+    old "................?"
+    new "................?"
+
+    old "Половина моих...так называемых \"учеников\" просто надоедливые личинки, которые отравляют каждый день моей жизни."
+    new "Half of my... so-called \"pupils\" are nothing but annoying maggots that make my life miserable on a daily basis."
+
+    old "................"
+    new "................"
+
+    old "Почти все они из \"Гриффиндора\", конечно же..."
+    new "Most of them belong to your precious \"Gryffindor\" house, of course..."
+
+    old "......?"
+    new "......?"
+
+    old "Жалкие Уизли, шумная Грейнджер и, конечно же, герой всех несовершеннолетних правонарушителей...."
+    new "The wretched Weasley family, that noisy Granger girl and of course the hero of all the juvenile delinquents around the globe...."
+
+    old "{size=+5}МАЛЬЧИШКА{/size} {size=+5}ПОТТЕР!{/size}"
+    new "{size=+3}The Potter boy!{/size}"
+
+    old "Запомни мои слова, Альбус. \"Гриффиндор\" станет погибелью этой школы!"
+    new "Mark my words, Albus. The \"Gryffindor\" house will become this school's undoing!"
+
+    old "......................"
+    new "......................"
+
+    old "Как маги они - нули без палочки!"
+    new "Nothing but annoying maggots, the lot of them!"
+
+    old "Сидели бы тихо, но нет, они еще и распространяют грязные слухи о преподавателях!"
+    new "And if that wasn't enough, now they spread all sorts of nasty rumours about the teachers!"
+
+    old "В том числе, о вашем покорном слуге..."
+    new "Particularly about yours truly..."
+
+    old "Вы ведь не верите этим слухам, правда, Альбус?"
+    new "You don't believe those rumours, do you Albus?"
+
+    old "Что?"
+    new "What?"
+
+    old "Альбус, я не в настроении для ваших... издевательств."
+    new "Albus, I'm not in the mood for your... shenanigans."
+
+    old "Хм..."
+    new "Hm..."
+
+    old "Вы имели в виду министра магии?"
+    new "You mean the Minster of Magic?"
+
+    old "Я бы предпочел не иметь дел с этими бюрократами..."
+    new "I would rather avoid having to deal with that bureaucrat..."
+
+    old "Ладно, проехали... Чем могу помочь?"
+    new "Fine, never mind... How can I be of help?"
+
+# TODO: Translation updated at 2015-07-30 09:33
 
 translate english strings:
+
+    old "Jul 30, 09:32"
+    new "Jul 30, 09:32"
+
+    old "Хорошо..."
+    new "Good..."
+
+    old "Вы слишком хорошо меня знаете, чтобы верить в это... Мне не стоило переживать..."
+    new "You know me better than that. I wouldn't care for such things..."
+
+    old "........................."
+    new "........................."
+
+    old "Эти жалкие дети совершенно достали меня. Думаю, стоит отдохнуть от всего этого сегодня."
+    new "Well, those wretched kids left me completely exhausted, I think I will retire for today."
+
+    old "Итак, этот высокий задумчивый парень принял меня за другого...?"
+    new "So that tall, broody dude mistook me for someone else...?"
+
+    old "Следовательно я, по всей вероятности, под действием маскирующего заклинания..."
+    new "Which means I must be shrouded in a concealment spell..."
+
+    old "........."
+    new "........."
+
+    old "В свою очередь я - джинн, замаскированный под человека, который, в свою очередь, замаскирован под другого человека..."
+    new "So basically, I'm a genie disguised as a human, who is in turn disguised as another human..."
+
+    old "Нет, все это очень глупо..."
+    new "No, that's not stupid at all..."
+
+    old "Заткнись! Никто не понимает истинных гениев."
+    new "Shut it! Nobody understands a true genius."
+
+    old "Альбус!? Вы серьезно?!"
+    new "Albus?! You can't be serious!"
+
+    old "Это все грязная ложь, уверяю вас!"
+    new "Those are nothing but filthy lies, I'm telling you!"
+
+# TODO: Translation updated at 2015-07-30 09:39
+
+translate english strings:
+
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Hermione{/size}      {size=-6}Perversion:{/size}{size=-4} [hermi.whoring]{/size}\n                   {size=-6}Relationship:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}"
+
+    old "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Daphne  {/size}        {size=-6}Perversion:{/size}{size=-4} [daphne.whoring]{/size}\n                   {size=-6}Relationship:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}"
+
+    old "{size=-3}Снейп{/size}          {size=-6}Откровенность: {/size}{size=-4}[snape_friendship]{/size}\n                     {size=-6}Дружба:{/size} {size=-6}[snape_events]{/size}"
+    new "{size=-3}Snape{/size}           {size=-6}Honesty: {/size}{size=-4}[snape_friendship]{/size}\n                   {size=-6}Friendship:{/size} {size=-6}[snape_events]{/size}"
+
+    old "{color=942121}{size=-4}Sep [cal_day]{/size}{/color}"
+    new "{color=942121}{size=-4}Sep [cal_day]{/size}{/color}"
+
+    old "Jul 30, 09:53"
+    new "Jul 30, 09:53"
+
+    old "{size=-7}От: Гермионы Грейнджер\nКому: Профессору Дамблдору\n\n{/size}{size=-4}Прошу прощения, что беспокою Вас снова профессор. Я просто хочу убедиться, что Вы отнесётесь к этой проблеме серьезно.\n\nПрошлой ночью еще одна однокурсница призналась мне... Я пообещала держать это в секрете, поэтому не могу вдаваться в подробности.\n\nВсе, что я могу сказать, это то, что вовлечен один из профессоров.\n\nПожалуйста примите меры в ближайшее время.\n\n{size=-3}С уважением,\nГермиона Грейнджер.{/size}"
+    new "{size=-7}From: Hermione Granger\nTo: Professor Dumbledore\n\n{/size}{size=-4}I am sorry to disturb you again, professor. I just want to make sure that you take this problem seriously.\n\nLast night another classmate confided to me... I gave my word to keep it a secret, so I cannot go into any details.\n\nAll I can say is that one of the Professors was involved.\n\nPlease take action as soon as possible.\n\n{size=-3}With deepest respect,\nHermione Granger.{/size}"
+
+
+# TODO: Translation updated at 2015-07-30 10:37
+
+translate english strings:
+
+    old "- {{Использовать магию для получения правильного ответа} -"
+    new "-{{Use magic to get the right answer}-"
+
+# TODO: Translation updated at 2015-07-30 10:48
+
+translate english strings:
+
+    old "Jul 30, 10:21"
+    new "Jul 30, 10:21"
+
+    old "Jul 30, 10:22"
+    new "Jul 30, 10:22"
+
+    old "Jul 30, 10:39"
+    new "Jul 30, 10:39"
+
     old "Северус Снейп"
-    new "Северус Снейп"
+    new "Severus Snape"
 
-    old ">Вы нашли предмет: \"[_caption]!\""
-    new ">Вы нашли предмет: \"[_caption]!\""
+    old "Jul 30, 10:40"
+    new "Jul 30, 10:40"
+
+    old "Переводчик"
+    new "Translator"
+
+    old "Jul 30, 10:48"
+    new "Jul 30, 10:48"
+
+# TODO: Translation updated at 2015-07-30 11:11
+
+translate english strings:
+
+    old "Jul 30, 11:03"
+    new "Jul 30, 11:03"
+
+    old "Jul 30, 11:04"
+    new "Jul 30, 11:04"
+
+    old "Jul 30, 11:05"
+    new "Jul 30, 11:05"
+
+# TODO: Translation updated at 2015-07-30 11:57
+
+translate english strings:
+
+    old "Jul 30, 11:28"
+    new "Jul 30, 11:28"
+
+    old "Jul 30, 11:55"
+    new "Jul 30, 11:55"
+
+# TODO: Translation updated at 2015-07-30 11:58
+
+translate english strings:
+
+    old "....."
+    new "....."
 
     old "Ну что ж, пора вернуться к работе..."
-    new "Ну что ж, пора вернуться к работе..."
+    new "Alright, back to work then..."
 
-    old "{size=-7}От: Министерства Магии\nКому: Профессору Альбусу Дамблдору\n\n{/size}{size=-4}Дорогой профессор Дамблдор.\n\nМы хотим сообщить Вам, что Комитет по Прессе изучил реакцию ваших читателей в школе и постановил следующее:\n\nВ соответствии с популярностью последнего выпуска газеты выплатить редакции [nsp_newspaper_cur_money] галлеонов.\n\nСпасибо за сотрудничество !\n\n{size=-3}С уважением,\nМинистерство Магии.{/size}"
-    new "{size=-7}От: Министерства Магии\nКому: Профессору Альбусу Дамблдору\n\n{/size}{size=-4}Дорогой профессор Дамблдор.\n\nМы хотим сообщить Вам, что Комитет по Прессе изучил реакцию ваших читателей в школе и постановил следующее:\n\nВ соответствии с популярностью последнего выпуска газеты выплатить редакции [nsp_newspaper_cur_money] галлеонов.\n\nСпасибо за сотрудничество !\n\n{size=-3}С уважением,\nМинистерство Магии.{/size}"
+    old "Jul 30, 11:58"
+    new "Jul 30, 11:58"
 
-    old ">Добавлено к вашим вещам: [item._caption], [_count] шт."
-    new ">Добавлено к вашим вещам: [item._caption], [_count] шт."
+# TODO: Translation updated at 2015-07-30 12:01
 
-    old "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Дорогой Альбус,\nновые главы вышли великолепными, особенно когда...{/size}"
-    new "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Дорогой Альбус,\nновые главы вышли великолепными, особенно когда...{/size}"
+translate english strings:
 
-    old "- Книга: \"Типографический набор для любителей\" - {image=check_08.png}"
-    new "- Книга: \"Типографический набор для любителей\" - {image=check_08.png}"
+    old ">Вы нашли предмет: \"[_caption]!\""
+    new ">You found an item: \"[_caption]!\""
 
-    old "- Книга: \"Типографический набор для продвинутых\" - {image=check_08.png}"
-    new "- Книга: \"Типографический набор для продвинутых\" - {image=check_08.png}"
+# TODO: Translation updated at 2015-07-30 12:06
 
-    old "- Книга: \"Типографический набор для профессионалов\" - "
-    new "- Книга: \"Типографический набор для профессионалов\" - "
+translate english strings:
 
-    old "- Книга: \"Типографический набор для малых редакций\" - "
-    new "- Книга: \"Типографический набор для малых редакций\" - "
+    old "Хах?"
+    new "Huh?"
 
-    old "- Книга: Фотоаппарат \"Гелиофотус 2\" - {image=check_08.png}"
-    new "- Книга: Фотоаппарат \"Гелиофотус 2\" - {image=check_08.png}"
+    old "Кто-то стучит в дверь..."
+    new "Somebody is knocking on the door..."
 
-    old "- Книга: Фотоаппарат \"Обскура Магика 60\" - {image=check_08.png}"
-    new "- Книга: Фотоаппарат \"Обскура Магика 60\" - {image=check_08.png}"
+    old "Черт... Я должен избегать любых контактов с людьми!"
+    new "Crap... I'm supposed to avoid any human contact!"
 
-    old "- Для газет: \"Типографический набор для любителей\" - {image=check_08.png}"
-    new "- Для газет: \"Типографический набор для любителей\" - {image=check_08.png}"
+    old "Хм... Каковы шансы, что это стучится не человек?"
+    new "Hm... What are the chances that the thing knocking on my door is not human?"
 
-    old "- Для газет: \"Типографический набор для продвинутых\" - {image=check_08.png}"
-    new "- Для газет: \"Типографический набор для продвинутых\" - {image=check_08.png}"
+    old "Ага, достаточно малы..."
+    new "Yeah, quite slim..."
 
-    old "- Для газет: \"Типографический набор для профессионалов\" - {image=check_08.png}"
-    new "- Для газет: \"Типографический набор для профессионалов\" - {image=check_08.png}"
+    old "Настойчивый ублюдок..."
+    new "Persistent little bastard..."
 
-    old "- Для газет: \"Типографический набор для малых редакций\" - {image=check_08.png}"
-    new "- Для газет: \"Типографический набор для малых редакций\" - {image=check_08.png}"
+    old "Jul 30, 12:04"
+    new "Jul 30, 12:04"
 
-    old "- Для газет: \"Типографический набор для средних редакций\" - {image=check_07.png}"
-    new "- Для газет: \"Типографический набор для средних редакций\" - {image=check_07.png}"
+    old "Женский голос"
+    new "Female voice."
 
-    old "- Для газет: \"Типографический набор для больших редакций\" - {image=check_07.png}"
-    new "- Для газет: \"Типографический набор для больших редакций\" - {image=check_07.png}"
+    old "Это я, профессор..."
+    new "It's me, professor..."
 
-    old "- Для газет: Фотоаппарат \"Гелиофотус 2\" - {image=check_08.png}"
-    new "- Для газет: Фотоаппарат \"Гелиофотус 2\" - {image=check_08.png}"
+    old "Гермиона Грейнджер. Могу я войти?"
+    new "Hermione Granger. Can I come in?"
 
-    old "- Для газет: Фотоаппарат \"Обскура Магика 60\" - {image=check_08.png}"
-    new "- Для газет: Фотоаппарат \"Обскура Магика 60\" - {image=check_08.png}"
+    old "{size=-3}(Это та девка, которая засыпала меня своими письмами...){/size}"
+    new "{size=-4}(It's that wretched woman who's been harassing me with her letters lately...){/size}"
 
-    old "- Для газет: Фотоаппарат \"Паномагик а777\" - {image=check_07.png}"
-    new "- Для газет: Фотоаппарат \"Паномагик а777\" - {image=check_07.png}"
+    old "Но, профессор, мне действительно нужно поговорить с вами..."
+    new "Professor, I really need to talk to you..."
 
-    old "- Для газет: Фотоаппарат \"Моменто Мемориус 2000\" - {image=check_07.png}"
-    new "- Для газет: Фотоаппарат \"Моменто Мемориус 2000\" - {image=check_07.png}"
+    old "..........................................."
+    new "..........................................."
 
-    old "- Для газет: Книга \"Я и мой шар\" - {image=check_07.png}"
-    new "- Для газет: Книга \"Я и мой шар\" - {image=check_07.png}"
+    old "Гермиона"
+    new "Hermione."
+
+    old "Профессор? Я вхожу!"
+    new "Professor? I'm coming in!"
+
+    old "{size=-3}(Дерьмо...){/size}"
+    new "{size=-4}(Crap...){/size}"
+
+    old "Профессор, вы здесь?"
+    new "Professor, are you there?"
+
+    old "{size=-3}(Уходи...){/size}"
+    new "{size=-4}(Go away...){/size}"
+
+# TODO: Translation updated at 2015-07-30 12:54
+
+translate english strings:
+
+    old "Доброе утро, профессор."
+    new "Good morning, professor."
+
+    old "Jul 30, 12:49"
+    new "Jul 30, 12:49"
+
+    old "{size=-3}(\"Девочка\"?){/size}"
+    new "{size=-4}(\"Girl\"?){/size}"
+
+    old "Я была очень занята, но сегодня утром у меня есть немного времени, чтобы встретится с вами, профессор."
+    new "I am very busy with my class schedule, but I kept my morning free today so that I could see you, professor."
+
+    old "Вы, наверное, знаете, почему я здесь."
+    new "You probably know why I am here, too."
+
+    old "Тот вопрос, на который я безуспешно пыталась обратить Ваше внимание в последнее время..."
+    new "The issue I have been fruitlessly trying to bring to your attention lately."
+
+    old "Я не могу понять, почему вы ничего не предпринимаете, чтобы остановить этот абсурд!"
+    new "I cannot understand why you are not acting to stop that nonsense, professor!"
+
+    old "Это ситуация начинает сказываться на соревновании факультетов..."
+    new "The inequality is starting to affect all of the houses..."
+
+    old "И все потому, что мы более честны, нежели остальные..."
+    new "Simply because we have more integrity than the rest..."
+
+    old "Как вы думаете, это справедливо, что те кто заслуживают быть лидерами, оказываются в отстающих?"
+    new "Do you think it's fair that people who deserve to be in the lead are being pushed back instead?"
+
+    old "Как вы думаете? Справедливо?"
+    new "Do you think that's fair, professor? Do you?"
+
+    old "{size=-3}(Вы только посмотрите на эту очаровашку!){/size}"
+    new "{size=-4}(Would you look at this pretty, little thing?){/size}"
+
+    old "{size=-3}(Только посмотрите ... Она восхитительна!){/size}"
+    new "{size=-4}(Look at her going on and on about something... She's adorable.){/size}"
+
+    old "{size=-3}(Великие пески, я не видел женщину целую неделю!){/size}"
+    new "{size=-4}(Damn, I haven't seen a woman in weeks.){/size}"
+
+    old "Да, продолжай, дорогая."
+    new "Yes, keep on going, dear."
+
+    old "\"Да\"?! То есть это справедливо?"
+    new "\"Yes\"?! So you think it's fair?"
+
+    old "О, конечно нет, я хотел сказать \"нет\". Но все равно продолжай..."
+    new "Oh, of course not, I meant \"no\". But Keep on going anyway..."
+
+    old "Стало легче на душе. Я рада, что вы согласны со мной, профессор..."
+    new "That's a relief. I'm glad that you agree with me, professor..."
+
+    old "Как я уже говорила, это просто смешно, и я не могу поверить, что это происходит сейчас и с нами!"
+    new "As I was saying, the whole issue is simply ridiculous and I cannot believe that it is taking place in our day and age!"
+
+    old ">*Фап!* *Фап!* *Фап!*"
+    new ">*Fap!* *Fap!* *Fap!*"
+
+    old ">Вы продолжаете дрочить свой член..."
+    new ">You keep on stroking you cock..."
+
+    old "Я поняла бы, если бы это происходило несколько сотен лет назад..."
+    new "I mean, I would understand if something like this were to occur during the middle ages..."
+
+    old "Но мы живем не в темные века, не так ли?"
+    new "But we left the middle ages behind a long time ago, did we not?"
+
+    old "{size=-3}(Вы только посмотрите на эти розовые щечки? Хочу потыкать в них своим членом.){/size}"
+    new "{size=-4}(Would you look at those rosy cheeks? I want to poke'em with my cock.){/size}"
+
+    old ">Вы продолжаете дрочить..."
+    new ">You keep stroking your cock..."
+
+    old "Это вредит системе распределения очков для факультетов."
+    new "So it hurts the whole house-point-distribution system."
+
+    old "И мало того!"
+    new "But it even doesn't stop there!"
+
+    old "Это навредит всей системе образования..."
+    new "It hurts our entire educational system as well..."
+
+    old "Из-за этого падает мотивация студентов!"
+    new "And more importantly the motivation among students is steadily decreasing due to it!"
+
+    old "{size=-3}(Что за огромные сиськи!){/size}"
+    new "{size=-4}(Look at these huge knockers on you, girl!){/size}"
+
+    old "{size=-3}(Да... Я хочу зажать свой член между ними...){/size}"
+    new "{size=-4}(Yes... I want to squeeze my dick between them...){/size}"
+
+    old "Как видите, ситуация весьма тяжелая..."
+    new "As you can see the situation is dire..."
+
+    old "Но мы все еще можем исправить..."
+    new "But we can still set everything right..."
+
+    old "У меня, как у представителя Школьного Студенческого Совета..."
+    new "As the representative of our school's Student Representative Body..."
+
+    old "Есть пара предложений, как сделать это более эффективно."
+    new "I have a few suggestions on how to do that more efficiently."
+
+    old "Прежде всего, система очков для факультетов должна стать более сложной!"
+    new "First of all the house point system needs to be reinforced!"
+
+    old "Вам нужно контролировать распределение очков чуть лучше, сэр."
+    new "You need to control the points distribution better, sir."
+
+    old "{size=-3}(Да, шлюха... Грязная шлюха... Бьюсь об заклад, ты обожаешь сосать члены... Не так ли? Да, уверен в этом...){/size}"
+    new "{size=-4}(Yes, you are a whore... A nasty little whore... I bet you love to suck cocks... Don't you? Yes, I bet you do...){/size}"
+
+    old ">Вы неистово надрачиваете свой твердейший член!"
+    new ">You stroke you diamond-hard cock ferociously!"
+
+    old "Вы ведь согласны со мной, профессор, не так ли?"
+    new "Of course you agree with me on this, professor, do you not?"
+
+    old "{size=-4}*Тяжело дыша*{/size}"
+    new "{size=-4}*Panting heavily*{/size}"
+
+    old "Профессор...?"
+    new "Professor...?"
+
+    old "{size=-3}(Вот дерьмо. О чем она только что трещала?){/size}"
+    new "{size=-4}(Crap. What does she want now?){/size}"
+
+    old "Да, это так. Продолжай..."
+    new "Yes, it's all true. Please keep going..."
+
+    old "Эм... Итак, как я сказала..."
+    new "Ehm... So, as I was saying..."
+
+    old "{size=-3}(Ох... Отлично вздрочнул, но я уже близок к \"великому финалу\".){/size}"
+    new "{size=-4}(Oh... That was a good jerkoff session, but I'm getting dangerously close to the \"grand finale\".){/size}"
+
+    old "{size=-3}(Может, прекратить пока не произошло чего?){/size}"
+    new "{size=-4}(Maybe I should stop before I get myself into trouble.){/size}"
+
+    old "Еще одна мера, которую стоит принять - это более жесткий контроль за сотрудниками..."
+    new "Another measure you could take in consideration is tightening the control over your staff..."
+
+    old "Особенно за преподавателями..."
+    new "Especially the teachers..."
+
+    old "Я надеюсь, что не переступаю черту, но некоторые преподаватели действительно требуют надзора..."
+    new "I hope I'm not stepping out of line here, sir, but some of the teachers really do require supervision..."
+
+    old "......................."
+    new "......................."
+
+    old "Я понимаю, что у вас нет времени на все это. Вы директор академии, очень важный и занятой человек."
+    new "I understand that you may not have time for this, professor. After all you are the headmaster of our school and a very busy and important man."
+
+    old "Временами, мне непросто быть лучшей студенткой, это словно на пьедестале стоять..."
+    new "Being a top student is hard on me as well sometimes..."
+
+    old "Но вы могли бы поручить эту задачу мне, и я справлюсь..."
+    new "But you could delegate that task to me..."
+
+    old "Просто... просто внедрите вашу уверенность и твердость в меня!"
+    new "Just put your faith in me professor."
+
+    old "Хорошо, я подумаю о твоем предложении. Обещаю."
+    new "Alright... I will think about your proposal, I promise."
+
+    old "Правда?"
+    new "Really?"
+
+    old "Хм..........."
+    new "Hm..........."
+
+    old "Это обнадеживает. Спасибо, Профессор."
+    new "That's a relief! Thank you, professor."
+
+    old "Мои занятия вот-вот начнутся. Мне надо идти."
+    new "My classes are about to start, so I'd better go now."
+
+    old "Спасибо, что уделили мне время..."
+    new "Thank you for your time..."
+
+    old "................."
+    new "................."
+
+    old "{size=-3}(Симпатичная, но чересчур увлечена работой...){/size}"
+    new "(She is cute, but quite a piece of work...)"
+
+    old "{size=-3}(\"Дитя\"?){/size}"
+    new "{size=-4}(\"Child\"...?){/size}"
+
+    old "Эм... Я полагаю, что вы сделаете, то есть, мы сделаем все, что нужно."
+    new "Ehm... I suppose you did. I mean, we did."
+
+    old ".............."
+    new ".............."
+
+    old "{size=-3}(Нужно ли мне контролировать? Да плевать...){/size}"
+    new "{size=-4}(Do I? I honestly don't give a damn...){/size}"
+
+    old "Хм... Наверное нужно..."
+    new "Uhm... I suppose I do..."
+
+    old "{size=-3}(Наверное?){/size}"
+    new "{size=-4}(\"Suppose\"?){/size}"
+
+    old "{size=-3}(Когда это профессор Дамблдор стал таким безразличным?...){/size}"
+    new "{size=-4}(When did Professor Dumbledore become so... apathetic.){/size}"
+
+    old "{size=-4}(Да! Ты маленькая шлюха! Тупая маленькая шлюха!) *Задыхаясь*{/size}"
+    new "{size=-4}(Yes! You little whore! You fucking little whore!) *Panting*{/size}"
+
+    old "{size=-4}(Она сказала \"стояк\"!?) *задыхаясь*{/size}"
+    new "{size=-4}(She said \"hard-on\"!) *Panting*{/size}"
+
+    old "Да, сэр! Просто внедрите это в меня!"
+    new "Yes, you can do it! Just put it in me, sir!"
+
+    old "{size=-4}(О дерьмо, что она наделала!) *Аргх!*{/size}"
+    new "{size=-4}(Oh crap, that did it!) *Argh!*{/size}"
+
+    old "Профессор!? Что происходит...?"
+    new "Professor?! What is going on...?"
+
+    old "{size=+5}АА...{/size} {size=+5}ДААААА.....!{/size}"
+    new "Ah... YESSSSS.....!"
+
+    old "*Тяжело дыша* Да! Да...."
+    new "*Breathing heavily* Yes! yes...."
+
+    old "Да, девочка, да. Все именно так, как ты говоришь. И я... позабочусь обо всем этом."
+    new "Yes, girl. It's all exactly as you say and I will.... take care of it all."
+
+    old "Нет, нет. Спасибо тебе..."
+    new "No, no, thank you..."
+
+    old "{size=-3}(Это офигительно...){/size} *Задыхаясь*"
+    new "{size=-4}(This was awesome...) *Panting*{/size}"
+
+    old "{size=-3}(Мои трусы просто уничтожены...){/size}"
+    new "{size=-4}(My pants are ruined though...){/size}"
+
+# TODO: Translation updated at 2015-07-30 13:48
+
+translate english strings:
+
+    old "Jul 30, 13:33"
+    new "Jul 30, 13:33"
+
+    old "Jul 30, 13:48"
+    new "Jul 30, 13:48"
+
+# TODO: Translation updated at 2015-07-30 14:06
+
+translate english strings:
+
+    old "Jul 30, 13:56"
+    new "Jul 30, 13:56"
+
+    old "Jul 30, 13:57"
+    new "Jul 30, 13:57"
+
+    old "Jul 30, 14:02"
+    new "Jul 30, 14:02"
+
+    old "Jul 30, 14:04"
+    new "Jul 30, 14:04"
+
+    old "Это я, Гермиона Грейнджер."
+    new "It's me, Hermione Granger."
+
+    old "{size=-3}(Снова эта молоденькая ведьма...){/size}"
+    new "(It's that young witch again...)"
+
+    old "Профессор, я вхожу..."
+    new "Professor, I'm coming in..."
+
+    old "{size=-3}(Дерьмо!){/size}"
+    new "{size=-4}(Crap!){/size}"
+
+    old "Доброе утро, профессор Дамблдор."
+    new "Good morning, professor Dumbledore."
+
+    old "Профессор Дамблдор, я здесь, чтобы поговорить с вами, как  президент {size=+5}\"ОЗПМ\"{/size} - Общества по Защите Мужских Прав..."
+    new "Professor Dumbledore, I am here to talk to you as the \"MRM\" president..."
+
+    old "Защите прав?............."
+    new "............."
+
+    old "Мы провели чрезвычайное заседание вчера..."
+    new "We held an emergency session yesterday..."
+
+    old "Главным вопросом была \"Хогвартская\" униформа для девочек..."
+    new "The matter in question was the \"Hogwarts\" uniform for girls..."
+
+    old "Мы пришли к выводу, что существующий дресс-код является весьма нецелесообразным для нашего образовательного учреждения..."
+    new "We came to the conclusion that the currently employed dress-code is highly inappropriate for an educational institution..."
+
+    old "..."
+    new "..."
+
+    old "Серьезно?"
+    new "Seriously?"
+
+    old "Да, профессор. Уверяю вас, я очень серьезна."
+    new "Yes, professor, I assure you, we are very serious."
+
+    old "То, как вы заставляете одеваться наших бедных девочек абсолютно неприемлемо  ..."
+    new "The way you force our poor girls to dress is unacceptable..."
+
+    old "Сейчас они носят легкомысленные наряды и отвлекают ребят от учебы, ставя их в невыгодное положение..."
+    new "Such frivolous attire distracts male students from studying, putting them at a disadvantage..."
+
+    old "Все эти отвлекающие факторы..."
+    new "All those distractions they have to deal with..."
+
+    old "И бедные парни..."
+    new "The poor souls..."
+
+    old "Кто-нибудь из ребят жалуется на это?"
+    new "Did any of the boys actually complain about this?"
+
+    old "Мы не будем ждать, пока проблема проявится, сэр! Мы уничтожим ее в зародыше!"
+    new "We won't wait for the issue to manifest, sir! We'll prevent it!"
+
+    old "Ни один человек не должен находиться в невыгодном положении, просто из-за своего пола."
+    new "No individual shall be at a disadvantage based on his or her gender."
+
+    old "Это называется \"Сексизм\" в мире Маглов, сэр."
+    new "This is what they call \"Sexism\" in the muggle world, sir."
+
+    old "Как по мне, ваша мысль слишком извилиста, мисс Грейнджер."
+    new "Your explanations are getting way too convoluted for my liking, miss Granger."
+
+    old "Вы что, предлагаете заставить всех студенток академии носить паранджу?"
+    new "Tell me what is it you are proposing exactly, to dress every woman in the school in burqa?"
+
+    old "Будет достаточно удвоить длину юбки девочек, сэр..."
+    new "Officially doubling the length of the girls' skirts in the school regulations would suffice..."
+
+    old "{size=-3}(\"Дитя\"? Почему он настолько снисходителен все время?){/size}"
+    new "{size=-5}(\"Child\"? Must you be so condescending all the time?){/size}"
+
+    old "Что-то не так?"
+    new "What was that?"
+
+    old "Нет, ничего сэр..."
+    new "It's nothing, sir..."
+
+    old "Э-э... Что?"
+    new "Em... What?"
+
+    old "{size=-3}Это было глупо... Джинни, Джинни, ты торопишь события.{/size}"
+    new "{size=-4}(OK, that was stupid. Damage control, damage control!){/size}"
+
+    old "*Кхм* Извините, что-то застряло в горле... Доброе утро, мисс Грейнджер."
+    new "*Khem* Excuse me, something stuck in my throat... Good morning, miss Granger."
+
+    old "{size=-3}(Он назвал меня.... нет, показалось.){/size}"
+    new "{size=-5}(Did he just called me a.... no, no way.){/size}"
+
+# TODO: Translation updated at 2015-07-30 14:24
+
+translate english strings:
+
+    old "Jul 30, 14:19"
+    new "Jul 30, 14:19"
+
+    old "Что... Н-но? Мы приняли решение..."
+    new "What... B-but? We made a decision..."
+
+    old "Мисс Грейнджер, мне жаль вас прерывать, но пока еще я директор этой академии..."
+    new "Miss Granger, I'm sorry to break this to you, but I am still the headmaster of this school..."
+
+    old "И принимать решения - моя прерогатива!"
+    new "And the only decisions that matter are mine!"
+
+    old "Значит, вы игнорируете голос народа, сэр?"
+    new "So you are going to ignore the voice of the people, sir?"
+
+    old "Единственный голос, который я слышу - ваш, мисс Грейнджер."
+    new "The only voice I hear is yours, miss Granger."
+
+    old "Разве вы не знаете, что происходит с тиранами, которые игнорируют народную волю?"
+    new "Don't you know what happens to tyrants who underestimate the power of the masses?"
+
+    old "Их свергают!"
+    new "They get overthrown!"
+
+    old "Осторожно. Ваши слова пахнут изменой, юная леди."
+    new "Careful, now. Your words smell of treason, young lady."
+
+    old "Разве вы не знаете, что происходит с изменниками?"
+    new "Don't you know what happens to traitors?"
+
+    old "Их вешают!"
+    new "They get hung!"
+
+    old "!!!"
+    new "!!!"
+
+    old "Пф!"
+    new "Tsk!"
+
+    old "Я добьюсь, чтобы вы восприняли наше решение всерьез, профессор!"
+    new "I will make you take me seriously, professor!"
+
+    old "..................................."
+    new "...................."
+
+    old "Я начинаю наслаждаться нашими встречами все меньше и меньше..."
+    new "I'm starting to enjoy our meetings less and less..."
+
+    old "Великолепно. Я дам всем знать."
+    new "Splendid. I will let everyone know."
+
+    old "Спасибо, профессор."
+    new "Thank you, professor."
+
+# TODO: Translation updated at 2015-07-30 14:38
+
+translate english strings:
+
+    old "Jul 30, 14:34"
+    new "Jul 30, 14:34"
+
+    old "Jul 30, 14:36"
+    new "Jul 30, 14:36"
+
+    old "Кто..."
+    new "Who is..."
+
+    old "Jul 30, 14:37"
+    new "Jul 30, 14:37"
+
+    old "Вы обещали принять меры, профессор..."
+    new "You promised me to take action, professor..."
+
+    old "Но ничего не изменилось с момента нашего последнего разговора..."
+    new "But nothing changed since our last conversation..."
+
+    old "(\"Дитя\"? Ему обязательно быть настолько снисходительным все время? Противный старый хрен!)"
+    new "{size=-5}(\"Child\"? Must you be so condescending all the time? Nasty old prick!){/size}"
+
+    old "{size=-3}(Очень похоже на сарказм...){/size}"
+    new "{size=-4}(Is he being sarcastic?){/size}"
+
+# TODO: Translation updated at 2015-07-30 14:43
+
+translate english strings:
+
+    old "Jul 30, 14:41"
+    new "Jul 30, 14:41"
+
+    old "Jul 30, 14:42"
+    new "Jul 30, 14:42"
+
+    old "Н-но..."
+    new "B-but..."
+
+    old "Но вы директор школы, сэр. Вы слово должно означать что-то..."
+    new "But you are the headmaster, sir. You word should mean something..."
+
+    old "Парням трудно сосредоточиться на учебе..."
+    new "The boys are still having a hard time concentrating on their studies..."
+
+    old "О, у меня есть решение!"
+    new "Oh, I do have a cure for that!"
+
+    old "Давай наденем на головы девушкам бумажные пакеты!"
+    new "Lets put a paper bag over every girl's head!"
+
+    old "Это тоже сексизм..."
+    new "That would be mistreatment of a human being based on her gender..."
+
+    old "Другой пример сексизма..."
+    new "Another example of sexism..."
+
+    old "Это называется \"Женоненавистничество\"."
+    new "Or better yet \"Misogyny\"."
+
+    old "\"Женоненавистничество\" - это общая неприязнь к женщинам, мисс Грейнджер."
+    new "\"Misogyny\" is a general dislike towards women, miss Granger."
+
+    old "Здоровый мужчина биологически не может испытывать антипатию ко всем женщинам..."
+    new "A healthy male is biologically incapable of disliking all the females of his kind..."
+
+    old "Иначе человечество давным-давно бы вымерло..."
+    new "Otherwise humanity would've gone extinct a long time ago already..."
+
+    old "Профессор, сейчас не время играть словами."
+    new "Professor, we have no time for semantics."
+
+    old "Вся школа находится в опасности!"
+    new "The entire school is in peril!"
+
+    old "Неужели..?"
+    new "Is it...?"
+
+    old "Вчера было еще одно заседание {size=+5}\"ОЗМП\",{/size} и--"
+    new "The \"MRM\" had another meeting yesterday, and..."
+
+    old "Ох, опять..."
+    new "No, not again..."
+
+    old "А есть хоть один парень в вашем маленьком \"Обществе по защите мужских прав\"?"
+    new "Are there are any male members in your little \"Men's rights movement\"?"
+
+    old "Это не относится к делу."
+    new "That is beside the point..."
+
+    old "А я считаю, что относится..."
+    new "Right..."
+
+    old "Это не имеет значения..."
+    new "That is irrelevant..."
+
+    old "Как это не имеет значения? Это единственное, что {size=+7}имеет{/size} значение!"
+    new "How is it irrelevant? That's the only thing that {size=+7}IS{/size} relevant!"
+
+    old "Позвольте мне закончить мою мысль, пожалуйста."
+    new "Let me finish my sentence, please."
+
+    old "Я официально к вам обращаюсь, как президент {size=+5}\"ОЗМП\"...{/size}"
+    new "I am officially addressing you as the \"MRM\" president now..."
+
+    old "И как представитель этой школы ..."
+    new "And as a representative of this school's student body..."
+
+    old "Мы требуем соблюдения этих новых норм..."
+    new "We demand these new regulations to be enforced..."
+
+    old "Во-первых..."
+    new "Number one..."
+
+    old "Ни один преподаватель не должен повышать голос или нелестно отзываться о студенте..."
+    new "No teacher is allowed to raise a voice towards a student or call the said student an unflattering name..."
+
+    old "Во-вторых..."
+    new "Number two..."
+
+    old "Все школьные призраки должны быть заключены в заброшенной башне в Северном крыле школы."
+    new "All the school ghosts have to be confined to the abandoned tower in the north wing of the school."
+
+    old "У Вас есть привидения? Это очень круто!"
+    new "You have school ghosts? That's pretty cool!"
+
+    old "В-третьих..."
+    new "Number three..."
+
+    old "Каждый учитель, и особенно профессор Северус Снейп, должен проходить проверку квалификации каждые три месяца..."
+    new "Every teacher, and especially Professor Severus Snape needs to take a qualification test every three months..."
+
+    old "Это все?"
+    new "Is that all?"
+
+    old "Это все, сэр."
+    new "That is all, sir."
+
+    old "Вы забыли, сэр?"
+    new "You forgot, sir?"
+
+    old "Вы это серьезно?"
+    new "Did you really?"
+
+    old "Или, может быть, вы просто не хотите заниматься этим?"
+    new "Or maybe you just didn't care enough to remember?"
+
+    old "Н-но....?"
+    new "B-but....?"
+
+    old "Профессор Дамблдор, это серьезный вопрос!"
+    new "Professor Dumbledore, this is a serious matter!"
+
+# TODO: Translation updated at 2015-07-30 18:36
+
+translate english strings:
+
+    old "Jul 30, 18:35"
+    new "Jul 30, 18:35"
+
+    old "Я, как представитель студентов , благодарю за ваше сотрудничество."
+    new "I, as a representative of the student's will, thank you for your cooperation."
+
+    old "...................."
+    new "...................."
+
+    old "Что? Я..."
+    new "What? I..."
+
+    old "Но это ... вы не можете..."
+    new "But this is... you can't..."
+
+    old "Свободны!"
+    new "Dismissed!"
+
+# TODO: Translation updated at 2015-07-30 18:48
+
+translate english strings:
+
+    old "Jul 30, 18:38"
+    new "Jul 30, 18:38"
+
+    old "{size=-7}От: Министерства Магии\nКому: Профессору Альбусу Дамблдору\n\n{/size}{size=-4}Дорогой профессор Дамблдор.\nМы напоминаем Вам, что только при предоставлении нам выполненого отчета, мы можем перечислить оплату на Ваше имя.\n\n{size=-3}С уважением,\nМинистерство Магии.{/size}"
+    new "{size=-7}From: Ministry of Magic\nTo: Professor Albus Dumbledore\n\n{/size}{size=-4}Dear Professor Dumbledore.\nWe remind you that only upon providing us with a completed report we will be able to make a payment in your name.\n\n{size=-3}With deepest respect,\nThe Ministry of Magic.{/size}"
+
+    old "Jul 30, 18:40"
+    new "Jul 30, 18:40"
+
+    old "Jul 30, 18:42"
+    new "Jul 30, 18:42"
+
+    old "Jul 30, 18:43"
+    new "Jul 30, 18:43"
+
+    old "Jul 30, 18:45"
+    new "Jul 30, 18:45"
+
+    old "Jul 30, 18:47"
+    new "Jul 30, 18:47"
+
+    old "Jul 30, 18:48"
+    new "Jul 30, 18:48"
+
+# TODO: Translation updated at 2015-07-30 18:52
+
+translate english strings:
+
+    old "- Вино Дамблдора (1) -"
+    new "-Dumbledor's Wine (1)-"
+
+    old "Jul 30, 18:52"
+    new "Jul 30, 18:52"
+
+# TODO: Translation updated at 2015-07-30 19:02
+
+translate english strings:
+
+    old "Jul 30, 19:02"
+    new "Jul 30, 19:02"
+
+# TODO: Translation updated at 2015-07-30 19:23
+
+translate english strings:
+
+    old "Лола"
+    new "Lola"
+
+    old "Jul 30, 19:05"
+    new "Jul 30, 19:05"
+
+    old "Jul 30, 19:06"
+    new "Jul 30, 19:06"
+
+    old "Jul 30, 19:07"
+    new "Jul 30, 19:07"
+
+    old "Jul 30, 19:08"
+    new "Jul 30, 19:08"
+
+    old "- Книга: \"Медная книга духа\" - {image=check_07.png}"
+    new "-Book: \"Copper book of spirit\"- {image=check_07.png}"
+
+    old "- Книга: \"Бронзовая книга духа\" - {image=check_07.png}"
+    new "-Book: \"Bronze book of spirit\"- {image=check_07.png}"
+
+    old "- Книга: \"Серебрянная книга духа\" - {image=check_07.png}"
+    new "-Book: \"Silver book of spirit\"- {image=check_07.png}"
+
+    old "- Книга: \"Золотая книга духа\" - {image=check_07.png}"
+    new "-Book: \"Golden book of spirit\"- {image=check_07.png}"
+
+    old "- Книга: \"Скорочтение для чайников\" - {image=check_07.png}"
+    new "-Book: \"Speedreading for dummies\"- {image=check_07.png}"
+
+    old "- Книга: \"Скорочтение для любителей\" - {image=check_07.png}"
+    new "-Book: \"Speedreading for intermediates\"- {image=check_07.png}"
+
+    old "- Книга: \"Скорочтение для экспертов\" - {image=check_07.png}"
+    new "-Book: \"Speedreading for experts\"- {image=check_07.png}"
+
+    old "- Книга: \"Скорописание для чайников\" - {image=check_07.png}"
+    new "-Book: \"Speedwriting for dummies\"- {image=check_07.png}"
+
+    old "- Книга: \"Скорописание для начинающих\" - {image=check_07.png}"
+    new "-Book: \"Speedwriting for beginners\"- {image=check_07.png}"
+
+    old "- Книга: \"Скорописание для любителей\" - {image=check_07.png}"
+    new "-Book: \"Speedwriting for intermediates\"- {image=check_07.png}"
+
+    old "- Книга: \"Скорописание для продвинутых\" - {image=check_07.png}"
+    new "-Book: \"Speedwriting for advanced\"- {image=check_07.png}"
+
+    old "- Книга: \"Сказ о Галадриэле. Книга I.\" - {image=check_07.png}"
+    new "-Book: \"The Tale of Galadriel. Vol. I\"- {image=check_07.png}"
+
+    old "- Книга: \"Сказ о Галадриэле. Книга II.\" - {image=check_07.png}"
+    new "-Book: \"The Tale of Galadriel. Vol. II\"- {image=check_07.png}"
+
+    old "- Книга: \"Игра Кресел\" - {image=check_07.png}"
+    new "-Book: \"The game of chairs\"- {image=check_07.png}"
+
+    old "- Книга: \"Моя дорогая вайфу\" - {image=check_07.png}"
+    new "-Book: \"My dear waifu\"- {image=check_07.png}"
+
+    old "- Чупа-чупс - (20 гал.) -"
+    new "-A lollipop candy- (20 coins)"
+
+    old "- Шоколад - (40 гал.) -"
+    new "-Chocolate- (40 coins)"
+
+    old "- Плюшевая сова - (35 гал.) -"
+    new "-Stuffed Owl - (35 coins)"
+
+    old "{color=#858585}- Товар временно отсутствует -{/color}"
+    new "{color=#858585}-Item is out of stock-{/color}"
+
+    old "- Обучающий журнал - (30 гал.) -"
+    new "-Educational magazines- (30 coins)"
+
+    old "- Женский журнал - (45 гал.) -"
+    new "-Girly magazines- (45 coins)"
+
+    old "- Журнал для взрослых - (60 гал.) -"
+    new "-Adult magazines- (60 coins)"
+
+    old "- Духи - (150 гал.) -"
+    new "-Perfume- (150 coins)"
+
+    old "- Банка лубриканта - (60 гал.) -"
+    new "-A jar of anal lubricant- (60 coins)"
+
+    old "- Кляп и наручники - (70 гал.) -"
+    new "-Ball gag and cuffs- (70 coins)"
+
+    old "- Ажурные чулки - (700 гал.) -"
+    new "-Fishnet stokings- (700 coins)"
+
+    old "- Значок \"А.В.Н.Э.\" - (100 гал.) -"
+    new "-\"S.P.E.W.\" badge- (100 coins)"
 
     old "Экспресс-доставка (+50% за срочность)"
-    new "Экспресс-доставка (+50% за срочность)"
+    new "Express delivery (+50% more coins)"
+
+    old "Jul 30, 19:23"
+    new "Jul 30, 19:23"
+
+# TODO: Translation updated at 2015-07-31 00:50
+
+translate english strings:
+
+    old "Jul 31, 00:49"
+    new "Jul 31, 00:49"
+
+# TODO: Translation updated at 2015-07-31 01:25
+
+translate english strings:
+
+    old "Эмм... если это все, тогда доброй ночи."
+    new "Goodnight then."
+
+    old ">Добавлено к вашим вещам: [item._caption], [_count] шт."
+    new ">[_count] [item._caption] has been added to your possessions."
+
+    old "Jul 31, 01:25"
+    new "Jul 31, 01:25"
+
+# TODO: Translation updated at 2015-07-31 01:38
+
+translate english strings:
+
+    old "Смотри, что у меня есть!"
+    new "Look what I've got!"
+
+    old ">Вы передаете Снейпу бутылку, которую нашли в шкафу..."
+    new ">You hand over the bottle you found in the cupboard to Professor Snape..."
+
+    old "Еще одна?"
+    new "Another one?"
+
+    old "Становится все лучше и лучше!"
+    new "This just keeps getting better and better!"
+
+    old ">Ваши отношения с профессором Снейпом улучшились."
+    new ">Your relationships with Professor Snape have improved."
+
+    old "{color=942121}{size=-4}Oct [cal_day]{/size}{/color}"
+    new "{color=942121}{size=-4}Oct [cal_day]{/size}{/color}"
+
+    old "Jul 31, 01:34"
+    new "Jul 31, 01:34"
+
+# TODO: Translation updated at 2015-07-31 01:43
+
+translate english strings:
+
+    old "Jul 31, 01:42"
+    new "Jul 31, 01:42"
+
+# TODO: Translation updated at 2015-07-31 09:21
+
+translate english strings:
+
+    old "Послушай, Северус. Ты уже давно обещал прислать мне парочку слизеринских шлюх."
+    new "Listen, Severus. You are already overdue on your promise to send me some of those Slytherin whores."
+
+    old "Гхм..."
+    new "Hm..."
+
+    old "Что значит твое «гхм»?... Я точно знаю, у тебя есть шлюхи!"
+    new "What is it?... I know, you have them!"
+
+    old "Ты сам мне недавно хвалился, что делаешь что угодно с кем захочешь."
+    new "Just recently you were bragging about screwing whoever the hell you want."
+
+    old "Понимаешь, мой друг, все не так просто."
+    new "It's not that simple, my friend."
+
+    old "Эти девки... Они уверены, что ты,.. то есть директор, не в курсе наших маленьких шалостей."
+    new "The girls... They are convinced that you... I mean the Headmaster knows nothing about our little activities."
+
+    old "И?"
+    new "And?"
+
+    old "И если окажется, что директору тоже не чуждо стремление к потас...\n к прекрасному, то это разрушит все их мировоззрение..."
+    new "Imagine, if they find out that our headmaster has a longing for whor... for wanders,\n it will blow their minds..."
+
+    old "Послушай, дружище. Мне нет дела до мировоззрения шлюх, в них меня интересуют совсем другие детали."
+    new "Listen, buddy. I don't care about whores' state of mind, I'm interested in theirs more intimate parts."
+
+    old "Да, но если они узнают о твоем интересе, они могут не захотеть больше этим заниматься."
+    new "I know, but if they find out about your other interest, they are going to stop whoring themselves out."
+
+    old "{size=-3}(Надеюсь, он проглотит эту хрень){/size}"
+    new "{size=-4}(I hope, he swallowed that bullshit.){/size}"
+
+    old "{size=-3}На самом деле, я не собираюсь присылать ему шлюх -{/size}"
+    new "{size=-4}(No way, I'm going to send him whores.){/size}"
+
+    old "{size=-3}Он же, мать его, джинн, обладающий крутой космической силой и все такое!{/size}"
+    new "{size=-4}(He is a motherfucker genie, with cosmic powers and all that crap!){/size}"
+
+    old "{size=-3}Кто знает, насколько он хорош в {size=+5}ЭТОМ.{/size}{/size}"
+    new "{size=-4}(Who knows, how good is he with {size=+5}THAT{/size}.){/size}"
+
+    old "Ты думаешь, я проглочу эту хрень?"
+    new "Do you think, I'm going to believe in this bullshit of yours?"
+
+    old "Хрень?"
+    new "Bullshit?"
+
+    old "Мой друг! Я о тебе забочусь! Они реально могут перестать давать!"
+    new "My friend! I care about you! But they really could stop doing it!"
+
+    old "Давать кому, дружище?"
+    new "And who's going to be on loosing side, my friend?"
+
+    old "Не тебе ли?"
+    new "Aren't you?"
+
+    old "Я думаю, тебе просто нравится быть единственным петухом в курятнике."
+    new "I think, you enjoy it very much, to be the only one who rips the benefits."
+
+    old "Я тут не досыпаю ночей, тружусь, чтобы выдрессировать тебе девчонку,..."
+    new "Me, I'm not getting enough sleep, working my ass off to train the girl..."
+
+    old "а ты катаешься, как сыр в масле и не хочешь помочь мне немного развлечься."
+    new "And you the ungrateful one, don't want to help your friend to relax a little bit."
+
+    old "Да что тебя не устраивает?!"
+    new "So, what is your problem?"
+
+    old "Я слышал, у вас очень хорошо продвигается с мисс Грейнджер."
+    new "I hear, you are making a good progress with Miss Granger."
+
+    old "Ты хочешь поменяться? Я готов уступить тебе воспитание этой девчонки всего за пару шлюх."
+    new "Want to switch places? I'm ready to give up the training just for a few whores."
+
+    old "Эм..."
+    new "Em..."
+
+    old "Я тебя предупреждаю, Северус, если ты будешь и дальше утаивать от меня девок,.."
+    new "I'm warning you, Severus, if you are going to withhold any longer the girls from me..."
+
+    old "директор может перестать скрываться в башне и выйдет сам на поиски!"
+    new "The Headmaster can quit hiding in the tower and get out hunting!"
+
+    old "Но ты не можешь!.."
+    new "But you can't..!"
+
+    old "Продолжай в том же духе и увидишь, могу я или нет..."
+    new "Keep on doing the same shit over and over, and you'll see, if I can or cannot..."
+
+    old "......"
+    new "......"
+
+    old "............"
+    new "............"
+
+    old "Ладно-ладно..."
+    new "Alright, alright..."
+
+    old "Ты меня убедил. Я пришлю тебе шлюху."
+    new "You convinced me. I'll send you a whore."
+
+    old "Двух шлюх, Северус."
+    new "Two whores, Severus."
+
+    old "Я уверен, {size=+5}ЭТА{/size} тебе заменит двух сразу."
+    new "I have a strong impression that {size=+5}this one{/size} will be as good as two."
+
+    old "Смотри, если это окажется какая-то уродка..."
+    new "Mind you, if she turns out to be an ugly... "
+
+    old "За кого ты меня принимаешь!"
+    new "Who do you think I am?!"
+
+    old "Чистая кровь в Мерлин знает каком поколении, была на обложке \"Ведьмополитен\"..."
+    new "She is a pureblood in Merlin knows which generation, was on \"Witchpolitan\" front page..."
+
+    old "{size=-3}(стоит крайняя в пятом ряду){/size}"
+    new "{size=-4}(standing in the outermost of the fifth row){/size}"
+
+    old "...чирлидерша, слизеринка, наконец!"
+    new "...cheerleader, from Slytherin house, for Merlin's sake!"
+
+    old "Девица - пальчики оближешь!"
+    new "A nice bit of goods - girl!"
+
+    old "Ну, это ее забота... облизывать..."
+    new "Really?"
+
+    old "Так в чем подвох?"
+    new "What's the catch?"
+
+    old "Подвох?"
+    new "The catch?"
+
+    old "Ты слишком быстро согласился. Вот я и спрашиваю: в чем подвох?"
+    new "You didn't think twice before revealing all this to me. That's why I'm asking you : what's the catch?"
+
+    old "Никакого подвоха, мой друг!"
+    new "There is not catch, my friend!"
+
+    old "Ты сам убедишься. Потерпи пару дней. Всего пару дней!"
+    new "You'll be satisfied. Just be patient for a few days. Only, for a few days!"
+
+    old "{size=-4}Oct [cal_day]{/size}"
+    new "{size=-4}Oct [cal_day]{/size}"
+
+# TODO: Translation updated at 2015-07-31 14:06
+
+translate english strings:
+
+    old "Jul 31, 13:18"
+    new "Jul 31, 13:18"
+
+    old "- C.1: Священный свиток #1 -"
+    new "-V.1: Sacred scroll #1-"
+
+    old "Jul 31, 14:03"
+    new "Jul 31, 14:03"
+
+    old "Сэр, меня прислал профессор Снейп..."
+    new "Sir, I was sent to you by Professor Snape..."
+
+    old "{size=-3}(Превосходно! Шлюха прибыла!){/size}"
+    new "{size=-4}(Wonderful! The whore has arrived!){/size}"
+
+    old "{size=-3}(Надеюсь, она ничего. Впрочем, после стольких дней воздержания я не очень переборчив.){/size}"
+    new "{size=-4}(I hope she is good. Then again, this bootie drought, I'm not that choosie.){/size}"
+
+    old "Да, входи!"
+    new "Yes, come in!"
 
     old "Дафна"
-    new "Дафна"
+    new "Daphne"
+
+    old "Добрый день, профессор Дамблдор."
+    new "Good morning, professor Dumbledore."
+
+    old "{size=-3}(О-о, вот это шлюшка! Обожаю длинноногих блондинок!...){/size}"
+    new "{size=-4}(Oh, what a whore! I love leggy blondes...!){/size}"
+
+    old "{size=-3}(...а также брюнеток, шатенок и рыжих. Я могу кончить от одного их вида!){/size}"
+    new "{size=-4}(...brunettes, chestnut-heads and redheads. I can cum only by looking at them!){/size}"
+
+    old "{size=-3}(Вот только сиськи маловаты. Может, их подрастить заклинанием?..){/size}"
+    new "{size=-4}(Her hooters are a bit small. Maybe, there is a spell to make them bigger...?){/size}"
+
+    old "{size=-3}(Нет, джинни, умерь свои фантазии. Вспомни, что случилось, когда ты растил сиськи принцессе... мда){/size}"
+    new "{size=-4}(No, Genie, hold your horses. Remember what happened the last time you tried to grow a pair of boobs for her majesty the princess... meh){/size}"
+
+    old "Здравствуйте, мисс э-э..."
+    new "Hello, miss ..."
+
+    old "{size=-3}(Великие пески, почему он не назвал ее имени?){/size}."
+    new "{size=-4}(By the great desert sands, why he didn't say her name?){/size}."
+
+    old "Профессор Снейп сообщил, что вы хотели меня видеть."
+    new "Professor Snape, told me that you wish to see me."
+
+    old "О да, девочка! Несомненно, несомненно хотел... видеть, да."
+    new "Oh yes, girl! Beyond doubt, definitely I wish... to see, yes."
+
+    old "Но, он же сказал, зачем тебя прислал?"
+    new "Did he tell you why are you here?"
+
+    old "Нет, сэр. Он не сказал."
+    new "No, sir. He did not."
+
+    old "{size=-3}(Думаю, нужно с ней немного поболтать. Просто для разогрева.){/size}"
+    new "{size=-4}(I guess, I'll have a little chat with her. Just to warm up.){/size}"
+
+    old "Jul 31, 14:04"
+    new "Jul 31, 14:04"
+
+    old "Что ж, мисс, я хотел поговорить насчет вашей учебы."
+    new "Let's talk about your studies, miss."
+
+    old "Учеба не то, что меня волнует, сэр."
+    new "I don't care about my studies, sir."
+
+    old "Меня гораздо больше волнует, почему в Хогвартсе обучается грязнокровое мугродье."
+    new "What's bothering me is why at Hogwarts are taught so many muggle-born mudbloods?"
+
+    old "Вы же чистокровный волшебник, сэр?"
+    new "You are a pure-blood wizard, sir, aren't you?"
+
+    old "Кто? Я?.. А, ну да. Вроде того."
+    new "Who? Me...? Ah, yes I am. Kinda..."
+
+    old "Хм. Вы по делу смущаетесь."
+    new "Hm. Feeling embarrassment it's normal."
+
+    old "По древности рода с Гринграссами никто не сравнится, вы и должны чувствовать себя неловко."
+    new "No one can match the antiquity of Greengrass family, you should feel uncomfortable."
+
+    old "{size=-3}(Что это за... гринграссы такие?){/size}"
+    new "{size=-4}(What kind of... greengrass is that?){/size}"
+
+    old "{size=-3}(Как-то похабно рифмуется... Наверняка означает какую-нибудь дрянь.){/size}"
+    new "{size=-4}(Has a smutty rhyme to it... Almost certainly stands for something filthy.){/size}"
+
+    old "Но как бы то ни было, сэр. Мама говорит, вы должны были проследить, чтобы  мугродье не чувствовало себя здесь вольготно."
+    new "In any case, Sir. My mother tells me, that you should have oversaw that mudbloods don't have as much freedom as they do."
+
+    old "А вы вместо этого каждый год принимаете новых."
+    new "Instead, every year, you accept new ones."
+
+    old "И чистокровные девочки должны испытывать сложности."
+    new "And the pure-blood girls have to experience difficulties."
+
+    old "Чистокровные девочки?"
+    new "Pure-blood girls?"
+
+    old "Да, сэр! Почему эту грязнокровку называют лучшей на курсе?"
+    new "Yes, sir! Why is that mudblood entitled as the best student?"
+
+    old "Почему мугродью разрешено учиться рядом с истинными волшебниками?"
+    new "Why mudbloods are allowed to be taught alongside the true wizards in the first place?"
+
+    old "Я могу еще быть рядом со всякими Малфоями или Паркинсон."
+    new "I can tolerate the kinds of Malfoys or Parkinsons."
+
+    old "Семейки так себе, второй сорт. Но какие-никакие чистокровки, а эта девица!!!"
+    new "Not much greatness in those second grade families, if you ask me. At least they are pure-bloods, but that girl!!!"
+
+    old "{size=-3}(Хм, какая экспрессия! Интересно, трахается она так же энергично?){/size}"
+    new "{size=-4}(Hm, what expressiveness! I wonder, does she fuck as vigorously?){/size}"
+
+    old "Постойте, мисс, это все очень увлекательно, но, может, уже завершим прелюдию и приступим?"
+    new "All of this is very fascinating, miss, but can we please skip the prelude and get to the good stuff."
+
+    old "Приступим к чему, сэр?"
+    new "Get to what, sir?"
+
+    old "Ну, к этому самому... чпоки-чпоки, тити-мити, а?"
+    new "Well, to this thing... chpok-chpok, timi-miti?"
+
+    old "\"Чпоки-чпоки\", сэр?"
+    new "\"Chpok-chpok\", sir?"
+
+    old "Ну я не знаю, как это у вас, девушек, называется."
+    new "I don't know how you call it between yourselves, girls."
+
+    old "В общем, то, что вы постоянно делаете с профессором и зачем он вас сюда прислал."
+    new "Well, the thing you constantly do with your professor and the purpose he sent you here."
+
+    old "Я не понимаю, сэр."
+    new "I don't understand, sir."
+
+    old "О, великие пески пустыни!"
+    new "Oh, by the great desert sands!"
+
+    old "{size=-3}(Она небыстро шевелит мозгами. Надеюсь, что бедрами шевелит быстрее.){/size}"
+    new "{size=-4}(She is not too quick to use her brains. I hope, she is better at wiggling her hips.){/size}"
+
+    old "Я говорю, заняться тем, чем обычно занимаются шлю... девчонки вроде вас."
+    new "I speak about the things that usually whor... girls like you do."
+
+    old "На что это вы намекаете?!"
+    new "What are you coming at, sir?!"
+
+    old "Я намекаю? Да я прямо говорю!..."
+    new "I'm coming at? I'm being straight with you...!"
+
+    old "Если вы смеете намекать на то, чем занимаются некоторые особы с преподавателями, то это омерзительно!"
+    new "If you dare to imply about things that a number of individuals are engage in with the teachers, it's just sickening!"
+
+    old "{size=-3}(Э-э, Снейп, это что, шутка такая?){/size}"
+    new "{size=-4}(Ehm, Snape, is this a joke of some sort?){/size}"
+
+    old "Я сегодня же пошлю сову родителям и сообщу о грязных предложениях, которые вы мне тут делаете."
+    new "Today I'm going to dispatch an owl to my parents and let them know about all the nasty propositions, you are offering me here."
+
+    old "А уж они донесут об этом в министерство, будьте уверены."
+    new "And you better believe it, they will inform the Ministry of Magic all about this."
+
+    old "{size=-3}(Не могу поверить!... Чертов Снейп!!!){/size}"
+    new "{size=-4}(I can't believe it!... Fucking Snape!!!){/size}"
+
+    old "Эм, постойте, мисс, вы неправильно поняли!"
+    new "Em, wait a second, miss, you misunderstood me!"
+
+    old "Я все правильно поняла! А вам недолго осталось сидеть в этом кресле!"
+    new "I did not! And you, sir, are not going to occupy that armchair for much longer ."
+
+    old "Jul 31, 14:06"
+    new "Jul 31, 14:06"
+
+# TODO: Translation updated at 2015-08-04 12:56
+
+translate english strings:
+
+    old "Aug 04, 12:35"
+    new "Aug 04, 12:35"
+
+# TODO: Translation updated at 2015-08-04 13:05
+
+translate english strings:
+
+    old "Что ж, мисс, я хотел поговорить об обстановке на факультете."
+    new "Well, miss, I would like to talk to you about the atmosphere surrounding your house."
+
+    old "Обстановка на факультете, сэр? Она отвратительна!"
+    new "The atmosphere surrounding my house, sir? It's disgusting!"
+
+    old "Грязнокровое мугродье заполонило Хогвартс."
+    new "Mudbloods swarmed Hogwarts."
+
+    old "{size=-3}(Что это за?..){/size}"
+    new "{size=-4}(What the hell...?){/size}"
+
+    old "И вы делаете вид, что этого не замечаете. Хотя ваш отец..."
+    new "And you pretend that is nothing wrong with that. Although, your father..."
+
+    old "Мама говорила мне, что он был истинным чистокровным волшебником и не побоялся прикончить троих маглов. За что его и упрятали в Азкабан."
+    new "My mother tells me, that he was the true pure-blood wizard, that was not afraid to finish off those three muggles. That's why he was locked up in Azkaban."
+
+    old "Правда, что ли? {size=-3}(Ну и висельники в родстве с местным директором!){/size}"
+    new "Is that true? {size=-4}(What crackpots has as relatives the local headmaster!){/size}"
+
+    old "Не притворяйтесь, что вы этого не помните, сэр!"
+    new "Do not pretend, that you don't remember, sir!"
+
+    old "А если позабыли, это не делает вам чести!"
+    new "And if you forgot, it doesn't compliment you!"
+
+    old "Гринграссы всегда стояли за чистоту крови, и когда видишь волшебника, который предает наши идеалы..."
+    new "The Greengrass family always stands up for the purity of blood, and when you see a wizard, that is betraying our ideals..."
+
+    old "Что это было?!.. Отвечай мне, во имя гребаных песков пустыни!"
+    new "What was that?!.. By the great desert sands, answer me!"
+
+    old "Ты о чем, мой друг?"
+    new "What are you talking about, my friend?"
+
+    old "Не прикидывайся овечкой! Я просил у тебя шлюху, мать твою, а ты мне кого прислал?"
+    new "Don't play dumb with me! I asked for a whore, but who did you send to me?"
+
+    old "Ну, технически она шлюха."
+    new "Well, technically, she is a whore."
+
+    old "Что это вообще значит «технически она шлюха»?"
+    new "What in the hell does it mean \"technically, she is a whore.\"?"
+
+    old "Ну, у нее есть все необходимое для шлюхи. Все нужные хм, детали. И какая экспрессия!"
+    new "Well, she has everything she needs to be one. All the necessary parts. And what an expressiveness!"
+
+    old "Да уж, экспрессию было трудно не заметить."
+    new "Yes, expressiveness was very hard not to notice."
+
+    old "Я бы ее с удовольствием разложил на полу."
+    new "I would gladly take her on the floor."
+
+    old "Я бы тоже ее с удовольствием..."
+    new "Me, too..."
+
+    old "Постой, так ты сам ни разу ее не трахнул?!"
+    new "Wait a sec, you never fucked her yet?!"
+
+    old "За кого ты меня принимаешь, мой друг? Разве стал бы я предлагать тебе пользованный товар?"
+    new "Who do you take me for, my friend? You really think I'll offer you used goods?"
+
+    old "Чистокровная..."
+    new "Pure-blood..."
+
+    old "Про чистокровную я уже наслушался!"
+    new "I already had enough with pure-blood!"
+
+    old "Чистокровная нетронутая юная волшебница, которая только и ждет, чтобы кто-нибудь ее объездил."
+    new "Innocent, pure-blood witch, that dreams to be tamed."
+
+    old "И ты решил, что я лучше всех подхожу на эту роль."
+    new "And you decided that I am the one who is suited for the role."
+
+    old "Ну, у тебя неплохо получается с Гермионой Грейнджер. Я был уверен, что ты не спасуешь и перед Дафной Гринграсс."
+    new "Well, seems you are doing alright with Hermione Granger. I had no doubts about you with Daphne Greengrass."
+
+    old "Если бы ты, дружище, хотя бы предупредил меня, я бы может что-то и придумал."
+    new "If you'd only gave me a warning, maybe I'd think about something."
+
+    old "Но теперь эта юная сука настучит родителям, и министерская проверка – самое меньшее, что нас ждет."
+    new "But now, this young bitch is going to warn her parents, and the Ministry's examination - at the very least waits us."
+
+    old "Предупреждаю, если меня вынесут из этого кабинета, то тебя вынесут следом {size=-3}(если я не найду способа смыться раньше){/size}"
+    new "I'm warning you, if I'll get removed from this office, you are getting removed with me! \n{size=-4}(if I'll not be able to find a solution to get out of here before that happens){/size}"
+
+    old "Не все так трагично, мой друг. Я поговорил с мисс Гринграсс, и она согласна ничего не сообщать родителям."
+    new "Nothing tragic happened, my friend. I spoke to miss Greengrass, and she agreed to keep he mouth shut."
+
+    old "Пока."
+    new "At least for now."
+
+    old "Слово «пока» особенно обнадеживает, гребаные пески..."
+    new "Very comforting, by the great desert sands..."
+
+    old "Я не спрашиваю, как тебе это удалось. И все же, прости мое любопытство,.."
+    new "I don't know how you managed it. But, I'm curious..."
+
+    old "...если ты так замечательно ладишь с этой сучкой,.."
+    new "...if you and that bitch can get along so well..."
+
+    old "почему ты до сих пор ее не трахнул?!"
+    new "why didn't you fuck her yet?!"
+
+    old "Мой друг. Одно дело убедить заносчивую дрянь в том, что шум вокруг такого деликатного предмета, как ее невинность, не в ее интересах."
+    new "My friend. One thing is to convince the bitch that a turmoil about this delicate affair is not in her best interest."
+
+    old "И совсем другое - залезть к ней в трусики."
+    new "Another - is to get in her panties."
+
+    old "Я хочу предоставить эту честь тебе."
+    new "I'll leave the honor to you."
+
+    old "Не собираюсь я с ней больше встречаться!"
+    new "I don't wish to meet her again!"
+
+    old "Боюсь, у тебя нет выбора."
+    new "I'm afraid, you don't have a choice."
+
+    old "Та-ак..."
+    new "Well-well..."
+
+    old "Чего я еще не знаю?"
+    new "How much is there that I don't know yet?"
+
+    old "Не хочу на тебя давить, мой друг."
+    new "I don't want to pressure you, my friend."
+
+    old "Поэтому просто пусть события идут своим чередом. Может, все и обойдется."
+    new "Let it go. Maybe things will come right."
+
+    old "Но на твоем месте я бы уже начал задумываться, как расположить к себе очаровательную девушку древнего и благородного рода."
+    new "But in your place, I would try to come up with something to win over that charming girl of ancient and noble family."
+
+    old "А теперь извини, мне пора идти."
+    new "Now if you'd excuse me, I have to go."
+
+    old "Aug 04, 13:05"
+    new "Aug 04, 13:05"
+
+# TODO: Translation updated at 2015-08-05 19:21
+
+translate english strings:
+
+    old "Aug 05, 19:01"
+    new "Aug 05, 19:01"
+
+    old "Aug 05, 19:03"
+    new "Aug 05, 19:03"
+
+# TODO: Translation updated at 2015-08-05 19:35
+
+translate english strings:
+
+    old "Серьезно, насколько велик этот тайник?"
+    new "Seriously, how big is that stash?"
+
+    old "Aug 05, 19:34"
+    new "Aug 05, 19:34"
+
+    old "Aug 05, 19:35"
+    new "Aug 05, 19:35"
+
+# TODO: Translation updated at 2015-08-05 21:16
+
+translate english strings:
+
+    old "Aug 05, 21:01"
+    new "Aug 05, 21:01"
 
     old "Да, профессор?"
-    new "Да, профессор?"
+    new "Yes, professor?"
 
-    old "Мама говорит, что я смогу раскрыть свои настоящие таланты, только если займу правильную позицию. Вы тоже так думаете?"
-    new "Мама говорит, что я смогу раскрыть свои настоящие таланты, только если займу правильную позицию. Вы тоже так думаете?"
+# TODO: Translation updated at 2015-08-05 21:36
 
-    old "\"Популярность\""
-    new "\"Популярность\""
+translate english strings:
 
-    old "\"Покажись!\""
-    new "\"Покажись!\""
+    old "Aug 05, 21:33"
+    new "Aug 05, 21:33"
 
-    old "\"Расскажи о девушках\""
-    new "\"Расскажи о девушках\""
+    old "{size=-7}ОТ:Министерства Магии\nКому: Профессору Дамблдору\n\n\n{/size}{size=-2}Благодарим Вас за отчеты, присланные на этой неделе.\n Ваша оплата:{/size} \n{size=+4}[dgold] галеонов.{/size}\n\n\n{size=-3}-С уважением-{/size}"
+    new "{size=-7}From: Ministry of Magic\nTo: Professor Dumbledore\n\n\n{/size}{size=-2}Thank you for completing one report this week.\nHere is your payment:{/size} \n{size=+4}40 gold coins.{/size}\n\n\n{size=-3}-With deepest respect-{/size}"
 
-    old "{size=-3}(Становится жарковато. Предложу ей что-нибудь снять...){/size}"
-    new "{size=-3}(Становится жарковато. Предложу ей что-нибудь снять...){/size}"
+# TODO: Translation updated at 2015-08-05 22:00
 
-    old "Ну что ж, мисс Гринграсс, вы выглядите потрясающе...."
-    new "Ну что ж, мисс Гринграсс, вы выглядите потрясающе...."
+translate english strings:
 
-    old "....Спасибо профессор."
-    new "....Спасибо профессор."
+    old "Aug 05, 21:47"
+    new "Aug 05, 21:47"
 
-    old "За исключением одного «но»...."
-    new "За исключением одного «но»...."
+# TODO: Translation updated at 2015-08-05 22:17
 
-    old "«но»...."
-    new "«но»...."
+translate english strings:
 
-    old "Что-то не так, сэр?"
-    new "Что-то не так, сэр?"
+    old "Aug 05, 22:05"
+    new "Aug 05, 22:05"
 
-    old "Мне ведь уже нечего снимать...."
-    new "Мне ведь уже нечего снимать...."
+# TODO: Translation updated at 2015-08-05 22:26
 
-    old "{size=-3}(Это мы еще проверим){/size}"
-    new "{size=-3}(Это мы еще проверим){/size}"
+translate english strings:
 
-    old "Что, сэр?"
-    new "Что, сэр?"
+    old "Aug 05, 22:25"
+    new "Aug 05, 22:25"
 
-    old "Эм.... Я говорю, что сегодня вам нужно научиться правильно демонстрировать свое нижнее белье."
-    new "Эм.... Я говорю, что сегодня вам нужно научиться правильно демонстрировать свое нижнее белье."
+# TODO: Translation updated at 2015-08-05 22:36
 
-    old "{size=+5}Всмысле?!{/size}"
-    new "{size=+5}Всмысле?!{/size}"
+translate english strings:
 
-    old "{size=+5}Сэр, это не позволительно!{/size}"
-    new "{size=+5}Сэр, это не позволительно!{/size}"
+    old "Aug 05, 22:26"
+    new "Aug 05, 22:26"
 
-    old "А два дня назад мне показалось, что для вас это в порядке вещей....."
-    new "А два дня назад мне показалось, что для вас это в порядке вещей....."
+    old "{size=-7}От: Оливии Гринграсс\nКому: Профессору Дамблдору\n\n{/size}{size=-4}Профессор Дамблдор!\n\nМы с мужем серьезно обеспокоены тем, что наша дочь не получает достаточно внимания в Хогвартсе и до сих пор не заняла в нем подобающего положения.\n\n Профессор Северус Снейп проинформировал нас, что вы, наконец-то, спохватились и вызвались давать ей частные уроки.\n\n Вы непозволительно долго шли к этому, профессор!\n\n Надеемся, что ваши запоздалые действия возымеют хоть какой-то эффект...{/size}\n\n "
+    new "{size=-7}From: Olivia Greengrass\nTo: Professor Dumbledore\n\n{/size}{size=-4}Professor Dumbledore!\n\nWe, as parents, are seriously worried about, that our daughter does not get enough attention in Hogwarts and still does not have a respectful status there.\n\n Professor Severus Snape informed us, that you finally came to your senses to give her private lessons.\n\n It took you inadmissible long time to do that.\n\n We hope, that you delayed actions will produce at least a little if any effect...{/size}\n\n "
 
-    old "Ну тогда надейтесь на удачу....."
-    new "Ну тогда надейтесь на удачу....."
+    old "{size=-4}...Как вы знаете, в министерстве намечено очередное заседание по вопросам выделения фондов магическим учебным заведениям.\n\n Информируем вас, что если вами не будет достигнут достаточный прогресс, Дафна будет переведена в Дурмштанг - в академию, где умеют ценить настоящих чистокровных магов.\n\n Мы же в этом случае приложим все усилия, чтобы Хогвартс получил самое минимальное финансирование.{/size}\n\n {size=-3}Без особой надежды на ваш успех,\nОливия Гринграсс.{/size}"
+    new "{size=-4}...As you well know, the Ministry of Magic has scheduled a stated meeting to discus the future budget for educational establishments.\n\n Just to keep you informed, that if you fail to achieve any progress, Daphne will be transferred to Durmstrang Institute - a school, that values it's pure-blood wizards.\n\n In that case we will use everything at our disposal to make sure, Hogwarts gets the minimal financial support.{/size}\n\n {size=-3}Without much hope on your success,\nOlivia Greengrass.{/size}"
 
-    old "Только она сможет вам помочь....."
-    new "Только она сможет вам помочь....."
+    old "Великие пески!.."
+    new "By the great desert sands!.."
 
-    old "Можете быть свободны мисс Гринграсс...."
-    new "Можете быть свободны мисс Гринграсс...."
+    old "Чувствуется почерк дружищи Снейпа, и я не уверен, что мне это нравится."
+    new "Feels like Snape has something to do with this, and I don't think I like it."
 
-    old "Пф!..."
-    new "Пф!..."
+    old "Подобающее положение?! Если она у меня займет подобающее {size=+5}ЕЙ{/size} положение, оно не слишком понравится ее мамочке!"
+    new "Respectful position?! If she is going to get the position {size=+5}SHE{/size} deserves, I don't think here mother will like it!"
 
-    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}{size=-6}Медиа-развр.:{/size}{size=-4} [nsp_germiona_mediawhoring]{/size}\n                    {size=-6}{/size}{size=-6}Наглость:{/size}{size=-4} [nsp_germiona_impudence]{/size}\n                    {size=-6}{/size}{size=-6}Артистичность:{/size}{size=-4} [nsp_germiona_artistry]{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}{size=-6}Медиа-развр.:{/size}{size=-4} [nsp_germiona_mediawhoring]{/size}\n                    {size=-6}{/size}{size=-6}Наглость:{/size}{size=-4} [nsp_germiona_impudence]{/size}\n                    {size=-6}{/size}{size=-6}Артистичность:{/size}{size=-4} [nsp_germiona_artistry]{/size}\n                    {size=-6}{/size}"
+    old "Что теперь? Все время трястись, чтобы не сболтнуть лишнего, и она не настучала родителям..."
+    new "What now? Every time shake in my shoes and watching to not tell something excessive, so she couldn't say anything to here parents... "
 
-    old "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -15{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -15{/size}\n                    {size=-6}{/size}"
+    old "Чему ее учить, если я вообще ничего о ней не знаю?! И главное: как ее заставить держать язык за зубами?"
+    new "How can I teach here, if I don't know anything myself?! Most importantly, how to make her keep her mouth shut?"
 
-    old "{size=-3}Снейп{/size}           {size=-6}Откровенность: {/size}{size=12}99({color=#FF0000}max{/color}){/size}\n                     {size=-6}Дружба:{/size} {size=-6}[snape_events]{/size}"
-    new "{size=-3}Снейп{/size}           {size=-6}Откровенность: {/size}{size=12}99({color=#FF0000}max{/color}){/size}\n                     {size=-6}Дружба:{/size} {size=-6}[snape_events]{/size}"
+    old "Aug 05, 22:33"
+    new "Aug 05, 22:33"
 
-    old "{size=-3}(Пора занять её чем-то новым...){/size}"
-    new "{size=-3}(Пора занять её чем-то новым...){/size}"
+    old "Ты опять меня подставил!"
+    new "You framed me again!"
 
-    old "Мне кажется, что она еще не готова..."
-    new "Мне кажется, что она еще не готова..."
+    old "Успокойся, мой друг, успокойся. Это было единственно возможным решением."
+    new "Calm down, my friend. It was the only reasonable solution."
 
-    old "Может позже...."
-    new "Может позже...."
+    old "Да неужели?"
+    new "You don't say?"
 
-    old "{size=-3}(Я расспрошу ее о ее подружках...){/size}"
-    new "{size=-3}(Я расспрошу ее о ее подружках...){/size}"
+    old "Конечно. Эти Гринграссы, эти снобы... Они уже были готовы забрать девчонку из Хогвартса."
+    new "Of course. That Greengrass family, snobs... They were already ready to take the girl way from Hogwarts."
 
-    old "Так, мисс Гринграсс. Давайте-ка вы сегодня снова займетесь изучением ваших конкуренток."
-    new "Так, мисс Гринграсс. Давайте-ка вы сегодня снова займетесь изучением ваших конкуренток."
+    old "Превосходно! Это решает все проблемы."
+    new "Wonderful! That solves all our problems."
 
-    old "Опять, сэр?"
-    new "Опять, сэр?"
+    old "Ты подумай, какова вероятность, что она наплетет про тебя, что было и чего не было, как только за ней закроется дверь."
+    new "Just think about it, what is the probability that she is going to tell nonsense about you, what did and did not happen, when the door closes after her."
 
-    old "Ну, если вы уже все о них знаете..."
-    new "Ну, если вы уже все о них знаете..."
+    old "И как они взбесятся. А уж связи у них. О-о... об этом можно книгу написать."
+    new "They will be pissed. And the connections they have. Oh... You can write a book about that."
 
-    old "Пока не все, сэр."
-    new "Пока не все, сэр."
+    old "А пока она здесь..."
+    new "While she is here..."
 
-    old "Тогда вперед, жду вас вечером с отчетом."
-    new "Тогда вперед, жду вас вечером с отчетом."
+    old "Вот именно, она здесь и теперь может видеть меня каждый день."
+    new "Exactly, she is here and can see me everyday."
 
-    old "Добрый вечер, профессор Дамблдор."
-    new "Добрый вечер, профессор Дамблдор."
+    old "Она тут кипела, как перегретый чайник! Думаешь, сразу все забудет?"
+    new "She was bubbled here, like an overheated kettle! Do you think, she is going to forget everything at once?"
 
-    old "Эм...."
-    new "Эм...."
+    old "Кажется, ты потерял хватку, мой друг."
+    new "Seems you lost your touch, my friend."
 
-    old "Сэр..."
-    new "Сэр..."
+    old "Важно не то, что она {size=+5}МОЖЕТ{/size} тебя видеть, а то, что она {size=+5}ОБЯЗАНА{/size} приходить к тебе, поскольку ей велели ее старики."
+    new "The point is not the she {size=+5}can{/size} see you, but she {size=+5}must{/size} come to you, since her parents ordered her to do so."
 
-    old "Да мисс Гринграсс...."
-    new "Да мисс Гринграсс...."
+    old "Улавливаешь открывающиеся возможности?"
+    new "Do you see opening opportunities?"
 
-    old "вы готовы мне что-то рассказать?"
-    new "вы готовы мне что-то рассказать?"
+    old "До каникул она в полном твоем распоряжении, тебе дан «еще один шанс»."
+    new "Till holidays, she is all yours, you have been given \"one more chance\""
 
-    old ".........."
-    new ".........."
+    old "И я верю, что ты воспользуешься этим шансом на все 100%."
+    new "And I believe you'll take the full advantage of it."
 
-    old "Вы оказались правы, профессор."
-    new "Вы оказались правы, профессор."
+    old "Ты - чертов лицемер, Северус Снейп!"
+    new "You - fucking hypocrite, Severus Snape!"
 
-    old "Парням совсем наплевать на то, какая у меня кровь...."
-    new "Парням совсем наплевать на то, какая у меня кровь...."
+    old "Я должен пыхтеть выдумывать, как обломать сразу двух девчонок, а ты в это время будешь развлекаться со шлюхами."
+    new "I will need to come up with something to break two girls at once, when you are going to enjoy your time with whores."
 
-    old "...Почему профессор?!"
-    new "...Почему профессор?!"
+    old "Да, у каждого своя судьба, мой друг."
+    new "Yep, everyone has its own fate, my friend."
 
-    old "...Почему мой флирт, им важнее?!"
-    new "...Почему мой флирт, им важнее?!"
+    old "Ах, ты!.. Не ты ли все это устроил?"
+    new "Ah, you!... Didn't you organized all this?"
 
-    old "Хм....."
-    new "Хм....."
+    old "Я всего лишь постарался исполнить твое желание наилучшим образом."
+    new "I was trying to do my best to make you wish happen."
 
-    old "Я так понял, вы пытались заигрывать с парнями мисс Гринграсс?"
-    new "Я так понял, вы пытались заигрывать с парнями мисс Гринграсс?"
+    old "Если бы ты следовал нашему первоначальному плану и просто дрессировал мисс Грейнджер, ничего этого не случилось бы."
+    new "If you were just fallowing our original agreement to train miss Granger, nothing like this would not have happened."
 
-    old "Э-э... Я не хотела..."
-    new "Э-э... Я не хотела..."
+    old "Но тебе захотелось большего, мой друг, и я сделал все, что в моих силах."
+    new "You wanted more, my friend, so I did my best to make it happen."
 
-    old "Просто...."
-    new "Просто...."
+    old "В твоих силах было прислать мне обычную шлюху!"
+    new "You could just sent me an ordinary whore!"
 
-    old "Ну.... мне нужно было еще раз все проверить."
-    new "Ну.... мне нужно было еще раз все проверить."
+    old "Чтобы на следующий день весь Хогвартс обсуждал, какой у директора размерчик?"
+    new "So that the next day all Hogwarts discussing how big is the Headmaster's...?"
 
-    old "Мисс Гринграсс..."
-    new "Мисс Гринграсс..."
+    old "Эти шлюхи, когда их рот не занят полезным делом, только и делают, что болтают, и сплетня распространяется быстрее, чем действие заклинания икоты."
+    new "Эти шлюхи, когда их рот не занят полезным делом, только и делают, что болтают, и сплетня распространяется быстрее, чем действие заклинания икоты."
 
-    old "А вы бы не могли по конкретнее мне рассказать, с кем из парней вы флиртовали?"
-    new "А вы бы не могли по конкретнее мне рассказать, с кем из парней вы флиртовали?"
+    old "Но если ты оприходуешь мисс Гринграсс, то можешь драть ее, как последнюю потаскуху, а за пределами твоего кабинета все будет тихо, чинно и благородно."
+    new "Но если ты оприходуешь мисс Гринграсс, то можешь драть ее, как последнюю потаскуху, а за пределами твоего кабинета все будет тихо, чинно и благородно."
 
-    old "Нет профессор..."
-    new "Нет профессор..."
+    old "Эта девица слишком помешана на своей голубой крови, чтобы признаться в том, что дает."
+    new "Эта девица слишком помешана на своей голубой крови, чтобы признаться в том, что дает."
 
-    old "Я не стану делиться этим с вами, сэр..."
-    new "Я не стану делиться этим с вами, сэр..."
+    old "\"Если\" здесь ключевое слово, дружище. А если ничего не выйдет? Ты, кстати, так и не справился с ней."
+    new "\"Если\" здесь ключевое слово, дружище. А если ничего не выйдет? Ты, кстати, так и не справился с ней."
 
-    old "...Почему же?"
-    new "...Почему же?"
+    old "Гхм... Мой друг, я ведь не отказываюсь помочь тебе. Если тебе что-то нужно..."
+    new "Гхм... Мой друг, я ведь не отказываюсь помочь тебе. Если тебе что-то нужно..."
 
-    old "Это очень низко..."
-    new "Это очень низко..."
+    old "Да, мне что-то нужно. Выкладывай о ней все, что знаешь!"
+    new "Да, мне что-то нужно. Выкладывай о ней все, что знаешь!"
 
-    old "{size=-3}(До сих пор не могу поверить что я решилась на это){/size}"
-    new "{size=-3}(До сих пор не могу поверить что я решилась на это){/size}"
+    old "Это так скучно. Давай я лучше пришлю тебе сову с выписками из моего досье на нее."
+    new "Это так скучно. Давай я лучше пришлю тебе сову с выписками из моего досье на нее."
 
-    old "Низко?"
-    new "Низко?"
+    old "Я его составлял, когда всерьез планировал ее завалить."
+    new "Я его составлял, когда всерьез планировал ее завалить."
 
-    old "Вы уже научились решаться на то, о чем раньше не могли даже думать."
-    new "Вы уже научились решаться на то, о чем раньше не могли даже думать."
+    old "И еще, думаю, тебе нужно почитать умных книжек, чтобы поучиться обращаться с девицами такого рода."
+    new "И еще, думаю, тебе нужно почитать умных книжек, чтобы поучиться обращаться с девицами такого рода."
 
-    old "По моему это достойно похвалы...."
-    new "По моему это достойно похвалы...."
+    old "Опять же, есть специальное зелье..."
+    new "Опять же, есть специальное зелье..."
 
-    old "Как считаете?"
-    new "Как считаете?"
+    old "Зелье?! А вот с этого момента поподробнее..."
+    new "Зелье?! А вот с этого момента поподробнее..."
 
-    old "Эм... Я не знаю, сэр."
-    new "Эм... Я не знаю, сэр."
+    old "Все в умных книгах, мой друг, все в них."
+    new "Все в умных книгах, мой друг, все в них."
 
-    old "Мне все еще не по себе от этого."
-    new "Мне все еще не по себе от этого."
+    old "У меня через 5 минут начинается зельеварение у Гриффиндора, так что я вынужден тебя оставить, мой друг."
+    new "У меня через 5 минут начинается зельеварение у Гриффиндора, так что я вынужден тебя оставить, мой друг."
 
-    old "{size=-3}(Ты у меня и не такое будешь вытворять, когда я закончу с тобой){/size}"
-    new "{size=-3}(Ты у меня и не такое будешь вытворять, когда я закончу с тобой){/size}"
+    old "Aug 05, 22:36"
+    new "Aug 05, 22:36"
 
-    old "Что вы сказали, сэр?"
-    new "Что вы сказали, сэр?"
+# TODO: Translation updated at 2015-08-09 16:17
 
-    old "Эм.... Я подумал, что на сегодня с вас достаточно того, что вы сделали."
-    new "Эм.... Я подумал, что на сегодня с вас достаточно того, что вы сделали."
+translate english strings:
 
-    old "{size=-3}(Черт... Лучше не напоминайте мне об этом){/size}"
-    new "{size=-3}(Черт... Лучше не напоминайте мне об этом){/size}"
+    old "Я хотел бы поговорить с вами, мисс, о некоторых девушках с вашего факультета."
+    new "Я хотел бы поговорить с вами, мисс, о некоторых девушках с вашего факультета."
 
-    old "На сегодня вы можете быть свободны, мисс Гринграсс."
-    new "На сегодня вы можете быть свободны, мисс Гринграсс."
+    old "О каких девушках?"
+    new "О каких девушках?"
 
-    old "...Хорошо, профессор."
-    new "...Хорошо, профессор."
+    old "Да о всяких разных."
+    new "Да о всяких разных."
 
-    old "И да... мисс Гринграсс, я думаю вы заслужили поощрение сегодня."
-    new "И да... мисс Гринграсс, я думаю вы заслужили поощрение сегодня."
+    old "Я не понимаю, сэр. На факультете много девушек."
+    new "Я не понимаю, сэр. На факультете много девушек."
 
-    old "- Чупа-чупс -"
-    new "- Чупа-чупс -"
+    old "Да взять хотя бы первую, которая попадется. Кто у нас там первый..."
+    new "Да взять хотя бы первую, которая попадется. Кто у нас там первый..."
 
-    old "- Шоколад -"
-    new "- Шоколад -"
+    old "По алфавиту, сэр? Алисия."
+    new "По алфавиту, сэр? Алисия."
+
+    old "Причем здесь алфавит, великие пески! Первая девушка - совсем не эта..."
+    new "Причем здесь алфавит, великие пески! Первая девушка - совсем не эта..."
+
+    old "О, сэр! Я поняла. Вы хотите поговорить обо мне, ведь я первая по успеваемости. Но вы стесняетесь..."
+    new "О, сэр! Я поняла. Вы хотите поговорить обо мне, ведь я первая по успеваемости. Но вы стесняетесь..."
+
+    old "Это... это так трогательно..."
+    new "Это... это так трогательно..."
+
+    old "Да нет же, нет! Это - Дафна Гринграсс."
+    new "Да нет же, нет! Это - Дафна Гринграсс."
+
+    old "Я не понимаю, сэр. Почему это она - первая?"
+    new "Я не понимаю, сэр. Почему это она - первая?"
+
+    old "Неважно, просто расскажи мне о ней."
+    new "Неважно, просто расскажи мне о ней."
+
+    old "Мне неприятно о ней говорить. Она все время кичится тем, что чистокровная."
+    new "Мне неприятно о ней говорить. Она все время кичится тем, что чистокровная."
+
+    old "Еще какие-нибудь сведения?"
+    new "Еще какие-нибудь сведения?"
+
+    old "Какого рода, сэр?"
+    new "Какого рода, сэр?"
+
+    old "Ну может быть какие-нибудь... как бы получше выразиться... грешки?"
+    new "Ну может быть какие-нибудь... как бы получше выразиться... грешки?"
+
+    old "Сэр! Как вы можете требовать от меня рассказать такое про другую студентку! Это недостойно!"
+    new "Сэр! Как вы можете требовать от меня рассказать такое про другую студентку! Это недостойно!"
+
+    old "Я немедленно ухожу!"
+    new "Я немедленно ухожу!"
+
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -30{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -30{/size}\n                    {size=-6}{/size}"
+
+    old ">Гермиона злится на вас."
+    new ">Гермиона злится на вас."
+
+    old "Нет!"
+    new "Нет!"
+
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -29{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -29{/size}\n                    {size=-6}{/size}"
+
+    old "{size=-7}От: Северуса Снейпа\nКому: Профессору Дамблдору\n\n{/size}{size=+2}Выписка из досье на Дафну Гринграсс\n\n{/size}{size=-4}Рост: 5' 8\", Вес: 53 kg, Размер груди: 34В\n\nОриентация: Предположительно гетеро.\n\nДевственница: Нет доказательств обратного.\n\nМастурбация: Да? (доказательства косвенные: однокурсница, случайно оказавшаяся рядом, слышала ее стоны из кабинки в душе)\n\nПросмотр порно: Да? (доказательства косвенные: оставленный порно-журнал исчез из гостиной Слизерина, в гостиную кроме Гринграсс никто не входил)\n\nПодглядывание: Да? (доказательства косвенные: была застигнута около отверстия, которое однокурсницы проделали в мужскую душевую, но поймана за подглядыванием не была){/size}"
+    new "{size=-7}От: Северуса Снейпа\nКому: Профессору Дамблдору\n\n{/size}{size=+2}Выписка из досье на Дафну Гринграсс\n\n{/size}{size=-4}Рост: 5' 8\", Вес: 53 kg, Размер груди: 34В\n\nОриентация: Предположительно гетеро.\n\nДевственница: Нет доказательств обратного.\n\nМастурбация: Да? (доказательства косвенные: однокурсница, случайно оказавшаяся рядом, слышала ее стоны из кабинки в душе)\n\nПросмотр порно: Да? (доказательства косвенные: оставленный порно-журнал исчез из гостиной Слизерина, в гостиную кроме Гринграсс никто не входил)\n\nПодглядывание: Да? (доказательства косвенные: была застигнута около отверстия, которое однокурсницы проделали в мужскую душевую, но поймана за подглядыванием не была){/size}"
+
+    old "{size=-4}Убеждения и опасения:\n\n* комплексует, что ее грудь слишком мала\n* считает, что спать можно только с чистокровным высоким, мужественным и т.п.\n* боится, что не сможет удовлетворить чистокровного высокого, мужественного и т.п.\n* комплексует по поводу своего маленького (отсутствующего?) сексуального опыта\n\nДевиации: Не обнаружены{/size}\n\n {size=-3}Успехов, мой друг!\nСеверус Снейп.{/size}\n\n{size=-4}P.S. Мисс Гринграсс получила напутственное письмо от родителей. Думаю, будет правильно, мой друг, если не ты станешь вызывать ее, а она сама придет к тебе на первое занятие.{/size}"
+    new "{size=-4}Убеждения и опасения:\n\n* комплексует, что ее грудь слишком мала\n* считает, что спать можно только с чистокровным высоким, мужественным и т.п.\n* боится, что не сможет удовлетворить чистокровного высокого, мужественного и т.п.\n* комплексует по поводу своего маленького (отсутствующего?) сексуального опыта\n\nДевиации: Не обнаружены{/size}\n\n {size=-3}Успехов, мой друг!\nСеверус Снейп.{/size}\n\n{size=-4}P.S. Мисс Гринграсс получила напутственное письмо от родителей. Думаю, будет правильно, мой друг, если не ты станешь вызывать ее, а она сама придет к тебе на первое занятие.{/size}"
+
+    old "Ну и досье. Он что диссертацию по ней собирался писать? И через слово \"нет доказательств\", \"не обнаружено\", \"доказательства косвенные\"..."
+    new "Ну и досье. Он что диссертацию по ней собирался писать? И через слово \"нет доказательств\", \"не обнаружено\", \"доказательства косвенные\"..."
+
+    old "Неудивительно, что у него ничего с ней не вышло..."
+    new "Неудивительно, что у него ничего с ней не вышло..."
+
+    old "Хм, как бы мне подготовиться к ее приходу?"
+    new "Хм, как бы мне подготовиться к ее приходу?"
 
     old "- Плюшевая сова -"
     new "- Плюшевая сова -"
 
-    old "- Сливочное пиво -"
-    new "- Сливочное пиво -"
+    old ">Настроение Гермионы улучшено...\n>Гермиона {size=+5}огорчена вами{/size}..."
+    new ">Настроение Гермионы улучшено...\n>Гермиона {size=+5}огорчена вами{/size}..."
+
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -21{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -21{/size}\n                    {size=-6}{/size}"
+
+    old "Aug 09, 15:50"
+    new "Aug 09, 15:50"
+
+    old "Aug 09, 15:54"
+    new "Aug 09, 15:54"
+
+    old "Mystical voice"
+    new "Mystical voice"
+
+    old "Aug 09, 15:59"
+    new "Aug 09, 15:59"
+
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -28{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -28{/size}\n                    {size=-6}{/size}"
+
+    old "- Священный свиток (1) -"
+    new "- Священный свиток (1) -"
 
     old "- Обучающий журнал -"
     new "- Обучающий журнал -"
 
-    old "- Женский журнал -"
-    new "- Женский журнал -"
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -5{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -5{/size}\n                    {size=-6}{/size}"
 
-    old "- Журнал для взрослых -"
-    new "- Журнал для взрослых -"
+    old ">Вы расстроили Гермиону."
+    new ">Вы расстроили Гермиону."
 
-    old "- Упаковка презервативов -"
-    new "- Упаковка презервативов -"
+    old "Опять будете выспрашивать о Дафне?"
+    new "Опять будете выспрашивать о Дафне?"
 
-    old "- Духи -"
-    new "- Духи -"
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -34{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -34{/size}\n                    {size=-6}{/size}"
 
-    old "- Вибратор -"
-    new "- Вибратор -"
+    old "Aug 09, 16:04"
+    new "Aug 09, 16:04"
 
-    old "- Банка лубриканта -"
-    new "- Банка лубриканта -"
+    old "Aug 09, 16:05"
+    new "Aug 09, 16:05"
 
-    old "- Кляп и наручники -"
-    new "- Кляп и наручники -"
+    old "Aug 09, 16:14"
+    new "Aug 09, 16:14"
 
-    old "- Анальная пробка -"
-    new "- Анальная пробка -"
+    old ">Гермиона очень расстроена вами."
+    new ">Гермиона очень расстроена вами."
 
-    old "- Школьная нано-юбка (10 см) -"
-    new "- Школьная нано-юбка (10 см) -"
+    old "Нет, спасибо...."
+    new "Нет, спасибо...."
 
-    old "- Школьная рубашка-минитопик -"
-    new "- Школьная рубашка-минитопик -"
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -3{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -3{/size}\n                    {size=-6}{/size}"
 
-    old "- Значок \"А.В.Н.Э.\" -"
-    new "- Значок \"А.В.Н.Э.\" -"
+    old "Мне не хочется сегодня...\nМожет быть через пару дней..."
+    new "Мне не хочется сегодня...\nМожет быть через пару дней..."
 
-    old "- Вино Дамблдора -"
-    new "- Вино Дамблдора -"
+    old "Что не так с моей одеждой?"
+    new "Что не так с моей одеждой?"
 
-    old "Гхм... Это такой намек, что у меня нет парня, сэр?"
-    new "Гхм... Это такой намек, что у меня нет парня, сэр?"
+    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -2{/size}\n                    {size=-6}{/size}"
+    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -2{/size}\n                    {size=-6}{/size}"
 
-    old "А у меня - есть, вот так!"
-    new "А у меня - есть, вот так!"
+    old "Aug 09, 16:17"
+    new "Aug 09, 16:17"
 
-    old "Ладно уж, я возьму."
-    new "Ладно уж, я возьму."
-
-    old "Хотя все это я и так знаю. И про парней... и про все остальное."
-    new "Хотя все это я и так знаю. И про парней... и про все остальное."
-
-    old ">Книга [evn._caption] была добавлена в Вашу коллекцию."
-    new ">Книга [evn._caption] была добавлена в Вашу коллекцию."
-
-    old "- Чупа-чупс - (20 гал.) -"
-    new "- Чупа-чупс - (20 гал.) -"
-
-    old "- Шоколад - (40 гал.) -"
-    new "- Шоколад - (40 гал.) -"
-
-    old "- Плюшевая сова - (35 гал.) -"
-    new "- Плюшевая сова - (35 гал.) -"
-
-    old "- Сливочное пиво - (50 гал.) -"
-    new "- Сливочное пиво - (50 гал.) -"
-
-    old "- Обучающий журнал - (30 гал.) -"
-    new "- Обучающий журнал - (30 гал.) -"
-
-    old "- Женский журнал - (45 гал.) -"
-    new "- Женский журнал - (45 гал.) -"
-
-    old "- Журнал для взрослых - (60 гал.) -"
-    new "- Журнал для взрослых - (60 гал.) -"
-
-    old "- Порно журнал - (80 гал.) -"
-    new "- Порно журнал - (80 гал.) -"
-
-    old "- Упаковка презервативов - (50 гал.) -"
-    new "- Упаковка презервативов - (50 гал.) -"
-
-    old "- Духи - (150 гал.) -"
-    new "- Духи - (150 гал.) -"
-
-    old "- Вибратор - (55 гал.) -"
-    new "- Вибратор - (55 гал.) -"
-
-    old "- Банка лубриканта - (60 гал.) -"
-    new "- Банка лубриканта - (60 гал.) -"
-
-    old "- Кляп и наручники - (70 гал.) -"
-    new "- Кляп и наручники - (70 гал.) -"
-
-    old "- Анальная пробка - (85 гал.) -"
-    new "- Анальная пробка - (85 гал.) -"
-
-    old "- Страпон \"Фестрал\" - (200 гал.) -"
-    new "- Страпон \"Фестрал\" - (200 гал.) -"
-
-    old "Новые вещи"
-    new "Новые вещи"
-
-    old "Одежда: Верх"
-    new "Одежда: Верх"
-
-    old "Одежда: Низ"
-    new "Одежда: Низ"
-
-    old "Чулки/колготки"
-    new "Чулки/колготки"
-
-    old "Прочее"
-    new "Прочее"
-
-    old "Школьная нано-юбка (10 см)"
-    new "Школьная нано-юбка (10 см)"
-
-    old "Школьная рубашка-минитопик"
-    new "Школьная рубашка-минитопик"
-
-    old "- Для газет: \"Типографический набор для средних редакций\" - {image=check_08.png}"
-    new "- Для газет: \"Типографический набор для средних редакций\" - {image=check_08.png}"
-
-    old "{size=-7}ОТ:XXX\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}У МЕНЯ БРАТ УМЕР ИЗ-ЗА ТАКИХ ИСТОРИЙ, ГОРИ В АДУ, ГРЯЗНЫЙ ИЗВРАЩЕНЕЦ!!!{/size}"
-    new "{size=-7}ОТ:XXX\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}У МЕНЯ БРАТ УМЕР ИЗ-ЗА ТАКИХ ИСТОРИЙ, ГОРИ В АДУ, ГРЯЗНЫЙ ИЗВРАЩЕНЕЦ!!!{/size}"
-
-    old "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} 0{/size}\n                    {size=-6}{/size}"
-
-    old "Сегодня какой-то полукровка заговорил со мной."
-    new "Сегодня какой-то полукровка заговорил со мной."
-
-    old "Мне даже показалось, что он пытался меня клеить."
-    new "Мне даже показалось, что он пытался меня клеить."
-
-    old "Ну и самомнение у некоторых!"
-    new "Ну и самомнение у некоторых!"
-
-    old "Сегодня был матч и я исполняла танец чирлидера со всем присущим мне изяществом."
-    new "Сегодня был матч и я исполняла танец чирлидера со всем присущим мне изяществом."
-
-    old "Некоторые парни так пялились на меня..."
-    new "Некоторые парни так пялились на меня..."
-
-    old "Но мне это совсем не нужно, сэр!"
-    new "Но мне это совсем не нужно, сэр!"
-
-    old "Кажется эмоции вас переполняют...."
-    new "Кажется эмоции вас переполняют...."
-
-    old "Да, профессор..."
-    new "Да, профессор..."
-
-    old "Вы правы...."
-    new "Вы правы...."
-
-    old "Позвольте узнать мисс Гринграсс, \"что\" так сильно подняло вам настроение?"
-    new "Позвольте узнать мисс Гринграсс, \"что\" так сильно подняло вам настроение?"
-
-    old "Конечно, сэр..."
-    new "Конечно, сэр..."
-
-    old "Если вам интерестно, я расскажу...."
-    new "Если вам интерестно, я расскажу...."
-
-    old "{size=-3}(Черт...){/size}"
-    new "{size=-3}(Черт...){/size}"
-
-    old "{size=-3}(Она чертовски хороша когда улыбается...){/size}"
-    new "{size=-3}(Она чертовски хороша когда улыбается...){/size}"
-
-    old "{size=-3}(Кажется моё настроение тоже поднимается....){/size}"
-    new "{size=-3}(Кажется моё настроение тоже поднимается....){/size}"
-
-    old "{size=-3}(О, да...){/size}"
-    new "{size=-3}(О, да...){/size}"
-
-    old "{size=-3}(Меня заводит её болтовня...){/size}"
-    new "{size=-3}(Меня заводит её болтовня...){/size}"
-
-    old "....Профессор?"
-    new "....Профессор?"
-
-    old "Что вы.....?"
-    new "Что вы.....?"
-
-    old "Чешу ногу мисс Гринграсс.... Если вам так интересно...."
-    new "Чешу ногу мисс Гринграсс.... Если вам так интересно...."
-
-    old "Продолжайте... я весь во внимании...."
-    new "Продолжайте... я весь во внимании...."
-
-    old "Эм...  ...Хорошо, сэр."
-    new "Эм...  ...Хорошо, сэр."
-
-    old "{size=-3}(Какие же вы все шлюхи наивные....){/size}"
-    new "{size=-3}(Какие же вы все шлюхи наивные....){/size}"
-
-    old "Ну... после этого, все стали считать меня своей конкуренткой..."
-    new "Ну... после этого, все стали считать меня своей конкуренткой..."
-
-    old "Но я то знаю, что мне не будет равных в этом конкурсе..."
-    new "Но я то знаю, что мне не будет равных в этом конкурсе..."
-
-    old "{size=-3}(Ну же... Не повторяй ошибки прошлой шлюхи...){/size}"
-    new "{size=-3}(Ну же... Не повторяй ошибки прошлой шлюхи...){/size}"
-
-    old "{size=-3}(Давай... Скажи мне что-нибудь грязное...){/size}"
-    new "{size=-3}(Давай... Скажи мне что-нибудь грязное...){/size}"
-
-    old "А грязнокровка Грейнджер... это совсем другая тема..."
-    new "А грязнокровка Грейнджер... это совсем другая тема..."
-
-    old "Вы не подумайте, сэр... мне нет дела до её мнения..."
-    new "Вы не подумайте, сэр... мне нет дела до её мнения..."
-
-    old "Но....."
-    new "Но....."
-
-    old "{size=-3}(Черт... что он там делает?){/size}"
-    new "{size=-3}(Черт... что он там делает?){/size}"
-
-    old "{size=-3}(Ненравится мне её взгляд...){/size}"
-    new "{size=-3}(Ненравится мне её взгляд...){/size}"
-
-    old "...Профессор, вы могли бы прекратить это делать?"
-    new "...Профессор, вы могли бы прекратить это делать?"
-
-    old "Агрx...."
-    new "Агрx...."
-
-    old "{size=-3}(Да чтоб вас обеих....){/size}"
-    new "{size=-3}(Да чтоб вас обеих....){/size}"
-
-    old "Профессор?!"
-    new "Профессор?!"
-
-    old "Гхм... Конечно..."
-    new "Гхм... Конечно..."
-
-    old "Продолжайте мисс Гринграсс...."
-    new "Продолжайте мисс Гринграсс...."
-
-    old "Эм... Сэр..."
-    new "Эм... Сэр..."
-
-    old "...Вы же не из-за рассказов меня сюда позвали?"
-    new "...Вы же не из-за рассказов меня сюда позвали?"
-
-    old "Верно..."
-    new "Верно..."
-
-    old "Эм... Что на счет вашей популярности мисс Гринграсс?"
-    new "Эм... Что на счет вашей популярности мисс Гринграсс?"
-
-    old "....Популярности?"
-    new "....Популярности?"
-
-    old "Сэр, вы же знаете... мне нет дела до мнения недоволшебников..."
-    new "Сэр, вы же знаете... мне нет дела до мнения недоволшебников..."
-
-    old "Не заставляйте меня, снова вам обьяснять, почему это так важно...."
-    new "Не заставляйте меня, снова вам обьяснять, почему это так важно...."
-
-    old "Не нужно профессор, я поняла...."
-    new "Не нужно профессор, я поняла...."
-
-    old "Мне снова нужно что-то сделать?"
-    new "Мне снова нужно что-то сделать?"
-
-    old "Да...."
-    new "Да...."
-
-    old "У меня есть для вас новое задание мисс Гринграсс..."
-    new "У меня есть для вас новое задание мисс Гринграсс..."
-
-    old "Я надеюсь вы справитесь...."
-    new "Я надеюсь вы справитесь...."
-
-    old "Я постараюсь, профессор..."
-    new "Я постараюсь, профессор..."
-
-    old "Для начала, я хочу посмотреть на ваше нижнее белье..."
-    new "Для начала, я хочу посмотреть на ваше нижнее белье..."
-
-    old "...Снова, сэр?"
-    new "...Снова, сэр?"
-
-    old "Да..."
-    new "Да..."
-
-    old "Гхм......"
-    new "Гхм......"
-
-    old "А теперь, девушка..."
-    new "А теперь, девушка..."
-
-    old "Вы должны отправится в таком виде на занятия...."
-    new "Вы должны отправится в таком виде на занятия...."
-
-    old "Э-э-э...."
-    new "Э-э-э...."
-
-    old "Профессор... я не смогу...."
-    new "Профессор... я не смогу...."
-
-    old "Почему?"
-    new "Почему?"
-
-    old "....Вы же не стесняетесь меня?"
-    new "....Вы же не стесняетесь меня?"
-
-    old "Это разные вещи, сэр..."
-    new "Это разные вещи, сэр..."
-
-    old "Перед вами...."
-    new "Перед вами...."
-
-    old "То есть вы...."
-    new "То есть вы...."
-
-    old "Ничем не отличаюсь от других мисс Гринграсс..."
-    new "Ничем не отличаюсь от других мисс Гринграсс..."
-
-    old "К тому же я уже говорил вам, что ваша победа зависит от того какое вы окажете впечатление на сокурсников..."
-    new "К тому же я уже говорил вам, что ваша победа зависит от того какое вы окажете впечатление на сокурсников..."
-
-    old "Я же не могу придумать что-то такое, чтобы они проголосовали за вас...."
-    new "Я же не могу придумать что-то такое, чтобы они проголосовали за вас...."
-
-    old "Я понимаю..."
-    new "Я понимаю..."
-
-    old "Хотя...."
-    new "Хотя...."
-
-    old "А если нам \"что-то такое\", придумать...."
-    new "А если нам \"что-то такое\", придумать...."
-
-    old "Вместе..."
-    new "Вместе..."
-
-    old "Что скажете, сэр?"
-    new "Что скажете, сэр?"
-
-    old "........?!"
-    new "........?!"
-
-    old "(Непонял?!)"
-    new "(Непонял?!)"
-
-    old "Так что, профессор?"
-    new "Так что, профессор?"
-
-    old "Я могу сделать \"что-то другое\" для вас?"
-    new "Я могу сделать \"что-то другое\" для вас?"
-
-    old "{size=-3}(«Что-то другое?»){/size}"
-    new "{size=-3}(«Что-то другое?»){/size}"
-
-    old "Сейчас я покажу тебе, {b}что{/b} ты можешь сделать...."
-    new "Сейчас я покажу тебе, {b}что{/b} ты можешь сделать...."
-
-    old "{size=+5}{size=+7}ЧТО!?{/size}{/size}"
-    new "{size=+5}{size=+7}ЧТО!?{/size}{/size}"
-
-    old "{size=+7}Нет! Я не это имела ввиду...{/size}"
-    new "{size=+7}Нет! Я не это имела ввиду...{/size}"
-
-    old "{size=+7}Как вы вообще могли о таком подумать?{/size}"
-    new "{size=+7}Как вы вообще могли о таком подумать?{/size}"
-
-    old "Да раслабься, я пошутил...."
-    new "Да раслабься, я пошутил...."
-
-    old "Это ни черта не смешно!"
-    new "Это ни черта не смешно!"
-
-    old "Согласен, это было глупо..."
-    new "Согласен, это было глупо..."
-
-    old "Проехали...."
-    new "Проехали...."
-
-    old "{size=-3}(Черт.... А что на {b}меня{/b} нашло?!){/size}"
-    new "{size=-3}(Черт.... А что на {b}меня{/b} нашло?!){/size}"
-
-    old "(....Почему я вообще, это сказала?!)"
-    new "(....Почему я вообще, это сказала?!)"
-
-    old "Вобщем..."
-    new "Вобщем..."
-
-    old "Как видишь, других вариантов нет...."
-    new "Как видишь, других вариантов нет...."
-
-    old "Сделаешь это, и считай, что ты еще на шаг ближе к победе..."
-    new "Сделаешь это, и считай, что ты еще на шаг ближе к победе..."
-
-    old "...Я не уверена, получится ли у меня?"
-    new "...Я не уверена, получится ли у меня?"
-
-    old "Я верю что вы справитесь...."
-    new "Я верю что вы справитесь...."
-
-    old "Ну... Хорошо..."
-    new "Ну... Хорошо..."
-
-    old "Я попробую...."
-    new "Я попробую...."
-
-    old "Отлично мисс Гринграсс, жду вас вечером с отчетом...."
-    new "Отлично мисс Гринграсс, жду вас вечером с отчетом...."
-
-    old "Но прежде чем вы уйдете, у меня кое что есть для вас...."
-    new "Но прежде чем вы уйдете, у меня кое что есть для вас...."
-
-    old "Пиво запрещено в Хогвартсе, сэр."
-    new "Пиво запрещено в Хогвартсе, сэр."
-
-    old "Но из уважения к вам я возьму."
-    new "Но из уважения к вам я возьму."
-
-    old "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -2{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -2{/size}\n                    {size=-6}{/size}"
-
-    old "Добрый вечер Дафна..."
-    new "Добрый вечер Дафна..."
-
-    old "Вы справились с заданием?"
-    new "Вы справились с заданием?"
-
-    old "Эм... да, сэр...."
-    new "Эм... да, сэр...."
-
-    old "Э-э... Сначала я думала что сгорю со стыда..."
-    new "Э-э... Сначала я думала что сгорю со стыда..."
-
-    old "Но, когда я зашла на лекцию по защите от темных искувств..."
-    new "Но, когда я зашла на лекцию по защите от темных искувств..."
-
-    old "Никто даже не обратил на меня {b}такого{/b} внимания..."
-    new "Никто даже не обратил на меня {b}такого{/b} внимания..."
-
-    old "Как будто я...."
-    new "Как будто я...."
-
-    old "Понимаете, сэр?"
-    new "Понимаете, сэр?"
-
-    old "Ну... одеваюсь так каждый день..."
-    new "Ну... одеваюсь так каждый день..."
-
-    old "{size=-3}(Хм.....){/size}"
-    new "{size=-3}(Хм.....){/size}"
-
-    old "{size=-3}(«Защита от темных искувств...»){/size}"
-    new "{size=-3}(«Защита от темных искувств...»){/size}"
-
-    old "{size=-3}(Эту дребедень у них вроде как Северус ведет...){/size}"
-    new "{size=-3}(Эту дребедень у них вроде как Северус ведет...){/size}"
-
-    old "{size=-3}(Он там наверное прихерел от такого...){/size}"
-    new "{size=-3}(Он там наверное прихерел от такого...){/size}"
-
-    old "...Почему это так, профессор?"
-    new "...Почему это так, профессор?"
-
-    old "Эм.... Ну я думаю, что он не ожидал от вас такого поступка, вот и все...."
-    new "Эм.... Ну я думаю, что он не ожидал от вас такого поступка, вот и все...."
-
-    old "Впрочем я его понимаю...."
-    new "Впрочем я его понимаю...."
-
-    old "Будь я на его месте, наверное, тоже бы охренел...."
-    new "Будь я на его месте, наверное, тоже бы охренел...."
-
-    old "{b}!!!!!!!!!!!!!!{/b}"
-    new "{b}!!!!!!!!!!!!!!{/b}"
-
-    old "Сэр... вы о чем?!"
-    new "Сэр... вы о чем?!"
-
-    old "{size=-3}(Он вообще, это {size=+3}мне{/size} говорит?){/size}"
-    new "{size=-3}(Он вообще, это {size=+3}мне{/size} говорит?){/size}"
-
-    old "............?!"
-    new "............?!"
-
-    old "{size=-3}(Черт......){/size}"
-    new "{size=-3}(Черт......){/size}"
-
-    old "{size=-3}(Что она спросила?){/size}"
-    new "{size=-3}(Что она спросила?){/size}"
-
-    old "Эм.... Ну я спорил сам с собой?"
-    new "Эм.... Ну я спорил сам с собой?"
-
-    old "«С собой», профессор?!"
-    new "«С собой», профессор?!"
-
-    old "Да... я нахожу это невероятно забавным...."
-    new "Да... я нахожу это невероятно забавным...."
-
-    old "Гхм... а в прочем мисс..."
-    new "Гхм... а в прочем мисс..."
-
-    old "Кажется вы рассказывали мне доклад..."
-    new "Кажется вы рассказывали мне доклад..."
-
-    old "Ах да... я продолжу сэр..."
-    new "Ах да... я продолжу сэр..."
-
-    old "Эм... В общем профессор Северус...."
-    new "Эм... В общем профессор Северус...."
-
-    old "Ну.... от увиденно, он вошел в ступор, сэр..."
-    new "Ну.... от увиденно, он вошел в ступор, сэр..."
-
-    old "{size=-3}(Представляю его рожу...){/size}"
-    new "{size=-3}(Представляю его рожу...){/size}"
-
-    old "Все... как и я, жутко смеялись..."
-    new "Все... как и я, жутко смеялись..."
-
-    old "{size=-3}(Забавно...){/size}"
-    new "{size=-3}(Забавно...){/size}"
-
-    old "{size=-3}(Она научилась видеть в этом, юмор...){/size}"
-    new "{size=-3}(Она научилась видеть в этом, юмор...){/size}"
-
-    old "Единственное что я не поняла - это то... кто такой Джинни?"
-    new "Единственное что я не поняла - это то... кто такой Джинни?"
-
-    old "........Чего?!"
-    new "........Чего?!"
-
-    old "Он вам что-то рассказал про него?"
-    new "Он вам что-то рассказал про него?"
-
-    old "Оу... Нет..."
-    new "Оу... Нет..."
-
-    old "Это были скорее мысли в слух..."
-    new "Это были скорее мысли в слух..."
-
-    old "В конце занятия, он выпроводил меня к двери, и сказал что-то вроде: «Почему я отдал её Джинни? Может еще не поздно все исправить?»"
-    new "В конце занятия, он выпроводил меня к двери, и сказал что-то вроде: «Почему я отдал её Джинни? Может еще не поздно все исправить?»"
-
-    old "Гхм...."
-    new "Гхм...."
-
-    old "Видите ли мисс Гринграсс, профессор Северус, так же хотел заняться вашим обучением..."
-    new "Видите ли мисс Гринграсс, профессор Северус, так же хотел заняться вашим обучением..."
-
-    old "Но не надеялся, что вы сможете чего-то достичь..."
-    new "Но не надеялся, что вы сможете чего-то достичь..."
-
-    old "И по этому, отправил вас ко мне..."
-    new "И по этому, отправил вас ко мне..."
-
-    old "А теперь как видете, спохватился..."
-    new "А теперь как видете, спохватился..."
-
-    old "Но вы не переживайте..."
-    new "Но вы не переживайте..."
-
-    old "Я поговорю с ним, по этому поводу..."
-    new "Я поговорю с ним, по этому поводу..."
-
-    old "Эм... Хорошо..."
-    new "Эм... Хорошо..."
-
-    old "Ну дальше, в общем... я осталась в таком виде до конца занятий..."
-    new "Ну дальше, в общем... я осталась в таком виде до конца занятий..."
-
-    old "И хоть все криво смотрели на меня, я старалась не обращать на них никакого внимания..."
-    new "И хоть все криво смотрели на меня, я старалась не обращать на них никакого внимания..."
-
-    old "Это похвально Дафна...."
-    new "Это похвально Дафна...."
-
-    old "Вы не перестаете меня удивлять..."
-    new "Вы не перестаете меня удивлять..."
-
-    old "Я стараюсь, профессор..."
-    new "Я стараюсь, профессор..."
-
-    old "Я вижу...."
-    new "Я вижу...."
-
-    old "И по этому, прежде чем вы уйдете, позвольте мне побаловать вас...."
-    new "И по этому, прежде чем вы уйдете, позвольте мне побаловать вас...."
-
-    old "- Книга: \"Типографический набор для профессионалов\" - {image=check_08.png}"
-    new "- Книга: \"Типографический набор для профессионалов\" - {image=check_08.png}"
-
-    old "- Книга: \"Типографический набор для средних редакций\" - "
-    new "- Книга: \"Типографический набор для средних редакций\" - "
-
-    old "- Книга: \"Типографический набор для больших редакций\" - "
-    new "- Книга: \"Типографический набор для больших редакций\" - "
-
-    old "Я надеюсь, что с вашей помощью профессор, я утру нос всем этим худородным, полукровкам и конечно же, мугродью."
-    new "Я надеюсь, что с вашей помощью профессор, я утру нос всем этим худородным, полукровкам и конечно же, мугродью."
-
-    old "- Бальное платье - (1500 гал.) -"
-    new "- Бальное платье - (1500 гал.) -"
-
-    old "- Книга: \"Типографический набор для малых редакций\" - {image=check_08.png}"
-    new "- Книга: \"Типографический набор для малых редакций\" - {image=check_08.png}"
-
-    old "Genie"
-    new "Genie"
-
-    old "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Дорогой Альбус,\nмы всем офисом благодарим Вас за новую главу! Позвольте передать вам {size=+4}[dgold] галеонов.{/size} и наше искреннее восхищение.{/size}\n\n\n{size=-3}-С уважением-{/size}"
-    new "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Дорогой Альбус,\nмы всем офисом благодарим Вас за новую главу! Позвольте передать вам {size=+4}[dgold] галеонов.{/size} и наше искреннее восхищение.{/size}\n\n\n{size=-3}-С уважением-{/size}"
-
-    old "- Бальное платье -"
-    new "- Бальное платье -"
-
-    old "- Книга: \"Типографический набор для средних редакций\" - {image=check_08.png}"
-    new "- Книга: \"Типографический набор для средних редакций\" - {image=check_08.png}"
-
-    old "Студент # 1"
-    new "Студент # 1"
-
-    old "Студент # 2"
-    new "Студент # 2"
-
-    old "Студентка"
-    new "Студентка"
-
-    old "Диктор"
-    new "Диктор"
-
-    old "{size=-7}Кому: Гермионе Грейнджер\n\n{/size}{size=-4}Дорогая [word_01]. \nЯ не тот, кто вы думаете... Даже не человек, если честно. В течение нескольких месяцев я выдавал себя за профессор Дамблдора. Но теперь мне нужно вернуться [word_02]. К тому времени, как ты получишь письмо, я буду уже далеко. Мы больше никогда не встретимся, но я буду лелеять воспоминания об этом времени в вашем мире.\n\nПрощай, моя маленькая [word_03]. {size=-3}\n\n-[word_04]-{/size}"
-    new "{size=-7}Кому: Гермионе Грейнджер\n\n{/size}{size=-4}Дорогая [word_01]. \nЯ не тот, кто вы думаете... Даже не человек, если честно. В течение нескольких месяцев я выдавал себя за профессор Дамблдора. Но теперь мне нужно вернуться [word_02]. К тому времени, как ты получишь письмо, я буду уже далеко. Мы больше никогда не встретимся, но я буду лелеять воспоминания об этом времени в вашем мире.\n\nПрощай, моя маленькая [word_03]. {size=-3}\n\n-[word_04]-{/size}"
-
-# TODO: Translation updated at 2015-08-01 16:21
-
-translate english strings:
-
-    old "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -7{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -7{/size}\n                    {size=-6}{/size}"
-
-    old "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -6{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -6{/size}\n                    {size=-6}{/size}"
-
-    old "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Дорогой Альбус,\nна правах человека, ведущего связь с Вами, могу ли я узнать, будут ли Педреро и Хуанито вместе? Отправляю вам {size=+4}[dgold] галеонов{/size} и скромную надежду на ответ.{/size}\n\n\n{size=-3}-С уважением-{/size}"
-    new "{size=-7}ОТ:Джоданны Кроулинг\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Дорогой Альбус,\nна правах человека, ведущего связь с Вами, могу ли я узнать, будут ли Педреро и Хуанито вместе? Отправляю вам {size=+4}[dgold] галеонов{/size} и скромную надежду на ответ.{/size}\n\n\n{size=-3}-С уважением-{/size}"
-
-    old "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -5{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Дафна   {/size}      {size=-6}Развращенность:{/size}{size=-4} [daphne.whoring]{/size}\n                    {size=-6}Отношение:{/size}{size=-4} -5{/size}\n                    {size=-6}{/size}"
-
-    old "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -7{/size}\n                    {size=-6}{/size}{size=-6}Медиа-развр.:{/size}{size=-4} [nsp_germiona_mediawhoring]{/size}\n                    {size=-6}{/size}{size=-6}Наглость:{/size}{size=-4} [nsp_germiona_impudence]{/size}\n                    {size=-6}{/size}{size=-6}Артистичность:{/size}{size=-4} [nsp_germiona_artistry]{/size}\n                    {size=-6}{/size}"
-    new "{size=-3}Гермиона{/size}      {size=-6}Развращенность:{/size}{size=-4} [hermi.whoring]{/size}\n                     {size=-6}Отношение:{/size}{size=-4} -7{/size}\n                    {size=-6}{/size}{size=-6}Медиа-развр.:{/size}{size=-4} [nsp_germiona_mediawhoring]{/size}\n                    {size=-6}{/size}{size=-6}Наглость:{/size}{size=-4} [nsp_germiona_impudence]{/size}\n                    {size=-6}{/size}{size=-6}Артистичность:{/size}{size=-4} [nsp_germiona_artistry]{/size}\n                    {size=-6}{/size}"
-
-    old "{size=-7}ОТ:Министерства Магии\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Благодарим Вас за отчеты, присланные на этой неделе.\n Ваша оплата:{/size} \n{size=+4}[dgold] галеонов.{/size}\n\n\n{size=-3}-С уважением-{/size}"
-    new "{size=-7}ОТ:Министерства Магии\nКому: Альбусу Дамблдору\n\n\n{/size}{size=-2}Благодарим Вас за отчеты, присланные на этой неделе.\n Ваша оплата:{/size} \n{size=+4}[dgold] галеонов.{/size}\n\n\n{size=-3}-С уважением-{/size}"
-
-    old "АКАБУР"
-    new "АКАБУР"
