@@ -190,6 +190,12 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
                     her "Ничего не произошло, сэр. Он просто рассмеялся мне в лицо..."
                     $herView.hideshowQQ( "body_29.png", pos )
                     her "У меня не так уж много женского очарования, но я пыталась быть милой..."
+                    
+                    $ pic_for_event = "03_hp/25_pic_events/snapegrope.png"
+                    show screen pic_event
+                    pause
+                    hide screen pic_event
+                    
                     $herView.hideshowQQ( "body_30.png", pos )
                     her "И он просто начал смеяться прямо мне в лицо!"
                     $herView.hideshowQQ( "body_34.png", pos )
