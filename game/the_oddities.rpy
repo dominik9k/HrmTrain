@@ -39,7 +39,7 @@ label menu_dahr_gifts_and_gears:
     $ choose = RunMenu()
     python:
         for o in itsDAHR():
-            if not (o.Name in {"scroll","dress","panties","dress","skirt","standart2","standart3","standart4","standart5"} or o.GetValue("block") in {"gears_hair", "gears_panties"}): 
+            if not (o.Name in {"scroll","dress","panties","dress","skirt","standart2","standart3","standart4","standart5","hair_set"} or o.GetValue("block") in {"gears_hair", "gears_panties"}): 
                 _temp={"candy": fn0, "chocolate": fn0, "owl": fn0, "beer": fn3, "mag1": fn0, "mag2": fn0, "mag3": fn0, "mag4": fn3,
                      "condoms": fn3, "perfume": fn0,"vibrator": fn3, "lubricant": fn0,"ballgag": fn0, "plug": fn3, "strapon": fn3,
                      "ball_dress": lambda e: this.Has("sorry_about_hesterics"), "badge": fn0, "nets": fn0, 
@@ -55,7 +55,7 @@ label menu_dahr_gifts_and_gears:
                             "skirt_business": lambda e: hermi.whoring >= 3 and (hero.Items.Count("skirt_business")+hermi.Items.Count("skirt_business")+itsOWL.Count("skirt_business")==0),
                             "shirt_cheerleader": lambda e: hermi.whoring >= 3 and (hero.Items.Count("shirt_cheerleader")+hermi.Items.Count("shirt_cheerleader")+itsOWL.Count("shirt_cheerleader")==0),
                             "skirt_cheerleader": lambda e: hermi.whoring >= 3 and (hero.Items.Count("skirt_cheerleader")+hermi.Items.Count("skirt_cheerleader")+itsOWL.Count("skirt_cheerleader")==0),
-                            "hair_set": lambda e: hermi.whoring >= 3 and (hero.Items.Count("skirt_cheerleader")+hermi.Items.Count("skirt_cheerleader")+itsOWL.Count("skirt_cheerleader")==0)}[o.Name](o)
+                            "hair_set": lambda e: hermi.whoring >= 33 and (hero.Items.Count("skirt_cheerleader")+hermi.Items.Count("skirt_cheerleader")+itsOWL.Count("skirt_cheerleader")==0)}[o.Name](o)
 
 #            elif _block=="gears" and o._block=="gears": 
                 if o._block==_block:
