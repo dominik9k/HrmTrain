@@ -23,15 +23,6 @@
 				</result>
 			</action>
 
-			<action event="selfAdded">
-				<body>
-					<block></block>
-				</body>
-				<result type="addItem">
-					<item>item_panties_skirt_shadow</item>
-				</result>
-			</action>
-
 			<action event="selfRemoved">
 				<body>
 					<block></block>
@@ -42,14 +33,6 @@
 				</result>
 			</action>
 			
-			<action event="selfRemoved">
-				<body>
-					<block></block>
-				</body>
-				<result type="removeItem">
-					<item>item_panties_skirt_shadow</item>
-				</result>
-			</action>
 		</actions>
 	</style>
 </item>

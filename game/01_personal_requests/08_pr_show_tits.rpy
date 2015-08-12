@@ -858,7 +858,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                         
                         
                         #here we'll remove pose and add aftersperm effect
-                        call addAfterSperm
+                        #call addAfterSperm
+                        $ hermi.WrdSpermDried()
 
                         $herView.showQQ( "body_47.png", pos )
                         pause
@@ -1101,8 +1102,6 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
     
     # remove pose here, because sometimes we need to keep added items even here ( like sperm )
     #$herView.data().delPose()
-    $herView.data().loadState()
-    $ hermi.WrdSetMain()
     
     $ pos = POS_370
     $herView.showQQ( "body_29.png", pos )
@@ -1128,6 +1127,9 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
 
     hide screen bld1
     $herView.hideQ( Dissolve(.3) )
+    $herView.data().loadState()
+    $ hermi.WrdSetMain()
+    
     $ walk_xpos=400 #Animation of walking chibi. (From)
     $ walk_xpos2=610 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
@@ -1200,26 +1202,28 @@ label delSperm:
     $herView.data().delItem( 'item_sperm' )
     return
     
-label addAfterSperm:
+#label addAfterSperm:
     # del pose and add aftersperm
-    $herView.data().delPose()
+#    $herView.data().delPose()
     #$herView.data().addItemKey( 'sperm_after', CharacterExItem( herView.mMiscFolder, 'sperm_00_after.png', G_Z_FACE + 1 ) )
-    call wrd_dress_change_silent
-    if wrd_skimpyshirt == 1 :
-        $herView.data().addItem( 'item_sperm_dried_up_mini' )
-    elif wrd_shirt_cheerleader == 1 :
-        pass
-    else :
-        $herView.data().addItem( 'item_sperm_dried_up' )
+#    call wrd_dress_change_silent
+#    if wrd_skimpyshirt == 1 :
+#        $herView.data().addItem( 'item_sperm_dried_up_mini' )
+#    elif wrd_shirt_cheerleader == 1 :
+#        pass
+#    else :
+#        $herView.data().addItem( 'item_sperm_dried_up' )
         
-    if wrd_xxsmallskirt == 1 :
-        $herView.data().addItem( 'item_sperm_dried_down_mini' )
-    elif wrd_xxxsmallskirt == 1 or wrd_skirt_cheerleader == 1:
-        pass
-    else :
-        $herView.data().addItem( 'item_sperm_dried_down' )
+#    if wrd_xxsmallskirt == 1 :
+#        $herView.data().addItem( 'item_sperm_dried_down_mini' )
+#    elif wrd_xxxsmallskirt == 1 or wrd_skirt_cheerleader == 1:
+#        pass
+#    else :
+#        $herView.data().addItem( 'item_sperm_dried_down' )
 
-    return
+
+
+#    return
     
 label loadState_and_could_not_flirt:
     $herView.data().loadState()
