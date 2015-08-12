@@ -20,11 +20,11 @@
             if defVals==None:
                 defVals={"liking":0, "whoring":0, "talkTime":0, "giftTime":0, "wrd_choice":None, "wrd_block":None, "wrd_new_len":0, "wrd_set_upshirt":False,
                         "wrd_set_upskirt":False, "wrd_set_downpanties":False, "wrd_set_noshirt":False, "wrd_upshirt":False, "wrd_upskirt":False, 
-                        "wrd_downpanties":False, "wrd_noshirt":False, "wrd_sperm_dried":False, "wrd_hair_set":False }
+                        "wrd_downpanties":False, "wrd_noshirt":False, "wrd_sperm_dried":False, "wrd_hair_set":False, "wrd_spermpanties":False }
             else:
                 defVals.update({"liking":0, "whoring":0, "talkTime":0, "wrd_choice":None, "wrd_block":None, "wrd_new_len":0, "wrd_set_upshirt":False,
                         "wrd_set_upskirt":False, "wrd_set_downpanties":False, "wrd_set_noshirt":False, "wrd_upshirt":False, "wrd_upskirt":False, 
-                        "wrd_downpanties":False, "wrd_noshirt":False, "wrd_sperm_dried":False, "wrd_hair_set":False })
+                        "wrd_downpanties":False, "wrd_noshirt":False, "wrd_sperm_dried":False, "wrd_hair_set":False, "wrd_spermpanties":False })
 
 # Инициализация объектов тела и головы
             if charData!=None:
@@ -365,7 +365,7 @@
                     self.body.data().addItem("item_" + o.Name)
                 elif self.Items.GetBlock(o.Name) == "gears_hair" :
                     self.body.data().addItem("item_" + o.Name)
-                elif self.Items.GetBlock(o.Name) == "gears_panties" and self.whoring < 12:
+                elif self.Items.GetBlock(o.Name) == "gears_panties" and self.whoring < 12 and not self.wrd_spermpanties :
                     self.body.data().addItem("item_" + o.Name)
 
             if self.wrd_sperm_dried :
@@ -373,6 +373,11 @@
                 
             if self.wrd_upskirt :
                 self.body.data().setStyleAll('with_lifted_skirt')
+   
+            if self.wrd_spermpanties :
+                self.body.data().addItem("item_panties")
+                self.body.data().addItem("item_panties_sperm")
+
             
             return self
             
@@ -383,6 +388,7 @@
             self.wrd_downpanties = self.wrd_set_downpanties
             self.wrd_noshirt = self.wrd_set_noshirt
             self.wrd_sperm_dried = False
+            self.wrd_spermpanties = False
             
             self.Wrd_wear.Clear()
             for i in self.Wrd_set() :
@@ -551,6 +557,15 @@
         def WrdNoSpermDried (self) :
             self.wrd_sperm_dried = False
             self.WrdMain()
+            
+        def WrdSpermPanties (self) :
+            self.wrd_spermpanties = True
+            self.WrdMain()
+            
+        def WrdNoSpermPanties (self) :
+            self.wrd_spermpanties = False
+            self.WrdMain()
+       
             
         def WrdMenuRun ( self , block = "new"):
         
@@ -802,6 +817,13 @@
         @wrd_hair_set.setter
         def wrd_hair_set(self, value):
             self.SetValue("wrd_hair_set", value)
+            
+        @property
+        def wrd_spermpanties(self):
+            return self.GetValue("wrd_spermpanties")
+        @wrd_spermpanties.setter
+        def wrd_spermpanties(self, value):
+            self.SetValue("wrd_spermpanties", value)
             
             
 screen person_wrd_menu_main:
