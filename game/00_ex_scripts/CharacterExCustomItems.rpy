@@ -74,12 +74,12 @@
                     dressItem.updateImage( self.mOwner.getView().mClothesFolder + "dress_lifted_skirt.png" )
             # add shadow on panties
             #aCharacterEx.addItem( 'panties_shadow', CharacterExItemPantiesShadow( self.mOwner.getView().mPoseFolder, 'shadow_with_panties.png', G_Z_POSE - 1, 'pose' ) )
-            aCharacterEx.addItem( 'item_panties_skirt_shadow' )
+            #aCharacterEx.addItem( 'item_panties_skirt_shadow' )
             
         def innerOnSelfRemoved( self, aItems, aCharacterEx ):
             # do not forget to call parent method!
             CharacterExItem.innerOnSelfRemoved( self, aItems, aCharacterEx )
-            aCharacterEx.delItem( 'item_panties_skirt_shadow' )
+            #aCharacterEx.delItem( 'item_panties_skirt_shadow' )
             if self.mOldDressTex != None:
                 if 'dress' in aItems.keys():
                     dressItem = aItems[ 'dress' ]
