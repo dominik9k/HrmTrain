@@ -1307,7 +1307,7 @@ label wrd_hermiona_menu_rent :
         
            if hermi.whoring < 3 :
                $herView.hideshowQQ( "body_31.png", pos )
-               "Извините, сэр, но этот наряд слишком нескромный."
+               her "Извините, сэр, но этот наряд слишком нескромный."
                $herView.hideshowQQ( "body_01.png", pos )
                jump wrd_hermiona_menu_rent
            else :
@@ -1316,7 +1316,7 @@ label wrd_hermiona_menu_rent :
                $hermi.WrdDress ("shortskirt")
                $hermi.WrdMainBL()
                
-               "Надеюсь, вам понравилось, сэр."
+               her "Надеюсь, вам понравилось, сэр."
     
                $hermi.WrdSetMainBL()
 
@@ -1329,7 +1329,7 @@ label wrd_hermiona_menu_rent :
         
            if hermi.whoring < 12 :
                $herView.hideshowQQ( "body_31.png", pos )
-               "Извините, сэр, но этот наряд слишком нескромный."
+               her "Извините, сэр, но этот наряд слишком нескромный."
                $herView.hideshowQQ( "body_01.png", pos )
                jump wrd_hermiona_menu_rent
            else :
@@ -1338,7 +1338,7 @@ label wrd_hermiona_menu_rent :
                $hermi.WrdDress ("xxshortskirt")
                $hermi.WrdMainBL()
                
-               "Надеюсь, вам понравилось, сэр."
+               her "Надеюсь, вам понравилось, сэр."
     
                $hermi.WrdSetMainBL()
 
@@ -1351,7 +1351,7 @@ label wrd_hermiona_menu_rent :
         
            if hermi.whoring < 6 :
                $herView.hideshowQQ( "body_31.png", pos )
-               "Извините, сэр, но этот наряд слишком нескромный."
+               her "Извините, сэр, но этот наряд слишком нескромный."
                $herView.hideshowQQ( "body_01.png", pos )
                jump wrd_hermiona_menu_rent
            else :
@@ -1360,7 +1360,7 @@ label wrd_hermiona_menu_rent :
                $hermi.WrdDress ("shirt_cheerleader")
                $hermi.WrdMainBL()
                
-               "Надеюсь, вам понравилось, сэр."
+               her "Надеюсь, вам понравилось, сэр."
     
                $hermi.WrdSetMainBL()
 
@@ -1373,7 +1373,7 @@ label wrd_hermiona_menu_rent :
         
            if hermi.whoring < 9 :
                $herView.hideshowQQ( "body_31.png", pos )
-               "Извините, сэр, но этот наряд слишком нескромный."
+               her "Извините, сэр, но этот наряд слишком нескромный."
                $herView.hideshowQQ( "body_01.png", pos )
                jump wrd_hermiona_menu_rent
            else :
@@ -1383,8 +1383,52 @@ label wrd_hermiona_menu_rent :
                $hermi.WrdDress ("tights")
                $hermi.WrdMainBL()
                
-               "Надеюсь, вам понравилось, сэр."
+               her "Надеюсь, вам понравилось, сэр."
     
+               $hermi.WrdSetMainBL()
+
+               $herView.hideshowQQ( "body_01.png", pos )
+
+               jump wrd_hermiona_menu_rent
+               
+        "- Полностью раздеться -" if hermi.whoring >=21  :
+        
+           if hermi.whoring < 24 :
+           
+               $herView.hideshowQQ( "body_01.png", pos )
+               her "Я готова, сэр, но это будет стоить 30 очков."
+               
+               menu:
+                   "Я передумал !" :
+                       her "Как скажете, сэр."
+                       jump wrd_hermiona_menu_rent
+                       
+                   "Нет проблем." :
+                       $ gryffindor += 30
+                       m "30 очков Гриффиндору !"
+                       jump wrd_undress_probe
+               
+           else :
+           
+               label wrd_undress_probe :
+               
+               $  h_c_u_pic = "03_hp/08_animation_02/01.png" #Hermione naked.
+               show screen h_c_u
+
+               hide screen blkfade
+           
+               $ hermi.WrdDelShirt ()
+               $ hermi.WrdDelSkirt ()
+               $ hermi.WrdDelOther ()
+               $ hermi.WrdDelStockings ()
+               
+               $hermi.WrdMainBL("body_58.png")
+               
+               "Надеюсь, вам понравилось, сэр."
+
+               show screen hermione_02
+               hide screen h_c_u 
+               
                $hermi.WrdSetMainBL()
 
                $herView.hideshowQQ( "body_01.png", pos )
