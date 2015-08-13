@@ -287,6 +287,12 @@ label new_request_30_complete_a: #Hermione does not show up. This is label where
     $herView.hideshowQQ( "body_128.png", pos )
     play music "music/(Orchestral) Playful Tension by Shadow16nh.mp3" fadein 1 fadeout 1 # SEX THEME.
     her "Но прошлой ночью мальчики сделали меня своей маленькой игрушкой..."
+    
+    $ pic_for_event = "03_hp/25_pic_events/doublehand.png"
+    show screen pic_event
+    pause
+    hide screen pic_event
+    
     $herView.hideshowQQ( "body_123.png", pos )
     her "И я ничуть не возражала..."
     her "Они делали со мной все, что хотели..."

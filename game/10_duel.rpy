@@ -414,7 +414,10 @@ init -1:
         if genie_hp < 50:
             add "03_hp/04_duel/hp_bar_02.png" xpos -300 ypos 0
         add "03_hp/04_duel/hp_bar.png" #Genie avatr pic.
-        add "03_hp/04_duel/hp_bar_05.png" #Inactive buttons.
+        if _preferences.language == "english" :
+            add "03_hp/04_duel/hp_bar_05_en.png" #Inactive buttons.
+        else :
+            add "03_hp/04_duel/hp_bar_05.png" #Inactive buttons.
         
         add "03_hp/04_duel/hp_bar_11.png" #Black background for HP bar.
         if snape_hp == 2000:
@@ -471,18 +474,30 @@ init -1:
     screen duel_buttons:
         imagebutton: # attack
             focus_mask True
-            idle "03_hp/04_duel/hp_bar_03.png"
-            hover "03_hp/04_duel/hp_bar_04.png"
+            if _preferences.language == "english" :
+                idle "03_hp/04_duel/hp_bar_03_en.png"
+                hover "03_hp/04_duel/hp_bar_04_en.png"
+            else :
+                idle "03_hp/04_duel/hp_bar_03.png"
+                hover "03_hp/04_duel/hp_bar_04.png"
             action [Jump("main_attack")]
         imagebutton: # aguard
             focus_mask True
-            idle "03_hp/04_duel/hp_bar_07.png"
-            hover "03_hp/04_duel/hp_bar_06.png"
+            if _preferences.language == "english" :
+                idle "03_hp/04_duel/hp_bar_07_en.png"
+                hover "03_hp/04_duel/hp_bar_06_en.png"
+            else :
+                idle "03_hp/04_duel/hp_bar_07.png"
+                hover "03_hp/04_duel/hp_bar_06.png"                
             action [Jump("main_block")]
         imagebutton: # item
             focus_mask True
-            idle "03_hp/04_duel/hp_bar_09.png"
-            hover "03_hp/04_duel/hp_bar_08.png"
+            if _preferences.language == "english" :
+                idle "03_hp/04_duel/hp_bar_09_en.png"
+                hover "03_hp/04_duel/hp_bar_08_en.png"
+            else :
+                idle "03_hp/04_duel/hp_bar_09.png"
+                hover "03_hp/04_duel/hp_bar_08.png"
             action [Jump("main_potion")]
 
 

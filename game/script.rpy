@@ -4143,7 +4143,15 @@ image side dum3 = "dum_03.png"
 image side dum4 = "dum_04.png"
 image side dum5 = "dum_05.png"
 
-
+define dahr = Character(None,
+    color="#402313",
+    window_left_padding=230,
+    show_side_image=Image("03_hp/18_store/dahr.png", xalign=0.0, yalign=0.0),
+    show_two_window=True,
+    show_who_xalign=0.5,
+    ctc="ctc4",
+    ctc_position="fixed")
+    
 ## CHARACTERS 
 
 define s = Character(None, color="#402313", ctc="ctc3", ctc_position="fixed")
@@ -4212,6 +4220,7 @@ init-2:
     $ cr5 = Character('Толпа', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ cr6 = Character('Несколько голосов сразу', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ who2 = Character('???', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
+    $ g3 = Character('Genie', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ fem = Character('Студентка', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ mal = Character('Студент # 1', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ mal2 = Character('Студент # 2', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")

@@ -325,7 +325,7 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     with Dissolve(.3)
 
-
+    $ hermi.WrdSetMain()
 
 #    $ request_03_points += 1 #Leveling up the event.
     $ request_03 = False #When False - you gave her her Трусики back.
@@ -404,6 +404,7 @@ label panties_soaked_in_cum:
                 ">Гермиона нерешительно надевает трусики..."
                 ">Несколько капель спермы стекают по ее ноге..."
                 ">Гермионе, видимо, очень неудобно..."
+                
                 hide screen blktone8
                 with d3
                 $herView.hideshowQQ( "body_34.png", pos )
@@ -488,6 +489,7 @@ label panties_soaked_in_cum:
         show screen blktone8
         with d3
         ">Гермиона быстро натягивает свои влажные трусики..."
+        $hermi.WrdSpermPanties()
         hide screen blktone8
         with d3
         
@@ -515,7 +517,8 @@ label panties_soaked_in_cum:
             #$herView.data().addPose( CharacterExItemSkirtLifted( herView.mPoseFolder, 'pose_skirt_up.png', G_Z_POSE ) )
             #$herView.data().addItem( 'item_pose_lifted_skirt' )
             #$herView.data().addItemKey( 'panties_cum', CharacterExItem( herView.mMiscFolder, 'panties_sperm.png', G_Z_PANTIES + 1, 'panties' ) )
-            $herView.data().addItem( 'item_panties_sperm' )
+            #$hermi.body.data().addItem("item_panties")
+            #$herView.data().addItem( 'item_panties_sperm' )
             
             $herView.showQQ( "185.png", pos )
             her "...если девушка будет в трусиках, пропитанных спермой?"
