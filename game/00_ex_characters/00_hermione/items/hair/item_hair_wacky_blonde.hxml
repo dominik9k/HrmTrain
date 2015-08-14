@@ -7,7 +7,7 @@
 		<frame>wacky/blonde.png</frame>
 		<folder>hair</folder>
 		<visible>1</visible>
-		<zorder>hair_front</zorder>
+		<zorder>hair_top</zorder>
 		<parent>head</parent>
 	</style>
 </item>

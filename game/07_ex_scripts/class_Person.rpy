@@ -213,15 +213,15 @@
             if self.Name == "hermione" :
                 self.WrdAdd("standart2","gears_shirt","new")
             
-                self.WrdAdd("hair_ponytail_brown","gears_hair","adm")
-                self.WrdAdd("hair_updo_black","gears_hair","adm")
-                self.WrdAdd("hair_updo_brown","gears_hair","adm")
-                self.WrdAdd("hair_wacky_black","gears_hair","adm")
-                self.WrdAdd("hair_wacky_blonde","gears_hair","adm")
-                self.WrdAdd("hair_wacky_red","gears_hair","adm")
+#                self.WrdAdd("hair_ponytail_brown","gears_hair","adm")
+#                self.WrdAdd("hair_updo_black","gears_hair","adm")
+#                self.WrdAdd("hair_updo_brown","gears_hair","adm")
+#                self.WrdAdd("hair_wacky_black","gears_hair","adm")
+#                self.WrdAdd("hair_wacky_blonde","gears_hair","adm")
+#                self.WrdAdd("hair_wacky_red","gears_hair","adm")
                 self.WrdAdd("hair_wavy_black","gears_hair","adm")
                 self.WrdAdd("hair_wavy_blonde","gears_hair","adm")
-                self.WrdAdd("hair_wavy_combed_brown","gears_hair","adm")
+#                self.WrdAdd("hair_wavy_combed_brown","gears_hair","adm")
                 self.WrdAdd("hair_wavy_red","gears_hair","adm")
 
             

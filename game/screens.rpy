@@ -204,8 +204,36 @@ screen main_menu:
         textbutton _("Настройки") action ShowMenu("preferences")
         textbutton _("Экстра") action ShowMenu("extras")
         textbutton _("Форум") action Start("forum")
-        textbutton _("Язык/Language") action ShowMenu("lang_menu")
+#        textbutton _("Язык/Language") action ShowMenu("lang_menu")
         textbutton _("Выход") action Quit(confirm=True)
+        
+    imagebutton:
+        xpos 110 
+        ypos 406
+        focus_mask True
+        xanchor "center"
+        yanchor "center"
+        idle "03_hp/23_title/ru_dis.png" 
+        hover "03_hp/23_title/ru_en.png"
+        #idle "03_hp/23_title/ru_dis.png" 
+        #hover "03_hp/23_title/ru_en.png"
+        #hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
+        #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
+        #unhovered [Show("gui_tooltip", my_picture="feather", my_tt_xpos=360, my_tt_ypos=140, xanchor="center", yanchor="center") ]
+        action [ Language(None)]
+        
+    imagebutton:
+        xpos 110 
+        ypos 453
+        focus_mask True
+        xanchor "center"
+        yanchor "center"
+        idle "03_hp/23_title/en_dis.png" 
+        hover "03_hp/23_title/en_en.png"
+        #hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
+        #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
+        #unhovered [Show("gui_tooltip", my_picture="feather", my_tt_xpos=360, my_tt_ypos=140, xanchor="center", yanchor="center") ]
+        action [ Language("english")]
 
 init -2:
 

@@ -129,24 +129,10 @@ init:
             "Школьная длинная юбка.", "gears_skirt", None ),
         ("scroll", "Священный свиток", 30, "03_hp/18_store/31.png", 
             "Священный свиток содержит тайные знания...", "scroll", None), # {"pic":"03_hp/19_extras/xx.png"} )
-        ("hair_ponytail_brown", "Хвостик (каштанка)", 0, "03_hp/18_store/01.png", 
-            "Хвостик (каштанка)", "gears_hair", None ),
-        ("hair_updo_black", "Пышная укладка (брюнетка)", 0, "03_hp/18_store/01.png", 
-            "Пышная укладка (брюнетка).", "gears_hair", None ),
-        ("hair_updo_brown", "Пышная укладка (каштанка)", 0, "03_hp/18_store/01.png", 
-            "Пышная укладка (каштанка)", "gears_hair", None ),
-        ("hair_wacky_black", "Буйная прическа (брюнетка)", 0, "03_hp/18_store/01.png", 
-            "Буйная прическа (брюнетка)", "gears_hair", None ),
-        ("hair_wacky_blonde", "Буйная прическа (блондинка)", 0, "03_hp/18_store/01.png", 
-            "Буйная прическа (блондинка)", "gears_hair", None ),
-        ("hair_wacky_red", "Буйная прическа (рыжая)", 0, "03_hp/18_store/01.png", 
-            "Буйная прическа (рыжая)", "gears_hair", None ),
         ("hair_wavy_black", "Обычная прическа (брюнетка)", 0, "03_hp/18_store/01.png", 
             "Обычная прическа (брюнетка)", "gears_hair", None ),
         ("hair_wavy_blonde", "Обычная прическа (блондинка)", 0, "03_hp/18_store/01.png", 
             "Обычная прическа (блондинка)", "gears_hair", None ),
-        ("hair_wavy_combed_brown", "Собранные волосы (каштанка)", 0, "03_hp/18_store/01.png", 
-            "Собранные волосы (каштанка)", "gears_hair", None ),
         ("hair_wavy_red", "Обычная прическа (рыжая)", 0, "03_hp/18_store/01.png", 
             "Обычная прическа (рыжая)", "gears_hair", None ),
         ("hair_basic", "Обычная прическа (каштанка)", 0, "03_hp/18_store/01.png", 
@@ -158,6 +144,23 @@ init:
 
         ]
 
+#        ("hair_ponytail_brown", "Хвостик (каштанка)", 0, "03_hp/18_store/01.png", 
+#            "Хвостик (каштанка)", "gears_hair", None ),
+#        ("hair_updo_black", "Пышная укладка (брюнетка)", 0, "03_hp/18_store/01.png", 
+#            "Пышная укладка (брюнетка).", "gears_hair", None ),
+#        ("hair_updo_brown", "Пышная укладка (каштанка)", 0, "03_hp/18_store/01.png", 
+#            "Пышная укладка (каштанка)", "gears_hair", None ),
+#        ("hair_wacky_black", "Буйная прическа (брюнетка)", 0, "03_hp/18_store/01.png", 
+#            "Буйная прическа (брюнетка)", "gears_hair", None ),
+#        ("hair_wacky_blonde", "Буйная прическа (блондинка)", 0, "03_hp/18_store/01.png", 
+#            "Буйная прическа (блондинка)", "gears_hair", None ),
+#        ("hair_wacky_red", "Буйная прическа (рыжая)", 0, "03_hp/18_store/01.png", 
+#            "Буйная прическа (рыжая)", "gears_hair", None ),
+#        ("hair_wavy_combed_brown", "Собранные волосы (каштанка)", 0, "03_hp/18_store/01.png", 
+#            "Собранные волосы (каштанка)", "gears_hair", None ),
+
+        
+        
 
 # Заполнение массива предметов
         itemList=[]
