@@ -292,7 +292,7 @@ translate english your_whore_6ae5a18d:
 translate english your_whore_6159539a:
 
     # mal2 "Я слышал про 3 тысячи."
-    mal2 "The rumour is 3 thousands."
+    mal2 "The rumour is 3 thousand."
 
 # game/24_your_whore.rpy:104
 translate english your_whore_9c89f28b:
@@ -430,7 +430,7 @@ translate english your_whore_1f673cdb:
 translate english your_whore_ea4f28b8:
 
     # fem "...3 тысячи за ночь, с ума сойти..."
-    fem "...3 thousands coins for a night, mind blowing..."
+    fem "...3 thousand coins for a night, mind blowing..."
 
 # game/24_your_whore.rpy:127
 translate english your_whore_ed62739c:

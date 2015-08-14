@@ -76,7 +76,7 @@ translate english menu_dahr_scroll_order_f9394218:
 translate english the_oddities_6393684f:
 
     # dahr "Добро пожаловать в \"каталог Приблуд Дахра\". Ваши предпочтения не покажутся нам странными!" nointeract
-    dahr "Welcome to \"Dahr's Oddities\". Your taste is never too odd for us!" nointeract
+    dahr "Welcome to the \"Muggle's oddities catalog\". Your taste is never too odd for us!" nointeract
 
 # game/the_oddities.rpy:227
 translate english do_have_book_342751d2:
@@ -248,7 +248,7 @@ translate english strings:
 
     # game/the_oddities.rpy:164
     old "- Одежда -"
-    new "-Clothes-"
+    new "-Apparel-"
 
     # game/the_oddities.rpy:164
     old "- Священные свитки -"
