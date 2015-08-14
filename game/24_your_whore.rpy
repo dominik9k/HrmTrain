@@ -3727,27 +3727,27 @@ label test:
     centered "{cps=20}{size=+5}{color=#ea91b0}-Воспитание Ведьмы 1.5 (русская редакция)-{/color}{/size}\n\n\n\
     {color=#e5e297}-\{Перевод Witch Trainer\}-{/color}\n\
     {color=#fff}\
-    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=78}Nyarkohotep{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15155170}Discordnk90{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=8041771}maniac4a{/a}, \n\
-    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=4472572}Rio-Violente{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=16957111}MrFrost1991{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=18304384}babaylolxz{/a}, {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=15281703}Borzsama{/a},\n\
-     {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=11908608}sn0rk95{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=48}Khan{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=2}Skazochnik{/a}\n\n\
-    {color=#cbcbcb}Если кого-то забыли - простите ;){/color} \
+    Ave_Fletch, Nyarkohotep, Discordnk90, maniac4a, \n\
+    Rio-Violente, MrFrost1991, babaylolxz, Borzsama,\n\
+    sn0rk95, Khan, Skazochnik\n\n\
+    {color=#cbcbcb};){/color} \
     \n\n\
     {color=#e5e297}-\{Программирование:\}-{/color}\n\
     {color=#fff}\
-    {a=http://pornolab.net/forum/profile.php?mode=viewprofile&u=14141420}Ave_Fletch{/a}, Eskelsama, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=78}Nyarkohotep{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=2}Skazochnik{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=52}Dron{/a}, The Felix\n\
+    Eskelsama, Nyarkohotep, Skazochnik, Dron, The Felix\n\
     \
     \n\n\
     {color=#e5e297}-\{Тексты, сценарии:\}-{/color}\n\
     {color=#fff}\
-    {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=78}Nyarkohotep{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=2}Skazochnik{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=52}Dron{/a}, The Felix\n\
+    Nyarkohotep, Skazochnik, Dron, The Felix, Tobie\n\
     \n\n\
     {color=#e5e297}-\{Техническая поддержка (форум):\}-{/color}\n\
     {color=#fff}\
-    {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=48}Khan{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=2}Skazochnik{/a}\n\
+    Khan{/a}, Skazochnik\n\
     \n\n\
     {color=#e5e297}-\{Арты:\}-{/color}\n\
     {color=#fff}\
-    Oh Zar, Zio, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=85}Grendidg{/a} | {a=https://vk.com/grendidg}Grendidg VK{/a} | {a=http://virink.com/GRENDIDG}Grendidg Virink{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=52}Dron{/a}\n\
+    Oh Zar, Zio, CaptainNemo, Buraka, Grendidg | {a=https://vk.com/grendidg}Grendidg VK{/a} | {a=http://virink.com/GRENDIDG}Grendidg Virink{/a}, {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=52}Dron{/a}\n\
     \n\n\
     {size=-3}{color=#e5e297}-\{Дополнительно:\}-{/color}\n\
     {color=#fff}\
@@ -3759,7 +3759,7 @@ label test:
     \n\n\
     {size=-7}{color=#e5e297}-\{На ранних этапах игры участие также принимали:\}-{/color}\n\
     {color=#fff}\
-    appo, Dimon_Tools, illidan, darg55, Fuhrick, Y-ART, Zilot{/color}{/size}\n\
+    Dimon_Tools, illidan, darg55, Fuhrick, Zilot{/color}{/size}\n\
     \n\n\
     Игра разрабатывается с использованием идеи и артов Акабура и Дахра и поддержке Xaljio.\n\
     "
@@ -3809,23 +3809,6 @@ label test:
     {color=#e5e297}\"Under-the-Radar\" {/color}{color=#cbcbcb}by  PhobyAk.{/color}{/cps}"
 
 
-    $ xder = 670
-    $ yder = 410
-    $ dermo = "ch_hem run_f"
-    #$ dermo = "no_shirt_dance_ani"
-    nvl clear
-
-    centered "{cps=40}{size=+2}{color=#e5e297}-\{Создатели Witch Trainer также выражают благодарность\}-{/color}{/size}\n\n{color=#cbcbcb} \
-    {size=+5}Dahr{/size}{/color}\n{color=#e5e297}for still working for me pretty much free of charge, for inspiring me to keep on going and simply for being a good friend and colleague. {/color}\n\n\
-    {color=#cbcbcb}{size=+5}Xaljio{/size}{/color}\n{color=#e5e297} for not only being my personal \"Ren'Py\" consultant but also an extremely thorough game-tester.\n\n\
-    {color=#cbcbcb}{size=+5}Lyk.D9 (a.k.a. Silentchill){/size}{/color}\n {color=#e5e297}for toiling tirelessly over my texts full of typos and broken grammar. {/color}\n\n\
-    {color=#cbcbcb}{size=+5}Bookfisher{/size}{/color}\n{color=#e5e297}For everything.\n\n\
-    {color=#cbcbcb}{size=+5}The fate (universe or higher power){/size}{/color}\n{color=#e5e297}For giving me an opportunity to release another game while retaining complete creative freedom.\n\n\n\
-    \
-    {color=#cbcbcb}{size=-1}A whole bunch of other people who helped me with development of this game in one way or another,\n but whom I forgot to mention.{/color}\n\
-    {color=#cbcbcb}And of course to everyone else who supports\nme and my work.\n\n\n\
-    \
-    {/color}{/size}{/cps}"
 
     hide screen uni_cr
 
