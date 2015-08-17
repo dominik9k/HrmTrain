@@ -311,6 +311,10 @@ label new_request_03_complete: # WHORING LEVEL 02 <=================
 
     hide screen bld1
     $herView.hideQ()
+    
+    $herView.data().loadState()
+    $ hermi.WrdSetMain ()
+    
     hide screen blktone 
     hide screen hermione_02
     hide screen ctc
@@ -528,8 +532,6 @@ label panties_soaked_in_cum:
                     $herView.hideshowQQ( "body_128.png", pos )
                     her "Я так и думала, профессор."
                     $herView.hideQQ()
-                    $herView.data().loadState()
-                    $ hermi.WrdSetMain ()
                     $herView.showQQ( "body_52.png", pos )
                     her "Тогда я пойду?"
                     m "Хм, да-да, мисс Грейнджер..."

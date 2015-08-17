@@ -513,6 +513,10 @@
             self.WrdDelStockings()
             self.WrdMain()
             
+        def WrdNoHair (self) :
+            self.WrdDelHair()
+            self.WrdMain()
+            
         def WrdSetUpSkirt (self) :
             self.set_upskirt = True
             self.WrdSetDownShirt() 
