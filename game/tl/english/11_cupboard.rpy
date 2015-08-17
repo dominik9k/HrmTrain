@@ -128,31 +128,31 @@ translate english strings:
 
     # game/11_cupboard.rpy:4
     old "- Священные свитки. Часть I -"
-    new "-Sacred scrolls. Volume I-"
+    new "-Sacred scrolls. Vol. I-"
 
     # game/11_cupboard.rpy:4
     old "- Священные свитки. Часть II -"
-    new "-Sacred scrolls. Volume II-"
+    new "-Sacred scrolls. Vol. II-"
 
     # game/11_cupboard.rpy:4
     old "- Священные свитки. Часть III -"
-    new "-Sacred scrolls. Volume III-"
+    new "-Sacred scrolls. Vol. III-"
 
     # game/11_cupboard.rpy:4
     old "- Священные свитки. Часть IV -"
-    new "-Sacred scrolls. Volume IV-"
+    new "-Sacred scrolls. Vol. IV-"
 
     # game/11_cupboard.rpy:4
     old "- Священные свитки. Часть V -"
-    new "-Sacred scrolls. Volume V-"
+    new "-Sacred scrolls. Vol. V-"
 
     # game/11_cupboard.rpy:61
     old "Включить ТУРБО-режим"
-    new "Enable TURBO-mode"
+    new "Enable TURBO mode"
 
     # game/11_cupboard.rpy:61
     old "Выключить ТУРБО-режим"
-    new "Disable TURBO-mode"
+    new "Disable TURBO mode"
 
     # game/11_cupboard.rpy:61
     old "ЧИТ: +100 очков Слизерину"
@@ -190,11 +190,11 @@ translate english strings:
 
     # game/11_cupboard.rpy:34
     old "- Одежда для подарков -"
-    new "-Clothes as a Gift"
+    new "-Apparel to give-"
 
     # game/11_cupboard.rpy:34
     old "- Вещи напрокат -"
-    new "-Rented Clothes"
+    new "-Rented Apparel-"
 
     # game/11_cupboard.rpy:34
     old "- Помощь -"
