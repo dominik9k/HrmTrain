@@ -206,10 +206,16 @@ label your_whore:
     show screen bld1
     with d5
     m "(Вот она!)"
-
     mal "Эй, Гермиона..."
     $ posHead = gMakePos( 390, 235 )
     #$herViewHead.data().addPose( CharacterExItemPoseParade( herViewHead.mPoseFolder, "pose_parade.png", G_Z_POSE ) )
+    
+    $hermi.WrdNoShirt()       
+    $hermi.WrdNoSkirt()    
+    $hermi.WrdNoOther()    
+    $hermi.WrdNoStockings()    
+    $hermi.WrdNoHair()   
+    
     $herViewHead.data().addItem( 'item_pose_parade' )
 
     $herViewHead.showQ( "body_159.png", posHead )
@@ -4004,6 +4010,7 @@ label test:
         play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
         $ herViewHead.data().delItem( 'item_tiara' )
         $ herViewHead.data().delPose()
+        $ hermi.WrdSetMain()
         $ posHead = gMakePos( 390, 235 )
         $herViewHead.showQ( "body_120.png", posHead )
 

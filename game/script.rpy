@@ -127,7 +127,7 @@ init:
             "Скромные белые трусики", "gears_panties", None ),
         ("skirt", "Школьная длинная юбка (50см)", 0, "03_hp/18_store/01.png", 
             "Школьная длинная юбка.", "gears_skirt", None ),
-        ("scroll", "Священный свиток", 30, "03_hp/18_store/31.png", 
+        ("scroll", "Священный свиток", 300, "03_hp/18_store/31.png", 
             "Священный свиток содержит тайные знания...", "scroll", None), # {"pic":"03_hp/19_extras/xx.png"} )
         ("hair_wavy_black", "Обычная прическа (брюнетка)", 0, "03_hp/18_store/01.png", 
             "Обычная прическа (брюнетка)", "gears_hair", None ),
@@ -179,7 +179,7 @@ init:
 
 # Инициализация коллекций предметов
         global itsDAHR
-        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":68, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
+        itsDAHR=RegEntry(ItemCollection("DAHR",{"gears":1, "gifts":3, "scroll":13, "gears_shirt":1, "gears_skirt":1, "gears_stockings":1, "gears_other":1, "gears_dress":1}))
 
         global itsOWL
         itsOWL=RegEntry(ItemCollection("OWL"))
@@ -424,34 +424,65 @@ init:
 # Товары для газеты
     python:
 
-        tu=[("nsp_newsp_book_p01::\"Журналистика для любителей\"",           120, "08_newspaper_scenario/books/Book_p1.png", "Эта книга описывает основы журналистики.",
+#        tu=[("nsp_newsp_book_p01::\"Журналистика для любителей\"",           120, "08_newspaper_scenario/books/Book_p1.png", "Эта книга описывает основы журналистики.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p02a::\"Журналистика для продвинутых. Том 1\"",           200, "08_newspaper_scenario/books/Book_p2a.png", "Эта книга описывает принципы журналистики.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p02b::\"Журналистика для продвинутых. Том 2\"",           300, "08_newspaper_scenario/books/Book_p2b.png", "Эта книга описывает принципы журналистики.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p03a::\"Журналистика для экспертов. Том 1\"",           500, "08_newspaper_scenario/books/Book_p3a.png", "Эта книга описывает секреты журналистики.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p03b::\"Журналистика для экспертов. Том 2\"",           600, "08_newspaper_scenario/books/Book_p3b.png", "Эта книга описывает секреты журналистики.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+               
+#            ("nsp_newsp_book_p04::\"Стань писателем для любителей.\"",           300, "08_newspaper_scenario/books/Book_p4.png", "Эта книга описывает основы писательского ремесла.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p05a::\"Стань писателем для продвинутых. Том 1\"",           600, "08_newspaper_scenario/books/Book_p5a.png", "Эта книга описывает принципы писательского ремесла.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p05b::\"Стань писателем для продвинутых. Том 2\"",           800, "08_newspaper_scenario/books/Book_p5b.png", "Эта книга описывает принципы писательского ремесла.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p06a::\"Стань писателем для экспертов. Том 1\"",           1200, "08_newspaper_scenario/books/Book_p6a.png", "Эта книга описывает секреты писательского ремесла.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+                
+#            ("nsp_newsp_book_p06b::\"Стань писателем для экспертов. Том 2\"",           1500, "08_newspaper_scenario/books/Book_p6b.png", "Эта книга описывает секреты писательского ремесла.",
+#                "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
+#                ]
+
+        tu=[("nsp_newsp_book_p01::\"Журналистика для любителей\"",           120, "08_newspaper_scenario/books/book.png", "Эта книга описывает основы журналистики.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p02a::\"Журналистика для продвинутых. Том 1\"",           200, "08_newspaper_scenario/books/Book_p2a.png", "Эта книга описывает принципы журналистики.",
+            ("nsp_newsp_book_p02a::\"Журналистика для продвинутых. Том 1\"",           200, "08_newspaper_scenario/books/book.png", "Эта книга описывает принципы журналистики.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p02b::\"Журналистика для продвинутых. Том 2\"",           300, "08_newspaper_scenario/books/Book_p2b.png", "Эта книга описывает принципы журналистики.",
+            ("nsp_newsp_book_p02b::\"Журналистика для продвинутых. Том 2\"",           300, "08_newspaper_scenario/books/book.png", "Эта книга описывает принципы журналистики.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p03a::\"Журналистика для экспертов. Том 1\"",           500, "08_newspaper_scenario/books/Book_p3a.png", "Эта книга описывает секреты журналистики.",
+            ("nsp_newsp_book_p03a::\"Журналистика для экспертов. Том 1\"",           500, "08_newspaper_scenario/books/book.png", "Эта книга описывает секреты журналистики.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p03b::\"Журналистика для экспертов. Том 2\"",           600, "08_newspaper_scenario/books/Book_p3b.png", "Эта книга описывает секреты журналистики.",
+            ("nsp_newsp_book_p03b::\"Журналистика для экспертов. Том 2\"",           600, "08_newspaper_scenario/books/book.png", "Эта книга описывает секреты журналистики.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                
-            ("nsp_newsp_book_p04::\"Стань писателем для любителей.\"",           300, "08_newspaper_scenario/books/Book_p4.png", "Эта книга описывает основы писательского ремесла.",
+            ("nsp_newsp_book_p04::\"Стань писателем для любителей.\"",           300, "08_newspaper_scenario/books/book.png", "Эта книга описывает основы писательского ремесла.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p05a::\"Стань писателем для продвинутых. Том 1\"",           600, "08_newspaper_scenario/books/Book_p5a.png", "Эта книга описывает принципы писательского ремесла.",
+            ("nsp_newsp_book_p05a::\"Стань писателем для продвинутых. Том 1\"",           600, "08_newspaper_scenario/books/book.png", "Эта книга описывает принципы писательского ремесла.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p05b::\"Стань писателем для продвинутых. Том 2\"",           800, "08_newspaper_scenario/books/Book_p5b.png", "Эта книга описывает принципы писательского ремесла.",
+            ("nsp_newsp_book_p05b::\"Стань писателем для продвинутых. Том 2\"",           800, "08_newspaper_scenario/books/book.png", "Эта книга описывает принципы писательского ремесла.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p06a::\"Стань писателем для экспертов. Том 1\"",           1200, "08_newspaper_scenario/books/Book_p6a.png", "Эта книга описывает секреты писательского ремесла.",
+            ("nsp_newsp_book_p06a::\"Стань писателем для экспертов. Том 1\"",           1200, "08_newspaper_scenario/books/book.png", "Эта книга описывает секреты писательского ремесла.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 
-            ("nsp_newsp_book_p06b::\"Стань писателем для экспертов. Том 2\"",           1500, "08_newspaper_scenario/books/Book_p6b.png", "Эта книга описывает секреты писательского ремесла.",
+            ("nsp_newsp_book_p06b::\"Стань писателем для экспертов. Том 2\"",           1500, "08_newspaper_scenario/books/book.png", "Эта книга описывает секреты писательского ремесла.",
                 "Книга повысила мастерство написания статей. Кроме того, благодаря ей доступны новые журналистские задания."),
                 ]
 
@@ -3603,469 +3634,7 @@ image heal_02: # Smaller version of heal. 40% of the original size.
     pause.06
     "magic_02/heal18.png"
     pause.06     
-    
-    
-image slap:
-    "slave/slap01.png"
-    pause.06
-    "slave/slap02.png"
-    pause.06
-    "slave/slap03.png"
-    pause.06
-    "slave/slap04.png"
-    pause.06
-    "slave/slap05.png"
-    pause.06
-    "slave/slap06.png"
-    pause.06
-    "slave/slap07.png"
-    pause.06
-        
-image slave:
-    "slave/slave01.png"
-    pause.02
-    "slave/slave01_02.png"
-    pause.02
-    "slave/slave01_03.png"
-    pause.02
-    "slave/slave01_04.png"
-    pause.2
-    "slave/slave01_03.png"
-    pause.02
-    "slave/slave01_02.png"
-    pause.02
-    "slave/slave01.png"
-    pause 5
-    repeat
 
-
-
-    
-    
-image akaani:
-    "akaani/akaani01.png"
-    pause.1
-    "akaani/akaani02.png"
-    pause.1
-    "akaani/akaani03.png"
-    pause.1
-    "akaani/akaani04.png"
-    pause.1
-    "akaani/akaani05.png"
-    pause.1
-    "akaani/akaani06.png"
-    pause.1
-    repeat 
-
-image akaani2:
-    "akaani2/aka_ani2_01.png"
-    pause.2
-    "akaani2/aka_ani2_02.png"
-    pause.2
-    "akaani2/aka_ani2_03.png"
-    pause.2
-    "akaani2/aka_ani2_04.png"
-    pause.2
-    repeat 
-    
-
-    
-    
-
-
-
-
-
-
-image schooled:
-    "slavem/schooled01.png"
-    pause 1
-    "slavem/schooled02.png"
-    pause.1
-    "slavem/schooled01.png"
-    pause 3
-    "slavem/schooled02.png"
-    pause.1
-    "slavem/schooled01.png"
-    pause.1
-    "slavem/schooled02.png"
-    pause.1
-    "slavem/schooled01.png"
-    pause 5
-    repeat
-image obedience01:
-    "slavem/obed01_1.png"
-    pause 1
-    "slavem/obed01_2.png"
-    pause.1
-    "slavem/obed01_1.png"
-    pause 3
-    "slavem/obed01_2.png"
-    pause.1
-    "slavem/obed01_1.png"
-    pause.1
-    "slavem/obed01_2.png"
-    pause.1
-    "slavem/obed01_1.png"
-    pause 5
-    repeat
-image obedience01b:
-    "slavem/obed01_1b.png"
-    pause 1
-    "slavem/obed01_2b.png"
-    pause.1
-    "slavem/obed01_1b.png"
-    pause 3
-    "slavem/obed01_2b.png"
-    pause.1
-    "slavem/obed01_1b.png"
-    pause.1
-    "slavem/obed01_2b.png"
-    pause.1
-    "slavem/obed01_1b.png"
-    pause 5
-    repeat
-image obedience02:
-    "slavem/obed02_1.png"
-    pause 1
-    "slavem/obed02_2.png"
-    pause.1
-    "slavem/obed02_1.png"
-    pause 3
-    "slavem/obed02_2.png"
-    pause.1
-    "slavem/obed02_1.png"
-    pause.1
-    "slavem/obed02_2.png"
-    pause.1
-    "slavem/obed02_1.png"
-    pause 5
-    repeat
-image obedience03:
-    "slavem/obed03_1.png"
-    pause 1
-    "slavem/obed03_2.png"
-    pause.1
-    "slavem/obed03_1.png"
-    pause 3
-    "slavem/obed03_2.png"
-    pause.1
-    "slavem/obed03_1.png"
-    pause.1
-    "slavem/obed03_2.png"
-    pause.1
-    "slavem/obed03_1.png"
-    pause 3
-    repeat
-    
-    
-image sleeping:
-    "slavem/sleep01.png"
-    pause.1
-    "slavem/sleep02.png"
-    pause.1
-    "slavem/sleep03.png"
-    pause.1
-    "slavem/sleep04.png"
-    pause.1
-    "slavem/sleep05.png"
-    pause.1
-    repeat
-    
-image sleeping2:
-    "slavem/sleep201.png"
-    pause.15
-    "slavem/sleep202.png"
-    pause.15
-    "slavem/sleep203.png"
-    pause.15
-    "slavem/sleep204.png"
-    pause.15
-    "slavem/sleep205.png"
-    pause.15
-    repeat
-    
-image courage: 
-    "slavem/courage01.png"
-    pause.3
-    "slavem/courage02.png"
-    pause.3
-    repeat
-    
-image banana03: 
-    "slavem/banana03.png"
-    pause.4
-    "slavem/banana04.png"
-    pause.4
-    repeat    
-
-image rest03: 
-    "slavem/rest01.png"   
-    pause 2
-    "slavem/rest05.png"
-    pause.1
-    "slavem/rest01.png"
-    pause.1
-    "slavem/rest05.png"
-    pause.1
-    "slavem/rest01.png"
-    pause 10
-    "slavem/rest05.png"
-    pause.1
-    "slavem/rest01.png"
-    pause 5
-    repeat
-    
-image btits:
-    "slavem/btits01.png"
-    pause 3
-    "slavem/btits02.png"
-    pause 1
-    "slavem/btits01.png"
-    pause 1
-    "slavem/btits03.png"
-    pause.08
-    "slavem/btits04.png"
-    pause.08
-    "slavem/btits05.png"
-    pause.08
-    "slavem/btits06.png"
-    pause.08
-    "slavem/btits07.png"
-    pause.08
-    "slavem/btits08.png"
-    pause.08
-    "slavem/btits09.png"
-    pause.04
-    "slavem/btits10.png"
-    pause 4
-    "slavem/btits09.png"
-    pause.08
-    "slavem/btits10.png"
-    pause.08
-    repeat
-
-
-
-############################################
-#######EMOTIONS #^_^# ########################
-############################################
-
-image emo01:
-    "emotions/ex01.png"
-    pause.1
-    "emotions/ex02.png"
-    pause.1
-    "emotions/ex03.png"
-    pause.1
-    "emotions/ex04.png"
-    pause 2
-    "emotions/ex01.png"
-    pause.1
-    "emotions/ex00.png"
-    
-image emo02:
-    "emotions/exl01.png"
-    pause.05
-    "emotions/exl02.png"
-    pause.05
-    "emotions/exl03.png"
-    pause.05
-    "emotions/exl04.png"
-    pause.05
-    "emotions/exl05.png"
-    pause.05
-    "emotions/exl06.png"
-
-image emoq:
-    "emotions/q1.png"
-    pause.05
-    "emotions/q2.png"
-    pause.05
-    "emotions/q3.png"
-    pause.05
-    "emotions/q4.png"
-    pause.05
-    "emotions/q1.png"
-    pause.05
-    "emotions/q2.png"
-    pause.05
-    "emotions/q3.png"
-    pause.05
-    "emotions/q4.png"
-
-image emom:
-    "emotions/emo00.png"
-    pause.08
-    "emotions/emo01.png"
-
-image excl:
-    "emotions/excl01.png"
-    pause.08
-    "emotions/excl02.png"
-    pause.08
-    "emotions/excl03.png"
-    pause.08
-    "emotions/excl04.png"
-    pause.08
-    
-image qu:
-    "emotions/que1.png"
-    pause.08    
-    "emotions/que2.png"
-    pause.08 
-    "emotions/que3.png"
-    pause.08 
-    "emotions/que4.png"
-    pause.08 
-    "emotions/que5.png"
-    pause.08 
-    "emotions/que6.png"
-    
-image an:
-    "emotions/an1.png"
-    pause.2
-    "emotions/an2.png"
-    pause.2
-    "emotions/an3.png"
-    pause.2
-    "emotions/an2.png"
-    pause.2
-    repeat
-    
-image sal:
-    "emotions/s1.png"
-    pause.08
-    "emotions/s2.png"
-    pause.2
-    "emotions/s3.png"
-    pause.08
-    "emotions/s4.png"
-    pause.2
-    "emotions/s5.png"
-    pause.08
-    "emotions/s6.png"
-    pause 1
-    "emotions/00.png"
-    pause.08
-    repeat
-    
-image th:
-    "emotions/t1.png"
-    pause.2
-    "emotions/t2.png"
-    pause.2
-    "emotions/t3.png"
-    pause.2
-    "emotions/t4.png"
-    pause.2
-    repeat
-
-image emo7:
-    "emotions/emotion00.png"
-    pause.2
-    "emotions/emotion01.png"
-    pause.2
-    "emotions/emotion00.png"
-    pause.08
-    "emotions/emotion01.png"
-    pause.08
-    "emotions/emotion00.png"
-    pause.08
-    "emotions/emotion01.png"
-    pause.08
-    
-image emo8:
-    "emotions/emotion00.png"
-    pause.2
-    "emotions/emotion03.png"
-    pause.2
-    "emotions/emotion00.png"
-    pause.08
-    "emotions/emotion03.png"
-    pause.08
-    "emotions/emotion00.png"
-    pause.08
-    "emotions/emotion03.png"
-    pause.08
-    
-image sur:
-    "emotions/sur1.png"
-    pause.08
-    "emotions/sur2.png"
-    pause.08
-    "emotions/sur3.png"
-    pause.08
-    "emotions/sur4.png"
-    pause.08
-    "emotions/sur5.png"
-    pause.08
-    "emotions/sur6.png"
-    pause.08
- 
-###################
-####SEX############
-###################
-
-image hjob:
-    "ani01/hj01.png"
-    pause.08
-    "ani01/hj02.png"
-    pause.08
-    "ani01/hj03.png"
-    pause.08
-    "ani01/hj04.png"
-    pause.08
-    "ani01/hj05.png"
-    pause.08
-    repeat
-
-image hjobcum:
-    "ani01/cum01.png"
-    pause.08
-    "ani01/cum02.png"
-    pause.08
-    "ani01/cum03.png"
-    pause.08
-    "ani01/cum04.png"
-    pause.08
-    "ani01/cum05.png"
-    pause.08
-    "ani01/cum06.png"
-    pause.08
-    "ani01/cum07.png"
-    pause.08
-    "ani01/cum08.png"
-    pause.08
-    "ani01/cum09.png"
-    pause.08
-    "ani01/cum10.png"
-    pause.08
-    "ani01/cum11d.png"
-    pause 1
-    repeat
-    
-image hjobover:
-    "ani01/ac01.png"
-    pause.08
-    "ani01/ac02.png"
-    pause.08
-    "ani01/ac03.png"
-    pause.08
-    "ani01/ac4.png"
-    pause.08
-    "ani01/ac5.png"
-    pause.08
-    "ani01/ac6d.png"
-    pause 2
-    repeat
-    
-image heart:
-    "ani01/h01.png"
-    pause.1
-    "ani01/h02.png"
-    pause.1
-    repeat
     
 ### DR'S Newspaper ooo ###
 

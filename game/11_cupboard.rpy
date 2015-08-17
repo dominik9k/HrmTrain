@@ -181,35 +181,32 @@ label cupboard:
                 jump cheat_help
 
 
-        "- Священные свитки. Часть I -" if not day == 1 and cataloug_found:
+#        "- Священные свитки. Часть I -" if not day == 1 and cataloug_found:
+        "- Священные свитки. -" if not day == 1 and cataloug_found:
             label sc_col_men_1:
                 $_scrollSection=0
-                jump sc_col
+                jump sc_col_13
 
-        "- Священные свитки. Часть II -" if not day == 1 and cataloug_found:
-            label sc_col_men_2:
-                $_scrollSection=1
-                jump sc_col
-
-        "- Священные свитки. Часть III -" if not day == 1 and cataloug_found:
-            label sc_col_men_3:
-                $_scrollSection=2
-                jump sc_col
-
-        "- Священные свитки. Часть IV -" if not day == 1 and cataloug_found:
-            label sc_col_men_4:
-                $_scrollSection=3
-                jump sc_col
-
-        "- Священные свитки. Часть V -" if not day == 1 and cataloug_found:
-            label sc_col_men_5:
-                $_scrollSection=4
-                jump sc_col_part
-
-#        "- Священные свитки. Часть VI -" if not day == 1 and cataloug_found:
-#            label sc_col_men_6:
-#                $_scrollSection=5
+#        "- Священные свитки. Часть II -" if not day == 1 and cataloug_found:
+#            label sc_col_men_2:
+#                $_scrollSection=1
 #                jump sc_col
+
+#        "- Священные свитки. Часть III -" if not day == 1 and cataloug_found:
+#            label sc_col_men_3:
+#                $_scrollSection=2
+#                jump sc_col
+
+#        "- Священные свитки. Часть IV -" if not day == 1 and cataloug_found:
+#            label sc_col_men_4:
+#                $_scrollSection=3
+#                jump sc_col
+
+#        "- Священные свитки. Часть V -" if not day == 1 and cataloug_found:
+#            label sc_col_men_5:
+#                $_scrollSection=4
+#                jump sc_col_part
+
 
 
                 label sc_col:
@@ -229,7 +226,15 @@ label cupboard:
                             if i<_itemCount:
                                 choose.AddItem("- C."+str(i+1)+": Священный свиток #"+str(i+1)+" -", "menu_cupboard_scroll_show" , i)
                     $ choose.Show("cupboard")
-
+                    
+                label sc_col_13:
+                    $ choose = RunMenu()
+                    python:
+                        _itemCount=hero.Items.Count("scroll")
+                        for i in range(_scrollSection*15, _scrollSection*15+13):
+                            if i<_itemCount:
+                                choose.AddItem("- C."+str(i+1)+": Священный свиток #"+str(i+1)+" -", "menu_cupboard_scroll_show" , i)
+                    $ choose.Show("cupboard")
 
                 label menu_cupboard_scroll_show:
 

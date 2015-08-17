@@ -8,6 +8,10 @@
 		<folder>pose</folder>
 		<visible>1</visible>
 		<zorder>pose</zorder>
+		<hidelist>
+                    <item>tits_no</item>
+                    <item>tits</item>
+                </hidelist>
 		<actions>
 			<action event="selfAdded">
 				<body>
