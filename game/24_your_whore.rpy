@@ -3759,9 +3759,13 @@ label test:
     {color=#fff}\
     {size=-4}Lrm{/size} - программирование;{size=-4}qwert{/size} - корректура{/size} \n\
     \n\n\
-    {size=-5}{color=#e5e297}-\{Тестирование:\}-{/color}\n\
+    {size=-5}{color=#e5e297}-\{Альфа-тестеры:\}-{/color}\n\
     {color=#fff}\
-    Vitamin05, Тохрин, Suhi, Lrm, Sora015, Bananamantana, Ignes, Appo, BAPK, Kril', Xeron, Vadim, Melem, Димитрий {/color}{/size}\n\
+    BAPK, Lrm, maru1141, Nyarkohotep, Sleepless, suhi, TenchiMuyo1984, Vitamin05, Xyron, Тохрин, Bananamantana, Ignes, Kril', Xeron, Vadim, Melem, Димитрий {/color}{/size}\n\
+    \n\n\
+    {size=-5}{color=#e5e297}-\{Бета-тестеры:\}-{/color}\n\
+    {color=#fff}\
+    GIZ61, i11idan, sora015 {/color}{/size}\n\
     \n\n\
     {size=-7}{color=#e5e297}-\{На ранних этапах игры участие также принимали:\}-{/color}\n\
     {color=#fff}\
