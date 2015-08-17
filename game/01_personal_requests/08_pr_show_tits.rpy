@@ -570,6 +570,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                 with d5
                 ">Вы отпускаете ее грудь..."
                 ">Гермиона прикрывается..."
+                $herView.data().loadState()
+                $ hermi.WrdSetMain()
                 play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
                 $her_head_state = 25
                 her_head_main "Пожалуйста, не думайте, что я забыла ваше обещание, сэр."
@@ -642,6 +644,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
             show screen blkfade
             with d3
             ">Гермиона прикрывается..."
+            $herView.data().loadState()
+            $ hermi.WrdSetMain()
             hide screen chair_02 #Genie's chair.
             hide screen genie_and_tits_01
             hide screen bld1
@@ -703,6 +707,8 @@ label new_request_08: #LV.3 (Whoring = 6 - 8)
                         show screen blkfade
                         with d3
                         ">Гермиона оттолкнула вас и прикрылась..."
+                        $herView.data().loadState()
+                        $ hermi.WrdSetMain()
                         g4 "Не смей покидать меня в таком состоянии, девочка!"
                         $her_head_state = 10
                         her_head_main "Ноги моей больше не будет в вашем кабинете, сэр!"
