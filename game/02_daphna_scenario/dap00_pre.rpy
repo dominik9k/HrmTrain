@@ -403,7 +403,7 @@ label daphne_pre_finish: #LV.1 (Whoring = 0 - 2)
     $screens.Show("ctc").Pause().Hide("ctc")
 
 
-    $daphne_pre_menu_text=None # текст, который будет говорить джин в конце
+    #$daphne_pre_menu_text=None # текст, который будет говорить джин в конце
 #    label daphne_pre_finish_menu:
     if wtevent._finishCount==0: # Первый раз
         $hero  (m, "#(Ну что ж, \"Мисс Голубая Кровь\"... Наша первая встреча и разговоры с Северусом и Гермионой натолкнули меня на пару идей.)") 
@@ -513,7 +513,8 @@ label daphne_pre_finish: #LV.1 (Whoring = 0 - 2)
 
         $wtevent.Finalize()
 
-    label daphne_pre_menu(sayText=daphne_pre_menu_text):
+    #label daphne_pre_menu(sayText=daphne_pre_menu_text):
+    label daphne_pre_menu:
     $item=None
     menu:
         "- Дать ей подарок на прощание -":
@@ -540,8 +541,8 @@ label daphne_pre_finish: #LV.1 (Whoring = 0 - 2)
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     pause.5
 
-    if sayText!=None:
-        $say(sayText)
+    #if sayText!=None:
+    #    $say(sayText)
 
 #    $hero("...................................")
     call music_block
