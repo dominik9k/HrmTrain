@@ -323,6 +323,14 @@ init:
 # Поскольку точка "DAPHENTER" предваряет вызов меню и ивентов ниже, никаких дополнительных условий в ивентах меню не требуется
         this.Where({"DAPHENTER"},"dap_interlude_02").AddStep("dap_interlude_02", ready=lambda e: this.dap_request_02._finishCount>=1,constVals={"members":{"daphne"}})
 
+        li={"05":["\"Научите меня\"","#(Перейдем непосредственно к тренеровке...)"]}
+        for s in li:
+                this.AddEvent("dap_request_"+s+"::"+li[s][0], points={"daphne_private"}, constVals={"eventPlan":li[s][1], "members":{"daphne"}}, defVals={"heartCount": 0}) 
+
+        li={"04":["\"Больше откровенности\"","#(Полагаю алкоголь раскрепостит её...)"]}
+        for s in li:
+                this.AddEvent("dap_request_"+s+"::"+li[s][0], points={"daphne_private"}, constVals={"eventPlan":li[s][1], "members":{"daphne"}}, defVals={"heartCount": 0}) 
+
         li={"03":["\"Популярность\"","#(Пора занять её чем-то новым...)"]}
         for s in li:
             __s="dap_request_"+s
@@ -719,6 +727,28 @@ image blk50 = im.Alpha("blackfade.png", 0.5)
 
 
 
+    #$#$# DAPHNE ANIMATIONS #$#$#
+
+image dap_fap:
+    "03_hp/24_daphne/dap_fap_a1.png"
+    pause 0.8
+    "03_hp/24_daphne/dap_fap_a1.png"
+    pause 0.8
+    "03_hp/24_daphne/dap_fap_a3.png"
+    pause 0.8
+    "03_hp/24_daphne/dap_fap_a4.png"
+    pause 0.8
+    "03_hp/24_daphne/dap_fap_a5.png"
+    pause 0.8
+    "03_hp/24_daphne/dap_fap_a6.png"
+    pause 0.8
+    restart
+
+image dap_look_a1:
+    "03_hp/24_daphne/dap_title_a1.png"
+
+image dap_look_a2:
+    "03_hp/24_daphne/dap_title_a2.png"
 
     ### INTRO MOVIE ANIMATIONS ###
 
