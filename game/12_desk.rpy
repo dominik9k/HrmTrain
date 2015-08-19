@@ -264,7 +264,7 @@ label desk:
             jump day_main_menu
 
 ## DR'S DEBUG TEST           
-        "- Тест 1 -" :
+        "- Тест 1 -" if False :
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
                 
