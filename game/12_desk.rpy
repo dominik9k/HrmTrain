@@ -264,7 +264,7 @@ label desk:
             jump day_main_menu
 
 ## DR'S DEBUG TEST           
-        "- Тест 1 -" if False :
+        "- Тест 1 -" :
             $ menu_x = 0.2 #Menu is moved to the left side.
             $ pos = POS_410
                 
@@ -277,12 +277,11 @@ label desk:
             show screen bld1
             with d3
             
-            $ nsp_germiona_forest_1_statimg = "New"
-            $ nsp_germiona_forest_1_photo = "dis"
-            $ nsp_event_forest_1 = 0
+            $ nsp_germiona_kviddich_1_statimg = "New"
+            $ nsp_germiona_kviddich_1_photo = "dis"
+            $ nsp_event_kviddich_1 = 0
             $ cur_level = 1
-            #call wrd_dress_change_silent
-            call nsp_event_forest_1
+            call nsp_event_kviddich_1
             jump hermione_goout
             
         "- Тест 2 -" if False :
