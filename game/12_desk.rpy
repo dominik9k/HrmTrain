@@ -345,12 +345,19 @@ label desk:
             $ hermione_chibi_xpos = 400 #Near the desk.
             $ hermione_chibi_ypos = 250 #Добавил, т.к. без этого иногда падает игра.
             show screen hermione_02 #Hermione stands still.
-            show screen bld1
+            show screen bld1                                  
             with d3
             $ hermi.whoring = 24                 
             
             jump new_request_02
 #            jump hermione_goout 
+
+        "- Тест 7 -" if False:
+            $luna.LoadDefItemSets()
+            $luna.Visibility("body+", False)
+            $luna("~00 right red emb// Привет !")
+            $luna.Visibility()
+            jump desk
             
 ### DR'S NEWSPAPER ooo ###
 
