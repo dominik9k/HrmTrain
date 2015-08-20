@@ -4,35 +4,38 @@
 	<key>eyes</key>
 
 	<style name="default">
-		<frame>daphne_eyes_normal_Z.png</frame>
+		<frame>eye_default.png</frame>
 		<folder>face</folder>
 		<visible>1</visible>
 		<zorder>hair-1</zorder>
 		<parent>head</parent>
 	</style>
-	<style name="eyes_00">
-		<frame>daphne_eyes_normal_Z.png</frame>
+	<style name="eyes_def">
+		<frame>eye_default.png</frame>
 	</style>
-	<style name="eyes_01">
-		<frame>daphne_eyes_normalright_Z.png</frame>
+	<style name="eyes_clo">
+		<frame>eye_closed.png</frame>
 	</style>
-	<style name="eyes_n0">
-		<frame>daphne_eyes_narrowforward_Z.png</frame>
+	<style name="eyes_cov">
+		<frame>eye_covered.png</frame>
 	</style>	
-	<style name="eyes_n2">
-		<frame>daphne_eyes_narrowforwarddown_Z.png</frame>
+	<style name="eyes_down">
+		<frame>eye_down.png</frame>
 	</style>	
-    <style name="eyes_s0">
-		<frame>daphne_eyes_strongnarrowforward_Z.png</frame>
+        <style name="eyes_emp">
+		<frame>eye_empty.png</frame>
 	</style>
-	<style name="eyes_w0">
-		<frame>daphne_eyes_wideforward_Z.png</frame>
+	<style name="eyes_low">
+		<frame>eye_lowered.png</frame>
 	</style>
-	<style name="eyes_c0">
-		<frame>daphne_eyes_closed.png</frame>
+	<style name="eyes_right">
+		<frame>eye_right.png</frame>
 	</style>
-    <style name="eyes_t0">
-		<frame>daphne_eyes_closedtight_Z.png</frame>
+        <style name="eyes_stra">
+		<frame>eye_strabism.png</frame>
+	</style>
+        <style name="eyes_up">
+		<frame>eye_up.png</frame>
 	</style>	
 	
 </item>

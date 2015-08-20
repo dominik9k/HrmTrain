@@ -8,6 +8,8 @@ init python:
         '00_ex_characters', '00_ex_characters/01_daphne', '00_ex_characters/01_daphne' )
     WTXmlLinker.prepareCharacterResources( 'snape', 
         '00_ex_characters', '00_ex_characters/02_snape', '00_ex_characters/02_snape' )
+    WTXmlLinker.prepareCharacterResources( 'luna', 
+        '00_ex_characters', '00_ex_characters/03_luna', '00_ex_characters/03_luna' )
 
 
 init:
@@ -212,6 +214,13 @@ init:
             constVals={"pos_door": gMakePos( 350, 0 ), "pos_doorleft": gMakePos( 300, 0 ), "pos_center": POS_140}))
         SetArrayValue("chibisnape", "door", [610,210])
         SetArrayValue("chibisnape", "center", [360,210])
+        
+        global luna
+        luna=RegEntry(Person("luna", "Луна", CharacterExData( WTXmlLinker.getLinkerKey_luna()), 
+            defVals={"pos": POS_320, "pos2": gMakePos( 340, 420 )}, 
+            constVals={"pos_door": gMakePos( 460, -60 ), "pos_center": POS_140}))
+        SetArrayValue("chibiluna", "door", [610,220])
+        SetArrayValue("chibiluna", "center", [370,220])
 
 
 
@@ -3853,6 +3862,8 @@ init-2:
     $ sna2 = Character('Северус Снейп', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed")  #Text box used for "head only" speech. (Because it has padding).
     $ vol = Character('Лорд Волдеморт', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     $ l = Character('Лола', color="#402313", window_right_padding=230, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
+    
+    $ lun = Character('Луна', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     
 #    $ daph = Character('Дафна', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
 #    $ daph2 = Character('Дафна', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Это текстовое окно, оно используется для головы(потому что имеет отступы)
