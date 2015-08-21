@@ -52,8 +52,8 @@ screen main_menu_01:
 
 
     imagebutton: # GENIE
-        xpos 230
-        ypos 336
+        xpos 217
+        ypos 342
         focus_mask True
         xanchor "center"
         yanchor "center"
@@ -403,7 +403,7 @@ screen candle_02:
     add "03_hp/05_props/08_candle.png" at Position(xpos=210, ypos=160, xanchor="center", yanchor="center")
 screen genie:
     tag chibi_genie
-    add "03_hp/05_props/11_genie_00.png" at Position(xpos=230, ypos=336, xanchor="center", yanchor="center")
+    add "03_hp/05_props/11_genie_00.png" at Position(xpos=217, ypos=342, xanchor="center", yanchor="center")
     #add "03_hp/05_props/09_table.png" at Position(xpos=220, ypos=330, xanchor="center", yanchor="center")
 screen owl: #DEFAULT OWL WITH ENVELOPE IN IT'S MOUTH.   
     add "03_hp/05_props/owl_01.png" at Position(xpos=315, ypos=270, xanchor="center", yanchor="center")
