@@ -25,7 +25,7 @@ screen main_menu_01:
 
     imagebutton: # hat                                                                                 #############################      LRM_HAT         #####################
         xpos 120 
-        ypos 280
+        ypos 67
         focus_mask True
         xanchor "center"
         yanchor "center"
