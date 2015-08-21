@@ -36,6 +36,20 @@ screen main_menu_01:
         action [Hide("main_menu_01"), Jump("lrm_stats_00")]
 
 
+    imagebutton: # GENIE
+        xpos 217
+        ypos 342
+        focus_mask True
+        xanchor "center"
+        yanchor "center"
+        idle "newanimation"
+        hover "03_hp/05_props/11_genie_02.png"
+        hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
+        #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
+        unhovered [Hide("gui_tooltip")]
+        action [Hide("main_menu_01"), Hide("animation_feather"), Jump("desk")]
+
+
         
     if package_is_here:
         imagebutton: # THE PACKAGE
@@ -49,20 +63,6 @@ screen main_menu_01:
                 #hovered [Show("gui_tooltip", my_picture="hoot", my_tt_xpos=250, my_tt_ypos=180) ] 
                 #unhovered [Hide("gui_tooltip")]
                 action [Hide("main_menu_01"), Hide("package"), Jump("mail_02")]
-
-
-    imagebutton: # GENIE
-        xpos 217
-        ypos 342
-        focus_mask True
-        xanchor "center"
-        yanchor "center"
-        idle "newanimation"
-        hover "03_hp/05_props/11_genie_02.png"
-        hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
-        #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
-        unhovered [Hide("gui_tooltip")]
-        action [Hide("main_menu_01"), Hide("animation_feather"), Jump("desk")]
     
     imagebutton: # PHOENIX
         xpos 400 
