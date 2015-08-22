@@ -10,6 +10,8 @@ init python:
         '00_ex_characters', '00_ex_characters/02_snape', '00_ex_characters/02_snape' )
     WTXmlLinker.prepareCharacterResources( 'luna', 
         '00_ex_characters', '00_ex_characters/03_luna', '00_ex_characters/03_luna' )
+    WTXmlLinker.prepareCharacterResources( 'phoenix', 
+        '00_ex_characters', '00_ex_characters/04_phoenix', '00_ex_characters/04_phoenix' )
 
 
 init:
@@ -221,6 +223,13 @@ init:
             constVals={"pos_door": gMakePos( 460, -60 ), "pos_center": POS_140}))
         SetArrayValue("chibiluna", "door", [610,220])
         SetArrayValue("chibiluna", "center", [370,220])
+        
+        global phoenix
+        phoenix=RegEntry(Person("phoenix", "Феникс", CharacterExData( WTXmlLinker.getLinkerKey_phoenix()), 
+            defVals={"pos": POS_610f, "pos2": gMakePos( 340, 420 )}, 
+            constVals={"pos_door": gMakePos( 460, -60 ), "pos_center": POS_140}))
+        SetArrayValue("chibiphoenix", "door", [610,220])
+        SetArrayValue("chibiphoenix", "center", [370,220])
 
 
 
@@ -3864,6 +3873,7 @@ init-2:
     $ l = Character('Лола', color="#402313", window_right_padding=230, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Text box used for "head only" speech. (Because it has padding).
     
     $ lun = Character('Луна', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
+    $ pho = Character('Феникс', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
     
 #    $ daph = Character('Дафна', color="#402313", show_two_window=True, ctc="ctc3", ctc_position="fixed")
 #    $ daph2 = Character('Дафна', color="#402313", window_right_padding=220, show_two_window=True, ctc="ctc3", ctc_position="fixed") #Это текстовое окно, оно используется для головы(потому что имеет отступы)

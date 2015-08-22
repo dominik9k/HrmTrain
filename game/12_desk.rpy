@@ -359,6 +359,19 @@ label desk:
             $luna.Visibility()
             jump desk
             
+        "- Тест 8 -" if False:
+            $phoenix.LoadDefItemSets()
+            $phoenix.Visibility("body+", False)
+            $phoenix("~a a def o// Привет !")
+            $phoenix.body.data().addItem( 'item_pose_back_open' )
+            $phoenix("Я ухожу.")
+            $phoenix.body.data().delPose()
+            $phoenix.body.data().addItem( 'item_pose_back_closed' )
+            $phoenix(".........")
+            $phoenix.body.data().delPose()  
+            $phoenix.Visibility()
+            jump desk
+            
 ### DR'S NEWSPAPER ooo ###
 
         "- Писать статьи для газеты -" if nsp_newspaper_articles < 8 and nsp_newspaper_menu > 0 and nsp_newspaper_ready == False and nsp_newspaper_published == False:
