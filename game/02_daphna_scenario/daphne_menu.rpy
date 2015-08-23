@@ -20,8 +20,6 @@ label daphne_approaching(isKnocking=False):
 
     $daphne.Visibility("body+", False)
 
-    $felixblock = False
-    
     python:
         for t in [
             (0, ["daphne:> ~55 00 1 def// Да, профессор?"]),
@@ -94,7 +92,7 @@ label daphne_approaching(isKnocking=False):
                         "\"(Не сейчас.)\"":
                             jump daphne_main_menu_requests 
                     
-                    if not wtevent.Name in {"dap_request_01", "IsRunNumber(4)", "dap_request_03"}: # Дневные задания или задания на которых не обещается подрок
+                    if not wtevent.Name in {"dap_request_01", "IsRunNumber(4)", "dap_request_03_complete", "dap_request_05_complete"}: # Дневные задания или задания на которых не обещается подрок
                         call daphne_pre_menu(_return) # Вызов меню подарков
                     else:
                         $screens.HideD3("bld1")
@@ -192,8 +190,21 @@ label daphne_approaching(isKnocking=False):
                 jump night_main_menu
 
        
+ #### Проверка на соответствие чибиков и спрайта ####
 
-        
+label dap_chibi_load:
+    if daphne.chibi.State(appearance="a"):
+
+        $daphne.ItemsCustomize(update={"combi:daphne_combi_handsonhip"})
+        $daphne.ItemsCustomize(update={"skirt:daphne_skirt"})
+
+    elif daphne.chibi.State(appearance="g") and daphne.ItemsCustomize(update={"combi:daphne_combi_handsonhip"}) and daphne.ItemsCustomize(update={"skirt:daphne_skirt"}):
+
+        $daphne.ItemsCustomize(delete={"combi:daphne_combi_handsonhip"})
+        $daphne.ItemsCustomize(delete={"skirt:daphne_skirt"})
+
+return
+
 ### CHITCHAT WITH DAPHNE ###
 label daphne_chat:
     if this.IsStep("DAPHNECHAT"):
@@ -228,4 +239,3 @@ label daphne_chat:
 # Добавить новую ветку разговоров # Придумывать надо
 
     jump daphne_main_menu
-

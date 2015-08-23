@@ -745,28 +745,22 @@ image blk50 = im.Alpha("blackfade.png", 0.5)
 
 
 
-    #$#$# DAPHNE ANIMATIONS #$#$#
+    ### DAPHNE ANIMATIONS ###
 
 image dap_fap:
     "03_hp/24_daphne/dap_fap_a1.png"
-    pause 0.8
-    "03_hp/24_daphne/dap_fap_a1.png"
-    pause 0.8
+    pause 0.2
+    "03_hp/24_daphne/dap_fap_a2.png"
+    pause 0.2
     "03_hp/24_daphne/dap_fap_a3.png"
-    pause 0.8
+    pause 0.2
     "03_hp/24_daphne/dap_fap_a4.png"
-    pause 0.8
+    pause 0.2
     "03_hp/24_daphne/dap_fap_a5.png"
-    pause 0.8
+    pause 0.2
     "03_hp/24_daphne/dap_fap_a6.png"
-    pause 0.8
-    restart
-
-image dap_look_a1:
-    "03_hp/24_daphne/dap_title_a1.png"
-
-image dap_look_a2:
-    "03_hp/24_daphne/dap_title_a2.png"
+    pause 0.2
+    repeat
 
     ### INTRO MOVIE ANIMATIONS ###
 
@@ -2897,7 +2891,7 @@ image undershirt_cum_ani:
     repeat
     
 ### HERMIONE HANDJOB CUMMING ON THE SHIRT ###
-image on_shirt_cum_ani:
+image on_shirt_cum_ani: # Сделать дубль для Дафны
     "03_hp/08_animation_02/15_cum_00.png"
     pause.1
     "03_hp/08_animation_02/15_cum_01.png"
