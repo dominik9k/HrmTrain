@@ -33,7 +33,7 @@ label dap_request_02_complete:
         $daphne("~73 01 1 pur// Хм,... Ну, я надеюсь, что этого пока хватит.")
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-        $daphne.ItemsCustomize(delete={"sleeves"}).chibi.State(appearance="c")#.Refresh()
+        $daphne.ItemsCustomize(delete={"sleeves"}).chibi.State(appearance="c").Refresh()
         pause.5
         $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
         $screens.Show("ctc").Pause().Hide("ctc")
@@ -53,7 +53,7 @@ label dap_request_02_complete:
         $daphne("~46 00 2 ehh// Отлично, давно хотела снять эти чулки, в них я выгляжу по-уродски.")
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-        $daphne.ItemsCustomize(delete={"stockings"}).chibi.State(appearance="c")#.Refresh()
+        $daphne.ItemsCustomize(delete={"stockings"}).chibi.State(appearance="c").Refresh()
         pause.5
         $screens.Hide(Dissolve(1), "blkfade") #Completely black screen.
         $screens.Show("ctc").Pause().Hide("ctc")
@@ -81,7 +81,7 @@ label dap_request_02_complete:
         $daphne("~73 01 2 pur// Но я пока не готова, сэр. И раз сегодня нужно что-то снять...//~55 01 2 pou// Тогда я сниму лифчик. Отвернитесь, сэр!//~55 01 3 pou// Хотя нет, лучше я сама отвернусь.")
 
         $screens.Show(Dissolve(1), "blkfade") #Completely black screen.
-        $daphne.ItemsCustomize(delete={"bra"}, update={"combi:cheer_topbase_withnipples"}).chibi.State(appearance="f")#.Refresh()
+        $daphne.ItemsCustomize(delete={"bra"}, update={"combi:cheer_topbase_withnipples"}).chibi.State(appearance="f").Refresh()
         pause.5
         $screens.Hide(Dissolve(1), "blkfade") 
         $screens.Show("ctc").Pause().Hide("ctc")
@@ -129,7 +129,7 @@ label dap_request_02_complete:
         $hero("А два дня назад мне показалось, что для вас это в порядке вещей.....// Тогда, полагайтесь на удачу.....// Только она сможет вам помочь.....// Можете быть свободны мисс Гринграсс....")
         $daphne("~55 00 2 dis// Пф!...")
         $daphne.liking-=15
-        $hero("#(Надо бы научится держать язык за зубами).")
+        $hero(g4, "#(Надо бы научится держать язык за зубами).")
         $wtevent.Finalize("daphne_goout")
     elif IsRunNumber(5):
         if daphne.whoring < 7:
@@ -179,7 +179,7 @@ label dap_request_02_complete:
         "> Она хоть и смущенно, но снимает с себя юбку."
 
         $screens.Show(Dissolve(1), "blkfade")
-        $daphne.ItemsCustomize(delete={"skirt"}).chibi.State(appearance="g")#.Refresh()
+        $daphne.ItemsCustomize(delete={"skirt"}).chibi.State(appearance="g").Refresh()
         pause.5
         $screens.Hide(Dissolve(1), "blkfade") 
         $screens.Show("ctc").Pause().Hide("ctc")
@@ -190,7 +190,8 @@ label dap_request_02_complete:
                 $daphne("~55 00 1 neu// Спасибо, сэр...")
                 $hero("Хм....// «Спасибо... сэр...»// Что-то это мне напоминает....// Ах да....")
                 stop music
-                $screens.Show(Dissolve(1), "white") #По хорошему здесь должен быть whitefade, но игру выкидывает, когда я его ставлю. Хз почему.
+                $daphne.Visibility()
+                $screens.Show(Dissolve(1), "white")
                 pause 1.5
                 "Мне нравятся ваши трусики Гермиона..."
                 "Спасибо, профессор..."
@@ -199,6 +200,7 @@ label dap_request_02_complete:
                 $hero(g9, "#(Интересно... что сейчас делает Гермиона).")
                 $daphne("~55 02 2 ehh// #.....Сэр?!")
                 $hero(m, "......?!")
+                $daphne.Visibility("body+", True)
                 $screens.Hide(Dissolve(1), "white")
                 $daphne("~37 00 2 neu// ...Сэр, вы меня слышите?// ....Я что-то сделала не так?!")
                 $hero("Оу... Я извиняюсь...// Кажется я немного призадумался....")
@@ -209,7 +211,7 @@ label dap_request_02_complete:
                 $daphne("~55 01 2 dis//")
 
                 $screens.Show(Dissolve(1), "blkfade")
-                $daphne.ItemsCustomize(update={"combi:cheer_topbase_withnipples"}).chibi.State(appearance="f")#.Refresh()
+                $daphne.ItemsCustomize(update={"combi:cheer_topbase_withnipples"}).chibi.State(appearance="f").Refresh()
                 $daphne.ItemsCustomize(update={"skirt:cheer_long"})
                 pause.5
                 $screens.Hide(Dissolve(1), "blkfade") 
@@ -229,11 +231,11 @@ label dap_request_02_complete:
 
         menu:
             "- Отпустить её -":
-                $hero("Можете одеваться мисс Гринграсс....")
+                $hero("Вот ваша одежда, можете одеваться мисс Гринграсс....")
                 $daphne("~73 01 1 smi// Хорошо, сэр...")
 
                 $screens.Show(Dissolve(1), "blkfade")
-                $daphne.ItemsCustomize(update={"combi:daphne_combi_handsonhip"}).chibi.State(appearance="a")#.Refresh()
+                $daphne.ItemsCustomize(update={"combi:daphne_combi_handsonhip"}).chibi.State(appearance="a").Refresh()
                 $daphne.ItemsCustomize(update={"skirt:daphne_skirt"})
                 pause.5
                 $screens.Hide(Dissolve(1), "blkfade") 
@@ -241,20 +243,20 @@ label dap_request_02_complete:
 
                 $daphne.liking += 3
             "- Она может больше -":
-                $hero("Можете одеться и подойти ко мне Дафна....// Я хочу на вас посмотреть по ближе...")
+                $hero("Вот ваша одежда, можете одеться и подойти ко мне Дафна....// Я хочу на вас посмотреть поближе...")
                 $daphne("~37 00 2 neu// Эм... Ну если так нужно, сэр...")
-            
+
                 $screens.Show(Dissolve(1), "blkfade")
                 $daphne.ItemsCustomize(update={"combi:daphne_combi_handsonhip"})
                 $daphne.ItemsCustomize(update={"skirt:daphne_skirt"})
                 pause.5
                 "> Дафна медленно подходит к вам."
-                $daphne.chibi.State(appearance="f")
                 hide screen genie
-                show screen dap_look_a1
+                show screen look_01
                 $hero("И кофту тоже, мисс...// ............// Хорошо, а теперь облакотитесь на стол...")
                 $daphne("Эм... Так?")
                 $hero("Да, замечательно.")
+                $daphne.chibi.Hide()
                 $screens.Hide(Dissolve(1), "blkfade") 
                 $screens.Show("ctc").Pause().Hide("ctc")
 
@@ -262,69 +264,75 @@ label dap_request_02_complete:
                     "\"Просто смотреть.\"":
                         "> Вы смотрите на тело Дафны..."
                         pause.5
-                        $daphne("~55 01 3 smi//")
-                        $daphne("~55 01 3 ope// Профессор, эм...// Долго мне еще придется так стоять?")
+                        $daphne("~26 03 3 smi//")
+                        $daphne("~55 01 2 ope// Профессор, эм...// Долго мне еще придется так стоять?")
                         $hero("Я смущаю вас, мисс?")
-                        $daphne("~55 01 3 ope// Эм... ну, я...// Я просто хотела узнать сколько вы еще будете рассматривать меня...")
+                        $daphne("~72 02 1 pou// Эм... ну, я...// Я просто хотела узнать сколько вы еще будете рассматривать меня...")
                         $hero("Соберитесь Дафна...// Если вы стесняетесь меня, как же вы будете вести себя перед жури?")
-                        $daphne("Хорошо... профессор, вы правы.")
+                        $daphne("~26 s1 1 neu// Хорошо... профессор, вы правы.")
                         "> Вы продолжаете смотреть на тело Дафны какое то время..."
                         pause.5
-                        $hero("Хорошо, можете одеваться, мисс...")
-                    "\"Попросить снять бюстгальтер.\"":
+                        $hero("Хорошо, можете быть свободны, мисс...")
+
+                        $screens.Show(Dissolve(1), "blkfade")
+                        pause.5
+                        $daphne.ItemsCustomize(update={"bra"}).chibi.State(appearance="a").Refresh()
+                        hide screen look_01
+                        show screen genie
+                        $screens.Hide(Dissolve(1), "blkfade")
+
+                    "\"Попросить её, показать сиьки.\"":
                         if daphne.whoring > 8:
-                            $daphne("Эм... сэр, я не думаю что стоит делать это перед вами...// Я понимаю, что это все ради конкурса, но...")
+                            $daphne("~55 01 3 dis// Эм... сэр, я не думаю что стоит делать это перед вами...//~76 02 2 neu// Я понимаю, что это все ради конкурса, но...")
                             $hero("Но вы предпочитаете видеть других на пьедестале, нежели себя...// Дело ваше, мисс... И вам решать, что позволительно, а что нет.")
-                            $daphne("Просто я...")
+                            $daphne("~55 s1 2 ope// Просто я...")
                             $hero("Просто вы не способны на это, признайте мисс, вам ведь нет никакого дела до конкурса...")
-                            $daphne("Не правда!")
+                            $daphne("~26 w0 2 wo// ЭТО ЛОЖЬ!")
                             $hero("Так докажите это!// Не вы ли мне уже не раз рассказывали, о том что я был прав.// Так вот, мисс... Я и сейчас прав, но когда вы это в очередной раз поймете... будет поздно.")
-                            $daphne("...........")
+                            $daphne("~59 01 2 neu// ...........")
                             $hero("Ладно... Я погорячился...// Хорошо... Значит... Давайте мы с вами...")
-                            $daphne("...........")
+                            $daphne("~59 01 3 neu// ...........")
 
                             $screens.Show(Dissolve(1), "blkfade")
                             $daphne.ItemsCustomize(delete={"combi:daphne_combi_handsonhip"})
-                            $daphne.ItemsCustomize(delete={"bra"})
                             pause.5
                             "> Дафна задирает кофту."
-                            hide screen dap_look_a1
-                            show screen dap_look_a2
+                            hide screen look_01
+                            show screen look_02
                             $screens.Hide(Dissolve(1), "blkfade")
                             $screens.Show("ctc").Pause().Hide("ctc")
 
-                            $hero("{size=+5}...!?{/size}")
-                            $daphne("Конкурс для меня не пустое слово профессор...")
-                            $hero("Теперь я вам верю, мисс Гринграсс.")
+                            $hero(g4, "{size=+5}...!?{/size}")
+                            $daphne("~26 02 2 neu// Конкурс для меня не пустое слово профессор...")
+                            $hero(g9, "Теперь я вам верю, мисс Гринграсс.")
                             "> Вы любуетесь грудью Дафны"
                             pause.5
-                            $hero("Вы в порядке, мисс?")
-                            $daphne("...Да// Просто я еще никому не позволяла смотреть на мою....")
+                            $hero(m, "Вы в порядке, мисс?")
+                            $daphne("...Да//~77 01 3 ang// Просто я еще никому не позволяла смотреть на мою....")
                             $hero("Если вы хотите, то можете...")
-                            $daphne("Нет. Я не стану больше стоять в стороне, когда другие...")
+                            $daphne("~36 w0 3 ope// Нет. Я не стану больше стоять в стороне, когда другие...")
                             "> Вы еще некоторое время смотрите на грудь Дафны"
                             pause.5
                             $hero("Я думаю этого хватит, мисс.// Одевайтесь.")
-                            $daphne("Хорошо...")
+                            $daphne("~26 01 2 smi// Хорошо...")
 
                             $screens.Show(Dissolve(1), "blkfade")
                             $daphne.ItemsCustomize(update={"combi:daphne_combi_handsonhip"})
                             $daphne.ItemsCustomize(update={"bra"})
                             pause.5
-                            $daphne.chibi.State(appearance="a")
                             show screen genie
-                            hide screen dap_look_a1
-                            $screens.Hide(Dissolve(1), "blkfade") 
+                            hide screen look_02
+                            $screens.Hide(Dissolve(1), "blkfade")
                             $screens.Show("ctc").Pause().Hide("ctc")
 
-                            $daphne("Эм... Сэр, кажется вы как всегда были правы...// Главное преодолеть это...")
+                            $daphne("~55 01 2 ope// Эм... Сэр, кажется вы как всегда были правы...//~26 02 3 smi// Главное преодолеть это...")
                             $hero("Мне приятно осознавать, что вы не отступили...")
-                            $daphne("Мне тоже...")
+                            $daphne("~82 02 2 smi// Мне тоже...")
                             $daphne.whoring += 1
                         else:
-                            $daphne("Нет профессор, я не стану этого делать...// Я не ожидала от вас таких предложений...")
+                            $daphne("~55 s1 2 ope// Нет профессор, я не стану этого делать...//~68 01 3 dis// Я не ожидала от вас таких предложений...")
                             $hero("Дело ваше, мисс... И вам решать, что позволительно, а что нет.")
-                            $daphne("Еще бы...// Кажется мне лучше уйти...")
+                            $daphne("Еще бы...//~26 02 3 ang// Кажется мне лучше уйти...")
                             $daphne.liking -= 7
 
                 $hero("Не спешите мисс Гринграсс...// Вы сегодня хорошо постарались, и заслуживаете поощрение....")

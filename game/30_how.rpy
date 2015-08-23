@@ -290,10 +290,11 @@ label devel:
 
     dev "Итак, для вас трудились :"
     dev "Главный координатор (встречайте стоя !): {color=FF0000}Хан ( Khan ){/color}"
-    dev "Главный разработчик : {color=00FF00}Дрон (Dron){/color}"
+    dev "Главный разработчик, сценарии : {color=00FF00}Дрон (Dron){/color}"
     dev "Разработка и ивенты Дафны : {color=7789CA}Феликс{/color}"
     dev "Поддержка игры (на плаву) : {color=0000FF}Сказочник{/color}"
     dev "Перевод на английский язык : {color=0089BE}Хан и Sezt{/color}"
+    dev "Сценарии : {color=008900}Tobie{/color}"
     dev "Разработка и обучающие ивенты : {color=4F4F4F}Nyarkohopter{/color}"
     dev "Чибики Дафны : {color=2F2F2F}Grending{/color} --> {a=http://skazgames.com/forum/memberlist.php?mode=viewprofile&u=85}Grendidg Forum{/a} | {a=https://vk.com/grendidg}Grendidg VK{/a} | {a=http://virink.com/GRENDIDG}Grendidg Virink{/a}"
     dev "Дафна : {color=6F6F6F}Zio Dyne{/color}"

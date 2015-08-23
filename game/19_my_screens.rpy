@@ -384,7 +384,18 @@ screen room: #MAIN ROOM BG. #ну, тут все просто. Кстати, з�
     add "03_hp/01_bg/01_main_room.png"
 screen room_night: #MAIN ROOM NIGHT BG. 
     add "03_hp/01_bg/01_main_room_02.png"
-    
+
+screen look_01:
+    add "03_hp/24_daphne/dap_look_a1.png"
+screen look_02:
+    add "03_hp/24_daphne/dap_look_a2.png"
+screen look_fap_01:
+    add "03_hp/24_daphne/dap_look_b2.png"
+
+screen dap_fap_genie :
+    add "dap_fap" at Position(xpos=70)
+    zorder 2
+
 screen door:    
     add "03_hp/05_props/01_door.png" at Position(xpos=758, ypos=315, xanchor="center", yanchor="center")
 screen cupboard:
