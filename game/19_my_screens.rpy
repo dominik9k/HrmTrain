@@ -63,19 +63,20 @@ screen main_menu_01:
                 #hovered [Show("gui_tooltip", my_picture="hoot", my_tt_xpos=250, my_tt_ypos=180) ] 
                 #unhovered [Hide("gui_tooltip")]
                 action [Hide("main_menu_01"), Hide("package"), Jump("mail_02")]
-    
-    imagebutton: # PHOENIX
-        xpos 400 
-        ypos 225
-        focus_mask True
-        xanchor "center"
-        yanchor "center"
-        idle "pho_01" 
-        hover "03_hp/05_props/06_phoenix_02.png"
-        #hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
-        #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
-        #unhovered [Show("gui_tooltip", my_picture="feather", my_tt_xpos=360, my_tt_ypos=140, xanchor="center", yanchor="center") ]
-        action [Hide("main_menu_01"), Hide("animation_feather"), Jump("phoenix")]
+
+    if pnx_lock == False :
+        imagebutton: # PHOENIX
+            xpos 400 
+            ypos 225
+            focus_mask True
+            xanchor "center"
+            yanchor "center"
+            idle "pho_01" 
+            hover "03_hp/05_props/06_phoenix_02.png"
+            #hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
+            #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
+            #unhovered [Show("gui_tooltip", my_picture="feather", my_tt_xpos=360, my_tt_ypos=140, xanchor="center", yanchor="center") ]
+            action [Hide("main_menu_01"), Hide("animation_feather"), Jump("phoenix")]
         
     imagebutton: # FIREPLACE
         xpos 553 
@@ -408,6 +409,8 @@ screen fireplace:
     add "03_hp/05_props/03_fireplace.png" at Position(xpos=553, ypos=277, xanchor="center", yanchor="center")
 screen phoenix:
     add "03_hp/05_props/06_phoenix.png" at Position(xpos=400, ypos=225, xanchor="center", yanchor="center")
+screen phoenix_no:
+    add "03_hp/05_props/06_phoenix_no.png" at Position(xpos=400, ypos=225, xanchor="center", yanchor="center")
 screen candle_01:
     add "03_hp/05_props/07_candle.png" at Position(xpos=693, ypos=225, xanchor="center", yanchor="center")
 screen candle_02:
@@ -1100,7 +1103,8 @@ screen l_hermiona: #Screen that shows a full sprite of HERMIONE.
     if h_smile:
         add "00_ex_characters/00_hermione/graphics/face/body_24.png" xpos hx ypos hy
 
-    
-    
+screen heal3 :
+    add "heal" xpos 520 ypos 20
+    zorder 4
     
 

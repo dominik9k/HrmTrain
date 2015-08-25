@@ -366,6 +366,11 @@ $ wrd_rent_business = 0
 
 $ wrd_nopanties_dialog = False
 
+### Phoenix
+
+$ pnx_stage = 0
+$ pnx_lock = False
+
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
 $ letter_from_ficbook_fun = False
@@ -565,8 +570,6 @@ if this.event_05._finish2==4:
     $ hat_examined = True
     $ rum_times = 4
 $ report_talk = False    
-
-call wrd_dress_change_silent
 
 # QUESTS #==============================================================================================================================================
 $ zyablik_switch = 0

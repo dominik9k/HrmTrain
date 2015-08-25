@@ -360,17 +360,8 @@ label desk:
             jump desk
             
         "- Тест 8 -" if False:
-            $phoenix.LoadDefItemSets()
-            $phoenix.Visibility("body+", False)
-            $phoenix("~a a def o// Привет !")
-            $phoenix.body.data().addItem( 'item_pose_back_open' )
-            $phoenix("Я ухожу.")
-            $phoenix.body.data().delPose()
-            $phoenix.body.data().addItem( 'item_pose_back_closed' )
-            $phoenix(".........")
-            $phoenix.body.data().delPose()  
-            $phoenix.Visibility()
-            jump desk
+
+            jump pnx_call
             
 ### DR'S NEWSPAPER ooo ###
 
