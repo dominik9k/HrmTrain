@@ -65,6 +65,17 @@ label jerk_off:
        if cum_on_desk:
            ">Вы обильно кончаете на стол."
            g4 "Придется здесь прибраться..."
+           
+           if ((wather_generator >= 31 and wather_generator <= 40) or (wather_generator >= 51 and wather_generator <= 60)) and not daytime:
+               hide screen genie_jerking_sperm
+               $ jerking_off_to_jasmine = False #Turns TRUE when Princess Jasmine has been chosen as a target for a jerk-off session.
+               $ jerking_off_to_lara = False 
+               $ cum_on_the_floor = False #TRUE when chosen to cum on the floor.
+               $ cum_on_panties = False #True when choose to cum on Hermione's panties.
+               
+               jump pnx_call
+           
+           
        if cum_on_the_floor:
            ">Вы кончили на пол."
        if cum_on_panties:
