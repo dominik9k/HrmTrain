@@ -177,7 +177,7 @@ label pnx_call :
             $phoenix("...Как вам будет угодно.")
             $phoenix.body.data().delPose()
             $phoenix.body.data().addItem( 'item_pose_back_closed' )
-            ">Девушка элегантно преобразуется в феникса, сидящего на прежнем месте"
+            ">Девушка элегантно преобразуется в феникса, сидящего на прежнем месте."
             $phoenix.body.data().delPose()  
             $phoenix.Visibility()
             

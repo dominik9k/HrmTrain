@@ -226,7 +226,7 @@ init:
         
         global phoenix
         phoenix=RegEntry(Person("phoenix", "Феникс", CharacterExData( WTXmlLinker.getLinkerKey_phoenix()), 
-            defVals={"pos": POS_610f, "pos2": gMakePos( 340, 420 )}, 
+            defVals={"pos": POS_520f, "pos2": gMakePos( 340, 420 )}, 
             constVals={"pos_door": gMakePos( 460, -60 ), "pos_center": POS_140}))
         SetArrayValue("chibiphoenix", "door", [610,220])
         SetArrayValue("chibiphoenix", "center", [370,220])

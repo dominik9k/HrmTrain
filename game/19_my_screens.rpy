@@ -1104,7 +1104,7 @@ screen l_hermiona: #Screen that shows a full sprite of HERMIONE.
         add "00_ex_characters/00_hermione/graphics/face/body_24.png" xpos hx ypos hy
 
 screen heal3 :
-    add "heal" xpos 520 ypos 20
+    add "heal" xpos 430 ypos 20
     zorder 4
     
 
