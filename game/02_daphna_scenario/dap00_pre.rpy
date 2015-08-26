@@ -526,8 +526,7 @@ label daphne_pre_finish: #LV.1 (Whoring = 0 - 2)
 
         $wtevent.Finalize()
 
-    #label daphne_pre_menu(sayText=daphne_pre_menu_text):
-    label daphne_pre_menu:
+    label daphne_pre_menu(sayText=daphne_pre_menu_text):
     $item=None
     menu:
         "- Дать ей подарок на прощание -":
