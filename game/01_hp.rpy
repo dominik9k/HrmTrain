@@ -369,7 +369,6 @@ $ wrd_nopanties_dialog = False
 ### Phoenix
 
 $ pnx_stage = 0
-$ pnx_lock = False
 
 ### GETTING LETTERS ###
 $ letter_from_hermione_02 = False #Turns true when you get second letter from Hermione.
