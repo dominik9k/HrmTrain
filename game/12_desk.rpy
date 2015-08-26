@@ -277,11 +277,11 @@ label desk:
             show screen bld1
             with d3
             
-            $ nsp_germiona_rights_1_statimg = "New"
-            $ nsp_germiona_rights_1_photo = "dis"
-            $ nsp_event_rights_1 = 1
-            $ cur_level = 2
-            call nsp_event_rights_1
+            $ nsp_germiona_rights_2_statimg = "New"
+            $ nsp_germiona_rights_2_photo = "dis"
+            $ nsp_event_rights_2 = 0
+            $ cur_level = 1
+            call nsp_event_rights_2
             jump hermione_goout
             
         "- Тест 2 -" if False :
