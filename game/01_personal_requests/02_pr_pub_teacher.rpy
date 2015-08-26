@@ -352,6 +352,7 @@ label new_request_02_c_complete:  ### FLIRTING WITH TEACHERS COMPLETE ###
                                     # add pose with lifted skirt and authograph
                                     #call wrd_dress_undress_skirts
                                     $ hermi.WrdUpSkirt()
+                                    $herView.data().addItem( 'item_autograph' )
                                     #$herView.data().addItem( 'item_pose_lifted_skirt' )
                                     
                                     $herView.showQ( "body_51.png", pos )
