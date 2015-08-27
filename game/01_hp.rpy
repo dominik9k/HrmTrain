@@ -708,7 +708,7 @@ $ day_of_week += 1
 # Ежеденевные изменения для всех персонажей
 $hermi.liking+=1
 $daphne.liking+=1
-
+show screen reload_main
 ### DR'S newspaper ooo ###
 #">>>[nsp_newspaper_articles] [nsp_newspaper_ready] [nsp_newspaper_published] [nsp_newspaper_published_mail]"
 
