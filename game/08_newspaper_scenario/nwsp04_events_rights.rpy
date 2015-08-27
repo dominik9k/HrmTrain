@@ -236,7 +236,11 @@ label nsp_event_rights_1_complete :
         $herView.hideshowQQ( "body_52.png", pos )
         her "Это непримелимо и с ними нужно бороться."
         her "Хороший финал, сэр ?"
-        ">Бульк."
+        $ renpy.play('sounds/gulp.mp3')
+        pause.8
+        $ renpy.play('sounds/gulp.mp3')
+        pause.8
+        $ renpy.play('sounds/gulp.mp3')
         g7 "Да да, все отлично. Ты можешь идти. У меня тут небольшая авария."
         $herView.hideshowQQ( "body_50.png", pos )
         her "Эх, профессор."
