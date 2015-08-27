@@ -147,6 +147,9 @@ label pnx_call :
         
         hide screen heal3
         
+        if pnx_stage == 0 :
+            $ pnx_stage = 1
+        
         if pnx_stage <= 1 :
 
             g4 "Что… кто… откуда…"
