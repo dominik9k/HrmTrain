@@ -1,6 +1,6 @@
 label jerk_off:
-   $ cum_on_desk = False
-   $ cum_on_the_floor = False
+   $ cum_on_floor = False
+   $ cum_under_desk = False
    $ jerk_zorder = 5
    $ cum_on_panties = False #True when choose to cum on Hermione's panties.
    m "Хм...кем же мы займемся сегодня?"
@@ -18,11 +18,11 @@ label jerk_off:
    m "Куда бы кончить?"   
    label how_to_finish:
        menu:
-           "- На пол -":
-               $ cum_on_the_floor = True #TRUE when chosen to cum on the floor.
+           "- Под стол -":
+               $ cum_under_desk = True #TRUE when chosen to cum on the floor.
                pass
-           "- На стол -":
-               $ cum_on_desk = True
+           "- На пол -":
+               $ cum_on_floor = True
                pass
            "{color=#858585}- (ЗАБЛОКИРОВАННО) -{/color}" if not request_03: #True when Hermione has no panties on.:
                ">Вам не доступен этот выбор."
@@ -62,22 +62,22 @@ label jerk_off:
            g4 "О да! Вау... Давненько такого не было."
        # hide screen genie_jerking_off
        show screen genie_jerking_sperm
-       if cum_on_desk:
-           ">Вы обильно кончаете на стол."
+       if cum_on_floor:
+           ">Вы обильно кончаете на пол."
            g4 "Придется здесь прибраться..."
            
            if ((wather_generator >= 31 and wather_generator <= 40) or (wather_generator >= 51 and wather_generator <= 60)) and not daytime:
                hide screen genie_jerking_sperm
                $ jerking_off_to_jasmine = False #Turns TRUE when Princess Jasmine has been chosen as a target for a jerk-off session.
                $ jerking_off_to_lara = False 
-               $ cum_on_the_floor = False #TRUE when chosen to cum on the floor.
+               $ cum_under_desk = False #TRUE when chosen to cum on the floor.
                $ cum_on_panties = False #True when choose to cum on Hermione's panties.
                
                jump pnx_call
            
            
-       if cum_on_the_floor:
-           ">Вы кончили на пол."
+       if cum_under_desk:
+           ">Вы кончили под стол."
        if cum_on_panties:
            $ have_cum_soaced_panties = True #TRUE when you have the panties in your possession (before you return them to Hermione).
            ">Вы кончили на трусики Гермионы, а затем протерли ими пол..."
@@ -90,7 +90,7 @@ label jerk_off:
    ### SETTING ALL THE FLAGS BACK TO DEFAULT ###
    $ jerking_off_to_jasmine = False #Turns TRUE when Princess Jasmine has been chosen as a target for a jerk-off session.
    $ jerking_off_to_lara = False 
-   $ cum_on_the_floor = False #TRUE when chosen to cum on the floor.
+   $ cum_under_desk = False #TRUE when chosen to cum on the floor.
    $ cum_on_panties = False #True when choose to cum on Hermione's panties.
    
    if daytime:
