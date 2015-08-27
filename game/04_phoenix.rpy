@@ -9,6 +9,8 @@ label phoenix:
             with Dissolve(0.3)
             pause 1
             show screen phoenix_food
+            show screen bld1
+
             ">Когда вы подходите к фениксу, он смотрит на вас ожидающим взглядом и немного оживает."
             m "Ну чего ты, птичка, грустишь? Хоть директора и нет, я о тебе позабочусь. "
             m "Видали и более противных попугаев, и ни чего - в обиду их не давал…"
@@ -47,6 +49,7 @@ label phoenix:
 
             m "Он точно что-то знает. Нужно разгадать этот ребус. Мой член в этом заинтересован."
 
+            hide screen bld1
             show screen genie
             hide screen feeding 
             with Dissolve(0.3)
@@ -127,15 +130,14 @@ label petting:
    
 label pnx_call :
 
-        hide screen main_menu_01
-        $ pnx_lock = True
-        show screen main_menu_01
 
         $phoenix.LoadDefItemSets()
         $phoenix.Visibility("body+", False)
 
         hide screen phoenix
         show screen phoenix_no
+        hide screen animation_feather
+        show screen bld1
         
         $phoenix("~n c def c")
         show screen heal3
@@ -177,7 +179,7 @@ label pnx_call :
             $phoenix("...Как вам будет угодно.")
             $phoenix.body.data().delPose()
             $phoenix.body.data().addItem( 'item_pose_back_closed' )
-            ">Девушка элегантно преобразуется в феникса, сидящего на прежнем месте"
+            ">Девушка элегантно преобразуется в феникса, сидящего на прежнем месте."
             $phoenix.body.data().delPose()  
             $phoenix.Visibility()
             
@@ -578,10 +580,10 @@ label pnx_call :
             m "Эх... думаю, мы с ней не помиримся..."
 
         $ pnx_stage += 1
-   
-        hide screen main_menu_01
-        $ pnx_lock = False
-        show screen main_menu_01
+        
+        hide screen bld1
+        
+        show screen animation_feather
         
         if daytime:
            jump night_start

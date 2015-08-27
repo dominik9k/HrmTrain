@@ -64,19 +64,18 @@ screen main_menu_01:
                 #unhovered [Hide("gui_tooltip")]
                 action [Hide("main_menu_01"), Hide("package"), Jump("mail_02")]
 
-    if pnx_lock == False :
-        imagebutton: # PHOENIX
-            xpos 400 
-            ypos 225
-            focus_mask True
-            xanchor "center"
-            yanchor "center"
-            idle "pho_01" 
-            hover "03_hp/05_props/06_phoenix_02.png"
-            #hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
-            #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
-            #unhovered [Show("gui_tooltip", my_picture="feather", my_tt_xpos=360, my_tt_ypos=140, xanchor="center", yanchor="center") ]
-            action [Hide("main_menu_01"), Hide("animation_feather"), Jump("phoenix")]
+    imagebutton: # PHOENIX
+        xpos 400 
+        ypos 225
+        focus_mask True
+        xanchor "center"
+        yanchor "center"
+        idle "pho_01" 
+        hover "03_hp/05_props/06_phoenix_02.png"
+        #hovered [Show("gui_tooltip", my_picture="exclaim_01", my_tt_xpos=195, my_tt_ypos=210) ] 
+        #hovered [Show("config_afterchoices_skip_idle.png", xpos=46, ypos=518) ]
+        #unhovered [Show("gui_tooltip", my_picture="feather", my_tt_xpos=360, my_tt_ypos=140, xanchor="center", yanchor="center") ]
+        action [Hide("main_menu_01"), Hide("animation_feather"), Jump("phoenix")]
         
     imagebutton: # FIREPLACE
         xpos 553 
@@ -1104,7 +1103,7 @@ screen l_hermiona: #Screen that shows a full sprite of HERMIONE.
         add "00_ex_characters/00_hermione/graphics/face/body_24.png" xpos hx ypos hy
 
 screen heal3 :
-    add "heal" xpos 520 ypos 20
+    add "heal" xpos 430 ypos 20
     zorder 4
     
 

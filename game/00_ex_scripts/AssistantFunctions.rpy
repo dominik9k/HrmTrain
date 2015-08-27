@@ -13,4 +13,4 @@
     POS_320 = gMakePos( 320, 0 )
     POS_120 = gMakePos( 120, 0 )
     POS_140 = gMakePos( 140, 0 )
-    POS_610f = gMakePos( 610, 70 )
+    POS_520f = gMakePos( 520, 114 )

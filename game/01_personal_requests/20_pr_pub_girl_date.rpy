@@ -131,6 +131,20 @@ label new_request_20_complete: # <==============================================
     $ walk_xpos=520 #Animation of walking chibi. (From)
     $ walk_xpos2=400 #Coordinates of it's movement. (To)
     $ hermione_speed = 02.0 #The speed of moving the walking animation across the screen.
+    
+    if hermi.whoring >= 18 and one_out_of_three == 3 :
+            show screen blktone
+            with d3
+            pause
+            m "Хм… странно, ее все еще нет…"
+            show screen blktone
+            with d3
+            pause
+            m "Может она забыла?"
+            g9 "А может она просто кувыркается с кем-то в постельке?"
+            g9 "Вот шлюшка!"
+            g9 "Буду ждать завтра подробного доклада!"
+    
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     show screen hermione_walk_01 
     with d4
@@ -598,89 +612,153 @@ label new_request_20_complete: # <==============================================
 
             
         elif one_out_of_three == 3: ### EVENT (C) Only takes place once
-            if lazy_aka_not_yet:
-                pass
-            else:
-                jump snowballing
-                
-            $ lazy_aka_not_yet = False #Makes sure this event only takes place once.
             play music "music/Chipper Doodle v2.mp3" fadein 1 fadeout 1 # HERMIONE'S THEME.
-            m "Мисс Грейнджер, вы завершили задание?"
-            show screen blktone
-            with d3
-            $herView.hideshowQQ( "body_45.png", pos )
-            her "Да, сэр."
-            m "Шикарно. Расскажите мне больше."
-            show screen blktone
-            with d3
+            $herView.hideshowQQ( "body_56.png", pos )
+            her "Простите, сэр, я немного задержалась."
+            $herView.hideshowQQ( "body_84.png", pos )
+            m "Эх, жаль…"
+            m "Я имел в виду, хорошо, что вы все-таки пришли."
+            m "Вы прямо сияете от счастья. Думаю, вам есть, что мне рассказать."
             $herView.hideshowQQ( "body_64.png", pos )
-            her "Конечно."
-            her "Я решила попробовать сегодня другой подход..."                                                                                                                                                                                                              
-            $ pos.xpos = 500
-
-            # use CharacterExItemPoseParade to hide all items
-            #$ herView.data().addPose( CharacterExItemPoseParade( herView.mPoseFolder, "hermione_bugged_branch.png", G_Z_FACE + 5 ) )
-            $ herView.data().addItem( 'item_pose_bug' )
-            $herView.showQ( "body_63.png", pos )
-            stop music
-            her "Я выяснила, что ессссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссс"
-            m "Хах?"
+            her "Еще как!"
+            $herView.hideshowQQ( "body_127.png", pos )
+            her "Я решила немного поменять способ. Эти искусственные лесбиянки и би-шлюшки, которым плевать вообще на то, кто с ними…"
+            $herView.hideshowQQ( "body_58.png", pos )
+            her "Они мне надоели…"
+            m "Так вы выполнили задание?"
+            $herView.hideshowQQ( "body_129.png", pos )
+            her "Конечно же!"
+            $herView.hideshowQQ( "body_59.png", pos )
+            her "Просто я решила сделать это для себя, а не для других."
+            m "Хм. То есть вы очков не хотите?"
+            $herView.hideshowQQ( "body_51.png", pos )
+            her "Профессор, вас это решение не касается."
+            $herView.hideshowQQ( "body_50.png", pos )
+            her "Я имела в виду, я поцеловалась... не с лесбиянкой… и не как лесбиянка…"
+            g9 "Вот отсюда поподробнее..."
+            $herView.hideshowQQ( "body_56.png", pos )
+            her "У нас на факультете есть одна девушка."
+            $herView.hideshowQQ( "body_78.png", pos )
+            her "Она просто секси…"
+            $herView.hideshowQQ( "body_55.png", pos )
+            her "Но она мало того, что к девушкам холодна, так у нее есть парень."
+            g9 "Мне уже интересно, что будет дальше."
+            $herView.hideshowQQ( "body_16.png", pos )
+            her "Каждый вечер ее парень пробирается к нам в спальню и… немного с ней шалит…"
+            $herView.hideshowQQ( "body_15.png", pos )
+            m "А вы это просто так позволяете?"
+            $herView.hideshowQQ( "body_189.png", pos )
+            her "Профессор, этот парень - просто мачо…"
+            $herView.hideshowQQ( "body_101.png", pos )
+            m "И вы просто так позволяете им веселиться без вас?"
+            $herView.hideshowQQ( "body_87.png", pos )
+            her "Профессор!"
+            $herView.hideshowQQ( "body_66.png", pos )
+            m "Облепили бы парня своими голыми телами, облизывали бы ему по очереди…"
+            $herView.hideshowQQ( "body_86.png", pos )
+            her "ПРОФЕССОР!"
+            $herView.hideshowQQ( "body_61.png", pos )
+            m "Молчу…"
+            $herView.hideshowQQ( "body_62.png", pos )
+            her "ВЫНЬТЕ РУКИ ИЗ-ПОД СТОЛА!"
+            $herView.hideshowQQ( "body_73.png", pos )
+            g4 "Да что ж ты за человек…"
+            $herView.hideshowQQ( "body_69.png", pos )
+            her "Так вот…"
+            $herView.hideshowQQ( "body_93.png", pos )
+            her "Я предлагала, но девчонки не хотят…"
+            $herView.hideshowQQ( "body_51.png", pos )
+            her "Руки, сэр!"
+            $herView.hideshowQQ( "body_66.png", pos )
+            g4 "..."
+            $herView.hideshowQQ( "body_59.png", pos )
+            g9 "Ну так что было дальше?"
+            $herView.hideshowQQ( "body_102.png", pos )
+            her "Она не может спать при свете. Любом. Поэтому она спит в ночной маске-очках. И вот сегодня опять приходил ее парень. Потом он услышал шум и пошел прятаться. А она легла и надела эти очки."
+            $herView.hideshowQQ( "body_58.png", pos )
+            g9 "Я в предвкушении..."
+            $herView.hideshowQQ( "body_17.png", pos )
+            her "Кто бы сомневался…"
+            $herView.hideshowQQ( "body_16.png", pos )
+            her "Моя кровать была недалеко, а практически все девочки уже спали. Я тихонько встала и подошла к ее кровати."
+            $herView.hideshowQQ( "body_15.png", pos )
+            g9 "Продолжай…"
+            $herView.hideshowQQ( "body_189.png", pos )
+            her "Я присела рядом и склонилась над ее лицом."
+            $herView.hideshowQQ( "body_121.png", pos )
+            her "Она была такая классная…"
+            $herView.hideshowQQ( "body_102.png", pos )
+            her "Она едва слышно спросила “Это ты?”. Я попыталась гукнуть в ответ низким голосом. Её руки потянулись к моему лицу…"
+            $herView.hideshowQQ( "body_78.png", pos )
+            g9 "(Чувствую, мои руки уже тоже тянутся кое-куда...)"
+            $herView.hideshowQQ( "body_106.png", pos )
+            her "Я не стала испытывать удачу и впилась ей в губы первой…"
+            $herView.hideshowQQ( "body_196.png", pos )
+            her "Это было так нежно и искренне…"
+            $herView.hideshowQQ( "body_57.png", pos )
+            her "Она потянулась к моей промежности, но, дабы ее не напугать, я взяла её руку и проводила ей же в трусы…"
+            $herView.hideshowQQ( "body_106.png", pos )
+            her "Она так мягко прикусывала мои губы… "
+            $herView.hideshowQQ( "body_56.png", pos )
+            m "И она все еще не понимала, что ты не то, что не ее парень - ты вообще не парень?"
+            $herView.hideshowQQ( "body_200.png", pos )
+            her "Она была сонной..."
+            $herView.hideshowQQ( "body_198.png", pos )
+            her "К тому же она меня не лапала… Просто копалась в волосах…"
+            $herView.hideshowQQ( "body_189.png", pos )
+            her "А ее парень был с шикарной шевелюрой. Почти как у меня, но только блондин. Это скорее ее парня можно перепутать с девушкой…"
+            $herView.hideshowQQ( "body_196.png", pos )
+            her "Затем я начала по привычке к ней приставать… залезла в трусы… под пижаму… Это было просто потрясающе…"
+            $herView.hideshowQQ( "body_188.png", pos )
+            m "Я вижу по глазам. Что было дальше?"
+            $herView.hideshowQQ( "body_190.png", pos )
+            her "Ну… Затем я услышала шум и быстро отступилась. Ее парень возвращался. Я не теряя времени бесшумно нырнула в постель, аккуратно глядя в ее сторону."
+            $herView.hideshowQQ( "body_122.png", pos )
+            her "Парень вернулся и тут же едва слышно спросил “Ты еще пока не уснула?”. Она аж с кровати подскочила. Стянула маску и спросила “Где ты был?”."
+            $herView.hideshowQQ( "body_75.png", pos )
+            her "Он ответил: “Прятался в гостиной”. Она начала подозрительно оглядывать все вокруг. Кажется, в этот момент до нее дошло, что это был не он."
+            $herView.hideshowQQ( "body_189.png", pos )
+            m "Ну ты и стервочка…"
+            $herView.hideshowQQ( "body_60.png", pos )
+            her "Потом она сказала, что очень устала и выпроводила его из спальни. Но сама не уснула. Еще некоторое время я смотрела, как она играла с собой, скинув одеяло… "
+            $herView.hideshowQQ( "body_121.png", pos )
+            her "Она повторяла наши движения и трогала себя так, как ее трогала я. Готова поспорить, она ждала меня. И, может даже, звала… "
+            $herView.hideshowQQ( "body_128.png", pos )
+            g9 "И ты вновь подошла к ней…"
+            $herView.hideshowQQ( "body_189.png", pos )
+            her "Нет, сэр. Я, вот, пришла к вам доложить…"
+            $herView.hideshowQQ( "body_119.png", pos )
+            g4 "ЧЕГО?!"
+            $herView.hideshowQQ( "body_117.png", pos )
+            her "Профессор, вы говорили…"
+            $herView.hideshowQQ( "body_118.png", pos )
+            g4 "Да плевать, что я говорил! Мигом лети к ней, пока она не уснула!"
+            $herView.hideshowQQ( "body_55.png", pos )
+            her "Но как же…"
+            $herView.hideshowQQ( "body_56.png", pos )
+            g4 "Да будут тебе очки, сколько захочешь!"
+            $herView.hideshowQQ( "body_53.png", pos )
+            m "Вернее, сколько заслужишь."
+            $herView.hideshowQQ( "body_08.png", pos )
+            her "Вы хотите..."
+            $herView.hideshowQQ( "body_203.png", pos )
+            g4 "Мне не нужны никакие подробности! Просто не смей ее оставлять в таком виде!"
+            $herView.hideshowQQ( "body_206.png", pos )
+            her "Хорошо, сэр."
+            $herView.hideshowQQ( "body_57.png", pos )
+            g9 "Давай, натри ей там всё за меня! И если она спит, засунь ей язык так глубоко между ног, чтобы она мигом проснулась!"
+            $herView.hideshowQQ( "body_108.png", pos )
+            her "Эм... я постараюсь... а..."
+            $herView.hideshowQQ( "body_55.png", pos )
+            g4 "Вон из кабинета…"
             $herView.hideQ()
-            $herView.data().delPose()
-            her "Если я смоооооооооо"
-            pause
-            pause
-            pause
-            
-            with hpunch
-            g4 "{size=+5}ТВОЮ МАТЬ!!!{/size}"
-            g4 "{size=+5}АКАБУР?!!!{/size}"
-            a4 "Хм...? ЧТО?!! Что ты хочешь от меня?"
-            a4 "Еще нет релизной даты! Хватит спрашивать меня!"
-            g4 "Что ты несешь?"
-            a5 "Нет, я не сплю..." 
-            a7 "*Зевает*..."
-            a5 "................"
-            m "Так что, теперь Гермиона будет постоянно заикаться? Так и было задумано?"
-            pause
-            pause
-            g4 "Ты еще здесь?"
-            a1 "Я не сплю..."
-            a5 "Просто мои глаза отдыхают..."
-            g4 "Что за черт, чувак?"
-            g4 "Просто иди и поспи, пока ты все не испортил."
-            m "Иди вздремни и закончи этот ивент, как полагается."
-            a1 "Я не могу..."
-            a1 "Я хочу, чтобы эта игра вышла как можно быстрее..."
-            a1 "Нет, перепиши это. Я хочу чтобы она вышла быстрее, чем это возможно..."
-            a1 "Люди верят в меня... и..."
-            a7 "*зевает*..."
-            a1 "И...."
-            pause
-            pause
-            
-            m "Акабур?"
-            m "Чувак?"
-            
-            pause
-            pause
-            
-            m "*Вздох*...ладно, я думаю, что мы можем пропустить этот ивент."
-           # m "Just this once though..."
-            m "Хорошо, хоть уровень \"развратности\" Гермионы увеличился..."
-            m "Не придется возиться с сохранениями..."
-            
-            aa "Zzzz....zzz....."
-            aa "Zzz.... Лола? Нет... Я сказал, убери свои сиськи... Zzzz....."
-            aa "Zzz.... И не зови меня так.... Zzz...."
-            
-            m "*Вздох...* Как-то немного грустно..."
-            
 
             
     $ gryffindor +=45
-    m "45 очков \"Гриффиндору\"!"
-    her "Спасибо, сэр."
+    
+    if not (hermi.whoring >= 18 and one_out_of_three == 3) :
+        m "45 очков \"Гриффиндору\"!"
+        her "Спасибо, сэр."
     
     hide screen bld1
     $herView.hideQ()
@@ -697,18 +775,17 @@ label new_request_20_complete: # <==============================================
     hide screen hermione_walk_01_f 
     $ renpy.play('sounds/door.mp3') #Sound of a door opening.
     with Dissolve(.3)
-
-
- 
- 
- 
- 
     
     $ request_20_points += 1 
     $ request_20 = False 
     $ hermione_sleeping = True
 
     call music_block
+    
+    if hermi.whoring >= 18 and one_out_of_three == 3 :
+        m "Вот теперь она точно кувыркается с кем-то в постельке."
+        m "А меня ждет незабываемая ночь с моими руками."
+        m "Эх… ну почему я не сексуальная студентка-лесбиянка?.."
     
     $wtevent.Finalize()    
     
