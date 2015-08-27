@@ -99,6 +99,16 @@ screen main_menu_01:
             #hovered [Show("gui_tooltip", my_picture="hoot", my_tt_xpos=250, my_tt_ypos=180) ] 
             #unhovered [Hide("gui_tooltip")]
             action [Hide("main_menu_01"), Jump("mail")]
+            
+    imagebutton: # MENU
+        xpos 640
+        ypos 560
+        focus_mask True
+        xanchor "center"
+        yanchor "center"
+        idle "03_hp/05_props/menu_bat.png" 
+        hover "03_hp/05_props/menu_bat.png"        
+        action [ShowMenu("save")]
 
 #===TG MODS START===
 
