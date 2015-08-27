@@ -74,7 +74,19 @@ label phoenix:
             with Dissolve(0.5)
             jump day_main_menu
             
+        "- Перечитать бумажку -" if pnx_stage == 1 :
+        
+            $ letter_text = "{size=-2}Уважаемый профессор Дамблдор. \n\nНе знаю, что вы за вид оборотня такой, но судя по всему - слизняк, т.к. уже множество месяцев подряд после каждого полнолуния весь пол у вас в чем-то липком и противном. Прошу вас относиться к чистоте в кабинете ответственнее, иначе на вашу башню я более подниматься не буду. {/size}"    
+  
+            show screen bld1
+            show screen letter
+            show screen ctc
+            pause
+            hide screen letter
+            hide screen bld1
+            hide screen ctc
             
+            jump desk
             
         "- Покормить птицу -" if not phoenix_is_feed and bird_examined:
             $ phoenix_is_feed = True
