@@ -416,7 +416,7 @@ label daphne_pre_finish: #LV.1 (Whoring = 0 - 2)
     $screens.Show("ctc").Pause().Hide("ctc")
 
 
-    #$daphne_pre_menu_text=None # текст, который будет говорить джин в конце
+    $daphne_pre_menu_text=None # текст, который будет говорить джин в конце
 #    label daphne_pre_finish_menu:
     if wtevent._finishCount==0: # Первый раз
         $hero  (m, "#(Ну что ж, \"Мисс Голубая Кровь\"... Наша первая встреча и разговоры с Северусом и Гермионой натолкнули меня на пару идей.)") 
